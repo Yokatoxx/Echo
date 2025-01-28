@@ -1,0 +1,32 @@
+using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+
+public class SpawnScanner : MonoBehaviour
+{
+    public GameObject TerrainScannerPrefab;
+    public float duration = 10f;
+    public float size = 500f;
+    void Update()
+    {
+        if (Input.GetKeyDown(KeyCode.Space))
+        {
+            SpawnTerrainScanner();
+        }
+    }
+
+    void SpawnTerrainScanner()
+    {
+        GameObject terrainScanner = Instantiate(TerrainScannerPrefab, gameObject.transform.position, Quaternion.identity) as GameObject;
+        ParticleSystem terrainScannerPS = terrainScanner.transform.GetChild(0).GetComponent<ParticleSystem>();
+
+        if (terrainScannerPS != null)
+        {
+            var main = terrainScannerPS.main;
+            main.startLifetime = duration;
+            main.startSize = size;
+        }
+
+        Destroy(terrainScanner, duration+1);
+    }
+}
