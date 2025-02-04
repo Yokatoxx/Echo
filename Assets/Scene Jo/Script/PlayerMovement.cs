@@ -7,6 +7,7 @@ public class PlayerMovement : MonoBehaviour
     public float mouseSensitivity = 2f;
     public Transform playerCamera;
     public float gravity = 9.81f;
+    public Stamina stamina; // Référence au script Stamina
 
     private float verticalRotation = 0f;
     private CharacterController characterController;
@@ -16,14 +17,21 @@ public class PlayerMovement : MonoBehaviour
     {
         characterController = GetComponent<CharacterController>();
         Cursor.lockState = CursorLockMode.Locked;
+        if (stamina == null)
+        {
+            Debug.LogError("Stamina script is not assigned.");
+        }
     }
 
     void Update()
     {
         float currentSpeed = speed;
-        if (Input.GetKey(KeyCode.LeftShift))
+        bool isSprinting = Input.GetKey(KeyCode.LeftShift) && stamina.CanSprint();
+
+        if (isSprinting)
         {
             currentSpeed = runSpeed;
+            stamina.UseStamina(Time.deltaTime);
         }
 
         float moveForward = Input.GetAxis("Vertical");
