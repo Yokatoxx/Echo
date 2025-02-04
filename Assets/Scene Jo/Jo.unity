@@ -3577,11 +3577,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   staminaBar: {fileID: 1748235334}
-  maxStamina: 100
+  cooldownBlinkImage: {fileID: 314030821}
+  maxStamina: 20
   currentStamina: 0
   staminaDrainRate: 20
   staminaRegenRate: 10
   staminaCooldown: 2
+  blinkInterval: 0.1
 --- !u!4 &1805076527
 Transform:
   m_ObjectHideFlags: 0

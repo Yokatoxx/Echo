@@ -4,20 +4,26 @@ using UnityEngine.UI;
 public class Stamina : MonoBehaviour
 {
     public Image staminaBar;
+    public Image cooldownBlinkImage;
     public float maxStamina = 100f;
     public float currentStamina;
     public float staminaDrainRate = 20f;
     public float staminaRegenRate = 10f;
     public float staminaCooldown = 2f;
+    public float blinkInterval = 0.5f;
 
     private bool isSprinting = false;
     private bool isOnCooldown = false;
     private float cooldownTimer = 0f;
+    private float blinkTimer = 0f;
+    private bool isBlinkVisible = true;
 
     void Start()
     {
         currentStamina = maxStamina;
         UpdateStaminaUI();
+        if (cooldownBlinkImage != null)
+            cooldownBlinkImage.enabled = false;
     }
 
     void Update()
@@ -25,14 +31,30 @@ public class Stamina : MonoBehaviour
         if (isOnCooldown)
         {
             cooldownTimer -= Time.deltaTime;
+            blinkTimer -= Time.deltaTime;
+            if (blinkTimer <= 0f)
+            {
+                isBlinkVisible = !isBlinkVisible;
+                if (cooldownBlinkImage != null)
+                    cooldownBlinkImage.enabled = isBlinkVisible;
+                blinkTimer = blinkInterval;
+            }
+
             if (cooldownTimer <= 0f)
             {
                 isOnCooldown = false;
+                if (cooldownBlinkImage != null)
+                    cooldownBlinkImage.enabled = false;
             }
         }
-        else if (!isSprinting && currentStamina < maxStamina)
+        else
         {
-            RegenerateStamina();
+            if (!isSprinting && currentStamina < maxStamina)
+            {
+                RegenerateStamina();
+            }
+            if (cooldownBlinkImage != null)
+                cooldownBlinkImage.enabled = false;
         }
     }
 
@@ -80,5 +102,11 @@ public class Stamina : MonoBehaviour
     {
         isOnCooldown = true;
         cooldownTimer = staminaCooldown;
+        if (cooldownBlinkImage != null)
+        {
+            cooldownBlinkImage.enabled = true;
+            isBlinkVisible = true;
+            blinkTimer = blinkInterval;
+        }
     }
 }
