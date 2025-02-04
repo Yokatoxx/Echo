@@ -20,9 +20,11 @@ public class SpawnScanner : MonoBehaviour
 
     IEnumerator SpawnTerrainScanner()
     {
+        Vector3 spawnPosition = transform.position;
+
         for (int i = 0; i < numberOfScanners; i++)
         {
-            GameObject terrainScanner = Instantiate(TerrainScannerPrefab, transform.position, Quaternion.identity);
+            GameObject terrainScanner = Instantiate(TerrainScannerPrefab, spawnPosition, Quaternion.identity);
             ParticleSystem terrainScannerPS = terrainScanner.transform.GetChild(0).GetComponent<ParticleSystem>();
 
             if (terrainScannerPS != null)
