@@ -2261,6 +2261,7 @@ MonoBehaviour:
   maximumSensibility: 100
   currentLoudnessSensibility: 100
   threshold: 0.3
+  loudness: 0
 --- !u!1 &828821489
 GameObject:
   m_ObjectHideFlags: 0
@@ -4501,6 +4502,7 @@ GameObject:
   - component: {fileID: 1957826558}
   - component: {fileID: 1957826564}
   - component: {fileID: 1957826565}
+  - component: {fileID: 1957826566}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -4525,6 +4527,7 @@ MonoBehaviour:
   mouseSensitivity: 2
   playerCamera: {fileID: 1148293418}
   gravity: 9.81
+  stamina: {fileID: 0}
 --- !u!143 &1957826559
 CharacterController:
   m_ObjectHideFlags: 0
@@ -4652,7 +4655,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e93179555b9032549946a2a1bd61fd96, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  objectToToggle: {fileID: 1743968608}
+  objectToToggle1: {fileID: 1743968608}
+  objectToToggle2: {fileID: 0}
 --- !u!114 &1957826565
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4671,6 +4675,26 @@ MonoBehaviour:
   size: 20
   numberOfScanners: 3
   spawnDelay: 0.2
+--- !u!114 &1957826566
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1957826557}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 82de1061a0281c74e8bf1dbe513c575a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  TerrainScannerPrefab: {fileID: 1124760842636070454, guid: 4e75842d5d2abd643a7a58f7428457d4,
+    type: 3}
+  FillFromMicrohpone: {fileID: 825690607}
+  duration: 1.5
+  numberOfScanners: 1
+  spawnDelay: 0.5
+  minimumSize: 1
+  maximumSize: 30
 --- !u!1 &1970786853
 GameObject:
   m_ObjectHideFlags: 0

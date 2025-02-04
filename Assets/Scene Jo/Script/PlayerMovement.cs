@@ -16,7 +16,6 @@ public class PlayerMovement : MonoBehaviour
     void Start()
     {
         characterController = GetComponent<CharacterController>();
-        Cursor.lockState = CursorLockMode.Locked;
         if (stamina == null)
         {
             Debug.LogError("Stamina script is not assigned.");
