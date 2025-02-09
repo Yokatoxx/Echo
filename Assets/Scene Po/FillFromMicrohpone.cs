@@ -29,7 +29,7 @@ public class FillFromMicrohpone : MonoBehaviour
         
         if (loudness < threshold)
         {
-            loudness = 0.01f;
+            loudness = 0f;
         }
 
         audioBar.fillAmount = loudness;
