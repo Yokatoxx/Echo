@@ -16,7 +16,7 @@ public class ObjectToggle : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.E))
+        if (Input.GetKeyDown(KeyCode.F))
         {
             objectToToggle1.SetActive(!objectToToggle1.activeSelf);
             objectToToggle2.SetActive(!objectToToggle2.activeSelf);
