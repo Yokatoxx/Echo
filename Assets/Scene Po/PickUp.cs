@@ -37,13 +37,14 @@ public class PickUp : MonoBehaviour
                     }
                 }
             }
-            else
+            
+        }
+        if (Input.GetKeyDown(KeyCode.Mouse1))
+        {
+            if (canDrop == true)
             {
-                if (canDrop == true)
-                {
-                    StopClipping();
-                    DropObject();
-                }
+                StopClipping();
+                DropObject();
             }
         }
         if (heldObj != null)
@@ -66,7 +67,7 @@ public class PickUp : MonoBehaviour
             heldObjRb = pickUpObj.GetComponent<Rigidbody>();
             heldObjRb.isKinematic = true;
             heldObjRb.transform.parent = holdPos.transform;
-            heldObj.layer = LayerNumber; 
+            heldObj.layer = LayerNumber;
             Physics.IgnoreCollision(heldObj.GetComponent<Collider>(), player.GetComponent<Collider>(), true);
         }
     }
