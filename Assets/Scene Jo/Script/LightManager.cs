@@ -5,7 +5,6 @@ using UnityEngine;
 public class ObjectToggle : MonoBehaviour
 {
     public GameObject objectToToggle1;
-    public GameObject objectToToggle2;
 
     // Start is called before the first frame update
     void Start()
@@ -19,7 +18,6 @@ public class ObjectToggle : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.F))
         {
             objectToToggle1.SetActive(!objectToToggle1.activeSelf);
-            objectToToggle2.SetActive(!objectToToggle2.activeSelf);
 
         }
     }

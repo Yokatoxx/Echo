@@ -2,41 +2,57 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class EchoObject : MonoBehaviour
+public class SpawnScannerVoicePrefab : MonoBehaviour
 {
-    [SerializeField]
-    private GameObject collisionPrefab;
-
-    [Header("Growth Settings")]
-    public float growthDuration = 10f;
+    public GameObject TerrainScannerPrefab;
+    public FillFromMicrohpone FillFromMicrohpone;
+    public float duration = 10f;
+    public int numberOfScanners = 1;
+    public float spawnDelay = 1f;
     public float minimumSize = 1f;
     public float maximumSize = 30f;
+
+    // Courbe pour régler la vitesse du prefab
     public AnimationCurve growthCurve = AnimationCurve.EaseInOut(0f, 0f, 1f, 1f);
+
     public float growthSpeed = 1f;
+
+    // Variables alpha
     public float alphaMax = 1f;
     public float alphaMin = 0f;
     public float fadeTransitionSpeed = 1f;
 
-    private void OnCollisionEnter(Collision collision)
+    void Update()
     {
-        foreach (ContactPoint contact in collision.contacts)
+        if (FillFromMicrohpone.loudness > 0)
         {
-            GameObject obj = Instantiate(collisionPrefab, contact.point, Quaternion.identity);
-            StartCoroutine(GrowAndFade(obj, growthDuration));
+            float sizeMultiplier = Mathf.Lerp(minimumSize, maximumSize, FillFromMicrohpone.loudness);
+            StartCoroutine(SpawnTerrainScanner(sizeMultiplier));
         }
     }
 
-    IEnumerator GrowAndFade(GameObject obj, float duration)
+    IEnumerator SpawnTerrainScanner(float sizeMultiplier)
+    {
+        Vector3 spawnPosition = transform.position;
+        for (int i = 0; i < numberOfScanners; i++)
+        {
+            GameObject terrainScanner = Instantiate(TerrainScannerPrefab, spawnPosition, Quaternion.identity);
+            yield return StartCoroutine(GrowAndFade(terrainScanner, duration, sizeMultiplier));
+            yield return new WaitForSeconds(spawnDelay);
+        }
+    }
+
+    IEnumerator GrowAndFade(GameObject obj, float growthDuration, float scaleMultiplier)
     {
         Vector3 initialScale = obj.transform.localScale;
         float elapsedTime = 0f;
         Renderer renderer = obj.GetComponent<Renderer>();
 
-        while (elapsedTime < duration)
+        // Pour gérer le prefab qui grandit selon la courbe
+        while (elapsedTime < growthDuration)
         {
-            float curveValue = growthCurve.Evaluate(elapsedTime / duration);
-            float scaleMultiplier = Mathf.Lerp(minimumSize, maximumSize, curveValue);
-            obj.transform.localScale = initialScale * scaleMultiplier;
+            float curveValue = growthCurve.Evaluate(elapsedTime / growthDuration);
+            obj.transform.localScale = initialScale * Mathf.Lerp(1f, scaleMultiplier, curveValue);
 
             if (renderer != null)
             {
@@ -48,9 +64,8 @@ public class EchoObject : MonoBehaviour
             elapsedTime += Time.deltaTime * growthSpeed;
             yield return null;
         }
-        obj.transform.localScale = initialScale * maximumSize;
+        obj.transform.localScale = initialScale * scaleMultiplier;
 
-        // fondu
         if (renderer != null)
         {
             Color currentColor = renderer.material.GetColor("_IntersectionColor");

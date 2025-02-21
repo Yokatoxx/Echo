@@ -11,6 +11,16 @@ public class ObjectToThrow : MonoBehaviour
     [Header("Throw Settings")]
     public float throwForce = 20f;
 
+    [Header("Growth Settings")]
+    public float growthDuration = 10f;
+    public float minimumSize = 1f;
+    public float maximumSize = 30f;
+    public AnimationCurve growthCurve = AnimationCurve.EaseInOut(0f, 0f, 1f, 1f);
+    public float growthSpeed = 1f;
+    public float alphaMax = 1f;
+    public float alphaMin = 0f;
+    public float fadeTransitionSpeed = 1f;
+
     private Camera fpsCamera;
 
     void Start()
@@ -40,6 +50,21 @@ public class ObjectToThrow : MonoBehaviour
             {
                 rb.AddForce(fpsCamera.transform.forward * throwForce, ForceMode.VelocityChange);
             }
+
+            // Transfert des paramètres growth à EchoObject
+            EchoObject echo = obj.GetComponent<EchoObject>();
+            if (echo != null)
+            {
+                echo.growthDuration = growthDuration;
+                echo.minimumSize = minimumSize;
+                echo.maximumSize = maximumSize;
+                echo.growthCurve = growthCurve;
+                echo.growthSpeed = growthSpeed;
+                echo.alphaMax = alphaMax;
+                echo.alphaMin = alphaMin;
+                echo.fadeTransitionSpeed = fadeTransitionSpeed;
+            }
+
             Destroy(obj, 2f);
         }
     }

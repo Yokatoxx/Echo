@@ -14,6 +14,7 @@ GameObject:
   - component: {fileID: 3578770829404934480}
   - component: {fileID: -6228606222607230798}
   - component: {fileID: -8458274577052388777}
+  - component: {fileID: 63655391299476507}
   m_Layer: 0
   m_Name: SphereScanner
   m_TagString: Scanner
@@ -144,5 +145,17 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 22108c4b3adb3824b92c6355e1da8d67, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &63655391299476507
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3520727272833897359}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7580d13d0a083a64d8e3368dfbf5affb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
