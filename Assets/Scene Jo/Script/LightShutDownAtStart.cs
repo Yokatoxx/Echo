@@ -8,7 +8,7 @@ public class LightShutDownAtStart : MonoBehaviour
 
     private void Awake()
     {
-        // Récupère tous les objets avec le tag "Light" et les désactive
+
         lights = GameObject.FindGameObjectsWithTag("Light");
         foreach (GameObject light in lights)
         {
@@ -18,7 +18,7 @@ public class LightShutDownAtStart : MonoBehaviour
 
     private void Update()
     {
-        // Si la touche L est pressée, réactive tous les objets
+
         if (Input.GetKeyDown(KeyCode.L))
         {
             foreach (GameObject light in lights)
