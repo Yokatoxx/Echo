@@ -8,6 +8,9 @@ TagManager:
   - canPickUp
   - Collectible
   - RepeatSound
+  - Outline
+  - Scanner
+  - Light
   layers:
   - Default
   - TransparentFX
