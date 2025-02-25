@@ -25,15 +25,6 @@ public class PlayerMovement : MonoBehaviour
         characterController = GetComponent<CharacterController>();
         cam = playerCamera.GetComponent<Camera>();
 
-        if (characterController == null)
-        {
-            Debug.LogError("CharacterController non trouvé.");
-        }
-
-        if (cam == null)
-        {
-            Debug.LogError("Camera non trouvée sur playerCamera.");
-        }
     }
 
     void Update()
