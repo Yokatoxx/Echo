@@ -1043,7 +1043,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   objectToToggle1: {fileID: 1814249261}
-  objectToToggle2: {fileID: 0}
 --- !u!114 &645448606
 MonoBehaviour:
   m_ObjectHideFlags: 0
