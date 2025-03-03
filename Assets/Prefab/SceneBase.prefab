@@ -2154,7 +2154,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   audioBar: {fileID: 9198068870507145045}
   sensitivitySlider: {fileID: 8087490913832675812}
-  detection: {fileID: 0}
+  detection: {fileID: 8802014642475091480}
   minimumSensibility: 20
   maximumSensibility: 100
   currentLoudnessSensibility: 100
@@ -2883,6 +2883,11 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 6052529947756055440}
     m_Modifications:
+    - target: {fileID: 1314845524492202743, guid: 4c2c968b8cb85db48bec566cba36256b,
+        type: 3}
+      propertyPath: FillFromMicrohpone
+      value: 
+      objectReference: {fileID: 5163391147666102208}
     - target: {fileID: 5125172565399672821, guid: 4c2c968b8cb85db48bec566cba36256b,
         type: 3}
       propertyPath: m_Name
@@ -2891,17 +2896,17 @@ PrefabInstance:
     - target: {fileID: 6261291541408335535, guid: 4c2c968b8cb85db48bec566cba36256b,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 8.73
+      value: 0.48
       objectReference: {fileID: 0}
     - target: {fileID: 6261291541408335535, guid: 4c2c968b8cb85db48bec566cba36256b,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: -3.82
+      value: 0.93
       objectReference: {fileID: 0}
     - target: {fileID: 6261291541408335535, guid: 4c2c968b8cb85db48bec566cba36256b,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 12.41
+      value: -0.97
       objectReference: {fileID: 0}
     - target: {fileID: 6261291541408335535, guid: 4c2c968b8cb85db48bec566cba36256b,
         type: 3}
