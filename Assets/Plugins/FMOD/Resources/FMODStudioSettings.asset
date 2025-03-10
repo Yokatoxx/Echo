@@ -682,8 +682,8 @@ MonoBehaviour:
   switchSettingsMigration: 1
   HasSourceProject: 1
   HasPlatforms: 1
-  sourceProjectPath: ../FMOD/Echo/Echo.fspro
-  sourceBankPath: ../FMOD/Echo/Build
+  sourceProjectPath: Assets/Fmod/Echo/Echo.fspro
+  sourceBankPath: Assets/Fmod/Echo/Build
   sourceBankPathUnformatted: 
   BankRefreshCooldown: 1
   ShowBankRefreshWindow: 0
