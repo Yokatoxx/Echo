@@ -11,6 +11,8 @@ TagManager:
   - Outline
   - Scanner
   - Light
+  - Scannable
+  - ScannerRebound
   layers:
   - Default
   - TransparentFX

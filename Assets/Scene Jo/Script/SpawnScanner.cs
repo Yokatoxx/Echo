@@ -4,38 +4,66 @@ using UnityEngine;
 
 public class SpawnScanner : MonoBehaviour
 {
-    public GameObject TerrainScannerPrefab;
-    public float duration = 10f;
-    public float size = 500f;
-    public int numberOfScanners = 1;
-    public float spawnDelay = 1f;
+    public GameObject EcholocationSpherePrefab;
+    public float duration = 3f;
+    public float maxRadius = 50f;
+    public float propagationSpeed = 15f;
+    public float fadeOutSpeed = 1.5f;
+    public Color echoColor = new Color(0.0f, 0.5f, 1.0f, 0.5f);
+    public int numberOfPulses = 1;
+    public float pulseDelay = 1f;
 
     void Update()
     {
         if (Input.GetKeyDown(KeyCode.Space))
         {
-            StartCoroutine(SpawnTerrainScanner());
+            StartCoroutine(SpawnEcholocationEffect());
         }
     }
 
-    IEnumerator SpawnTerrainScanner()
+    IEnumerator SpawnEcholocationEffect()
     {
         Vector3 spawnPosition = transform.position;
 
-        for (int i = 0; i < numberOfScanners; i++)
+        for (int i = 0; i < numberOfPulses; i++)
         {
-            GameObject terrainScanner = Instantiate(TerrainScannerPrefab, spawnPosition, Quaternion.identity);
-            ParticleSystem terrainScannerPS = terrainScanner.transform.GetChild(0).GetComponent<ParticleSystem>();
+            GameObject echoSphere = Instantiate(EcholocationSpherePrefab, spawnPosition, Quaternion.identity);
 
-            if (terrainScannerPS != null)
+            // Configuration initiale de la sphère
+            if (echoSphere.GetComponent<Renderer>() != null)
             {
-                var main = terrainScannerPS.main;
-                main.startLifetime = duration;
-                main.startSize = size;
+                echoSphere.GetComponent<Renderer>().material.color = echoColor;
             }
 
-            Destroy(terrainScanner, duration + 1);
-            yield return new WaitForSeconds(spawnDelay);
+            // Lancer l'animation de croissance
+            StartCoroutine(AnimateEchoSphere(echoSphere));
+
+            yield return new WaitForSeconds(pulseDelay);
         }
+    }
+
+    IEnumerator AnimateEchoSphere(GameObject echoSphere)
+    {
+        float elapsedTime = 0f;
+        float initialAlpha = echoColor.a;
+        Material material = echoSphere.GetComponent<Renderer>().material;
+
+        // Animation de croissance et de fade
+        while (elapsedTime < duration)
+        {
+            // Calculer la taille actuelle en fonction du temps
+            float currentRadius = Mathf.Lerp(0, maxRadius, propagationSpeed * elapsedTime / maxRadius);
+            echoSphere.transform.localScale = new Vector3(currentRadius, currentRadius, currentRadius);
+
+            // Calculer la transparence (diminue avec le temps)
+            Color currentColor = material.color;
+            float newAlpha = Mathf.Lerp(initialAlpha, 0, fadeOutSpeed * elapsedTime / duration);
+            material.color = new Color(currentColor.r, currentColor.g, currentColor.b, newAlpha);
+
+            elapsedTime += Time.deltaTime;
+            yield return null;
+        }
+
+        Destroy(echoSphere);
     }
 }
