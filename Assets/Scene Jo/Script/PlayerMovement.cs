@@ -19,12 +19,15 @@ public class PlayerMovement : MonoBehaviour
 
     private Vector3 hidePosition;
     private Camera cam;
+    private AudioManager audioManager;
+
+    public bool isWalking = false;
 
     void Start()
     {
         characterController = GetComponent<CharacterController>();
         cam = playerCamera.GetComponent<Camera>();
-
+        audioManager = FindObjectOfType<AudioManager>();
     }
 
     void Update()
@@ -55,6 +58,8 @@ public class PlayerMovement : MonoBehaviour
         float moveForward = Input.GetAxis("Vertical");
         float moveSide = Input.GetAxis("Horizontal");
         Vector3 movement = transform.forward * moveForward + transform.right * moveSide;
+
+        isWalking = (Mathf.Abs(moveForward) > 0.1f || Mathf.Abs(moveSide) > 0.1f);
 
         if (characterController.isGrounded)
         {
@@ -120,6 +125,7 @@ public class PlayerMovement : MonoBehaviour
         characterController.enabled = true;
 
         isHiding = true;
+        isWalking = false;
     }
 
     void UnhidePlayer()
@@ -129,5 +135,16 @@ public class PlayerMovement : MonoBehaviour
         characterController.enabled = true;
 
         isHiding = false;
+    }
+
+    // Cette méthode est appelée lorsque le CharacterController entre en collision
+    private void OnControllerColliderHit(ControllerColliderHit hit)
+    {
+        // Vérifie si l'objet touché a le tag "décor" et si l'audioManager est disponible
+        if (hit.gameObject.CompareTag("Decor") && audioManager != null)
+        {
+            // Appelle la méthode pour jouer le son de collision avec le décor
+            audioManager.PlayDecorCollisionSound(hit.point);
+        }
     }
 }

@@ -32,18 +32,53 @@ public class AudioLoudnessDetection : MonoBehaviour
 
     private void MicrophoneToAudioClip(int microphoneIndex)
     {
-        //foreach (var name in Microphone.devices)
-        //{
-        //   Debug.Log(name);
-        //}
+        try
+        {
+            // Arrêter l'enregistrement précédent si nécessaire
+            if (microphoneName != null && Microphone.IsRecording(microphoneName))
+            {
+                Microphone.End(microphoneName);
+            }
 
-        microphoneName = Microphone.devices[microphoneIndex];
-        microphoneClip = Microphone.Start(microphoneName, true, 20, AudioSettings.outputSampleRate); 
+            // Vérifier si des microphones sont disponibles
+            if (Microphone.devices.Length == 0)
+            {
+                Debug.LogError("Aucun microphone détecté!");
+                return;
+            }
+
+            // S'assurer que l'index est valide
+            microphoneIndex = Mathf.Clamp(microphoneIndex, 0, Microphone.devices.Length - 1);
+            microphoneName = Microphone.devices[microphoneIndex];
+
+            Debug.Log("Démarrage du microphone: " + microphoneName);
+            microphoneClip = Microphone.Start(microphoneName, true, 20, AudioSettings.outputSampleRate);
+        }
+        catch (System.Exception e)
+        {
+            Debug.LogError($"Erreur lors de l'initialisation du microphone: {e.Message}");
+        }
     }
 
     public float GetLoudnessFromMicrophone()
     {
-        return GetLoudnessFromAudioClip(Microphone.GetPosition(microphoneName), microphoneClip);
+        // Vérifier si le microphone est initialisé
+        if (microphoneClip == null || !Microphone.IsRecording(microphoneName))
+        {
+            Debug.LogWarning("Microphone not initialized or not recording. Restarting...");
+            MicrophoneToAudioClip(0);
+            return 0;
+        }
+
+        int position = Microphone.GetPosition(microphoneName);
+        if (position < 0)
+        {
+            Debug.LogWarning("Invalid microphone position. Restarting microphone...");
+            MicrophoneToAudioClip(0);
+            return 0;
+        }
+
+        return GetLoudnessFromAudioClip(position, microphoneClip);
     }
 
     public float GetLoudnessFromAudioClip(int clipPosition, AudioClip clip)

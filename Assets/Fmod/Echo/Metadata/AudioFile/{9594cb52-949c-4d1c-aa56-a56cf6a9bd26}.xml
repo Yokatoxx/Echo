@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.02.00">
+	<object class="AudioFile" id="{9594cb52-949c-4d1c-aa56-a56cf6a9bd26}">
+		<property name="assetPath">
+			<value>bruit_de_pas1.wav</value>
+		</property>
+		<property name="frequencyInKHz">
+			<value>44.0999985</value>
+		</property>
+		<property name="channelCount">
+			<value>2</value>
+		</property>
+		<property name="length">
+			<value>0.099931972789115642</value>
+		</property>
+		<relationship name="masterAssetFolder">
+			<destination>{3887b6ae-b5c7-4e18-93af-40d4d939a416}</destination>
+		</relationship>
+	</object>
+</objects>

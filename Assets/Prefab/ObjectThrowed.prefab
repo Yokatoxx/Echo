@@ -229,7 +229,5 @@ MonoBehaviour:
   reboundDuration: 1.5
   reboundSize: 1.5
   reboundColor: {r: 1, g: 0.5, b: 0, a: 0.7}
-  collisionLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
+  detectionTag: Scannable
   detectionThickness: 0.5
