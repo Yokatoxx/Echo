@@ -192,10 +192,15 @@ PrefabInstance:
       propertyPath: detection
       value: 
       objectReference: {fileID: 686241490}
+    - target: {fileID: 5163391147666102208, guid: 9cf5b9ddbcef7054d85f4226c2ed95d8,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5359601888106405413, guid: 9cf5b9ddbcef7054d85f4226c2ed95d8,
         type: 3}
       propertyPath: m_Enabled
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5359601888106405413, guid: 9cf5b9ddbcef7054d85f4226c2ed95d8,
         type: 3}
@@ -250,6 +255,11 @@ PrefabInstance:
     - target: {fileID: 6052529947756055440, guid: 9cf5b9ddbcef7054d85f4226c2ed95d8,
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6209686839638365286, guid: 9cf5b9ddbcef7054d85f4226c2ed95d8,
+        type: 3}
+      propertyPath: m_Enabled
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6231691622935294190, guid: 9cf5b9ddbcef7054d85f4226c2ed95d8,
@@ -342,6 +352,10 @@ PrefabInstance:
         type: 3}
       insertIndex: -1
       addedObject: {fileID: 1374138721}
+    - targetCorrespondingSourceObject: {fileID: 5500684275002780643, guid: 9cf5b9ddbcef7054d85f4226c2ed95d8,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1374138733}
   m_SourcePrefab: {fileID: 100100000, guid: 9cf5b9ddbcef7054d85f4226c2ed95d8, type: 3}
 --- !u!43 &425055904
 Mesh:
@@ -1450,7 +1464,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 166062905}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 0}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 75c143d34bce096489e03d349a8a0243, type: 3}
   m_Name: 
@@ -11113,6 +11127,34 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2c3097c16e53ec544bb849d613f30e32, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &1374138733
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1374138707}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f8b6f359a14891e439a1dbd0b7531604, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  echoSphere: {fileID: 3520727272833897359, guid: a9a422a722d486f4783847c65cb1389c,
+    type: 3}
+  spawnPoint: {fileID: 159021794}
+  echoColor: {r: 0, g: 0.5, b: 1, a: 0.5}
+  duration: 3
+  maxRadius: 50
+  propagationSpeed: 15
+  fadeOutSpeed: 1.5
+  numberOfPulses: 1
+  pulseDelay: 0.5
+  activationThreshold: 0.2
+  sensitivityMultiplier: 1.5
+  microphoneIndex: 0
+  analysisUpdateRate: 0.1
+  muteInput: 1
+  responseCooldown: 1
 --- !u!114 &1429528895 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 1393561616923391562, guid: 9cf5b9ddbcef7054d85f4226c2ed95d8,
