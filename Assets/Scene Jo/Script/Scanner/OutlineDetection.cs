@@ -17,7 +17,9 @@ public class OutlineDetection : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        if (other.CompareTag("Outline"))
+        // Vérifier si l'objet entrant possède un composant Outlinable
+        Outlinable targetOutlinable = other.GetComponentInParent<Outlinable>();
+        if (targetOutlinable != null)
         {
             OutlineParam outlineParam = other.GetComponent<OutlineParam>();
             if (outlineParam != null)

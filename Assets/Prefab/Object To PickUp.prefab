@@ -13,6 +13,8 @@ GameObject:
   - component: {fileID: 4679913471983678069}
   - component: {fileID: 5381115137699016257}
   - component: {fileID: 4972913435930829283}
+  - component: {fileID: -6153472710932489694}
+  - component: {fileID: 3864651163460458894}
   m_Layer: 6
   m_Name: Object To PickUp
   m_TagString: canPickUp
@@ -133,3 +135,79 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!114 &-6153472710932489694
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4516711924555999526}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eeea41683545dd049a279b8a4149d19d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  collisionPrefab: {fileID: 3520727272833897359, guid: a9a422a722d486f4783847c65cb1389c,
+    type: 3}
+  growthDuration: 10
+  minimumSize: 1
+  maximumSize: 70
+  growthCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    - serializedVersion: 3
+      time: 1
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  growthSpeed: 10
+  alphaMax: 0.1
+  alphaMin: 0
+  fadeTransitionSpeed: 5
+--- !u!114 &3864651163460458894
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4516711924555999526}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  EventReference:
+    Guid:
+      Data1: -83989365
+      Data2: 1333114274
+      Data3: 81485751
+      Data4: 1229531360
+    Path: event:/Metal, Tonal, Impact, Barrel, Hit SND0657
+  Event: 
+  EventPlayTrigger: 7
+  EventStopTrigger: 0
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  NonRigidbodyVelocity: 0
+  Params: []
+  OverrideAttenuation: 0
+  OverrideMinDistance: 1
+  OverrideMaxDistance: 50

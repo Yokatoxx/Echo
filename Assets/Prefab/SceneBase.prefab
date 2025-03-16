@@ -3064,8 +3064,8 @@ MonoBehaviour:
   noiseSpawnPoint: {fileID: 9189983696673612902}
   stepInterval: 0.5
   duration: 20
-  targetScaleMultiplier: 25
-  sizeChangeSpeed: 24.5
+  targetScaleMultiplier: 37.3
+  sizeChangeSpeed: 52.9
 --- !u!114 &8424048930394987343
 MonoBehaviour:
   m_ObjectHideFlags: 0
