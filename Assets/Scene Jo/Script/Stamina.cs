@@ -85,7 +85,7 @@ public class Stamina : MonoBehaviour
         UpdateStaminaUI();
     }
 
-    private void UpdateStaminaUI()
+    public  void UpdateStaminaUI()
     {
         if (staminaBar != null)
         {
