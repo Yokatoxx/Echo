@@ -28,14 +28,11 @@ public class SpawnScanner : MonoBehaviour
         for (int i = 0; i < numberOfPulses; i++)
         {
             GameObject echoSphere = Instantiate(EcholocationSpherePrefab, spawnPosition, Quaternion.identity);
-
-            // Configuration initiale de la sphère
             if (echoSphere.GetComponent<Renderer>() != null)
             {
                 echoSphere.GetComponent<Renderer>().material.color = echoColor;
             }
 
-            // Lancer l'animation de croissance
             StartCoroutine(AnimateEchoSphere(echoSphere));
 
             yield return new WaitForSeconds(pulseDelay);
@@ -51,11 +48,9 @@ public class SpawnScanner : MonoBehaviour
         // Animation de croissance et de fade
         while (elapsedTime < duration)
         {
-            // Calculer la taille actuelle en fonction du temps
             float currentRadius = Mathf.Lerp(0, maxRadius, propagationSpeed * elapsedTime / maxRadius);
             echoSphere.transform.localScale = new Vector3(currentRadius, currentRadius, currentRadius);
 
-            // Calculer la transparence (diminue avec le temps)
             Color currentColor = material.color;
             float newAlpha = Mathf.Lerp(initialAlpha, 0, fadeOutSpeed * elapsedTime / duration);
             material.color = new Color(currentColor.r, currentColor.g, currentColor.b, newAlpha);

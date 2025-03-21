@@ -50,7 +50,6 @@ public class AudioManager : MonoBehaviour
 
     void Awake()
     {
-        // Pattern Singleton
         if (Instance == null)
         {
             Instance = this;

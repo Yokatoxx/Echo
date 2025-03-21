@@ -137,13 +137,10 @@ public class PlayerMovement : MonoBehaviour
         isHiding = false;
     }
 
-    // Cette méthode est appelée lorsque le CharacterController entre en collision
     private void OnControllerColliderHit(ControllerColliderHit hit)
     {
-        // Vérifie si l'objet touché a le tag "décor" et si l'audioManager est disponible
         if (hit.gameObject.CompareTag("Decor") && audioManager != null)
         {
-            // Appelle la méthode pour jouer le son de collision avec le décor
             audioManager.PlayDecorCollisionSound(hit.point);
         }
     }

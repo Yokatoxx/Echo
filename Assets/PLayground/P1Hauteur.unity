@@ -36523,26 +36523,6 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 2862438694418032257, guid: 9cf5b9ddbcef7054d85f4226c2ed95d8,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4681189694266771338, guid: 9cf5b9ddbcef7054d85f4226c2ed95d8,
-        type: 3}
-      propertyPath: m_Height
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 4681189694266771338, guid: 9cf5b9ddbcef7054d85f4226c2ed95d8,
-        type: 3}
-      propertyPath: m_Enabled
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 5488997406311536725, guid: 9cf5b9ddbcef7054d85f4226c2ed95d8,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 6052529947756055440, guid: 9cf5b9ddbcef7054d85f4226c2ed95d8,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -36592,46 +36572,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6231691622935294190, guid: 9cf5b9ddbcef7054d85f4226c2ed95d8,
-        type: 3}
-      propertyPath: m_AnchorMax.y
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 6533984014346383021, guid: 9cf5b9ddbcef7054d85f4226c2ed95d8,
-        type: 3}
-      propertyPath: m_AnchorMax.y
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 6576685612832737633, guid: 9cf5b9ddbcef7054d85f4226c2ed95d8,
-        type: 3}
-      propertyPath: m_Height
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 6742606643750173369, guid: 9cf5b9ddbcef7054d85f4226c2ed95d8,
-        type: 3}
-      propertyPath: m_LocalScale.x
-      value: 0.7
-      objectReference: {fileID: 0}
-    - target: {fileID: 6742606643750173369, guid: 9cf5b9ddbcef7054d85f4226c2ed95d8,
-        type: 3}
-      propertyPath: m_LocalScale.y
-      value: 0.7
-      objectReference: {fileID: 0}
-    - target: {fileID: 6742606643750173369, guid: 9cf5b9ddbcef7054d85f4226c2ed95d8,
-        type: 3}
-      propertyPath: m_LocalScale.z
-      value: 0.7
-      objectReference: {fileID: 0}
-    - target: {fileID: 6742606643750173369, guid: 9cf5b9ddbcef7054d85f4226c2ed95d8,
-        type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 1.819476
-      objectReference: {fileID: 0}
-    - target: {fileID: 6742606643750173369, guid: 9cf5b9ddbcef7054d85f4226c2ed95d8,
-        type: 3}
-      propertyPath: m_ConstrainProportionsScale
-      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 9003944052717425231, guid: 9cf5b9ddbcef7054d85f4226c2ed95d8,
         type: 3}
@@ -111415,86 +111355,6 @@ Transform:
   m_LocalPosition: {x: 12.196414, y: 6.24, z: 2.958846}
   m_LocalScale: {x: 0.48, y: 0.48, z: 0.48}
   m_ConstrainProportionsScale: 1
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &641379192
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 641379194}
-  - component: {fileID: 641379193}
-  m_Layer: 0
-  m_Name: AudioManager
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!114 &641379193
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 641379192}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1328e2f24d6f2764d8e05b100d0bdb69, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  player: {fileID: 1374138707}
-  controller: {fileID: 1374138722}
-  FootstepEvent:
-    Guid:
-      Data1: -802854961
-      Data2: 1092551913
-      Data3: 1540938138
-      Data4: -979108649
-    Path: event:/bruit_de_pas
-  DecorCollisionEvent:
-    Guid:
-      Data1: -1184420156
-      Data2: 1227038794
-      Data3: -736802886
-      Data4: -2053868164
-    Path: event:/bumpECHO
-  SprintEvent:
-    Guid:
-      Data1: -1761936183
-      Data2: 1133959149
-      Data3: -1654721861
-      Data4: -941373666
-    Path: event:/Runonlysouffle
-  EcholocationEvent:
-    Guid:
-      Data1: -1401999917
-      Data2: 1315228351
-      Data3: -943109998
-      Data4: 15275210
-    Path: event:/EchoSound
-  walkRate: 0.5
-  sprintRate: 0.3
-  sprintVolumeParam: SprintVolume
-  fadeInDuration: 0.2
-  collisionCooldown: 0.5
-  echolocationCooldown: 0.2
---- !u!4 &641379194
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 641379192}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 148.0265, y: -0.36250022, z: -27.857887}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -233865,24 +233725,6 @@ Mesh:
     offset: 0
     size: 0
     path: 
---- !u!1 &1374138707 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 5500684275002780643, guid: 9cf5b9ddbcef7054d85f4226c2ed95d8,
-    type: 3}
-  m_PrefabInstance: {fileID: 166062905}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &1374138722 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 7734429896703755305, guid: 9cf5b9ddbcef7054d85f4226c2ed95d8,
-    type: 3}
-  m_PrefabInstance: {fileID: 166062905}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1374138707}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2c3097c16e53ec544bb849d613f30e32, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!43 &1376255763
 Mesh:
   m_ObjectHideFlags: 0
@@ -278599,7 +278441,6 @@ SceneRoots:
   - {fileID: 2112284923}
   - {fileID: 1171170570}
   - {fileID: 166062905}
-  - {fileID: 641379194}
   - {fileID: 979948539}
   - {fileID: 164060958}
   - {fileID: 944588629}

@@ -1173,7 +1173,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &34846092788544130
 RectTransform:
   m_ObjectHideFlags: 0
@@ -1594,7 +1594,7 @@ RectTransform:
   m_Father: {fileID: 1796527924890679535}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 1}
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 20, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
@@ -2208,7 +2208,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1761118285945020924
 RectTransform:
   m_ObjectHideFlags: 0
@@ -2334,6 +2334,86 @@ MonoBehaviour:
   m_hasFontAssetChanged: 0
   m_baseMaterial: {fileID: 0}
   m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
+--- !u!1 &5719754463015271471
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 3053412913440286073}
+  - component: {fileID: 3470876666489540190}
+  m_Layer: 0
+  m_Name: AudioManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &3053412913440286073
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5719754463015271471}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 150.13814, y: -11.293512, z: -65.63706}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 6052529947756055440}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &3470876666489540190
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5719754463015271471}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1328e2f24d6f2764d8e05b100d0bdb69, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  player: {fileID: 5500684275002780643}
+  controller: {fileID: 7734429896703755305}
+  FootstepEvent:
+    Guid:
+      Data1: -802854961
+      Data2: 1092551913
+      Data3: 1540938138
+      Data4: -979108649
+    Path: event:/bruit_de_pas
+  DecorCollisionEvent:
+    Guid:
+      Data1: -1184420156
+      Data2: 1227038794
+      Data3: -736802886
+      Data4: -2053868164
+    Path: event:/bumpECHO
+  SprintEvent:
+    Guid:
+      Data1: -1761936183
+      Data2: 1133959149
+      Data3: -1654721861
+      Data4: -941373666
+    Path: event:/Runonlysouffle
+  EcholocationEvent:
+    Guid:
+      Data1: -1401999917
+      Data2: 1315228351
+      Data3: -943109998
+      Data4: 15275210
+    Path: event:/EchoSound
+  walkRate: 0.5
+  sprintRate: 0.3
+  sprintVolumeParam: SprintVolume
+  fadeInDuration: 0.2
+  collisionCooldown: 0.5
+  echolocationCooldown: 0.2
 --- !u!1 &7224792231783213491
 GameObject:
   m_ObjectHideFlags: 0
@@ -2618,7 +2698,7 @@ RectTransform:
   m_Father: {fileID: 2224545202852615764}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 1}
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 10, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
@@ -2904,6 +2984,7 @@ Transform:
   - {fileID: 5974195234459189554}
   - {fileID: 5082088486480305546}
   - {fileID: 6742606643750173369}
+  - {fileID: 3053412913440286073}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &825881114427505686
@@ -2936,13 +3017,28 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6261291541408335535, guid: 4c2c968b8cb85db48bec566cba36256b,
         type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.7
+      objectReference: {fileID: 0}
+    - target: {fileID: 6261291541408335535, guid: 4c2c968b8cb85db48bec566cba36256b,
+        type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.7
+      objectReference: {fileID: 0}
+    - target: {fileID: 6261291541408335535, guid: 4c2c968b8cb85db48bec566cba36256b,
+        type: 3}
+      propertyPath: m_LocalScale.z
+      value: 0.7
+      objectReference: {fileID: 0}
+    - target: {fileID: 6261291541408335535, guid: 4c2c968b8cb85db48bec566cba36256b,
+        type: 3}
       propertyPath: m_LocalPosition.x
       value: 9.52
       objectReference: {fileID: 0}
     - target: {fileID: 6261291541408335535, guid: 4c2c968b8cb85db48bec566cba36256b,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: -7.19
+      value: 1.819476
       objectReference: {fileID: 0}
     - target: {fileID: 6261291541408335535, guid: 4c2c968b8cb85db48bec566cba36256b,
         type: 3}
@@ -2983,6 +3079,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6261291541408335535, guid: 4c2c968b8cb85db48bec566cba36256b,
+        type: 3}
+      propertyPath: m_ConstrainProportionsScale
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6926581840809031743, guid: 4c2c968b8cb85db48bec566cba36256b,
         type: 3}
@@ -3100,6 +3201,18 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 825881114427505686}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &7734429896703755305 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 6926581840809031743, guid: 4c2c968b8cb85db48bec566cba36256b,
+    type: 3}
+  m_PrefabInstance: {fileID: 825881114427505686}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5500684275002780643}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2c3097c16e53ec544bb849d613f30e32, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &9099755011824057430 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 8448414831370682432, guid: 4c2c968b8cb85db48bec566cba36256b,
