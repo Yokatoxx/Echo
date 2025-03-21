@@ -16,7 +16,6 @@ Shader "Custom/CompatiblePointCloudShader"
         
         Pass
         {
-            // Enable point rendering mode
             CGPROGRAM
             #pragma vertex vert
             #pragma geometry geom
@@ -66,6 +65,7 @@ Shader "Custom/CompatiblePointCloudShader"
                 return o;
             }
             
+            // Fonction pour générer un nombre pseudo-aléatoire à partir d'un vecteur 2D
             float random(float2 p)
             {
                 return frac(sin(dot(p, float2(12.9898, 78.233))) * 43758.5453123);
@@ -74,37 +74,43 @@ Shader "Custom/CompatiblePointCloudShader"
             [maxvertexcount(20)]
             void geom(triangle v2g input[3], inout PointStream<g2f> outStream)
             {
+                // Extraction des positions des sommets du triangle
                 float3 pos0 = input[0].vertex.xyz;
                 float3 pos1 = input[1].vertex.xyz;
                 float3 pos2 = input[2].vertex.xyz;
                 
                 float3 center = (pos0 + pos1 + pos2) / 3.0;
+                // Calcul de l'aire du triangle pour déterminer le nombre de points
                 float area = length(cross(pos1 - pos0, pos2 - pos0)) * 0.5;
                 
+                // Le nombre de points est proportionnel à l'aire du triangle
                 int points = clamp(int(area * _PointDensity * 200), 1, 20);
                 
+                // Distribution des points sur le triangle avec l'algorithme de distribution uniforme
                 for (int i = 0; i < points; i++)
                 {
+                    // Génération de coordonnées barycentriques aléatoires
                     float r1 = random(float2(i, area * 1000));
                     float r2 = random(float2(i + 1, area * 2000));
                     
+                    // Transformation pour une distribution uniforme
                     float sqrtR1 = sqrt(r1);
                     float u = 1.0 - sqrtR1;
                     float v = r2 * sqrtR1;
                     float w = 1.0 - u - v;
                     
+                    // Interpolation des attributs en utilisant les coordonnées barycentriques
                     float3 pos = pos0 * u + pos1 * v + pos2 * w;
                     float3 normal = normalize(input[0].normal * u + input[1].normal * v + input[2].normal * w);
                     float2 uv = input[0].uv * u + input[1].uv * v + input[2].uv * w;
                     float4 worldPos = input[0].worldPos * u + input[1].worldPos * v + input[2].worldPos * w;
                     
+                    // Calcul de la profondeur pour le gradient de couleur
                     float depth = distance(worldPos.xyz, _WorldSpaceCameraPos);
                     
-                    // Create a new vertex at the calculated position
                     g2f o;
                     float4 clipPos = UnityObjectToClipPos(float4(pos, 1.0));
                     
-                    // Set final position - this creates an actual quad
                     o.pos = clipPos;
                     o.normal = UnityObjectToWorldNormal(normal);
                     o.uv = TRANSFORM_TEX(uv, _MainTex);
@@ -116,15 +122,10 @@ Shader "Custom/CompatiblePointCloudShader"
             
             fixed4 frag(g2f i) : SV_Target
             {
-                // We'll create a circular point using fragment shader
-                // Distance from center of the point
-                float2 center = float2(0.5, 0.5);
-                float2 uv = i.uv;
-                
-                // Base color from texture
+                // Récupération de la couleur de base depuis la texture
                 fixed4 col = tex2D(_MainTex, i.uv);
                 
-                // Blend between near and far colors based on depth
+                // Mélange entre les couleurs en fonction de la profondeur
                 fixed4 finalColor = lerp(_ColorNear, _ColorFar, saturate(i.depth / _DepthRange));
                 
                 return finalColor * col;
