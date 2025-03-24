@@ -16,7 +16,6 @@ public class EnemyPatrolState : EnemyState
     public float patrolSpeed = 5f;
     private Transform targetPos;
 
-
     public EnemyPatrolState(Enemy enemy, EnemyStateMachine stateMachine) : base(enemy, stateMachine)
     {
     }
@@ -31,7 +30,10 @@ public class EnemyPatrolState : EnemyState
         base.EnterState();
 
         route = patrolRoute.GetComponent<PatrolRoute>();
-        targetPos = route.patrolPoints[GetClosestPatrolPointID(enemy.transform.position)];
+
+
+        currentPatrolIndex = GetClosestPatrolPointID(enemy.transform.position);
+        targetPos = route.patrolPoints[currentPatrolIndex];
 
         enemy.MoveEnemy(patrolSpeed, targetPos);
     }
@@ -45,13 +47,13 @@ public class EnemyPatrolState : EnemyState
     {
         base.FrameUpdate();
 
-        if (enemy.agent.remainingDistance < 0.5f)
+        if (enemy.agent.remainingDistance < 0.5f && !enemy.agent.pathPending)
         {
             if (invertPatrol)
             {
                 currentPatrolIndex -= 1;
             }
-            else if (!invertPatrol)
+            else
             {
                 currentPatrolIndex += 1;
             }
@@ -59,17 +61,23 @@ public class EnemyPatrolState : EnemyState
             currentPatrolIndex = (int)Mathf.Repeat(currentPatrolIndex, route.patrolPoints.Length);
             targetPos = route.patrolPoints[currentPatrolIndex];
             enemy.MoveEnemy(patrolSpeed, targetPos);
-            Debug.Log("New Target: " + currentPatrolIndex);
         }
     }
 
+    public override void PhysicsUpdate()
+    {
+        base.PhysicsUpdate();
+    }
 
     private int GetClosestPatrolPointID(Vector3 position)
     {
         float closestDistance = Mathf.Infinity;
         int closestPatrolPointID = 0;
+
         for (var i = 0; i < route.patrolPoints.Length; i++)
         {
+            if (route.patrolPoints[i] == null) continue;
+
             float dist = Vector3.Distance(position, route.patrolPoints[i].position);
             if (dist < closestDistance)
             {

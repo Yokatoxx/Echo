@@ -7,8 +7,10 @@ using UnityEngine.AI;
 public class Enemy : MonoBehaviour, IEnemyMoveable
 {
     public Rigidbody rb { get; set; }
-    
-    public NavMeshAgent agent;
+    public NavMeshAgent agent { get; private set; }
+
+    //référence au PatrolRoute
+    public GameObject patrolRouteObject;
 
     #region State Machine Variables
     public EnemyStateMachine stateMachine { get; set; }
@@ -20,8 +22,6 @@ public class Enemy : MonoBehaviour, IEnemyMoveable
     public EnemyPatrolState patrolState { get; set; }
     #endregion
 
-
-
     private void Awake()
     {
         stateMachine = new EnemyStateMachine();
@@ -31,6 +31,11 @@ public class Enemy : MonoBehaviour, IEnemyMoveable
         attackState = new EnemyAttackState(this, stateMachine);
         patrolState = new EnemyPatrolState(this, stateMachine);
 
+        //passer la référence du PatrolRoute à l'état de patrouille
+        if (patrolState is EnemyPatrolState enemyPatrolState)
+        {
+            enemyPatrolState.patrolRoute = patrolRouteObject;
+        }
     }
 
     private void Start()
@@ -52,36 +57,27 @@ public class Enemy : MonoBehaviour, IEnemyMoveable
     }
 
     #region Idle Variables
-
     public float idleTime = 2f;
     public float idleTimer = 0f;
-
-    #endregion
-
-    #region Patrol Variables
-
-
-
     #endregion
 
     #region Movement Functions  
     public void MoveEnemy(float speed, Transform p)
     {
-        agent.speed = speed;
-        agent.destination = p.position;
-
+        if (agent != null && p != null)
+        {
+            agent.speed = speed;
+            agent.destination = p.position;
+        }
     }
     #endregion
 
     #region Animation Functions
-
     private void AnimationTriggerEvent(AnimationTriggerType triggerType)
     {
         stateMachine.CurrentEnemyState.AnimationTriggerEvent(triggerType);
     }
-
     #endregion
-
 
     public enum AnimationTriggerType
     {
@@ -90,6 +86,4 @@ public class Enemy : MonoBehaviour, IEnemyMoveable
         chasingPlayer,
         attackPlayer,
     }
-
-
 }

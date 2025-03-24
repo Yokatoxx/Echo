@@ -1,12 +1,11 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.AI;
 
-public interface IEnemyMoveable 
+public interface IEnemyMoveable
 {
-    
     Rigidbody rb { get; set; }
-
-    void MoveEnemy(float speed, Transform targetPos);
-
+    NavMeshAgent agent { get; }
+    void MoveEnemy(float speed, Transform target);
 }
