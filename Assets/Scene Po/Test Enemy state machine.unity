@@ -1028,7 +1028,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   audioBar: {fileID: 923320179}
   sensitivitySlider: {fileID: 996115062}
-  detection: {fileID: 256310693}
+  detection: {fileID: 0}
   minimumSensibility: 20
   maximumSensibility: 100
   currentLoudnessSensibility: 100
@@ -6406,7 +6406,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &256310693
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -12170,9 +12170,14 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1314845524492202743, guid: 4c2c968b8cb85db48bec566cba36256b,
         type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1314845524492202743, guid: 4c2c968b8cb85db48bec566cba36256b,
+        type: 3}
       propertyPath: FillFromMicrohpone
       value: 
-      objectReference: {fileID: 79044535}
+      objectReference: {fileID: 0}
     - target: {fileID: 1853976612517455589, guid: 4c2c968b8cb85db48bec566cba36256b,
         type: 3}
       propertyPath: objectToToggle1
@@ -12182,7 +12187,7 @@ PrefabInstance:
         type: 3}
       propertyPath: FillFromMicrohpone
       value: 
-      objectReference: {fileID: 79044535}
+      objectReference: {fileID: 0}
     - target: {fileID: 5125172565399672821, guid: 4c2c968b8cb85db48bec566cba36256b,
         type: 3}
       propertyPath: m_Name
@@ -18418,7 +18423,7 @@ GameObject:
   - component: {fileID: 540384694}
   m_Layer: 0
   m_Name: 1 (2)
-  m_TagString: Untagged
+  m_TagString: PatrolPoint
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -22815,7 +22820,7 @@ GameObject:
   - component: {fileID: 674135901}
   m_Layer: 0
   m_Name: 1 (3)
-  m_TagString: Untagged
+  m_TagString: PatrolPoint
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -26363,7 +26368,7 @@ RectTransform:
   m_Father: {fileID: 1675562500}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 1}
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 10, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
@@ -26528,7 +26533,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f0fed23eb11ea8642926fd9660fc32e4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  agent: {fileID: 0}
+  patrolRouteObject: {fileID: 1107435587}
   idleTime: 2
   idleTimer: 0
 --- !u!1 &855635354
@@ -66630,7 +66635,7 @@ GameObject:
   - component: {fileID: 1040701930}
   m_Layer: 0
   m_Name: 1 (4)
-  m_TagString: Untagged
+  m_TagString: PatrolPoint
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -67681,6 +67686,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1107435588}
+  - component: {fileID: 1107435589}
   m_Layer: 0
   m_Name: PatrolPoint
   m_TagString: Untagged
@@ -67708,6 +67714,19 @@ Transform:
   - {fileID: 1040701930}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1107435589
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1107435587}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a4c07769565e11b45bbb24015a64355b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  patrolPoints: []
 --- !u!43 &1112276833
 Mesh:
   m_ObjectHideFlags: 0
@@ -75201,7 +75220,7 @@ RectTransform:
   m_Father: {fileID: 930535766}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 1}
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 20, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
@@ -85012,7 +85031,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &1647536601
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -93772,7 +93791,7 @@ GameObject:
   - component: {fileID: 1940842189}
   m_Layer: 0
   m_Name: 1
-  m_TagString: Untagged
+  m_TagString: PatrolPoint
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -93803,7 +93822,7 @@ GameObject:
   - component: {fileID: 1944498633}
   m_Layer: 0
   m_Name: 1 (1)
-  m_TagString: Untagged
+  m_TagString: PatrolPoint
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
