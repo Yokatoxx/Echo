@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class EnemyAttackState : EnemyState
 {
+    private GameObject player;
+
     public EnemyAttackState(Enemy enemy, EnemyStateMachine stateMachine) : base(enemy, stateMachine)
     {
     }
@@ -16,6 +18,8 @@ public class EnemyAttackState : EnemyState
     public override void EnterState()
     {
         base.EnterState();
+
+        player = GameObject.FindGameObjectWithTag("Player");
     }
 
     public override void ExitState()
@@ -26,10 +30,19 @@ public class EnemyAttackState : EnemyState
     public override void FrameUpdate()
     {
         base.FrameUpdate();
+
+        Destroy(player);
+
     }
 
     public override void PhysicsUpdate()
     {
         base.PhysicsUpdate();
     }
+
+    public void Destroy(GameObject GO)
+    {
+        Destroy(GO);
+    }
+
 }

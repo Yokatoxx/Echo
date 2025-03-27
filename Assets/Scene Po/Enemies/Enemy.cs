@@ -43,7 +43,7 @@ public class Enemy : MonoBehaviour, IEnemyMoveable
         rb = GetComponent<Rigidbody>();
         agent = GetComponent<NavMeshAgent>();
 
-        stateMachine.Initialize(patrolState);
+        stateMachine.Initialize(chaseState);
     }
 
     private void Update()
@@ -85,5 +85,13 @@ public class Enemy : MonoBehaviour, IEnemyMoveable
         spotPlayer,
         chasingPlayer,
         attackPlayer,
+    }
+
+    private void OnCollisionEnter(Collision collision)
+    {
+        if (collision.gameObject.CompareTag("Player"))
+        {
+            stateMachine.ChangeState(attackState);
+        }
     }
 }
