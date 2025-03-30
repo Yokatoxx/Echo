@@ -24,7 +24,6 @@ public class SpawnEnemiScanner : MonoBehaviour
             {
                 StartCoroutine(SpawnTerrainScanner());
                 timer = cooldown;
-                Debug.Log("Scanner Spawned");
             }
 
         }
