@@ -1,0 +1,114 @@
+#pragma kernel SampleMesh
+#pragma kernel GeneratePointCloud
+
+// Structure définition correspondant à la structure C#
+struct Vertex {
+    float3 position;
+    float3 normal;
+    float2 uv;
+};
+
+struct PointData {
+    float3 position;
+    float3 color;
+    float size;
+};
+
+// Input mesh data
+RWStructuredBuffer<Vertex> _MeshVertices;
+RWStructuredBuffer<int> _MeshIndices;
+int _VertexCount;
+int _IndexCount;
+
+// Output point cloud
+RWStructuredBuffer<PointData> _Points;
+RWStructuredBuffer<int> _PointCount;
+int _PointCountMax;
+float _PointDensity;
+float _PointSize;
+
+// Transform matrices
+float4x4 _LocalToWorld;
+float4x4 _WorldToLocal;
+
+// Randomization
+float _RandomSeed;
+float _JitterStrength;
+
+float3 GetRandomPointOnTriangle(float3 v0, float3 v1, float3 v2, float r1, float r2) {
+    float sqrtR1 = sqrt(r1);
+    float u = 1.0 - sqrtR1;
+    float v = r1 * (1.0 - r2);
+    float w = 1.0 - u - v;
+    return v0 * u + v1 * v + v2 * w;
+}
+
+float rand(float2 co) {
+    return frac(sin(dot(co, float2(12.9898, 78.233))) * 43758.5453);
+}
+
+[numthreads(64, 1, 1)]
+void SampleMesh(uint3 id : SV_DispatchThreadID) {
+    uint triIndex = id.x;
+    if (triIndex >= (uint)(_IndexCount / 3))
+        return;
+    
+    // Get triangle vertices
+    int i0 = _MeshIndices[triIndex * 3];
+    int i1 = _MeshIndices[triIndex * 3 + 1];
+    int i2 = _MeshIndices[triIndex * 3 + 2];
+    
+    // Vérification de sécurité pour éviter les index hors limites
+    if (i0 >= _VertexCount || i1 >= _VertexCount || i2 >= _VertexCount)
+        return;
+        
+    float3 v0 = _MeshVertices[i0].position;
+    float3 v1 = _MeshVertices[i1].position;
+    float3 v2 = _MeshVertices[i2].position;
+    
+    // Calculate triangle area
+    float3 edge1 = v1 - v0;
+    float3 edge2 = v2 - v0;
+    float3 normal = normalize(cross(edge1, edge2));
+    float area = 0.5 * length(cross(edge1, edge2));
+    
+    // Calculate number of points to generate on this triangle
+    int numPointsToGenerate = max(1, int(area * _PointDensity));
+    
+    // Generate points with atomic counter
+    for (int i = 0; i < numPointsToGenerate; i++) {
+        uint pointIndex;
+        InterlockedAdd(_PointCount[0], 1, pointIndex);
+        
+        if (pointIndex < _PointCountMax) {
+            // Generate random barycentric coordinates
+            float r1 = rand(float2(triIndex, i) + _RandomSeed);
+            float r2 = rand(float2(i, triIndex) + _RandomSeed);
+            
+            // Get point position
+            float3 localPos = GetRandomPointOnTriangle(v0, v1, v2, r1, r2);
+            
+            // Add some jitter
+            float3 jitter = float3(
+                rand(float2(pointIndex, 0) + _RandomSeed) * 2.0 - 1.0,
+                rand(float2(pointIndex, 1) + _RandomSeed) * 2.0 - 1.0,
+                rand(float2(pointIndex, 2) + _RandomSeed) * 2.0 - 1.0
+            ) * _JitterStrength;
+            
+            localPos += jitter * normal;
+            
+            // Transform to world space
+            float3 worldPos = mul(_LocalToWorld, float4(localPos, 1.0)).xyz;
+            
+            // Set point data
+            _Points[pointIndex].position = worldPos;
+            _Points[pointIndex].color = float3(0.5, 0.5, 0.5) + normal * 0.5; // Color based on normal
+            _Points[pointIndex].size = _PointSize;
+        }
+    }
+}
+
+[numthreads(64, 1, 1)]
+void GeneratePointCloud(uint3 id : SV_DispatchThreadID) {
+    // Ce kernel peut être utilisé pour post-traiter le nuage de points si nécessaire
+}

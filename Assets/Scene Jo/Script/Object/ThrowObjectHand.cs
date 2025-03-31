@@ -3,7 +3,7 @@ using UnityEngine.UI;
 
 public class ThrowObjectHand : MonoBehaviour
 {
-    [Header("Références")]
+    [Header("Rï¿½fï¿½rences")]
     public PlayerHandController handController;
     public Camera playerCamera;
     public Stamina staminaSystem;
@@ -11,7 +11,7 @@ public class ThrowObjectHand : MonoBehaviour
     [Header("UI de charge")]
     public Image chargeBar;
 
-    [Header("Paramètres de lancer")]
+    [Header("Paramï¿½tres de lancer")]
     public KeyCode throwKey = KeyCode.Mouse0;
     public float minThrowForce = 5f;
     public float maxThrowForce = 20f;
@@ -73,7 +73,7 @@ public class ThrowObjectHand : MonoBehaviour
             float previousCharge = currentChargeAmount;
             currentChargeAmount = Mathf.Clamp01(holdTime / chargeTime);
 
-            // Drainer la stamina proportionnellement à l'augmentation de la charge
+            // Drainer la stamina proportionnellement ï¿½ l'augmentation de la charge
             if (staminaSystem != null)
             {
                 float chargeIncrease = currentChargeAmount - previousCharge;

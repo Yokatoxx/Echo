@@ -23,7 +23,7 @@ public class MicrophoneSelector : MonoBehaviour
 
         foreach (var microphone in Microphone.devices)
         {
-            TMP_Dropdown.OptionData optionData = new TMP_Dropdown.OptionData(microphone, null);
+            TMP_Dropdown.OptionData optionData = new TMP_Dropdown.OptionData(microphone);
 
             options.Add(optionData);
         }

@@ -1,0 +1,21 @@
+#pragma kernel CSMain
+
+RWStructuredBuffer<float3> Positions;
+StructuredBuffer<float3> Vertices;
+float4x4 _ObjectToWorld;
+int _VertexCount;
+int _PointCount;
+
+[numthreads(64, 1, 1)]
+void CSMain(uint3 id : SV_DispatchThreadID)
+{
+    if (id.x >= _PointCount)
+        return;
+    
+    // Sélectionne un vertex aléatoire
+    uint vertexIndex = id.x % _VertexCount;
+    float3 vertexPos = Vertices[vertexIndex];
+    
+    // Conversion en world space
+    Positions[id.x] = mul(_ObjectToWorld, float4(vertexPos, 1.0)).xyz;
+}

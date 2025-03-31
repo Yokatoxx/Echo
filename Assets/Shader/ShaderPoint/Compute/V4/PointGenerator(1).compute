@@ -1,0 +1,86 @@
+#pragma kernel GeneratePoints
+
+// Structures
+struct Triangle {
+    float3 pos0;
+    float3 pos1;
+    float3 pos2;
+    float3 normal0;
+    float3 normal1;
+    float3 normal2;
+    float2 uv0;
+    float2 uv1;
+    float2 uv2;
+};
+
+struct PointData {
+    float3 position;
+    float3 normal;
+    float2 uv;
+    float depth;
+};
+
+// Buffers
+StructuredBuffer<Triangle> _Triangles;
+RWStructuredBuffer<PointData> _Points;
+RWStructuredBuffer<uint> _PointCount;
+
+// Parameters
+float _PointDensity;
+float3 _CameraPosition;
+
+// Random function
+float random(float2 st) {
+    return frac(sin(dot(st, float2(12.9898, 78.233))) * 43758.5453123);
+}
+
+[numthreads(64,1,1)]
+void GeneratePoints(uint3 id : SV_DispatchThreadID) {
+    uint triangleCount;
+    uint stride;
+    _Triangles.GetDimensions(triangleCount, stride);
+    
+    if (id.x >= triangleCount) return;
+    
+    Triangle tri = _Triangles[id.x];
+    
+    // Calculate triangle area
+    float3 edge1 = tri.pos1 - tri.pos0;
+    float3 edge2 = tri.pos2 - tri.pos0;
+    float area = length(cross(edge1, edge2)) * 0.5;
+    
+    // Calculate number of points based on area
+    int points = clamp(int(area * _PointDensity * 200), 1, 20);
+    
+    // Reserve points in output buffer
+    uint pointIndex;
+    InterlockedAdd(_PointCount[0], points, pointIndex);
+    
+    // Generate points
+    for (int i = 0; i < points; i++) {
+        // Generate random barycentric coordinates
+        float r1 = random(float2(id.x * 100 + i, area * 1000));
+        float r2 = random(float2(id.x * 100 + i + 1, area * 2000));
+        
+        // Transform for uniform distribution
+        float sqrtR1 = sqrt(r1);
+        float u = 1.0 - sqrtR1;
+        float v = r2 * sqrtR1;
+        float w = 1.0 - u - v;
+        
+        // Interpolate attributes using barycentric coordinates
+        float3 pos = tri.pos0 * u + tri.pos1 * v + tri.pos2 * w;
+        float3 normal = normalize(tri.normal0 * u + tri.normal1 * v + tri.normal2 * w);
+        float2 uv = tri.uv0 * u + tri.uv1 * v + tri.uv2 * w;
+        
+        // Calculate depth (distance from origin for simplicity)
+        float depth = length(pos - _CameraPosition);
+        
+        // Write to output buffer
+        uint idx = pointIndex + i;
+        _Points[idx].position = pos;
+        _Points[idx].normal = normal;
+        _Points[idx].uv = uv;
+        _Points[idx].depth = depth;
+    }
+}

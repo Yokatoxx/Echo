@@ -1,0 +1,15 @@
+#pragma kernel CSMain
+
+RWStructuredBuffer<float4> _PositionBuffer;
+float _Time;
+
+[numthreads(64, 1, 1)]
+void CSMain(uint3 id : SV_DispatchThreadID)
+{
+    // Rien à faire ici, on garde juste les positions telles quelles
+    // Décommentez ces lignes si vous voulez ajouter une animation simple
+    
+    // float4 pos = _PositionBuffer[id.x];
+    // pos.y += sin(_Time * 0.5 + pos.x * 3.0) * 0.01;
+    // _PositionBuffer[id.x] = pos;
+}

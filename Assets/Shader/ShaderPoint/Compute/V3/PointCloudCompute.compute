@@ -1,0 +1,57 @@
+#pragma kernel GeneratePointCloud
+
+struct Vertex
+{
+    float3 position;
+    float3 normal;
+    float2 uv;
+};
+
+struct CloudPointData
+{ // Renommé de "PointData" à "CloudPointData"
+    float3 position;
+    float3 color;
+    float size;
+};
+
+// Buffers d'entrée
+StructuredBuffer<float3> _Vertices;
+StructuredBuffer<float3> _Normals;
+StructuredBuffer<float2> _UVs;
+StructuredBuffer<int> _Indices;
+
+// Buffer de sortie
+RWStructuredBuffer<CloudPointData> _Points;
+
+// Paramètres
+float4x4 _LocalToWorldMatrix;
+float _PointSize;
+float _SamplingRate;
+float4 _PointColor;
+uint _VertexCount;
+uint _IndexCount;
+
+[numthreads(64, 1, 1)]
+void GeneratePointCloud(uint3 id : SV_DispatchThreadID)
+{
+    uint vertexIndex = id.x;
+    if (vertexIndex >= _VertexCount)
+        return;
+        
+    // Option: Échantillonnage des vertices
+    if (_SamplingRate > 1.0 && fmod(vertexIndex, _SamplingRate) > 0)
+        return;
+        
+    // Récupérer les données du vertex
+    float3 position = _Vertices[vertexIndex];
+    float3 normal = _Normals[vertexIndex];
+    
+    // Créer un élément du nuage de points
+    CloudPointData cloudData;
+    cloudData.position = mul(_LocalToWorldMatrix, float4(position, 1.0)).xyz;
+    cloudData.color = _PointColor.rgb;
+    cloudData.size = _PointSize;
+    
+    // Écrire dans le buffer de sortie
+    _Points[vertexIndex] = cloudData;
+}
