@@ -16,7 +16,7 @@ GameObject:
   - component: {fileID: 63655391299476507}
   m_Layer: 0
   m_Name: SphereScannerMonster
-  m_TagString: Untagged
+  m_TagString: Scanner
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
