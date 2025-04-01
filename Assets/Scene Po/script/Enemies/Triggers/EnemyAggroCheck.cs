@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEngine;
 
 public class EnemyAggroCheck : MonoBehaviour
@@ -21,6 +22,13 @@ public class EnemyAggroCheck : MonoBehaviour
         {
             enemy.SetAggroStatus(true);
         }
+
+        if (other.gameObject.CompareTag("Colletible") && !other.gameObject.GetComponent<InPlace>().isInPlace)
+        {
+            
+            enemy.SetPickUpDistanceBool(true);
+            
+        }
     }
 
     private void OnTriggerExit(Collider other)
@@ -28,6 +36,11 @@ public class EnemyAggroCheck : MonoBehaviour
         if (other.gameObject == playerTarget)
         {
             enemy.SetAggroStatus(false);
+        }
+
+        if (other.gameObject.CompareTag("Colletible"))
+        {
+            enemy.SetPickUpDistanceBool(false);
         }
     }
 
