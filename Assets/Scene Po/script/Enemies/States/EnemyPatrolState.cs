@@ -51,6 +51,11 @@ public class EnemyPatrolState : EnemyState
             enemy.stateMachine.ChangeState(enemy.chaseState);
         }
 
+        if (enemy.IsWithinPickUpDistance)
+        {
+            enemy.stateMachine.ChangeState(enemy.pickUpState);
+        }
+
 
         if (enemy.agent.remainingDistance < 0.5f && !enemy.agent.pathPending)
         {

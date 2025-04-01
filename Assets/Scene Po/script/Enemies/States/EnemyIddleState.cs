@@ -45,6 +45,11 @@ public class EnemyIddleState : EnemyState
             enemy.stateMachine.ChangeState(enemy.patrolState);
         }
 
+        if (enemy.IsWithinPickUpDistance)
+        {
+            enemy.stateMachine.ChangeState(enemy.pickUpState);
+        }
+
     }
 
     public override void PhysicsUpdate()

@@ -94,10 +94,15 @@ public class PlayerHandController : MonoBehaviour
     private void HandleInputs()
     {
         if (Input.GetKeyDown(pickupRightKey) && rightHeldObject == null)
+        { 
             TryPickupObject(rightHandPosition, ref rightHeldObject);
 
+        }
+
         if (Input.GetKeyDown(pickupLeftKey) && leftHeldObject == null)
+        {
             TryPickupObject(leftHandPosition, ref leftHeldObject);
+        }
 
         if (rightHeldObject != null && Input.GetKeyDown(dropRightKey))
         {
