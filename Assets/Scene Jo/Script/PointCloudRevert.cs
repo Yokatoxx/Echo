@@ -1,65 +1,64 @@
 using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class PointCloudRevert : MonoBehaviour
 {
-    SkinnedMeshRenderer skinnedMeshRenderer;
-    Mesh mesh;
+    [SerializeField] private int blendShapeIndex = 0;
+    [SerializeField] private float blendShapeValueTarget = 100f;
+    [SerializeField] private float restingValue = 0f;
+    [SerializeField] private float lerpSpeed = 5f;
+    [SerializeField] private float returnDelay = 3f;
 
-    private string blendShapeName = "murs.001";
-
-    public float blendShapeValueTarget = 0f;
-    public float initialBlendShapeValue = 0f;
-
-    [SerializeField]
-    private float lerpSpeed = 5f;
-
-    [SerializeField]
-    private float returnDelay = 3f;
-
+    private SkinnedMeshRenderer skinnedMeshRenderer;
     private bool isTransitioning = false;
-    private float startValue;
+    private float currentBlendValue;
     private float targetValue;
     private Coroutine returnCoroutine;
+    private bool isIndexValid = false;
 
-    void Awake()
+    private void Awake()
     {
         skinnedMeshRenderer = GetComponent<SkinnedMeshRenderer>();
-        mesh = skinnedMeshRenderer.sharedMesh;
+
+        isIndexValid = skinnedMeshRenderer.sharedMesh != null &&
+                       blendShapeIndex >= 0 &&
+                       blendShapeIndex < skinnedMeshRenderer.sharedMesh.blendShapeCount;
     }
 
     private void Start()
     {
-        ActivateBlendShape();
+        currentBlendValue = restingValue;
+
+        if (isIndexValid)
+        {
+            skinnedMeshRenderer.SetBlendShapeWeight(blendShapeIndex, currentBlendValue);
+        }
     }
 
     private void Update()
     {
-        if (isTransitioning)
+        if (isTransitioning && isIndexValid)
         {
-            initialBlendShapeValue = Mathf.Lerp(initialBlendShapeValue, targetValue, Time.deltaTime * lerpSpeed);
+            currentBlendValue = Mathf.Lerp(currentBlendValue, targetValue, Time.deltaTime * lerpSpeed);
+            skinnedMeshRenderer.SetBlendShapeWeight(blendShapeIndex, currentBlendValue);
 
-            if (Mathf.Abs(initialBlendShapeValue - targetValue) < 0.01f)
+            if (Mathf.Abs(currentBlendValue - targetValue) < 0.01f)
             {
-                initialBlendShapeValue = targetValue;
+                currentBlendValue = targetValue;
                 isTransitioning = false;
             }
         }
-
-        ActivateBlendShape();
     }
 
     private void OnTriggerEnter(Collider other)
     {
-        if (other.CompareTag("Scanner"))
+        if (other.CompareTag("Scanner") && isIndexValid)
         {
             if (returnCoroutine != null)
             {
                 StopCoroutine(returnCoroutine);
             }
 
-            startValue = initialBlendShapeValue;
             targetValue = blendShapeValueTarget;
             isTransitioning = true;
             returnCoroutine = StartCoroutine(ReturnToInitialValueAfterDelay());
@@ -69,20 +68,7 @@ public class PointCloudRevert : MonoBehaviour
     private IEnumerator ReturnToInitialValueAfterDelay()
     {
         yield return new WaitForSeconds(returnDelay);
-
-        startValue = initialBlendShapeValue;
-        targetValue = initialBlendShapeValue;
+        targetValue = restingValue;
         isTransitioning = true;
-
-    }
-
-    private void ActivateBlendShape()
-    {
-        var index = skinnedMeshRenderer.sharedMesh.GetBlendShapeIndex(blendShapeName);
-
-        if (index != -1)
-        {
-            skinnedMeshRenderer.SetBlendShapeWeight(index, initialBlendShapeValue);
-        }
     }
 }
