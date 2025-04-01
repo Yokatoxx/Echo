@@ -14,6 +14,7 @@ public class Enemy : MonoBehaviour, IEnemyMoveable, ItriggerCheckable
 
     public bool IsAggroed { get; set; }
     public bool IsWithinAttackDistance { get; set; }
+    public bool IsWithinPickUpDistance { get; set; }
 
     #region State Machine Variables
     public EnemyStateMachine stateMachine { get; set; }
@@ -21,9 +22,10 @@ public class Enemy : MonoBehaviour, IEnemyMoveable, ItriggerCheckable
     public EnemyIddleState iddleState { get; set; }
     public EnemyChaseState chaseState { get; set; }
     public EnemyAttackState attackState { get; set; }
-
     public EnemyPatrolState patrolState { get; set; }
-    
+    public EnemyPickUpState pickUpState { get; set; }
+
+
     #endregion
 
     private void Awake()
@@ -34,6 +36,7 @@ public class Enemy : MonoBehaviour, IEnemyMoveable, ItriggerCheckable
         chaseState = new EnemyChaseState(this, stateMachine);
         attackState = new EnemyAttackState(this, stateMachine);
         patrolState = new EnemyPatrolState(this, stateMachine);
+        pickUpState = new EnemyPickUpState(this, stateMachine);
 
         //passer la référence du PatrolRoute à l'état de patrouille
         if (patrolState is EnemyPatrolState enemyPatrolState)
@@ -97,6 +100,11 @@ public class Enemy : MonoBehaviour, IEnemyMoveable, ItriggerCheckable
     private void AnimationTriggerEvent(AnimationTriggerType triggerType)
     {
         stateMachine.CurrentEnemyState.AnimationTriggerEvent(triggerType);
+    }
+
+    public void SetPickUpDistanceBool(bool isWithinPickUpDistance)
+    {
+        IsWithinPickUpDistance = isWithinPickUpDistance;
     }
     #endregion
 

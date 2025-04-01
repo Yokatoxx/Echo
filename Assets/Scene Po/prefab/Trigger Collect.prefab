@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 6887666539668912648}
   - component: {fileID: 5732197329339055847}
   - component: {fileID: 5590828922150613384}
-  - component: {fileID: 3006476671392034828}
+  - component: {fileID: 7071551141139903837}
   m_Layer: 0
   m_Name: Objects Collected
   m_TagString: Untagged
@@ -172,7 +172,7 @@ MonoBehaviour:
   m_hasFontAssetChanged: 0
   m_renderer: {fileID: 5732197329339055847}
   m_maskType: 0
---- !u!114 &3006476671392034828
+--- !u!114 &7071551141139903837
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -181,7 +181,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 7530712744778995823}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a68d963a0d09867419ae6ef133922631, type: 3}
+  m_Script: {fileID: 11500000, guid: 7aeaa3e952f198f4da4395cf0dc02566, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1 &7697853487045057160
@@ -196,7 +196,7 @@ GameObject:
   - component: {fileID: 6324959164719202931}
   - component: {fileID: 58177859365321769}
   - component: {fileID: 1171743857117902261}
-  - component: {fileID: 466798457998323755}
+  - component: {fileID: 1343149365429074724}
   m_Layer: 0
   m_Name: Trigger Collect
   m_TagString: Untagged
@@ -248,7 +248,7 @@ MeshRenderer:
   m_RenderingLayerMask: 257
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 6bbb29626b0f9fc449a535841f4117dc, type: 2}
+  - {fileID: 2100000, guid: e08cbf7b52f63ec4ea81495a8d95be4c, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -291,7 +291,7 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
---- !u!114 &466798457998323755
+--- !u!114 &1343149365429074724
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -300,7 +300,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 7697853487045057160}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: dd8d6f95f872d6647a7b032638a4d21e, type: 3}
+  m_Script: {fileID: 11500000, guid: 6caeb2186aef09243a68cd5de747fa77, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   collectibles: []

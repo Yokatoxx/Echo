@@ -8,6 +8,10 @@ public interface ItriggerCheckable
 
     bool IsWithinAttackDistance { get; set; }
 
+    bool IsWithinPickUpDistance { get; set; }
+
     void SetAggroStatus(bool isAggroed);
     void SetAttackDistanceBool(bool isWithinAttackDistance);
+
+    void SetPickUpDistanceBool(bool isWithinPickUpDistance);
 }
