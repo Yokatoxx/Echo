@@ -8,7 +8,7 @@ Material:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: New Material
-  m_Shader: {fileID: 4800000, guid: 06673eee4286d5041bf41d6c3ac6e20e, type: 3}
+  m_Shader: {fileID: 4800000, guid: af6c640ed6672ef47bfe585842e7db77, type: 3}
   m_Parent: {fileID: 0}
   m_ModifiedSerializedProperties: 0
   m_ValidKeywords: []
@@ -65,11 +65,17 @@ Material:
     - _Cutoff: 0.5
     - _DetailNormalMapScale: 1
     - _DstBlend: 0
+    - _EdgeSharpness: 16.7
     - _GlossMapScale: 1
     - _Glossiness: 0.5
     - _GlossyReflections: 1
+    - _GlowIntensity: 2
+    - _GlowThreshold: 0.05
+    - _IntersectionPower: 9.03
+    - _IntersectionThreshold: 1
     - _Metallic: 0
     - _Mode: 0
+    - _NoiseScale: 1
     - _OcclusionStrength: 1
     - _Parallax: 0.02
     - _SmoothnessTextureChannel: 0
@@ -77,8 +83,10 @@ Material:
     - _SrcBlend: 1
     - _UVSec: 0
     - _ZWrite: 1
-    - __dirty: 0
     m_Colors:
     - _Color: {r: 1, g: 1, b: 1, a: 1}
     - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
+    - _GlowColor: {r: 1, g: 0, b: 0, a: 1}
+    - _IntersectionColor: {r: 0, g: 0.02520442, b: 1, a: 1}
+    - _MainColor: {r: 1, g: 0.21165988, b: 0, a: 0.5}
   m_BuildTextureStacks: []
