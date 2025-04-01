@@ -1052,15 +1052,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6261291541408335535, guid: 4c2c968b8cb85db48bec566cba36256b, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 2.111637
+      value: -4.4
       objectReference: {fileID: 0}
     - target: {fileID: 6261291541408335535, guid: 4c2c968b8cb85db48bec566cba36256b, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -10.531013
+      value: 0.59
       objectReference: {fileID: 0}
     - target: {fileID: 6261291541408335535, guid: 4c2c968b8cb85db48bec566cba36256b, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -37.779175
+      value: 13.26
       objectReference: {fileID: 0}
     - target: {fileID: 6261291541408335535, guid: 4c2c968b8cb85db48bec566cba36256b, type: 3}
       propertyPath: m_LocalRotation.w
@@ -1094,6 +1094,14 @@ PrefabInstance:
       propertyPath: m_ConstrainProportionsScale
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 6651097256068540131, guid: 4c2c968b8cb85db48bec566cba36256b, type: 3}
+      propertyPath: m_TagString
+      value: MainCamera
+      objectReference: {fileID: 0}
+    - target: {fileID: 6926581840809031743, guid: 4c2c968b8cb85db48bec566cba36256b, type: 3}
+      propertyPath: playerCamera
+      value: 
+      objectReference: {fileID: 4333818056368125457}
     - target: {fileID: 7203089856364174926, guid: 4c2c968b8cb85db48bec566cba36256b, type: 3}
       propertyPath: m_Enabled
       value: 1
@@ -1187,6 +1195,11 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 6261291541408335535, guid: 4c2c968b8cb85db48bec566cba36256b, type: 3}
   m_PrefabInstance: {fileID: 6717241907586452155}
   m_PrefabAsset: {fileID: 0}
+--- !u!20 &882519601265850892 stripped
+Camera:
+  m_CorrespondingSourceObject: {fileID: 5838698157571829943, guid: 4c2c968b8cb85db48bec566cba36256b, type: 3}
+  m_PrefabInstance: {fileID: 6717241907586452155}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1880299744685153614 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 5125172565399672821, guid: 4c2c968b8cb85db48bec566cba36256b, type: 3}
@@ -1275,7 +1288,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   handController: {fileID: 2147903839162851062}
-  playerCamera: {fileID: 0}
+  playerCamera: {fileID: 882519601265850892}
   staminaSystem: {fileID: 884023607132057387}
   chargeBar: {fileID: 1393561616923391562}
   throwKey: 323
@@ -1311,3 +1324,8 @@ MonoBehaviour:
   requireStaminaToCharge: 1
   minForceColor: {r: 0, g: 1, b: 0, a: 1}
   maxForceColor: {r: 1, g: 0, b: 0, a: 1}
+--- !u!4 &4333818056368125457 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 6997678354676595882, guid: 4c2c968b8cb85db48bec566cba36256b, type: 3}
+  m_PrefabInstance: {fileID: 6717241907586452155}
+  m_PrefabAsset: {fileID: 0}
