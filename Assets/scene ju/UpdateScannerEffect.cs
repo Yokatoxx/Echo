@@ -1,6 +1,5 @@
 using UnityEngine;
 using UnityEngine.Rendering;
-using UnityEngine.Rendering.HighDefinition;
 using System.Collections.Generic;
 
 public class UpdateScannerEffect : MonoBehaviour
