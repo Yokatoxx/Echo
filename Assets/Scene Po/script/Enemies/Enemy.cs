@@ -79,6 +79,10 @@ public class Enemy : MonoBehaviour, IEnemyMoveable, ItriggerCheckable
     }
     #endregion
 
+    #region PickUp Variables
+    public Transform pickUpPos;
+    #endregion
+
 
     #region Distance Checks
 

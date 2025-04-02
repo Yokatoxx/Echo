@@ -23,7 +23,7 @@ public class EnemyAggroCheck : MonoBehaviour
             enemy.SetAggroStatus(true);
         }
 
-        if (other.gameObject.CompareTag("Colletible") && !other.gameObject.GetComponent<InPlace>().isInPlace)
+        if (other.gameObject.CompareTag("Collectible") && !other.gameObject.GetComponent<InPlace>().isInPlace)
         {
             
             enemy.SetPickUpDistanceBool(true);
@@ -38,7 +38,7 @@ public class EnemyAggroCheck : MonoBehaviour
             enemy.SetAggroStatus(false);
         }
 
-        if (other.gameObject.CompareTag("Colletible"))
+        if (other.gameObject.CompareTag("Collectible"))
         {
             enemy.SetPickUpDistanceBool(false);
         }

@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class EnemyIddleState : EnemyState
 {
-    public float timeTillExit = 3f;
+    public float timeTillExit = 1.5f;
     private float exitTimer;
 
     public EnemyIddleState(Enemy enemy, EnemyStateMachine stateMachine) : base(enemy, stateMachine)

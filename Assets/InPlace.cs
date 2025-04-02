@@ -5,20 +5,23 @@ using UnityEngine;
 public class InPlace : MonoBehaviour
 {
     public bool isInPlace = true;
-    public Vector3 originalPosition;
+    public Transform originalPosition;
 
-    public bool GetInPlace()
+    private void Start()
     {
-        return isInPlace;
+        originalPosition = transform.parent.transform;
+
     }
 
-    public void SetIsInPlace(bool value)
+    private void Update()
     {
-        isInPlace = value;
-    }
-
-    private void Awake()
-    {
-        originalPosition = transform.position;
+        if (transform.position == originalPosition.position)
+        {
+            isInPlace = true;
+        }
+        else
+        {
+            isInPlace = false;
+        }
     }
 }
