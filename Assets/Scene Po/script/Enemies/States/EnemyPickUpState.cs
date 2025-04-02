@@ -18,9 +18,6 @@ public class EnemyPickUpState : EnemyState
 
     public EnemyPickUpState(Enemy enemy, EnemyStateMachine stateMachine) : base(enemy, stateMachine)
     {
-
-        collectiblesToPickUp = enemy.GetComponent<TriggerCollect>().collectibles;
-
         pickUpPos = enemy.pickUpPos;
 
     }
@@ -28,6 +25,8 @@ public class EnemyPickUpState : EnemyState
     public override void EnterState()
     {
         base.EnterState();
+
+        collectiblesToPickUp = enemy.GetComponent<TriggerCollect>().collectibles;
 
         closestCollectible = collectiblesToPickUp[FindClosestCollectible()];
         originalPickUpPos = closestCollectible.GetComponent<InPlace>().originalPosition;
@@ -52,16 +51,32 @@ public class EnemyPickUpState : EnemyState
 
         if (enemy.agent.remainingDistance <= 1f)
         {
-            PickUp();
+            
+            isPickedUp = true;
+
             Debug.Log("Picking up");
 
+            
+
         }
 
-        if (isPickedUp && enemy.agent.remainingDistance <= 1f)
+        if (isPickedUp)
         {
-            PutDown();
-            Debug.Log("Putting down");
+            closestCollectible.transform.position = pickUpPos.position;
+
+            enemy.MoveEnemy(speed, originalPickUpPos);
+
+            if (enemy.agent.remainingDistance <= 1f)
+            {
+                PutDown();
+                Debug.Log("Putting down");
+            }
         }
+        
+
+
+
+
     }
 
     private int FindClosestCollectible()
@@ -79,16 +94,6 @@ public class EnemyPickUpState : EnemyState
         }
 
         return closestCollectibleId;
-    }
-
-    private void PickUp()
-    {
-
-        closestCollectible.transform.position = pickUpPos.position;
-
-        isPickedUp = true;
-
-        enemy.MoveEnemy(speed, originalPickUpPos);
     }
 
     private void PutDown()
