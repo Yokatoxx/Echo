@@ -23,5 +23,9 @@ public class InPlace : MonoBehaviour
         {
             isInPlace = false;
         }
+
+
+        //isInPlace = (transform.position == originalPosition.position);
+
     }
 }

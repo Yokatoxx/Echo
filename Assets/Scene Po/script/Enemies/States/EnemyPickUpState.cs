@@ -48,23 +48,22 @@ public class EnemyPickUpState : EnemyState
     public override void PhysicsUpdate()
     {
         base.PhysicsUpdate();
-
+        Debug.Log(enemy.agent.remainingDistance);
         if (enemy.agent.remainingDistance <= 1f)
         {
-            
-            isPickedUp = true;
 
+            isPickedUp = true;
             Debug.Log("Picking up");
 
-            
+            enemy.MoveEnemy(speed, originalPickUpPos);
+
 
         }
 
-        if (isPickedUp)
+        else if (isPickedUp)
         {
             closestCollectible.transform.position = pickUpPos.position;
 
-            enemy.MoveEnemy(speed, originalPickUpPos);
 
             if (enemy.agent.remainingDistance <= 1f)
             {
@@ -72,7 +71,7 @@ public class EnemyPickUpState : EnemyState
                 Debug.Log("Putting down");
             }
         }
-        
+
 
 
 
@@ -101,6 +100,7 @@ public class EnemyPickUpState : EnemyState
         closestCollectible.transform.position = originalPickUpPos.position;
         isPickedUp = false;
         enemy.stateMachine.ChangeState(enemy.iddleState);
+
 
     }
 }

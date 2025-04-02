@@ -74,7 +74,7 @@ public class Enemy : MonoBehaviour, IEnemyMoveable, ItriggerCheckable
         if (agent != null && p != null)
         {
             agent.speed = speed;
-            agent.destination = p.position;
+            agent.SetDestination(p.position);
         }
     }
     #endregion
