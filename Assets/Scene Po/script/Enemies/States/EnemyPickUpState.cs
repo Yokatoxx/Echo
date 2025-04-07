@@ -26,17 +26,22 @@ public class EnemyPickUpState : EnemyState
     {
         base.EnterState();
 
+        isPickedUp = false;
+
         collectiblesToPickUp = enemy.GetComponent<TriggerCollect>().collectibles;
 
         closestCollectible = collectiblesToPickUp[FindClosestCollectible()];
         originalPickUpPos = closestCollectible.GetComponent<InPlace>().originalPosition;
 
         enemy.MoveEnemy(speed, closestCollectible.transform);
+
     }
 
     public override void ExitState()
     {
         base.ExitState();
+
+        enemy.IsWithinPickUpDistance = false;
     }
 
     public override void FrameUpdate()
@@ -48,8 +53,8 @@ public class EnemyPickUpState : EnemyState
     public override void PhysicsUpdate()
     {
         base.PhysicsUpdate();
-        Debug.Log(enemy.agent.remainingDistance);
-        if (enemy.agent.remainingDistance <= 1f)
+
+        if (!isPickedUp && enemy.agent.remainingDistance <= 1f)
         {
 
             isPickedUp = true;
@@ -65,10 +70,15 @@ public class EnemyPickUpState : EnemyState
             closestCollectible.transform.position = pickUpPos.position;
 
 
-            if (enemy.agent.remainingDistance <= 1f)
+            if (enemy.agent.remainingDistance <= 2f)
             {
-                PutDown();
                 Debug.Log("Putting down");
+
+                enemy.MoveEnemy(speed, enemy.transform);
+
+                closestCollectible.transform.position = originalPickUpPos.position;
+                closestCollectible.GetComponent<InPlace>().isInPlace = true;
+                enemy.stateMachine.ChangeState(enemy.iddleState);
             }
         }
 
@@ -99,6 +109,7 @@ public class EnemyPickUpState : EnemyState
     {
         closestCollectible.transform.position = originalPickUpPos.position;
         isPickedUp = false;
+        closestCollectible.GetComponent<InPlace>().isInPlace = true;
         enemy.stateMachine.ChangeState(enemy.iddleState);
 
 
