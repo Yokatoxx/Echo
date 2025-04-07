@@ -12,7 +12,7 @@ public class ChargeableEchoScanner : MonoBehaviour
     public float maxDuration = 4f;
     public float propagationSpeed = 15f;
     public float fadeOutSpeed = 1.5f;
-    public Color echoColor = new Color(0.0f, 0.5f, 1.0f, 0.5f);
+   //public Color echoColor = new Color(0.0f, 0.5f, 1.0f, 0.5f);
     public float maxChargeTime = 2f;
 
     public Image chargeIndicatorFill;
@@ -70,7 +70,7 @@ public class ChargeableEchoScanner : MonoBehaviour
         GameObject echoSphere = Instantiate(EcholocationSpherePrefab, spawnPosition, Quaternion.identity);
         if (echoSphere.GetComponent<Renderer>() != null)
         {
-            echoSphere.GetComponent<Renderer>().material.color = echoColor;
+            //echoSphere.GetComponent<Renderer>().material.color = echoColor;
         }
 
         StartCoroutine(AnimateEchoSphere(echoSphere, chargeRatio));
@@ -81,7 +81,7 @@ public class ChargeableEchoScanner : MonoBehaviour
     IEnumerator AnimateEchoSphere(GameObject echoSphere, float chargeRatio)
     {
         float elapsedTime = 0f;
-        float initialAlpha = echoColor.a;
+        //float initialAlpha = echoColor.a;
         Material material = echoSphere.GetComponent<Renderer>().material;
 
         float targetRadius = Mathf.Lerp(minRadius, maxRadius, chargeRatio);
@@ -93,8 +93,8 @@ public class ChargeableEchoScanner : MonoBehaviour
             echoSphere.transform.localScale = new Vector3(currentRadius, currentRadius, currentRadius);
 
             Color currentColor = material.color;
-            float newAlpha = Mathf.Lerp(initialAlpha, 0, fadeOutSpeed * elapsedTime / effectDuration);
-            material.color = new Color(currentColor.r, currentColor.g, currentColor.b, newAlpha);
+            //float newAlpha = Mathf.Lerp(initialAlpha, 0, fadeOutSpeed * elapsedTime / effectDuration);
+           // material.color = new Color(currentColor.r, currentColor.g, currentColor.b, newAlpha);
 
             elapsedTime += Time.deltaTime;
             yield return null;
