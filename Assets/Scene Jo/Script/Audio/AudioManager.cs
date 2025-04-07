@@ -53,6 +53,13 @@ public class AudioManager : MonoBehaviour
         if (Instance == null)
         {
             Instance = this;
+
+            // Si le gameObject n'est pas un objet racine, on le détache de son parent
+            if (transform.parent != null)
+            {
+                transform.SetParent(null);
+            }
+
             DontDestroyOnLoad(gameObject);
         }
         else

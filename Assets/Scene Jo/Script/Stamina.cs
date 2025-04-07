@@ -21,9 +21,11 @@ public class Stamina : MonoBehaviour
     void Start()
     {
         currentStamina = maxStamina;
-        UpdateStaminaUI();
+        if (staminaBar != null)
+            staminaBar.enabled = true;
         if (cooldownBlinkImage != null)
-            cooldownBlinkImage.enabled = false;
+            cooldownBlinkImage.enabled = true;  // L'image est toujours visible
+        UpdateStaminaUI();
     }
 
     void Update()
@@ -36,7 +38,7 @@ public class Stamina : MonoBehaviour
             {
                 isBlinkVisible = !isBlinkVisible;
                 if (cooldownBlinkImage != null)
-                    cooldownBlinkImage.enabled = isBlinkVisible;
+                    cooldownBlinkImage.enabled = isBlinkVisible;  // Clignotement pendant le cooldown
                 blinkTimer = blinkInterval;
             }
 
@@ -44,7 +46,7 @@ public class Stamina : MonoBehaviour
             {
                 isOnCooldown = false;
                 if (cooldownBlinkImage != null)
-                    cooldownBlinkImage.enabled = false;
+                    cooldownBlinkImage.enabled = true;  // Reste visible quand le cooldown est terminé
             }
         }
         else
@@ -54,7 +56,7 @@ public class Stamina : MonoBehaviour
                 RegenerateStamina();
             }
             if (cooldownBlinkImage != null)
-                cooldownBlinkImage.enabled = false;
+                cooldownBlinkImage.enabled = true;  // Reste visible quand pas en cooldown
         }
     }
 

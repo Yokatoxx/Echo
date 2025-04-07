@@ -5,6 +5,8 @@ public class PointCloudRevert : MonoBehaviour
 {
     [SerializeField] private int blendShapeIndex = 0;
     [SerializeField] private float blendShapeValueTarget = 100f;
+    [SerializeField] private bool isProgressive = false;
+    [SerializeField] private float progressiveIncrement = 10f;
     [SerializeField] private float restingValue = 0f;
     [SerializeField] private float lerpSpeed = 5f;
     [SerializeField] private float returnDelay = 3f;
@@ -59,7 +61,15 @@ public class PointCloudRevert : MonoBehaviour
                 StopCoroutine(returnCoroutine);
             }
 
-            targetValue = blendShapeValueTarget;
+            if (isProgressive)
+            {
+                targetValue = Mathf.Clamp(currentBlendValue + progressiveIncrement, 0f, 100f);
+            }
+            else
+            {
+                targetValue = Mathf.Min(blendShapeValueTarget, 100f);
+            }
+
             isTransitioning = true;
             returnCoroutine = StartCoroutine(ReturnToInitialValueAfterDelay());
         }
