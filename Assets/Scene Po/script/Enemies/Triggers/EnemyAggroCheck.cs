@@ -23,18 +23,18 @@ public class EnemyAggroCheck : MonoBehaviour
             enemy.SetAggroStatus(true);
         }
 
-        if (other.gameObject.CompareTag("Collectible") && !other.gameObject.GetComponent<InPlace>().isInPlace)
-        {
-            
-            enemy.SetPickUpDistanceBool(true);
-
-        }
-        
         if (other.gameObject.CompareTag("Collectible") && other.gameObject.GetComponent<InPlace>().isInPlace)
         {
             enemy.SetPickUpDistanceBool(false);
         }
 
+
+        if (other.gameObject.CompareTag("Collectible") && !other.gameObject.GetComponent<InPlace>().isInPlace)
+        {
+
+            enemy.SetPickUpDistanceBool(true);
+
+        }
 
 
     }
@@ -48,13 +48,23 @@ public class EnemyAggroCheck : MonoBehaviour
 
     }
 
-    private void OnCollisionStay(Collision collision)
+    private void OnTriggerStay(Collider other)
     {
 
-        if (collision.gameObject.CompareTag("Collectible") && collision.gameObject.GetComponent<InPlace>().isInPlace)
+        if (other.gameObject.CompareTag("Collectible") && other.gameObject.GetComponent<InPlace>().isInPlace)
         {
             enemy.SetPickUpDistanceBool(false);
         }
+
+
+        if (other.gameObject.CompareTag("Collectible") && !other.gameObject.GetComponent<InPlace>().isInPlace)
+        {
+
+            enemy.SetPickUpDistanceBool(true);
+
+        }
+        
+        
     }
 
 

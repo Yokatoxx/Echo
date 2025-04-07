@@ -57,7 +57,6 @@ public class Enemy : MonoBehaviour, IEnemyMoveable, ItriggerCheckable
     {
         stateMachine.CurrentEnemyState.FrameUpdate();
 
-        Debug.Log(IsWithinPickUpDistance);
     }
 
     private void FixedUpdate()
