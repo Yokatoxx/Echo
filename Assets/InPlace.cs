@@ -15,14 +15,14 @@ public class InPlace : MonoBehaviour
 
     private void Update()
     {
-        if (transform.position == originalPosition.position)
-        {
-            isInPlace = true;
-        }
-        else
-        {
-            isInPlace = false;
-        }
+        //if (transform.position == originalPosition.position)
+        //{
+        //    isInPlace = true;
+        //}
+        //else
+        //{
+        //    isInPlace = false;
+        //}
 
 
         //isInPlace = (transform.position == originalPosition.position);
