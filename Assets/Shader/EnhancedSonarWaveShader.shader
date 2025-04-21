@@ -95,7 +95,7 @@ Shader "Custom/EnhancedSonarWaveShader"
                 o.screenPos = ComputeScreenPos(o.vertex);
                 o.eyeDepth = -UnityObjectToViewPos(v.vertex).z;
                 o.worldPos = mul(unity_ObjectToWorld, v.vertex).xyz;
-                o.objectPos = v.vertex.xyz; // Position locale pour le calcul de largeur variable
+                o.objectPos = v.vertex.xyz;
                 return o;
             }
             
@@ -104,11 +104,9 @@ Shader "Custom/EnhancedSonarWaveShader"
                 if (_UseVariableWidth < 0.5)
                     return _WaveWidth;
                 
-                // Distance depuis le centre de l'objet (normalisée)
+                // Distance depuis le centre de l'objet
                 float dist = length(localPos) * 2.0; // *2 car nos coords locales vont de -0.5 à 0.5 pour une sphère
                 
-                // Calculer la largeur basée sur la distance radiale
-                // On peut faire diverses formules ici selon l'effet désiré
                 float width;
                 
                 // Version linéaire (plus large au centre ou à l'extérieur selon _WidthGradient)
@@ -122,7 +120,7 @@ Shader "Custom/EnhancedSonarWaveShader"
             
             fixed4 frag (v2f i) : SV_Target
             {
-                // Couleur de base (généralement transparente pour un sonar)
+                // Couleur de base
                 fixed4 col = _Color;
                 
                 // Obtenir la profondeur de la scène
@@ -131,28 +129,25 @@ Shader "Custom/EnhancedSonarWaveShader"
                 // Calculer la différence de profondeur pour détecter les intersections
                 float depthDifference = abs(sceneDepth - i.eyeDepth);
                 
-                // Appliquer un décalage de profondeur si nécessaire
+                // Appliquer un décalage de profondeur
                 depthDifference += _DepthOffset;
                 
-                // Appliquer une atténuation radiale si activée
+                // Appliquer une atténuation radiale
                 if (_RadialFalloff > 0.0) {
-                    float radialDist = length(i.objectPos * 2.0); // *2 pour normaliser
+                    float radialDist = length(i.objectPos * 2.0);
                     depthDifference *= 1.0 + (radialDist * _RadialFalloff);
                 }
                 
-                // Appliquer le bruit à la différence de profondeur si activé
+                // Appliquer le bruit à la différence de profondeur
                 if (_UseNoise > 0.5) {
-                    // Créer des coordonnées UV animées pour le bruit
+                    // Créer des coordonnées UV
                     float2 noiseUV = i.worldPos.xz * _NoiseScale;
-                    noiseUV += _Time.y * _NoiseSpeed; // Animation du bruit
+                    noiseUV += _Time.y * _NoiseSpeed;
                     
-                    // Échantillonner la texture de bruit
-                    float noise = tex2D(_NoiseTex, noiseUV).r * 2.0 - 1.0; // Normaliser à [-1, 1]
-                    
-                    // Déterminer la largeur de la vague en fonction de la position
+                    float noise = tex2D(_NoiseTex, noiseUV).r * 2.0 - 1.0;
+
                     float currentWidth = calculateWaveWidth(i.objectPos);
-                    
-                    // Appliquer le bruit proportionnellement à la largeur actuelle
+
                     depthDifference += noise * _NoiseStrength * currentWidth;
                 }
                 
@@ -170,19 +165,16 @@ Shader "Custom/EnhancedSonarWaveShader"
                 float distanceFactor = saturate(1.0 - (depthDifference / _WaveFadeDistance));
                 wavePeak *= distanceFactor;
                 
-                // Effet de surbrillance de bord si activé
+                // Effet de surbrillance
                 float edgeGlow = 0;
                 if (_UseEdgeHighlight > 0.5) {
-                    // La surbrillance se situe aux bords de la vague principale
                     float edgeDist = abs(normalizedDist - 1.0);
                     edgeGlow = saturate(1.0 - edgeDist / (_EdgeWidth / waveWidth));
                     edgeGlow = pow(edgeGlow, 3.0) * _EdgeIntensity * wavePeak;
                 }
-                
-                // Combiner la vague principale et l'effet de bord
+
                 float finalEffect = max(wavePeak, edgeGlow);
                 
-                // Appliquer la couleur de la vague
                 fixed4 finalColor = lerp(col, _WaveColor, finalEffect);
                 finalColor.a = finalEffect * _WaveColor.a;
                 

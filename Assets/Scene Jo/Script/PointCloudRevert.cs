@@ -41,7 +41,6 @@ public class PointCloudRevert : MonoBehaviour
 
     private void Update()
     {
-        // Si l'objet est ramassé, maintenir la valeur du blendshape à la valeur cible
         if (collectableComponent != null && collectableComponent.isPickedUp)
         {
             if (isIndexValid && currentBlendValue != blendShapeValueTarget)
@@ -50,19 +49,15 @@ public class PointCloudRevert : MonoBehaviour
                 skinnedMeshRenderer.SetBlendShapeWeight(blendShapeIndex, currentBlendValue);
             }
 
-            // Si l'objet est ramassé, annuler le retour à la valeur initiale
             if (returnCoroutine != null)
             {
                 StopCoroutine(returnCoroutine);
                 returnCoroutine = null;
             }
-
-            // Désactiver la transition pendant que l'objet est tenu
             isTransitioning = false;
             return;
         }
 
-        // Comportement normal de transition quand l'objet n'est pas ramassé
         if (isTransitioning && isIndexValid)
         {
             currentBlendValue = Mathf.Lerp(currentBlendValue, targetValue, Time.deltaTime * lerpSpeed);
@@ -78,7 +73,6 @@ public class PointCloudRevert : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        // Ne pas déclencher le trigger si l'objet est déjà ramassé
         if (collectableComponent != null && collectableComponent.isPickedUp)
             return;
 
@@ -107,7 +101,6 @@ public class PointCloudRevert : MonoBehaviour
     {
         yield return new WaitForSeconds(returnDelay);
 
-        // Vérifier si l'objet a été ramassé entre temps
         if (collectableComponent != null && collectableComponent.isPickedUp)
             yield break;
 

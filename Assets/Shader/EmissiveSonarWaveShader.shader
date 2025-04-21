@@ -23,7 +23,7 @@ Shader "Custom/EcholocationShader"
         
         Blend SrcAlpha OneMinusSrcAlpha
         ZWrite Off
-        Cull Off // Modification ici: Off au lieu de Back
+        Cull Off
         
         Pass
         {
@@ -89,15 +89,15 @@ Shader "Custom/EcholocationShader"
                 float pulseFactor = sin(_Time.y * _PulseSpeed) * 0.5 + 0.5;
                 float pulseModifier = lerp(1.0 - _PulseAmount, 1.0 + _PulseAmount, pulseFactor);
                 
-                // Effet d'intersection avec les objets - élargi avec un falloff progressif
+                // Effet d'intersection
                 float intersectRaw = saturate(1.0 - depthDiff / (_IntersectionWidth * pulseModifier));
                 float intersect = pow(intersectRaw, _IntersectionFalloff) * _IntersectionIntensity;
                 
-                // Calcul du gradient pour l'intersection
+                // Calcul du gradient
                 float gradientFactor = pow(saturate(intersectRaw + _GradientOffset), _GradientPower);
                 float4 intersectionColor = lerp(_IntersectionColorStart, _IntersectionColorEnd, gradientFactor);
                 
-                // Calcul de l'effet de bord (plus lumineux en périphérie)
+                // Calcul de l'effet de bord
                 float distFromCenter = length(i.objectPos);
                 float edgeEffect = smoothstep(0.5 - _EdgeWidth, 0.5, distFromCenter);
                 edgeEffect = pow(edgeEffect, _EdgeFalloff);

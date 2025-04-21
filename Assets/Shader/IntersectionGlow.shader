@@ -12,8 +12,7 @@ Shader "Custom/IntersectionGlow"
     {
         Tags { "RenderType"="Transparent" "Queue"="Transparent" }
         LOD 100
-        
-        // Désactive le culling des faces arrière
+
         Cull Off
         
         ZWrite On
@@ -61,22 +60,20 @@ Shader "Custom/IntersectionGlow"
             
             fixed4 frag (v2f i) : SV_Target
             {
-                // Échantillonnez la texture principale
                 fixed4 col = tex2D(_MainTex, i.uv) * _Color;
                 
-                // Obtenez la profondeur de la scène à cet endroit
+                // Obtenez la profondeur de la scène
                 float sceneDepth = LinearEyeDepth(SAMPLE_DEPTH_TEXTURE_PROJ(_CameraDepthTexture, UNITY_PROJ_COORD(i.screenPos)));
                 
                 // Calculez la différence entre les profondeurs
                 float depthDifference = abs(sceneDepth - i.eyeDepth);
                 
-                // Si la différence est inférieure à un seuil, nous sommes à une intersection
+                // Si la différence est inférieure à un seuil, appliquez l'effet
                 float intersection = 1 - saturate(depthDifference / _IntersectionThreshold);
                 
                 // Appliquez l'effet d'intersection
                 intersection = pow(intersection, _IntersectionPower);
                 
-                // Mélangez la couleur originale avec la couleur d'intersection
                 fixed4 finalColor = lerp(col, _IntersectionColor, intersection * _IntersectionColor.a);
                 
                 return finalColor;
