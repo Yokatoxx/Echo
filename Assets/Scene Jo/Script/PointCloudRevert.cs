@@ -17,10 +17,12 @@ public class PointCloudRevert : MonoBehaviour
     private float targetValue;
     private Coroutine returnCoroutine;
     private bool isIndexValid = false;
+    private Collectable collectableComponent;
 
     private void Awake()
     {
         skinnedMeshRenderer = GetComponent<SkinnedMeshRenderer>();
+        collectableComponent = GetComponent<Collectable>();
 
         isIndexValid = skinnedMeshRenderer.sharedMesh != null &&
                        blendShapeIndex >= 0 &&
@@ -39,6 +41,28 @@ public class PointCloudRevert : MonoBehaviour
 
     private void Update()
     {
+        // Si l'objet est ramassé, maintenir la valeur du blendshape à la valeur cible
+        if (collectableComponent != null && collectableComponent.isPickedUp)
+        {
+            if (isIndexValid && currentBlendValue != blendShapeValueTarget)
+            {
+                currentBlendValue = blendShapeValueTarget;
+                skinnedMeshRenderer.SetBlendShapeWeight(blendShapeIndex, currentBlendValue);
+            }
+
+            // Si l'objet est ramassé, annuler le retour à la valeur initiale
+            if (returnCoroutine != null)
+            {
+                StopCoroutine(returnCoroutine);
+                returnCoroutine = null;
+            }
+
+            // Désactiver la transition pendant que l'objet est tenu
+            isTransitioning = false;
+            return;
+        }
+
+        // Comportement normal de transition quand l'objet n'est pas ramassé
         if (isTransitioning && isIndexValid)
         {
             currentBlendValue = Mathf.Lerp(currentBlendValue, targetValue, Time.deltaTime * lerpSpeed);
@@ -54,6 +78,10 @@ public class PointCloudRevert : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
+        // Ne pas déclencher le trigger si l'objet est déjà ramassé
+        if (collectableComponent != null && collectableComponent.isPickedUp)
+            return;
+
         if (other.CompareTag("Scanner") && isIndexValid)
         {
             if (returnCoroutine != null)
@@ -78,6 +106,11 @@ public class PointCloudRevert : MonoBehaviour
     private IEnumerator ReturnToInitialValueAfterDelay()
     {
         yield return new WaitForSeconds(returnDelay);
+
+        // Vérifier si l'objet a été ramassé entre temps
+        if (collectableComponent != null && collectableComponent.isPickedUp)
+            yield break;
+
         targetValue = restingValue;
         isTransitioning = true;
     }

@@ -11,7 +11,7 @@ public class Collectable : MonoBehaviour
     private Collider objectCollider;
     private Transform originalParent;
     private Vector3 originalScale;
-    private bool isPickedUp = false;
+    public bool isPickedUp = false;
 
     private void Awake()
     {

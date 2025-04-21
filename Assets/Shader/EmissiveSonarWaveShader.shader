@@ -1,206 +1,130 @@
-Shader "Custom/EmissiveSonarWaveShader"
+Shader "Custom/EcholocationShader"
 {
     Properties
     {
-        [Header(Base Settings)]
-        _Color ("Base Color", Color) = (0,0,0,0)
-        [HDR] _WaveColor ("Wave Color (HDR)", Color) = (0,1,0.8,1)
-        
-        [Header(Width Control)]
-        [Space(10)]
-        _WaveWidth ("Base Wave Width", Range(0.001, 1.0)) = 0.05
-        [Toggle] _UseVariableWidth ("Use Width Modifier", Float) = 0
-        _WidthGradient ("Width Modifier", Range(0.0, 2.0)) = 1.0
-        _MinWidth ("Minimum Width", Range(0.001, 0.5)) = 0.01
-        
-        [Header(Core Wave Properties)]
-        [Space(10)]
-        _WaveSharpness ("Wave Sharpness", Range(1.0, 30.0)) = 3.0
-        _Intensity ("Wave Intensity", Range(0.1, 5.0)) = 1.0
-        _WaveFadeDistance ("Wave Fade Distance", Range(0.0, 1.0)) = 0.2
-        
-        [Header(Edge Enhancement)]
-        [Space(10)]
-        [Toggle] _UseEdgeHighlight ("Use Edge Highlight", Float) = 0
-        _EdgeWidth ("Edge Width", Range(0.001, 0.1)) = 0.01
-        _EdgeIntensity ("Edge Intensity", Range(0.1, 5.0)) = 1.5
-        
-        [Header(Visual Noise)]
-        [Space(10)]
-        [Toggle] _UseNoise ("Use Noise", Float) = 1
-        _NoiseTex ("Noise Texture", 2D) = "white" {}
-        _NoiseStrength ("Noise Strength", Range(0.0, 1.0)) = 0.3
-        _NoiseScale ("Noise Scale", Range(0.1, 10.0)) = 1.0
-        _NoiseSpeed ("Noise Animation Speed", Range(0.0, 5.0)) = 0.5
-        
-        [Header(Depth Adjustment)]
-        [Space(10)]
-        _DepthOffset ("Depth Offset", Range(-1.0, 1.0)) = 0.0
-        _RadialFalloff ("Radial Falloff", Range(0.0, 5.0)) = 0.0
+        _MainColor ("Main Color", Color) = (0.0, 0.5, 1.0, 0.5)
+        _IntersectionColorStart ("Intersection Color Start", Color) = (0.0, 1.0, 1.0, 1.0)
+        _IntersectionColorEnd ("Intersection Color End", Color) = (1.0, 0.2, 0.0, 1.0)
+        _IntersectionWidth ("Intersection Width", Range(0, 5)) = 1.0
+        _IntersectionIntensity ("Intersection Intensity", Range(1, 10)) = 2.0
+        _IntersectionFalloff ("Intersection Falloff", Range(0.1, 5)) = 1.5
+        _EdgeFalloff ("Edge Falloff", Range(0.1, 5)) = 1.5
+        _EdgeWidth ("Edge Width", Range(0, 0.5)) = 0.1
+        _GradientOffset ("Gradient Offset", Range(0, 1)) = 0.5
+        _GradientPower ("Gradient Power", Range(0.1, 5)) = 1.0
+        _PulseSpeed ("Pulse Speed", Range(0, 10)) = 2.0
+        _PulseAmount ("Pulse Amount", Range(0, 1)) = 0.1
     }
+    
     SubShader
     {
-        Tags { "RenderType"="Transparent" "Queue"="Transparent" "IgnoreProjector"="True" }
+        Tags { "RenderType"="Transparent" "Queue"="Transparent" }
         LOD 100
         
-        // Désactiver le culling pour voir les deux faces
-        Cull Off
-        ZWrite On
         Blend SrcAlpha OneMinusSrcAlpha
-
+        ZWrite Off
+        Cull Off // Modification ici: Off au lieu de Back
+        
         Pass
         {
-            // Configuration importante: cette ligne rend le shader indépendant de l'éclairage
-            Tags { "LightMode" = "Always" }
-            
             CGPROGRAM
             #pragma vertex vert
             #pragma fragment frag
-            // Définir cette directive pour indiquer que le shader est indépendant de l'éclairage
-            #pragma target 3.0
+            #pragma multi_compile_fog
             #include "UnityCG.cginc"
-
+            
             struct appdata
             {
                 float4 vertex : POSITION;
-                float2 uv : TEXCOORD0;
                 float3 normal : NORMAL;
             };
-
+            
             struct v2f
             {
-                float2 uv : TEXCOORD0;
                 float4 vertex : SV_POSITION;
-                float4 screenPos : TEXCOORD1;
-                float eyeDepth : TEXCOORD2;
-                float3 worldPos : TEXCOORD3;
+                float3 worldPos : TEXCOORD0;
+                float3 worldNormal : TEXCOORD1;
+                float4 screenPos : TEXCOORD2;
+                float eyeDepth : TEXCOORD3;
                 float3 objectPos : TEXCOORD4;
+                UNITY_FOG_COORDS(5)
             };
-
-            float4 _Color;
-            float4 _WaveColor;
-            float _WaveWidth;
-            float _UseVariableWidth;
-            float _WidthGradient;
-            float _MinWidth;
-            float _WaveSharpness;
-            float _WaveFadeDistance;
-            float _Intensity;
-            float _UseEdgeHighlight;
+            
+            float4 _MainColor;
+            float4 _IntersectionColorStart;
+            float4 _IntersectionColorEnd;
+            float _IntersectionWidth;
+            float _IntersectionIntensity;
+            float _IntersectionFalloff;
+            float _EdgeFalloff;
             float _EdgeWidth;
-            float _EdgeIntensity;
-            float _UseNoise;
-            sampler2D _NoiseTex;
-            float4 _NoiseTex_ST;
-            float _NoiseStrength;
-            float _NoiseScale;
-            float _NoiseSpeed;
-            float _DepthOffset;
-            float _RadialFalloff;
+            float _GradientOffset;
+            float _GradientPower;
+            float _PulseSpeed;
+            float _PulseAmount;
             sampler2D _CameraDepthTexture;
             
             v2f vert (appdata v)
             {
                 v2f o;
                 o.vertex = UnityObjectToClipPos(v.vertex);
-                o.uv = v.uv;
+                o.worldPos = mul(unity_ObjectToWorld, v.vertex).xyz;
+                o.worldNormal = UnityObjectToWorldNormal(v.normal);
                 o.screenPos = ComputeScreenPos(o.vertex);
                 o.eyeDepth = -UnityObjectToViewPos(v.vertex).z;
-                o.worldPos = mul(unity_ObjectToWorld, v.vertex).xyz;
-                o.objectPos = v.vertex.xyz; // Position locale pour le calcul de largeur variable
+                o.objectPos = v.vertex.xyz; // Position locale pour calculer les bords
+                UNITY_TRANSFER_FOG(o, o.vertex);
                 return o;
             }
             
-            float calculateWaveWidth(float3 localPos)
+            float4 frag (v2f i) : SV_Target
             {
-                if (_UseVariableWidth < 0.5)
-                    return _WaveWidth;
-                
-                // Distance depuis le centre de l'objet (normalisée)
-                float dist = length(localPos) * 2.0; // *2 car nos coords locales vont de -0.5 à 0.5 pour une sphère
-                
-                // Calculer la largeur basée sur la distance radiale
-                float width;
-                
-                // Version linéaire (plus large au centre ou à l'extérieur selon _WidthGradient)
-                if (_WidthGradient < 1.0)
-                    width = lerp(_WaveWidth, _MinWidth, dist * _WidthGradient);
-                else
-                    width = lerp(_WaveWidth, _MinWidth, (1.0 - dist) * (_WidthGradient - 1.0));
-                
-                return max(width, _MinWidth);
-            }
-            
-            fixed4 frag (v2f i) : SV_Target
-            {
-                // Couleur de base (généralement transparente pour un sonar)
-                fixed4 col = _Color;
-                
-                // Obtenir la profondeur de la scène
+                // Récupère la profondeur depuis le depth buffer
                 float sceneDepth = LinearEyeDepth(SAMPLE_DEPTH_TEXTURE_PROJ(_CameraDepthTexture, UNITY_PROJ_COORD(i.screenPos)));
                 
-                // Calculer la différence de profondeur pour détecter les intersections
-                float depthDifference = abs(sceneDepth - i.eyeDepth);
+                // Calcule la différence de profondeur
+                float depthDiff = abs(sceneDepth - i.eyeDepth);
                 
-                // Appliquer un décalage de profondeur si nécessaire
-                depthDifference += _DepthOffset;
+                // Effet de pulsation légère sur l'intersection
+                float pulseFactor = sin(_Time.y * _PulseSpeed) * 0.5 + 0.5;
+                float pulseModifier = lerp(1.0 - _PulseAmount, 1.0 + _PulseAmount, pulseFactor);
                 
-                // Appliquer une atténuation radiale si activée
-                if (_RadialFalloff > 0.0) {
-                    float radialDist = length(i.objectPos * 2.0); // *2 pour normaliser
-                    depthDifference *= 1.0 + (radialDist * _RadialFalloff);
-                }
+                // Effet d'intersection avec les objets - élargi avec un falloff progressif
+                float intersectRaw = saturate(1.0 - depthDiff / (_IntersectionWidth * pulseModifier));
+                float intersect = pow(intersectRaw, _IntersectionFalloff) * _IntersectionIntensity;
                 
-                // Appliquer le bruit à la différence de profondeur si activé
-                if (_UseNoise > 0.5) {
-                    // Créer des coordonnées UV animées pour le bruit
-                    float2 noiseUV = i.worldPos.xz * _NoiseScale;
-                    noiseUV += _Time.y * _NoiseSpeed; // Animation du bruit
-                    
-                    // Échantillonner la texture de bruit
-                    float noise = tex2D(_NoiseTex, noiseUV).r * 2.0 - 1.0; // Normaliser à [-1, 1]
-                    
-                    // Déterminer la largeur de la vague en fonction de la position
-                    float currentWidth = calculateWaveWidth(i.objectPos);
-                    
-                    // Appliquer le bruit proportionnellement à la largeur actuelle
-                    depthDifference += noise * _NoiseStrength * currentWidth;
-                }
+                // Calcul du gradient pour l'intersection
+                float gradientFactor = pow(saturate(intersectRaw + _GradientOffset), _GradientPower);
+                float4 intersectionColor = lerp(_IntersectionColorStart, _IntersectionColorEnd, gradientFactor);
                 
-                // Déterminer la largeur de la vague en fonction de la position
-                float waveWidth = calculateWaveWidth(i.objectPos);
+                // Calcul de l'effet de bord (plus lumineux en périphérie)
+                float distFromCenter = length(i.objectPos);
+                float edgeEffect = smoothstep(0.5 - _EdgeWidth, 0.5, distFromCenter);
+                edgeEffect = pow(edgeEffect, _EdgeFalloff);
                 
-                // Créer la vague principale
-                float waveCenter = waveWidth * 0.5;
-                float waveDist = abs(depthDifference - waveCenter);
-                float normalizedDist = waveDist / (waveWidth * 0.5);
-                float wavePeak = saturate(1.0 - normalizedDist);
-                wavePeak = pow(wavePeak, _WaveSharpness) * _Intensity;
+                // Combiner les couleurs
+                float4 finalColor = _MainColor;
                 
-                // Appliquer le dégradé en fonction de la distance
-                float distanceFactor = saturate(1.0 - (depthDifference / _WaveFadeDistance));
-                wavePeak *= distanceFactor;
+                // Ajouter l'effet d'intersection avec gradient
+                finalColor = lerp(finalColor, intersectionColor, saturate(intersect));
                 
-                // Effet de surbrillance de bord si activé
-                float edgeGlow = 0;
-                if (_UseEdgeHighlight > 0.5) {
-                    // La surbrillance se situe aux bords de la vague principale
-                    float edgeDist = abs(normalizedDist - 1.0);
-                    edgeGlow = saturate(1.0 - edgeDist / (_EdgeWidth / waveWidth));
-                    edgeGlow = pow(edgeGlow, 3.0) * _EdgeIntensity * wavePeak;
-                }
+                // Amplifier les bords
+                finalColor.rgb = lerp(finalColor.rgb, _IntersectionColorStart.rgb, edgeEffect * 0.5);
                 
-                // Combiner la vague principale et l'effet de bord
-                float finalEffect = max(wavePeak, edgeGlow);
+                // Ajuster l'opacité
+                finalColor.a = _MainColor.a * (1.0 - edgeEffect * 0.7);
+                finalColor.a = max(finalColor.a, intersect * max(_IntersectionColorStart.a, _IntersectionColorEnd.a));
                 
-                // Appliquer la couleur de la vague (émissive, donc visible même sans lumière)
-                fixed4 finalColor = lerp(col, _WaveColor, finalEffect);
-                finalColor.a = finalEffect * _WaveColor.a;
+                // Réduction subtile de l'opacité en fonction de la distance de l'intersection
+                finalColor.a *= lerp(0.85, 1.0, min(1.0, intersect * 2.0)); 
+                
+                // Appliquer le fog
+                UNITY_APPLY_FOG(i.fogCoord, finalColor);
                 
                 return finalColor;
             }
             ENDCG
         }
     }
-    FallBack "Unlit/Transparent"
+    FallBack "Transparent/Diffuse"
 }

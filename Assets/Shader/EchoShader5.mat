@@ -68,23 +68,32 @@ Material:
     m_Floats:
     - _BumpScale: 1
     - _Cutoff: 0.5
-    - _DepthOffset: 0
+    - _DepthOffset: 0.3
     - _DetailNormalMapScale: 1
     - _DstBlend: 0
+    - _EdgeFalloff: 1.5
     - _EdgeIntensity: 4.11
     - _EdgeWidth: 0.0591
     - _GlossMapScale: 1
     - _Glossiness: 0.5
     - _GlossyReflections: 1
-    - _Intensity: 1.86
+    - _GradientOffset: 0.5
+    - _GradientPower: 1
+    - _Intensity: 1.71
+    - _IntersectionFalloff: 1.5
+    - _IntersectionIntensity: 2
+    - _IntersectionWidth: 0.05
+    - _IntersectionWidthMultiplier: 7.96
     - _Metallic: 0
-    - _MinWidth: 0.01
+    - _MinWidth: 0.327
     - _Mode: 0
     - _NoiseScale: 0.71
     - _NoiseSpeed: 0.54
     - _NoiseStrength: 0.169
     - _OcclusionStrength: 1
     - _Parallax: 0.02
+    - _PulseAmount: 0.1
+    - _PulseSpeed: 2
     - _RadialFalloff: 0
     - _SmoothnessTextureChannel: 0
     - _SpecularHighlights: 1
@@ -96,13 +105,17 @@ Material:
     - _UseNoise: 1
     - _UseTrail: 0
     - _UseVariableWidth: 0
-    - _WaveFadeDistance: 0.288
+    - _WaveFadeDistance: 0.599
     - _WaveSharpness: 1
-    - _WaveWidth: 0.239
+    - _WaveWidth: 0.917
     - _WidthGradient: 0.3
     - _ZWrite: 1
     m_Colors:
     - _Color: {r: 1, g: 1, b: 1, a: 1}
     - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
+    - _IntersectionColor: {r: 0, g: 1, b: 1, a: 1}
+    - _IntersectionColorEnd: {r: 1, g: 0, b: 0.8683319, a: 1}
+    - _IntersectionColorStart: {r: 0, g: 1, b: 1, a: 1}
+    - _MainColor: {r: 0, g: 0.5, b: 1, a: 0}
     - _WaveColor: {r: 0, g: 1, b: 0.8, a: 1}
   m_BuildTextureStacks: []
