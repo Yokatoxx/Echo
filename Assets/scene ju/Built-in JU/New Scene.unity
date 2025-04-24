@@ -4213,6 +4213,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 439010696948584315, guid: 9cf5b9ddbcef7054d85f4226c2ed95d8, type: 3}
+      propertyPath: m_FillAmount
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 854835756320132116, guid: 9cf5b9ddbcef7054d85f4226c2ed95d8, type: 3}
       propertyPath: m_LocalPosition.x
       value: -18.44
@@ -4256,6 +4260,10 @@ PrefabInstance:
     - target: {fileID: 1637230718722830631, guid: 9cf5b9ddbcef7054d85f4226c2ed95d8, type: 3}
       propertyPath: m_IsTrigger
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1704567512873685118, guid: 9cf5b9ddbcef7054d85f4226c2ed95d8, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 253.3
       objectReference: {fileID: 0}
     - target: {fileID: 3470876666489540190, guid: 9cf5b9ddbcef7054d85f4226c2ed95d8, type: 3}
       propertyPath: player
@@ -4319,6 +4327,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6052529947756055440, guid: 9cf5b9ddbcef7054d85f4226c2ed95d8, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7407317335799550501, guid: 9cf5b9ddbcef7054d85f4226c2ed95d8, type: 3}
+      propertyPath: m_MatchWidthOrHeight
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8315506873955848548, guid: 9cf5b9ddbcef7054d85f4226c2ed95d8, type: 3}
@@ -5233,7 +5245,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 1.3071, y: 0.0734}
-  m_SizeDelta: {x: 257.89, y: 13.1576}
+  m_SizeDelta: {x: 252.9, y: 13.1576}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &748003165
 MonoBehaviour:
@@ -9965,7 +9977,45 @@ MonoBehaviour:
   maxDuration: 4
   propagationSpeed: 15
   fadeOutSpeed: 1.5
+  echoColor: {r: 0, g: 0.5, b: 1, a: 0.5}
+  intersectionColor: {r: 0, g: 1, b: 1, a: 1}
   maxChargeTime: 2
+  intersectionColorEnd: {r: 1, g: 0.2, b: 0, a: 1}
+  spawnCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 2
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    - serializedVersion: 3
+      time: 0.3
+      value: 0.5
+      inSlope: 1
+      outSlope: 1
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    - serializedVersion: 3
+      time: 1
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  echoCooldown: 0.25
+  maxActiveEchos: 5
   chargeIndicatorFill: {fileID: 748003165}
 --- !u!1 &1671683570 stripped
 GameObject:
