@@ -1506,6 +1506,10 @@ PrefabInstance:
       value: 6.64931
       objectReference: {fileID: 0}
     - target: {fileID: -74209933945285768, guid: e22c6a14dae4cc34eaadee19d6456e26, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -74209933945285768, guid: e22c6a14dae4cc34eaadee19d6456e26, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 16
       objectReference: {fileID: 0}
@@ -1741,6 +1745,10 @@ PrefabInstance:
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: 958796acb7a62084fa3a091ebe701bbe, type: 2}
+    - target: {fileID: 7150590034702082185, guid: e22c6a14dae4cc34eaadee19d6456e26, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 7150590034702082185, guid: e22c6a14dae4cc34eaadee19d6456e26, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 16
@@ -2385,6 +2393,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 74921567f9cbc424cb730335b4905a72, type: 3}
       propertyPath: m_Name
       value: TEST LD TELE
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 74921567f9cbc424cb730335b4905a72, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5914731741329641496, guid: 74921567f9cbc424cb730335b4905a72, type: 3}
       propertyPath: m_DirtyAABB
@@ -4131,6 +4143,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: TEST LD TELE (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 74921567f9cbc424cb730335b4905a72, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5914731741329641496, guid: 74921567f9cbc424cb730335b4905a72, type: 3}
       propertyPath: m_DirtyAABB
       value: 0
@@ -4219,11 +4235,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 854835756320132116, guid: 9cf5b9ddbcef7054d85f4226c2ed95d8, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -18.44
+      value: -1.29
+      objectReference: {fileID: 0}
+    - target: {fileID: 854835756320132116, guid: 9cf5b9ddbcef7054d85f4226c2ed95d8, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.66
       objectReference: {fileID: 0}
     - target: {fileID: 854835756320132116, guid: 9cf5b9ddbcef7054d85f4226c2ed95d8, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 54.2
+      value: 17.42
       objectReference: {fileID: 0}
     - target: {fileID: 854835756320132116, guid: 9cf5b9ddbcef7054d85f4226c2ed95d8, type: 3}
       propertyPath: m_LocalRotation.w
@@ -5031,7 +5051,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!65 &706531323
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -6398,7 +6418,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!65 &942250057
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -9533,7 +9553,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!65 &1536883850
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -10409,6 +10429,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 74921567f9cbc424cb730335b4905a72, type: 3}
       propertyPath: m_Name
       value: TEST LD TELE (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 74921567f9cbc424cb730335b4905a72, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5914731741329641496, guid: 74921567f9cbc424cb730335b4905a72, type: 3}
       propertyPath: m_DirtyAABB
@@ -15602,7 +15626,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: e22c6a14dae4cc34eaadee19d6456e26, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1146374028044810554, guid: e22c6a14dae4cc34eaadee19d6456e26, type: 3}
       propertyPath: m_DirtyAABB
