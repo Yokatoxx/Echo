@@ -30,11 +30,11 @@ Material:
     m_Ints: []
     m_Floats:
     - _Cutoff: 0.1
-    - _Float0: 0.01
-    - _Noise_Scale: 13.49
+    - _Float0: 0
+    - _Noise_Scale: 6.6
     - __dirty: 0
     - _noisescale: -0.4
-    - _size: 0.24
+    - _size: 0.21
     - _timescale: 1.73
     m_Colors:
     - _Color: {r: 0.91194963, g: 0, b: 0, a: 1}
