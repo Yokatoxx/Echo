@@ -20,6 +20,12 @@ public class EnemyAttackDistanceCheck : MonoBehaviour
         {
             enemy.SetAttackDistanceBool(true);
         }
+
+        if (other.gameObject.CompareTag("RepeatSound"))
+        {
+            other.gameObject.GetComponent<SpawnScannerObject>().isOn = false;
+            Debug.Log("Scanner is off");
+        }
     }
 
     private void OnTriggerExit(Collider other)
