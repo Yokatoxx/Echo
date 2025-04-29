@@ -12,9 +12,12 @@ public class Enemy : MonoBehaviour, IEnemyMoveable, ItriggerCheckable
     //référence au PatrolRoute
     public GameObject patrolRouteObject;
 
+    public GameObject scannerHit;
+
     public bool IsAggroed { get; set; }
     public bool IsWithinAttackDistance { get; set; }
     public bool IsWithinPickUpDistance { get; set; }
+    public bool IsHitByScanner { get; set; }
 
     #region State Machine Variables
     public EnemyStateMachine stateMachine { get; set; }
@@ -24,6 +27,7 @@ public class Enemy : MonoBehaviour, IEnemyMoveable, ItriggerCheckable
     public EnemyAttackState attackState { get; set; }
     public EnemyPatrolState patrolState { get; set; }
     public EnemyPickUpState pickUpState { get; set; }
+    public EnemyHitByScanner hitByScannerState { get; set; }
 
 
     #endregion
@@ -37,6 +41,7 @@ public class Enemy : MonoBehaviour, IEnemyMoveable, ItriggerCheckable
         attackState = new EnemyAttackState(this, stateMachine);
         patrolState = new EnemyPatrolState(this, stateMachine);
         pickUpState = new EnemyPickUpState(this, stateMachine);
+        hitByScannerState = new EnemyHitByScanner(this, stateMachine);
 
         //passer la référence du PatrolRoute à l'état de patrouille
         if (patrolState is EnemyPatrolState enemyPatrolState)
@@ -96,6 +101,11 @@ public class Enemy : MonoBehaviour, IEnemyMoveable, ItriggerCheckable
     public void SetAttackDistanceBool(bool isWithinAttackDistance)
     {
         IsWithinAttackDistance = isWithinAttackDistance;
+    }
+
+    public void SetIsHitByScanner(bool isHitByScanner)
+    {
+        IsHitByScanner = isHitByScanner;
     }
 
     #endregion

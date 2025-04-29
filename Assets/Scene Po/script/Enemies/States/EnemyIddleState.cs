@@ -20,6 +20,7 @@ public class EnemyIddleState : EnemyState
     {
         base.EnterState();
 
+        Debug.Log("going to iddle state");
         exitTimer = 0f;
     }
 

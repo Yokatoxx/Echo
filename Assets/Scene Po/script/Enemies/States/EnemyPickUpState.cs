@@ -55,7 +55,6 @@ public class EnemyPickUpState : EnemyState
             enemy.stateMachine.ChangeState(enemy.chaseState);
         }
 
-        Debug.Log(collectiblesToPickUp.Length);
 
     }
 
