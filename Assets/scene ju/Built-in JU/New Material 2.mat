@@ -32,5 +32,6 @@ Material:
     - _Float0: 0.01
     - _Noise_Scale: -8.5
     - _size: 1
-    m_Colors: []
+    m_Colors:
+    - _MainColor: {r: 0.7899494, g: 0.67790353, b: 0.255864, a: 1}
   m_BuildTextureStacks: []

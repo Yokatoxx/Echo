@@ -170,10 +170,24 @@ MonoBehaviour:
   blendShapeIndex: 0
   blendShapeValueTarget: 0
   isProgressive: 1
-  progressiveIncrement: -30
   restingValue: 100
   lerpSpeed: 5
-  returnDelay: 3
+  returnDelay: 4
+  scannerProgressiveIncrement: 10
+  echoPassifProgressiveIncrement: -20
+  echoJoueurProgressiveIncrement: -50
+--- !u!114 &13255921
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 13255914}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0074f886f4ee736489a71cf6bb182ce7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &38030896 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 7150590034702082185, guid: e22c6a14dae4cc34eaadee19d6456e26, type: 3}
@@ -216,10 +230,12 @@ MonoBehaviour:
   blendShapeIndex: 0
   blendShapeValueTarget: 100
   isProgressive: 0
-  progressiveIncrement: 10
   restingValue: 0
   lerpSpeed: 5
   returnDelay: 3
+  scannerProgressiveIncrement: 10
+  echoPassifProgressiveIncrement: 6
+  echoJoueurProgressiveIncrement: 12
 --- !u!1 &52386421
 GameObject:
   m_ObjectHideFlags: 0
@@ -269,10 +285,12 @@ MonoBehaviour:
   blendShapeIndex: 0
   blendShapeValueTarget: 0
   isProgressive: 1
-  progressiveIncrement: -30
   restingValue: 100
   lerpSpeed: 5
   returnDelay: 3
+  scannerProgressiveIncrement: 10
+  echoPassifProgressiveIncrement: 6
+  echoJoueurProgressiveIncrement: 12
 --- !u!64 &52386424
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -463,10 +481,12 @@ MonoBehaviour:
   blendShapeIndex: 0
   blendShapeValueTarget: 0
   isProgressive: 1
-  progressiveIncrement: -30
   restingValue: 100
   lerpSpeed: 5
   returnDelay: 3
+  scannerProgressiveIncrement: 10
+  echoPassifProgressiveIncrement: 6
+  echoJoueurProgressiveIncrement: 12
 --- !u!64 &96322426
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -585,10 +605,12 @@ MonoBehaviour:
   blendShapeIndex: 0
   blendShapeValueTarget: 0
   isProgressive: 1
-  progressiveIncrement: -30
   restingValue: 100
   lerpSpeed: 5
   returnDelay: 3
+  scannerProgressiveIncrement: 10
+  echoPassifProgressiveIncrement: 6
+  echoJoueurProgressiveIncrement: 12
 --- !u!1 &115765709 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: -9060439971855302104, guid: c5aaeaa3858d4b248ba6b36799cb95bd, type: 3}
@@ -631,10 +653,24 @@ MonoBehaviour:
   blendShapeIndex: 0
   blendShapeValueTarget: 0
   isProgressive: 1
-  progressiveIncrement: -30
   restingValue: 100
   lerpSpeed: 5
-  returnDelay: 3
+  returnDelay: 4
+  scannerProgressiveIncrement: 10
+  echoPassifProgressiveIncrement: -20
+  echoJoueurProgressiveIncrement: -50
+--- !u!114 &115765716
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 115765709}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0074f886f4ee736489a71cf6bb182ce7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &116137094 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: -4607579965076306765, guid: e22c6a14dae4cc34eaadee19d6456e26, type: 3}
@@ -677,10 +713,12 @@ MonoBehaviour:
   blendShapeIndex: 0
   blendShapeValueTarget: 0
   isProgressive: 1
-  progressiveIncrement: -30
   restingValue: 100
   lerpSpeed: 5
   returnDelay: 3
+  scannerProgressiveIncrement: 10
+  echoPassifProgressiveIncrement: 6
+  echoJoueurProgressiveIncrement: 12
 --- !u!1 &119644086 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 8578122536603752281, guid: 9cf5b9ddbcef7054d85f4226c2ed95d8, type: 3}
@@ -770,10 +808,12 @@ MonoBehaviour:
   blendShapeIndex: 0
   blendShapeValueTarget: 0
   isProgressive: 1
-  progressiveIncrement: -30
   restingValue: 100
   lerpSpeed: 5
   returnDelay: 3
+  scannerProgressiveIncrement: 10
+  echoPassifProgressiveIncrement: 6
+  echoJoueurProgressiveIncrement: 12
 --- !u!64 &167776390
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -892,10 +932,24 @@ MonoBehaviour:
   blendShapeIndex: 0
   blendShapeValueTarget: 0
   isProgressive: 1
-  progressiveIncrement: -30
   restingValue: 100
   lerpSpeed: 5
-  returnDelay: 3
+  returnDelay: 4
+  scannerProgressiveIncrement: 10
+  echoPassifProgressiveIncrement: -20
+  echoJoueurProgressiveIncrement: -50
+--- !u!114 &175365441
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 175365434}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0074f886f4ee736489a71cf6bb182ce7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &176644236 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: -4357554680156711687, guid: c5aaeaa3858d4b248ba6b36799cb95bd, type: 3}
@@ -938,10 +992,24 @@ MonoBehaviour:
   blendShapeIndex: 0
   blendShapeValueTarget: 0
   isProgressive: 1
-  progressiveIncrement: -30
   restingValue: 100
   lerpSpeed: 5
-  returnDelay: 3
+  returnDelay: 4
+  scannerProgressiveIncrement: 10
+  echoPassifProgressiveIncrement: -20
+  echoJoueurProgressiveIncrement: -50
+--- !u!114 &176644243
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 176644236}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0074f886f4ee736489a71cf6bb182ce7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &186575216 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 8b5d15c637573004bbc67a6f8ea1e378, type: 3}
@@ -1037,10 +1105,24 @@ MonoBehaviour:
   blendShapeIndex: 0
   blendShapeValueTarget: 0
   isProgressive: 1
-  progressiveIncrement: -30
   restingValue: 100
   lerpSpeed: 5
-  returnDelay: 3
+  returnDelay: 4
+  scannerProgressiveIncrement: 10
+  echoPassifProgressiveIncrement: -20
+  echoJoueurProgressiveIncrement: -50
+--- !u!114 &200104888
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 200104881}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0074f886f4ee736489a71cf6bb182ce7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &212450610 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 4996424436530825728, guid: c5aaeaa3858d4b248ba6b36799cb95bd, type: 3}
@@ -1083,10 +1165,24 @@ MonoBehaviour:
   blendShapeIndex: 0
   blendShapeValueTarget: 0
   isProgressive: 1
-  progressiveIncrement: -30
   restingValue: 100
   lerpSpeed: 5
-  returnDelay: 3
+  returnDelay: 4
+  scannerProgressiveIncrement: 10
+  echoPassifProgressiveIncrement: -20
+  echoJoueurProgressiveIncrement: -50
+--- !u!114 &212450617
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 212450610}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0074f886f4ee736489a71cf6bb182ce7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &218016803 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: -2358423245618613083, guid: c5aaeaa3858d4b248ba6b36799cb95bd, type: 3}
@@ -1129,10 +1225,24 @@ MonoBehaviour:
   blendShapeIndex: 0
   blendShapeValueTarget: 0
   isProgressive: 1
-  progressiveIncrement: -30
   restingValue: 100
   lerpSpeed: 5
-  returnDelay: 3
+  returnDelay: 4
+  scannerProgressiveIncrement: 10
+  echoPassifProgressiveIncrement: -20
+  echoJoueurProgressiveIncrement: -50
+--- !u!114 &218016810
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 218016803}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0074f886f4ee736489a71cf6bb182ce7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &240101362
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1988,10 +2098,12 @@ MonoBehaviour:
   blendShapeIndex: 0
   blendShapeValueTarget: 0
   isProgressive: 1
-  progressiveIncrement: -30
   restingValue: 100
   lerpSpeed: 5
   returnDelay: 3
+  scannerProgressiveIncrement: 10
+  echoPassifProgressiveIncrement: 6
+  echoJoueurProgressiveIncrement: 12
 --- !u!1 &263322416 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 105023545968733272, guid: 9cf5b9ddbcef7054d85f4226c2ed95d8, type: 3}
@@ -2135,10 +2247,12 @@ MonoBehaviour:
   blendShapeIndex: 0
   blendShapeValueTarget: 100
   isProgressive: 0
-  progressiveIncrement: 10
   restingValue: 0
   lerpSpeed: 5
   returnDelay: 3
+  scannerProgressiveIncrement: 10
+  echoPassifProgressiveIncrement: 6
+  echoJoueurProgressiveIncrement: 12
 --- !u!1001 &280255527
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2288,10 +2402,24 @@ MonoBehaviour:
   blendShapeIndex: 0
   blendShapeValueTarget: 0
   isProgressive: 1
-  progressiveIncrement: -30
   restingValue: 100
   lerpSpeed: 5
-  returnDelay: 3
+  returnDelay: 4
+  scannerProgressiveIncrement: 10
+  echoPassifProgressiveIncrement: -20
+  echoJoueurProgressiveIncrement: -50
+--- !u!114 &281835550
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 281835543}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0074f886f4ee736489a71cf6bb182ce7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &305242331 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: -3971051839356179853, guid: c5aaeaa3858d4b248ba6b36799cb95bd, type: 3}
@@ -2334,10 +2462,24 @@ MonoBehaviour:
   blendShapeIndex: 0
   blendShapeValueTarget: 0
   isProgressive: 1
-  progressiveIncrement: -30
   restingValue: 100
   lerpSpeed: 5
-  returnDelay: 3
+  returnDelay: 4
+  scannerProgressiveIncrement: 10
+  echoPassifProgressiveIncrement: -20
+  echoJoueurProgressiveIncrement: -50
+--- !u!114 &305242338
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 305242331}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0074f886f4ee736489a71cf6bb182ce7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &312702631
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2514,10 +2656,12 @@ MonoBehaviour:
   blendShapeIndex: 0
   blendShapeValueTarget: 0
   isProgressive: 1
-  progressiveIncrement: -30
   restingValue: 100
   lerpSpeed: 5
   returnDelay: 3
+  scannerProgressiveIncrement: 10
+  echoPassifProgressiveIncrement: 6
+  echoJoueurProgressiveIncrement: 12
 --- !u!1 &315644965 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 8460033818040474037, guid: c5aaeaa3858d4b248ba6b36799cb95bd, type: 3}
@@ -2560,10 +2704,24 @@ MonoBehaviour:
   blendShapeIndex: 0
   blendShapeValueTarget: 0
   isProgressive: 1
-  progressiveIncrement: -30
   restingValue: 100
   lerpSpeed: 5
-  returnDelay: 3
+  returnDelay: 4
+  scannerProgressiveIncrement: 10
+  echoPassifProgressiveIncrement: -20
+  echoJoueurProgressiveIncrement: -50
+--- !u!114 &315644972
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 315644965}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0074f886f4ee736489a71cf6bb182ce7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &324643447 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: -5723114799528848563, guid: c5aaeaa3858d4b248ba6b36799cb95bd, type: 3}
@@ -2606,10 +2764,24 @@ MonoBehaviour:
   blendShapeIndex: 0
   blendShapeValueTarget: 0
   isProgressive: 1
-  progressiveIncrement: -30
   restingValue: 100
   lerpSpeed: 5
-  returnDelay: 3
+  returnDelay: 4
+  scannerProgressiveIncrement: 10
+  echoPassifProgressiveIncrement: -20
+  echoJoueurProgressiveIncrement: -50
+--- !u!114 &324643454
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 324643447}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0074f886f4ee736489a71cf6bb182ce7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &331483887 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 8643458566325605725, guid: c5aaeaa3858d4b248ba6b36799cb95bd, type: 3}
@@ -2652,10 +2824,24 @@ MonoBehaviour:
   blendShapeIndex: 0
   blendShapeValueTarget: 0
   isProgressive: 1
-  progressiveIncrement: -30
   restingValue: 100
   lerpSpeed: 5
-  returnDelay: 3
+  returnDelay: 4
+  scannerProgressiveIncrement: 10
+  echoPassifProgressiveIncrement: -20
+  echoJoueurProgressiveIncrement: -50
+--- !u!114 &331483894
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 331483887}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0074f886f4ee736489a71cf6bb182ce7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &343512013 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: -454047274600187011, guid: e22c6a14dae4cc34eaadee19d6456e26, type: 3}
@@ -2698,10 +2884,12 @@ MonoBehaviour:
   blendShapeIndex: 0
   blendShapeValueTarget: 0
   isProgressive: 1
-  progressiveIncrement: -30
   restingValue: 100
   lerpSpeed: 5
   returnDelay: 3
+  scannerProgressiveIncrement: 10
+  echoPassifProgressiveIncrement: 6
+  echoJoueurProgressiveIncrement: 12
 --- !u!1 &348301420 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 5138383004789116546, guid: c5aaeaa3858d4b248ba6b36799cb95bd, type: 3}
@@ -2744,10 +2932,71 @@ MonoBehaviour:
   blendShapeIndex: 0
   blendShapeValueTarget: 0
   isProgressive: 1
-  progressiveIncrement: -30
   restingValue: 100
   lerpSpeed: 5
-  returnDelay: 3
+  returnDelay: 4
+  scannerProgressiveIncrement: 10
+  echoPassifProgressiveIncrement: -20
+  echoJoueurProgressiveIncrement: -50
+--- !u!114 &348301427
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 348301420}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0074f886f4ee736489a71cf6bb182ce7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!1 &350032501
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 350032503}
+  - component: {fileID: 350032502}
+  m_Layer: 0
+  m_Name: FadeManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &350032502
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 350032501}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b745df7d0ebbbdd4fa6065d2a0e58cbc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  fadeStartDistance: 40
+  fadeEndDistance: 50
+  autoFindObjects: 1
+--- !u!4 &350032503
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 350032501}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -3.3389254, y: 2.5287714, z: 1.4106083}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &354304665 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 5309386660486281185, guid: c5aaeaa3858d4b248ba6b36799cb95bd, type: 3}
@@ -2790,10 +3039,24 @@ MonoBehaviour:
   blendShapeIndex: 0
   blendShapeValueTarget: 0
   isProgressive: 1
-  progressiveIncrement: -30
   restingValue: 100
   lerpSpeed: 5
-  returnDelay: 3
+  returnDelay: 4
+  scannerProgressiveIncrement: 10
+  echoPassifProgressiveIncrement: -20
+  echoJoueurProgressiveIncrement: -50
+--- !u!114 &354304672
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 354304665}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0074f886f4ee736489a71cf6bb182ce7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &369769428
 GameObject:
   m_ObjectHideFlags: 0
@@ -2843,10 +3106,12 @@ MonoBehaviour:
   blendShapeIndex: 0
   blendShapeValueTarget: 0
   isProgressive: 1
-  progressiveIncrement: -30
   restingValue: 100
   lerpSpeed: 5
   returnDelay: 3
+  scannerProgressiveIncrement: 10
+  echoPassifProgressiveIncrement: 6
+  echoJoueurProgressiveIncrement: 12
 --- !u!64 &369769431
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -2972,10 +3237,12 @@ MonoBehaviour:
   blendShapeIndex: 0
   blendShapeValueTarget: 0
   isProgressive: 1
-  progressiveIncrement: -30
   restingValue: 100
   lerpSpeed: 5
   returnDelay: 3
+  scannerProgressiveIncrement: 10
+  echoPassifProgressiveIncrement: 6
+  echoJoueurProgressiveIncrement: 12
 --- !u!64 &371809468
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -3094,10 +3361,24 @@ MonoBehaviour:
   blendShapeIndex: 0
   blendShapeValueTarget: 0
   isProgressive: 1
-  progressiveIncrement: -30
   restingValue: 100
   lerpSpeed: 5
-  returnDelay: 3
+  returnDelay: 4
+  scannerProgressiveIncrement: 10
+  echoPassifProgressiveIncrement: -20
+  echoJoueurProgressiveIncrement: -50
+--- !u!114 &375016518
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 375016511}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0074f886f4ee736489a71cf6bb182ce7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &394630433
 GameObject:
   m_ObjectHideFlags: 0
@@ -3241,10 +3522,12 @@ MonoBehaviour:
   blendShapeIndex: 0
   blendShapeValueTarget: 0
   isProgressive: 1
-  progressiveIncrement: -30
   restingValue: 100
   lerpSpeed: 5
   returnDelay: 3
+  scannerProgressiveIncrement: 10
+  echoPassifProgressiveIncrement: 6
+  echoJoueurProgressiveIncrement: 12
 --- !u!64 &398301309
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -3370,10 +3653,12 @@ MonoBehaviour:
   blendShapeIndex: 0
   blendShapeValueTarget: 0
   isProgressive: 1
-  progressiveIncrement: -30
   restingValue: 100
   lerpSpeed: 5
   returnDelay: 3
+  scannerProgressiveIncrement: 10
+  echoPassifProgressiveIncrement: 6
+  echoJoueurProgressiveIncrement: 12
 --- !u!64 &413594855
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -3492,10 +3777,24 @@ MonoBehaviour:
   blendShapeIndex: 0
   blendShapeValueTarget: 0
   isProgressive: 1
-  progressiveIncrement: -30
   restingValue: 100
   lerpSpeed: 5
-  returnDelay: 3
+  returnDelay: 4
+  scannerProgressiveIncrement: 10
+  echoPassifProgressiveIncrement: -20
+  echoJoueurProgressiveIncrement: -50
+--- !u!114 &415641035
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 415641028}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0074f886f4ee736489a71cf6bb182ce7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &420522227
 GameObject:
   m_ObjectHideFlags: 0
@@ -3545,10 +3844,12 @@ MonoBehaviour:
   blendShapeIndex: 0
   blendShapeValueTarget: 0
   isProgressive: 1
-  progressiveIncrement: -30
   restingValue: 100
   lerpSpeed: 5
   returnDelay: 3
+  scannerProgressiveIncrement: 10
+  echoPassifProgressiveIncrement: 6
+  echoJoueurProgressiveIncrement: 12
 --- !u!64 &420522230
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -3674,10 +3975,12 @@ MonoBehaviour:
   blendShapeIndex: 0
   blendShapeValueTarget: 0
   isProgressive: 1
-  progressiveIncrement: -30
   restingValue: 100
   lerpSpeed: 5
   returnDelay: 3
+  scannerProgressiveIncrement: 10
+  echoPassifProgressiveIncrement: 6
+  echoJoueurProgressiveIncrement: 12
 --- !u!64 &434674571
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -3796,10 +4099,24 @@ MonoBehaviour:
   blendShapeIndex: 0
   blendShapeValueTarget: 0
   isProgressive: 1
-  progressiveIncrement: -30
   restingValue: 100
   lerpSpeed: 5
-  returnDelay: 3
+  returnDelay: 4
+  scannerProgressiveIncrement: 10
+  echoPassifProgressiveIncrement: -20
+  echoJoueurProgressiveIncrement: -50
+--- !u!114 &436088301
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 436088294}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0074f886f4ee736489a71cf6bb182ce7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &477661025
 GameObject:
   m_ObjectHideFlags: 0
@@ -3849,10 +4166,12 @@ MonoBehaviour:
   blendShapeIndex: 0
   blendShapeValueTarget: 0
   isProgressive: 1
-  progressiveIncrement: -30
   restingValue: 100
   lerpSpeed: 5
   returnDelay: 3
+  scannerProgressiveIncrement: 10
+  echoPassifProgressiveIncrement: 6
+  echoJoueurProgressiveIncrement: 12
 --- !u!64 &477661028
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -4020,10 +4339,12 @@ MonoBehaviour:
   blendShapeIndex: 0
   blendShapeValueTarget: 0
   isProgressive: 1
-  progressiveIncrement: -30
   restingValue: 100
   lerpSpeed: 5
   returnDelay: 3
+  scannerProgressiveIncrement: 10
+  echoPassifProgressiveIncrement: 6
+  echoJoueurProgressiveIncrement: 12
 --- !u!114 &486202924
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4061,10 +4382,12 @@ MonoBehaviour:
   blendShapeIndex: 0
   blendShapeValueTarget: 0
   isProgressive: 1
-  progressiveIncrement: -30
   restingValue: 100
   lerpSpeed: 5
   returnDelay: 3
+  scannerProgressiveIncrement: 10
+  echoPassifProgressiveIncrement: 6
+  echoJoueurProgressiveIncrement: 12
 --- !u!64 &495293781
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -4277,6 +4600,22 @@ PrefabInstance:
       propertyPath: cooldownBlinkImage
       value: 
       objectReference: {fileID: 119644093}
+    - target: {fileID: 1238671379245572245, guid: 9cf5b9ddbcef7054d85f4226c2ed95d8, type: 3}
+      propertyPath: EcholocationSpherePrefab
+      value: 
+      objectReference: {fileID: 3520727272833897359, guid: 603eb2df2922f2944ba7bef628832dc0, type: 3}
+    - target: {fileID: 1422596832769917572, guid: 9cf5b9ddbcef7054d85f4226c2ed95d8, type: 3}
+      propertyPath: duration
+      value: 15
+      objectReference: {fileID: 0}
+    - target: {fileID: 1422596832769917572, guid: 9cf5b9ddbcef7054d85f4226c2ed95d8, type: 3}
+      propertyPath: sizeChangeSpeed
+      value: 10.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 1422596832769917572, guid: 9cf5b9ddbcef7054d85f4226c2ed95d8, type: 3}
+      propertyPath: targetScaleMultiplier
+      value: 15
+      objectReference: {fileID: 0}
     - target: {fileID: 1637230718722830631, guid: 9cf5b9ddbcef7054d85f4226c2ed95d8, type: 3}
       propertyPath: m_IsTrigger
       value: 1
@@ -4293,10 +4632,22 @@ PrefabInstance:
       propertyPath: controller
       value: 
       objectReference: {fileID: 1621882005}
+    - target: {fileID: 3642688697776344035, guid: 9cf5b9ddbcef7054d85f4226c2ed95d8, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4402346223216439940, guid: 9cf5b9ddbcef7054d85f4226c2ed95d8, type: 3}
+      propertyPath: speed
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 4402346223216439940, guid: 9cf5b9ddbcef7054d85f4226c2ed95d8, type: 3}
       propertyPath: stamina
       value: 
       objectReference: {fileID: 767240947}
+    - target: {fileID: 4402346223216439940, guid: 9cf5b9ddbcef7054d85f4226c2ed95d8, type: 3}
+      propertyPath: runSpeed
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 4525814037384041717, guid: 9cf5b9ddbcef7054d85f4226c2ed95d8, type: 3}
       propertyPath: m_Enabled
       value: 0
@@ -4374,9 +4725,6 @@ PrefabInstance:
       insertIndex: -1
       addedObject: {fileID: 1151003349}
     m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 1880299744685153614, guid: 9cf5b9ddbcef7054d85f4226c2ed95d8, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 1621882010}
     - targetCorrespondingSourceObject: {fileID: 105023545968733272, guid: 9cf5b9ddbcef7054d85f4226c2ed95d8, type: 3}
       insertIndex: 1
       addedObject: {fileID: 263322425}
@@ -4435,10 +4783,24 @@ MonoBehaviour:
   blendShapeIndex: 0
   blendShapeValueTarget: 0
   isProgressive: 1
-  progressiveIncrement: -30
   restingValue: 100
   lerpSpeed: 5
-  returnDelay: 3
+  returnDelay: 4
+  scannerProgressiveIncrement: 10
+  echoPassifProgressiveIncrement: -20
+  echoJoueurProgressiveIncrement: -50
+--- !u!114 &507119158
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 507119151}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0074f886f4ee736489a71cf6bb182ce7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &507462344 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 2188582273919094231, guid: c5aaeaa3858d4b248ba6b36799cb95bd, type: 3}
@@ -4481,10 +4843,24 @@ MonoBehaviour:
   blendShapeIndex: 0
   blendShapeValueTarget: 0
   isProgressive: 1
-  progressiveIncrement: -30
   restingValue: 100
   lerpSpeed: 5
-  returnDelay: 3
+  returnDelay: 4
+  scannerProgressiveIncrement: 10
+  echoPassifProgressiveIncrement: -20
+  echoJoueurProgressiveIncrement: -50
+--- !u!114 &507462351
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 507462344}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0074f886f4ee736489a71cf6bb182ce7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &553695726 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: -6839638810050382796, guid: c5aaeaa3858d4b248ba6b36799cb95bd, type: 3}
@@ -4527,10 +4903,24 @@ MonoBehaviour:
   blendShapeIndex: 0
   blendShapeValueTarget: 0
   isProgressive: 1
-  progressiveIncrement: -30
   restingValue: 100
   lerpSpeed: 5
-  returnDelay: 3
+  returnDelay: 4
+  scannerProgressiveIncrement: 10
+  echoPassifProgressiveIncrement: -20
+  echoJoueurProgressiveIncrement: -50
+--- !u!114 &553695733
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 553695726}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0074f886f4ee736489a71cf6bb182ce7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &624220785
 GameObject:
   m_ObjectHideFlags: 0
@@ -4580,10 +4970,12 @@ MonoBehaviour:
   blendShapeIndex: 0
   blendShapeValueTarget: 0
   isProgressive: 1
-  progressiveIncrement: -30
   restingValue: 100
   lerpSpeed: 5
   returnDelay: 3
+  scannerProgressiveIncrement: 10
+  echoPassifProgressiveIncrement: 6
+  echoJoueurProgressiveIncrement: 12
 --- !u!64 &624220788
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -4702,10 +5094,24 @@ MonoBehaviour:
   blendShapeIndex: 0
   blendShapeValueTarget: 0
   isProgressive: 1
-  progressiveIncrement: -30
   restingValue: 100
   lerpSpeed: 5
-  returnDelay: 3
+  returnDelay: 4
+  scannerProgressiveIncrement: 10
+  echoPassifProgressiveIncrement: -20
+  echoJoueurProgressiveIncrement: -50
+--- !u!114 &628385980
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 628385973}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0074f886f4ee736489a71cf6bb182ce7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &657832208
 GameObject:
   m_ObjectHideFlags: 0
@@ -4861,10 +5267,12 @@ MonoBehaviour:
   blendShapeIndex: 0
   blendShapeValueTarget: 0
   isProgressive: 1
-  progressiveIncrement: -30
   restingValue: 100
   lerpSpeed: 5
   returnDelay: 3
+  scannerProgressiveIncrement: 10
+  echoPassifProgressiveIncrement: 6
+  echoJoueurProgressiveIncrement: 12
 --- !u!64 &657941550
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -4983,10 +5391,12 @@ MonoBehaviour:
   blendShapeIndex: 0
   blendShapeValueTarget: 100
   isProgressive: 0
-  progressiveIncrement: 10
   restingValue: 0
   lerpSpeed: 5
   returnDelay: 3
+  scannerProgressiveIncrement: 10
+  echoPassifProgressiveIncrement: 6
+  echoJoueurProgressiveIncrement: 12
 --- !u!1 &696555172 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 6692149627825140578, guid: c5aaeaa3858d4b248ba6b36799cb95bd, type: 3}
@@ -5029,10 +5439,24 @@ MonoBehaviour:
   blendShapeIndex: 0
   blendShapeValueTarget: 0
   isProgressive: 1
-  progressiveIncrement: -30
   restingValue: 100
   lerpSpeed: 5
-  returnDelay: 3
+  returnDelay: 4
+  scannerProgressiveIncrement: 10
+  echoPassifProgressiveIncrement: -20
+  echoJoueurProgressiveIncrement: -50
+--- !u!114 &696555179
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 696555172}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0074f886f4ee736489a71cf6bb182ce7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &706531322
 GameObject:
   m_ObjectHideFlags: 0
@@ -5180,10 +5604,24 @@ MonoBehaviour:
   blendShapeIndex: 0
   blendShapeValueTarget: 0
   isProgressive: 1
-  progressiveIncrement: -30
   restingValue: 100
   lerpSpeed: 5
-  returnDelay: 3
+  returnDelay: 4
+  scannerProgressiveIncrement: 10
+  echoPassifProgressiveIncrement: -20
+  echoJoueurProgressiveIncrement: -50
+--- !u!114 &707759005
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 707758998}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0074f886f4ee736489a71cf6bb182ce7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &726570398 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: -1619225144725851237, guid: e22c6a14dae4cc34eaadee19d6456e26, type: 3}
@@ -5226,10 +5664,12 @@ MonoBehaviour:
   blendShapeIndex: 0
   blendShapeValueTarget: 100
   isProgressive: 0
-  progressiveIncrement: 10
   restingValue: 0
   lerpSpeed: 5
   returnDelay: 3
+  scannerProgressiveIncrement: 10
+  echoPassifProgressiveIncrement: 6
+  echoJoueurProgressiveIncrement: 12
 --- !u!1 &748003163
 GameObject:
   m_ObjectHideFlags: 0
@@ -5457,10 +5897,24 @@ MonoBehaviour:
   blendShapeIndex: 0
   blendShapeValueTarget: 0
   isProgressive: 1
-  progressiveIncrement: -30
   restingValue: 100
   lerpSpeed: 5
-  returnDelay: 3
+  returnDelay: 4
+  scannerProgressiveIncrement: 10
+  echoPassifProgressiveIncrement: -20
+  echoJoueurProgressiveIncrement: -50
+--- !u!114 &811215448
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 811215441}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0074f886f4ee736489a71cf6bb182ce7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &816726299 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 5647263387366870888, guid: c5aaeaa3858d4b248ba6b36799cb95bd, type: 3}
@@ -5503,10 +5957,24 @@ MonoBehaviour:
   blendShapeIndex: 0
   blendShapeValueTarget: 0
   isProgressive: 1
-  progressiveIncrement: -30
   restingValue: 100
   lerpSpeed: 5
-  returnDelay: 3
+  returnDelay: 4
+  scannerProgressiveIncrement: 10
+  echoPassifProgressiveIncrement: -20
+  echoJoueurProgressiveIncrement: -50
+--- !u!114 &816726306
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 816726299}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0074f886f4ee736489a71cf6bb182ce7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &819189767 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 1191793524103835218, guid: e22c6a14dae4cc34eaadee19d6456e26, type: 3}
@@ -5549,10 +6017,12 @@ MonoBehaviour:
   blendShapeIndex: 0
   blendShapeValueTarget: 100
   isProgressive: 0
-  progressiveIncrement: 10
   restingValue: 0
   lerpSpeed: 5
   returnDelay: 3
+  scannerProgressiveIncrement: 10
+  echoPassifProgressiveIncrement: 6
+  echoJoueurProgressiveIncrement: 12
 --- !u!1 &824700774 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 7150590034702082185, guid: e22c6a14dae4cc34eaadee19d6456e26, type: 3}
@@ -5595,10 +6065,12 @@ MonoBehaviour:
   blendShapeIndex: 0
   blendShapeValueTarget: 0
   isProgressive: 1
-  progressiveIncrement: -30
   restingValue: 100
   lerpSpeed: 5
   returnDelay: 3
+  scannerProgressiveIncrement: 10
+  echoPassifProgressiveIncrement: 6
+  echoJoueurProgressiveIncrement: 12
 --- !u!1 &840956159 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: -7033764427314295185, guid: c5aaeaa3858d4b248ba6b36799cb95bd, type: 3}
@@ -5641,10 +6113,24 @@ MonoBehaviour:
   blendShapeIndex: 0
   blendShapeValueTarget: 0
   isProgressive: 1
-  progressiveIncrement: -30
   restingValue: 100
   lerpSpeed: 5
-  returnDelay: 3
+  returnDelay: 4
+  scannerProgressiveIncrement: 10
+  echoPassifProgressiveIncrement: -20
+  echoJoueurProgressiveIncrement: -50
+--- !u!114 &840956166
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 840956159}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0074f886f4ee736489a71cf6bb182ce7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &865821011 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: -9204686741154938326, guid: c5aaeaa3858d4b248ba6b36799cb95bd, type: 3}
@@ -5687,10 +6173,24 @@ MonoBehaviour:
   blendShapeIndex: 0
   blendShapeValueTarget: 0
   isProgressive: 1
-  progressiveIncrement: -30
   restingValue: 100
   lerpSpeed: 5
-  returnDelay: 3
+  returnDelay: 4
+  scannerProgressiveIncrement: 10
+  echoPassifProgressiveIncrement: -20
+  echoJoueurProgressiveIncrement: -50
+--- !u!114 &865821018
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 865821011}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0074f886f4ee736489a71cf6bb182ce7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &878857722
 GameObject:
   m_ObjectHideFlags: 0
@@ -5740,10 +6240,12 @@ MonoBehaviour:
   blendShapeIndex: 0
   blendShapeValueTarget: 0
   isProgressive: 1
-  progressiveIncrement: -30
   restingValue: 100
   lerpSpeed: 5
   returnDelay: 3
+  scannerProgressiveIncrement: 10
+  echoPassifProgressiveIncrement: 6
+  echoJoueurProgressiveIncrement: 12
 --- !u!64 &878857725
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -5862,10 +6364,24 @@ MonoBehaviour:
   blendShapeIndex: 0
   blendShapeValueTarget: 0
   isProgressive: 1
-  progressiveIncrement: -30
   restingValue: 100
   lerpSpeed: 5
-  returnDelay: 3
+  returnDelay: 4
+  scannerProgressiveIncrement: 10
+  echoPassifProgressiveIncrement: -20
+  echoJoueurProgressiveIncrement: -50
+--- !u!114 &878866582
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 878866575}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0074f886f4ee736489a71cf6bb182ce7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &881597808 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: -1266787413204868340, guid: c5aaeaa3858d4b248ba6b36799cb95bd, type: 3}
@@ -5908,10 +6424,24 @@ MonoBehaviour:
   blendShapeIndex: 0
   blendShapeValueTarget: 0
   isProgressive: 1
-  progressiveIncrement: -30
   restingValue: 100
   lerpSpeed: 5
-  returnDelay: 3
+  returnDelay: 4
+  scannerProgressiveIncrement: 10
+  echoPassifProgressiveIncrement: -20
+  echoJoueurProgressiveIncrement: -50
+--- !u!114 &881597815
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 881597808}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0074f886f4ee736489a71cf6bb182ce7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &897330214
 GameObject:
   m_ObjectHideFlags: 0
@@ -5961,10 +6491,12 @@ MonoBehaviour:
   blendShapeIndex: 0
   blendShapeValueTarget: 0
   isProgressive: 1
-  progressiveIncrement: -30
   restingValue: 100
   lerpSpeed: 5
   returnDelay: 3
+  scannerProgressiveIncrement: 10
+  echoPassifProgressiveIncrement: 6
+  echoJoueurProgressiveIncrement: 12
 --- !u!64 &897330217
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -6083,10 +6615,24 @@ MonoBehaviour:
   blendShapeIndex: 0
   blendShapeValueTarget: 0
   isProgressive: 1
-  progressiveIncrement: -30
   restingValue: 100
   lerpSpeed: 5
-  returnDelay: 3
+  returnDelay: 4
+  scannerProgressiveIncrement: 10
+  echoPassifProgressiveIncrement: -20
+  echoJoueurProgressiveIncrement: -50
+--- !u!114 &904015790
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 904015783}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0074f886f4ee736489a71cf6bb182ce7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &910510485 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: -7046613062614526147, guid: e22c6a14dae4cc34eaadee19d6456e26, type: 3}
@@ -6129,10 +6675,12 @@ MonoBehaviour:
   blendShapeIndex: 0
   blendShapeValueTarget: 0
   isProgressive: 1
-  progressiveIncrement: -30
   restingValue: 100
   lerpSpeed: 5
   returnDelay: 3
+  scannerProgressiveIncrement: 10
+  echoPassifProgressiveIncrement: 6
+  echoJoueurProgressiveIncrement: 12
 --- !u!1 &918244565 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 3448997632615391536, guid: c5aaeaa3858d4b248ba6b36799cb95bd, type: 3}
@@ -6175,10 +6723,24 @@ MonoBehaviour:
   blendShapeIndex: 0
   blendShapeValueTarget: 0
   isProgressive: 1
-  progressiveIncrement: -30
   restingValue: 100
   lerpSpeed: 5
-  returnDelay: 3
+  returnDelay: 4
+  scannerProgressiveIncrement: 10
+  echoPassifProgressiveIncrement: -20
+  echoJoueurProgressiveIncrement: -50
+--- !u!114 &918244572
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 918244565}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0074f886f4ee736489a71cf6bb182ce7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &918371330 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 6883700493670232161, guid: c5aaeaa3858d4b248ba6b36799cb95bd, type: 3}
@@ -6221,10 +6783,24 @@ MonoBehaviour:
   blendShapeIndex: 0
   blendShapeValueTarget: 0
   isProgressive: 1
-  progressiveIncrement: -30
   restingValue: 100
   lerpSpeed: 5
-  returnDelay: 3
+  returnDelay: 4
+  scannerProgressiveIncrement: 10
+  echoPassifProgressiveIncrement: -20
+  echoJoueurProgressiveIncrement: -50
+--- !u!114 &918371337
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 918371330}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0074f886f4ee736489a71cf6bb182ce7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &928469934
 GameObject:
   m_ObjectHideFlags: 0
@@ -6274,10 +6850,12 @@ MonoBehaviour:
   blendShapeIndex: 0
   blendShapeValueTarget: 0
   isProgressive: 1
-  progressiveIncrement: -30
   restingValue: 100
   lerpSpeed: 5
   returnDelay: 3
+  scannerProgressiveIncrement: 10
+  echoPassifProgressiveIncrement: 6
+  echoJoueurProgressiveIncrement: 12
 --- !u!64 &928469937
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -6396,10 +6974,24 @@ MonoBehaviour:
   blendShapeIndex: 0
   blendShapeValueTarget: 0
   isProgressive: 1
-  progressiveIncrement: -30
   restingValue: 100
   lerpSpeed: 5
-  returnDelay: 3
+  returnDelay: 4
+  scannerProgressiveIncrement: 10
+  echoPassifProgressiveIncrement: -20
+  echoJoueurProgressiveIncrement: -50
+--- !u!114 &938770931
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 938770924}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0074f886f4ee736489a71cf6bb182ce7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &942250056
 GameObject:
   m_ObjectHideFlags: 0
@@ -6547,10 +7139,12 @@ MonoBehaviour:
   blendShapeIndex: 0
   blendShapeValueTarget: 0
   isProgressive: 1
-  progressiveIncrement: -30
   restingValue: 100
   lerpSpeed: 5
   returnDelay: 3
+  scannerProgressiveIncrement: 10
+  echoPassifProgressiveIncrement: 6
+  echoJoueurProgressiveIncrement: 12
 --- !u!1 &1000536073
 GameObject:
   m_ObjectHideFlags: 0
@@ -6600,10 +7194,12 @@ MonoBehaviour:
   blendShapeIndex: 0
   blendShapeValueTarget: 0
   isProgressive: 1
-  progressiveIncrement: -30
   restingValue: 100
   lerpSpeed: 5
   returnDelay: 3
+  scannerProgressiveIncrement: 10
+  echoPassifProgressiveIncrement: 6
+  echoJoueurProgressiveIncrement: 12
 --- !u!64 &1000536076
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -6722,10 +7318,24 @@ MonoBehaviour:
   blendShapeIndex: 0
   blendShapeValueTarget: 0
   isProgressive: 1
-  progressiveIncrement: -30
   restingValue: 100
   lerpSpeed: 5
-  returnDelay: 3
+  returnDelay: 4
+  scannerProgressiveIncrement: 10
+  echoPassifProgressiveIncrement: -20
+  echoJoueurProgressiveIncrement: -50
+--- !u!114 &1020798357
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1020798350}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0074f886f4ee736489a71cf6bb182ce7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &1039535436
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -6838,10 +7448,12 @@ MonoBehaviour:
   blendShapeIndex: 0
   blendShapeValueTarget: 0
   isProgressive: 1
-  progressiveIncrement: -30
   restingValue: 100
   lerpSpeed: 5
   returnDelay: 3
+  scannerProgressiveIncrement: 10
+  echoPassifProgressiveIncrement: 6
+  echoJoueurProgressiveIncrement: 12
 --- !u!64 &1049396931
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -7021,10 +7633,24 @@ MonoBehaviour:
   blendShapeIndex: 0
   blendShapeValueTarget: 0
   isProgressive: 1
-  progressiveIncrement: -30
   restingValue: 100
   lerpSpeed: 5
-  returnDelay: 3
+  returnDelay: 4
+  scannerProgressiveIncrement: 10
+  echoPassifProgressiveIncrement: -20
+  echoJoueurProgressiveIncrement: -50
+--- !u!114 &1075476375
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1075476368}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0074f886f4ee736489a71cf6bb182ce7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1098775358 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: -243890672819206648, guid: c5aaeaa3858d4b248ba6b36799cb95bd, type: 3}
@@ -7067,10 +7693,24 @@ MonoBehaviour:
   blendShapeIndex: 0
   blendShapeValueTarget: 0
   isProgressive: 1
-  progressiveIncrement: -30
   restingValue: 100
   lerpSpeed: 5
-  returnDelay: 3
+  returnDelay: 4
+  scannerProgressiveIncrement: 10
+  echoPassifProgressiveIncrement: -20
+  echoJoueurProgressiveIncrement: -50
+--- !u!114 &1098775365
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1098775358}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0074f886f4ee736489a71cf6bb182ce7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1100654289 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: -3220932478325595030, guid: c5aaeaa3858d4b248ba6b36799cb95bd, type: 3}
@@ -7113,10 +7753,24 @@ MonoBehaviour:
   blendShapeIndex: 0
   blendShapeValueTarget: 0
   isProgressive: 1
-  progressiveIncrement: -30
   restingValue: 100
   lerpSpeed: 5
-  returnDelay: 3
+  returnDelay: 4
+  scannerProgressiveIncrement: 10
+  echoPassifProgressiveIncrement: -20
+  echoJoueurProgressiveIncrement: -50
+--- !u!114 &1100654296
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1100654289}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0074f886f4ee736489a71cf6bb182ce7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1102662472 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: -5445198564989113327, guid: c5aaeaa3858d4b248ba6b36799cb95bd, type: 3}
@@ -7159,10 +7813,24 @@ MonoBehaviour:
   blendShapeIndex: 0
   blendShapeValueTarget: 0
   isProgressive: 1
-  progressiveIncrement: -30
   restingValue: 100
   lerpSpeed: 5
-  returnDelay: 3
+  returnDelay: 4
+  scannerProgressiveIncrement: 10
+  echoPassifProgressiveIncrement: -20
+  echoJoueurProgressiveIncrement: -50
+--- !u!114 &1102662479
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1102662472}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0074f886f4ee736489a71cf6bb182ce7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1151003348
 GameObject:
   m_ObjectHideFlags: 0
@@ -7281,10 +7949,24 @@ MonoBehaviour:
   blendShapeIndex: 0
   blendShapeValueTarget: 0
   isProgressive: 1
-  progressiveIncrement: -30
   restingValue: 100
   lerpSpeed: 5
-  returnDelay: 3
+  returnDelay: 4
+  scannerProgressiveIncrement: 10
+  echoPassifProgressiveIncrement: -20
+  echoJoueurProgressiveIncrement: -50
+--- !u!114 &1168727078
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1168727071}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0074f886f4ee736489a71cf6bb182ce7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1176024036
 GameObject:
   m_ObjectHideFlags: 0
@@ -7334,10 +8016,12 @@ MonoBehaviour:
   blendShapeIndex: 0
   blendShapeValueTarget: 0
   isProgressive: 1
-  progressiveIncrement: -30
   restingValue: 100
   lerpSpeed: 5
   returnDelay: 3
+  scannerProgressiveIncrement: 10
+  echoPassifProgressiveIncrement: 6
+  echoJoueurProgressiveIncrement: 12
 --- !u!64 &1176024039
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -7496,10 +8180,24 @@ MonoBehaviour:
   blendShapeIndex: 0
   blendShapeValueTarget: 0
   isProgressive: 1
-  progressiveIncrement: -30
   restingValue: 100
   lerpSpeed: 5
-  returnDelay: 3
+  returnDelay: 4
+  scannerProgressiveIncrement: 10
+  echoPassifProgressiveIncrement: -20
+  echoJoueurProgressiveIncrement: -50
+--- !u!114 &1210256799
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1210256792}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0074f886f4ee736489a71cf6bb182ce7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1229753665
 GameObject:
   m_ObjectHideFlags: 0
@@ -7549,10 +8247,12 @@ MonoBehaviour:
   blendShapeIndex: 0
   blendShapeValueTarget: 0
   isProgressive: 1
-  progressiveIncrement: -30
   restingValue: 100
   lerpSpeed: 5
   returnDelay: 3
+  scannerProgressiveIncrement: 10
+  echoPassifProgressiveIncrement: 6
+  echoJoueurProgressiveIncrement: 12
 --- !u!64 &1229753668
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -7671,10 +8371,24 @@ MonoBehaviour:
   blendShapeIndex: 0
   blendShapeValueTarget: 0
   isProgressive: 1
-  progressiveIncrement: -30
   restingValue: 100
   lerpSpeed: 5
-  returnDelay: 3
+  returnDelay: 4
+  scannerProgressiveIncrement: 10
+  echoPassifProgressiveIncrement: -20
+  echoJoueurProgressiveIncrement: -50
+--- !u!114 &1252871675
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1252871668}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0074f886f4ee736489a71cf6bb182ce7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1256992755 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: -1602419356108753435, guid: c5aaeaa3858d4b248ba6b36799cb95bd, type: 3}
@@ -7717,10 +8431,24 @@ MonoBehaviour:
   blendShapeIndex: 0
   blendShapeValueTarget: 0
   isProgressive: 1
-  progressiveIncrement: -30
   restingValue: 100
   lerpSpeed: 5
-  returnDelay: 3
+  returnDelay: 4
+  scannerProgressiveIncrement: 10
+  echoPassifProgressiveIncrement: -20
+  echoJoueurProgressiveIncrement: -50
+--- !u!114 &1256992762
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1256992755}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0074f886f4ee736489a71cf6bb182ce7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1272926994
 GameObject:
   m_ObjectHideFlags: 0
@@ -7770,10 +8498,12 @@ MonoBehaviour:
   blendShapeIndex: 0
   blendShapeValueTarget: 0
   isProgressive: 1
-  progressiveIncrement: -30
   restingValue: 100
   lerpSpeed: 5
   returnDelay: 3
+  scannerProgressiveIncrement: 10
+  echoPassifProgressiveIncrement: 6
+  echoJoueurProgressiveIncrement: 12
 --- !u!64 &1272926997
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -7899,10 +8629,12 @@ MonoBehaviour:
   blendShapeIndex: 0
   blendShapeValueTarget: 0
   isProgressive: 1
-  progressiveIncrement: -30
   restingValue: 100
   lerpSpeed: 5
   returnDelay: 3
+  scannerProgressiveIncrement: 10
+  echoPassifProgressiveIncrement: 6
+  echoJoueurProgressiveIncrement: 12
 --- !u!64 &1282492081
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -8028,10 +8760,12 @@ MonoBehaviour:
   blendShapeIndex: 0
   blendShapeValueTarget: 0
   isProgressive: 1
-  progressiveIncrement: -30
   restingValue: 100
   lerpSpeed: 5
   returnDelay: 3
+  scannerProgressiveIncrement: 10
+  echoPassifProgressiveIncrement: 6
+  echoJoueurProgressiveIncrement: 12
 --- !u!64 &1288246289
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -8150,10 +8884,24 @@ MonoBehaviour:
   blendShapeIndex: 0
   blendShapeValueTarget: 0
   isProgressive: 1
-  progressiveIncrement: -30
   restingValue: 100
   lerpSpeed: 5
-  returnDelay: 3
+  returnDelay: 4
+  scannerProgressiveIncrement: 10
+  echoPassifProgressiveIncrement: -20
+  echoJoueurProgressiveIncrement: -50
+--- !u!114 &1292490376
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1292490369}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0074f886f4ee736489a71cf6bb182ce7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1304256117 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: -3911375502014729127, guid: c5aaeaa3858d4b248ba6b36799cb95bd, type: 3}
@@ -8196,10 +8944,24 @@ MonoBehaviour:
   blendShapeIndex: 0
   blendShapeValueTarget: 0
   isProgressive: 1
-  progressiveIncrement: -30
   restingValue: 100
   lerpSpeed: 5
-  returnDelay: 3
+  returnDelay: 4
+  scannerProgressiveIncrement: 10
+  echoPassifProgressiveIncrement: -20
+  echoJoueurProgressiveIncrement: -50
+--- !u!114 &1304256124
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1304256117}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0074f886f4ee736489a71cf6bb182ce7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1314890282 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 1341293070097528463, guid: c5aaeaa3858d4b248ba6b36799cb95bd, type: 3}
@@ -8242,10 +9004,24 @@ MonoBehaviour:
   blendShapeIndex: 0
   blendShapeValueTarget: 0
   isProgressive: 1
-  progressiveIncrement: -30
   restingValue: 100
   lerpSpeed: 5
-  returnDelay: 3
+  returnDelay: 4
+  scannerProgressiveIncrement: 10
+  echoPassifProgressiveIncrement: -20
+  echoJoueurProgressiveIncrement: -50
+--- !u!114 &1314890289
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1314890282}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0074f886f4ee736489a71cf6bb182ce7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1316201566 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 1916130561999301202, guid: c5aaeaa3858d4b248ba6b36799cb95bd, type: 3}
@@ -8288,10 +9064,24 @@ MonoBehaviour:
   blendShapeIndex: 0
   blendShapeValueTarget: 0
   isProgressive: 1
-  progressiveIncrement: -30
   restingValue: 100
   lerpSpeed: 5
-  returnDelay: 3
+  returnDelay: 4
+  scannerProgressiveIncrement: 10
+  echoPassifProgressiveIncrement: -20
+  echoJoueurProgressiveIncrement: -50
+--- !u!114 &1316201573
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1316201566}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0074f886f4ee736489a71cf6bb182ce7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1316557787
 GameObject:
   m_ObjectHideFlags: 0
@@ -8341,10 +9131,12 @@ MonoBehaviour:
   blendShapeIndex: 0
   blendShapeValueTarget: 0
   isProgressive: 1
-  progressiveIncrement: -30
   restingValue: 100
   lerpSpeed: 5
   returnDelay: 3
+  scannerProgressiveIncrement: 10
+  echoPassifProgressiveIncrement: 6
+  echoJoueurProgressiveIncrement: 12
 --- !u!64 &1316557790
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -8463,10 +9255,12 @@ MonoBehaviour:
   blendShapeIndex: 0
   blendShapeValueTarget: 0
   isProgressive: 1
-  progressiveIncrement: -30
   restingValue: 100
   lerpSpeed: 5
   returnDelay: 3
+  scannerProgressiveIncrement: 10
+  echoPassifProgressiveIncrement: 6
+  echoJoueurProgressiveIncrement: 12
 --- !u!1 &1328392372
 GameObject:
   m_ObjectHideFlags: 0
@@ -8516,10 +9310,12 @@ MonoBehaviour:
   blendShapeIndex: 0
   blendShapeValueTarget: 0
   isProgressive: 1
-  progressiveIncrement: -30
   restingValue: 100
   lerpSpeed: 5
   returnDelay: 3
+  scannerProgressiveIncrement: 10
+  echoPassifProgressiveIncrement: 6
+  echoJoueurProgressiveIncrement: 12
 --- !u!64 &1328392375
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -8638,10 +9434,24 @@ MonoBehaviour:
   blendShapeIndex: 0
   blendShapeValueTarget: 0
   isProgressive: 1
-  progressiveIncrement: -30
   restingValue: 100
   lerpSpeed: 5
-  returnDelay: 3
+  returnDelay: 4
+  scannerProgressiveIncrement: 10
+  echoPassifProgressiveIncrement: -20
+  echoJoueurProgressiveIncrement: -50
+--- !u!114 &1331527344
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1331527337}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0074f886f4ee736489a71cf6bb182ce7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1347922358 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: -6271018936157884579, guid: c5aaeaa3858d4b248ba6b36799cb95bd, type: 3}
@@ -8684,10 +9494,24 @@ MonoBehaviour:
   blendShapeIndex: 0
   blendShapeValueTarget: 0
   isProgressive: 1
-  progressiveIncrement: -30
   restingValue: 100
   lerpSpeed: 5
-  returnDelay: 3
+  returnDelay: 4
+  scannerProgressiveIncrement: 10
+  echoPassifProgressiveIncrement: -20
+  echoJoueurProgressiveIncrement: -50
+--- !u!114 &1347922365
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1347922358}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0074f886f4ee736489a71cf6bb182ce7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1378877317 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 4080369284495010656, guid: c5aaeaa3858d4b248ba6b36799cb95bd, type: 3}
@@ -8730,10 +9554,24 @@ MonoBehaviour:
   blendShapeIndex: 0
   blendShapeValueTarget: 0
   isProgressive: 1
-  progressiveIncrement: -30
   restingValue: 100
   lerpSpeed: 5
-  returnDelay: 3
+  returnDelay: 4
+  scannerProgressiveIncrement: 10
+  echoPassifProgressiveIncrement: -20
+  echoJoueurProgressiveIncrement: -50
+--- !u!114 &1378877324
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1378877317}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0074f886f4ee736489a71cf6bb182ce7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1383252462 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: -8759069808066040703, guid: c5aaeaa3858d4b248ba6b36799cb95bd, type: 3}
@@ -8776,10 +9614,24 @@ MonoBehaviour:
   blendShapeIndex: 0
   blendShapeValueTarget: 0
   isProgressive: 1
-  progressiveIncrement: -30
   restingValue: 100
   lerpSpeed: 5
-  returnDelay: 3
+  returnDelay: 4
+  scannerProgressiveIncrement: 10
+  echoPassifProgressiveIncrement: -20
+  echoJoueurProgressiveIncrement: -50
+--- !u!114 &1383252469
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1383252462}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0074f886f4ee736489a71cf6bb182ce7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1393781157 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: -74209933945285768, guid: e22c6a14dae4cc34eaadee19d6456e26, type: 3}
@@ -8822,10 +9674,12 @@ MonoBehaviour:
   blendShapeIndex: 0
   blendShapeValueTarget: 0
   isProgressive: 1
-  progressiveIncrement: -30
   restingValue: 100
   lerpSpeed: 5
   returnDelay: 3
+  scannerProgressiveIncrement: 10
+  echoPassifProgressiveIncrement: 6
+  echoJoueurProgressiveIncrement: 12
 --- !u!1 &1426397954 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 7602193361315778957, guid: c5aaeaa3858d4b248ba6b36799cb95bd, type: 3}
@@ -8868,10 +9722,24 @@ MonoBehaviour:
   blendShapeIndex: 0
   blendShapeValueTarget: 0
   isProgressive: 1
-  progressiveIncrement: -30
   restingValue: 100
   lerpSpeed: 5
-  returnDelay: 3
+  returnDelay: 4
+  scannerProgressiveIncrement: 10
+  echoPassifProgressiveIncrement: -20
+  echoJoueurProgressiveIncrement: -50
+--- !u!114 &1426397961
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1426397954}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0074f886f4ee736489a71cf6bb182ce7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1430606983 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: -7142198683822701069, guid: c5aaeaa3858d4b248ba6b36799cb95bd, type: 3}
@@ -8914,10 +9782,24 @@ MonoBehaviour:
   blendShapeIndex: 0
   blendShapeValueTarget: 0
   isProgressive: 1
-  progressiveIncrement: -30
   restingValue: 100
   lerpSpeed: 5
-  returnDelay: 3
+  returnDelay: 4
+  scannerProgressiveIncrement: 10
+  echoPassifProgressiveIncrement: -20
+  echoJoueurProgressiveIncrement: -50
+--- !u!114 &1430606990
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1430606983}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0074f886f4ee736489a71cf6bb182ce7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1443910252
 GameObject:
   m_ObjectHideFlags: 0
@@ -8967,10 +9849,12 @@ MonoBehaviour:
   blendShapeIndex: 0
   blendShapeValueTarget: 0
   isProgressive: 1
-  progressiveIncrement: -30
   restingValue: 100
   lerpSpeed: 5
   returnDelay: 3
+  scannerProgressiveIncrement: 10
+  echoPassifProgressiveIncrement: 6
+  echoJoueurProgressiveIncrement: 12
 --- !u!64 &1443910255
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -9096,10 +9980,12 @@ MonoBehaviour:
   blendShapeIndex: 0
   blendShapeValueTarget: 0
   isProgressive: 1
-  progressiveIncrement: -30
   restingValue: 100
   lerpSpeed: 5
   returnDelay: 3
+  scannerProgressiveIncrement: 10
+  echoPassifProgressiveIncrement: 6
+  echoJoueurProgressiveIncrement: 12
 --- !u!64 &1469333030
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -9218,10 +10104,24 @@ MonoBehaviour:
   blendShapeIndex: 0
   blendShapeValueTarget: 0
   isProgressive: 1
-  progressiveIncrement: -30
   restingValue: 100
   lerpSpeed: 5
-  returnDelay: 3
+  returnDelay: 4
+  scannerProgressiveIncrement: 10
+  echoPassifProgressiveIncrement: -20
+  echoJoueurProgressiveIncrement: -50
+--- !u!114 &1470512911
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1470512904}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0074f886f4ee736489a71cf6bb182ce7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1478054259 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 6320301419972642092, guid: 74921567f9cbc424cb730335b4905a72, type: 3}
@@ -9242,10 +10142,12 @@ MonoBehaviour:
   blendShapeIndex: 0
   blendShapeValueTarget: 0
   isProgressive: 1
-  progressiveIncrement: -30
   restingValue: 100
   lerpSpeed: 5
   returnDelay: 3
+  scannerProgressiveIncrement: 10
+  echoPassifProgressiveIncrement: 6
+  echoJoueurProgressiveIncrement: 12
 --- !u!64 &1478054262
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -9310,10 +10212,24 @@ MonoBehaviour:
   blendShapeIndex: 0
   blendShapeValueTarget: 0
   isProgressive: 1
-  progressiveIncrement: -30
   restingValue: 100
   lerpSpeed: 5
-  returnDelay: 3
+  returnDelay: 4
+  scannerProgressiveIncrement: 10
+  echoPassifProgressiveIncrement: -20
+  echoJoueurProgressiveIncrement: -50
+--- !u!114 &1478122723
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1478122716}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0074f886f4ee736489a71cf6bb182ce7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1510736868 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 498768763784093660, guid: c5aaeaa3858d4b248ba6b36799cb95bd, type: 3}
@@ -9356,10 +10272,24 @@ MonoBehaviour:
   blendShapeIndex: 0
   blendShapeValueTarget: 0
   isProgressive: 1
-  progressiveIncrement: -30
   restingValue: 100
   lerpSpeed: 5
-  returnDelay: 3
+  returnDelay: 4
+  scannerProgressiveIncrement: 10
+  echoPassifProgressiveIncrement: -20
+  echoJoueurProgressiveIncrement: -50
+--- !u!114 &1510736875
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1510736868}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0074f886f4ee736489a71cf6bb182ce7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1523662407 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: -6634936999485875570, guid: c5aaeaa3858d4b248ba6b36799cb95bd, type: 3}
@@ -9402,10 +10332,24 @@ MonoBehaviour:
   blendShapeIndex: 0
   blendShapeValueTarget: 0
   isProgressive: 1
-  progressiveIncrement: -30
   restingValue: 100
   lerpSpeed: 5
-  returnDelay: 3
+  returnDelay: 4
+  scannerProgressiveIncrement: 10
+  echoPassifProgressiveIncrement: -20
+  echoJoueurProgressiveIncrement: -50
+--- !u!114 &1523662414
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1523662407}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0074f886f4ee736489a71cf6bb182ce7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1528651367
 GameObject:
   m_ObjectHideFlags: 0
@@ -9455,10 +10399,12 @@ MonoBehaviour:
   blendShapeIndex: 0
   blendShapeValueTarget: 0
   isProgressive: 1
-  progressiveIncrement: -30
   restingValue: 100
   lerpSpeed: 5
   returnDelay: 3
+  scannerProgressiveIncrement: 10
+  echoPassifProgressiveIncrement: 6
+  echoJoueurProgressiveIncrement: 12
 --- !u!64 &1528651370
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -9682,10 +10628,12 @@ MonoBehaviour:
   blendShapeIndex: 0
   blendShapeValueTarget: 0
   isProgressive: 1
-  progressiveIncrement: -30
   restingValue: 100
   lerpSpeed: 5
   returnDelay: 3
+  scannerProgressiveIncrement: 10
+  echoPassifProgressiveIncrement: 6
+  echoJoueurProgressiveIncrement: 12
 --- !u!1 &1549672998 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: -6104320100710984788, guid: c5aaeaa3858d4b248ba6b36799cb95bd, type: 3}
@@ -9728,10 +10676,24 @@ MonoBehaviour:
   blendShapeIndex: 0
   blendShapeValueTarget: 0
   isProgressive: 1
-  progressiveIncrement: -30
   restingValue: 100
   lerpSpeed: 5
-  returnDelay: 3
+  returnDelay: 4
+  scannerProgressiveIncrement: 10
+  echoPassifProgressiveIncrement: -20
+  echoJoueurProgressiveIncrement: -50
+--- !u!114 &1549673005
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1549672998}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0074f886f4ee736489a71cf6bb182ce7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1557569037 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 9038402203920924897, guid: c5aaeaa3858d4b248ba6b36799cb95bd, type: 3}
@@ -9774,10 +10736,24 @@ MonoBehaviour:
   blendShapeIndex: 0
   blendShapeValueTarget: 0
   isProgressive: 1
-  progressiveIncrement: -30
   restingValue: 100
   lerpSpeed: 5
-  returnDelay: 3
+  returnDelay: 4
+  scannerProgressiveIncrement: 10
+  echoPassifProgressiveIncrement: -20
+  echoJoueurProgressiveIncrement: -50
+--- !u!114 &1557569044
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1557569037}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0074f886f4ee736489a71cf6bb182ce7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1570485728 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 7497189465719357517, guid: c5aaeaa3858d4b248ba6b36799cb95bd, type: 3}
@@ -9820,10 +10796,24 @@ MonoBehaviour:
   blendShapeIndex: 0
   blendShapeValueTarget: 0
   isProgressive: 1
-  progressiveIncrement: -30
   restingValue: 100
   lerpSpeed: 5
-  returnDelay: 3
+  returnDelay: 4
+  scannerProgressiveIncrement: 10
+  echoPassifProgressiveIncrement: -20
+  echoJoueurProgressiveIncrement: -50
+--- !u!114 &1570485735
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1570485728}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0074f886f4ee736489a71cf6bb182ce7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1580054124 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: -6803562743967491826, guid: c5aaeaa3858d4b248ba6b36799cb95bd, type: 3}
@@ -9866,10 +10856,24 @@ MonoBehaviour:
   blendShapeIndex: 0
   blendShapeValueTarget: 0
   isProgressive: 1
-  progressiveIncrement: -30
   restingValue: 100
   lerpSpeed: 5
-  returnDelay: 3
+  returnDelay: 4
+  scannerProgressiveIncrement: 10
+  echoPassifProgressiveIncrement: -20
+  echoJoueurProgressiveIncrement: -50
+--- !u!114 &1580054131
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1580054124}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0074f886f4ee736489a71cf6bb182ce7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1586024248 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 6320301419972642092, guid: 74921567f9cbc424cb730335b4905a72, type: 3}
@@ -9890,10 +10894,12 @@ MonoBehaviour:
   blendShapeIndex: 0
   blendShapeValueTarget: 0
   isProgressive: 1
-  progressiveIncrement: -30
   restingValue: 100
   lerpSpeed: 5
   returnDelay: 3
+  scannerProgressiveIncrement: 10
+  echoPassifProgressiveIncrement: 6
+  echoJoueurProgressiveIncrement: 12
 --- !u!64 &1586024251
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -9958,10 +10964,12 @@ MonoBehaviour:
   blendShapeIndex: 0
   blendShapeValueTarget: 0
   isProgressive: 1
-  progressiveIncrement: -30
   restingValue: 100
   lerpSpeed: 5
   returnDelay: 3
+  scannerProgressiveIncrement: 10
+  echoPassifProgressiveIncrement: 6
+  echoJoueurProgressiveIncrement: 12
 --- !u!1 &1621881994 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 1880299744685153614, guid: 9cf5b9ddbcef7054d85f4226c2ed95d8, type: 3}
@@ -9978,65 +10986,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2c3097c16e53ec544bb849d613f30e32, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!114 &1621882010
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1621881994}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c1e199ea698685045905d0fe9e10f8d8, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  EcholocationSpherePrefab: {fileID: 3520727272833897359, guid: a9a422a722d486f4783847c65cb1389c, type: 3}
-  minRadius: 10
-  maxRadius: 50
-  minDuration: 1.5
-  maxDuration: 4
-  propagationSpeed: 15
-  fadeOutSpeed: 1.5
-  echoColor: {r: 0, g: 0.5, b: 1, a: 0.5}
-  intersectionColor: {r: 0, g: 1, b: 1, a: 1}
-  maxChargeTime: 2
-  intersectionColorEnd: {r: 1, g: 0.2, b: 0, a: 1}
-  spawnCurve:
-    serializedVersion: 2
-    m_Curve:
-    - serializedVersion: 3
-      time: 0
-      value: 0
-      inSlope: 0
-      outSlope: 2
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0
-      outWeight: 0
-    - serializedVersion: 3
-      time: 0.3
-      value: 0.5
-      inSlope: 1
-      outSlope: 1
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0
-      outWeight: 0
-    - serializedVersion: 3
-      time: 1
-      value: 1
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0
-      outWeight: 0
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 4
-  echoCooldown: 0.25
-  maxActiveEchos: 5
-  chargeIndicatorFill: {fileID: 748003165}
 --- !u!1 &1671683570 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 8590067468806308668, guid: e22c6a14dae4cc34eaadee19d6456e26, type: 3}
@@ -10079,10 +11028,12 @@ MonoBehaviour:
   blendShapeIndex: 0
   blendShapeValueTarget: 0
   isProgressive: 1
-  progressiveIncrement: -30
   restingValue: 100
   lerpSpeed: 5
   returnDelay: 3
+  scannerProgressiveIncrement: 10
+  echoPassifProgressiveIncrement: 6
+  echoJoueurProgressiveIncrement: 12
 --- !u!1 &1672087835 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 3201939648104949814, guid: c5aaeaa3858d4b248ba6b36799cb95bd, type: 3}
@@ -10125,10 +11076,24 @@ MonoBehaviour:
   blendShapeIndex: 0
   blendShapeValueTarget: 0
   isProgressive: 1
-  progressiveIncrement: -30
   restingValue: 100
   lerpSpeed: 5
-  returnDelay: 3
+  returnDelay: 4
+  scannerProgressiveIncrement: 10
+  echoPassifProgressiveIncrement: -20
+  echoJoueurProgressiveIncrement: -50
+--- !u!114 &1672087842
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1672087835}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0074f886f4ee736489a71cf6bb182ce7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1698782212 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: -139556844373187779, guid: c5aaeaa3858d4b248ba6b36799cb95bd, type: 3}
@@ -10171,10 +11136,24 @@ MonoBehaviour:
   blendShapeIndex: 0
   blendShapeValueTarget: 0
   isProgressive: 1
-  progressiveIncrement: -30
   restingValue: 100
   lerpSpeed: 5
-  returnDelay: 3
+  returnDelay: 4
+  scannerProgressiveIncrement: 10
+  echoPassifProgressiveIncrement: -20
+  echoJoueurProgressiveIncrement: -50
+--- !u!114 &1698782219
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1698782212}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0074f886f4ee736489a71cf6bb182ce7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1701744867 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 6096942740938767664, guid: c5aaeaa3858d4b248ba6b36799cb95bd, type: 3}
@@ -10217,10 +11196,24 @@ MonoBehaviour:
   blendShapeIndex: 0
   blendShapeValueTarget: 0
   isProgressive: 1
-  progressiveIncrement: -30
   restingValue: 100
   lerpSpeed: 5
-  returnDelay: 3
+  returnDelay: 4
+  scannerProgressiveIncrement: 10
+  echoPassifProgressiveIncrement: -20
+  echoJoueurProgressiveIncrement: -50
+--- !u!114 &1701744874
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1701744867}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0074f886f4ee736489a71cf6bb182ce7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1724972817 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 7762159736451556101, guid: c5aaeaa3858d4b248ba6b36799cb95bd, type: 3}
@@ -10263,10 +11256,24 @@ MonoBehaviour:
   blendShapeIndex: 0
   blendShapeValueTarget: 0
   isProgressive: 1
-  progressiveIncrement: -30
   restingValue: 100
   lerpSpeed: 5
-  returnDelay: 3
+  returnDelay: 4
+  scannerProgressiveIncrement: 10
+  echoPassifProgressiveIncrement: -20
+  echoJoueurProgressiveIncrement: -50
+--- !u!114 &1724972824
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1724972817}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0074f886f4ee736489a71cf6bb182ce7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1725745083 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 2383008726701828035, guid: c5aaeaa3858d4b248ba6b36799cb95bd, type: 3}
@@ -10309,10 +11316,24 @@ MonoBehaviour:
   blendShapeIndex: 0
   blendShapeValueTarget: 0
   isProgressive: 1
-  progressiveIncrement: -30
   restingValue: 100
   lerpSpeed: 5
-  returnDelay: 3
+  returnDelay: 4
+  scannerProgressiveIncrement: 10
+  echoPassifProgressiveIncrement: -20
+  echoJoueurProgressiveIncrement: -50
+--- !u!114 &1725745090
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1725745083}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0074f886f4ee736489a71cf6bb182ce7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &1732723528
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -10550,10 +11571,12 @@ MonoBehaviour:
   blendShapeIndex: 0
   blendShapeValueTarget: 0
   isProgressive: 1
-  progressiveIncrement: -30
   restingValue: 100
   lerpSpeed: 5
   returnDelay: 3
+  scannerProgressiveIncrement: 10
+  echoPassifProgressiveIncrement: 6
+  echoJoueurProgressiveIncrement: 12
 --- !u!1 &1764901655 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 6400809260100018108, guid: c5aaeaa3858d4b248ba6b36799cb95bd, type: 3}
@@ -10596,10 +11619,24 @@ MonoBehaviour:
   blendShapeIndex: 0
   blendShapeValueTarget: 0
   isProgressive: 1
-  progressiveIncrement: -30
   restingValue: 100
   lerpSpeed: 5
-  returnDelay: 3
+  returnDelay: 4
+  scannerProgressiveIncrement: 10
+  echoPassifProgressiveIncrement: -20
+  echoJoueurProgressiveIncrement: -50
+--- !u!114 &1764901662
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1764901655}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0074f886f4ee736489a71cf6bb182ce7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1793841131
 GameObject:
   m_ObjectHideFlags: 0
@@ -10649,10 +11686,12 @@ MonoBehaviour:
   blendShapeIndex: 0
   blendShapeValueTarget: 0
   isProgressive: 1
-  progressiveIncrement: -30
   restingValue: 100
   lerpSpeed: 5
   returnDelay: 3
+  scannerProgressiveIncrement: 10
+  echoPassifProgressiveIncrement: 6
+  echoJoueurProgressiveIncrement: 12
 --- !u!64 &1793841134
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -10771,10 +11810,24 @@ MonoBehaviour:
   blendShapeIndex: 0
   blendShapeValueTarget: 0
   isProgressive: 1
-  progressiveIncrement: -30
   restingValue: 100
   lerpSpeed: 5
-  returnDelay: 3
+  returnDelay: 4
+  scannerProgressiveIncrement: 10
+  echoPassifProgressiveIncrement: -20
+  echoJoueurProgressiveIncrement: -50
+--- !u!114 &1825303818
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1825303811}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0074f886f4ee736489a71cf6bb182ce7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1832732508 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: -3651841812052964975, guid: c5aaeaa3858d4b248ba6b36799cb95bd, type: 3}
@@ -10817,10 +11870,24 @@ MonoBehaviour:
   blendShapeIndex: 0
   blendShapeValueTarget: 0
   isProgressive: 1
-  progressiveIncrement: -30
   restingValue: 100
   lerpSpeed: 5
-  returnDelay: 3
+  returnDelay: 4
+  scannerProgressiveIncrement: 10
+  echoPassifProgressiveIncrement: -20
+  echoJoueurProgressiveIncrement: -50
+--- !u!114 &1832732515
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1832732508}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0074f886f4ee736489a71cf6bb182ce7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1833290047 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 391698822518480519, guid: c5aaeaa3858d4b248ba6b36799cb95bd, type: 3}
@@ -10863,10 +11930,24 @@ MonoBehaviour:
   blendShapeIndex: 0
   blendShapeValueTarget: 0
   isProgressive: 1
-  progressiveIncrement: -30
   restingValue: 100
   lerpSpeed: 5
-  returnDelay: 3
+  returnDelay: 4
+  scannerProgressiveIncrement: 10
+  echoPassifProgressiveIncrement: -20
+  echoJoueurProgressiveIncrement: -50
+--- !u!114 &1833290054
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1833290047}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0074f886f4ee736489a71cf6bb182ce7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &1833547616
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -13709,462 +14790,693 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 3026143397924078644, guid: c5aaeaa3858d4b248ba6b36799cb95bd, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1168727075}
+    - targetCorrespondingSourceObject: {fileID: 3026143397924078644, guid: c5aaeaa3858d4b248ba6b36799cb95bd, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1168727078}
     - targetCorrespondingSourceObject: {fileID: -9060439971855302104, guid: c5aaeaa3858d4b248ba6b36799cb95bd, type: 3}
       insertIndex: -1
       addedObject: {fileID: 115765712}
     - targetCorrespondingSourceObject: {fileID: -9060439971855302104, guid: c5aaeaa3858d4b248ba6b36799cb95bd, type: 3}
       insertIndex: -1
       addedObject: {fileID: 115765713}
+    - targetCorrespondingSourceObject: {fileID: -9060439971855302104, guid: c5aaeaa3858d4b248ba6b36799cb95bd, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 115765716}
     - targetCorrespondingSourceObject: {fileID: 4625760099979896526, guid: c5aaeaa3858d4b248ba6b36799cb95bd, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1210256795}
     - targetCorrespondingSourceObject: {fileID: 4625760099979896526, guid: c5aaeaa3858d4b248ba6b36799cb95bd, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1210256796}
+    - targetCorrespondingSourceObject: {fileID: 4625760099979896526, guid: c5aaeaa3858d4b248ba6b36799cb95bd, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1210256799}
     - targetCorrespondingSourceObject: {fileID: -139556844373187779, guid: c5aaeaa3858d4b248ba6b36799cb95bd, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1698782215}
     - targetCorrespondingSourceObject: {fileID: -139556844373187779, guid: c5aaeaa3858d4b248ba6b36799cb95bd, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1698782216}
+    - targetCorrespondingSourceObject: {fileID: -139556844373187779, guid: c5aaeaa3858d4b248ba6b36799cb95bd, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1698782219}
     - targetCorrespondingSourceObject: {fileID: 391698822518480519, guid: c5aaeaa3858d4b248ba6b36799cb95bd, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1833290050}
     - targetCorrespondingSourceObject: {fileID: 391698822518480519, guid: c5aaeaa3858d4b248ba6b36799cb95bd, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1833290051}
+    - targetCorrespondingSourceObject: {fileID: 391698822518480519, guid: c5aaeaa3858d4b248ba6b36799cb95bd, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1833290054}
     - targetCorrespondingSourceObject: {fileID: 938401568745444342, guid: c5aaeaa3858d4b248ba6b36799cb95bd, type: 3}
       insertIndex: -1
       addedObject: {fileID: 507119154}
     - targetCorrespondingSourceObject: {fileID: 938401568745444342, guid: c5aaeaa3858d4b248ba6b36799cb95bd, type: 3}
       insertIndex: -1
       addedObject: {fileID: 507119155}
+    - targetCorrespondingSourceObject: {fileID: 938401568745444342, guid: c5aaeaa3858d4b248ba6b36799cb95bd, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 507119158}
     - targetCorrespondingSourceObject: {fileID: -6104320100710984788, guid: c5aaeaa3858d4b248ba6b36799cb95bd, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1549673001}
     - targetCorrespondingSourceObject: {fileID: -6104320100710984788, guid: c5aaeaa3858d4b248ba6b36799cb95bd, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1549673002}
+    - targetCorrespondingSourceObject: {fileID: -6104320100710984788, guid: c5aaeaa3858d4b248ba6b36799cb95bd, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1549673005}
     - targetCorrespondingSourceObject: {fileID: 4936928495644207568, guid: c5aaeaa3858d4b248ba6b36799cb95bd, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1835838474}
     - targetCorrespondingSourceObject: {fileID: 4936928495644207568, guid: c5aaeaa3858d4b248ba6b36799cb95bd, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1835838475}
+    - targetCorrespondingSourceObject: {fileID: 4936928495644207568, guid: c5aaeaa3858d4b248ba6b36799cb95bd, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1835838478}
     - targetCorrespondingSourceObject: {fileID: 3211877914011118332, guid: c5aaeaa3858d4b248ba6b36799cb95bd, type: 3}
       insertIndex: -1
       addedObject: {fileID: 281835546}
     - targetCorrespondingSourceObject: {fileID: 3211877914011118332, guid: c5aaeaa3858d4b248ba6b36799cb95bd, type: 3}
       insertIndex: -1
       addedObject: {fileID: 281835547}
+    - targetCorrespondingSourceObject: {fileID: 3211877914011118332, guid: c5aaeaa3858d4b248ba6b36799cb95bd, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 281835550}
     - targetCorrespondingSourceObject: {fileID: 5647263387366870888, guid: c5aaeaa3858d4b248ba6b36799cb95bd, type: 3}
       insertIndex: -1
       addedObject: {fileID: 816726302}
     - targetCorrespondingSourceObject: {fileID: 5647263387366870888, guid: c5aaeaa3858d4b248ba6b36799cb95bd, type: 3}
       insertIndex: -1
       addedObject: {fileID: 816726303}
+    - targetCorrespondingSourceObject: {fileID: 5647263387366870888, guid: c5aaeaa3858d4b248ba6b36799cb95bd, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 816726306}
     - targetCorrespondingSourceObject: {fileID: -4357554680156711687, guid: c5aaeaa3858d4b248ba6b36799cb95bd, type: 3}
       insertIndex: -1
       addedObject: {fileID: 176644239}
     - targetCorrespondingSourceObject: {fileID: -4357554680156711687, guid: c5aaeaa3858d4b248ba6b36799cb95bd, type: 3}
       insertIndex: -1
       addedObject: {fileID: 176644240}
+    - targetCorrespondingSourceObject: {fileID: -4357554680156711687, guid: c5aaeaa3858d4b248ba6b36799cb95bd, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 176644243}
     - targetCorrespondingSourceObject: {fileID: 7602193361315778957, guid: c5aaeaa3858d4b248ba6b36799cb95bd, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1426397957}
     - targetCorrespondingSourceObject: {fileID: 7602193361315778957, guid: c5aaeaa3858d4b248ba6b36799cb95bd, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1426397958}
+    - targetCorrespondingSourceObject: {fileID: 7602193361315778957, guid: c5aaeaa3858d4b248ba6b36799cb95bd, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1426397961}
     - targetCorrespondingSourceObject: {fileID: 1416723969486147446, guid: c5aaeaa3858d4b248ba6b36799cb95bd, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1252871671}
     - targetCorrespondingSourceObject: {fileID: 1416723969486147446, guid: c5aaeaa3858d4b248ba6b36799cb95bd, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1252871672}
+    - targetCorrespondingSourceObject: {fileID: 1416723969486147446, guid: c5aaeaa3858d4b248ba6b36799cb95bd, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1252871675}
     - targetCorrespondingSourceObject: {fileID: 498768763784093660, guid: c5aaeaa3858d4b248ba6b36799cb95bd, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1510736871}
     - targetCorrespondingSourceObject: {fileID: 498768763784093660, guid: c5aaeaa3858d4b248ba6b36799cb95bd, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1510736872}
+    - targetCorrespondingSourceObject: {fileID: 498768763784093660, guid: c5aaeaa3858d4b248ba6b36799cb95bd, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1510736875}
     - targetCorrespondingSourceObject: {fileID: 6883700493670232161, guid: c5aaeaa3858d4b248ba6b36799cb95bd, type: 3}
       insertIndex: -1
       addedObject: {fileID: 918371333}
     - targetCorrespondingSourceObject: {fileID: 6883700493670232161, guid: c5aaeaa3858d4b248ba6b36799cb95bd, type: 3}
       insertIndex: -1
       addedObject: {fileID: 918371334}
+    - targetCorrespondingSourceObject: {fileID: 6883700493670232161, guid: c5aaeaa3858d4b248ba6b36799cb95bd, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 918371337}
     - targetCorrespondingSourceObject: {fileID: -3971051839356179853, guid: c5aaeaa3858d4b248ba6b36799cb95bd, type: 3}
       insertIndex: -1
       addedObject: {fileID: 305242334}
     - targetCorrespondingSourceObject: {fileID: -3971051839356179853, guid: c5aaeaa3858d4b248ba6b36799cb95bd, type: 3}
       insertIndex: -1
       addedObject: {fileID: 305242335}
+    - targetCorrespondingSourceObject: {fileID: -3971051839356179853, guid: c5aaeaa3858d4b248ba6b36799cb95bd, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 305242338}
     - targetCorrespondingSourceObject: {fileID: 8460033818040474037, guid: c5aaeaa3858d4b248ba6b36799cb95bd, type: 3}
       insertIndex: -1
       addedObject: {fileID: 315644968}
     - targetCorrespondingSourceObject: {fileID: 8460033818040474037, guid: c5aaeaa3858d4b248ba6b36799cb95bd, type: 3}
       insertIndex: -1
       addedObject: {fileID: 315644969}
+    - targetCorrespondingSourceObject: {fileID: 8460033818040474037, guid: c5aaeaa3858d4b248ba6b36799cb95bd, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 315644972}
     - targetCorrespondingSourceObject: {fileID: 3448997632615391536, guid: c5aaeaa3858d4b248ba6b36799cb95bd, type: 3}
       insertIndex: -1
       addedObject: {fileID: 918244568}
     - targetCorrespondingSourceObject: {fileID: 3448997632615391536, guid: c5aaeaa3858d4b248ba6b36799cb95bd, type: 3}
       insertIndex: -1
       addedObject: {fileID: 918244569}
+    - targetCorrespondingSourceObject: {fileID: 3448997632615391536, guid: c5aaeaa3858d4b248ba6b36799cb95bd, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 918244572}
     - targetCorrespondingSourceObject: {fileID: -6278566024039419560, guid: c5aaeaa3858d4b248ba6b36799cb95bd, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1331527340}
     - targetCorrespondingSourceObject: {fileID: -6278566024039419560, guid: c5aaeaa3858d4b248ba6b36799cb95bd, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1331527341}
+    - targetCorrespondingSourceObject: {fileID: -6278566024039419560, guid: c5aaeaa3858d4b248ba6b36799cb95bd, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1331527344}
     - targetCorrespondingSourceObject: {fileID: 2383008726701828035, guid: c5aaeaa3858d4b248ba6b36799cb95bd, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1725745086}
     - targetCorrespondingSourceObject: {fileID: 2383008726701828035, guid: c5aaeaa3858d4b248ba6b36799cb95bd, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1725745087}
+    - targetCorrespondingSourceObject: {fileID: 2383008726701828035, guid: c5aaeaa3858d4b248ba6b36799cb95bd, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1725745090}
     - targetCorrespondingSourceObject: {fileID: -6839638810050382796, guid: c5aaeaa3858d4b248ba6b36799cb95bd, type: 3}
       insertIndex: -1
       addedObject: {fileID: 553695729}
     - targetCorrespondingSourceObject: {fileID: -6839638810050382796, guid: c5aaeaa3858d4b248ba6b36799cb95bd, type: 3}
       insertIndex: -1
       addedObject: {fileID: 553695730}
+    - targetCorrespondingSourceObject: {fileID: -6839638810050382796, guid: c5aaeaa3858d4b248ba6b36799cb95bd, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 553695733}
     - targetCorrespondingSourceObject: {fileID: -2358423245618613083, guid: c5aaeaa3858d4b248ba6b36799cb95bd, type: 3}
       insertIndex: -1
       addedObject: {fileID: 218016806}
     - targetCorrespondingSourceObject: {fileID: -2358423245618613083, guid: c5aaeaa3858d4b248ba6b36799cb95bd, type: 3}
       insertIndex: -1
       addedObject: {fileID: 218016807}
+    - targetCorrespondingSourceObject: {fileID: -2358423245618613083, guid: c5aaeaa3858d4b248ba6b36799cb95bd, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 218016810}
     - targetCorrespondingSourceObject: {fileID: 7151122081613591736, guid: c5aaeaa3858d4b248ba6b36799cb95bd, type: 3}
       insertIndex: -1
       addedObject: {fileID: 415641031}
     - targetCorrespondingSourceObject: {fileID: 7151122081613591736, guid: c5aaeaa3858d4b248ba6b36799cb95bd, type: 3}
       insertIndex: -1
       addedObject: {fileID: 415641032}
+    - targetCorrespondingSourceObject: {fileID: 7151122081613591736, guid: c5aaeaa3858d4b248ba6b36799cb95bd, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 415641035}
     - targetCorrespondingSourceObject: {fileID: -6520282987543717655, guid: c5aaeaa3858d4b248ba6b36799cb95bd, type: 3}
       insertIndex: -1
       addedObject: {fileID: 2031604103}
     - targetCorrespondingSourceObject: {fileID: -6520282987543717655, guid: c5aaeaa3858d4b248ba6b36799cb95bd, type: 3}
       insertIndex: -1
       addedObject: {fileID: 2031604104}
+    - targetCorrespondingSourceObject: {fileID: -6520282987543717655, guid: c5aaeaa3858d4b248ba6b36799cb95bd, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 2031604107}
     - targetCorrespondingSourceObject: {fileID: 4080369284495010656, guid: c5aaeaa3858d4b248ba6b36799cb95bd, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1378877320}
     - targetCorrespondingSourceObject: {fileID: 4080369284495010656, guid: c5aaeaa3858d4b248ba6b36799cb95bd, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1378877321}
+    - targetCorrespondingSourceObject: {fileID: 4080369284495010656, guid: c5aaeaa3858d4b248ba6b36799cb95bd, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1378877324}
     - targetCorrespondingSourceObject: {fileID: -3220932478325595030, guid: c5aaeaa3858d4b248ba6b36799cb95bd, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1100654292}
     - targetCorrespondingSourceObject: {fileID: -3220932478325595030, guid: c5aaeaa3858d4b248ba6b36799cb95bd, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1100654293}
+    - targetCorrespondingSourceObject: {fileID: -3220932478325595030, guid: c5aaeaa3858d4b248ba6b36799cb95bd, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1100654296}
     - targetCorrespondingSourceObject: {fileID: -7166574167882647583, guid: c5aaeaa3858d4b248ba6b36799cb95bd, type: 3}
       insertIndex: -1
       addedObject: {fileID: 200104884}
     - targetCorrespondingSourceObject: {fileID: -7166574167882647583, guid: c5aaeaa3858d4b248ba6b36799cb95bd, type: 3}
       insertIndex: -1
       addedObject: {fileID: 200104885}
+    - targetCorrespondingSourceObject: {fileID: -7166574167882647583, guid: c5aaeaa3858d4b248ba6b36799cb95bd, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 200104888}
     - targetCorrespondingSourceObject: {fileID: -1602419356108753435, guid: c5aaeaa3858d4b248ba6b36799cb95bd, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1256992758}
     - targetCorrespondingSourceObject: {fileID: -1602419356108753435, guid: c5aaeaa3858d4b248ba6b36799cb95bd, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1256992759}
+    - targetCorrespondingSourceObject: {fileID: -1602419356108753435, guid: c5aaeaa3858d4b248ba6b36799cb95bd, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1256992762}
     - targetCorrespondingSourceObject: {fileID: 4119438466474082796, guid: c5aaeaa3858d4b248ba6b36799cb95bd, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1075476371}
     - targetCorrespondingSourceObject: {fileID: 4119438466474082796, guid: c5aaeaa3858d4b248ba6b36799cb95bd, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1075476372}
+    - targetCorrespondingSourceObject: {fileID: 4119438466474082796, guid: c5aaeaa3858d4b248ba6b36799cb95bd, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1075476375}
     - targetCorrespondingSourceObject: {fileID: 5225017493561190855, guid: c5aaeaa3858d4b248ba6b36799cb95bd, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1932996943}
     - targetCorrespondingSourceObject: {fileID: 5225017493561190855, guid: c5aaeaa3858d4b248ba6b36799cb95bd, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1932996944}
+    - targetCorrespondingSourceObject: {fileID: 5225017493561190855, guid: c5aaeaa3858d4b248ba6b36799cb95bd, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1932996947}
     - targetCorrespondingSourceObject: {fileID: 4996424436530825728, guid: c5aaeaa3858d4b248ba6b36799cb95bd, type: 3}
       insertIndex: -1
       addedObject: {fileID: 212450613}
     - targetCorrespondingSourceObject: {fileID: 4996424436530825728, guid: c5aaeaa3858d4b248ba6b36799cb95bd, type: 3}
       insertIndex: -1
       addedObject: {fileID: 212450614}
+    - targetCorrespondingSourceObject: {fileID: 4996424436530825728, guid: c5aaeaa3858d4b248ba6b36799cb95bd, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 212450617}
     - targetCorrespondingSourceObject: {fileID: -4362802685694538781, guid: c5aaeaa3858d4b248ba6b36799cb95bd, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1478122719}
     - targetCorrespondingSourceObject: {fileID: -4362802685694538781, guid: c5aaeaa3858d4b248ba6b36799cb95bd, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1478122720}
+    - targetCorrespondingSourceObject: {fileID: -4362802685694538781, guid: c5aaeaa3858d4b248ba6b36799cb95bd, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1478122723}
     - targetCorrespondingSourceObject: {fileID: -6803562743967491826, guid: c5aaeaa3858d4b248ba6b36799cb95bd, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1580054127}
     - targetCorrespondingSourceObject: {fileID: -6803562743967491826, guid: c5aaeaa3858d4b248ba6b36799cb95bd, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1580054128}
+    - targetCorrespondingSourceObject: {fileID: -6803562743967491826, guid: c5aaeaa3858d4b248ba6b36799cb95bd, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1580054131}
     - targetCorrespondingSourceObject: {fileID: -7142198683822701069, guid: c5aaeaa3858d4b248ba6b36799cb95bd, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1430606986}
     - targetCorrespondingSourceObject: {fileID: -7142198683822701069, guid: c5aaeaa3858d4b248ba6b36799cb95bd, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1430606987}
+    - targetCorrespondingSourceObject: {fileID: -7142198683822701069, guid: c5aaeaa3858d4b248ba6b36799cb95bd, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1430606990}
     - targetCorrespondingSourceObject: {fileID: -1266787413204868340, guid: c5aaeaa3858d4b248ba6b36799cb95bd, type: 3}
       insertIndex: -1
       addedObject: {fileID: 881597811}
     - targetCorrespondingSourceObject: {fileID: -1266787413204868340, guid: c5aaeaa3858d4b248ba6b36799cb95bd, type: 3}
       insertIndex: -1
       addedObject: {fileID: 881597812}
+    - targetCorrespondingSourceObject: {fileID: -1266787413204868340, guid: c5aaeaa3858d4b248ba6b36799cb95bd, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 881597815}
     - targetCorrespondingSourceObject: {fileID: -8247533916898437040, guid: c5aaeaa3858d4b248ba6b36799cb95bd, type: 3}
       insertIndex: -1
       addedObject: {fileID: 628385976}
     - targetCorrespondingSourceObject: {fileID: -8247533916898437040, guid: c5aaeaa3858d4b248ba6b36799cb95bd, type: 3}
       insertIndex: -1
       addedObject: {fileID: 628385977}
+    - targetCorrespondingSourceObject: {fileID: -8247533916898437040, guid: c5aaeaa3858d4b248ba6b36799cb95bd, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 628385980}
     - targetCorrespondingSourceObject: {fileID: -5445198564989113327, guid: c5aaeaa3858d4b248ba6b36799cb95bd, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1102662475}
     - targetCorrespondingSourceObject: {fileID: -5445198564989113327, guid: c5aaeaa3858d4b248ba6b36799cb95bd, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1102662476}
+    - targetCorrespondingSourceObject: {fileID: -5445198564989113327, guid: c5aaeaa3858d4b248ba6b36799cb95bd, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1102662479}
     - targetCorrespondingSourceObject: {fileID: 7762159736451556101, guid: c5aaeaa3858d4b248ba6b36799cb95bd, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1724972820}
     - targetCorrespondingSourceObject: {fileID: 7762159736451556101, guid: c5aaeaa3858d4b248ba6b36799cb95bd, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1724972821}
+    - targetCorrespondingSourceObject: {fileID: 7762159736451556101, guid: c5aaeaa3858d4b248ba6b36799cb95bd, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1724972824}
     - targetCorrespondingSourceObject: {fileID: 6096942740938767664, guid: c5aaeaa3858d4b248ba6b36799cb95bd, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1701744870}
     - targetCorrespondingSourceObject: {fileID: 6096942740938767664, guid: c5aaeaa3858d4b248ba6b36799cb95bd, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1701744871}
+    - targetCorrespondingSourceObject: {fileID: 6096942740938767664, guid: c5aaeaa3858d4b248ba6b36799cb95bd, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1701744874}
     - targetCorrespondingSourceObject: {fileID: 2188582273919094231, guid: c5aaeaa3858d4b248ba6b36799cb95bd, type: 3}
       insertIndex: -1
       addedObject: {fileID: 507462347}
     - targetCorrespondingSourceObject: {fileID: 2188582273919094231, guid: c5aaeaa3858d4b248ba6b36799cb95bd, type: 3}
       insertIndex: -1
       addedObject: {fileID: 507462348}
+    - targetCorrespondingSourceObject: {fileID: 2188582273919094231, guid: c5aaeaa3858d4b248ba6b36799cb95bd, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 507462351}
     - targetCorrespondingSourceObject: {fileID: -3911375502014729127, guid: c5aaeaa3858d4b248ba6b36799cb95bd, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1304256120}
     - targetCorrespondingSourceObject: {fileID: -3911375502014729127, guid: c5aaeaa3858d4b248ba6b36799cb95bd, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1304256121}
+    - targetCorrespondingSourceObject: {fileID: -3911375502014729127, guid: c5aaeaa3858d4b248ba6b36799cb95bd, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1304256124}
     - targetCorrespondingSourceObject: {fileID: 5711991481193416054, guid: c5aaeaa3858d4b248ba6b36799cb95bd, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1292490372}
     - targetCorrespondingSourceObject: {fileID: 5711991481193416054, guid: c5aaeaa3858d4b248ba6b36799cb95bd, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1292490373}
+    - targetCorrespondingSourceObject: {fileID: 5711991481193416054, guid: c5aaeaa3858d4b248ba6b36799cb95bd, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1292490376}
     - targetCorrespondingSourceObject: {fileID: 6400809260100018108, guid: c5aaeaa3858d4b248ba6b36799cb95bd, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1764901658}
     - targetCorrespondingSourceObject: {fileID: 6400809260100018108, guid: c5aaeaa3858d4b248ba6b36799cb95bd, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1764901659}
+    - targetCorrespondingSourceObject: {fileID: 6400809260100018108, guid: c5aaeaa3858d4b248ba6b36799cb95bd, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1764901662}
     - targetCorrespondingSourceObject: {fileID: 1916130561999301202, guid: c5aaeaa3858d4b248ba6b36799cb95bd, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1316201569}
     - targetCorrespondingSourceObject: {fileID: 1916130561999301202, guid: c5aaeaa3858d4b248ba6b36799cb95bd, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1316201570}
+    - targetCorrespondingSourceObject: {fileID: 1916130561999301202, guid: c5aaeaa3858d4b248ba6b36799cb95bd, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1316201573}
     - targetCorrespondingSourceObject: {fileID: 7497189465719357517, guid: c5aaeaa3858d4b248ba6b36799cb95bd, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1570485731}
     - targetCorrespondingSourceObject: {fileID: 7497189465719357517, guid: c5aaeaa3858d4b248ba6b36799cb95bd, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1570485732}
+    - targetCorrespondingSourceObject: {fileID: 7497189465719357517, guid: c5aaeaa3858d4b248ba6b36799cb95bd, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1570485735}
     - targetCorrespondingSourceObject: {fileID: 1980925392982794552, guid: c5aaeaa3858d4b248ba6b36799cb95bd, type: 3}
       insertIndex: -1
       addedObject: {fileID: 904015786}
     - targetCorrespondingSourceObject: {fileID: 1980925392982794552, guid: c5aaeaa3858d4b248ba6b36799cb95bd, type: 3}
       insertIndex: -1
       addedObject: {fileID: 904015787}
+    - targetCorrespondingSourceObject: {fileID: 1980925392982794552, guid: c5aaeaa3858d4b248ba6b36799cb95bd, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 904015790}
     - targetCorrespondingSourceObject: {fileID: -2279885753802176892, guid: c5aaeaa3858d4b248ba6b36799cb95bd, type: 3}
       insertIndex: -1
       addedObject: {fileID: 878866578}
     - targetCorrespondingSourceObject: {fileID: -2279885753802176892, guid: c5aaeaa3858d4b248ba6b36799cb95bd, type: 3}
       insertIndex: -1
       addedObject: {fileID: 878866579}
+    - targetCorrespondingSourceObject: {fileID: -2279885753802176892, guid: c5aaeaa3858d4b248ba6b36799cb95bd, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 878866582}
     - targetCorrespondingSourceObject: {fileID: -4362255697554809526, guid: c5aaeaa3858d4b248ba6b36799cb95bd, type: 3}
       insertIndex: -1
       addedObject: {fileID: 938770927}
     - targetCorrespondingSourceObject: {fileID: -4362255697554809526, guid: c5aaeaa3858d4b248ba6b36799cb95bd, type: 3}
       insertIndex: -1
       addedObject: {fileID: 938770928}
+    - targetCorrespondingSourceObject: {fileID: -4362255697554809526, guid: c5aaeaa3858d4b248ba6b36799cb95bd, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 938770931}
     - targetCorrespondingSourceObject: {fileID: -7410114340046740095, guid: c5aaeaa3858d4b248ba6b36799cb95bd, type: 3}
       insertIndex: -1
       addedObject: {fileID: 436088297}
     - targetCorrespondingSourceObject: {fileID: -7410114340046740095, guid: c5aaeaa3858d4b248ba6b36799cb95bd, type: 3}
       insertIndex: -1
       addedObject: {fileID: 436088298}
+    - targetCorrespondingSourceObject: {fileID: -7410114340046740095, guid: c5aaeaa3858d4b248ba6b36799cb95bd, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 436088301}
     - targetCorrespondingSourceObject: {fileID: 5138383004789116546, guid: c5aaeaa3858d4b248ba6b36799cb95bd, type: 3}
       insertIndex: -1
       addedObject: {fileID: 348301423}
     - targetCorrespondingSourceObject: {fileID: 5138383004789116546, guid: c5aaeaa3858d4b248ba6b36799cb95bd, type: 3}
       insertIndex: -1
       addedObject: {fileID: 348301424}
+    - targetCorrespondingSourceObject: {fileID: 5138383004789116546, guid: c5aaeaa3858d4b248ba6b36799cb95bd, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 348301427}
     - targetCorrespondingSourceObject: {fileID: 8643458566325605725, guid: c5aaeaa3858d4b248ba6b36799cb95bd, type: 3}
       insertIndex: -1
       addedObject: {fileID: 331483890}
     - targetCorrespondingSourceObject: {fileID: 8643458566325605725, guid: c5aaeaa3858d4b248ba6b36799cb95bd, type: 3}
       insertIndex: -1
       addedObject: {fileID: 331483891}
+    - targetCorrespondingSourceObject: {fileID: 8643458566325605725, guid: c5aaeaa3858d4b248ba6b36799cb95bd, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 331483894}
     - targetCorrespondingSourceObject: {fileID: -243890672819206648, guid: c5aaeaa3858d4b248ba6b36799cb95bd, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1098775361}
     - targetCorrespondingSourceObject: {fileID: -243890672819206648, guid: c5aaeaa3858d4b248ba6b36799cb95bd, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1098775362}
+    - targetCorrespondingSourceObject: {fileID: -243890672819206648, guid: c5aaeaa3858d4b248ba6b36799cb95bd, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1098775365}
     - targetCorrespondingSourceObject: {fileID: 6692149627825140578, guid: c5aaeaa3858d4b248ba6b36799cb95bd, type: 3}
       insertIndex: -1
       addedObject: {fileID: 696555175}
     - targetCorrespondingSourceObject: {fileID: 6692149627825140578, guid: c5aaeaa3858d4b248ba6b36799cb95bd, type: 3}
       insertIndex: -1
       addedObject: {fileID: 696555176}
+    - targetCorrespondingSourceObject: {fileID: 6692149627825140578, guid: c5aaeaa3858d4b248ba6b36799cb95bd, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 696555179}
     - targetCorrespondingSourceObject: {fileID: -3651841812052964975, guid: c5aaeaa3858d4b248ba6b36799cb95bd, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1832732511}
     - targetCorrespondingSourceObject: {fileID: -3651841812052964975, guid: c5aaeaa3858d4b248ba6b36799cb95bd, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1832732512}
+    - targetCorrespondingSourceObject: {fileID: -3651841812052964975, guid: c5aaeaa3858d4b248ba6b36799cb95bd, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1832732515}
     - targetCorrespondingSourceObject: {fileID: -5052878666580982124, guid: c5aaeaa3858d4b248ba6b36799cb95bd, type: 3}
       insertIndex: -1
       addedObject: {fileID: 13255917}
     - targetCorrespondingSourceObject: {fileID: -5052878666580982124, guid: c5aaeaa3858d4b248ba6b36799cb95bd, type: 3}
       insertIndex: -1
       addedObject: {fileID: 13255918}
+    - targetCorrespondingSourceObject: {fileID: -5052878666580982124, guid: c5aaeaa3858d4b248ba6b36799cb95bd, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 13255921}
     - targetCorrespondingSourceObject: {fileID: -9204686741154938326, guid: c5aaeaa3858d4b248ba6b36799cb95bd, type: 3}
       insertIndex: -1
       addedObject: {fileID: 865821014}
     - targetCorrespondingSourceObject: {fileID: -9204686741154938326, guid: c5aaeaa3858d4b248ba6b36799cb95bd, type: 3}
       insertIndex: -1
       addedObject: {fileID: 865821015}
+    - targetCorrespondingSourceObject: {fileID: -9204686741154938326, guid: c5aaeaa3858d4b248ba6b36799cb95bd, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 865821018}
     - targetCorrespondingSourceObject: {fileID: -8759069808066040703, guid: c5aaeaa3858d4b248ba6b36799cb95bd, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1383252465}
     - targetCorrespondingSourceObject: {fileID: -8759069808066040703, guid: c5aaeaa3858d4b248ba6b36799cb95bd, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1383252466}
+    - targetCorrespondingSourceObject: {fileID: -8759069808066040703, guid: c5aaeaa3858d4b248ba6b36799cb95bd, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1383252469}
     - targetCorrespondingSourceObject: {fileID: -6271018936157884579, guid: c5aaeaa3858d4b248ba6b36799cb95bd, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1347922361}
     - targetCorrespondingSourceObject: {fileID: -6271018936157884579, guid: c5aaeaa3858d4b248ba6b36799cb95bd, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1347922362}
+    - targetCorrespondingSourceObject: {fileID: -6271018936157884579, guid: c5aaeaa3858d4b248ba6b36799cb95bd, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1347922365}
     - targetCorrespondingSourceObject: {fileID: 3201939648104949814, guid: c5aaeaa3858d4b248ba6b36799cb95bd, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1672087838}
     - targetCorrespondingSourceObject: {fileID: 3201939648104949814, guid: c5aaeaa3858d4b248ba6b36799cb95bd, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1672087839}
+    - targetCorrespondingSourceObject: {fileID: 3201939648104949814, guid: c5aaeaa3858d4b248ba6b36799cb95bd, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1672087842}
     - targetCorrespondingSourceObject: {fileID: 8128014554780868391, guid: c5aaeaa3858d4b248ba6b36799cb95bd, type: 3}
       insertIndex: -1
       addedObject: {fileID: 811215444}
     - targetCorrespondingSourceObject: {fileID: 8128014554780868391, guid: c5aaeaa3858d4b248ba6b36799cb95bd, type: 3}
       insertIndex: -1
       addedObject: {fileID: 811215445}
+    - targetCorrespondingSourceObject: {fileID: 8128014554780868391, guid: c5aaeaa3858d4b248ba6b36799cb95bd, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 811215448}
     - targetCorrespondingSourceObject: {fileID: 4939034896295814748, guid: c5aaeaa3858d4b248ba6b36799cb95bd, type: 3}
       insertIndex: -1
       addedObject: {fileID: 2110782746}
     - targetCorrespondingSourceObject: {fileID: 4939034896295814748, guid: c5aaeaa3858d4b248ba6b36799cb95bd, type: 3}
       insertIndex: -1
       addedObject: {fileID: 2110782747}
+    - targetCorrespondingSourceObject: {fileID: 4939034896295814748, guid: c5aaeaa3858d4b248ba6b36799cb95bd, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 2110782750}
     - targetCorrespondingSourceObject: {fileID: 1341293070097528463, guid: c5aaeaa3858d4b248ba6b36799cb95bd, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1314890285}
     - targetCorrespondingSourceObject: {fileID: 1341293070097528463, guid: c5aaeaa3858d4b248ba6b36799cb95bd, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1314890286}
+    - targetCorrespondingSourceObject: {fileID: 1341293070097528463, guid: c5aaeaa3858d4b248ba6b36799cb95bd, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1314890289}
     - targetCorrespondingSourceObject: {fileID: -6634936999485875570, guid: c5aaeaa3858d4b248ba6b36799cb95bd, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1523662410}
     - targetCorrespondingSourceObject: {fileID: -6634936999485875570, guid: c5aaeaa3858d4b248ba6b36799cb95bd, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1523662411}
+    - targetCorrespondingSourceObject: {fileID: -6634936999485875570, guid: c5aaeaa3858d4b248ba6b36799cb95bd, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1523662414}
     - targetCorrespondingSourceObject: {fileID: -7033764427314295185, guid: c5aaeaa3858d4b248ba6b36799cb95bd, type: 3}
       insertIndex: -1
       addedObject: {fileID: 840956162}
     - targetCorrespondingSourceObject: {fileID: -7033764427314295185, guid: c5aaeaa3858d4b248ba6b36799cb95bd, type: 3}
       insertIndex: -1
       addedObject: {fileID: 840956163}
+    - targetCorrespondingSourceObject: {fileID: -7033764427314295185, guid: c5aaeaa3858d4b248ba6b36799cb95bd, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 840956166}
     - targetCorrespondingSourceObject: {fileID: 6574737486271187242, guid: c5aaeaa3858d4b248ba6b36799cb95bd, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1825303814}
     - targetCorrespondingSourceObject: {fileID: 6574737486271187242, guid: c5aaeaa3858d4b248ba6b36799cb95bd, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1825303815}
+    - targetCorrespondingSourceObject: {fileID: 6574737486271187242, guid: c5aaeaa3858d4b248ba6b36799cb95bd, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1825303818}
     - targetCorrespondingSourceObject: {fileID: -1490433167809989008, guid: c5aaeaa3858d4b248ba6b36799cb95bd, type: 3}
       insertIndex: -1
       addedObject: {fileID: 175365437}
     - targetCorrespondingSourceObject: {fileID: -1490433167809989008, guid: c5aaeaa3858d4b248ba6b36799cb95bd, type: 3}
       insertIndex: -1
       addedObject: {fileID: 175365438}
+    - targetCorrespondingSourceObject: {fileID: -1490433167809989008, guid: c5aaeaa3858d4b248ba6b36799cb95bd, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 175365441}
     - targetCorrespondingSourceObject: {fileID: 9038402203920924897, guid: c5aaeaa3858d4b248ba6b36799cb95bd, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1557569040}
     - targetCorrespondingSourceObject: {fileID: 9038402203920924897, guid: c5aaeaa3858d4b248ba6b36799cb95bd, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1557569041}
+    - targetCorrespondingSourceObject: {fileID: 9038402203920924897, guid: c5aaeaa3858d4b248ba6b36799cb95bd, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1557569044}
     - targetCorrespondingSourceObject: {fileID: -5723114799528848563, guid: c5aaeaa3858d4b248ba6b36799cb95bd, type: 3}
       insertIndex: -1
       addedObject: {fileID: 324643450}
     - targetCorrespondingSourceObject: {fileID: -5723114799528848563, guid: c5aaeaa3858d4b248ba6b36799cb95bd, type: 3}
       insertIndex: -1
       addedObject: {fileID: 324643451}
+    - targetCorrespondingSourceObject: {fileID: -5723114799528848563, guid: c5aaeaa3858d4b248ba6b36799cb95bd, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 324643454}
     - targetCorrespondingSourceObject: {fileID: -833554762034882119, guid: c5aaeaa3858d4b248ba6b36799cb95bd, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1470512907}
     - targetCorrespondingSourceObject: {fileID: -833554762034882119, guid: c5aaeaa3858d4b248ba6b36799cb95bd, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1470512908}
+    - targetCorrespondingSourceObject: {fileID: -833554762034882119, guid: c5aaeaa3858d4b248ba6b36799cb95bd, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1470512911}
     - targetCorrespondingSourceObject: {fileID: -1759531311961548255, guid: c5aaeaa3858d4b248ba6b36799cb95bd, type: 3}
       insertIndex: -1
       addedObject: {fileID: 707759001}
     - targetCorrespondingSourceObject: {fileID: -1759531311961548255, guid: c5aaeaa3858d4b248ba6b36799cb95bd, type: 3}
       insertIndex: -1
       addedObject: {fileID: 707759002}
+    - targetCorrespondingSourceObject: {fileID: -1759531311961548255, guid: c5aaeaa3858d4b248ba6b36799cb95bd, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 707759005}
     - targetCorrespondingSourceObject: {fileID: 5522593619266372748, guid: c5aaeaa3858d4b248ba6b36799cb95bd, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1907871466}
     - targetCorrespondingSourceObject: {fileID: 5522593619266372748, guid: c5aaeaa3858d4b248ba6b36799cb95bd, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1907871467}
+    - targetCorrespondingSourceObject: {fileID: 5522593619266372748, guid: c5aaeaa3858d4b248ba6b36799cb95bd, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1907871470}
     - targetCorrespondingSourceObject: {fileID: -7201446943583054564, guid: c5aaeaa3858d4b248ba6b36799cb95bd, type: 3}
       insertIndex: -1
       addedObject: {fileID: 375016514}
     - targetCorrespondingSourceObject: {fileID: -7201446943583054564, guid: c5aaeaa3858d4b248ba6b36799cb95bd, type: 3}
       insertIndex: -1
       addedObject: {fileID: 375016515}
+    - targetCorrespondingSourceObject: {fileID: -7201446943583054564, guid: c5aaeaa3858d4b248ba6b36799cb95bd, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 375016518}
     - targetCorrespondingSourceObject: {fileID: 2045037074981079762, guid: c5aaeaa3858d4b248ba6b36799cb95bd, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1020798353}
     - targetCorrespondingSourceObject: {fileID: 2045037074981079762, guid: c5aaeaa3858d4b248ba6b36799cb95bd, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1020798354}
+    - targetCorrespondingSourceObject: {fileID: 2045037074981079762, guid: c5aaeaa3858d4b248ba6b36799cb95bd, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1020798357}
     - targetCorrespondingSourceObject: {fileID: -6138688432038443764, guid: c5aaeaa3858d4b248ba6b36799cb95bd, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1891983586}
     - targetCorrespondingSourceObject: {fileID: -6138688432038443764, guid: c5aaeaa3858d4b248ba6b36799cb95bd, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1891983587}
+    - targetCorrespondingSourceObject: {fileID: -6138688432038443764, guid: c5aaeaa3858d4b248ba6b36799cb95bd, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1891983590}
     - targetCorrespondingSourceObject: {fileID: 5309386660486281185, guid: c5aaeaa3858d4b248ba6b36799cb95bd, type: 3}
       insertIndex: -1
       addedObject: {fileID: 354304668}
     - targetCorrespondingSourceObject: {fileID: 5309386660486281185, guid: c5aaeaa3858d4b248ba6b36799cb95bd, type: 3}
       insertIndex: -1
       addedObject: {fileID: 354304669}
+    - targetCorrespondingSourceObject: {fileID: 5309386660486281185, guid: c5aaeaa3858d4b248ba6b36799cb95bd, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 354304672}
     - targetCorrespondingSourceObject: {fileID: -1980333553318472064, guid: c5aaeaa3858d4b248ba6b36799cb95bd, type: 3}
       insertIndex: -1
       addedObject: {fileID: 2006693503}
     - targetCorrespondingSourceObject: {fileID: -1980333553318472064, guid: c5aaeaa3858d4b248ba6b36799cb95bd, type: 3}
       insertIndex: -1
       addedObject: {fileID: 2006693504}
+    - targetCorrespondingSourceObject: {fileID: -1980333553318472064, guid: c5aaeaa3858d4b248ba6b36799cb95bd, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 2006693507}
     - targetCorrespondingSourceObject: {fileID: -5082078534822491469, guid: c5aaeaa3858d4b248ba6b36799cb95bd, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1959199446}
     - targetCorrespondingSourceObject: {fileID: -5082078534822491469, guid: c5aaeaa3858d4b248ba6b36799cb95bd, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1959199447}
+    - targetCorrespondingSourceObject: {fileID: -5082078534822491469, guid: c5aaeaa3858d4b248ba6b36799cb95bd, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1959199450}
   m_SourcePrefab: {fileID: 100100000, guid: c5aaeaa3858d4b248ba6b36799cb95bd, type: 3}
 --- !u!1 &1835838471 stripped
 GameObject:
@@ -14208,10 +15520,24 @@ MonoBehaviour:
   blendShapeIndex: 0
   blendShapeValueTarget: 0
   isProgressive: 1
-  progressiveIncrement: -30
   restingValue: 100
   lerpSpeed: 5
-  returnDelay: 3
+  returnDelay: 4
+  scannerProgressiveIncrement: 10
+  echoPassifProgressiveIncrement: -20
+  echoJoueurProgressiveIncrement: -50
+--- !u!114 &1835838478
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1835838471}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0074f886f4ee736489a71cf6bb182ce7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1877887462 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: -454047274600187011, guid: e22c6a14dae4cc34eaadee19d6456e26, type: 3}
@@ -14254,10 +15580,12 @@ MonoBehaviour:
   blendShapeIndex: 0
   blendShapeValueTarget: 100
   isProgressive: 0
-  progressiveIncrement: 10
   restingValue: 0
   lerpSpeed: 5
   returnDelay: 3
+  scannerProgressiveIncrement: 10
+  echoPassifProgressiveIncrement: 6
+  echoJoueurProgressiveIncrement: 12
 --- !u!1 &1891983583 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: -6138688432038443764, guid: c5aaeaa3858d4b248ba6b36799cb95bd, type: 3}
@@ -14300,10 +15628,24 @@ MonoBehaviour:
   blendShapeIndex: 0
   blendShapeValueTarget: 0
   isProgressive: 1
-  progressiveIncrement: -30
   restingValue: 100
   lerpSpeed: 5
-  returnDelay: 3
+  returnDelay: 4
+  scannerProgressiveIncrement: 10
+  echoPassifProgressiveIncrement: -20
+  echoJoueurProgressiveIncrement: -50
+--- !u!114 &1891983590
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1891983583}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0074f886f4ee736489a71cf6bb182ce7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1907871463 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 5522593619266372748, guid: c5aaeaa3858d4b248ba6b36799cb95bd, type: 3}
@@ -14346,10 +15688,24 @@ MonoBehaviour:
   blendShapeIndex: 0
   blendShapeValueTarget: 0
   isProgressive: 1
-  progressiveIncrement: -30
   restingValue: 100
   lerpSpeed: 5
-  returnDelay: 3
+  returnDelay: 4
+  scannerProgressiveIncrement: 10
+  echoPassifProgressiveIncrement: -20
+  echoJoueurProgressiveIncrement: -50
+--- !u!114 &1907871470
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1907871463}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0074f886f4ee736489a71cf6bb182ce7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1920698290 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: -2655573560833850164, guid: e22c6a14dae4cc34eaadee19d6456e26, type: 3}
@@ -14392,10 +15748,12 @@ MonoBehaviour:
   blendShapeIndex: 0
   blendShapeValueTarget: 0
   isProgressive: 1
-  progressiveIncrement: -30
   restingValue: 100
   lerpSpeed: 5
   returnDelay: 3
+  scannerProgressiveIncrement: 10
+  echoPassifProgressiveIncrement: 6
+  echoJoueurProgressiveIncrement: 12
 --- !u!1 &1932996940 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 5225017493561190855, guid: c5aaeaa3858d4b248ba6b36799cb95bd, type: 3}
@@ -14438,10 +15796,24 @@ MonoBehaviour:
   blendShapeIndex: 0
   blendShapeValueTarget: 0
   isProgressive: 1
-  progressiveIncrement: -30
   restingValue: 100
   lerpSpeed: 5
-  returnDelay: 3
+  returnDelay: 4
+  scannerProgressiveIncrement: 10
+  echoPassifProgressiveIncrement: -20
+  echoJoueurProgressiveIncrement: -50
+--- !u!114 &1932996947
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1932996940}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0074f886f4ee736489a71cf6bb182ce7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1947888728 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 43537210dc6845844aab1231de2f8c21, type: 3}
@@ -14462,10 +15834,12 @@ MonoBehaviour:
   blendShapeIndex: 0
   blendShapeValueTarget: 0
   isProgressive: 1
-  progressiveIncrement: -30
   restingValue: 100
   lerpSpeed: 5
   returnDelay: 3
+  scannerProgressiveIncrement: 10
+  echoPassifProgressiveIncrement: 6
+  echoJoueurProgressiveIncrement: 12
 --- !u!65 &1947888730
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -14631,10 +16005,24 @@ MonoBehaviour:
   blendShapeIndex: 0
   blendShapeValueTarget: 0
   isProgressive: 1
-  progressiveIncrement: -30
   restingValue: 100
   lerpSpeed: 5
-  returnDelay: 3
+  returnDelay: 4
+  scannerProgressiveIncrement: 10
+  echoPassifProgressiveIncrement: -20
+  echoJoueurProgressiveIncrement: -50
+--- !u!114 &1959199450
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1959199443}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0074f886f4ee736489a71cf6bb182ce7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &1986153362
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -14785,10 +16173,24 @@ MonoBehaviour:
   blendShapeIndex: 0
   blendShapeValueTarget: 0
   isProgressive: 1
-  progressiveIncrement: -30
   restingValue: 100
   lerpSpeed: 5
-  returnDelay: 3
+  returnDelay: 4
+  scannerProgressiveIncrement: 10
+  echoPassifProgressiveIncrement: -20
+  echoJoueurProgressiveIncrement: -50
+--- !u!114 &2006693507
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2006693500}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0074f886f4ee736489a71cf6bb182ce7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &2013412972
 GameObject:
   m_ObjectHideFlags: 0
@@ -14838,10 +16240,12 @@ MonoBehaviour:
   blendShapeIndex: 0
   blendShapeValueTarget: 0
   isProgressive: 1
-  progressiveIncrement: -30
   restingValue: 100
   lerpSpeed: 5
   returnDelay: 3
+  scannerProgressiveIncrement: 10
+  echoPassifProgressiveIncrement: 6
+  echoJoueurProgressiveIncrement: 12
 --- !u!64 &2013412975
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -14960,10 +16364,24 @@ MonoBehaviour:
   blendShapeIndex: 0
   blendShapeValueTarget: 0
   isProgressive: 1
-  progressiveIncrement: -30
   restingValue: 100
   lerpSpeed: 5
-  returnDelay: 3
+  returnDelay: 4
+  scannerProgressiveIncrement: 10
+  echoPassifProgressiveIncrement: -20
+  echoJoueurProgressiveIncrement: -50
+--- !u!114 &2031604107
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2031604100}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0074f886f4ee736489a71cf6bb182ce7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &2053021598
 GameObject:
   m_ObjectHideFlags: 0
@@ -15013,10 +16431,12 @@ MonoBehaviour:
   blendShapeIndex: 0
   blendShapeValueTarget: 0
   isProgressive: 1
-  progressiveIncrement: -30
   restingValue: 100
   lerpSpeed: 5
   returnDelay: 3
+  scannerProgressiveIncrement: 10
+  echoPassifProgressiveIncrement: 6
+  echoJoueurProgressiveIncrement: 12
 --- !u!64 &2053021601
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -15140,10 +16560,12 @@ MonoBehaviour:
   blendShapeIndex: 0
   blendShapeValueTarget: 0
   isProgressive: 1
-  progressiveIncrement: -30
   restingValue: 100
   lerpSpeed: 5
   returnDelay: 3
+  scannerProgressiveIncrement: 10
+  echoPassifProgressiveIncrement: 6
+  echoJoueurProgressiveIncrement: 12
 --- !u!1 &2100203552 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: -8995271579679930556, guid: e22c6a14dae4cc34eaadee19d6456e26, type: 3}
@@ -15186,10 +16608,12 @@ MonoBehaviour:
   blendShapeIndex: 0
   blendShapeValueTarget: 0
   isProgressive: 1
-  progressiveIncrement: -30
   restingValue: 100
   lerpSpeed: 5
   returnDelay: 3
+  scannerProgressiveIncrement: 10
+  echoPassifProgressiveIncrement: 6
+  echoJoueurProgressiveIncrement: 12
 --- !u!1 &2110782743 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 4939034896295814748, guid: c5aaeaa3858d4b248ba6b36799cb95bd, type: 3}
@@ -15232,10 +16656,24 @@ MonoBehaviour:
   blendShapeIndex: 0
   blendShapeValueTarget: 0
   isProgressive: 1
-  progressiveIncrement: -30
   restingValue: 100
   lerpSpeed: 5
-  returnDelay: 3
+  returnDelay: 4
+  scannerProgressiveIncrement: 10
+  echoPassifProgressiveIncrement: -20
+  echoJoueurProgressiveIncrement: -50
+--- !u!114 &2110782750
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2110782743}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0074f886f4ee736489a71cf6bb182ce7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &2147387037
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -16000,3 +17438,4 @@ SceneRoots:
   - {fileID: 312702631}
   - {fileID: 501641726}
   - {fileID: 1742787173}
+  - {fileID: 350032503}

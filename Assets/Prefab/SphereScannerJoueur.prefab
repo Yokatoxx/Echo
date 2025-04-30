@@ -16,8 +16,8 @@ GameObject:
   - component: {fileID: -8458274577052388777}
   - component: {fileID: 63655391299476507}
   m_Layer: 0
-  m_Name: SphereScanner
-  m_TagString: EchoPassif
+  m_Name: SphereScannerJoueur
+  m_TagString: EchoJoueur
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

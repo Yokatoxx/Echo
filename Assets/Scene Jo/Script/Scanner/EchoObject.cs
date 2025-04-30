@@ -40,9 +40,13 @@ public class EchoObject : MonoBehaviour
 
             if (renderer != null)
             {
-                Color currentColor = renderer.material.GetColor("_IntersectionColor");
-                currentColor.a = alphaMax;
-                renderer.material.SetColor("_IntersectionColor", currentColor);
+                // Vérifiez si la propriété existe avant d'essayer d'y accéder
+                if (renderer.material.HasProperty("_IntersectionColorStart"))
+                {
+                    Color currentColor = renderer.material.GetColor("_IntersectionColorStart");
+                    currentColor.a = alphaMax;
+                    renderer.material.SetColor("_IntersectionColorStart", currentColor);
+                }
             }
 
             elapsedTime += Time.deltaTime * growthSpeed;
@@ -53,17 +57,20 @@ public class EchoObject : MonoBehaviour
         // fondu
         if (renderer != null)
         {
-            Color currentColor = renderer.material.GetColor("_IntersectionColor");
-            float currentAlpha = alphaMax;
-            while (currentAlpha > alphaMin)
+            if (renderer.material.HasProperty("_IntersectionColorStart"))
             {
-                currentAlpha = Mathf.MoveTowards(currentAlpha, alphaMin, fadeTransitionSpeed * Time.deltaTime);
-                currentColor.a = currentAlpha;
-                renderer.material.SetColor("_IntersectionColor", currentColor);
-                yield return null;
+                Color currentColor = renderer.material.GetColor("_IntersectionColorStart");
+                float currentAlpha = alphaMax;
+                while (currentAlpha > alphaMin)
+                {
+                    currentAlpha = Mathf.MoveTowards(currentAlpha, alphaMin, fadeTransitionSpeed * Time.deltaTime);
+                    currentColor.a = currentAlpha;
+                    renderer.material.SetColor("_IntersectionColorStart", currentColor);
+                    yield return null;
+                }
+                currentColor.a = alphaMin;
+                renderer.material.SetColor("_IntersectionColorStart", currentColor);
             }
-            currentColor.a = alphaMin;
-            renderer.material.SetColor("_IntersectionColor", currentColor);
         }
 
         Destroy(obj);
