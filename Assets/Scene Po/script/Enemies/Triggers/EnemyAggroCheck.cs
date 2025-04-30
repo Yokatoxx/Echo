@@ -8,20 +8,19 @@ public class EnemyAggroCheck : MonoBehaviour
     
     public GameObject playerTarget { get; set; }
     private Enemy enemy;
+    public GameObject scannerTarget { get; set; }
 
     private void Awake()
     {
         playerTarget = GameObject.FindGameObjectWithTag("Player");
 
         enemy = GetComponentInParent<Enemy>();
+
     }
 
     private void OnTriggerEnter(Collider other)
     {
-        if (other.gameObject == playerTarget)
-        {
-            enemy.SetAggroStatus(true);
-        }
+        
 
         if (other.gameObject.CompareTag("Collectible") && other.gameObject.GetComponent<InPlace>().isInPlace)
         {
@@ -63,8 +62,20 @@ public class EnemyAggroCheck : MonoBehaviour
             enemy.SetPickUpDistanceBool(true);
 
         }
-        
-        
+        if (other.gameObject == playerTarget)
+        {
+            if (other.gameObject.GetComponent<PlayerMovement>().isWalking)
+            {
+                enemy.SetAggroStatus(true);
+            }
+        }
+
+        if (other.gameObject.CompareTag("Scanner"))
+        {
+            enemy.SetIsHitByScanner(true);
+            enemy.scannerHit = other.gameObject;
+        }
+
     }
 
 

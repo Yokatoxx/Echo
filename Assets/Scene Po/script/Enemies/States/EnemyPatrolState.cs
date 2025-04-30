@@ -56,6 +56,11 @@ public class EnemyPatrolState : EnemyState
             enemy.stateMachine.ChangeState(enemy.pickUpState);
         }
 
+        if (enemy.IsHitByScanner)
+        {
+            enemy.stateMachine.ChangeState(enemy.hitByScannerState);
+        }
+
 
         if (enemy.agent.remainingDistance < 0.5f && !enemy.agent.pathPending)
         {
