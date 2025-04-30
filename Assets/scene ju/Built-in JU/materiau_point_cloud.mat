@@ -38,5 +38,5 @@ Material:
     - _timescale: 1.73
     m_Colors:
     - _Color: {r: 0.91194963, g: 0, b: 0, a: 1}
-    - _MainColor: {r: 0.15447119, g: 0.5341076, b: 0.8052768, a: 0}
+    - _MainColor: {r: 0.6178847, g: 2.1364303, b: 3.221107, a: 0}
   m_BuildTextureStacks: []
