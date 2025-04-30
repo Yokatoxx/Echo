@@ -6,10 +6,14 @@ public class PointCloudRevert : MonoBehaviour
     [SerializeField] private int blendShapeIndex = 0;
     [SerializeField] private float blendShapeValueTarget = 100f;
     [SerializeField] private bool isProgressive = false;
-    [SerializeField] private float progressiveIncrement = 10f;
     [SerializeField] private float restingValue = 0f;
     [SerializeField] private float lerpSpeed = 5f;
     [SerializeField] private float returnDelay = 3f;
+
+    [Header("Incréments progressifs par type")]
+    [SerializeField] private float scannerProgressiveIncrement = 10f;
+    [SerializeField] private float echoPassifProgressiveIncrement = 6f;
+    [SerializeField] private float echoJoueurProgressiveIncrement = 12f;
 
     private SkinnedMeshRenderer skinnedMeshRenderer;
     private bool isTransitioning = false;
@@ -76,16 +80,28 @@ public class PointCloudRevert : MonoBehaviour
         if (collectableComponent != null && collectableComponent.isPickedUp)
             return;
 
-        if (other.CompareTag("Scanner") && isIndexValid)
+        if (other.CompareTag("Scanner") || other.CompareTag("EchoPassif") || other.CompareTag("EchoJoueur"))
         {
             if (returnCoroutine != null)
             {
                 StopCoroutine(returnCoroutine);
             }
 
+            float effectiveIncrement = scannerProgressiveIncrement; // Valeur par défaut pour Scanner
+
+            // Sélectionner l'incrément progressif selon le tag
+            if (other.CompareTag("EchoPassif"))
+            {
+                effectiveIncrement = echoPassifProgressiveIncrement;
+            }
+            else if (other.CompareTag("EchoJoueur"))
+            {
+                effectiveIncrement = echoJoueurProgressiveIncrement;
+            }
+
             if (isProgressive)
             {
-                targetValue = Mathf.Clamp(currentBlendValue + progressiveIncrement, 0f, 100f);
+                targetValue = Mathf.Clamp(currentBlendValue + effectiveIncrement, 0f, 100f);
             }
             else
             {

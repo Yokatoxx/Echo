@@ -4,7 +4,7 @@ Shader "point_cloud_shader"
 {
 	Properties
 	{
-		[HDR]_MainColor("Main Color", Color) = (0.9559748,0.1412918,0.1412918,0)
+		[HDR]_MainColor("MainColor", Color) = (0.9559748,0.1412918,0.1412918,0)
 		_Cutoff( "Mask Clip Value", Float ) = 0.5
 		_A_tex("A_tex", 2D) = "white" {}
 		_Float0("Float 0", Float) = 0
@@ -140,7 +140,6 @@ Node;AmplifyShaderEditor.BreakToComponentsNode;25;-1233.64,33.60245;Inherit;Fals
 Node;AmplifyShaderEditor.SimpleMultiplyOpNode;14;-277.5049,-42.84605;Inherit;False;2;2;0;COLOR;0,0,0,0;False;1;FLOAT;0;False;1;COLOR;0
 Node;AmplifyShaderEditor.SimpleAddOpNode;26;-1091.67,173.4705;Inherit;False;2;2;0;FLOAT;0;False;1;FLOAT;0;False;1;FLOAT;0
 Node;AmplifyShaderEditor.SamplerNode;13;-263.673,104.5223;Inherit;True;Property;_A_tex;A_tex;2;0;Create;True;0;0;0;False;0;False;-1;479c5c03f1b17044097a24b24ba717e6;6555475c9c3b67c47a4ec0f65b740896;True;0;False;white;Auto;False;Object;-1;Auto;Texture2D;8;0;SAMPLER2D;;False;1;FLOAT2;0,0;False;2;FLOAT;0;False;3;FLOAT2;0,0;False;4;FLOAT2;0,0;False;5;FLOAT;1;False;6;FLOAT;0;False;7;SAMPLERSTATE;;False;5;COLOR;0;FLOAT;1;FLOAT;2;FLOAT;3;FLOAT;4
-Node;AmplifyShaderEditor.ColorNode;10;-622.1783,-217.5558;Inherit;False;Property;_MainColor;Main Color;0;1;[HDR];Create;True;0;0;0;False;0;False;0.9559748,0.1412918,0.1412918,0;0.7868404,1.493004,1.725623,0;True;0;5;COLOR;0;FLOAT;1;FLOAT;2;FLOAT;3;FLOAT;4
 Node;AmplifyShaderEditor.NormalizeNode;9;164.2458,464.8235;Inherit;False;False;1;0;FLOAT3;0,0,0;False;1;FLOAT3;0
 Node;AmplifyShaderEditor.SimpleMultiplyOpNode;27;167.5962,180.4418;Inherit;False;2;2;0;FLOAT;0;False;1;FLOAT;0;False;1;FLOAT;0
 Node;AmplifyShaderEditor.SimpleMultiplyOpNode;31;349.974,129.1603;Inherit;False;2;2;0;FLOAT;0;False;1;FLOAT;0;False;1;FLOAT;0
@@ -151,6 +150,7 @@ Node;AmplifyShaderEditor.RangedFloatNode;21;-1854.93,184.1451;Inherit;False;Prop
 Node;AmplifyShaderEditor.NoiseGeneratorNode;30;-300.7607,363.759;Inherit;True;Simplex3D;False;False;2;0;FLOAT3;0,0,0;False;1;FLOAT;1;False;1;FLOAT;0
 Node;AmplifyShaderEditor.SimpleMultiplyOpNode;8;-162.9416,687.504;Inherit;False;2;2;0;FLOAT3;0,0,0;False;1;FLOAT4x4;0,0,0,0,0,1,0,0,0,0,1,0,0,0,0,1;False;1;FLOAT3;0
 Node;AmplifyShaderEditor.ObjectToWorldMatrixNode;6;-597.7924,799.5264;Inherit;False;0;1;FLOAT4x4;0
+Node;AmplifyShaderEditor.ColorNode;10;-620.1783,-216.8891;Inherit;False;Property;_MainColor;MainColor;0;1;[HDR];Create;True;0;0;0;False;0;False;0.9559748,0.1412918,0.1412918,0;0.7868404,1.493004,1.725623,0;True;0;5;COLOR;0;FLOAT;1;FLOAT;2;FLOAT;3;FLOAT;4
 WireConnection;3;0;2;0
 WireConnection;7;0;4;0
 WireConnection;7;1;5;0
@@ -183,4 +183,4 @@ WireConnection;30;1;29;0
 WireConnection;8;0;7;0
 WireConnection;8;1;6;0
 ASEEND*/
-//CHKSM=FB079C1177EB062CC69AD6C2E41389F346EFB2FE
+//CHKSM=2A5A75B1332FBBC1DDC5B5394311BFACA64AA282

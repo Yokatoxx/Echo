@@ -8,6 +8,9 @@ TagManager:
   - Decor
   - Collectible
   - pointCloud
+  - canPickUp
+  - EchoPassif
+  - EchoJoueur
   layers:
   - Default
   - TransparentFX
