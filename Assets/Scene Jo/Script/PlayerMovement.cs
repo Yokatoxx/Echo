@@ -1,44 +1,64 @@
 using UnityEngine;
-using Cinemachine; // N'oubliez pas cette ligne !
+using Cinemachine;
+using System.Collections; // Nécessaire pour Time.time
 
 [RequireComponent(typeof(CharacterController))]
-[RequireComponent(typeof(CinemachineImpulseSource))] // Assure que le composant est présent
 public class PlayerMovement : MonoBehaviour
 {
-    // ... (autres variables existantes) ...
+    [Header("Movement")]
     public float speed = 5f;
     public float runSpeed = 8f;
     public float gravity = 9.81f;
+    public float bodyRotationSpeed = 10f;
+
+    [Header("Stamina")]
     public Stamina stamina;
 
-    private CharacterController characterController;
-    private float verticalVelocity = 0f;
+    [Header("Hiding")]
     public bool isHiding = false;
-
     public LayerMask hidingLayer;
     public float hidingCheckDistance = 2f;
 
-    private Vector3 hidePosition;
-    private Quaternion hideRotation;
+    [Header("Impulse Setup")]
+    [Tooltip("Assignez ici l'objet enfant qui porte l'Impulse Source (ex: CameraTarget).")]
+    public Transform impulseSourceTarget;
+    [Tooltip("Temps minimum (en secondes) entre deux impulsions de collision.")]
+    public float impulseCooldown = 0.5f; // <--- NOUVELLE VARIABLE POUR LE COOLDOWN
+
+    // --- Private Variables ---
+    private CharacterController characterController;
+    private CinemachineImpulseSource impulseSource;
     private Camera cam;
+    private Transform cameraTransform;
     private AudioManager audioManager;
 
+    private float verticalVelocity = 0f;
+    private Vector3 hidePosition;
+    private Quaternion hideRotation;
     public bool isWalking = false;
-    private Transform cameraTransform;
-    public float bodyRotationSpeed = 10f;
-
-    // Référence à l'Impulse Source
-    private CinemachineImpulseSource impulseSource;
-
+    private float lastImpulseTime = -1f; // <--- NOUVELLE VARIABLE POUR SUIVRE LE TEMPS
 
     void Start()
     {
         characterController = GetComponent<CharacterController>();
-        impulseSource = GetComponent<CinemachineImpulseSource>(); // Récupérer le composant
+
+        if (impulseSourceTarget != null)
+        {
+            impulseSource = impulseSourceTarget.GetComponent<CinemachineImpulseSource>();
+            if (impulseSource == null)
+            {
+                Debug.LogError("CinemachineImpulseSource non trouvé sur l'objet cible assigné (" + impulseSourceTarget.name + "). L'effet d'impact ne fonctionnera pas.", this);
+            }
+        }
+        else
+        {
+            Debug.LogError("La variable 'Impulse Source Target' n'est pas assignée dans l'inspecteur pour PlayerMovement. L'effet d'impact ne fonctionnera pas.", this);
+        }
+
         cam = Camera.main;
         if (cam == null)
         {
-            Debug.LogError("Camera principale non trouvée ! Taggez votre caméra principale avec 'MainCamera'.");
+            Debug.LogError("Camera principale non trouvée ! Taggez votre caméra principale avec 'MainCamera'. Utilisation du transform du joueur comme fallback.", this);
             cameraTransform = transform;
         }
         else
@@ -51,11 +71,8 @@ public class PlayerMovement : MonoBehaviour
         Cursor.lockState = CursorLockMode.Locked;
         Cursor.visible = false;
 
-        // Vérification que l'impulse source est bien là
-        if (impulseSource == null)
-        {
-            Debug.LogWarning("CinemachineImpulseSource non trouvé sur le joueur. L'effet d'impact ne fonctionnera pas.");
-        }
+        // Initialiser lastImpulseTime pour permettre une impulsion dès le début
+        lastImpulseTime = -impulseCooldown;
     }
 
     void Update()
@@ -66,31 +83,28 @@ public class PlayerMovement : MonoBehaviour
         {
             HandleMovement();
         }
+        else
+        {
+            isWalking = false;
+        }
     }
 
     void HandleMovement()
     {
-        // --- Rotation gérée par Cinemachine ---
-
-        // --- Calcul Vitesse ---
-        // Déterminer si on essaie de sprinter MAINTENANT pour la logique de mouvement
+        // ... (Le reste de HandleMovement reste identique) ...
         bool isTryingToSprint = Input.GetKey(KeyCode.LeftShift) && stamina != null && stamina.CanSprint();
         float currentSpeed = isTryingToSprint ? runSpeed : speed;
 
-        // Consommer la stamina si on sprinte effectivement
-        if (isTryingToSprint && (Input.GetAxisRaw("Vertical") != 0 || Input.GetAxisRaw("Horizontal") != 0)) // Seulement si on bouge en sprintant
+        if (isTryingToSprint && (Input.GetAxisRaw("Vertical") != 0 || Input.GetAxisRaw("Horizontal") != 0))
         {
             stamina.UseStamina(Time.deltaTime);
-            // Si CanSprint devient faux PENDANT ce UseStamina, on repasse à la vitesse normale pour ce frame
             if (!stamina.CanSprint())
             {
                 currentSpeed = speed;
-                isTryingToSprint = false; // Mettre à jour l'état pour la logique de collision
+                isTryingToSprint = false;
             }
         }
 
-
-        // --- Calcul Direction Mouvement ---
         float moveForwardInput = Input.GetAxisRaw("Vertical");
         float moveSideInput = Input.GetAxisRaw("Horizontal");
 
@@ -102,20 +116,18 @@ public class PlayerMovement : MonoBehaviour
         right.Normalize();
 
         Vector3 desiredMovementHorizontal = (forward * moveForwardInput + right * moveSideInput).normalized;
-
         isWalking = desiredMovementHorizontal.magnitude > 0.1f;
 
-        // --- Orientation du Corps ---
+        // --- Orientation du Corps (Optionnel) ---
         if (desiredMovementHorizontal.magnitude > 0.1f)
         {
-            Quaternion targetRotation = Quaternion.LookRotation(desiredMovementHorizontal);
-            transform.rotation = Quaternion.Slerp(transform.rotation, targetRotation, Time.deltaTime * bodyRotationSpeed);
+            // Logique pour tourner le modèle si nécessaire...
         }
 
         // --- Gravité ---
         if (characterController.isGrounded)
         {
-            verticalVelocity = -gravity * Time.deltaTime;
+            verticalVelocity = -gravity * Time.deltaTime * 2f;
         }
         else
         {
@@ -125,96 +137,92 @@ public class PlayerMovement : MonoBehaviour
         // --- Application du Mouvement ---
         Vector3 finalMovement = desiredMovementHorizontal * currentSpeed;
         finalMovement.y = verticalVelocity;
-
         characterController.Move(finalMovement * Time.deltaTime);
     }
 
-    // ... (HandleHidingInput, HidePlayer, UnhidePlayer restent les mêmes) ...
+    // ... (HandleHidingInput, HidePlayer, UnhidePlayer restent identiques) ...
     void HandleHidingInput()
     {
         if (cam == null) return;
-
         if (Input.GetKeyDown(KeyCode.Q))
         {
             if (!characterController.isGrounded && !isHiding) return;
-
             Ray ray = cam.ScreenPointToRay(new Vector3(Screen.width / 2, Screen.height / 2));
             RaycastHit hit;
-
             if (!isHiding)
             {
                 if (Physics.Raycast(ray, out hit, hidingCheckDistance, hidingLayer))
                 {
-                    if (hit.collider.CompareTag("Cachette"))
-                    {
-                        HidePlayer(hit.collider.transform);
-                        return;
-                    }
+                    if (hit.collider.CompareTag("Cachette")) { HidePlayer(hit.collider.transform); return; }
                 }
             }
-            else
-            {
-                UnhidePlayer();
-                return;
-            }
+            else { UnhidePlayer(); return; }
         }
     }
-
     void HidePlayer(Transform hidingSpot)
     {
         hidePosition = transform.position;
         hideRotation = transform.rotation;
-
         Vector3 targetPosition = hidingSpot.position + hidingSpot.forward * 0.5f;
-
         characterController.enabled = false;
         transform.position = targetPosition;
         transform.rotation = Quaternion.LookRotation(-hidingSpot.forward);
         characterController.enabled = true;
-
         isHiding = true;
         isWalking = false;
     }
-
     void UnhidePlayer()
     {
         characterController.enabled = false;
         transform.position = hidePosition;
         transform.rotation = hideRotation;
         characterController.enabled = true;
-
         isHiding = false;
     }
 
 
     private void OnControllerColliderHit(ControllerColliderHit hit)
     {
-        // Collision avec le décor
-        if (!isHiding && hit.gameObject.CompareTag("Decor"))
+        if (isHiding || impulseSource == null)
         {
-            // Vérifier si on sprintait activement LORS de l'impact
-            // On regarde si la touche Shift est enfoncée ET si on avait encore de la stamina juste avant/pendant l'impact
-            // Et si la vitesse de collision est suffisante (pour éviter les déclenchements en frôlant)
+            return;
+        }
+
+        if (hit.gameObject.CompareTag("Decor"))
+        {
             bool wasSprintingOnImpact = Input.GetKey(KeyCode.LeftShift)
-                                       && stamina != null && stamina.currentStamina > 0.01f // <-- Ligne corrigée
-                                       && characterController.velocity.magnitude > (speed + (runSpeed - speed) * 0.5f);
+                                       && stamina != null && stamina.currentStamina > 0.01f
+                                       && characterController.velocity.magnitude > (speed + 0.1f);
 
-            if (wasSprintingOnImpact && impulseSource != null)
+            // --- AJOUT DE LA VÉRIFICATION DU COOLDOWN ---
+            // Vérifie si on sprintait ET si le cooldown est terminé
+            if (wasSprintingOnImpact && Time.time >= lastImpulseTime + impulseCooldown)
             {
-                // Déclencher l'Impulsion Cinemachine !
-                impulseSource.GenerateImpulse();
+                Vector3 impactVelocity = characterController.velocity;
+                impactVelocity.y = 0;
 
-                // Optionnel : Jouer un son d'impact plus fort ici ?
-                // if (audioManager != null) audioManager.PlayHardCollisionSound(hit.point);
+                if (impactVelocity.sqrMagnitude > 0.1f)
+                {
+                    Vector3 impulseDirection = -impactVelocity.normalized;
+                    impulseSource.GenerateImpulse(impulseDirection);
+
+                    // Mettre à jour le temps de la dernière impulsion SEULEMENT si une impulsion a été générée
+                    lastImpulseTime = Time.time; // <--- MISE À JOUR DU TIMER
+
+                    // Optionnel : Son d'impact fort
+                    // if (audioManager != null) audioManager.PlayHardCollisionSound(hit.point);
+                }
             }
-            else
+            // --- FIN VÉRIFICATION COOLDOWN ---
+            else if (!wasSprintingOnImpact) // Si on ne sprintait pas (collision normale)
             {
-                // Jouer le son de collision normal si on ne sprintait pas (ou si pas d'impulse source)
+                // Jouer le son de collision normal
                 if (audioManager != null && characterController.velocity.magnitude > 0.1f)
                 {
                     audioManager.PlayDecorCollisionSound(hit.point);
                 }
             }
+            // Si on sprintait mais que le cooldown n'est pas terminé, on ne fait rien (pas d'impulsion, pas de son spécial)
         }
     }
 }
