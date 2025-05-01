@@ -143,10 +143,12 @@ MonoBehaviour:
   blendShapeIndex: 0
   blendShapeValueTarget: 0
   isProgressive: 0
-  progressiveIncrement: -30
   restingValue: 100
   lerpSpeed: 5
   returnDelay: 3
+  scannerProgressiveIncrement: 10
+  echoPassifProgressiveIncrement: 6
+  echoJoueurProgressiveIncrement: 12
 --- !u!64 &972667
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -220,10 +222,12 @@ MonoBehaviour:
   blendShapeIndex: 0
   blendShapeValueTarget: 0
   isProgressive: 0
-  progressiveIncrement: -30
   restingValue: 100
   lerpSpeed: 5
   returnDelay: 3
+  scannerProgressiveIncrement: 10
+  echoPassifProgressiveIncrement: 6
+  echoJoueurProgressiveIncrement: 12
 --- !u!64 &56156412
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -266,10 +270,12 @@ MonoBehaviour:
   blendShapeIndex: 0
   blendShapeValueTarget: 0
   isProgressive: 0
-  progressiveIncrement: -30
   restingValue: 100
   lerpSpeed: 5
   returnDelay: 3
+  scannerProgressiveIncrement: 10
+  echoPassifProgressiveIncrement: 6
+  echoJoueurProgressiveIncrement: 12
 --- !u!64 &122611113
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -312,10 +318,12 @@ MonoBehaviour:
   blendShapeIndex: 0
   blendShapeValueTarget: 0
   isProgressive: 0
-  progressiveIncrement: -30
   restingValue: 100
   lerpSpeed: 5
   returnDelay: 3
+  scannerProgressiveIncrement: 10
+  echoPassifProgressiveIncrement: 6
+  echoJoueurProgressiveIncrement: 12
 --- !u!64 &155049445
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -358,10 +366,12 @@ MonoBehaviour:
   blendShapeIndex: 0
   blendShapeValueTarget: 0
   isProgressive: 0
-  progressiveIncrement: -30
   restingValue: 100
   lerpSpeed: 5
   returnDelay: 3
+  scannerProgressiveIncrement: 10
+  echoPassifProgressiveIncrement: 6
+  echoJoueurProgressiveIncrement: 12
 --- !u!64 &163603820
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -404,10 +414,12 @@ MonoBehaviour:
   blendShapeIndex: 0
   blendShapeValueTarget: 0
   isProgressive: 0
-  progressiveIncrement: -30
   restingValue: 100
   lerpSpeed: 5
   returnDelay: 3
+  scannerProgressiveIncrement: 10
+  echoPassifProgressiveIncrement: 6
+  echoJoueurProgressiveIncrement: 12
 --- !u!64 &188319792
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -450,10 +462,12 @@ MonoBehaviour:
   blendShapeIndex: 0
   blendShapeValueTarget: 0
   isProgressive: 0
-  progressiveIncrement: -30
   restingValue: 100
   lerpSpeed: 5
   returnDelay: 3
+  scannerProgressiveIncrement: 10
+  echoPassifProgressiveIncrement: 6
+  echoJoueurProgressiveIncrement: 12
 --- !u!64 &192147878
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -496,10 +510,12 @@ MonoBehaviour:
   blendShapeIndex: 0
   blendShapeValueTarget: 0
   isProgressive: 0
-  progressiveIncrement: -30
   restingValue: 100
   lerpSpeed: 5
   returnDelay: 3
+  scannerProgressiveIncrement: 10
+  echoPassifProgressiveIncrement: 6
+  echoJoueurProgressiveIncrement: 12
 --- !u!64 &199534172
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -542,10 +558,12 @@ MonoBehaviour:
   blendShapeIndex: 0
   blendShapeValueTarget: 0
   isProgressive: 0
-  progressiveIncrement: -30
   restingValue: 100
   lerpSpeed: 5
   returnDelay: 3
+  scannerProgressiveIncrement: 10
+  echoPassifProgressiveIncrement: 6
+  echoJoueurProgressiveIncrement: 12
 --- !u!64 &248585216
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -588,10 +606,12 @@ MonoBehaviour:
   blendShapeIndex: 0
   blendShapeValueTarget: 0
   isProgressive: 0
-  progressiveIncrement: -30
   restingValue: 100
   lerpSpeed: 5
   returnDelay: 3
+  scannerProgressiveIncrement: 10
+  echoPassifProgressiveIncrement: 6
+  echoJoueurProgressiveIncrement: 12
 --- !u!64 &256416098
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -634,10 +654,12 @@ MonoBehaviour:
   blendShapeIndex: 0
   blendShapeValueTarget: 0
   isProgressive: 0
-  progressiveIncrement: -30
   restingValue: 100
   lerpSpeed: 5
   returnDelay: 3
+  scannerProgressiveIncrement: 10
+  echoPassifProgressiveIncrement: 6
+  echoJoueurProgressiveIncrement: 12
 --- !u!64 &269151862
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -680,10 +702,12 @@ MonoBehaviour:
   blendShapeIndex: 0
   blendShapeValueTarget: 0
   isProgressive: 0
-  progressiveIncrement: -30
   restingValue: 100
   lerpSpeed: 5
   returnDelay: 3
+  scannerProgressiveIncrement: 10
+  echoPassifProgressiveIncrement: 6
+  echoJoueurProgressiveIncrement: 12
 --- !u!64 &284806713
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -726,10 +750,12 @@ MonoBehaviour:
   blendShapeIndex: 0
   blendShapeValueTarget: 0
   isProgressive: 0
-  progressiveIncrement: -30
   restingValue: 100
   lerpSpeed: 5
   returnDelay: 3
+  scannerProgressiveIncrement: 10
+  echoPassifProgressiveIncrement: 6
+  echoJoueurProgressiveIncrement: 12
 --- !u!64 &349059396
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -772,10 +798,12 @@ MonoBehaviour:
   blendShapeIndex: 0
   blendShapeValueTarget: 0
   isProgressive: 0
-  progressiveIncrement: -30
   restingValue: 100
   lerpSpeed: 5
   returnDelay: 3
+  scannerProgressiveIncrement: 10
+  echoPassifProgressiveIncrement: 6
+  echoJoueurProgressiveIncrement: 12
 --- !u!64 &349068404
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -818,10 +846,12 @@ MonoBehaviour:
   blendShapeIndex: 0
   blendShapeValueTarget: 0
   isProgressive: 0
-  progressiveIncrement: -30
   restingValue: 100
   lerpSpeed: 5
   returnDelay: 3
+  scannerProgressiveIncrement: 10
+  echoPassifProgressiveIncrement: 6
+  echoJoueurProgressiveIncrement: 12
 --- !u!64 &356736235
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -913,10 +943,12 @@ MonoBehaviour:
   blendShapeIndex: 0
   blendShapeValueTarget: 0
   isProgressive: 0
-  progressiveIncrement: -30
   restingValue: 100
   lerpSpeed: 5
   returnDelay: 3
+  scannerProgressiveIncrement: 10
+  echoPassifProgressiveIncrement: 6
+  echoJoueurProgressiveIncrement: 12
 --- !u!64 &388138338
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -1032,10 +1064,12 @@ MonoBehaviour:
   blendShapeIndex: 0
   blendShapeValueTarget: 0
   isProgressive: 0
-  progressiveIncrement: -30
   restingValue: 100
   lerpSpeed: 5
   returnDelay: 3
+  scannerProgressiveIncrement: 10
+  echoPassifProgressiveIncrement: 6
+  echoJoueurProgressiveIncrement: 12
 --- !u!64 &400727503
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -1159,10 +1193,12 @@ MonoBehaviour:
   blendShapeIndex: 0
   blendShapeValueTarget: 0
   isProgressive: 0
-  progressiveIncrement: -30
   restingValue: 100
   lerpSpeed: 5
   returnDelay: 3
+  scannerProgressiveIncrement: 10
+  echoPassifProgressiveIncrement: 6
+  echoJoueurProgressiveIncrement: 12
 --- !u!64 &418962109
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -1205,10 +1241,12 @@ MonoBehaviour:
   blendShapeIndex: 0
   blendShapeValueTarget: 0
   isProgressive: 0
-  progressiveIncrement: -30
   restingValue: 100
   lerpSpeed: 5
   returnDelay: 3
+  scannerProgressiveIncrement: 10
+  echoPassifProgressiveIncrement: 6
+  echoJoueurProgressiveIncrement: 12
 --- !u!64 &437783348
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -1251,10 +1289,12 @@ MonoBehaviour:
   blendShapeIndex: 0
   blendShapeValueTarget: 0
   isProgressive: 0
-  progressiveIncrement: -30
   restingValue: 100
   lerpSpeed: 5
   returnDelay: 3
+  scannerProgressiveIncrement: 10
+  echoPassifProgressiveIncrement: 6
+  echoJoueurProgressiveIncrement: 12
 --- !u!64 &439788242
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -1297,10 +1337,12 @@ MonoBehaviour:
   blendShapeIndex: 0
   blendShapeValueTarget: 0
   isProgressive: 0
-  progressiveIncrement: -30
   restingValue: 100
   lerpSpeed: 5
   returnDelay: 3
+  scannerProgressiveIncrement: 10
+  echoPassifProgressiveIncrement: 6
+  echoJoueurProgressiveIncrement: 12
 --- !u!64 &440938481
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -1343,10 +1385,12 @@ MonoBehaviour:
   blendShapeIndex: 0
   blendShapeValueTarget: 0
   isProgressive: 0
-  progressiveIncrement: -30
   restingValue: 100
   lerpSpeed: 5
   returnDelay: 3
+  scannerProgressiveIncrement: 10
+  echoPassifProgressiveIncrement: 6
+  echoJoueurProgressiveIncrement: 12
 --- !u!64 &442554890
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -1389,10 +1433,12 @@ MonoBehaviour:
   blendShapeIndex: 0
   blendShapeValueTarget: 0
   isProgressive: 0
-  progressiveIncrement: -30
   restingValue: 100
   lerpSpeed: 5
   returnDelay: 3
+  scannerProgressiveIncrement: 10
+  echoPassifProgressiveIncrement: 6
+  echoJoueurProgressiveIncrement: 12
 --- !u!64 &454876867
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -1503,10 +1549,12 @@ MonoBehaviour:
   blendShapeIndex: 0
   blendShapeValueTarget: 0
   isProgressive: 0
-  progressiveIncrement: -30
   restingValue: 100
   lerpSpeed: 5
   returnDelay: 3
+  scannerProgressiveIncrement: 10
+  echoPassifProgressiveIncrement: 6
+  echoJoueurProgressiveIncrement: 12
 --- !u!64 &483875979
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -1597,6 +1645,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: sphere inverse
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 3658221473c477a4fb1dfbdf337998af, type: 3}
+      propertyPath: m_Layer
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -1622,10 +1674,12 @@ MonoBehaviour:
   blendShapeIndex: 0
   blendShapeValueTarget: 0
   isProgressive: 0
-  progressiveIncrement: -30
   restingValue: 100
   lerpSpeed: 5
   returnDelay: 3
+  scannerProgressiveIncrement: 10
+  echoPassifProgressiveIncrement: 6
+  echoJoueurProgressiveIncrement: 12
 --- !u!64 &528967931
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -1668,10 +1722,12 @@ MonoBehaviour:
   blendShapeIndex: 0
   blendShapeValueTarget: 0
   isProgressive: 0
-  progressiveIncrement: -30
   restingValue: 100
   lerpSpeed: 5
   returnDelay: 3
+  scannerProgressiveIncrement: 10
+  echoPassifProgressiveIncrement: 6
+  echoJoueurProgressiveIncrement: 12
 --- !u!64 &545150211
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -1714,10 +1770,12 @@ MonoBehaviour:
   blendShapeIndex: 0
   blendShapeValueTarget: 0
   isProgressive: 0
-  progressiveIncrement: -30
   restingValue: 100
   lerpSpeed: 5
   returnDelay: 3
+  scannerProgressiveIncrement: 10
+  echoPassifProgressiveIncrement: 6
+  echoJoueurProgressiveIncrement: 12
 --- !u!64 &546878449
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -1845,6 +1903,103 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1001 &611890623
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 470051413355830170, guid: e4107d49f816e4943b865bdd0fcab8c8, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -5.71
+      objectReference: {fileID: 0}
+    - target: {fileID: 470051413355830170, guid: e4107d49f816e4943b865bdd0fcab8c8, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 1.05
+      objectReference: {fileID: 0}
+    - target: {fileID: 470051413355830170, guid: e4107d49f816e4943b865bdd0fcab8c8, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -2.05
+      objectReference: {fileID: 0}
+    - target: {fileID: 470051413355830170, guid: e4107d49f816e4943b865bdd0fcab8c8, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 470051413355830170, guid: e4107d49f816e4943b865bdd0fcab8c8, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 470051413355830170, guid: e4107d49f816e4943b865bdd0fcab8c8, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 470051413355830170, guid: e4107d49f816e4943b865bdd0fcab8c8, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 470051413355830170, guid: e4107d49f816e4943b865bdd0fcab8c8, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 470051413355830170, guid: e4107d49f816e4943b865bdd0fcab8c8, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 470051413355830170, guid: e4107d49f816e4943b865bdd0fcab8c8, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6784315048683729755, guid: e4107d49f816e4943b865bdd0fcab8c8, type: 3}
+      propertyPath: cooldown
+      value: 1.49
+      objectReference: {fileID: 0}
+    - target: {fileID: 6784315048683729755, guid: e4107d49f816e4943b865bdd0fcab8c8, type: 3}
+      propertyPath: duration
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6784315048683729755, guid: e4107d49f816e4943b865bdd0fcab8c8, type: 3}
+      propertyPath: spawnDelay
+      value: 0.36
+      objectReference: {fileID: 0}
+    - target: {fileID: 6784315048683729755, guid: e4107d49f816e4943b865bdd0fcab8c8, type: 3}
+      propertyPath: growthSpeed
+      value: 1.64
+      objectReference: {fileID: 0}
+    - target: {fileID: 6784315048683729755, guid: e4107d49f816e4943b865bdd0fcab8c8, type: 3}
+      propertyPath: maximumSize
+      value: 50
+      objectReference: {fileID: 0}
+    - target: {fileID: 6784315048683729755, guid: e4107d49f816e4943b865bdd0fcab8c8, type: 3}
+      propertyPath: minimumSize
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 6784315048683729755, guid: e4107d49f816e4943b865bdd0fcab8c8, type: 3}
+      propertyPath: growthDuration
+      value: 7.88
+      objectReference: {fileID: 0}
+    - target: {fileID: 6784315048683729755, guid: e4107d49f816e4943b865bdd0fcab8c8, type: 3}
+      propertyPath: TerrainScannerPrefab
+      value: 
+      objectReference: {fileID: 3520727272833897359, guid: 8085cbebd6730834fa0c122fe5353fee, type: 3}
+    - target: {fileID: 6784315048683729755, guid: e4107d49f816e4943b865bdd0fcab8c8, type: 3}
+      propertyPath: growthCurve.m_Curve.Array.data[1].inSlope
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 6784315048683729755, guid: e4107d49f816e4943b865bdd0fcab8c8, type: 3}
+      propertyPath: growthCurve.m_Curve.Array.data[1].outSlope
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 7258169558130827519, guid: e4107d49f816e4943b865bdd0fcab8c8, type: 3}
+      propertyPath: m_Name
+      value: Radio
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: e4107d49f816e4943b865bdd0fcab8c8, type: 3}
 --- !u!1 &616998110 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 6400809260100018108, guid: c5aaeaa3858d4b248ba6b36799cb95bd, type: 3}
@@ -1865,10 +2020,12 @@ MonoBehaviour:
   blendShapeIndex: 0
   blendShapeValueTarget: 0
   isProgressive: 0
-  progressiveIncrement: -30
   restingValue: 100
   lerpSpeed: 5
   returnDelay: 3
+  scannerProgressiveIncrement: 10
+  echoPassifProgressiveIncrement: 6
+  echoJoueurProgressiveIncrement: 12
 --- !u!64 &616998113
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -1911,10 +2068,12 @@ MonoBehaviour:
   blendShapeIndex: 0
   blendShapeValueTarget: 0
   isProgressive: 0
-  progressiveIncrement: -30
   restingValue: 100
   lerpSpeed: 5
   returnDelay: 3
+  scannerProgressiveIncrement: 10
+  echoPassifProgressiveIncrement: 6
+  echoJoueurProgressiveIncrement: 12
 --- !u!64 &620148415
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -2093,10 +2252,12 @@ MonoBehaviour:
   blendShapeIndex: 0
   blendShapeValueTarget: 0
   isProgressive: 0
-  progressiveIncrement: -30
   restingValue: 100
   lerpSpeed: 5
   returnDelay: 3
+  scannerProgressiveIncrement: 10
+  echoPassifProgressiveIncrement: 6
+  echoJoueurProgressiveIncrement: 12
 --- !u!64 &662361018
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -2139,10 +2300,12 @@ MonoBehaviour:
   blendShapeIndex: 0
   blendShapeValueTarget: 0
   isProgressive: 0
-  progressiveIncrement: -30
   restingValue: 100
   lerpSpeed: 5
   returnDelay: 3
+  scannerProgressiveIncrement: 10
+  echoPassifProgressiveIncrement: 6
+  echoJoueurProgressiveIncrement: 12
 --- !u!64 &692582750
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -2185,10 +2348,12 @@ MonoBehaviour:
   blendShapeIndex: 0
   blendShapeValueTarget: 0
   isProgressive: 0
-  progressiveIncrement: -30
   restingValue: 100
   lerpSpeed: 5
   returnDelay: 3
+  scannerProgressiveIncrement: 10
+  echoPassifProgressiveIncrement: 6
+  echoJoueurProgressiveIncrement: 12
 --- !u!64 &758784175
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -2231,10 +2396,12 @@ MonoBehaviour:
   blendShapeIndex: 0
   blendShapeValueTarget: 0
   isProgressive: 0
-  progressiveIncrement: -30
   restingValue: 100
   lerpSpeed: 5
   returnDelay: 3
+  scannerProgressiveIncrement: 10
+  echoPassifProgressiveIncrement: 6
+  echoJoueurProgressiveIncrement: 12
 --- !u!64 &772819173
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -2277,10 +2444,12 @@ MonoBehaviour:
   blendShapeIndex: 0
   blendShapeValueTarget: 0
   isProgressive: 0
-  progressiveIncrement: -30
   restingValue: 100
   lerpSpeed: 5
   returnDelay: 3
+  scannerProgressiveIncrement: 10
+  echoPassifProgressiveIncrement: 6
+  echoJoueurProgressiveIncrement: 12
 --- !u!64 &774979659
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -2323,10 +2492,12 @@ MonoBehaviour:
   blendShapeIndex: 0
   blendShapeValueTarget: 0
   isProgressive: 0
-  progressiveIncrement: -30
   restingValue: 100
   lerpSpeed: 5
   returnDelay: 3
+  scannerProgressiveIncrement: 10
+  echoPassifProgressiveIncrement: 6
+  echoJoueurProgressiveIncrement: 12
 --- !u!64 &819584467
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -2369,10 +2540,12 @@ MonoBehaviour:
   blendShapeIndex: 0
   blendShapeValueTarget: 0
   isProgressive: 0
-  progressiveIncrement: -30
   restingValue: 100
   lerpSpeed: 5
   returnDelay: 3
+  scannerProgressiveIncrement: 10
+  echoPassifProgressiveIncrement: 6
+  echoJoueurProgressiveIncrement: 12
 --- !u!64 &848974413
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -2458,10 +2631,12 @@ MonoBehaviour:
   blendShapeIndex: 0
   blendShapeValueTarget: 0
   isProgressive: 0
-  progressiveIncrement: -30
   restingValue: 100
   lerpSpeed: 5
   returnDelay: 3
+  scannerProgressiveIncrement: 10
+  echoPassifProgressiveIncrement: 6
+  echoJoueurProgressiveIncrement: 12
 --- !u!64 &949149241
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -2610,10 +2785,12 @@ MonoBehaviour:
   blendShapeIndex: 0
   blendShapeValueTarget: 0
   isProgressive: 0
-  progressiveIncrement: -30
   restingValue: 100
   lerpSpeed: 5
   returnDelay: 3
+  scannerProgressiveIncrement: 10
+  echoPassifProgressiveIncrement: 6
+  echoJoueurProgressiveIncrement: 12
 --- !u!64 &979062860
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -2656,10 +2833,12 @@ MonoBehaviour:
   blendShapeIndex: 0
   blendShapeValueTarget: 0
   isProgressive: 0
-  progressiveIncrement: -30
   restingValue: 100
   lerpSpeed: 5
   returnDelay: 3
+  scannerProgressiveIncrement: 10
+  echoPassifProgressiveIncrement: 6
+  echoJoueurProgressiveIncrement: 12
 --- !u!64 &999315523
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -2702,10 +2881,12 @@ MonoBehaviour:
   blendShapeIndex: 0
   blendShapeValueTarget: 0
   isProgressive: 0
-  progressiveIncrement: -30
   restingValue: 100
   lerpSpeed: 5
   returnDelay: 3
+  scannerProgressiveIncrement: 10
+  echoPassifProgressiveIncrement: 6
+  echoJoueurProgressiveIncrement: 12
 --- !u!64 &1003918891
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -2748,10 +2929,12 @@ MonoBehaviour:
   blendShapeIndex: 0
   blendShapeValueTarget: 0
   isProgressive: 0
-  progressiveIncrement: -30
   restingValue: 100
   lerpSpeed: 5
   returnDelay: 3
+  scannerProgressiveIncrement: 10
+  echoPassifProgressiveIncrement: 6
+  echoJoueurProgressiveIncrement: 12
 --- !u!64 &1004094776
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -2794,10 +2977,12 @@ MonoBehaviour:
   blendShapeIndex: 0
   blendShapeValueTarget: 0
   isProgressive: 0
-  progressiveIncrement: -30
   restingValue: 100
   lerpSpeed: 5
   returnDelay: 3
+  scannerProgressiveIncrement: 10
+  echoPassifProgressiveIncrement: 6
+  echoJoueurProgressiveIncrement: 12
 --- !u!64 &1050895848
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -2840,10 +3025,12 @@ MonoBehaviour:
   blendShapeIndex: 0
   blendShapeValueTarget: 0
   isProgressive: 0
-  progressiveIncrement: -30
   restingValue: 100
   lerpSpeed: 5
   returnDelay: 3
+  scannerProgressiveIncrement: 10
+  echoPassifProgressiveIncrement: 6
+  echoJoueurProgressiveIncrement: 12
 --- !u!64 &1148916202
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -2886,10 +3073,12 @@ MonoBehaviour:
   blendShapeIndex: 0
   blendShapeValueTarget: 0
   isProgressive: 0
-  progressiveIncrement: -30
   restingValue: 100
   lerpSpeed: 5
   returnDelay: 3
+  scannerProgressiveIncrement: 10
+  echoPassifProgressiveIncrement: 6
+  echoJoueurProgressiveIncrement: 12
 --- !u!64 &1160106490
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -2932,10 +3121,12 @@ MonoBehaviour:
   blendShapeIndex: 0
   blendShapeValueTarget: 0
   isProgressive: 0
-  progressiveIncrement: -30
   restingValue: 100
   lerpSpeed: 5
   returnDelay: 3
+  scannerProgressiveIncrement: 10
+  echoPassifProgressiveIncrement: 6
+  echoJoueurProgressiveIncrement: 12
 --- !u!64 &1180410796
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -2978,10 +3169,12 @@ MonoBehaviour:
   blendShapeIndex: 0
   blendShapeValueTarget: 0
   isProgressive: 0
-  progressiveIncrement: -30
   restingValue: 100
   lerpSpeed: 5
   returnDelay: 3
+  scannerProgressiveIncrement: 10
+  echoPassifProgressiveIncrement: 6
+  echoJoueurProgressiveIncrement: 12
 --- !u!64 &1205018849
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -3024,10 +3217,12 @@ MonoBehaviour:
   blendShapeIndex: 0
   blendShapeValueTarget: 0
   isProgressive: 0
-  progressiveIncrement: -30
   restingValue: 100
   lerpSpeed: 5
   returnDelay: 3
+  scannerProgressiveIncrement: 10
+  echoPassifProgressiveIncrement: 6
+  echoJoueurProgressiveIncrement: 12
 --- !u!64 &1207232555
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -3070,10 +3265,12 @@ MonoBehaviour:
   blendShapeIndex: 0
   blendShapeValueTarget: 0
   isProgressive: 0
-  progressiveIncrement: -30
   restingValue: 100
   lerpSpeed: 5
   returnDelay: 3
+  scannerProgressiveIncrement: 10
+  echoPassifProgressiveIncrement: 6
+  echoJoueurProgressiveIncrement: 12
 --- !u!64 &1251522723
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -3116,10 +3313,12 @@ MonoBehaviour:
   blendShapeIndex: 0
   blendShapeValueTarget: 0
   isProgressive: 0
-  progressiveIncrement: -30
   restingValue: 100
   lerpSpeed: 5
   returnDelay: 3
+  scannerProgressiveIncrement: 10
+  echoPassifProgressiveIncrement: 6
+  echoJoueurProgressiveIncrement: 12
 --- !u!64 &1276050687
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -3162,10 +3361,12 @@ MonoBehaviour:
   blendShapeIndex: 0
   blendShapeValueTarget: 0
   isProgressive: 0
-  progressiveIncrement: -30
   restingValue: 100
   lerpSpeed: 5
   returnDelay: 3
+  scannerProgressiveIncrement: 10
+  echoPassifProgressiveIncrement: 6
+  echoJoueurProgressiveIncrement: 12
 --- !u!64 &1281622423
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -3357,10 +3558,12 @@ MonoBehaviour:
   blendShapeIndex: 0
   blendShapeValueTarget: 0
   isProgressive: 0
-  progressiveIncrement: -30
   restingValue: 100
   lerpSpeed: 5
   returnDelay: 3
+  scannerProgressiveIncrement: 10
+  echoPassifProgressiveIncrement: 6
+  echoJoueurProgressiveIncrement: 12
 --- !u!64 &1305829951
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -3403,10 +3606,12 @@ MonoBehaviour:
   blendShapeIndex: 0
   blendShapeValueTarget: 0
   isProgressive: 0
-  progressiveIncrement: -30
   restingValue: 100
   lerpSpeed: 5
   returnDelay: 3
+  scannerProgressiveIncrement: 10
+  echoPassifProgressiveIncrement: 6
+  echoJoueurProgressiveIncrement: 12
 --- !u!64 &1314232076
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -3449,10 +3654,12 @@ MonoBehaviour:
   blendShapeIndex: 0
   blendShapeValueTarget: 0
   isProgressive: 0
-  progressiveIncrement: -30
   restingValue: 100
   lerpSpeed: 5
   returnDelay: 3
+  scannerProgressiveIncrement: 10
+  echoPassifProgressiveIncrement: 6
+  echoJoueurProgressiveIncrement: 12
 --- !u!64 &1348278272
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -3495,10 +3702,12 @@ MonoBehaviour:
   blendShapeIndex: 0
   blendShapeValueTarget: 0
   isProgressive: 0
-  progressiveIncrement: -30
   restingValue: 100
   lerpSpeed: 5
   returnDelay: 3
+  scannerProgressiveIncrement: 10
+  echoPassifProgressiveIncrement: 6
+  echoJoueurProgressiveIncrement: 12
 --- !u!64 &1349448683
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -3541,10 +3750,12 @@ MonoBehaviour:
   blendShapeIndex: 0
   blendShapeValueTarget: 0
   isProgressive: 0
-  progressiveIncrement: -30
   restingValue: 100
   lerpSpeed: 5
   returnDelay: 3
+  scannerProgressiveIncrement: 10
+  echoPassifProgressiveIncrement: 6
+  echoJoueurProgressiveIncrement: 12
 --- !u!64 &1351403086
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -3587,10 +3798,12 @@ MonoBehaviour:
   blendShapeIndex: 0
   blendShapeValueTarget: 0
   isProgressive: 0
-  progressiveIncrement: -30
   restingValue: 100
   lerpSpeed: 5
   returnDelay: 3
+  scannerProgressiveIncrement: 10
+  echoPassifProgressiveIncrement: 6
+  echoJoueurProgressiveIncrement: 12
 --- !u!64 &1356465387
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -3633,10 +3846,12 @@ MonoBehaviour:
   blendShapeIndex: 0
   blendShapeValueTarget: 0
   isProgressive: 0
-  progressiveIncrement: -30
   restingValue: 100
   lerpSpeed: 5
   returnDelay: 3
+  scannerProgressiveIncrement: 10
+  echoPassifProgressiveIncrement: 6
+  echoJoueurProgressiveIncrement: 12
 --- !u!64 &1369023496
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -3679,10 +3894,12 @@ MonoBehaviour:
   blendShapeIndex: 0
   blendShapeValueTarget: 0
   isProgressive: 0
-  progressiveIncrement: -30
   restingValue: 100
   lerpSpeed: 5
   returnDelay: 3
+  scannerProgressiveIncrement: 10
+  echoPassifProgressiveIncrement: 6
+  echoJoueurProgressiveIncrement: 12
 --- !u!64 &1372593572
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -3725,10 +3942,12 @@ MonoBehaviour:
   blendShapeIndex: 0
   blendShapeValueTarget: 0
   isProgressive: 0
-  progressiveIncrement: -30
   restingValue: 100
   lerpSpeed: 5
   returnDelay: 3
+  scannerProgressiveIncrement: 10
+  echoPassifProgressiveIncrement: 6
+  echoJoueurProgressiveIncrement: 12
 --- !u!64 &1376066804
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -7075,10 +7294,12 @@ MonoBehaviour:
   blendShapeIndex: 0
   blendShapeValueTarget: 0
   isProgressive: 0
-  progressiveIncrement: -30
   restingValue: 100
   lerpSpeed: 5
   returnDelay: 3
+  scannerProgressiveIncrement: 10
+  echoPassifProgressiveIncrement: 6
+  echoJoueurProgressiveIncrement: 12
 --- !u!64 &1538273050
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -7121,10 +7342,12 @@ MonoBehaviour:
   blendShapeIndex: 0
   blendShapeValueTarget: 0
   isProgressive: 0
-  progressiveIncrement: -30
   restingValue: 100
   lerpSpeed: 5
   returnDelay: 3
+  scannerProgressiveIncrement: 10
+  echoPassifProgressiveIncrement: 6
+  echoJoueurProgressiveIncrement: 12
 --- !u!64 &1545781929
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -7230,10 +7453,12 @@ MonoBehaviour:
   blendShapeIndex: 0
   blendShapeValueTarget: 0
   isProgressive: 0
-  progressiveIncrement: -30
   restingValue: 100
   lerpSpeed: 5
   returnDelay: 3
+  scannerProgressiveIncrement: 10
+  echoPassifProgressiveIncrement: 6
+  echoJoueurProgressiveIncrement: 12
 --- !u!64 &1585163933
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -7307,10 +7532,12 @@ MonoBehaviour:
   blendShapeIndex: 0
   blendShapeValueTarget: 0
   isProgressive: 0
-  progressiveIncrement: -30
   restingValue: 100
   lerpSpeed: 5
   returnDelay: 3
+  scannerProgressiveIncrement: 10
+  echoPassifProgressiveIncrement: 6
+  echoJoueurProgressiveIncrement: 12
 --- !u!64 &1615877508
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -7353,10 +7580,12 @@ MonoBehaviour:
   blendShapeIndex: 0
   blendShapeValueTarget: 0
   isProgressive: 0
-  progressiveIncrement: -30
   restingValue: 100
   lerpSpeed: 5
   returnDelay: 3
+  scannerProgressiveIncrement: 10
+  echoPassifProgressiveIncrement: 6
+  echoJoueurProgressiveIncrement: 12
 --- !u!64 &1672537802
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -7399,10 +7628,12 @@ MonoBehaviour:
   blendShapeIndex: 0
   blendShapeValueTarget: 0
   isProgressive: 0
-  progressiveIncrement: 10
   restingValue: 100
   lerpSpeed: 5
   returnDelay: 3
+  scannerProgressiveIncrement: 10
+  echoPassifProgressiveIncrement: 6
+  echoJoueurProgressiveIncrement: 12
 --- !u!1 &1701831177 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 1980925392982794552, guid: c5aaeaa3858d4b248ba6b36799cb95bd, type: 3}
@@ -7423,10 +7654,12 @@ MonoBehaviour:
   blendShapeIndex: 0
   blendShapeValueTarget: 0
   isProgressive: 0
-  progressiveIncrement: -30
   restingValue: 100
   lerpSpeed: 5
   returnDelay: 3
+  scannerProgressiveIncrement: 10
+  echoPassifProgressiveIncrement: 6
+  echoJoueurProgressiveIncrement: 12
 --- !u!64 &1701831180
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -7668,10 +7901,12 @@ MonoBehaviour:
   blendShapeIndex: 0
   blendShapeValueTarget: 0
   isProgressive: 0
-  progressiveIncrement: -30
   restingValue: 100
   lerpSpeed: 5
   returnDelay: 3
+  scannerProgressiveIncrement: 10
+  echoPassifProgressiveIncrement: 6
+  echoJoueurProgressiveIncrement: 12
 --- !u!64 &1760779420
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -7714,10 +7949,12 @@ MonoBehaviour:
   blendShapeIndex: 0
   blendShapeValueTarget: 0
   isProgressive: 0
-  progressiveIncrement: -30
   restingValue: 100
   lerpSpeed: 5
   returnDelay: 3
+  scannerProgressiveIncrement: 10
+  echoPassifProgressiveIncrement: 6
+  echoJoueurProgressiveIncrement: 12
 --- !u!64 &1764819929
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -7832,10 +8069,12 @@ MonoBehaviour:
   blendShapeIndex: 0
   blendShapeValueTarget: 0
   isProgressive: 0
-  progressiveIncrement: -30
   restingValue: 100
   lerpSpeed: 5
   returnDelay: 3
+  scannerProgressiveIncrement: 10
+  echoPassifProgressiveIncrement: 6
+  echoJoueurProgressiveIncrement: 12
 --- !u!64 &1884523450
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -7878,10 +8117,12 @@ MonoBehaviour:
   blendShapeIndex: 0
   blendShapeValueTarget: 0
   isProgressive: 0
-  progressiveIncrement: -30
   restingValue: 100
   lerpSpeed: 5
   returnDelay: 3
+  scannerProgressiveIncrement: 10
+  echoPassifProgressiveIncrement: 6
+  echoJoueurProgressiveIncrement: 12
 --- !u!64 &1912987303
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -7924,10 +8165,12 @@ MonoBehaviour:
   blendShapeIndex: 0
   blendShapeValueTarget: 0
   isProgressive: 0
-  progressiveIncrement: -30
   restingValue: 100
   lerpSpeed: 5
   returnDelay: 3
+  scannerProgressiveIncrement: 10
+  echoPassifProgressiveIncrement: 6
+  echoJoueurProgressiveIncrement: 12
 --- !u!64 &1964677785
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -7970,10 +8213,12 @@ MonoBehaviour:
   blendShapeIndex: 0
   blendShapeValueTarget: 0
   isProgressive: 0
-  progressiveIncrement: -30
   restingValue: 100
   lerpSpeed: 5
   returnDelay: 3
+  scannerProgressiveIncrement: 10
+  echoPassifProgressiveIncrement: 6
+  echoJoueurProgressiveIncrement: 12
 --- !u!64 &2054305230
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -8016,10 +8261,12 @@ MonoBehaviour:
   blendShapeIndex: 0
   blendShapeValueTarget: 0
   isProgressive: 0
-  progressiveIncrement: -30
   restingValue: 100
   lerpSpeed: 5
   returnDelay: 3
+  scannerProgressiveIncrement: 10
+  echoPassifProgressiveIncrement: 6
+  echoJoueurProgressiveIncrement: 12
 --- !u!64 &2082542701
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -8062,10 +8309,12 @@ MonoBehaviour:
   blendShapeIndex: 0
   blendShapeValueTarget: 0
   isProgressive: 0
-  progressiveIncrement: -30
   restingValue: 100
   lerpSpeed: 5
   returnDelay: 3
+  scannerProgressiveIncrement: 10
+  echoPassifProgressiveIncrement: 6
+  echoJoueurProgressiveIncrement: 12
 --- !u!64 &2082869839
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -8139,10 +8388,12 @@ MonoBehaviour:
   blendShapeIndex: 0
   blendShapeValueTarget: 0
   isProgressive: 0
-  progressiveIncrement: -30
   restingValue: 100
   lerpSpeed: 5
   returnDelay: 3
+  scannerProgressiveIncrement: 10
+  echoPassifProgressiveIncrement: 6
+  echoJoueurProgressiveIncrement: 12
 --- !u!64 &2100104126
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -8190,10 +8441,12 @@ MonoBehaviour:
   blendShapeIndex: 0
   blendShapeValueTarget: 0
   isProgressive: 0
-  progressiveIncrement: -30
   restingValue: 100
   lerpSpeed: 5
   returnDelay: 3
+  scannerProgressiveIncrement: 10
+  echoPassifProgressiveIncrement: 6
+  echoJoueurProgressiveIncrement: 12
 --- !u!64 &2114100705
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -8236,10 +8489,12 @@ MonoBehaviour:
   blendShapeIndex: 0
   blendShapeValueTarget: 0
   isProgressive: 0
-  progressiveIncrement: -30
   restingValue: 100
   lerpSpeed: 5
   returnDelay: 3
+  scannerProgressiveIncrement: 10
+  echoPassifProgressiveIncrement: 6
+  echoJoueurProgressiveIncrement: 12
 --- !u!64 &2115387861
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -8282,10 +8537,12 @@ MonoBehaviour:
   blendShapeIndex: 0
   blendShapeValueTarget: 0
   isProgressive: 0
-  progressiveIncrement: -30
   restingValue: 100
   lerpSpeed: 5
   returnDelay: 3
+  scannerProgressiveIncrement: 10
+  echoPassifProgressiveIncrement: 6
+  echoJoueurProgressiveIncrement: 12
 --- !u!64 &2143204961
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -8326,3 +8583,4 @@ SceneRoots:
   - {fileID: 406619548}
   - {fileID: 1286962692}
   - {fileID: 370341929}
+  - {fileID: 611890623}
