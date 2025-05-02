@@ -1,0 +1,42 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!21 &2100000
+Material:
+  serializedVersion: 8
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: materiau_point_cloudMenu
+  m_Shader: {fileID: 4800000, guid: 353d81c471ad0874f9cb608d5b59cc8d, type: 3}
+  m_Parent: {fileID: 2100000, guid: 52cef10eb174ed24cbc4bbfeb8f780e4, type: 2}
+  m_ModifiedSerializedProperties: 6
+  m_ValidKeywords: []
+  m_InvalidKeywords: []
+  m_LightmapFlags: 0
+  m_EnableInstancingVariants: 0
+  m_DoubleSidedGI: 0
+  m_CustomRenderQueue: -1
+  stringTagMap: {}
+  disabledShaderPasses: []
+  m_LockedProperties: 
+  m_SavedProperties:
+    serializedVersion: 3
+    m_TexEnvs:
+    - _A_tex:
+        m_Texture: {fileID: 2800000, guid: 6555475c9c3b67c47a4ec0f65b740896, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    m_Ints: []
+    m_Floats:
+    - _Cutoff: 0.5
+    - _Float0: 0
+    - _Noise_Scale: 1.23
+    - __dirty: 0
+    - _noisescale: -0.4
+    - _size: 80.5
+    - _timescale: 1.73
+    m_Colors:
+    - _Color: {r: 0.91194963, g: 0, b: 0, a: 1}
+    - _MainColor: {r: 0.6178847, g: 2.1364303, b: 3.221107, a: 0}
+  m_BuildTextureStacks: []

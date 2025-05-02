@@ -6,7 +6,10 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/scene ju/Built-in JU/New Scene.unity
-    guid: c35bcf2ff3eabd040849a35708039b5b
+    path: Assets/Scene Jo/SceneMenuPrincipal.unity
+    guid: fdebed101af2c9746aa468682732044e
+  - enabled: 1
+    path: Assets/Scene Jo/ScenePrincipale.unity
+    guid: f5438730110af68438b63e3a61e6666c
   m_configObjects:
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 289c1b55c9541489481df5cc06664110, type: 3}
