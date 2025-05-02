@@ -21,7 +21,7 @@ public class EnemyProximityShake : MonoBehaviour
 
     [Header("Movement Detection")]
     [Tooltip("Seuil de distance minimal pour considérer que l'ennemi bouge (en unités/frame). Ajustez si nécessaire.")]
-    public float movementThreshold = 0.01f; // Très petite valeur pour détecter le moindre mouvement
+    public float movementThreshold = 0.01f;
 
     private float timeSinceLastShake = 0f;
     private Vector3 lastPosition; // Pour stocker la position de la frame précédente
@@ -29,7 +29,7 @@ public class EnemyProximityShake : MonoBehaviour
     void Start()
     {
         impulseSource = GetComponent<CinemachineImpulseSource>();
-        lastPosition = transform.position; // Initialiser la position précédente
+        lastPosition = transform.position; 
 
         if (playerTransform == null)
         {
@@ -76,7 +76,7 @@ public class EnemyProximityShake : MonoBehaviour
             float distance = Vector3.Distance(transform.position, playerTransform.position);
 
             // Vérifie si le joueur est dans la portée ET si l'ennemi bouge
-            if (distance <= maxDistance && isMoving) // <--- Condition Modifiée
+            if (distance <= maxDistance && isMoving)
             {
                 float intensityFactor = Mathf.Clamp01(1f - Mathf.InverseLerp(minDistance, maxDistance, distance));
                 float currentForce = intensityFactor * maxShakeForce;
@@ -86,7 +86,7 @@ public class EnemyProximityShake : MonoBehaviour
                     impulseSource.GenerateImpulseWithForce(currentForce);
                 }
 
-                timeSinceLastShake = 0f; // Réinitialise le timer seulement si une impulsion a été (potentiellement) générée
+                timeSinceLastShake = 0f; // Réinitialise le timer seulement si une impulsion a été générée
             }
             else if (distance > maxDistance || !isMoving) // Si hors de portée OU immobile
             {
@@ -94,7 +94,6 @@ public class EnemyProximityShake : MonoBehaviour
                 // pour éviter une impulsion dès qu'on re-rentre dans la zone ou qu'on se remet à bouger.
                 timeSinceLastShake = 0f;
             }
-            // Si on est dans la zone, immobile, mais que le timer n'était pas prêt, on ne fait rien et on laisse le timer continuer.
         }
     }
 }

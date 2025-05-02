@@ -23,7 +23,7 @@ public class PlayerMovement : MonoBehaviour
     [Tooltip("Assignez ici l'objet enfant qui porte l'Impulse Source (ex: CameraTarget).")]
     public Transform impulseSourceTarget;
     [Tooltip("Temps minimum (en secondes) entre deux impulsions de collision.")]
-    public float impulseCooldown = 0.5f; // <--- NOUVELLE VARIABLE POUR LE COOLDOWN
+    public float impulseCooldown = 0.5f;
 
     // --- Private Variables ---
     private CharacterController characterController;
@@ -36,7 +36,7 @@ public class PlayerMovement : MonoBehaviour
     private Vector3 hidePosition;
     private Quaternion hideRotation;
     public bool isWalking = false;
-    private float lastImpulseTime = -1f; // <--- NOUVELLE VARIABLE POUR SUIVRE LE TEMPS
+    private float lastImpulseTime = -1f;
 
     void Start()
     {
@@ -91,7 +91,6 @@ public class PlayerMovement : MonoBehaviour
 
     void HandleMovement()
     {
-        // ... (Le reste de HandleMovement reste identique) ...
         bool isTryingToSprint = Input.GetKey(KeyCode.LeftShift) && stamina != null && stamina.CanSprint();
         float currentSpeed = isTryingToSprint ? runSpeed : speed;
 
@@ -118,13 +117,6 @@ public class PlayerMovement : MonoBehaviour
         Vector3 desiredMovementHorizontal = (forward * moveForwardInput + right * moveSideInput).normalized;
         isWalking = desiredMovementHorizontal.magnitude > 0.1f;
 
-        // --- Orientation du Corps (Optionnel) ---
-        if (desiredMovementHorizontal.magnitude > 0.1f)
-        {
-            // Logique pour tourner le modèle si nécessaire...
-        }
-
-        // --- Gravité ---
         if (characterController.isGrounded)
         {
             verticalVelocity = -gravity * Time.deltaTime * 2f;
@@ -139,8 +131,6 @@ public class PlayerMovement : MonoBehaviour
         finalMovement.y = verticalVelocity;
         characterController.Move(finalMovement * Time.deltaTime);
     }
-
-    // ... (HandleHidingInput, HidePlayer, UnhidePlayer restent identiques) ...
     void HandleHidingInput()
     {
         if (cam == null) return;
@@ -194,7 +184,6 @@ public class PlayerMovement : MonoBehaviour
                                        && stamina != null && stamina.currentStamina > 0.01f
                                        && characterController.velocity.magnitude > (speed + 0.1f);
 
-            // --- AJOUT DE LA VÉRIFICATION DU COOLDOWN ---
             // Vérifie si on sprintait ET si le cooldown est terminé
             if (wasSprintingOnImpact && Time.time >= lastImpulseTime + impulseCooldown)
             {
@@ -207,22 +196,17 @@ public class PlayerMovement : MonoBehaviour
                     impulseSource.GenerateImpulse(impulseDirection);
 
                     // Mettre à jour le temps de la dernière impulsion SEULEMENT si une impulsion a été générée
-                    lastImpulseTime = Time.time; // <--- MISE À JOUR DU TIMER
+                    lastImpulseTime = Time.time;
 
-                    // Optionnel : Son d'impact fort
-                    // if (audioManager != null) audioManager.PlayHardCollisionSound(hit.point);
                 }
             }
-            // --- FIN VÉRIFICATION COOLDOWN ---
-            else if (!wasSprintingOnImpact) // Si on ne sprintait pas (collision normale)
+            else if (!wasSprintingOnImpact)
             {
-                // Jouer le son de collision normal
                 if (audioManager != null && characterController.velocity.magnitude > 0.1f)
                 {
                     audioManager.PlayDecorCollisionSound(hit.point);
                 }
             }
-            // Si on sprintait mais que le cooldown n'est pas terminé, on ne fait rien (pas d'impulsion, pas de son spécial)
         }
     }
 }
