@@ -170,10 +170,12 @@ MonoBehaviour:
   blendShapeIndex: 0
   blendShapeValueTarget: 0
   isProgressive: 1
-  progressiveIncrement: -30
   restingValue: 100
   lerpSpeed: 5
   returnDelay: 3
+  scannerProgressiveIncrement: 10
+  echoPassifProgressiveIncrement: 6
+  echoJoueurProgressiveIncrement: 12
 --- !u!1 &38030896 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 7150590034702082185, guid: e22c6a14dae4cc34eaadee19d6456e26, type: 3}
@@ -216,10 +218,12 @@ MonoBehaviour:
   blendShapeIndex: 0
   blendShapeValueTarget: 100
   isProgressive: 0
-  progressiveIncrement: 10
   restingValue: 0
   lerpSpeed: 5
   returnDelay: 3
+  scannerProgressiveIncrement: 10
+  echoPassifProgressiveIncrement: 6
+  echoJoueurProgressiveIncrement: 12
 --- !u!1 &52386421
 GameObject:
   m_ObjectHideFlags: 0
@@ -269,10 +273,12 @@ MonoBehaviour:
   blendShapeIndex: 0
   blendShapeValueTarget: 0
   isProgressive: 1
-  progressiveIncrement: -30
   restingValue: 100
   lerpSpeed: 5
   returnDelay: 3
+  scannerProgressiveIncrement: 10
+  echoPassifProgressiveIncrement: 6
+  echoJoueurProgressiveIncrement: 12
 --- !u!64 &52386424
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -463,10 +469,12 @@ MonoBehaviour:
   blendShapeIndex: 0
   blendShapeValueTarget: 0
   isProgressive: 1
-  progressiveIncrement: -30
   restingValue: 100
   lerpSpeed: 5
   returnDelay: 3
+  scannerProgressiveIncrement: 10
+  echoPassifProgressiveIncrement: 6
+  echoJoueurProgressiveIncrement: 12
 --- !u!64 &96322426
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -585,10 +593,12 @@ MonoBehaviour:
   blendShapeIndex: 0
   blendShapeValueTarget: 0
   isProgressive: 1
-  progressiveIncrement: -30
   restingValue: 100
   lerpSpeed: 5
   returnDelay: 3
+  scannerProgressiveIncrement: 10
+  echoPassifProgressiveIncrement: 6
+  echoJoueurProgressiveIncrement: 12
 --- !u!1 &115765709 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: -9060439971855302104, guid: c5aaeaa3858d4b248ba6b36799cb95bd, type: 3}
@@ -631,10 +641,12 @@ MonoBehaviour:
   blendShapeIndex: 0
   blendShapeValueTarget: 0
   isProgressive: 1
-  progressiveIncrement: -30
   restingValue: 100
   lerpSpeed: 5
   returnDelay: 3
+  scannerProgressiveIncrement: 10
+  echoPassifProgressiveIncrement: 6
+  echoJoueurProgressiveIncrement: 12
 --- !u!1 &116137094 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: -4607579965076306765, guid: e22c6a14dae4cc34eaadee19d6456e26, type: 3}
@@ -677,10 +689,12 @@ MonoBehaviour:
   blendShapeIndex: 0
   blendShapeValueTarget: 0
   isProgressive: 1
-  progressiveIncrement: -30
   restingValue: 100
   lerpSpeed: 5
   returnDelay: 3
+  scannerProgressiveIncrement: 10
+  echoPassifProgressiveIncrement: 6
+  echoJoueurProgressiveIncrement: 12
 --- !u!1 &119644086 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 8578122536603752281, guid: 9cf5b9ddbcef7054d85f4226c2ed95d8, type: 3}
@@ -770,10 +784,12 @@ MonoBehaviour:
   blendShapeIndex: 0
   blendShapeValueTarget: 0
   isProgressive: 1
-  progressiveIncrement: -30
   restingValue: 100
   lerpSpeed: 5
   returnDelay: 3
+  scannerProgressiveIncrement: 10
+  echoPassifProgressiveIncrement: 6
+  echoJoueurProgressiveIncrement: 12
 --- !u!64 &167776390
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -892,10 +908,12 @@ MonoBehaviour:
   blendShapeIndex: 0
   blendShapeValueTarget: 0
   isProgressive: 1
-  progressiveIncrement: -30
   restingValue: 100
   lerpSpeed: 5
   returnDelay: 3
+  scannerProgressiveIncrement: 10
+  echoPassifProgressiveIncrement: 6
+  echoJoueurProgressiveIncrement: 12
 --- !u!1 &176644236 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: -4357554680156711687, guid: c5aaeaa3858d4b248ba6b36799cb95bd, type: 3}
@@ -938,10 +956,12 @@ MonoBehaviour:
   blendShapeIndex: 0
   blendShapeValueTarget: 0
   isProgressive: 1
-  progressiveIncrement: -30
   restingValue: 100
   lerpSpeed: 5
   returnDelay: 3
+  scannerProgressiveIncrement: 10
+  echoPassifProgressiveIncrement: 6
+  echoJoueurProgressiveIncrement: 12
 --- !u!1 &186575216 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 8b5d15c637573004bbc67a6f8ea1e378, type: 3}
@@ -1037,10 +1057,12 @@ MonoBehaviour:
   blendShapeIndex: 0
   blendShapeValueTarget: 0
   isProgressive: 1
-  progressiveIncrement: -30
   restingValue: 100
   lerpSpeed: 5
   returnDelay: 3
+  scannerProgressiveIncrement: 10
+  echoPassifProgressiveIncrement: 6
+  echoJoueurProgressiveIncrement: 12
 --- !u!1 &212450610 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 4996424436530825728, guid: c5aaeaa3858d4b248ba6b36799cb95bd, type: 3}
@@ -1083,10 +1105,12 @@ MonoBehaviour:
   blendShapeIndex: 0
   blendShapeValueTarget: 0
   isProgressive: 1
-  progressiveIncrement: -30
   restingValue: 100
   lerpSpeed: 5
   returnDelay: 3
+  scannerProgressiveIncrement: 10
+  echoPassifProgressiveIncrement: 6
+  echoJoueurProgressiveIncrement: 12
 --- !u!1 &218016803 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: -2358423245618613083, guid: c5aaeaa3858d4b248ba6b36799cb95bd, type: 3}
@@ -1129,10 +1153,12 @@ MonoBehaviour:
   blendShapeIndex: 0
   blendShapeValueTarget: 0
   isProgressive: 1
-  progressiveIncrement: -30
   restingValue: 100
   lerpSpeed: 5
   returnDelay: 3
+  scannerProgressiveIncrement: 10
+  echoPassifProgressiveIncrement: 6
+  echoJoueurProgressiveIncrement: 12
 --- !u!1001 &240101362
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1988,10 +2014,12 @@ MonoBehaviour:
   blendShapeIndex: 0
   blendShapeValueTarget: 0
   isProgressive: 1
-  progressiveIncrement: -30
   restingValue: 100
   lerpSpeed: 5
   returnDelay: 3
+  scannerProgressiveIncrement: 10
+  echoPassifProgressiveIncrement: 6
+  echoJoueurProgressiveIncrement: 12
 --- !u!1 &263322416 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 105023545968733272, guid: 9cf5b9ddbcef7054d85f4226c2ed95d8, type: 3}
@@ -2118,10 +2146,12 @@ MonoBehaviour:
   blendShapeIndex: 0
   blendShapeValueTarget: 100
   isProgressive: 0
-  progressiveIncrement: 10
   restingValue: 0
   lerpSpeed: 5
   returnDelay: 3
+  scannerProgressiveIncrement: 10
+  echoPassifProgressiveIncrement: 6
+  echoJoueurProgressiveIncrement: 12
 --- !u!1001 &280255527
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2271,10 +2301,12 @@ MonoBehaviour:
   blendShapeIndex: 0
   blendShapeValueTarget: 0
   isProgressive: 1
-  progressiveIncrement: -30
   restingValue: 100
   lerpSpeed: 5
   returnDelay: 3
+  scannerProgressiveIncrement: 10
+  echoPassifProgressiveIncrement: 6
+  echoJoueurProgressiveIncrement: 12
 --- !u!1 &305242331 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: -3971051839356179853, guid: c5aaeaa3858d4b248ba6b36799cb95bd, type: 3}
@@ -2317,10 +2349,12 @@ MonoBehaviour:
   blendShapeIndex: 0
   blendShapeValueTarget: 0
   isProgressive: 1
-  progressiveIncrement: -30
   restingValue: 100
   lerpSpeed: 5
   returnDelay: 3
+  scannerProgressiveIncrement: 10
+  echoPassifProgressiveIncrement: 6
+  echoJoueurProgressiveIncrement: 12
 --- !u!1001 &312702631
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2497,10 +2531,12 @@ MonoBehaviour:
   blendShapeIndex: 0
   blendShapeValueTarget: 0
   isProgressive: 1
-  progressiveIncrement: -30
   restingValue: 100
   lerpSpeed: 5
   returnDelay: 3
+  scannerProgressiveIncrement: 10
+  echoPassifProgressiveIncrement: 6
+  echoJoueurProgressiveIncrement: 12
 --- !u!1 &315644965 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 8460033818040474037, guid: c5aaeaa3858d4b248ba6b36799cb95bd, type: 3}
@@ -2543,10 +2579,12 @@ MonoBehaviour:
   blendShapeIndex: 0
   blendShapeValueTarget: 0
   isProgressive: 1
-  progressiveIncrement: -30
   restingValue: 100
   lerpSpeed: 5
   returnDelay: 3
+  scannerProgressiveIncrement: 10
+  echoPassifProgressiveIncrement: 6
+  echoJoueurProgressiveIncrement: 12
 --- !u!1 &324643447 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: -5723114799528848563, guid: c5aaeaa3858d4b248ba6b36799cb95bd, type: 3}
@@ -2589,10 +2627,12 @@ MonoBehaviour:
   blendShapeIndex: 0
   blendShapeValueTarget: 0
   isProgressive: 1
-  progressiveIncrement: -30
   restingValue: 100
   lerpSpeed: 5
   returnDelay: 3
+  scannerProgressiveIncrement: 10
+  echoPassifProgressiveIncrement: 6
+  echoJoueurProgressiveIncrement: 12
 --- !u!1 &331483887 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 8643458566325605725, guid: c5aaeaa3858d4b248ba6b36799cb95bd, type: 3}
@@ -2635,10 +2675,12 @@ MonoBehaviour:
   blendShapeIndex: 0
   blendShapeValueTarget: 0
   isProgressive: 1
-  progressiveIncrement: -30
   restingValue: 100
   lerpSpeed: 5
   returnDelay: 3
+  scannerProgressiveIncrement: 10
+  echoPassifProgressiveIncrement: 6
+  echoJoueurProgressiveIncrement: 12
 --- !u!1 &343512013 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: -454047274600187011, guid: e22c6a14dae4cc34eaadee19d6456e26, type: 3}
@@ -2681,10 +2723,12 @@ MonoBehaviour:
   blendShapeIndex: 0
   blendShapeValueTarget: 0
   isProgressive: 1
-  progressiveIncrement: -30
   restingValue: 100
   lerpSpeed: 5
   returnDelay: 3
+  scannerProgressiveIncrement: 10
+  echoPassifProgressiveIncrement: 6
+  echoJoueurProgressiveIncrement: 12
 --- !u!1 &348301420 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 5138383004789116546, guid: c5aaeaa3858d4b248ba6b36799cb95bd, type: 3}
@@ -2727,10 +2771,12 @@ MonoBehaviour:
   blendShapeIndex: 0
   blendShapeValueTarget: 0
   isProgressive: 1
-  progressiveIncrement: -30
   restingValue: 100
   lerpSpeed: 5
   returnDelay: 3
+  scannerProgressiveIncrement: 10
+  echoPassifProgressiveIncrement: 6
+  echoJoueurProgressiveIncrement: 12
 --- !u!1 &354304665 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 5309386660486281185, guid: c5aaeaa3858d4b248ba6b36799cb95bd, type: 3}
@@ -2773,10 +2819,12 @@ MonoBehaviour:
   blendShapeIndex: 0
   blendShapeValueTarget: 0
   isProgressive: 1
-  progressiveIncrement: -30
   restingValue: 100
   lerpSpeed: 5
   returnDelay: 3
+  scannerProgressiveIncrement: 10
+  echoPassifProgressiveIncrement: 6
+  echoJoueurProgressiveIncrement: 12
 --- !u!1 &369769428
 GameObject:
   m_ObjectHideFlags: 0
@@ -2826,10 +2874,12 @@ MonoBehaviour:
   blendShapeIndex: 0
   blendShapeValueTarget: 0
   isProgressive: 1
-  progressiveIncrement: -30
   restingValue: 100
   lerpSpeed: 5
   returnDelay: 3
+  scannerProgressiveIncrement: 10
+  echoPassifProgressiveIncrement: 6
+  echoJoueurProgressiveIncrement: 12
 --- !u!64 &369769431
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -2955,10 +3005,12 @@ MonoBehaviour:
   blendShapeIndex: 0
   blendShapeValueTarget: 0
   isProgressive: 1
-  progressiveIncrement: -30
   restingValue: 100
   lerpSpeed: 5
   returnDelay: 3
+  scannerProgressiveIncrement: 10
+  echoPassifProgressiveIncrement: 6
+  echoJoueurProgressiveIncrement: 12
 --- !u!64 &371809468
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -3077,10 +3129,12 @@ MonoBehaviour:
   blendShapeIndex: 0
   blendShapeValueTarget: 0
   isProgressive: 1
-  progressiveIncrement: -30
   restingValue: 100
   lerpSpeed: 5
   returnDelay: 3
+  scannerProgressiveIncrement: 10
+  echoPassifProgressiveIncrement: 6
+  echoJoueurProgressiveIncrement: 12
 --- !u!1 &394630433
 GameObject:
   m_ObjectHideFlags: 0
@@ -3224,10 +3278,12 @@ MonoBehaviour:
   blendShapeIndex: 0
   blendShapeValueTarget: 0
   isProgressive: 1
-  progressiveIncrement: -30
   restingValue: 100
   lerpSpeed: 5
   returnDelay: 3
+  scannerProgressiveIncrement: 10
+  echoPassifProgressiveIncrement: 6
+  echoJoueurProgressiveIncrement: 12
 --- !u!64 &398301309
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -3353,10 +3409,12 @@ MonoBehaviour:
   blendShapeIndex: 0
   blendShapeValueTarget: 0
   isProgressive: 1
-  progressiveIncrement: -30
   restingValue: 100
   lerpSpeed: 5
   returnDelay: 3
+  scannerProgressiveIncrement: 10
+  echoPassifProgressiveIncrement: 6
+  echoJoueurProgressiveIncrement: 12
 --- !u!64 &413594855
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -3475,10 +3533,12 @@ MonoBehaviour:
   blendShapeIndex: 0
   blendShapeValueTarget: 0
   isProgressive: 1
-  progressiveIncrement: -30
   restingValue: 100
   lerpSpeed: 5
   returnDelay: 3
+  scannerProgressiveIncrement: 10
+  echoPassifProgressiveIncrement: 6
+  echoJoueurProgressiveIncrement: 12
 --- !u!1 &420522227
 GameObject:
   m_ObjectHideFlags: 0
@@ -3528,10 +3588,12 @@ MonoBehaviour:
   blendShapeIndex: 0
   blendShapeValueTarget: 0
   isProgressive: 1
-  progressiveIncrement: -30
   restingValue: 100
   lerpSpeed: 5
   returnDelay: 3
+  scannerProgressiveIncrement: 10
+  echoPassifProgressiveIncrement: 6
+  echoJoueurProgressiveIncrement: 12
 --- !u!64 &420522230
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -3657,10 +3719,12 @@ MonoBehaviour:
   blendShapeIndex: 0
   blendShapeValueTarget: 0
   isProgressive: 1
-  progressiveIncrement: -30
   restingValue: 100
   lerpSpeed: 5
   returnDelay: 3
+  scannerProgressiveIncrement: 10
+  echoPassifProgressiveIncrement: 6
+  echoJoueurProgressiveIncrement: 12
 --- !u!64 &434674571
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -3779,10 +3843,12 @@ MonoBehaviour:
   blendShapeIndex: 0
   blendShapeValueTarget: 0
   isProgressive: 1
-  progressiveIncrement: -30
   restingValue: 100
   lerpSpeed: 5
   returnDelay: 3
+  scannerProgressiveIncrement: 10
+  echoPassifProgressiveIncrement: 6
+  echoJoueurProgressiveIncrement: 12
 --- !u!1 &477661025
 GameObject:
   m_ObjectHideFlags: 0
@@ -3832,10 +3898,12 @@ MonoBehaviour:
   blendShapeIndex: 0
   blendShapeValueTarget: 0
   isProgressive: 1
-  progressiveIncrement: -30
   restingValue: 100
   lerpSpeed: 5
   returnDelay: 3
+  scannerProgressiveIncrement: 10
+  echoPassifProgressiveIncrement: 6
+  echoJoueurProgressiveIncrement: 12
 --- !u!64 &477661028
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -4003,10 +4071,12 @@ MonoBehaviour:
   blendShapeIndex: 0
   blendShapeValueTarget: 0
   isProgressive: 1
-  progressiveIncrement: -30
   restingValue: 100
   lerpSpeed: 5
   returnDelay: 3
+  scannerProgressiveIncrement: 10
+  echoPassifProgressiveIncrement: 6
+  echoJoueurProgressiveIncrement: 12
 --- !u!114 &486202924
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4044,10 +4114,12 @@ MonoBehaviour:
   blendShapeIndex: 0
   blendShapeValueTarget: 0
   isProgressive: 1
-  progressiveIncrement: -30
   restingValue: 100
   lerpSpeed: 5
   returnDelay: 3
+  scannerProgressiveIncrement: 10
+  echoPassifProgressiveIncrement: 6
+  echoJoueurProgressiveIncrement: 12
 --- !u!64 &495293781
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -4418,10 +4490,12 @@ MonoBehaviour:
   blendShapeIndex: 0
   blendShapeValueTarget: 0
   isProgressive: 1
-  progressiveIncrement: -30
   restingValue: 100
   lerpSpeed: 5
   returnDelay: 3
+  scannerProgressiveIncrement: 10
+  echoPassifProgressiveIncrement: 6
+  echoJoueurProgressiveIncrement: 12
 --- !u!1 &507462344 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 2188582273919094231, guid: c5aaeaa3858d4b248ba6b36799cb95bd, type: 3}
@@ -4464,10 +4538,12 @@ MonoBehaviour:
   blendShapeIndex: 0
   blendShapeValueTarget: 0
   isProgressive: 1
-  progressiveIncrement: -30
   restingValue: 100
   lerpSpeed: 5
   returnDelay: 3
+  scannerProgressiveIncrement: 10
+  echoPassifProgressiveIncrement: 6
+  echoJoueurProgressiveIncrement: 12
 --- !u!1 &553695726 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: -6839638810050382796, guid: c5aaeaa3858d4b248ba6b36799cb95bd, type: 3}
@@ -4510,10 +4586,12 @@ MonoBehaviour:
   blendShapeIndex: 0
   blendShapeValueTarget: 0
   isProgressive: 1
-  progressiveIncrement: -30
   restingValue: 100
   lerpSpeed: 5
   returnDelay: 3
+  scannerProgressiveIncrement: 10
+  echoPassifProgressiveIncrement: 6
+  echoJoueurProgressiveIncrement: 12
 --- !u!1 &624220785
 GameObject:
   m_ObjectHideFlags: 0
@@ -4563,10 +4641,12 @@ MonoBehaviour:
   blendShapeIndex: 0
   blendShapeValueTarget: 0
   isProgressive: 1
-  progressiveIncrement: -30
   restingValue: 100
   lerpSpeed: 5
   returnDelay: 3
+  scannerProgressiveIncrement: 10
+  echoPassifProgressiveIncrement: 6
+  echoJoueurProgressiveIncrement: 12
 --- !u!64 &624220788
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -4685,10 +4765,12 @@ MonoBehaviour:
   blendShapeIndex: 0
   blendShapeValueTarget: 0
   isProgressive: 1
-  progressiveIncrement: -30
   restingValue: 100
   lerpSpeed: 5
   returnDelay: 3
+  scannerProgressiveIncrement: 10
+  echoPassifProgressiveIncrement: 6
+  echoJoueurProgressiveIncrement: 12
 --- !u!1 &657832208
 GameObject:
   m_ObjectHideFlags: 0
@@ -4844,10 +4926,12 @@ MonoBehaviour:
   blendShapeIndex: 0
   blendShapeValueTarget: 0
   isProgressive: 1
-  progressiveIncrement: -30
   restingValue: 100
   lerpSpeed: 5
   returnDelay: 3
+  scannerProgressiveIncrement: 10
+  echoPassifProgressiveIncrement: 6
+  echoJoueurProgressiveIncrement: 12
 --- !u!64 &657941550
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -4966,10 +5050,12 @@ MonoBehaviour:
   blendShapeIndex: 0
   blendShapeValueTarget: 100
   isProgressive: 0
-  progressiveIncrement: 10
   restingValue: 0
   lerpSpeed: 5
   returnDelay: 3
+  scannerProgressiveIncrement: 10
+  echoPassifProgressiveIncrement: 6
+  echoJoueurProgressiveIncrement: 12
 --- !u!1 &696555172 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 6692149627825140578, guid: c5aaeaa3858d4b248ba6b36799cb95bd, type: 3}
@@ -5012,10 +5098,12 @@ MonoBehaviour:
   blendShapeIndex: 0
   blendShapeValueTarget: 0
   isProgressive: 1
-  progressiveIncrement: -30
   restingValue: 100
   lerpSpeed: 5
   returnDelay: 3
+  scannerProgressiveIncrement: 10
+  echoPassifProgressiveIncrement: 6
+  echoJoueurProgressiveIncrement: 12
 --- !u!1 &706531322
 GameObject:
   m_ObjectHideFlags: 0
@@ -5163,10 +5251,12 @@ MonoBehaviour:
   blendShapeIndex: 0
   blendShapeValueTarget: 0
   isProgressive: 1
-  progressiveIncrement: -30
   restingValue: 100
   lerpSpeed: 5
   returnDelay: 3
+  scannerProgressiveIncrement: 10
+  echoPassifProgressiveIncrement: 6
+  echoJoueurProgressiveIncrement: 12
 --- !u!1 &726570398 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: -1619225144725851237, guid: e22c6a14dae4cc34eaadee19d6456e26, type: 3}
@@ -5209,10 +5299,12 @@ MonoBehaviour:
   blendShapeIndex: 0
   blendShapeValueTarget: 100
   isProgressive: 0
-  progressiveIncrement: 10
   restingValue: 0
   lerpSpeed: 5
   returnDelay: 3
+  scannerProgressiveIncrement: 10
+  echoPassifProgressiveIncrement: 6
+  echoJoueurProgressiveIncrement: 12
 --- !u!1 &748003163
 GameObject:
   m_ObjectHideFlags: 0
@@ -5440,10 +5532,12 @@ MonoBehaviour:
   blendShapeIndex: 0
   blendShapeValueTarget: 0
   isProgressive: 1
-  progressiveIncrement: -30
   restingValue: 100
   lerpSpeed: 5
   returnDelay: 3
+  scannerProgressiveIncrement: 10
+  echoPassifProgressiveIncrement: 6
+  echoJoueurProgressiveIncrement: 12
 --- !u!1 &816726299 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 5647263387366870888, guid: c5aaeaa3858d4b248ba6b36799cb95bd, type: 3}
@@ -5486,10 +5580,12 @@ MonoBehaviour:
   blendShapeIndex: 0
   blendShapeValueTarget: 0
   isProgressive: 1
-  progressiveIncrement: -30
   restingValue: 100
   lerpSpeed: 5
   returnDelay: 3
+  scannerProgressiveIncrement: 10
+  echoPassifProgressiveIncrement: 6
+  echoJoueurProgressiveIncrement: 12
 --- !u!1 &819189767 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 1191793524103835218, guid: e22c6a14dae4cc34eaadee19d6456e26, type: 3}
@@ -5532,10 +5628,12 @@ MonoBehaviour:
   blendShapeIndex: 0
   blendShapeValueTarget: 100
   isProgressive: 0
-  progressiveIncrement: 10
   restingValue: 0
   lerpSpeed: 5
   returnDelay: 3
+  scannerProgressiveIncrement: 10
+  echoPassifProgressiveIncrement: 6
+  echoJoueurProgressiveIncrement: 12
 --- !u!1 &824700774 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 7150590034702082185, guid: e22c6a14dae4cc34eaadee19d6456e26, type: 3}
@@ -5578,10 +5676,12 @@ MonoBehaviour:
   blendShapeIndex: 0
   blendShapeValueTarget: 0
   isProgressive: 1
-  progressiveIncrement: -30
   restingValue: 100
   lerpSpeed: 5
   returnDelay: 3
+  scannerProgressiveIncrement: 10
+  echoPassifProgressiveIncrement: 6
+  echoJoueurProgressiveIncrement: 12
 --- !u!1 &840956159 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: -7033764427314295185, guid: c5aaeaa3858d4b248ba6b36799cb95bd, type: 3}
@@ -5624,10 +5724,12 @@ MonoBehaviour:
   blendShapeIndex: 0
   blendShapeValueTarget: 0
   isProgressive: 1
-  progressiveIncrement: -30
   restingValue: 100
   lerpSpeed: 5
   returnDelay: 3
+  scannerProgressiveIncrement: 10
+  echoPassifProgressiveIncrement: 6
+  echoJoueurProgressiveIncrement: 12
 --- !u!1 &865821011 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: -9204686741154938326, guid: c5aaeaa3858d4b248ba6b36799cb95bd, type: 3}
@@ -5670,10 +5772,12 @@ MonoBehaviour:
   blendShapeIndex: 0
   blendShapeValueTarget: 0
   isProgressive: 1
-  progressiveIncrement: -30
   restingValue: 100
   lerpSpeed: 5
   returnDelay: 3
+  scannerProgressiveIncrement: 10
+  echoPassifProgressiveIncrement: 6
+  echoJoueurProgressiveIncrement: 12
 --- !u!1 &878857722
 GameObject:
   m_ObjectHideFlags: 0
@@ -5723,10 +5827,12 @@ MonoBehaviour:
   blendShapeIndex: 0
   blendShapeValueTarget: 0
   isProgressive: 1
-  progressiveIncrement: -30
   restingValue: 100
   lerpSpeed: 5
   returnDelay: 3
+  scannerProgressiveIncrement: 10
+  echoPassifProgressiveIncrement: 6
+  echoJoueurProgressiveIncrement: 12
 --- !u!64 &878857725
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -5845,10 +5951,12 @@ MonoBehaviour:
   blendShapeIndex: 0
   blendShapeValueTarget: 0
   isProgressive: 1
-  progressiveIncrement: -30
   restingValue: 100
   lerpSpeed: 5
   returnDelay: 3
+  scannerProgressiveIncrement: 10
+  echoPassifProgressiveIncrement: 6
+  echoJoueurProgressiveIncrement: 12
 --- !u!1 &881597808 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: -1266787413204868340, guid: c5aaeaa3858d4b248ba6b36799cb95bd, type: 3}
@@ -5891,10 +5999,12 @@ MonoBehaviour:
   blendShapeIndex: 0
   blendShapeValueTarget: 0
   isProgressive: 1
-  progressiveIncrement: -30
   restingValue: 100
   lerpSpeed: 5
   returnDelay: 3
+  scannerProgressiveIncrement: 10
+  echoPassifProgressiveIncrement: 6
+  echoJoueurProgressiveIncrement: 12
 --- !u!1 &897330214
 GameObject:
   m_ObjectHideFlags: 0
@@ -5944,10 +6054,12 @@ MonoBehaviour:
   blendShapeIndex: 0
   blendShapeValueTarget: 0
   isProgressive: 1
-  progressiveIncrement: -30
   restingValue: 100
   lerpSpeed: 5
   returnDelay: 3
+  scannerProgressiveIncrement: 10
+  echoPassifProgressiveIncrement: 6
+  echoJoueurProgressiveIncrement: 12
 --- !u!64 &897330217
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -6066,10 +6178,12 @@ MonoBehaviour:
   blendShapeIndex: 0
   blendShapeValueTarget: 0
   isProgressive: 1
-  progressiveIncrement: -30
   restingValue: 100
   lerpSpeed: 5
   returnDelay: 3
+  scannerProgressiveIncrement: 10
+  echoPassifProgressiveIncrement: 6
+  echoJoueurProgressiveIncrement: 12
 --- !u!1 &910510485 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: -7046613062614526147, guid: e22c6a14dae4cc34eaadee19d6456e26, type: 3}
@@ -6112,10 +6226,12 @@ MonoBehaviour:
   blendShapeIndex: 0
   blendShapeValueTarget: 0
   isProgressive: 1
-  progressiveIncrement: -30
   restingValue: 100
   lerpSpeed: 5
   returnDelay: 3
+  scannerProgressiveIncrement: 10
+  echoPassifProgressiveIncrement: 6
+  echoJoueurProgressiveIncrement: 12
 --- !u!1 &918244565 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 3448997632615391536, guid: c5aaeaa3858d4b248ba6b36799cb95bd, type: 3}
@@ -6158,10 +6274,12 @@ MonoBehaviour:
   blendShapeIndex: 0
   blendShapeValueTarget: 0
   isProgressive: 1
-  progressiveIncrement: -30
   restingValue: 100
   lerpSpeed: 5
   returnDelay: 3
+  scannerProgressiveIncrement: 10
+  echoPassifProgressiveIncrement: 6
+  echoJoueurProgressiveIncrement: 12
 --- !u!1 &918371330 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 6883700493670232161, guid: c5aaeaa3858d4b248ba6b36799cb95bd, type: 3}
@@ -6204,10 +6322,12 @@ MonoBehaviour:
   blendShapeIndex: 0
   blendShapeValueTarget: 0
   isProgressive: 1
-  progressiveIncrement: -30
   restingValue: 100
   lerpSpeed: 5
   returnDelay: 3
+  scannerProgressiveIncrement: 10
+  echoPassifProgressiveIncrement: 6
+  echoJoueurProgressiveIncrement: 12
 --- !u!1 &928469934
 GameObject:
   m_ObjectHideFlags: 0
@@ -6257,10 +6377,12 @@ MonoBehaviour:
   blendShapeIndex: 0
   blendShapeValueTarget: 0
   isProgressive: 1
-  progressiveIncrement: -30
   restingValue: 100
   lerpSpeed: 5
   returnDelay: 3
+  scannerProgressiveIncrement: 10
+  echoPassifProgressiveIncrement: 6
+  echoJoueurProgressiveIncrement: 12
 --- !u!64 &928469937
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -6379,10 +6501,357 @@ MonoBehaviour:
   blendShapeIndex: 0
   blendShapeValueTarget: 0
   isProgressive: 1
-  progressiveIncrement: -30
   restingValue: 100
   lerpSpeed: 5
   returnDelay: 3
+  scannerProgressiveIncrement: 10
+  echoPassifProgressiveIncrement: 6
+  echoJoueurProgressiveIncrement: 12
+--- !u!1001 &941539910
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: -8679921383154817045, guid: 79bb0ccf951b57d4ba2119ff1242a7f1, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 79bb0ccf951b57d4ba2119ff1242a7f1, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 79bb0ccf951b57d4ba2119ff1242a7f1, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 79bb0ccf951b57d4ba2119ff1242a7f1, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 79bb0ccf951b57d4ba2119ff1242a7f1, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 79bb0ccf951b57d4ba2119ff1242a7f1, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 79bb0ccf951b57d4ba2119ff1242a7f1, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 79bb0ccf951b57d4ba2119ff1242a7f1, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 79bb0ccf951b57d4ba2119ff1242a7f1, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 79bb0ccf951b57d4ba2119ff1242a7f1, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8488962732129340794, guid: 79bb0ccf951b57d4ba2119ff1242a7f1, type: 3}
+      propertyPath: m_DirtyAABB
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8488962732129340794, guid: 79bb0ccf951b57d4ba2119ff1242a7f1, type: 3}
+      propertyPath: m_AABB.m_Center.x
+      value: 0.3302133
+      objectReference: {fileID: 0}
+    - target: {fileID: -8488962732129340794, guid: 79bb0ccf951b57d4ba2119ff1242a7f1, type: 3}
+      propertyPath: m_AABB.m_Center.y
+      value: 0.11690354
+      objectReference: {fileID: 0}
+    - target: {fileID: -8488962732129340794, guid: 79bb0ccf951b57d4ba2119ff1242a7f1, type: 3}
+      propertyPath: m_AABB.m_Center.z
+      value: -0.108080864
+      objectReference: {fileID: 0}
+    - target: {fileID: -8488962732129340794, guid: 79bb0ccf951b57d4ba2119ff1242a7f1, type: 3}
+      propertyPath: m_AABB.m_Extent.x
+      value: 3.0917675
+      objectReference: {fileID: 0}
+    - target: {fileID: -8488962732129340794, guid: 79bb0ccf951b57d4ba2119ff1242a7f1, type: 3}
+      propertyPath: m_AABB.m_Extent.y
+      value: 2.4708612
+      objectReference: {fileID: 0}
+    - target: {fileID: -8488962732129340794, guid: 79bb0ccf951b57d4ba2119ff1242a7f1, type: 3}
+      propertyPath: m_AABB.m_Extent.z
+      value: 2.4568894
+      objectReference: {fileID: 0}
+    - target: {fileID: -8488962732129340794, guid: 79bb0ccf951b57d4ba2119ff1242a7f1, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 958796acb7a62084fa3a091ebe701bbe, type: 2}
+    - target: {fileID: -2464350371271034363, guid: 79bb0ccf951b57d4ba2119ff1242a7f1, type: 3}
+      propertyPath: m_DirtyAABB
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -2464350371271034363, guid: 79bb0ccf951b57d4ba2119ff1242a7f1, type: 3}
+      propertyPath: m_AABB.m_Center.x
+      value: 0.038349986
+      objectReference: {fileID: 0}
+    - target: {fileID: -2464350371271034363, guid: 79bb0ccf951b57d4ba2119ff1242a7f1, type: 3}
+      propertyPath: m_AABB.m_Center.y
+      value: 0.2165438
+      objectReference: {fileID: 0}
+    - target: {fileID: -2464350371271034363, guid: 79bb0ccf951b57d4ba2119ff1242a7f1, type: 3}
+      propertyPath: m_AABB.m_Center.z
+      value: 0.2515415
+      objectReference: {fileID: 0}
+    - target: {fileID: -2464350371271034363, guid: 79bb0ccf951b57d4ba2119ff1242a7f1, type: 3}
+      propertyPath: m_AABB.m_Extent.x
+      value: 2.3909445
+      objectReference: {fileID: 0}
+    - target: {fileID: -2464350371271034363, guid: 79bb0ccf951b57d4ba2119ff1242a7f1, type: 3}
+      propertyPath: m_AABB.m_Extent.y
+      value: 2.3795667
+      objectReference: {fileID: 0}
+    - target: {fileID: -2464350371271034363, guid: 79bb0ccf951b57d4ba2119ff1242a7f1, type: 3}
+      propertyPath: m_AABB.m_Extent.z
+      value: 2.9681048
+      objectReference: {fileID: 0}
+    - target: {fileID: -2464350371271034363, guid: 79bb0ccf951b57d4ba2119ff1242a7f1, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 958796acb7a62084fa3a091ebe701bbe, type: 2}
+    - target: {fileID: -1681396759846600337, guid: 79bb0ccf951b57d4ba2119ff1242a7f1, type: 3}
+      propertyPath: m_DirtyAABB
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -1681396759846600337, guid: 79bb0ccf951b57d4ba2119ff1242a7f1, type: 3}
+      propertyPath: m_AABB.m_Center.x
+      value: 0.0000042915344
+      objectReference: {fileID: 0}
+    - target: {fileID: -1681396759846600337, guid: 79bb0ccf951b57d4ba2119ff1242a7f1, type: 3}
+      propertyPath: m_AABB.m_Center.y
+      value: 0.000000834465
+      objectReference: {fileID: 0}
+    - target: {fileID: -1681396759846600337, guid: 79bb0ccf951b57d4ba2119ff1242a7f1, type: 3}
+      propertyPath: m_AABB.m_Center.z
+      value: 0.253025
+      objectReference: {fileID: 0}
+    - target: {fileID: -1681396759846600337, guid: 79bb0ccf951b57d4ba2119ff1242a7f1, type: 3}
+      propertyPath: m_AABB.m_Extent.x
+      value: 0.10097394
+      objectReference: {fileID: 0}
+    - target: {fileID: -1681396759846600337, guid: 79bb0ccf951b57d4ba2119ff1242a7f1, type: 3}
+      propertyPath: m_AABB.m_Extent.y
+      value: 0.10097382
+      objectReference: {fileID: 0}
+    - target: {fileID: -1681396759846600337, guid: 79bb0ccf951b57d4ba2119ff1242a7f1, type: 3}
+      propertyPath: m_AABB.m_Extent.z
+      value: 0.7139955
+      objectReference: {fileID: 0}
+    - target: {fileID: -1681396759846600337, guid: 79bb0ccf951b57d4ba2119ff1242a7f1, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 958796acb7a62084fa3a091ebe701bbe, type: 2}
+    - target: {fileID: -232780170021047936, guid: 79bb0ccf951b57d4ba2119ff1242a7f1, type: 3}
+      propertyPath: m_DirtyAABB
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -232780170021047936, guid: 79bb0ccf951b57d4ba2119ff1242a7f1, type: 3}
+      propertyPath: m_AABB.m_Center.x
+      value: -0.018351316
+      objectReference: {fileID: 0}
+    - target: {fileID: -232780170021047936, guid: 79bb0ccf951b57d4ba2119ff1242a7f1, type: 3}
+      propertyPath: m_AABB.m_Center.y
+      value: -0.00049090385
+      objectReference: {fileID: 0}
+    - target: {fileID: -232780170021047936, guid: 79bb0ccf951b57d4ba2119ff1242a7f1, type: 3}
+      propertyPath: m_AABB.m_Center.z
+      value: 0.06552392
+      objectReference: {fileID: 0}
+    - target: {fileID: -232780170021047936, guid: 79bb0ccf951b57d4ba2119ff1242a7f1, type: 3}
+      propertyPath: m_AABB.m_Extent.x
+      value: 2.1324208
+      objectReference: {fileID: 0}
+    - target: {fileID: -232780170021047936, guid: 79bb0ccf951b57d4ba2119ff1242a7f1, type: 3}
+      propertyPath: m_AABB.m_Extent.y
+      value: 2.047225
+      objectReference: {fileID: 0}
+    - target: {fileID: -232780170021047936, guid: 79bb0ccf951b57d4ba2119ff1242a7f1, type: 3}
+      propertyPath: m_AABB.m_Extent.z
+      value: 2.0526545
+      objectReference: {fileID: 0}
+    - target: {fileID: -232780170021047936, guid: 79bb0ccf951b57d4ba2119ff1242a7f1, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 6baca8c64c460b64ea7ba4a6219a4e7a, type: 2}
+    - target: {fileID: 568738474703833574, guid: 79bb0ccf951b57d4ba2119ff1242a7f1, type: 3}
+      propertyPath: m_DirtyAABB
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 568738474703833574, guid: 79bb0ccf951b57d4ba2119ff1242a7f1, type: 3}
+      propertyPath: m_AABB.m_Center.x
+      value: -0.000006198883
+      objectReference: {fileID: 0}
+    - target: {fileID: 568738474703833574, guid: 79bb0ccf951b57d4ba2119ff1242a7f1, type: 3}
+      propertyPath: m_AABB.m_Center.y
+      value: 0.0000014305115
+      objectReference: {fileID: 0}
+    - target: {fileID: 568738474703833574, guid: 79bb0ccf951b57d4ba2119ff1242a7f1, type: 3}
+      propertyPath: m_AABB.m_Center.z
+      value: 0.24417412
+      objectReference: {fileID: 0}
+    - target: {fileID: 568738474703833574, guid: 79bb0ccf951b57d4ba2119ff1242a7f1, type: 3}
+      propertyPath: m_AABB.m_Extent.x
+      value: 0.10097394
+      objectReference: {fileID: 0}
+    - target: {fileID: 568738474703833574, guid: 79bb0ccf951b57d4ba2119ff1242a7f1, type: 3}
+      propertyPath: m_AABB.m_Extent.y
+      value: 0.10097382
+      objectReference: {fileID: 0}
+    - target: {fileID: 568738474703833574, guid: 79bb0ccf951b57d4ba2119ff1242a7f1, type: 3}
+      propertyPath: m_AABB.m_Extent.z
+      value: 0.7007185
+      objectReference: {fileID: 0}
+    - target: {fileID: 568738474703833574, guid: 79bb0ccf951b57d4ba2119ff1242a7f1, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 958796acb7a62084fa3a091ebe701bbe, type: 2}
+    - target: {fileID: 742787577887639113, guid: 79bb0ccf951b57d4ba2119ff1242a7f1, type: 3}
+      propertyPath: m_DirtyAABB
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 742787577887639113, guid: 79bb0ccf951b57d4ba2119ff1242a7f1, type: 3}
+      propertyPath: m_AABB.m_Center.x
+      value: 0.0000009536743
+      objectReference: {fileID: 0}
+    - target: {fileID: 742787577887639113, guid: 79bb0ccf951b57d4ba2119ff1242a7f1, type: 3}
+      propertyPath: m_AABB.m_Center.y
+      value: -0.0000010728836
+      objectReference: {fileID: 0}
+    - target: {fileID: 742787577887639113, guid: 79bb0ccf951b57d4ba2119ff1242a7f1, type: 3}
+      propertyPath: m_AABB.m_Center.z
+      value: 0.28682482
+      objectReference: {fileID: 0}
+    - target: {fileID: 742787577887639113, guid: 79bb0ccf951b57d4ba2119ff1242a7f1, type: 3}
+      propertyPath: m_AABB.m_Extent.x
+      value: 0.10097394
+      objectReference: {fileID: 0}
+    - target: {fileID: 742787577887639113, guid: 79bb0ccf951b57d4ba2119ff1242a7f1, type: 3}
+      propertyPath: m_AABB.m_Extent.y
+      value: 0.10097382
+      objectReference: {fileID: 0}
+    - target: {fileID: 742787577887639113, guid: 79bb0ccf951b57d4ba2119ff1242a7f1, type: 3}
+      propertyPath: m_AABB.m_Extent.z
+      value: 0.7646972
+      objectReference: {fileID: 0}
+    - target: {fileID: 742787577887639113, guid: 79bb0ccf951b57d4ba2119ff1242a7f1, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 958796acb7a62084fa3a091ebe701bbe, type: 2}
+    - target: {fileID: 919132149155446097, guid: 79bb0ccf951b57d4ba2119ff1242a7f1, type: 3}
+      propertyPath: m_Name
+      value: CUISINE_TailleNode-TEST
+      objectReference: {fileID: 0}
+    - target: {fileID: 1405113580738264081, guid: 79bb0ccf951b57d4ba2119ff1242a7f1, type: 3}
+      propertyPath: m_DirtyAABB
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1405113580738264081, guid: 79bb0ccf951b57d4ba2119ff1242a7f1, type: 3}
+      propertyPath: m_AABB.m_Center.x
+      value: -0.1989913
+      objectReference: {fileID: 0}
+    - target: {fileID: 1405113580738264081, guid: 79bb0ccf951b57d4ba2119ff1242a7f1, type: 3}
+      propertyPath: m_AABB.m_Center.y
+      value: -0.4765389
+      objectReference: {fileID: 0}
+    - target: {fileID: 1405113580738264081, guid: 79bb0ccf951b57d4ba2119ff1242a7f1, type: 3}
+      propertyPath: m_AABB.m_Center.z
+      value: -0.033289343
+      objectReference: {fileID: 0}
+    - target: {fileID: 1405113580738264081, guid: 79bb0ccf951b57d4ba2119ff1242a7f1, type: 3}
+      propertyPath: m_AABB.m_Extent.x
+      value: 1.4175004
+      objectReference: {fileID: 0}
+    - target: {fileID: 1405113580738264081, guid: 79bb0ccf951b57d4ba2119ff1242a7f1, type: 3}
+      propertyPath: m_AABB.m_Extent.y
+      value: 1.3660191
+      objectReference: {fileID: 0}
+    - target: {fileID: 1405113580738264081, guid: 79bb0ccf951b57d4ba2119ff1242a7f1, type: 3}
+      propertyPath: m_AABB.m_Extent.z
+      value: 0.4295872
+      objectReference: {fileID: 0}
+    - target: {fileID: 1405113580738264081, guid: 79bb0ccf951b57d4ba2119ff1242a7f1, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 958796acb7a62084fa3a091ebe701bbe, type: 2}
+    - target: {fileID: 1934882868782138604, guid: 79bb0ccf951b57d4ba2119ff1242a7f1, type: 3}
+      propertyPath: m_DirtyAABB
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1934882868782138604, guid: 79bb0ccf951b57d4ba2119ff1242a7f1, type: 3}
+      propertyPath: m_AABB.m_Center.x
+      value: 0.056243658
+      objectReference: {fileID: 0}
+    - target: {fileID: 1934882868782138604, guid: 79bb0ccf951b57d4ba2119ff1242a7f1, type: 3}
+      propertyPath: m_AABB.m_Center.y
+      value: 0.06021768
+      objectReference: {fileID: 0}
+    - target: {fileID: 1934882868782138604, guid: 79bb0ccf951b57d4ba2119ff1242a7f1, type: 3}
+      propertyPath: m_AABB.m_Center.z
+      value: 0.10938132
+      objectReference: {fileID: 0}
+    - target: {fileID: 1934882868782138604, guid: 79bb0ccf951b57d4ba2119ff1242a7f1, type: 3}
+      propertyPath: m_AABB.m_Extent.x
+      value: 2.2120695
+      objectReference: {fileID: 0}
+    - target: {fileID: 1934882868782138604, guid: 79bb0ccf951b57d4ba2119ff1242a7f1, type: 3}
+      propertyPath: m_AABB.m_Extent.y
+      value: 1.9707899
+      objectReference: {fileID: 0}
+    - target: {fileID: 1934882868782138604, guid: 79bb0ccf951b57d4ba2119ff1242a7f1, type: 3}
+      propertyPath: m_AABB.m_Extent.z
+      value: 2.0338302
+      objectReference: {fileID: 0}
+    - target: {fileID: 1934882868782138604, guid: 79bb0ccf951b57d4ba2119ff1242a7f1, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 958796acb7a62084fa3a091ebe701bbe, type: 2}
+    - target: {fileID: 3916451106245859581, guid: 79bb0ccf951b57d4ba2119ff1242a7f1, type: 3}
+      propertyPath: m_DirtyAABB
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3916451106245859581, guid: 79bb0ccf951b57d4ba2119ff1242a7f1, type: 3}
+      propertyPath: m_AABB.m_Center.x
+      value: -0.20693362
+      objectReference: {fileID: 0}
+    - target: {fileID: 3916451106245859581, guid: 79bb0ccf951b57d4ba2119ff1242a7f1, type: 3}
+      propertyPath: m_AABB.m_Center.y
+      value: 0.003804326
+      objectReference: {fileID: 0}
+    - target: {fileID: 3916451106245859581, guid: 79bb0ccf951b57d4ba2119ff1242a7f1, type: 3}
+      propertyPath: m_AABB.m_Center.z
+      value: 0.025933266
+      objectReference: {fileID: 0}
+    - target: {fileID: 3916451106245859581, guid: 79bb0ccf951b57d4ba2119ff1242a7f1, type: 3}
+      propertyPath: m_AABB.m_Extent.x
+      value: 3.058465
+      objectReference: {fileID: 0}
+    - target: {fileID: 3916451106245859581, guid: 79bb0ccf951b57d4ba2119ff1242a7f1, type: 3}
+      propertyPath: m_AABB.m_Extent.y
+      value: 2.1801329
+      objectReference: {fileID: 0}
+    - target: {fileID: 3916451106245859581, guid: 79bb0ccf951b57d4ba2119ff1242a7f1, type: 3}
+      propertyPath: m_AABB.m_Extent.z
+      value: 2.2327075
+      objectReference: {fileID: 0}
+    - target: {fileID: 3916451106245859581, guid: 79bb0ccf951b57d4ba2119ff1242a7f1, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 958796acb7a62084fa3a091ebe701bbe, type: 2}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 79bb0ccf951b57d4ba2119ff1242a7f1, type: 3}
 --- !u!1 &942250056
 GameObject:
   m_ObjectHideFlags: 0
@@ -6530,10 +6999,12 @@ MonoBehaviour:
   blendShapeIndex: 0
   blendShapeValueTarget: 0
   isProgressive: 1
-  progressiveIncrement: -30
   restingValue: 100
   lerpSpeed: 5
   returnDelay: 3
+  scannerProgressiveIncrement: 10
+  echoPassifProgressiveIncrement: 6
+  echoJoueurProgressiveIncrement: 12
 --- !u!1 &1000536073
 GameObject:
   m_ObjectHideFlags: 0
@@ -6583,10 +7054,12 @@ MonoBehaviour:
   blendShapeIndex: 0
   blendShapeValueTarget: 0
   isProgressive: 1
-  progressiveIncrement: -30
   restingValue: 100
   lerpSpeed: 5
   returnDelay: 3
+  scannerProgressiveIncrement: 10
+  echoPassifProgressiveIncrement: 6
+  echoJoueurProgressiveIncrement: 12
 --- !u!64 &1000536076
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -6705,10 +7178,12 @@ MonoBehaviour:
   blendShapeIndex: 0
   blendShapeValueTarget: 0
   isProgressive: 1
-  progressiveIncrement: -30
   restingValue: 100
   lerpSpeed: 5
   returnDelay: 3
+  scannerProgressiveIncrement: 10
+  echoPassifProgressiveIncrement: 6
+  echoJoueurProgressiveIncrement: 12
 --- !u!1001 &1038861131
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -6894,10 +7369,12 @@ MonoBehaviour:
   blendShapeIndex: 0
   blendShapeValueTarget: 0
   isProgressive: 1
-  progressiveIncrement: -30
   restingValue: 100
   lerpSpeed: 5
   returnDelay: 3
+  scannerProgressiveIncrement: 10
+  echoPassifProgressiveIncrement: 6
+  echoJoueurProgressiveIncrement: 12
 --- !u!64 &1049396931
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -7077,10 +7554,12 @@ MonoBehaviour:
   blendShapeIndex: 0
   blendShapeValueTarget: 0
   isProgressive: 1
-  progressiveIncrement: -30
   restingValue: 100
   lerpSpeed: 5
   returnDelay: 3
+  scannerProgressiveIncrement: 10
+  echoPassifProgressiveIncrement: 6
+  echoJoueurProgressiveIncrement: 12
 --- !u!1 &1098775358 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: -243890672819206648, guid: c5aaeaa3858d4b248ba6b36799cb95bd, type: 3}
@@ -7123,10 +7602,12 @@ MonoBehaviour:
   blendShapeIndex: 0
   blendShapeValueTarget: 0
   isProgressive: 1
-  progressiveIncrement: -30
   restingValue: 100
   lerpSpeed: 5
   returnDelay: 3
+  scannerProgressiveIncrement: 10
+  echoPassifProgressiveIncrement: 6
+  echoJoueurProgressiveIncrement: 12
 --- !u!1 &1100654289 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: -3220932478325595030, guid: c5aaeaa3858d4b248ba6b36799cb95bd, type: 3}
@@ -7169,10 +7650,12 @@ MonoBehaviour:
   blendShapeIndex: 0
   blendShapeValueTarget: 0
   isProgressive: 1
-  progressiveIncrement: -30
   restingValue: 100
   lerpSpeed: 5
   returnDelay: 3
+  scannerProgressiveIncrement: 10
+  echoPassifProgressiveIncrement: 6
+  echoJoueurProgressiveIncrement: 12
 --- !u!1 &1102662472 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: -5445198564989113327, guid: c5aaeaa3858d4b248ba6b36799cb95bd, type: 3}
@@ -7215,10 +7698,12 @@ MonoBehaviour:
   blendShapeIndex: 0
   blendShapeValueTarget: 0
   isProgressive: 1
-  progressiveIncrement: -30
   restingValue: 100
   lerpSpeed: 5
   returnDelay: 3
+  scannerProgressiveIncrement: 10
+  echoPassifProgressiveIncrement: 6
+  echoJoueurProgressiveIncrement: 12
 --- !u!4 &1125433963 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 3658221473c477a4fb1dfbdf337998af, type: 3}
@@ -7342,10 +7827,12 @@ MonoBehaviour:
   blendShapeIndex: 0
   blendShapeValueTarget: 0
   isProgressive: 1
-  progressiveIncrement: -30
   restingValue: 100
   lerpSpeed: 5
   returnDelay: 3
+  scannerProgressiveIncrement: 10
+  echoPassifProgressiveIncrement: 6
+  echoJoueurProgressiveIncrement: 12
 --- !u!1 &1176024036
 GameObject:
   m_ObjectHideFlags: 0
@@ -7395,10 +7882,12 @@ MonoBehaviour:
   blendShapeIndex: 0
   blendShapeValueTarget: 0
   isProgressive: 1
-  progressiveIncrement: -30
   restingValue: 100
   lerpSpeed: 5
   returnDelay: 3
+  scannerProgressiveIncrement: 10
+  echoPassifProgressiveIncrement: 6
+  echoJoueurProgressiveIncrement: 12
 --- !u!64 &1176024039
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -7557,10 +8046,12 @@ MonoBehaviour:
   blendShapeIndex: 0
   blendShapeValueTarget: 0
   isProgressive: 1
-  progressiveIncrement: -30
   restingValue: 100
   lerpSpeed: 5
   returnDelay: 3
+  scannerProgressiveIncrement: 10
+  echoPassifProgressiveIncrement: 6
+  echoJoueurProgressiveIncrement: 12
 --- !u!1 &1229753665
 GameObject:
   m_ObjectHideFlags: 0
@@ -7610,10 +8101,12 @@ MonoBehaviour:
   blendShapeIndex: 0
   blendShapeValueTarget: 0
   isProgressive: 1
-  progressiveIncrement: -30
   restingValue: 100
   lerpSpeed: 5
   returnDelay: 3
+  scannerProgressiveIncrement: 10
+  echoPassifProgressiveIncrement: 6
+  echoJoueurProgressiveIncrement: 12
 --- !u!64 &1229753668
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -7732,10 +8225,12 @@ MonoBehaviour:
   blendShapeIndex: 0
   blendShapeValueTarget: 0
   isProgressive: 1
-  progressiveIncrement: -30
   restingValue: 100
   lerpSpeed: 5
   returnDelay: 3
+  scannerProgressiveIncrement: 10
+  echoPassifProgressiveIncrement: 6
+  echoJoueurProgressiveIncrement: 12
 --- !u!1 &1256992755 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: -1602419356108753435, guid: c5aaeaa3858d4b248ba6b36799cb95bd, type: 3}
@@ -7778,10 +8273,12 @@ MonoBehaviour:
   blendShapeIndex: 0
   blendShapeValueTarget: 0
   isProgressive: 1
-  progressiveIncrement: -30
   restingValue: 100
   lerpSpeed: 5
   returnDelay: 3
+  scannerProgressiveIncrement: 10
+  echoPassifProgressiveIncrement: 6
+  echoJoueurProgressiveIncrement: 12
 --- !u!1 &1272926994
 GameObject:
   m_ObjectHideFlags: 0
@@ -7831,10 +8328,12 @@ MonoBehaviour:
   blendShapeIndex: 0
   blendShapeValueTarget: 0
   isProgressive: 1
-  progressiveIncrement: -30
   restingValue: 100
   lerpSpeed: 5
   returnDelay: 3
+  scannerProgressiveIncrement: 10
+  echoPassifProgressiveIncrement: 6
+  echoJoueurProgressiveIncrement: 12
 --- !u!64 &1272926997
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -7960,10 +8459,12 @@ MonoBehaviour:
   blendShapeIndex: 0
   blendShapeValueTarget: 0
   isProgressive: 1
-  progressiveIncrement: -30
   restingValue: 100
   lerpSpeed: 5
   returnDelay: 3
+  scannerProgressiveIncrement: 10
+  echoPassifProgressiveIncrement: 6
+  echoJoueurProgressiveIncrement: 12
 --- !u!64 &1282492081
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -8089,10 +8590,12 @@ MonoBehaviour:
   blendShapeIndex: 0
   blendShapeValueTarget: 0
   isProgressive: 1
-  progressiveIncrement: -30
   restingValue: 100
   lerpSpeed: 5
   returnDelay: 3
+  scannerProgressiveIncrement: 10
+  echoPassifProgressiveIncrement: 6
+  echoJoueurProgressiveIncrement: 12
 --- !u!64 &1288246289
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -8211,10 +8714,12 @@ MonoBehaviour:
   blendShapeIndex: 0
   blendShapeValueTarget: 0
   isProgressive: 1
-  progressiveIncrement: -30
   restingValue: 100
   lerpSpeed: 5
   returnDelay: 3
+  scannerProgressiveIncrement: 10
+  echoPassifProgressiveIncrement: 6
+  echoJoueurProgressiveIncrement: 12
 --- !u!1 &1304256117 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: -3911375502014729127, guid: c5aaeaa3858d4b248ba6b36799cb95bd, type: 3}
@@ -8257,10 +8762,12 @@ MonoBehaviour:
   blendShapeIndex: 0
   blendShapeValueTarget: 0
   isProgressive: 1
-  progressiveIncrement: -30
   restingValue: 100
   lerpSpeed: 5
   returnDelay: 3
+  scannerProgressiveIncrement: 10
+  echoPassifProgressiveIncrement: 6
+  echoJoueurProgressiveIncrement: 12
 --- !u!1 &1314890282 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 1341293070097528463, guid: c5aaeaa3858d4b248ba6b36799cb95bd, type: 3}
@@ -8303,10 +8810,12 @@ MonoBehaviour:
   blendShapeIndex: 0
   blendShapeValueTarget: 0
   isProgressive: 1
-  progressiveIncrement: -30
   restingValue: 100
   lerpSpeed: 5
   returnDelay: 3
+  scannerProgressiveIncrement: 10
+  echoPassifProgressiveIncrement: 6
+  echoJoueurProgressiveIncrement: 12
 --- !u!1 &1316201566 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 1916130561999301202, guid: c5aaeaa3858d4b248ba6b36799cb95bd, type: 3}
@@ -8349,10 +8858,12 @@ MonoBehaviour:
   blendShapeIndex: 0
   blendShapeValueTarget: 0
   isProgressive: 1
-  progressiveIncrement: -30
   restingValue: 100
   lerpSpeed: 5
   returnDelay: 3
+  scannerProgressiveIncrement: 10
+  echoPassifProgressiveIncrement: 6
+  echoJoueurProgressiveIncrement: 12
 --- !u!1 &1316557787
 GameObject:
   m_ObjectHideFlags: 0
@@ -8402,10 +8913,12 @@ MonoBehaviour:
   blendShapeIndex: 0
   blendShapeValueTarget: 0
   isProgressive: 1
-  progressiveIncrement: -30
   restingValue: 100
   lerpSpeed: 5
   returnDelay: 3
+  scannerProgressiveIncrement: 10
+  echoPassifProgressiveIncrement: 6
+  echoJoueurProgressiveIncrement: 12
 --- !u!64 &1316557790
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -8524,10 +9037,12 @@ MonoBehaviour:
   blendShapeIndex: 0
   blendShapeValueTarget: 0
   isProgressive: 1
-  progressiveIncrement: -30
   restingValue: 100
   lerpSpeed: 5
   returnDelay: 3
+  scannerProgressiveIncrement: 10
+  echoPassifProgressiveIncrement: 6
+  echoJoueurProgressiveIncrement: 12
 --- !u!1 &1328392372
 GameObject:
   m_ObjectHideFlags: 0
@@ -8577,10 +9092,12 @@ MonoBehaviour:
   blendShapeIndex: 0
   blendShapeValueTarget: 0
   isProgressive: 1
-  progressiveIncrement: -30
   restingValue: 100
   lerpSpeed: 5
   returnDelay: 3
+  scannerProgressiveIncrement: 10
+  echoPassifProgressiveIncrement: 6
+  echoJoueurProgressiveIncrement: 12
 --- !u!64 &1328392375
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -8699,10 +9216,12 @@ MonoBehaviour:
   blendShapeIndex: 0
   blendShapeValueTarget: 0
   isProgressive: 1
-  progressiveIncrement: -30
   restingValue: 100
   lerpSpeed: 5
   returnDelay: 3
+  scannerProgressiveIncrement: 10
+  echoPassifProgressiveIncrement: 6
+  echoJoueurProgressiveIncrement: 12
 --- !u!1 &1347922358 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: -6271018936157884579, guid: c5aaeaa3858d4b248ba6b36799cb95bd, type: 3}
@@ -8745,10 +9264,12 @@ MonoBehaviour:
   blendShapeIndex: 0
   blendShapeValueTarget: 0
   isProgressive: 1
-  progressiveIncrement: -30
   restingValue: 100
   lerpSpeed: 5
   returnDelay: 3
+  scannerProgressiveIncrement: 10
+  echoPassifProgressiveIncrement: 6
+  echoJoueurProgressiveIncrement: 12
 --- !u!1 &1378877317 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 4080369284495010656, guid: c5aaeaa3858d4b248ba6b36799cb95bd, type: 3}
@@ -8791,10 +9312,12 @@ MonoBehaviour:
   blendShapeIndex: 0
   blendShapeValueTarget: 0
   isProgressive: 1
-  progressiveIncrement: -30
   restingValue: 100
   lerpSpeed: 5
   returnDelay: 3
+  scannerProgressiveIncrement: 10
+  echoPassifProgressiveIncrement: 6
+  echoJoueurProgressiveIncrement: 12
 --- !u!1 &1383252462 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: -8759069808066040703, guid: c5aaeaa3858d4b248ba6b36799cb95bd, type: 3}
@@ -8837,10 +9360,12 @@ MonoBehaviour:
   blendShapeIndex: 0
   blendShapeValueTarget: 0
   isProgressive: 1
-  progressiveIncrement: -30
   restingValue: 100
   lerpSpeed: 5
   returnDelay: 3
+  scannerProgressiveIncrement: 10
+  echoPassifProgressiveIncrement: 6
+  echoJoueurProgressiveIncrement: 12
 --- !u!1 &1393781157 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: -74209933945285768, guid: e22c6a14dae4cc34eaadee19d6456e26, type: 3}
@@ -8883,10 +9408,12 @@ MonoBehaviour:
   blendShapeIndex: 0
   blendShapeValueTarget: 0
   isProgressive: 1
-  progressiveIncrement: -30
   restingValue: 100
   lerpSpeed: 5
   returnDelay: 3
+  scannerProgressiveIncrement: 10
+  echoPassifProgressiveIncrement: 6
+  echoJoueurProgressiveIncrement: 12
 --- !u!1 &1426397954 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 7602193361315778957, guid: c5aaeaa3858d4b248ba6b36799cb95bd, type: 3}
@@ -8929,10 +9456,12 @@ MonoBehaviour:
   blendShapeIndex: 0
   blendShapeValueTarget: 0
   isProgressive: 1
-  progressiveIncrement: -30
   restingValue: 100
   lerpSpeed: 5
   returnDelay: 3
+  scannerProgressiveIncrement: 10
+  echoPassifProgressiveIncrement: 6
+  echoJoueurProgressiveIncrement: 12
 --- !u!1 &1430606983 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: -7142198683822701069, guid: c5aaeaa3858d4b248ba6b36799cb95bd, type: 3}
@@ -8975,10 +9504,12 @@ MonoBehaviour:
   blendShapeIndex: 0
   blendShapeValueTarget: 0
   isProgressive: 1
-  progressiveIncrement: -30
   restingValue: 100
   lerpSpeed: 5
   returnDelay: 3
+  scannerProgressiveIncrement: 10
+  echoPassifProgressiveIncrement: 6
+  echoJoueurProgressiveIncrement: 12
 --- !u!1 &1443910252
 GameObject:
   m_ObjectHideFlags: 0
@@ -9028,10 +9559,12 @@ MonoBehaviour:
   blendShapeIndex: 0
   blendShapeValueTarget: 0
   isProgressive: 1
-  progressiveIncrement: -30
   restingValue: 100
   lerpSpeed: 5
   returnDelay: 3
+  scannerProgressiveIncrement: 10
+  echoPassifProgressiveIncrement: 6
+  echoJoueurProgressiveIncrement: 12
 --- !u!64 &1443910255
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -9157,10 +9690,12 @@ MonoBehaviour:
   blendShapeIndex: 0
   blendShapeValueTarget: 0
   isProgressive: 1
-  progressiveIncrement: -30
   restingValue: 100
   lerpSpeed: 5
   returnDelay: 3
+  scannerProgressiveIncrement: 10
+  echoPassifProgressiveIncrement: 6
+  echoJoueurProgressiveIncrement: 12
 --- !u!64 &1469333030
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -9279,10 +9814,12 @@ MonoBehaviour:
   blendShapeIndex: 0
   blendShapeValueTarget: 0
   isProgressive: 1
-  progressiveIncrement: -30
   restingValue: 100
   lerpSpeed: 5
   returnDelay: 3
+  scannerProgressiveIncrement: 10
+  echoPassifProgressiveIncrement: 6
+  echoJoueurProgressiveIncrement: 12
 --- !u!1 &1478054259 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 6320301419972642092, guid: 74921567f9cbc424cb730335b4905a72, type: 3}
@@ -9303,10 +9840,12 @@ MonoBehaviour:
   blendShapeIndex: 0
   blendShapeValueTarget: 0
   isProgressive: 1
-  progressiveIncrement: -30
   restingValue: 100
   lerpSpeed: 5
   returnDelay: 3
+  scannerProgressiveIncrement: 10
+  echoPassifProgressiveIncrement: 6
+  echoJoueurProgressiveIncrement: 12
 --- !u!64 &1478054262
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -9371,10 +9910,12 @@ MonoBehaviour:
   blendShapeIndex: 0
   blendShapeValueTarget: 0
   isProgressive: 1
-  progressiveIncrement: -30
   restingValue: 100
   lerpSpeed: 5
   returnDelay: 3
+  scannerProgressiveIncrement: 10
+  echoPassifProgressiveIncrement: 6
+  echoJoueurProgressiveIncrement: 12
 --- !u!1 &1510736868 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 498768763784093660, guid: c5aaeaa3858d4b248ba6b36799cb95bd, type: 3}
@@ -9417,10 +9958,12 @@ MonoBehaviour:
   blendShapeIndex: 0
   blendShapeValueTarget: 0
   isProgressive: 1
-  progressiveIncrement: -30
   restingValue: 100
   lerpSpeed: 5
   returnDelay: 3
+  scannerProgressiveIncrement: 10
+  echoPassifProgressiveIncrement: 6
+  echoJoueurProgressiveIncrement: 12
 --- !u!1 &1523662407 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: -6634936999485875570, guid: c5aaeaa3858d4b248ba6b36799cb95bd, type: 3}
@@ -9463,10 +10006,12 @@ MonoBehaviour:
   blendShapeIndex: 0
   blendShapeValueTarget: 0
   isProgressive: 1
-  progressiveIncrement: -30
   restingValue: 100
   lerpSpeed: 5
   returnDelay: 3
+  scannerProgressiveIncrement: 10
+  echoPassifProgressiveIncrement: 6
+  echoJoueurProgressiveIncrement: 12
 --- !u!1 &1528651367
 GameObject:
   m_ObjectHideFlags: 0
@@ -9516,10 +10061,12 @@ MonoBehaviour:
   blendShapeIndex: 0
   blendShapeValueTarget: 0
   isProgressive: 1
-  progressiveIncrement: -30
   restingValue: 100
   lerpSpeed: 5
   returnDelay: 3
+  scannerProgressiveIncrement: 10
+  echoPassifProgressiveIncrement: 6
+  echoJoueurProgressiveIncrement: 12
 --- !u!64 &1528651370
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -9743,10 +10290,12 @@ MonoBehaviour:
   blendShapeIndex: 0
   blendShapeValueTarget: 0
   isProgressive: 1
-  progressiveIncrement: -30
   restingValue: 100
   lerpSpeed: 5
   returnDelay: 3
+  scannerProgressiveIncrement: 10
+  echoPassifProgressiveIncrement: 6
+  echoJoueurProgressiveIncrement: 12
 --- !u!1 &1549672998 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: -6104320100710984788, guid: c5aaeaa3858d4b248ba6b36799cb95bd, type: 3}
@@ -9789,10 +10338,12 @@ MonoBehaviour:
   blendShapeIndex: 0
   blendShapeValueTarget: 0
   isProgressive: 1
-  progressiveIncrement: -30
   restingValue: 100
   lerpSpeed: 5
   returnDelay: 3
+  scannerProgressiveIncrement: 10
+  echoPassifProgressiveIncrement: 6
+  echoJoueurProgressiveIncrement: 12
 --- !u!1 &1557569037 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 9038402203920924897, guid: c5aaeaa3858d4b248ba6b36799cb95bd, type: 3}
@@ -9835,10 +10386,12 @@ MonoBehaviour:
   blendShapeIndex: 0
   blendShapeValueTarget: 0
   isProgressive: 1
-  progressiveIncrement: -30
   restingValue: 100
   lerpSpeed: 5
   returnDelay: 3
+  scannerProgressiveIncrement: 10
+  echoPassifProgressiveIncrement: 6
+  echoJoueurProgressiveIncrement: 12
 --- !u!1 &1570485728 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 7497189465719357517, guid: c5aaeaa3858d4b248ba6b36799cb95bd, type: 3}
@@ -9881,10 +10434,12 @@ MonoBehaviour:
   blendShapeIndex: 0
   blendShapeValueTarget: 0
   isProgressive: 1
-  progressiveIncrement: -30
   restingValue: 100
   lerpSpeed: 5
   returnDelay: 3
+  scannerProgressiveIncrement: 10
+  echoPassifProgressiveIncrement: 6
+  echoJoueurProgressiveIncrement: 12
 --- !u!1 &1580054124 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: -6803562743967491826, guid: c5aaeaa3858d4b248ba6b36799cb95bd, type: 3}
@@ -9927,10 +10482,12 @@ MonoBehaviour:
   blendShapeIndex: 0
   blendShapeValueTarget: 0
   isProgressive: 1
-  progressiveIncrement: -30
   restingValue: 100
   lerpSpeed: 5
   returnDelay: 3
+  scannerProgressiveIncrement: 10
+  echoPassifProgressiveIncrement: 6
+  echoJoueurProgressiveIncrement: 12
 --- !u!1 &1586024248 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 6320301419972642092, guid: 74921567f9cbc424cb730335b4905a72, type: 3}
@@ -9951,10 +10508,12 @@ MonoBehaviour:
   blendShapeIndex: 0
   blendShapeValueTarget: 0
   isProgressive: 1
-  progressiveIncrement: -30
   restingValue: 100
   lerpSpeed: 5
   returnDelay: 3
+  scannerProgressiveIncrement: 10
+  echoPassifProgressiveIncrement: 6
+  echoJoueurProgressiveIncrement: 12
 --- !u!64 &1586024251
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -10019,10 +10578,12 @@ MonoBehaviour:
   blendShapeIndex: 0
   blendShapeValueTarget: 0
   isProgressive: 1
-  progressiveIncrement: -30
   restingValue: 100
   lerpSpeed: 5
   returnDelay: 3
+  scannerProgressiveIncrement: 10
+  echoPassifProgressiveIncrement: 6
+  echoJoueurProgressiveIncrement: 12
 --- !u!1 &1621881994 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 1880299744685153614, guid: 9cf5b9ddbcef7054d85f4226c2ed95d8, type: 3}
@@ -10145,10 +10706,12 @@ MonoBehaviour:
   blendShapeIndex: 0
   blendShapeValueTarget: 0
   isProgressive: 1
-  progressiveIncrement: -30
   restingValue: 100
   lerpSpeed: 5
   returnDelay: 3
+  scannerProgressiveIncrement: 10
+  echoPassifProgressiveIncrement: 6
+  echoJoueurProgressiveIncrement: 12
 --- !u!1 &1672087835 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 3201939648104949814, guid: c5aaeaa3858d4b248ba6b36799cb95bd, type: 3}
@@ -10191,10 +10754,12 @@ MonoBehaviour:
   blendShapeIndex: 0
   blendShapeValueTarget: 0
   isProgressive: 1
-  progressiveIncrement: -30
   restingValue: 100
   lerpSpeed: 5
   returnDelay: 3
+  scannerProgressiveIncrement: 10
+  echoPassifProgressiveIncrement: 6
+  echoJoueurProgressiveIncrement: 12
 --- !u!1 &1698782212 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: -139556844373187779, guid: c5aaeaa3858d4b248ba6b36799cb95bd, type: 3}
@@ -10237,10 +10802,12 @@ MonoBehaviour:
   blendShapeIndex: 0
   blendShapeValueTarget: 0
   isProgressive: 1
-  progressiveIncrement: -30
   restingValue: 100
   lerpSpeed: 5
   returnDelay: 3
+  scannerProgressiveIncrement: 10
+  echoPassifProgressiveIncrement: 6
+  echoJoueurProgressiveIncrement: 12
 --- !u!1 &1701744867 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 6096942740938767664, guid: c5aaeaa3858d4b248ba6b36799cb95bd, type: 3}
@@ -10283,10 +10850,12 @@ MonoBehaviour:
   blendShapeIndex: 0
   blendShapeValueTarget: 0
   isProgressive: 1
-  progressiveIncrement: -30
   restingValue: 100
   lerpSpeed: 5
   returnDelay: 3
+  scannerProgressiveIncrement: 10
+  echoPassifProgressiveIncrement: 6
+  echoJoueurProgressiveIncrement: 12
 --- !u!1 &1724972817 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 7762159736451556101, guid: c5aaeaa3858d4b248ba6b36799cb95bd, type: 3}
@@ -10329,10 +10898,12 @@ MonoBehaviour:
   blendShapeIndex: 0
   blendShapeValueTarget: 0
   isProgressive: 1
-  progressiveIncrement: -30
   restingValue: 100
   lerpSpeed: 5
   returnDelay: 3
+  scannerProgressiveIncrement: 10
+  echoPassifProgressiveIncrement: 6
+  echoJoueurProgressiveIncrement: 12
 --- !u!1 &1725745083 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 2383008726701828035, guid: c5aaeaa3858d4b248ba6b36799cb95bd, type: 3}
@@ -10375,10 +10946,12 @@ MonoBehaviour:
   blendShapeIndex: 0
   blendShapeValueTarget: 0
   isProgressive: 1
-  progressiveIncrement: -30
   restingValue: 100
   lerpSpeed: 5
   returnDelay: 3
+  scannerProgressiveIncrement: 10
+  echoPassifProgressiveIncrement: 6
+  echoJoueurProgressiveIncrement: 12
 --- !u!1001 &1732723528
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -10616,10 +11189,12 @@ MonoBehaviour:
   blendShapeIndex: 0
   blendShapeValueTarget: 0
   isProgressive: 1
-  progressiveIncrement: -30
   restingValue: 100
   lerpSpeed: 5
   returnDelay: 3
+  scannerProgressiveIncrement: 10
+  echoPassifProgressiveIncrement: 6
+  echoJoueurProgressiveIncrement: 12
 --- !u!1 &1764901655 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 6400809260100018108, guid: c5aaeaa3858d4b248ba6b36799cb95bd, type: 3}
@@ -10662,10 +11237,12 @@ MonoBehaviour:
   blendShapeIndex: 0
   blendShapeValueTarget: 0
   isProgressive: 1
-  progressiveIncrement: -30
   restingValue: 100
   lerpSpeed: 5
   returnDelay: 3
+  scannerProgressiveIncrement: 10
+  echoPassifProgressiveIncrement: 6
+  echoJoueurProgressiveIncrement: 12
 --- !u!1 &1793841131
 GameObject:
   m_ObjectHideFlags: 0
@@ -10715,10 +11292,12 @@ MonoBehaviour:
   blendShapeIndex: 0
   blendShapeValueTarget: 0
   isProgressive: 1
-  progressiveIncrement: -30
   restingValue: 100
   lerpSpeed: 5
   returnDelay: 3
+  scannerProgressiveIncrement: 10
+  echoPassifProgressiveIncrement: 6
+  echoJoueurProgressiveIncrement: 12
 --- !u!64 &1793841134
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -10837,10 +11416,12 @@ MonoBehaviour:
   blendShapeIndex: 0
   blendShapeValueTarget: 0
   isProgressive: 1
-  progressiveIncrement: -30
   restingValue: 100
   lerpSpeed: 5
   returnDelay: 3
+  scannerProgressiveIncrement: 10
+  echoPassifProgressiveIncrement: 6
+  echoJoueurProgressiveIncrement: 12
 --- !u!1 &1832732508 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: -3651841812052964975, guid: c5aaeaa3858d4b248ba6b36799cb95bd, type: 3}
@@ -10883,10 +11464,12 @@ MonoBehaviour:
   blendShapeIndex: 0
   blendShapeValueTarget: 0
   isProgressive: 1
-  progressiveIncrement: -30
   restingValue: 100
   lerpSpeed: 5
   returnDelay: 3
+  scannerProgressiveIncrement: 10
+  echoPassifProgressiveIncrement: 6
+  echoJoueurProgressiveIncrement: 12
 --- !u!1 &1833290047 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 391698822518480519, guid: c5aaeaa3858d4b248ba6b36799cb95bd, type: 3}
@@ -10929,10 +11512,12 @@ MonoBehaviour:
   blendShapeIndex: 0
   blendShapeValueTarget: 0
   isProgressive: 1
-  progressiveIncrement: -30
   restingValue: 100
   lerpSpeed: 5
   returnDelay: 3
+  scannerProgressiveIncrement: 10
+  echoPassifProgressiveIncrement: 6
+  echoJoueurProgressiveIncrement: 12
 --- !u!1001 &1833547616
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -14274,10 +14859,12 @@ MonoBehaviour:
   blendShapeIndex: 0
   blendShapeValueTarget: 0
   isProgressive: 1
-  progressiveIncrement: -30
   restingValue: 100
   lerpSpeed: 5
   returnDelay: 3
+  scannerProgressiveIncrement: 10
+  echoPassifProgressiveIncrement: 6
+  echoJoueurProgressiveIncrement: 12
 --- !u!1 &1877887462 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: -454047274600187011, guid: e22c6a14dae4cc34eaadee19d6456e26, type: 3}
@@ -14320,10 +14907,12 @@ MonoBehaviour:
   blendShapeIndex: 0
   blendShapeValueTarget: 100
   isProgressive: 0
-  progressiveIncrement: 10
   restingValue: 0
   lerpSpeed: 5
   returnDelay: 3
+  scannerProgressiveIncrement: 10
+  echoPassifProgressiveIncrement: 6
+  echoJoueurProgressiveIncrement: 12
 --- !u!1 &1891983583 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: -6138688432038443764, guid: c5aaeaa3858d4b248ba6b36799cb95bd, type: 3}
@@ -14366,10 +14955,12 @@ MonoBehaviour:
   blendShapeIndex: 0
   blendShapeValueTarget: 0
   isProgressive: 1
-  progressiveIncrement: -30
   restingValue: 100
   lerpSpeed: 5
   returnDelay: 3
+  scannerProgressiveIncrement: 10
+  echoPassifProgressiveIncrement: 6
+  echoJoueurProgressiveIncrement: 12
 --- !u!1 &1907871463 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 5522593619266372748, guid: c5aaeaa3858d4b248ba6b36799cb95bd, type: 3}
@@ -14412,10 +15003,12 @@ MonoBehaviour:
   blendShapeIndex: 0
   blendShapeValueTarget: 0
   isProgressive: 1
-  progressiveIncrement: -30
   restingValue: 100
   lerpSpeed: 5
   returnDelay: 3
+  scannerProgressiveIncrement: 10
+  echoPassifProgressiveIncrement: 6
+  echoJoueurProgressiveIncrement: 12
 --- !u!1 &1920698290 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: -2655573560833850164, guid: e22c6a14dae4cc34eaadee19d6456e26, type: 3}
@@ -14458,10 +15051,12 @@ MonoBehaviour:
   blendShapeIndex: 0
   blendShapeValueTarget: 0
   isProgressive: 1
-  progressiveIncrement: -30
   restingValue: 100
   lerpSpeed: 5
   returnDelay: 3
+  scannerProgressiveIncrement: 10
+  echoPassifProgressiveIncrement: 6
+  echoJoueurProgressiveIncrement: 12
 --- !u!1 &1932996940 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 5225017493561190855, guid: c5aaeaa3858d4b248ba6b36799cb95bd, type: 3}
@@ -14504,10 +15099,12 @@ MonoBehaviour:
   blendShapeIndex: 0
   blendShapeValueTarget: 0
   isProgressive: 1
-  progressiveIncrement: -30
   restingValue: 100
   lerpSpeed: 5
   returnDelay: 3
+  scannerProgressiveIncrement: 10
+  echoPassifProgressiveIncrement: 6
+  echoJoueurProgressiveIncrement: 12
 --- !u!1 &1947888728 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 43537210dc6845844aab1231de2f8c21, type: 3}
@@ -14528,10 +15125,12 @@ MonoBehaviour:
   blendShapeIndex: 0
   blendShapeValueTarget: 0
   isProgressive: 1
-  progressiveIncrement: -30
   restingValue: 100
   lerpSpeed: 5
   returnDelay: 3
+  scannerProgressiveIncrement: 10
+  echoPassifProgressiveIncrement: 6
+  echoJoueurProgressiveIncrement: 12
 --- !u!65 &1947888730
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -14697,10 +15296,12 @@ MonoBehaviour:
   blendShapeIndex: 0
   blendShapeValueTarget: 0
   isProgressive: 1
-  progressiveIncrement: -30
   restingValue: 100
   lerpSpeed: 5
   returnDelay: 3
+  scannerProgressiveIncrement: 10
+  echoPassifProgressiveIncrement: 6
+  echoJoueurProgressiveIncrement: 12
 --- !u!1001 &1986153362
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -14851,10 +15452,12 @@ MonoBehaviour:
   blendShapeIndex: 0
   blendShapeValueTarget: 0
   isProgressive: 1
-  progressiveIncrement: -30
   restingValue: 100
   lerpSpeed: 5
   returnDelay: 3
+  scannerProgressiveIncrement: 10
+  echoPassifProgressiveIncrement: 6
+  echoJoueurProgressiveIncrement: 12
 --- !u!1 &2013412972
 GameObject:
   m_ObjectHideFlags: 0
@@ -14904,10 +15507,12 @@ MonoBehaviour:
   blendShapeIndex: 0
   blendShapeValueTarget: 0
   isProgressive: 1
-  progressiveIncrement: -30
   restingValue: 100
   lerpSpeed: 5
   returnDelay: 3
+  scannerProgressiveIncrement: 10
+  echoPassifProgressiveIncrement: 6
+  echoJoueurProgressiveIncrement: 12
 --- !u!64 &2013412975
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -15026,10 +15631,12 @@ MonoBehaviour:
   blendShapeIndex: 0
   blendShapeValueTarget: 0
   isProgressive: 1
-  progressiveIncrement: -30
   restingValue: 100
   lerpSpeed: 5
   returnDelay: 3
+  scannerProgressiveIncrement: 10
+  echoPassifProgressiveIncrement: 6
+  echoJoueurProgressiveIncrement: 12
 --- !u!1 &2053021598
 GameObject:
   m_ObjectHideFlags: 0
@@ -15079,10 +15686,12 @@ MonoBehaviour:
   blendShapeIndex: 0
   blendShapeValueTarget: 0
   isProgressive: 1
-  progressiveIncrement: -30
   restingValue: 100
   lerpSpeed: 5
   returnDelay: 3
+  scannerProgressiveIncrement: 10
+  echoPassifProgressiveIncrement: 6
+  echoJoueurProgressiveIncrement: 12
 --- !u!64 &2053021601
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -15206,10 +15815,12 @@ MonoBehaviour:
   blendShapeIndex: 0
   blendShapeValueTarget: 0
   isProgressive: 1
-  progressiveIncrement: -30
   restingValue: 100
   lerpSpeed: 5
   returnDelay: 3
+  scannerProgressiveIncrement: 10
+  echoPassifProgressiveIncrement: 6
+  echoJoueurProgressiveIncrement: 12
 --- !u!1 &2100203552 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: -8995271579679930556, guid: e22c6a14dae4cc34eaadee19d6456e26, type: 3}
@@ -15252,10 +15863,12 @@ MonoBehaviour:
   blendShapeIndex: 0
   blendShapeValueTarget: 0
   isProgressive: 1
-  progressiveIncrement: -30
   restingValue: 100
   lerpSpeed: 5
   returnDelay: 3
+  scannerProgressiveIncrement: 10
+  echoPassifProgressiveIncrement: 6
+  echoJoueurProgressiveIncrement: 12
 --- !u!1 &2110782743 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 4939034896295814748, guid: c5aaeaa3858d4b248ba6b36799cb95bd, type: 3}
@@ -15298,10 +15911,12 @@ MonoBehaviour:
   blendShapeIndex: 0
   blendShapeValueTarget: 0
   isProgressive: 1
-  progressiveIncrement: -30
   restingValue: 100
   lerpSpeed: 5
   returnDelay: 3
+  scannerProgressiveIncrement: 10
+  echoPassifProgressiveIncrement: 6
+  echoJoueurProgressiveIncrement: 12
 --- !u!1001 &2147387037
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -16066,3 +16681,4 @@ SceneRoots:
   - {fileID: 312702631}
   - {fileID: 501641726}
   - {fileID: 1742787173}
+  - {fileID: 941539910}
