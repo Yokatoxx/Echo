@@ -1340,7 +1340,7 @@ Transform:
   m_GameObject: {fileID: 422589239}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: -0.6903967, z: 0, w: 0.72343093}
-  m_LocalPosition: {x: 7.71, y: 1.3415, z: -8.44}
+  m_LocalPosition: {x: 7.25, y: 1.3415, z: -6.6}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -2138,7 +2138,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6784315048683729755, guid: e4107d49f816e4943b865bdd0fcab8c8, type: 3}
       propertyPath: isOn
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6784315048683729755, guid: e4107d49f816e4943b865bdd0fcab8c8, type: 3}
       propertyPath: cooldown
@@ -4211,7 +4211,7 @@ MonoBehaviour:
       m_PostInfinity: 2
       m_RotationOrder: 4
     m_ImpulseDuration: 0.2
-    m_ImpulseType: 0
+    m_ImpulseType: 2
     m_DissipationRate: 0.25
     m_RawSignal: {fileID: 0}
     m_AmplitudeGain: 1
@@ -8280,11 +8280,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 854835756320132116, guid: 9cf5b9ddbcef7054d85f4226c2ed95d8, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 7.71
+      value: 7.25
       objectReference: {fileID: 0}
     - target: {fileID: 854835756320132116, guid: 9cf5b9ddbcef7054d85f4226c2ed95d8, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -8.44
+      value: -6.6
       objectReference: {fileID: 0}
     - target: {fileID: 882519601265850892, guid: 9cf5b9ddbcef7054d85f4226c2ed95d8, type: 3}
       propertyPath: field of view

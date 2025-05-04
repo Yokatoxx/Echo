@@ -28,6 +28,7 @@ public class EnemyPatrolState : EnemyState
     {
         base.EnterState();
 
+        Debug.Log("going to patrol state");
 
         route = patrolRoute.GetComponent<PatrolRoute>();
 

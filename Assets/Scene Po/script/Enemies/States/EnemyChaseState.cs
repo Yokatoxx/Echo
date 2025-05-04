@@ -25,6 +25,7 @@ public class EnemyChaseState : EnemyState
     {
         base.EnterState();
 
+        Debug.Log("going to chase state");
 
     }
 
@@ -39,6 +40,10 @@ public class EnemyChaseState : EnemyState
 
         enemy.MoveEnemy(enemy.chaseSpeed, playerTransform);
 
+        if (enemy.agent.remainingDistance <= 0.5f)
+        {
+            enemy.stateMachine.ChangeState(enemy.iddleState);
+        }
 
         if (enemy.agent.remainingDistance > distanceToCountExit)
         {

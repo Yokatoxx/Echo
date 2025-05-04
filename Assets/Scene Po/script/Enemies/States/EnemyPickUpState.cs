@@ -26,6 +26,8 @@ public class EnemyPickUpState : EnemyState
     {
         base.EnterState();
 
+        Debug.Log("going to pick up state");
+
         isPickedUp = false;
 
         collectiblesToPickUp = enemy.GetComponent<TriggerCollect>().collectibles;

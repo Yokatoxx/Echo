@@ -38,6 +38,10 @@ public class EnemyIddleState : EnemyState
         {
             enemy.stateMachine.ChangeState(enemy.chaseState);
         }
+        if (enemy.IsHitByScanner)
+        {
+            enemy.stateMachine.ChangeState(enemy.hitByScannerState);
+        }
 
         exitTimer += Time.deltaTime;
 
