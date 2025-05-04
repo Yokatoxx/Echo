@@ -5,7 +5,6 @@ using UnityEngine;
 
 public class EnemyChaseState : EnemyState
 {
-    private float chaseSpeed = 5f;
     private Transform playerTransform;
 
     public float timeTillExit = 3f;
@@ -38,7 +37,7 @@ public class EnemyChaseState : EnemyState
     {
         base.FrameUpdate();
 
-        enemy.MoveEnemy(chaseSpeed, playerTransform);
+        enemy.MoveEnemy(enemy.chaseSpeed, playerTransform);
 
 
         if (enemy.agent.remainingDistance > distanceToCountExit)

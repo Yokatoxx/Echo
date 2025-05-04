@@ -16,6 +16,7 @@ public class EnemyAttackDistanceCheck : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
+
         if (other.gameObject == playerTarget)
         {
             enemy.SetAttackDistanceBool(true);

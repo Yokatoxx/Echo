@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.AI;
+using UnityEngine.Rendering;
 
 public class Enemy : MonoBehaviour, IEnemyMoveable, ItriggerCheckable
 {
@@ -83,6 +84,10 @@ public class Enemy : MonoBehaviour, IEnemyMoveable, ItriggerCheckable
             agent.SetDestination(p.position);
         }
     }
+
+    public float patrolSpeed = 2f;
+    public float chaseSpeed = 5f;
+
     #endregion
 
     #region PickUp Variables

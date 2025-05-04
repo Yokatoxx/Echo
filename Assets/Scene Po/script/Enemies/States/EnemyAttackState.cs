@@ -8,18 +8,13 @@ public class EnemyAttackState : EnemyState
 
     public EnemyAttackState(Enemy enemy, EnemyStateMachine stateMachine) : base(enemy, stateMachine)
     {
-    }
 
-    public override void AnimationTriggerEvent(Enemy.AnimationTriggerType triggerType)
-    {
-        base.AnimationTriggerEvent(triggerType);
+        player = GameObject.FindGameObjectWithTag("Player");
     }
 
     public override void EnterState()
     {
         base.EnterState();
-
-        player = GameObject.FindGameObjectWithTag("Player");
     }
 
     public override void ExitState()
@@ -31,7 +26,6 @@ public class EnemyAttackState : EnemyState
     {
         base.FrameUpdate();
 
-        Destroy(player);
 
     }
 
@@ -40,9 +34,5 @@ public class EnemyAttackState : EnemyState
         base.PhysicsUpdate();
     }
 
-    public void Destroy(GameObject GO)
-    {
-        Destroy(GO);
-    }
 
 }

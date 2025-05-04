@@ -5,7 +5,6 @@ using UnityEngine;
 public class EnemyHitByScanner : EnemyState
 {
 
-    public float speed = 5f;
     public EnemyHitByScanner(Enemy enemy, EnemyStateMachine stateMachine) : base(enemy, stateMachine)
     {
     }
@@ -13,7 +12,7 @@ public class EnemyHitByScanner : EnemyState
     {
         base.EnterState();
 
-        enemy.MoveEnemy(speed, enemy.scannerHit.transform);
+        enemy.MoveEnemy(enemy.patrolSpeed, enemy.scannerHit.transform);
 
         enemy.IsHitByScanner = false;
 

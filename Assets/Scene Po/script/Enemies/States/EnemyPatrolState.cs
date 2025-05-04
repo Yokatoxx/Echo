@@ -13,7 +13,6 @@ public class EnemyPatrolState : EnemyState
     [SerializeField]
     private int currentPatrolIndex = 0;
 
-    public float patrolSpeed = 5f;
     private Transform targetPos;
 
     public EnemyPatrolState(Enemy enemy, EnemyStateMachine stateMachine) : base(enemy, stateMachine)
@@ -34,7 +33,7 @@ public class EnemyPatrolState : EnemyState
 
         currentPatrolIndex = (int)Mathf.Repeat(currentPatrolIndex, route.patrolPoints.Length);
         targetPos = route.patrolPoints[currentPatrolIndex];
-        enemy.MoveEnemy(patrolSpeed, targetPos);
+        enemy.MoveEnemy(enemy.patrolSpeed, targetPos);
     }
 
     public override void ExitState()

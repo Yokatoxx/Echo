@@ -10,7 +10,6 @@ public class EnemyPickUpState : EnemyState
     private GameObject closestCollectible;
 
     private Transform pickUpPos;
-    private float speed = 5f;
 
     private bool isPickedUp = false;
 
@@ -33,7 +32,7 @@ public class EnemyPickUpState : EnemyState
         closestCollectible = collectiblesToPickUp[FindClosestCollectible()];
         originalPickUpPos = closestCollectible.GetComponent<InPlace>().originalPosition;
 
-        enemy.MoveEnemy(speed, closestCollectible.transform);
+        enemy.MoveEnemy(enemy.patrolSpeed, closestCollectible.transform);
 
 
     }
@@ -68,7 +67,7 @@ public class EnemyPickUpState : EnemyState
             isPickedUp = true;
             Debug.Log("Picking up");
 
-            enemy.MoveEnemy(speed, originalPickUpPos);
+            enemy.MoveEnemy(enemy.patrolSpeed, originalPickUpPos);
 
         }
 
@@ -81,7 +80,7 @@ public class EnemyPickUpState : EnemyState
             {
                 Debug.Log("Putting down");
 
-                enemy.MoveEnemy(speed, enemy.transform);
+                enemy.MoveEnemy(enemy.patrolSpeed, enemy.transform);
 
                 closestCollectible.transform.position = originalPickUpPos.position;
                 closestCollectible.GetComponent<InPlace>().isInPlace = true;
