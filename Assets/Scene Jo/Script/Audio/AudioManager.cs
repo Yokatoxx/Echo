@@ -14,22 +14,22 @@ public class AudioManager : MonoBehaviour
     [SerializeField] EventReference FootstepEvent;
     [Tooltip("Son lors d'une collision avec le décor")]
     [SerializeField] EventReference DecorCollisionEvent;
-    [Tooltip("Son pendant le sprint")]
-    [SerializeField] EventReference SprintEvent;
+    // [Tooltip("Son pendant le sprint")]
+    // [SerializeField] EventReference SprintEvent;
     [Tooltip("Son lors de l'utilisation de l'écholocation")]
     [SerializeField] EventReference EcholocationEvent;
 
     [Header("Configuration des pas")]
     [Range(0.1f, 2.0f)]
     [SerializeField] float walkRate = 0.5f;
-    [Range(0.1f, 1.0f)]
-    [SerializeField] float sprintRate = 0.3f;
+    //[Range(0.1f, 1.0f)]
+    // [SerializeField] float sprintRate = 0.3f;
 
-    [Header("Configuration du sprint")]
-    [Tooltip("Nom du paramètre de volume dans FMOD")]
-    [SerializeField] string sprintVolumeParam = "SprintVolume";
-    [Range(0.1f, 5.0f)]
-    [SerializeField] float fadeInDuration = 2.0f;
+    // [Header("Configuration du sprint")]
+    // [Tooltip("Nom du paramètre de volume dans FMOD")]
+    // [SerializeField] string sprintVolumeParam = "SprintVolume";
+    // [Range(0.1f, 5.0f)]
+    // [SerializeField] float fadeInDuration = 2.0f;
 
     [Header("Cooldowns")]
     [Range(0.1f, 2.0f)]
@@ -41,10 +41,10 @@ public class AudioManager : MonoBehaviour
 
     // Variables privées
     private float time;
-    private bool isSprintSoundPlaying = false;
-    private FMOD.Studio.EventInstance sprintInstance;
-    private float sprintFadeTime = 0f;
-    private bool isFadingIn = false;
+    // private bool isSprintSoundPlaying = false;
+    // private FMOD.Studio.EventInstance sprintInstance;
+    // private float sprintFadeTime = 0f;
+    // private bool isFadingIn = false;
     private float lastCollisionTime = 0f;
     private float lastEcholocationTime = 0f;
 
@@ -70,28 +70,28 @@ public class AudioManager : MonoBehaviour
 
     void Start()
     {
-        InitializeSprintSound();
+        // InitializeSprintSound();
     }
 
-    void InitializeSprintSound()
-    {
-        sprintInstance = RuntimeManager.CreateInstance(SprintEvent);
+    // void InitializeSprintSound()
+    // {
+    //     sprintInstance = RuntimeManager.CreateInstance(SprintEvent);
 
-        if (player != null)
-        {
-            RuntimeManager.AttachInstanceToGameObject(sprintInstance, player.transform);
-        }
+    //     if (player != null)
+    //     {
+    //         RuntimeManager.AttachInstanceToGameObject(sprintInstance, player.transform);
+    //     }
 
-        sprintInstance.setParameterByName(sprintVolumeParam, 0.0f);
-    }
-    
+    //     sprintInstance.setParameterByName(sprintVolumeParam, 0.0f);
+    // }
+
 
     void OnDestroy()
     {
-        if (sprintInstance.isValid())
-        {
-            sprintInstance.release();
-        }
+        // if (sprintInstance.isValid())
+        // {
+        //     sprintInstance.release();
+        // }
 
         if (Instance == this)
         {
@@ -126,7 +126,7 @@ public class AudioManager : MonoBehaviour
     void Update()
     {
         HandleFootsteps();
-        HandleSprinting();
+        // HandleSprinting();
         HandleEcholocation();
     }
 
@@ -137,8 +137,9 @@ public class AudioManager : MonoBehaviour
         if (controller == null || !controller.isWalking)
             return;
 
-        bool isSprinting = Input.GetKey(KeyCode.LeftShift) && controller.stamina.CanSprint();
-        float currentRate = isSprinting ? sprintRate : walkRate;
+        // bool isSprinting = Input.GetKey(KeyCode.LeftShift) && controller.stamina.CanSprint();
+        // float currentRate = isSprinting ? sprintRate : walkRate;
+        float currentRate = walkRate;
 
         if (time > currentRate)
         {
@@ -147,43 +148,44 @@ public class AudioManager : MonoBehaviour
         }
     }
 
-    void HandleSprinting()
-    {
-        if (controller == null)
-            return;
+    // void HandleSprinting()
+    // {
+    //     if (controller == null)
+    //         return;
 
-        bool isSprinting = controller.isWalking && Input.GetKey(KeyCode.LeftShift) && controller.stamina.CanSprint();
+    //     bool isSprinting = controller.isWalking && Input.GetKey(KeyCode.LeftShift) && controller.stamina.CanSprint();
 
-        if (isSprinting && !isSprintSoundPlaying)
-        {
-            sprintInstance.start();
-            isSprintSoundPlaying = true;
-            isFadingIn = true;
-            sprintFadeTime = 0f;
-        }
-        else if (!isSprinting && isSprintSoundPlaying)
-        {
-            sprintInstance.stop(FMOD.Studio.STOP_MODE.ALLOWFADEOUT);
-            isSprintSoundPlaying = false;
-            isFadingIn = false;
-        }
+    //     if (isSprinting && !isSprintSoundPlaying)
+    //     {
+    //         sprintInstance.start();
+    //         isSprintSoundPlaying = true;
+    //         isFadingIn = true;
+    //         sprintFadeTime = 0f;
+    //     }
+    //     else if (!isSprinting && isSprintSoundPlaying)
+    //     {
+    //         sprintInstance.stop(FMOD.Studio.STOP_MODE.ALLOWFADEOUT);
+    //         isSprintSoundPlaying = false;
+    //         isFadingIn = false;
+    //     }
 
-        if (isSprintSoundPlaying && isFadingIn)
-        {
-            sprintFadeTime += Time.deltaTime;
-            float fadeProgress = Mathf.Clamp01(sprintFadeTime / fadeInDuration);
-            sprintInstance.setParameterByName(sprintVolumeParam, fadeProgress);
+    //     if (isSprintSoundPlaying && isFadingIn)
+    //     {
+    //         sprintFadeTime += Time.deltaTime;
+    //         float fadeProgress = Mathf.Clamp01(sprintFadeTime / fadeInDuration);
+    //         sprintInstance.setParameterByName(sprintVolumeParam, fadeProgress);
 
-            if (fadeProgress >= 1.0f)
-            {
-                isFadingIn = false;
-            }
-        }
-    }
+    //         if (fadeProgress >= 1.0f)
+    //         {
+    //             isFadingIn = false;
+    //         }
+    //     }
+    // }
 
     void HandleEcholocation()
     {
-        if (Input.GetKeyDown(KeyCode.Space) && player != null)
+        // On remplace GetKeyDown par GetKeyUp pour correspondre à la logique de ChargeableEchoScanner
+        if (Input.GetKeyUp(KeyCode.Space) && player != null)
         {
             PlayEcholocationSound(player.transform.position);
         }
@@ -191,6 +193,6 @@ public class AudioManager : MonoBehaviour
 
     void OnValidate()
     {
-        sprintRate = Mathf.Min(sprintRate, walkRate);
+        // sprintRate = Mathf.Min(sprintRate, walkRate);
     }
 }

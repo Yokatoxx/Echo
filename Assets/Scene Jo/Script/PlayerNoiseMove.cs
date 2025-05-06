@@ -30,8 +30,8 @@ public class PlayerNoiseMove : MonoBehaviour
         if (playerMovement == null || noisePrefab == null)
             return;
 
-        // Vérifie si le joueur est en mouvement
-        if (!playerMovement.isHiding && IsMoving())
+        // Désactive le bruit si le joueur est en sneak
+        if (!playerMovement.isHiding && !playerMovement.IsSneaking && IsMoving())
         {
             stepTimer += Time.deltaTime;
             if (stepTimer >= stepInterval)

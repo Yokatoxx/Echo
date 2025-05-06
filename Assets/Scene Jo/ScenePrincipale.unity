@@ -8355,6 +8355,10 @@ PrefabInstance:
       propertyPath: field of view
       value: 60.000004
       objectReference: {fileID: 0}
+    - target: {fileID: 884023607132057387, guid: 9cf5b9ddbcef7054d85f4226c2ed95d8, type: 3}
+      propertyPath: staminaRegenRate
+      value: 5
+      objectReference: {fileID: 0}
     - target: {fileID: 1016966047443977353, guid: 9cf5b9ddbcef7054d85f4226c2ed95d8, type: 3}
       propertyPath: m_Layer
       value: 6
@@ -8406,6 +8410,14 @@ PrefabInstance:
     - target: {fileID: 1294563369566931006, guid: 9cf5b9ddbcef7054d85f4226c2ed95d8, type: 3}
       propertyPath: m_Layer
       value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 1422596832769917572, guid: 9cf5b9ddbcef7054d85f4226c2ed95d8, type: 3}
+      propertyPath: sizeChangeSpeed
+      value: 16
+      objectReference: {fileID: 0}
+    - target: {fileID: 1422596832769917572, guid: 9cf5b9ddbcef7054d85f4226c2ed95d8, type: 3}
+      propertyPath: targetScaleMultiplier
+      value: 15
       objectReference: {fileID: 0}
     - target: {fileID: 1443286735412296238, guid: 9cf5b9ddbcef7054d85f4226c2ed95d8, type: 3}
       propertyPath: m_Layer
@@ -8468,6 +8480,14 @@ PrefabInstance:
       value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 4402346223216439940, guid: 9cf5b9ddbcef7054d85f4226c2ed95d8, type: 3}
+      propertyPath: sneakKey
+      value: 304
+      objectReference: {fileID: 0}
+    - target: {fileID: 4402346223216439940, guid: 9cf5b9ddbcef7054d85f4226c2ed95d8, type: 3}
+      propertyPath: sneakySpeed
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4402346223216439940, guid: 9cf5b9ddbcef7054d85f4226c2ed95d8, type: 3}
       propertyPath: playerCamera
       value: 
       objectReference: {fileID: 422589241}
@@ -8475,6 +8495,10 @@ PrefabInstance:
       propertyPath: impulseSourceTarget
       value: 
       objectReference: {fileID: 2140685787}
+    - target: {fileID: 4402346223216439940, guid: 9cf5b9ddbcef7054d85f4226c2ed95d8, type: 3}
+      propertyPath: stationaryStaminaMultiplier
+      value: 0.5
+      objectReference: {fileID: 0}
     - target: {fileID: 4775764960789792952, guid: 9cf5b9ddbcef7054d85f4226c2ed95d8, type: 3}
       propertyPath: m_ShowToolkit
       value: 0

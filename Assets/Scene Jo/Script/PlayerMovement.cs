@@ -7,12 +7,23 @@ public class PlayerMovement : MonoBehaviour
 {
     [Header("Movement")]
     public float speed = 5f;
-    public float runSpeed = 8f;
+    public float sneakySpeed = 2f; // Vitesse en mode sneaky
+    // public float runSpeed = 8f; // Sprint désactivé
     public float gravity = 9.81f;
     public float bodyRotationSpeed = 10f;
 
+    [Header("Controls")]
+    [Tooltip("Touche pour activer le mode furtif")]
+    public KeyCode sneakKey = KeyCode.LeftControl;
+
     [Header("Stamina")]
     public Stamina stamina;
+    [Tooltip("Multiplicateur de consommation de stamina lorsqu'immobile en mode sneak")]
+    [Range(0.1f, 0.9f)]
+    public float stationaryStaminaMultiplier = 0.3f;
+    [Tooltip("Multiplicateur de consommation de stamina lorsqu'en mouvement en mode sneak")]
+    [Range(0.5f, 2.0f)]
+    public float movingStaminaMultiplier = 1.0f;
 
     [Header("Hiding")]
     public bool isHiding = false;
@@ -37,6 +48,15 @@ public class PlayerMovement : MonoBehaviour
     private Quaternion hideRotation;
     public bool isWalking = false;
     private float lastImpulseTime = -1f;
+
+    // Propriété publique pour savoir si le joueur est en sneak
+    public bool IsSneaking
+    {
+        get
+        {
+            return Input.GetKey(sneakKey) && stamina != null && stamina.CanSprint();
+        }
+    }
 
     void Start()
     {
@@ -91,18 +111,10 @@ public class PlayerMovement : MonoBehaviour
 
     void HandleMovement()
     {
-        bool isTryingToSprint = Input.GetKey(KeyCode.LeftShift) && stamina != null && stamina.CanSprint();
-        float currentSpeed = isTryingToSprint ? runSpeed : speed;
-
-        if (isTryingToSprint && (Input.GetAxisRaw("Vertical") != 0 || Input.GetAxisRaw("Horizontal") != 0))
-        {
-            stamina.UseStamina(Time.deltaTime);
-            if (!stamina.CanSprint())
-            {
-                currentSpeed = speed;
-                isTryingToSprint = false;
-            }
-        }
+        // On vérifie d'abord si la touche sneak est pressée
+        bool sneakKeyPressed = Input.GetKey(sneakKey);
+        bool canSneak = stamina != null && stamina.CanSprint();
+        bool isTryingToSneak = sneakKeyPressed && canSneak;
 
         float moveForwardInput = Input.GetAxisRaw("Vertical");
         float moveSideInput = Input.GetAxisRaw("Horizontal");
@@ -115,7 +127,52 @@ public class PlayerMovement : MonoBehaviour
         right.Normalize();
 
         Vector3 desiredMovementHorizontal = (forward * moveForwardInput + right * moveSideInput).normalized;
-        isWalking = desiredMovementHorizontal.magnitude > 0.1f;
+        isWalking = desiredMovementHorizontal.magnitude > 0.1f && !isTryingToSneak;
+
+        float currentSpeed = speed;
+
+        // Gestion du mode sneaky
+        if (isTryingToSneak)
+        {
+            currentSpeed = sneakySpeed;
+            bool isMoving = desiredMovementHorizontal.magnitude > 0.1f;
+
+            if (isMoving)
+            {
+                // Consommation plus élevée en déplacement
+                stamina.UseStamina(Time.deltaTime * movingStaminaMultiplier);
+            }
+            else
+            {
+                // Consommation réduite à l'arrêt
+                stamina.UseStamina(Time.deltaTime * stationaryStaminaMultiplier);
+            }
+
+            // Si la stamina tombe à 0, on sort du mode sneak
+            if (!stamina.CanSprint())
+            {
+                currentSpeed = speed;
+                isTryingToSneak = false;
+            }
+        }
+
+        // --- Gestion du sprint (désactivée) ---
+        /*
+        bool isTryingToSprint = Input.GetKey(KeyCode.LeftShift) && stamina != null && stamina.CanSprint();
+        if (isTryingToSprint && (Input.GetAxisRaw("Vertical") != 0 || Input.GetAxisRaw("Horizontal") != 0))
+        {
+            stamina.UseStamina(Time.deltaTime);
+            if (!stamina.CanSprint())
+            {
+                currentSpeed = speed;
+                isTryingToSprint = false;
+            }
+        }
+        if (isTryingToSprint)
+        {
+            currentSpeed = runSpeed;
+        }
+        */
 
         if (characterController.isGrounded)
         {
@@ -131,6 +188,7 @@ public class PlayerMovement : MonoBehaviour
         finalMovement.y = verticalVelocity;
         characterController.Move(finalMovement * Time.deltaTime);
     }
+
     void HandleHidingInput()
     {
         if (cam == null) return;
@@ -149,6 +207,7 @@ public class PlayerMovement : MonoBehaviour
             else { UnhidePlayer(); return; }
         }
     }
+
     void HidePlayer(Transform hidingSpot)
     {
         hidePosition = transform.position;
@@ -161,6 +220,7 @@ public class PlayerMovement : MonoBehaviour
         isHiding = true;
         isWalking = false;
     }
+
     void UnhidePlayer()
     {
         characterController.enabled = false;
@@ -169,7 +229,6 @@ public class PlayerMovement : MonoBehaviour
         characterController.enabled = true;
         isHiding = false;
     }
-
 
     private void OnControllerColliderHit(ControllerColliderHit hit)
     {
@@ -180,11 +239,12 @@ public class PlayerMovement : MonoBehaviour
 
         if (hit.gameObject.CompareTag("Decor"))
         {
+            // --- Gestion de l'impulsion liée au sprint (désactivée) ---
+            /*
             bool wasSprintingOnImpact = Input.GetKey(KeyCode.LeftShift)
                                        && stamina != null && stamina.currentStamina > 0.01f
                                        && characterController.velocity.magnitude > (speed + 0.1f);
 
-            // Vérifie si on sprintait ET si le cooldown est terminé
             if (wasSprintingOnImpact && Time.time >= lastImpulseTime + impulseCooldown)
             {
                 Vector3 impactVelocity = characterController.velocity;
@@ -195,12 +255,11 @@ public class PlayerMovement : MonoBehaviour
                     Vector3 impulseDirection = -impactVelocity.normalized;
                     impulseSource.GenerateImpulse(impulseDirection);
 
-                    // Mettre à jour le temps de la dernière impulsion SEULEMENT si une impulsion a été générée
                     lastImpulseTime = Time.time;
-
                 }
             }
-            else if (!wasSprintingOnImpact)
+            else
+            */
             {
                 if (audioManager != null && characterController.velocity.magnitude > 0.1f)
                 {
