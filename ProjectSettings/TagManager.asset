@@ -11,6 +11,8 @@ TagManager:
   - canPickUp
   - EchoPassif
   - EchoJoueur
+  - PatrolPoint
+  - RepeatSound
   layers:
   - Default
   - TransparentFX
@@ -19,7 +21,7 @@ TagManager:
   - Water
   - UI
   - Camera
-  - 
+  - SafeZone
   - 
   - 
   - 

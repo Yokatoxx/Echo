@@ -20,13 +20,11 @@ public class EnemyAggroCheck : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        
 
         if (other.gameObject.CompareTag("Collectible") && other.gameObject.GetComponent<InPlace>().isInPlace)
         {
             enemy.SetPickUpDistanceBool(false);
         }
-
 
         if (other.gameObject.CompareTag("Collectible") && !other.gameObject.GetComponent<InPlace>().isInPlace)
         {

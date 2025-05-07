@@ -1,27 +1,26 @@
 using UnityEngine;
 using Cinemachine;
-using System.Collections; // Nécessaire pour Time.time
+using System.Collections;
 
 [RequireComponent(typeof(CharacterController))]
 public class PlayerMovement : MonoBehaviour
 {
     [Header("Movement")]
     public float speed = 5f;
-    public float sneakySpeed = 2f; // Vitesse en mode sneaky
-    // public float runSpeed = 8f; // Sprint désactivé
+    public float sneakySpeed = 2f;
+    // public float runSpeed = 8f;
     public float gravity = 9.81f;
     public float bodyRotationSpeed = 10f;
 
     [Header("Controls")]
-    [Tooltip("Touche pour activer le mode furtif")]
     public KeyCode sneakKey = KeyCode.LeftControl;
 
     [Header("Stamina")]
     public Stamina stamina;
-    [Tooltip("Multiplicateur de consommation de stamina lorsqu'immobile en mode sneak")]
+    [Tooltip("Multiplicateur de consommation de stamina immobile en mode sneak")]
     [Range(0.1f, 0.9f)]
     public float stationaryStaminaMultiplier = 0.3f;
-    [Tooltip("Multiplicateur de consommation de stamina lorsqu'en mouvement en mode sneak")]
+    [Tooltip("Multiplicateur de consommation de stamina en mouvement en mode sneak")]
     [Range(0.5f, 2.0f)]
     public float movingStaminaMultiplier = 1.0f;
 
@@ -31,9 +30,9 @@ public class PlayerMovement : MonoBehaviour
     public float hidingCheckDistance = 2f;
 
     [Header("Impulse Setup")]
-    [Tooltip("Assignez ici l'objet enfant qui porte l'Impulse Source (ex: CameraTarget).")]
+    [Tooltip("Assignez ici l'objet enfant")]
     public Transform impulseSourceTarget;
-    [Tooltip("Temps minimum (en secondes) entre deux impulsions de collision.")]
+    [Tooltip("Temps minimum entre deux impulsions de collision.")]
     public float impulseCooldown = 0.5f;
 
     // --- Private Variables ---
@@ -49,7 +48,6 @@ public class PlayerMovement : MonoBehaviour
     public bool isWalking = false;
     private float lastImpulseTime = -1f;
 
-    // Propriété publique pour savoir si le joueur est en sneak
     public bool IsSneaking
     {
         get
@@ -67,18 +65,18 @@ public class PlayerMovement : MonoBehaviour
             impulseSource = impulseSourceTarget.GetComponent<CinemachineImpulseSource>();
             if (impulseSource == null)
             {
-                Debug.LogError("CinemachineImpulseSource non trouvé sur l'objet cible assigné (" + impulseSourceTarget.name + "). L'effet d'impact ne fonctionnera pas.", this);
+                Debug.LogError("CinemachineImpulseSource non trouvé ", this);
             }
         }
         else
         {
-            Debug.LogError("La variable 'Impulse Source Target' n'est pas assignée dans l'inspecteur pour PlayerMovement. L'effet d'impact ne fonctionnera pas.", this);
+            Debug.LogError("La variable 'Impulse Source Target' n'est pas assignée", this);
         }
 
         cam = Camera.main;
         if (cam == null)
         {
-            Debug.LogError("Camera principale non trouvée ! Taggez votre caméra principale avec 'MainCamera'. Utilisation du transform du joueur comme fallback.", this);
+            Debug.LogError("Camera principale non trouvée !", this);
             cameraTransform = transform;
         }
         else
@@ -111,7 +109,7 @@ public class PlayerMovement : MonoBehaviour
 
     void HandleMovement()
     {
-        // On vérifie d'abord si la touche sneak est pressée
+        // On vérifie la touche sneak
         bool sneakKeyPressed = Input.GetKey(sneakKey);
         bool canSneak = stamina != null && stamina.CanSprint();
         bool isTryingToSneak = sneakKeyPressed && canSneak;
@@ -156,7 +154,7 @@ public class PlayerMovement : MonoBehaviour
             }
         }
 
-        // --- Gestion du sprint (désactivée) ---
+        // --- Gestion du sprint ---
         /*
         bool isTryingToSprint = Input.GetKey(KeyCode.LeftShift) && stamina != null && stamina.CanSprint();
         if (isTryingToSprint && (Input.GetAxisRaw("Vertical") != 0 || Input.GetAxisRaw("Horizontal") != 0))
