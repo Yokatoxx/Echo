@@ -40,7 +40,7 @@ public class EchoObject : MonoBehaviour
 
             if (renderer != null)
             {
-                // Vérifiez si la propriété existe avant d'essayer d'y accéder
+                
                 if (renderer.material.HasProperty("_IntersectionColorStart"))
                 {
                     Color currentColor = renderer.material.GetColor("_IntersectionColorStart");

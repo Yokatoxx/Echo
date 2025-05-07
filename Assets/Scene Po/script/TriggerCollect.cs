@@ -10,14 +10,16 @@ public class TriggerCollect : MonoBehaviour
 
     public GameObject[] collectibles;
 
+    private static bool hasInitializedCount = false;
 
     private void Awake()
     {
         collectibles = GameObject.FindGameObjectsWithTag("Collectible");
 
-        foreach (GameObject collectible in collectibles)
+        if (!hasInitializedCount)
         {
-            totalCollectibles++;
+            totalCollectibles = collectibles.Length;
+            hasInitializedCount = true;
         }
     }
 
