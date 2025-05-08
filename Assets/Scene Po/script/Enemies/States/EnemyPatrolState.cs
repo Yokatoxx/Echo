@@ -28,8 +28,6 @@ public class EnemyPatrolState : EnemyState
     {
         base.EnterState();
 
-        Debug.Log("going to patrol state");
-
         route = patrolRoute.GetComponent<PatrolRoute>();
 
         currentPatrolIndex = (int)Mathf.Repeat(currentPatrolIndex, route.patrolPoints.Length);
@@ -59,6 +57,10 @@ public class EnemyPatrolState : EnemyState
         if (enemy.IsHitByScanner)
         {
             enemy.stateMachine.ChangeState(enemy.hitByScannerState);
+        }
+        if (enemy.IsWithinAttackDistance)
+        {
+            enemy.stateMachine.ChangeState(enemy.attackState);
         }
 
 

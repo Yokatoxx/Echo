@@ -13,6 +13,7 @@ TagManager:
   - EchoJoueur
   - PatrolPoint
   - RepeatSound
+  - SpawnPoint
   layers:
   - Default
   - TransparentFX

@@ -5,19 +5,17 @@ using UnityEngine;
 public class EnemyAttackDistanceCheck : MonoBehaviour
 {
 
-    public GameObject playerTarget { get; set; }
     private Enemy enemy;
 
     private void Awake()
     {
-        playerTarget = GameObject.FindGameObjectWithTag("Player");
         enemy = GetComponentInParent<Enemy>();
     }
 
     private void OnTriggerEnter(Collider other)
     {
 
-        if (other.gameObject == playerTarget)
+        if (other.gameObject.CompareTag("Player"))
         {
             enemy.SetAttackDistanceBool(true);
         }
@@ -29,11 +27,11 @@ public class EnemyAttackDistanceCheck : MonoBehaviour
         }
     }
 
-    private void OnTriggerExit(Collider other)
+    private void OnTriggerStay(Collider other)
     {
-        if (other.gameObject == playerTarget)
+        if (other.gameObject.CompareTag("Player"))
         {
-            enemy.SetAttackDistanceBool(false);
+            enemy.SetAttackDistanceBool(true);
         }
     }
 }

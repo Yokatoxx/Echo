@@ -94,6 +94,9 @@ public class Enemy : MonoBehaviour, IEnemyMoveable, ItriggerCheckable
     public Transform pickUpPos;
     #endregion
 
+    #region Attack Variables
+    public int NumberOfDeathsBeforeReset = 3;
+    #endregion
 
     #region Distance Checks
 

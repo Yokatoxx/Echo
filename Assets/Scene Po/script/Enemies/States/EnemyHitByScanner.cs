@@ -11,7 +11,7 @@ public class EnemyHitByScanner : EnemyState
     public override void EnterState()
     {
         base.EnterState();
-        Debug.Log("hit by scanner state");
+
         enemy.MoveEnemy(enemy.patrolSpeed, enemy.scannerHit.transform);
         enemy.IsHitByScanner = false;
 
@@ -37,6 +37,10 @@ public class EnemyHitByScanner : EnemyState
         if (enemy.IsWithinPickUpDistance)
         {
             enemy.stateMachine.ChangeState(enemy.pickUpState);
+        }
+        if (enemy.IsWithinAttackDistance)
+        {
+            enemy.stateMachine.ChangeState(enemy.attackState);
         }
 
 

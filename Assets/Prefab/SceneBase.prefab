@@ -373,6 +373,37 @@ Transform:
   - {fileID: 3883997593152936598}
   m_Father: {fileID: 4333818056368125457}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &5487223324523783015
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 3109145084705097028}
+  m_Layer: 0
+  m_Name: SpawnPoint
+  m_TagString: SpawnPoint
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &3109145084705097028
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5487223324523783015}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 6052529947756055440}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &5488997406311536725
 GameObject:
   m_ObjectHideFlags: 0
@@ -576,13 +607,6 @@ MonoBehaviour:
       Data3: -736802886
       Data4: -2053868164
     Path: event:/bumpECHO
-  SprintEvent:
-    Guid:
-      Data1: -1761936183
-      Data2: 1133959149
-      Data3: -1654721861
-      Data4: -941373666
-    Path: event:/Runonlysouffle
   EcholocationEvent:
     Guid:
       Data1: -1401999917
@@ -591,9 +615,6 @@ MonoBehaviour:
       Data4: 15275210
     Path: event:/EchoSound
   walkRate: 0.5
-  sprintRate: 0.3
-  sprintVolumeParam: SprintVolume
-  fadeInDuration: 0.2
   collisionCooldown: 0.5
   echolocationCooldown: 0.2
 --- !u!1 &6197984337437439450
@@ -1124,6 +1145,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
+  - {fileID: 3109145084705097028}
   - {fileID: 854835756320132116}
   - {fileID: 5974195234459189554}
   - {fileID: 5082088486480305546}
@@ -1623,7 +1645,45 @@ MonoBehaviour:
   maxDuration: 4
   propagationSpeed: 15
   fadeOutSpeed: 1.5
+  echoColor: {r: 0, g: 0.5, b: 1, a: 0.5}
+  intersectionColor: {r: 0, g: 1, b: 1, a: 1}
   maxChargeTime: 2
+  intersectionColorEnd: {r: 1, g: 0.2, b: 0, a: 1}
+  spawnCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 2
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    - serializedVersion: 3
+      time: 0.3
+      value: 0.5
+      inSlope: 1
+      outSlope: 1
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    - serializedVersion: 3
+      time: 1
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  echoCooldown: 0.25
+  maxActiveEchos: 5
   chargeIndicatorFill: {fileID: 439010696948584315}
 --- !u!4 &4333818056368125457 stripped
 Transform:

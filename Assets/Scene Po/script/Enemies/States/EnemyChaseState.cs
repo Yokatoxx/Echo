@@ -25,7 +25,6 @@ public class EnemyChaseState : EnemyState
     {
         base.EnterState();
 
-        Debug.Log("going to chase state");
 
     }
 
@@ -37,6 +36,11 @@ public class EnemyChaseState : EnemyState
     public override void FrameUpdate()
     {
         base.FrameUpdate();
+
+        if (enemy.IsWithinAttackDistance)
+        {
+            enemy.stateMachine.ChangeState(enemy.attackState);
+        }
 
         enemy.MoveEnemy(enemy.chaseSpeed, playerTransform);
 

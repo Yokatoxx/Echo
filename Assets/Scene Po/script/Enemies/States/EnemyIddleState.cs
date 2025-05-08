@@ -20,7 +20,6 @@ public class EnemyIddleState : EnemyState
     {
         base.EnterState();
 
-        Debug.Log("going to iddle state");
         exitTimer = 0f;
     }
 
@@ -41,6 +40,10 @@ public class EnemyIddleState : EnemyState
         if (enemy.IsHitByScanner)
         {
             enemy.stateMachine.ChangeState(enemy.hitByScannerState);
+        }
+        if (enemy.IsWithinAttackDistance)
+        {
+            enemy.stateMachine.ChangeState(enemy.attackState);
         }
 
         exitTimer += Time.deltaTime;

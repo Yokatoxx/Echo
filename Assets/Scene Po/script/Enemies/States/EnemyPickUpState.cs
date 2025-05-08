@@ -26,7 +26,6 @@ public class EnemyPickUpState : EnemyState
     {
         base.EnterState();
 
-        Debug.Log("going to pick up state");
 
         isPickedUp = false;
 
@@ -54,6 +53,10 @@ public class EnemyPickUpState : EnemyState
         if (enemy.IsAggroed)
         {
             enemy.stateMachine.ChangeState(enemy.chaseState);
+        }
+        if (enemy.IsWithinAttackDistance)
+        {
+            enemy.stateMachine.ChangeState(enemy.attackState);
         }
 
 
