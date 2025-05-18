@@ -32,11 +32,11 @@ Material:
     - _Cutoff: 0.5
     - _Float0: 0.03
     - _Noise_Scale: 10.27
-    - __dirty: 0
+    - __dirty: 1
     - _noisescale: -0.4
-    - _size: 1.54
+    - _size: 1.5
     - _timescale: 1.73
     m_Colors:
     - _Color: {r: 0.91194963, g: 0, b: 0, a: 1}
-    - _MainColor: {r: 0.6178847, g: 2.1364303, b: 3.221107, a: 0}
+    - _MainColor: {r: 0.52003926, g: 1.3549136, b: 1.6055589, a: 0}
   m_BuildTextureStacks: []
