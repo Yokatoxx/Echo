@@ -17,6 +17,7 @@ public class EnemyAttackDistanceCheck : MonoBehaviour
 
         if (other.gameObject.CompareTag("Player"))
         {
+            Debug.Log("Player is in attack distance");
             enemy.SetAttackDistanceBool(true);
         }
 
@@ -27,11 +28,6 @@ public class EnemyAttackDistanceCheck : MonoBehaviour
         }
     }
 
-    private void OnTriggerStay(Collider other)
-    {
-        if (other.gameObject.CompareTag("Player"))
-        {
-            enemy.SetAttackDistanceBool(true);
-        }
-    }
+
+
 }

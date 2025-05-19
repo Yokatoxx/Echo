@@ -36,15 +36,6 @@ public class EnemyAggroCheck : MonoBehaviour
 
     }
 
-    private void OnTriggerExit(Collider other)
-    {
-        if (other.gameObject == playerTarget)
-        {
-            enemy.SetAggroStatus(false);
-        }
-
-    }
-
     private void OnTriggerStay(Collider other)
     {
 

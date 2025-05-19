@@ -31,6 +31,8 @@ public class EnemyChaseState : EnemyState
     public override void ExitState()
     {
         base.ExitState();
+
+        enemy.SetAggroStatus(false);
     }
 
     public override void FrameUpdate()

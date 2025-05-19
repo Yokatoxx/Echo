@@ -23,49 +23,31 @@ public class EnemyAttackState : EnemyState
     {
         base.EnterState();
 
-        enemy.SetAttackDistanceBool(false);
+        Debug.Log("Player is dead " + numberOfDeaths);
 
         if (numberOfDeaths < enemy.NumberOfDeathsBeforeReset)
         {
-            respawnPlayer();
+            player.transform.position = spawnPoint.transform.position;
+            numberOfDeaths = numberOfDeaths + 1;
+
+            WaitForFixedUpdate waitForFixedUpdate = new WaitForFixedUpdate();
+
+            enemy.stateMachine.ChangeState(enemy.iddleState);
         }
         else
         {
-            restart();
+            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+            Debug.Log("Game Over");
         }
+
 
     }
 
     public override void ExitState()
     {
         base.ExitState();
-        Debug.Log(numberOfDeaths + "Deaths");
-    }
 
-    public override void FrameUpdate()
-    {
-        base.FrameUpdate();
-
-
-    }
-
-    public override void PhysicsUpdate()
-    {
-        base.PhysicsUpdate();
-    }
-
-    public void respawnPlayer()
-    {
-        player.transform.position = spawnPoint.transform.position;
-        numberOfDeaths++;
-        Debug.Log("Player respawned");
-        enemy.stateMachine.ChangeState(enemy.iddleState);
-    }
-
-    public void restart()
-    {
-        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
-        Debug.Log("Game Over");
+        enemy.SetAttackDistanceBool(false);
 
     }
 

@@ -139,5 +139,4 @@ public class Enemy : MonoBehaviour, IEnemyMoveable, ItriggerCheckable
         attackPlayer,
     }
 
-
 }
