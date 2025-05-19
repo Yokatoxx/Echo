@@ -14,6 +14,9 @@ TagManager:
   - PatrolPoint
   - RepeatSound
   - SpawnPoint
+  - WoodSurface
+  - TileSurface
+  - CarpetSurface
   layers:
   - Default
   - TransparentFX

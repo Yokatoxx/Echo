@@ -85,7 +85,6 @@ public class AudioManager : MonoBehaviour
     //     sprintInstance.setParameterByName(sprintVolumeParam, 0.0f);
     // }
 
-
     void OnDestroy()
     {
         // if (sprintInstance.isValid())
@@ -106,6 +105,7 @@ public class AudioManager : MonoBehaviour
             RuntimeManager.PlayOneShotAttached(FootstepEvent, player);
         }
     }
+
     public void PlayDecorCollisionSound(Vector3 collisionPoint)
     {
         if (Time.time - lastCollisionTime < collisionCooldown)
@@ -114,6 +114,7 @@ public class AudioManager : MonoBehaviour
         RuntimeManager.PlayOneShot(DecorCollisionEvent, collisionPoint);
         lastCollisionTime = Time.time;
     }
+
     public void PlayEcholocationSound(Vector3 position)
     {
         if (Time.time - lastEcholocationTime < echolocationCooldown)

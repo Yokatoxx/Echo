@@ -24,6 +24,50 @@ MonoBehaviour:
   IsGlobal: 0
   Labels: []
   Exists: 1
+--- !u!114 &-5924152314170765233
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/PropsSound.bank
+  m_EditorClassIdentifier: 
+  Path: Assets/Fmod/Echo/Build/Desktop/PropsSound.bank
+  Name: PropsSound
+  StudioPath: bank:/PropsSound
+  lastModified: 638832089477137425
+  FileSizes:
+  - Name: Desktop
+    Value: 148960
+  Exists: 1
+--- !u!114 &-5207570207506519584
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Telecommande/ImpactForce
+  m_EditorClassIdentifier: 
+  Name: ImpactForce
+  StudioPath: 
+  Min: 0
+  Max: 1
+  Default: 0
+  ID:
+    data1: 2279610422
+    data2: 2514396075
+  Type: 0
+  IsGlobal: 0
+  Labels: []
+  Exists: 1
 --- !u!114 &-3108050575595576678
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -39,10 +83,10 @@ MonoBehaviour:
   Path: Assets/Fmod/Echo/Build/Desktop/Master.strings.bank
   Name: Master.strings
   StudioPath: bank:/Master.strings
-  lastModified: 638783811185237926
+  lastModified: 638832089476819626
   FileSizes:
   - Name: Desktop
-    Value: 1034
+    Value: 1276
   Exists: 1
 --- !u!114 &-2665417264103822756
 MonoBehaviour:
@@ -69,6 +113,33 @@ MonoBehaviour:
   IsOneShot: 1
   Parameters:
   - {fileID: -6656897787873656061}
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 0
+--- !u!114 &-2499341690882640231
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Figurine
+  m_EditorClassIdentifier: 
+  Path: event:/Figurine
+  Guid:
+    Data1: 1659319492
+    Data2: 1096958418
+    Data3: 1946371762
+    Data4: 1023691036
+  Banks:
+  - {fileID: -5924152314170765233}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
   MinDistance: 1
   MaxDistance: 20
   Length: 0
@@ -141,18 +212,21 @@ MonoBehaviour:
   EditorBanks:
   - {fileID: -3108050575595576678}
   - {fileID: 9039161347843217424}
+  - {fileID: -5924152314170765233}
   EditorEvents:
   - {fileID: -923688291506273169}
   - {fileID: 8153455335141040618}
   - {fileID: -2665417264103822756}
   - {fileID: 2238677741680510753}
   - {fileID: -1819593529638836395}
+  - {fileID: 6253362986766903196}
+  - {fileID: -2499341690882640231}
   EditorParameters: []
   MasterBanks:
   - {fileID: 9039161347843217424}
   StringsBanks:
   - {fileID: -3108050575595576678}
-  cacheTime: 638783811185237926
+  cacheTime: 638832089477137425
   cacheVersion: 131623
 --- !u!114 &2238677741680510753
 MonoBehaviour:
@@ -181,6 +255,59 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 0
+--- !u!114 &6253362986766903196
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Telecommande
+  m_EditorClassIdentifier: 
+  Path: event:/Telecommande
+  Guid:
+    Data1: 1454425273
+    Data2: 1089294402
+    Data3: 74614177
+    Data4: -1042876961
+  Banks:
+  - {fileID: -5924152314170765233}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters:
+  - {fileID: -5207570207506519584}
+  - {fileID: 7963430243968055290}
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 0
+--- !u!114 &7963430243968055290
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Telecommande/SurfaceType
+  m_EditorClassIdentifier: 
+  Name: SurfaceType
+  StudioPath: 
+  Min: 0
+  Max: 3
+  Default: 0
+  ID:
+    data1: 84249155
+    data2: 2801249024
+  Type: 0
+  IsGlobal: 0
+  Labels: []
+  Exists: 1
 --- !u!114 &8153455335141040618
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -223,7 +350,7 @@ MonoBehaviour:
   Path: Assets/Fmod/Echo/Build/Desktop/Master.bank
   Name: Master
   StudioPath: bank:/Master
-  lastModified: 638783811185227486
+  lastModified: 638832089476791749
   FileSizes:
   - Name: Desktop
     Value: 355008

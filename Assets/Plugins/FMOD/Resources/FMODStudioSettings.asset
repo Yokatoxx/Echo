@@ -706,7 +706,8 @@ MonoBehaviour:
   Plugins: []
   MasterBanks:
   - Master
-  Banks: []
+  Banks:
+  - PropsSound
   BanksToLoad: []
   LiveUpdatePort: 9264
   EnableMemoryTracking: 0
