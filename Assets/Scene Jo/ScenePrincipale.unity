@@ -17,7 +17,7 @@ RenderSettings:
   m_Fog: 1
   m_FogColor: {r: 0, g: 0, b: 0, a: 1}
   m_FogMode: 3
-  m_FogDensity: 0.25
+  m_FogDensity: 0.21
   m_LinearFogStart: 0
   m_LinearFogEnd: 300
   m_AmbientSkyColor: {r: 0, g: 0, b: 0, a: 1}
@@ -6494,15 +6494,15 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: -8679921383154817045, guid: 3658221473c477a4fb1dfbdf337998af, type: 3}
       propertyPath: m_LocalScale.x
-      value: 905.82
+      value: 1500
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 3658221473c477a4fb1dfbdf337998af, type: 3}
       propertyPath: m_LocalScale.y
-      value: 905.82
+      value: 1500
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 3658221473c477a4fb1dfbdf337998af, type: 3}
       propertyPath: m_LocalScale.z
-      value: 905.82
+      value: 1500
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 3658221473c477a4fb1dfbdf337998af, type: 3}
       propertyPath: m_LocalPosition.x
@@ -6554,6 +6554,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 3658221473c477a4fb1dfbdf337998af, type: 3}
       propertyPath: m_Layer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 3658221473c477a4fb1dfbdf337998af, type: 3}
+      propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 3658221473c477a4fb1dfbdf337998af, type: 3}
@@ -7565,6 +7569,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 3658221473c477a4fb1dfbdf337998af, type: 3}
       propertyPath: m_Layer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 3658221473c477a4fb1dfbdf337998af, type: 3}
+      propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
@@ -12837,6 +12845,10 @@ PrefabInstance:
       propertyPath: m_Layer
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 3658221473c477a4fb1dfbdf337998af, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -13875,15 +13887,15 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: -8679921383154817045, guid: 3658221473c477a4fb1dfbdf337998af, type: 3}
       propertyPath: m_LocalScale.x
-      value: 1050
+      value: 1000
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 3658221473c477a4fb1dfbdf337998af, type: 3}
       propertyPath: m_LocalScale.y
-      value: 1050
+      value: 1000
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 3658221473c477a4fb1dfbdf337998af, type: 3}
       propertyPath: m_LocalScale.z
-      value: 1050
+      value: 1000
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 3658221473c477a4fb1dfbdf337998af, type: 3}
       propertyPath: m_LocalPosition.x
@@ -13939,6 +13951,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 3658221473c477a4fb1dfbdf337998af, type: 3}
       propertyPath: m_Layer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 3658221473c477a4fb1dfbdf337998af, type: 3}
+      propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
@@ -16954,15 +16970,15 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: -8679921383154817045, guid: 3658221473c477a4fb1dfbdf337998af, type: 3}
       propertyPath: m_LocalScale.x
-      value: 1000
+      value: 900
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 3658221473c477a4fb1dfbdf337998af, type: 3}
       propertyPath: m_LocalScale.y
-      value: 1000
+      value: 900
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 3658221473c477a4fb1dfbdf337998af, type: 3}
       propertyPath: m_LocalScale.z
-      value: 1000
+      value: 900
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 3658221473c477a4fb1dfbdf337998af, type: 3}
       propertyPath: m_LocalPosition.x
@@ -17018,6 +17034,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 3658221473c477a4fb1dfbdf337998af, type: 3}
       propertyPath: m_Layer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 3658221473c477a4fb1dfbdf337998af, type: 3}
+      propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
@@ -20488,15 +20508,15 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: -8679921383154817045, guid: 3658221473c477a4fb1dfbdf337998af, type: 3}
       propertyPath: m_LocalScale.x
-      value: 1100
+      value: 650
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 3658221473c477a4fb1dfbdf337998af, type: 3}
       propertyPath: m_LocalScale.y
-      value: 1100
+      value: 650
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 3658221473c477a4fb1dfbdf337998af, type: 3}
       propertyPath: m_LocalScale.z
-      value: 1100
+      value: 650
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 3658221473c477a4fb1dfbdf337998af, type: 3}
       propertyPath: m_LocalPosition.x
@@ -20552,6 +20572,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 3658221473c477a4fb1dfbdf337998af, type: 3}
       propertyPath: m_Layer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 3658221473c477a4fb1dfbdf337998af, type: 3}
+      propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
@@ -31844,15 +31868,15 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: -8679921383154817045, guid: 3658221473c477a4fb1dfbdf337998af, type: 3}
       propertyPath: m_LocalScale.x
-      value: 900
+      value: 750
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 3658221473c477a4fb1dfbdf337998af, type: 3}
       propertyPath: m_LocalScale.y
-      value: 900
+      value: 750
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 3658221473c477a4fb1dfbdf337998af, type: 3}
       propertyPath: m_LocalScale.z
-      value: 900
+      value: 750
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 3658221473c477a4fb1dfbdf337998af, type: 3}
       propertyPath: m_LocalPosition.x
@@ -31908,6 +31932,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 3658221473c477a4fb1dfbdf337998af, type: 3}
       propertyPath: m_Layer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 3658221473c477a4fb1dfbdf337998af, type: 3}
+      propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
