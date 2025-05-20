@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.02.00">
+	<object class="AudioFile" id="{ab0307c2-3b6f-49ab-9411-c38017b858ed}">
+		<property name="assetPath">
+			<value>Livre_Carrelage_V3.mp3</value>
+		</property>
+		<property name="frequencyInKHz">
+			<value>44.0999985</value>
+		</property>
+		<property name="channelCount">
+			<value>2</value>
+		</property>
+		<property name="length">
+			<value>1.3322448979591837</value>
+		</property>
+		<relationship name="masterAssetFolder">
+			<destination>{3887b6ae-b5c7-4e18-93af-40d4d939a416}</destination>
+		</relationship>
+	</object>
+</objects>

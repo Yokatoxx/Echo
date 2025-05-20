@@ -1,35 +1,39 @@
 using UnityEngine;
 using Cinemachine;
+using FMODUnity;
 
 [RequireComponent(typeof(CinemachineImpulseSource))]
 public class EnemyProximityShake : MonoBehaviour
 {
     [Header("Setup")]
-    [Tooltip("Assignez le Transform du joueur ici dans l'inspecteur.")]
     public Transform playerTransform;
     private CinemachineImpulseSource impulseSource;
 
     [Header("Shake Parameters")]
-    [Tooltip("Distance maximale à laquelle le tremblement commence.")]
     public float maxDistance = 15f;
-    [Tooltip("Distance à laquelle le tremblement atteint son maximum.")]
     public float minDistance = 2f;
-    [Tooltip("Force maximale de l'impulsion de tremblement à la distance minimale.")]
     public float maxShakeForce = 0.5f;
-    [Tooltip("Fréquence de génération d'une impulsion (en secondes).")]
     public float shakeInterval = 0.25f;
 
     [Header("Movement Detection")]
-    [Tooltip("Seuil de distance minimal pour considérer que l'ennemi bouge (en unités/frame). Ajustez si nécessaire.")]
     public float movementThreshold = 0.01f;
 
+    [Header("FMOD Audio")]
+    [SerializeField] private EventReference heartbeatEvent;
+    [SerializeField] private string distanceParameterName = "Distance";
+    [SerializeField] private float audioUpdateInterval = 0.1f;
+
     private float timeSinceLastShake = 0f;
-    private Vector3 lastPosition; // Pour stocker la position de la frame précédente
+    private Vector3 lastPosition;
+    private FMOD.Studio.EventInstance heartbeatInstance;
+    private float timeSinceLastAudioUpdate = 0f;
+    private bool isHeartbeatPlaying = false;
 
     void Start()
     {
         impulseSource = GetComponent<CinemachineImpulseSource>();
-        lastPosition = transform.position; 
+        lastPosition = transform.position;
+        heartbeatInstance = RuntimeManager.CreateInstance(heartbeatEvent);
 
         if (playerTransform == null)
         {
@@ -61,21 +65,19 @@ public class EnemyProximityShake : MonoBehaviour
             return;
         }
 
-        // --- Détection du Mouvement ---
+        // Détection du Mouvement
         float distanceMoved = Vector3.Distance(transform.position, lastPosition);
         bool isMoving = distanceMoved > movementThreshold;
-        // Met à jour la position pour la prochaine frame
         lastPosition = transform.position;
-        // --- Fin Détection Mouvement ---
-
 
         timeSinceLastShake += Time.deltaTime;
+        timeSinceLastAudioUpdate += Time.deltaTime;
 
+        // Mise à jour de la caméra (tremblement)
         if (timeSinceLastShake >= shakeInterval)
         {
             float distance = Vector3.Distance(transform.position, playerTransform.position);
 
-            // Vérifie si le joueur est dans la portée ET si l'ennemi bouge
             if (distance <= maxDistance && isMoving)
             {
                 float intensityFactor = Mathf.Clamp01(1f - Mathf.InverseLerp(minDistance, maxDistance, distance));
@@ -86,14 +88,53 @@ public class EnemyProximityShake : MonoBehaviour
                     impulseSource.GenerateImpulseWithForce(currentForce);
                 }
 
-                timeSinceLastShake = 0f; // Réinitialise le timer seulement si une impulsion a été générée
-            }
-            else if (distance > maxDistance || !isMoving) // Si hors de portée OU immobile
-            {
-                // Réinitialise aussi le timer si on est hors de portée ou immobile
-                // pour éviter une impulsion dès qu'on re-rentre dans la zone ou qu'on se remet à bouger.
                 timeSinceLastShake = 0f;
             }
+            else if (distance > maxDistance || !isMoving)
+            {
+                timeSinceLastShake = 0f;
+            }
+        }
+
+        // Mise à jour du son (battement cardiaque)
+        if (timeSinceLastAudioUpdate >= audioUpdateInterval)
+        {
+            UpdateHeartbeatSound();
+            timeSinceLastAudioUpdate = 0f;
+        }
+    }
+
+    private void UpdateHeartbeatSound()
+    {
+        float distance = Vector3.Distance(transform.position, playerTransform.position);
+
+        if (distance <= maxDistance)
+        {
+            // Calcul de l'intensité entre 0 (loin) et 1 (proche)
+            float distanceParameter = Mathf.Clamp01(1f - Mathf.InverseLerp(minDistance, maxDistance, distance));
+
+            if (!isHeartbeatPlaying)
+            {
+                heartbeatInstance.start();
+                isHeartbeatPlaying = true;
+            }
+
+            heartbeatInstance.setParameterByName(distanceParameterName, distanceParameter);
+            RuntimeManager.AttachInstanceToGameObject(heartbeatInstance, playerTransform);
+        }
+        else if (isHeartbeatPlaying)
+        {
+            heartbeatInstance.stop(FMOD.Studio.STOP_MODE.ALLOWFADEOUT);
+            isHeartbeatPlaying = false;
+        }
+    }
+
+    void OnDestroy()
+    {
+        if (heartbeatInstance.isValid())
+        {
+            heartbeatInstance.stop(FMOD.Studio.STOP_MODE.ALLOWFADEOUT);
+            heartbeatInstance.release();
         }
     }
 }

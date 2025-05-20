@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.02.00">
+	<object class="AudioFile" id="{8f57b24d-5e81-4c66-b854-f7d3ac04dc40}">
+		<property name="assetPath">
+			<value>Peluche_Carrelage_V4.mp3</value>
+		</property>
+		<property name="frequencyInKHz">
+			<value>44.0999985</value>
+		</property>
+		<property name="channelCount">
+			<value>2</value>
+		</property>
+		<property name="length">
+			<value>1.4106122448979592</value>
+		</property>
+		<relationship name="masterAssetFolder">
+			<destination>{3887b6ae-b5c7-4e18-93af-40d4d939a416}</destination>
+		</relationship>
+	</object>
+</objects>

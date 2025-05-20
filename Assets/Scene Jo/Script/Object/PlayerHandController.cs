@@ -6,22 +6,27 @@ public class PlayerHandController : MonoBehaviour
     [Header("Paramètres d'interaction")]
     public float interactionDistance = 3f;
     public LayerMask interactableLayers;
-    public KeyCode pickupRightKey = KeyCode.E;
-    public KeyCode pickupLeftKey = KeyCode.Q;
-    public KeyCode dropRightKey = KeyCode.R;
-    public KeyCode dropLeftKey = KeyCode.F;
+    public KeyCode pickupKey = KeyCode.E;
+    // Supprimé les paramètres liés au lancer
 
     [Header("Mains")]
     public Transform rightHandPosition;
     public Transform leftHandPosition;
 
-    [Header("Affichage d'informations")]
-    public bool showInteractionPrompt = true;
-    public Text interactionPromptText;
+    [Header("Images des objets")]
+    public Image rightHandItemImage;  // Image pour la main droite
+    public Image leftHandItemImage;   // Image pour la main gauche
+
+    [Header("Surbrillance des mains")]
+    public Image rightHandHighlight;  // Surbrillance de la main droite
+    public Image leftHandHighlight;   // Surbrillance de la main gauche
 
     private Camera mainCamera;
     public Collectable rightHeldObject;
-    private Collectable leftHeldObject;
+    [HideInInspector] // Rendue accessible depuis ThrowObjectHand
+    public Collectable leftHeldObject;
+    [HideInInspector] // Rendue accessible depuis ThrowObjectHand
+    public int selectedHandIndex = 0; // 0 = main droite, 1 = main gauche
     private RaycastHit hitInfo;
 
     void Start()
@@ -35,8 +40,14 @@ public class PlayerHandController : MonoBehaviour
         if (leftHandPosition != null)
             leftHandPosition.localScale = Vector3.one;
 
-        if (interactionPromptText != null)
-            interactionPromptText.gameObject.SetActive(false);
+        // Désactiver les images d'objets au démarrage
+        if (rightHandItemImage != null)
+            rightHandItemImage.gameObject.SetActive(false);
+        if (leftHandItemImage != null)
+            leftHandItemImage.gameObject.SetActive(false);
+
+        // Mettre à jour les surbrillances des mains
+        UpdateSelectedHandHighlights();
     }
 
     private void SetupHandTransform(ref Transform handTransform, string handName, Vector3 defaultPosition)
@@ -55,82 +66,136 @@ public class PlayerHandController : MonoBehaviour
     {
         HandleRaycastInteraction();
         HandleInputs();
+        UpdateHandItemImages();
+    }
+
+    private void UpdateSelectedHandHighlights()
+    {
+        // Gérer la surbrillance de la main droite
+        if (rightHandHighlight != null)
+        {
+            rightHandHighlight.gameObject.SetActive(selectedHandIndex == 0 && rightHeldObject != null);
+        }
+
+        // Gérer la surbrillance de la main gauche
+        if (leftHandHighlight != null)
+        {
+            leftHandHighlight.gameObject.SetActive(selectedHandIndex == 1 && leftHeldObject != null);
+        }
+    }
+
+    private void UpdateHandItemImages()
+    {
+        // Image de la main droite
+        if (rightHandItemImage != null)
+        {
+            rightHandItemImage.gameObject.SetActive(rightHeldObject != null);
+        }
+
+        // Image de la main gauche
+        if (leftHandItemImage != null)
+        {
+            leftHandItemImage.gameObject.SetActive(leftHeldObject != null);
+        }
     }
 
     private void HandleRaycastInteraction()
     {
         Ray ray = mainCamera.ScreenPointToRay(new Vector3(Screen.width / 2, Screen.height / 2, 0));
-        bool hit = Physics.Raycast(ray, out hitInfo, interactionDistance, interactableLayers);
-
-        if (hit && hitInfo.collider.TryGetComponent<Collectable>(out Collectable collectable))
-        {
-            if (showInteractionPrompt)
-            {
-                string promptMessage = "";
-
-                if (rightHeldObject == null)
-                    promptMessage += "Appuyez sur " + pickupRightKey + " pour ramasser avec la main droite. ";
-
-                if (leftHeldObject == null)
-                    promptMessage += "Appuyez sur " + pickupLeftKey + " pour ramasser avec la main gauche.";
-
-                if (!string.IsNullOrEmpty(promptMessage) && interactionPromptText != null)
-                {
-                    interactionPromptText.text = promptMessage;
-                    interactionPromptText.gameObject.SetActive(true);
-                }
-                else
-                {
-                    Debug.Log(promptMessage);
-                }
-            }
-        }
-        else if (interactionPromptText != null)
-        {
-            interactionPromptText.gameObject.SetActive(false);
-        }
+        Physics.Raycast(ray, out hitInfo, interactionDistance, interactableLayers);
     }
 
     private void HandleInputs()
     {
-        if (Input.GetKeyDown(pickupRightKey) && rightHeldObject == null)
-        { 
-            TryPickupObject(rightHandPosition, ref rightHeldObject);
-
-        }
-
-        if (Input.GetKeyDown(pickupLeftKey) && leftHeldObject == null)
+        // Ramasser un objet avec la touche E
+        if (Input.GetKeyDown(pickupKey))
         {
-            TryPickupObject(leftHandPosition, ref leftHeldObject);
+            TryPickupObject();
         }
 
-        if (rightHeldObject != null && Input.GetKeyDown(dropRightKey))
+        // Changer d'objet sélectionné avec la molette de la souris
+        float scrollWheel = Input.GetAxis("Mouse ScrollWheel");
+        if (scrollWheel != 0)
         {
-            rightHeldObject.Drop();
-            rightHeldObject = null;
+            TrySelectAvailableObject();
         }
 
-        if (leftHeldObject != null && Input.GetKeyDown(dropLeftKey))
-        {
-            leftHeldObject.Drop();
-            leftHeldObject = null;
-        }
+        // Supprimé le code de lancement d'objets
     }
 
-    private void TryPickupObject(Transform handTransform, ref Collectable heldObjectRef)
+    // Rendue publique pour être accessible depuis ThrowObjectHand
+    public void TrySelectAvailableObject()
     {
-        if (Physics.Raycast(mainCamera.ScreenPointToRay(new Vector3(Screen.width / 2, Screen.height / 2, 0)),
-                out RaycastHit hit, interactionDistance, interactableLayers))
+        // Si les deux mains ont un objet, basculer entre les deux
+        if (rightHeldObject != null && leftHeldObject != null)
+        {
+            SwitchSelectedHand();
+        }
+        // Si seulement la main droite a un objet, la sélectionner
+        else if (rightHeldObject != null)
+        {
+            selectedHandIndex = 0;
+            UpdateSelectedHandHighlights();
+        }
+        // Si seulement la main gauche a un objet, la sélectionner
+        else if (leftHeldObject != null)
+        {
+            selectedHandIndex = 1;
+            UpdateSelectedHandHighlights();
+        }
+        // Si aucune main n'a d'objet, ne rien faire
+    }
+
+    private void SwitchSelectedHand()
+    {
+        // Alterner entre main droite (0) et main gauche (1)
+        selectedHandIndex = (selectedHandIndex == 0) ? 1 : 0;
+        UpdateSelectedHandHighlights();
+    }
+
+    private void TryPickupObject()
+    {
+        Ray ray = mainCamera.ScreenPointToRay(new Vector3(Screen.width / 2, Screen.height / 2, 0));
+
+        if (Physics.Raycast(ray, out RaycastHit hit, interactionDistance, interactableLayers))
         {
             if (hit.collider.TryGetComponent<Collectable>(out Collectable collectable) && collectable.canBePickedUp)
             {
-                collectable.Pickup(handTransform);
-                heldObjectRef = collectable;
+                // Détermine quelle main est disponible
+                if (rightHeldObject == null)
+                {
+                    // Main droite libre, l'objet va dans la main droite
+                    PickupInHand(collectable, rightHandPosition, ref rightHeldObject);
+                    selectedHandIndex = 0; // Sélectionner automatiquement la main droite
+                    Debug.Log("Objet ramassé dans la main DROITE: " + collectable.name);
+                }
+                else if (leftHeldObject == null)
+                {
+                    // Main droite occupée mais main gauche libre
+                    PickupInHand(collectable, leftHandPosition, ref leftHeldObject);
+                    selectedHandIndex = 1; // Sélectionner automatiquement la main gauche
+                    Debug.Log("Objet ramassé dans la main GAUCHE: " + collectable.name);
+                }
+                // Si les deux mains sont occupées, ne rien faire
 
-                if (interactionPromptText != null)
-                    interactionPromptText.gameObject.SetActive(false);
+                // Mettre à jour les surbrillances après avoir ramassé un objet
+                UpdateSelectedHandHighlights();
             }
         }
+    }
+
+    private void PickupInHand(Collectable collectable, Transform handTransform, ref Collectable handReference)
+    {
+        // Prévenir que l'objet va être ramassé (pour les sons)
+        ThrowableSoundObject throwableSound = collectable.GetComponent<ThrowableSoundObject>();
+        if (throwableSound != null)
+        {
+            throwableSound.OnGrab();
+        }
+
+        // Ramasser l'objet
+        collectable.Pickup(handTransform);
+        handReference = collectable;
     }
 
     void OnDrawGizmos()

@@ -32,7 +32,7 @@ Material:
     - _Cutoff: 0.5
     - _Float0: 0.03
     - _Noise_Scale: 10.27
-    - __dirty: 1
+    - __dirty: 0
     - _noisescale: -0.4
     - _size: 1.5
     - _timescale: 1.73
