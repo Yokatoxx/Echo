@@ -9,7 +9,7 @@ Material:
   m_PrefabAsset: {fileID: 0}
   m_Name: materiau objet 2
   m_Shader: {fileID: 4800000, guid: 353d81c471ad0874f9cb608d5b59cc8d, type: 3}
-  m_Parent: {fileID: 2100000, guid: 97fd039bf7124e44bab76ecb85d9c083, type: 2}
+  m_Parent: {fileID: 2100000, guid: 4570aa67bc7616846ac08867fd53b10f, type: 2}
   m_ModifiedSerializedProperties: 18
   m_ValidKeywords: []
   m_InvalidKeywords: []
@@ -35,5 +35,5 @@ Material:
     - __dirty: 0
     - _size: 1.3
     m_Colors:
-    - _MainColor: {r: 1.0661225, g: 3.9215686, b: 0.9725489, a: 1}
+    - _MainColor: {r: 0.27469128, g: 1.3584906, b: 0.24350289, a: 1}
   m_BuildTextureStacks: []
