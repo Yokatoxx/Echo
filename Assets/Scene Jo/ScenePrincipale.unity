@@ -3815,6 +3815,22 @@ PrefabInstance:
       propertyPath: m_Name
       value: ObjetARamasser OriginPos (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 8089905341293052128, guid: ecefbf195f9d30b45aa54f07f3a6b4f8, type: 3}
+      propertyPath: lerpSpeed
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 8089905341293052128, guid: ecefbf195f9d30b45aa54f07f3a6b4f8, type: 3}
+      propertyPath: returnDelay
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 8089905341293052128, guid: ecefbf195f9d30b45aa54f07f3a6b4f8, type: 3}
+      propertyPath: materialCutoffRestingValue
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 8089905341293052128, guid: ecefbf195f9d30b45aa54f07f3a6b4f8, type: 3}
+      propertyPath: materialCutoffScannerTargetValue
+      value: 0.3
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -13747,6 +13763,22 @@ PrefabInstance:
       propertyPath: m_Name
       value: ObjetARamasser OriginPos (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 8089905341293052128, guid: ecefbf195f9d30b45aa54f07f3a6b4f8, type: 3}
+      propertyPath: lerpSpeed
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 8089905341293052128, guid: ecefbf195f9d30b45aa54f07f3a6b4f8, type: 3}
+      propertyPath: returnDelay
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 8089905341293052128, guid: ecefbf195f9d30b45aa54f07f3a6b4f8, type: 3}
+      propertyPath: materialCutoffRestingValue
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 8089905341293052128, guid: ecefbf195f9d30b45aa54f07f3a6b4f8, type: 3}
+      propertyPath: materialCutoffScannerTargetValue
+      value: 0.3
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -19597,6 +19629,22 @@ PrefabInstance:
     - target: {fileID: 7013217525737275675, guid: ecefbf195f9d30b45aa54f07f3a6b4f8, type: 3}
       propertyPath: m_Name
       value: ObjetARamasser OriginPos (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8089905341293052128, guid: ecefbf195f9d30b45aa54f07f3a6b4f8, type: 3}
+      propertyPath: lerpSpeed
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 8089905341293052128, guid: ecefbf195f9d30b45aa54f07f3a6b4f8, type: 3}
+      propertyPath: returnDelay
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 8089905341293052128, guid: ecefbf195f9d30b45aa54f07f3a6b4f8, type: 3}
+      propertyPath: materialCutoffRestingValue
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 8089905341293052128, guid: ecefbf195f9d30b45aa54f07f3a6b4f8, type: 3}
+      propertyPath: materialCutoffScannerTargetValue
+      value: 0.3
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
