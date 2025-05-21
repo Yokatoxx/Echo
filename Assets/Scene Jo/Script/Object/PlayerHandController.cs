@@ -7,25 +7,24 @@ public class PlayerHandController : MonoBehaviour
     public float interactionDistance = 3f;
     public LayerMask interactableLayers;
     public KeyCode pickupKey = KeyCode.E;
-    // Supprimé les paramètres liés au lancer
 
     [Header("Mains")]
     public Transform rightHandPosition;
     public Transform leftHandPosition;
 
     [Header("Images des objets")]
-    public Image rightHandItemImage;  // Image pour la main droite
-    public Image leftHandItemImage;   // Image pour la main gauche
+    public Image rightHandItemImage;
+    public Image leftHandItemImage;
 
     [Header("Surbrillance des mains")]
-    public Image rightHandHighlight;  // Surbrillance de la main droite
-    public Image leftHandHighlight;   // Surbrillance de la main gauche
+    public Image rightHandHighlight;
+    public Image leftHandHighlight; 
 
     private Camera mainCamera;
     public Collectable rightHeldObject;
-    [HideInInspector] // Rendue accessible depuis ThrowObjectHand
+    [HideInInspector]
     public Collectable leftHeldObject;
-    [HideInInspector] // Rendue accessible depuis ThrowObjectHand
+    [HideInInspector]
     public int selectedHandIndex = 0; // 0 = main droite, 1 = main gauche
     private RaycastHit hitInfo;
 
@@ -40,13 +39,11 @@ public class PlayerHandController : MonoBehaviour
         if (leftHandPosition != null)
             leftHandPosition.localScale = Vector3.one;
 
-        // Désactiver les images d'objets au démarrage
         if (rightHandItemImage != null)
             rightHandItemImage.gameObject.SetActive(false);
         if (leftHandItemImage != null)
             leftHandItemImage.gameObject.SetActive(false);
 
-        // Mettre à jour les surbrillances des mains
         UpdateSelectedHandHighlights();
     }
 
@@ -71,13 +68,11 @@ public class PlayerHandController : MonoBehaviour
 
     private void UpdateSelectedHandHighlights()
     {
-        // Gérer la surbrillance de la main droite
         if (rightHandHighlight != null)
         {
             rightHandHighlight.gameObject.SetActive(selectedHandIndex == 0 && rightHeldObject != null);
         }
 
-        // Gérer la surbrillance de la main gauche
         if (leftHandHighlight != null)
         {
             leftHandHighlight.gameObject.SetActive(selectedHandIndex == 1 && leftHeldObject != null);
@@ -86,13 +81,11 @@ public class PlayerHandController : MonoBehaviour
 
     private void UpdateHandItemImages()
     {
-        // Image de la main droite
         if (rightHandItemImage != null)
         {
             rightHandItemImage.gameObject.SetActive(rightHeldObject != null);
         }
 
-        // Image de la main gauche
         if (leftHandItemImage != null)
         {
             leftHandItemImage.gameObject.SetActive(leftHeldObject != null);
@@ -120,30 +113,24 @@ public class PlayerHandController : MonoBehaviour
             TrySelectAvailableObject();
         }
 
-        // Supprimé le code de lancement d'objets
     }
 
-    // Rendue publique pour être accessible depuis ThrowObjectHand
     public void TrySelectAvailableObject()
     {
-        // Si les deux mains ont un objet, basculer entre les deux
         if (rightHeldObject != null && leftHeldObject != null)
         {
             SwitchSelectedHand();
         }
-        // Si seulement la main droite a un objet, la sélectionner
         else if (rightHeldObject != null)
         {
             selectedHandIndex = 0;
             UpdateSelectedHandHighlights();
         }
-        // Si seulement la main gauche a un objet, la sélectionner
         else if (leftHeldObject != null)
         {
             selectedHandIndex = 1;
             UpdateSelectedHandHighlights();
         }
-        // Si aucune main n'a d'objet, ne rien faire
     }
 
     private void SwitchSelectedHand()
@@ -161,24 +148,20 @@ public class PlayerHandController : MonoBehaviour
         {
             if (hit.collider.TryGetComponent<Collectable>(out Collectable collectable) && collectable.canBePickedUp)
             {
-                // Détermine quelle main est disponible
                 if (rightHeldObject == null)
                 {
-                    // Main droite libre, l'objet va dans la main droite
                     PickupInHand(collectable, rightHandPosition, ref rightHeldObject);
-                    selectedHandIndex = 0; // Sélectionner automatiquement la main droite
+                    selectedHandIndex = 0;
                     Debug.Log("Objet ramassé dans la main DROITE: " + collectable.name);
                 }
                 else if (leftHeldObject == null)
                 {
-                    // Main droite occupée mais main gauche libre
                     PickupInHand(collectable, leftHandPosition, ref leftHeldObject);
-                    selectedHandIndex = 1; // Sélectionner automatiquement la main gauche
+                    selectedHandIndex = 1;
                     Debug.Log("Objet ramassé dans la main GAUCHE: " + collectable.name);
                 }
                 // Si les deux mains sont occupées, ne rien faire
 
-                // Mettre à jour les surbrillances après avoir ramassé un objet
                 UpdateSelectedHandHighlights();
             }
         }
@@ -186,7 +169,6 @@ public class PlayerHandController : MonoBehaviour
 
     private void PickupInHand(Collectable collectable, Transform handTransform, ref Collectable handReference)
     {
-        // Prévenir que l'objet va être ramassé (pour les sons)
         ThrowableSoundObject throwableSound = collectable.GetComponent<ThrowableSoundObject>();
         if (throwableSound != null)
         {
