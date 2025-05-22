@@ -20,6 +20,11 @@ public class PointCloudRevert : MonoBehaviour
     [SerializeField] private float materialCutoffRestingValue = 0.8f;
     [SerializeField] private float materialCutoffScannerTargetValue = 0.4f;
 
+    [Header("Tutoriel")]
+    [SerializeField] private bool isTutorialActive = true; // Par défaut, le mode tutoriel est actif
+    [SerializeField] private float tutorialInitialCutoffValue = 0.5f; // Valeur initiale pour le tutoriel
+    [SerializeField] private bool saveTutorialState = true; // Sauvegarder l'état du tutoriel entre les scènes
+
     private SkinnedMeshRenderer skinnedMeshRenderer;
     private bool isTransitioning = false; // For blendshape
     private float currentBlendValue;
@@ -33,6 +38,7 @@ public class PointCloudRevert : MonoBehaviour
     private float targetMaterialCutoffValue;
     private bool isMaterialCutoffTransitioning = false;
     private static readonly int CutoffPropertyID = Shader.PropertyToID("_Cutoff");
+    private static readonly string TutorialCompletedKey = "PointCloudTutorialCompleted";
 
     private void Awake()
     {
@@ -59,6 +65,12 @@ public class PointCloudRevert : MonoBehaviour
         {
             Debug.LogWarning("MaterialToControl non assigné et non trouvé sur le SkinnedMeshRenderer.", this);
         }
+
+        // Charger l'état du tutoriel si nécessaire
+        if (saveTutorialState && PlayerPrefs.HasKey(TutorialCompletedKey))
+        {
+            isTutorialActive = PlayerPrefs.GetInt(TutorialCompletedKey) == 0;
+        }
     }
 
     private void Start()
@@ -73,8 +85,18 @@ public class PointCloudRevert : MonoBehaviour
 
         if (materialToControl != null)
         {
-            currentMaterialCutoffValue = materialCutoffRestingValue;
-            targetMaterialCutoffValue = materialCutoffRestingValue; // Initialize target
+            // Définir la valeur de cutoff initiale en fonction de l'état du tutoriel
+            if (isTutorialActive)
+            {
+                currentMaterialCutoffValue = tutorialInitialCutoffValue;
+                targetMaterialCutoffValue = tutorialInitialCutoffValue;
+            }
+            else
+            {
+                currentMaterialCutoffValue = materialCutoffRestingValue;
+                targetMaterialCutoffValue = materialCutoffRestingValue;
+            }
+
             materialToControl.SetFloat(CutoffPropertyID, currentMaterialCutoffValue);
         }
     }
@@ -145,6 +167,12 @@ public class PointCloudRevert : MonoBehaviour
 
         if (isScanner || isEchoPassif || isEchoJoueur)
         {
+            // Si c'est en mode tutoriel et première interaction, désactiver le tutoriel
+            if (isTutorialActive)
+            {
+                CompleteTutorial();
+            }
+
             if (returnCoroutine != null)
             {
                 StopCoroutine(returnCoroutine);
@@ -157,34 +185,52 @@ public class PointCloudRevert : MonoBehaviour
 
             if (isProgressive)
             {
+                // Mode progressif pour le blendshape
                 targetValue = Mathf.Clamp(currentBlendValue + effectiveIncrement, 0f, 100f);
+
+                // Mode progressif pour le cutoff - réduire progressivement
+                // Plus le cutoff est bas, plus les particules sont visibles
+                float cutoffRange = materialCutoffRestingValue - materialCutoffScannerTargetValue;
+                float cutoffIncrement = cutoffRange * (effectiveIncrement / 100f);
+
+                // Assurer que la valeur de cutoff diminue (car plus elle est basse, plus l'effet est visible)
+                targetMaterialCutoffValue = Mathf.Max(
+                    materialCutoffScannerTargetValue,
+                    currentMaterialCutoffValue - cutoffIncrement
+                );
+
+                Debug.Log($"Progression: Blend {currentBlendValue} -> {targetValue}, Cutoff {currentMaterialCutoffValue} -> {targetMaterialCutoffValue}");
             }
             else
             {
+                // Mode non progressif - aller directement à la valeur cible
                 targetValue = Mathf.Min(blendShapeValueTarget, 100f);
-            }
-            isTransitioning = true;
-
-            // Material Cutoff target
-            if (isScanner)
-            {
                 targetMaterialCutoffValue = materialCutoffScannerTargetValue;
             }
-            // For "EchoPassif" and "EchoJoueur", the cutoff will return to restingValue via the coroutine.
-            // If you want specific values for them, you can add conditions here:
-            // else if (isEchoPassif) { targetMaterialCutoffValue = someOtherValue; }
-            // else if (isEchoJoueur) { targetMaterialCutoffValue = anotherValue; }
-            else
-            {
-                // If not a scanner, ensure it aims for the resting value if it was changed by a scanner previously
-                // Or, if it should stay as is unless scanner, this can be adjusted.
-                // For now, triggering return sequence will handle resetting to resting value.
-            }
-            isMaterialCutoffTransitioning = true;
 
+            isTransitioning = true;
+            isMaterialCutoffTransitioning = true;
 
             returnCoroutine = StartCoroutine(ReturnToInitialValueAfterDelay());
         }
+    }
+
+    private void CompleteTutorial()
+    {
+        isTutorialActive = false;
+
+        // Sauvegarder l'état du tutoriel si nécessaire
+        if (saveTutorialState)
+        {
+            PlayerPrefs.SetInt(TutorialCompletedKey, 1); // 1 = tutoriel complété
+            PlayerPrefs.Save();
+        }
+
+        // Mettre à jour la valeur de repos du cutoff
+        targetMaterialCutoffValue = materialCutoffRestingValue;
+        isMaterialCutoffTransitioning = true;
+
+        Debug.Log("Tutoriel terminé : Cutoff changé vers la valeur de repos normale.");
     }
 
     private IEnumerator ReturnToInitialValueAfterDelay()
@@ -201,7 +247,8 @@ public class PointCloudRevert : MonoBehaviour
         // Reset Material Cutoff
         if (materialToControl != null)
         {
-            targetMaterialCutoffValue = materialCutoffRestingValue;
+            // Utiliser la valeur appropriée selon l'état du tutoriel
+            targetMaterialCutoffValue = isTutorialActive ? tutorialInitialCutoffValue : materialCutoffRestingValue;
             isMaterialCutoffTransitioning = true;
         }
     }

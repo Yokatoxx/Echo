@@ -152,6 +152,9 @@ MonoBehaviour:
   materialToControl: {fileID: 0}
   materialCutoffRestingValue: 0.8
   materialCutoffScannerTargetValue: 0.4
+  isTutorialActive: 1
+  tutorialInitialCutoffValue: 0.5
+  saveTutorialState: 1
 --- !u!64 &972667
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -230,10 +233,13 @@ MonoBehaviour:
   returnDelay: 6
   scannerProgressiveIncrement: 10
   echoPassifProgressiveIncrement: 6
-  echoJoueurProgressiveIncrement: 12
+  echoJoueurProgressiveIncrement: 100
   materialToControl: {fileID: 0}
-  materialCutoffRestingValue: 0.8
+  materialCutoffRestingValue: 1.15
   materialCutoffScannerTargetValue: 0.4
+  isTutorialActive: 0
+  tutorialInitialCutoffValue: 0.5
+  saveTutorialState: 1
 --- !u!64 &6112406
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -393,8 +399,11 @@ MonoBehaviour:
   echoPassifProgressiveIncrement: 6
   echoJoueurProgressiveIncrement: 12
   materialToControl: {fileID: 0}
-  materialCutoffRestingValue: 0.5
-  materialCutoffScannerTargetValue: 0.3
+  materialCutoffRestingValue: 1.15
+  materialCutoffScannerTargetValue: 0.6
+  isTutorialActive: 1
+  tutorialInitialCutoffValue: 1.15
+  saveTutorialState: 0
 --- !u!64 &24274602
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -475,8 +484,11 @@ MonoBehaviour:
   echoPassifProgressiveIncrement: 6
   echoJoueurProgressiveIncrement: 12
   materialToControl: {fileID: 0}
-  materialCutoffRestingValue: 0.5
-  materialCutoffScannerTargetValue: 0.3
+  materialCutoffRestingValue: 1.15
+  materialCutoffScannerTargetValue: 0.6
+  isTutorialActive: 1
+  tutorialInitialCutoffValue: 1.15
+  saveTutorialState: 0
 --- !u!64 &28114224
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -548,8 +560,11 @@ MonoBehaviour:
   echoPassifProgressiveIncrement: 6
   echoJoueurProgressiveIncrement: 12
   materialToControl: {fileID: 0}
-  materialCutoffRestingValue: 0.5
-  materialCutoffScannerTargetValue: 0.3
+  materialCutoffRestingValue: 1.15
+  materialCutoffScannerTargetValue: 0.6
+  isTutorialActive: 1
+  tutorialInitialCutoffValue: 1.15
+  saveTutorialState: 0
 --- !u!1 &41143934
 GameObject:
   m_ObjectHideFlags: 0
@@ -610,8 +625,11 @@ MonoBehaviour:
   echoPassifProgressiveIncrement: 6
   echoJoueurProgressiveIncrement: 12
   materialToControl: {fileID: 0}
-  materialCutoffRestingValue: 0.8
-  materialCutoffScannerTargetValue: 0.4
+  materialCutoffRestingValue: 1.15
+  materialCutoffScannerTargetValue: 0.6
+  isTutorialActive: 1
+  tutorialInitialCutoffValue: 1.15
+  saveTutorialState: 0
 --- !u!64 &42195726
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -661,8 +679,11 @@ MonoBehaviour:
   echoPassifProgressiveIncrement: 6
   echoJoueurProgressiveIncrement: 12
   materialToControl: {fileID: 0}
-  materialCutoffRestingValue: 0.5
-  materialCutoffScannerTargetValue: 0.3
+  materialCutoffRestingValue: 1.15
+  materialCutoffScannerTargetValue: 0.6
+  isTutorialActive: 1
+  tutorialInitialCutoffValue: 1.15
+  saveTutorialState: 0
 --- !u!64 &44657148
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -797,6 +818,9 @@ MonoBehaviour:
   materialToControl: {fileID: 0}
   materialCutoffRestingValue: 0.8
   materialCutoffScannerTargetValue: 0.4
+  isTutorialActive: 1
+  tutorialInitialCutoffValue: 0.5
+  saveTutorialState: 1
 --- !u!64 &56156412
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -927,10 +951,13 @@ MonoBehaviour:
   returnDelay: 6
   scannerProgressiveIncrement: 10
   echoPassifProgressiveIncrement: 6
-  echoJoueurProgressiveIncrement: 12
+  echoJoueurProgressiveIncrement: 100
   materialToControl: {fileID: 0}
-  materialCutoffRestingValue: 0.8
+  materialCutoffRestingValue: 1.15
   materialCutoffScannerTargetValue: 0.4
+  isTutorialActive: 0
+  tutorialInitialCutoffValue: 0.5
+  saveTutorialState: 1
 --- !u!64 &63971907
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -980,8 +1007,11 @@ MonoBehaviour:
   echoPassifProgressiveIncrement: 6
   echoJoueurProgressiveIncrement: 12
   materialToControl: {fileID: 0}
-  materialCutoffRestingValue: 0.5
-  materialCutoffScannerTargetValue: 0.3
+  materialCutoffRestingValue: 1.15
+  materialCutoffScannerTargetValue: 0.6
+  isTutorialActive: 1
+  tutorialInitialCutoffValue: 1.15
+  saveTutorialState: 0
 --- !u!64 &66886152
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -1029,10 +1059,13 @@ MonoBehaviour:
   returnDelay: 6
   scannerProgressiveIncrement: 10
   echoPassifProgressiveIncrement: 6
-  echoJoueurProgressiveIncrement: 12
+  echoJoueurProgressiveIncrement: 100
   materialToControl: {fileID: 0}
-  materialCutoffRestingValue: 0.8
+  materialCutoffRestingValue: 1.15
   materialCutoffScannerTargetValue: 0.4
+  isTutorialActive: 0
+  tutorialInitialCutoffValue: 0.5
+  saveTutorialState: 1
 --- !u!64 &80734696
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -1082,8 +1115,11 @@ MonoBehaviour:
   echoPassifProgressiveIncrement: 6
   echoJoueurProgressiveIncrement: 12
   materialToControl: {fileID: 0}
-  materialCutoffRestingValue: 0.5
-  materialCutoffScannerTargetValue: 0.3
+  materialCutoffRestingValue: 1.15
+  materialCutoffScannerTargetValue: 0.6
+  isTutorialActive: 1
+  tutorialInitialCutoffValue: 1.15
+  saveTutorialState: 0
 --- !u!64 &83349426
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -1330,8 +1366,11 @@ MonoBehaviour:
   echoPassifProgressiveIncrement: 6
   echoJoueurProgressiveIncrement: 12
   materialToControl: {fileID: 0}
-  materialCutoffRestingValue: 0.5
-  materialCutoffScannerTargetValue: 0.3
+  materialCutoffRestingValue: 1.15
+  materialCutoffScannerTargetValue: 0.6
+  isTutorialActive: 1
+  tutorialInitialCutoffValue: 1.15
+  saveTutorialState: 0
 --- !u!64 &92581737
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -1762,6 +1801,9 @@ MonoBehaviour:
   materialToControl: {fileID: 0}
   materialCutoffRestingValue: 0.8
   materialCutoffScannerTargetValue: 0.4
+  isTutorialActive: 1
+  tutorialInitialCutoffValue: 0.5
+  saveTutorialState: 1
 --- !u!64 &122611113
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -1838,6 +1880,33 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: -466040819558733910, guid: c332bf7821112cd4f8d3a62d0708ac64, type: 3}
+--- !u!114 &128961945
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 128961940}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1a465b48285b2a543a7acd96d14c747f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  blendShapeIndex: 0
+  blendShapeValueTarget: 0
+  isProgressive: 0
+  restingValue: 0
+  lerpSpeed: 2
+  returnDelay: 6
+  scannerProgressiveIncrement: 10
+  echoPassifProgressiveIncrement: 6
+  echoJoueurProgressiveIncrement: 12
+  materialToControl: {fileID: 0}
+  materialCutoffRestingValue: 0.6
+  materialCutoffScannerTargetValue: 0.6
+  isTutorialActive: 1
+  tutorialInitialCutoffValue: 1.15
+  saveTutorialState: 0
 --- !u!4 &133764908 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 3658221473c477a4fb1dfbdf337998af, type: 3}
@@ -1895,10 +1964,13 @@ MonoBehaviour:
   returnDelay: 6
   scannerProgressiveIncrement: 10
   echoPassifProgressiveIncrement: 6
-  echoJoueurProgressiveIncrement: 12
+  echoJoueurProgressiveIncrement: 100
   materialToControl: {fileID: 0}
-  materialCutoffRestingValue: 0.8
+  materialCutoffRestingValue: 1.15
   materialCutoffScannerTargetValue: 0.4
+  isTutorialActive: 0
+  tutorialInitialCutoffValue: 0.5
+  saveTutorialState: 1
 --- !u!64 &143259768
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -1946,10 +2018,13 @@ MonoBehaviour:
   returnDelay: 6
   scannerProgressiveIncrement: 10
   echoPassifProgressiveIncrement: 6
-  echoJoueurProgressiveIncrement: 12
+  echoJoueurProgressiveIncrement: 100
   materialToControl: {fileID: 0}
-  materialCutoffRestingValue: 0.8
+  materialCutoffRestingValue: 1.15
   materialCutoffScannerTargetValue: 0.4
+  isTutorialActive: 0
+  tutorialInitialCutoffValue: 0.5
+  saveTutorialState: 1
 --- !u!64 &148683764
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -2084,6 +2159,9 @@ MonoBehaviour:
   materialToControl: {fileID: 0}
   materialCutoffRestingValue: 0.8
   materialCutoffScannerTargetValue: 0.4
+  isTutorialActive: 1
+  tutorialInitialCutoffValue: 0.5
+  saveTutorialState: 1
 --- !u!64 &155049445
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -2245,6 +2323,9 @@ MonoBehaviour:
   materialToControl: {fileID: 0}
   materialCutoffRestingValue: 0.8
   materialCutoffScannerTargetValue: 0.4
+  isTutorialActive: 1
+  tutorialInitialCutoffValue: 0.5
+  saveTutorialState: 1
 --- !u!64 &163603820
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -2292,10 +2373,13 @@ MonoBehaviour:
   returnDelay: 6
   scannerProgressiveIncrement: 10
   echoPassifProgressiveIncrement: 6
-  echoJoueurProgressiveIncrement: 12
+  echoJoueurProgressiveIncrement: 100
   materialToControl: {fileID: 0}
-  materialCutoffRestingValue: 0.8
+  materialCutoffRestingValue: 1.15
   materialCutoffScannerTargetValue: 0.4
+  isTutorialActive: 0
+  tutorialInitialCutoffValue: 0.5
+  saveTutorialState: 1
 --- !u!64 &164531436
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -2484,6 +2568,9 @@ MonoBehaviour:
   materialToControl: {fileID: 0}
   materialCutoffRestingValue: 0.8
   materialCutoffScannerTargetValue: 0.4
+  isTutorialActive: 1
+  tutorialInitialCutoffValue: 0.5
+  saveTutorialState: 1
 --- !u!64 &188319792
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -2818,8 +2905,11 @@ MonoBehaviour:
   echoPassifProgressiveIncrement: 6
   echoJoueurProgressiveIncrement: 12
   materialToControl: {fileID: 0}
-  materialCutoffRestingValue: 0.5
-  materialCutoffScannerTargetValue: 0.3
+  materialCutoffRestingValue: 1.15
+  materialCutoffScannerTargetValue: 0.6
+  isTutorialActive: 1
+  tutorialInitialCutoffValue: 1.15
+  saveTutorialState: 0
 --- !u!64 &189864679
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -2871,6 +2961,9 @@ MonoBehaviour:
   materialToControl: {fileID: 0}
   materialCutoffRestingValue: 0.8
   materialCutoffScannerTargetValue: 0.4
+  isTutorialActive: 1
+  tutorialInitialCutoffValue: 0.5
+  saveTutorialState: 1
 --- !u!64 &192147878
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -2969,8 +3062,11 @@ MonoBehaviour:
   echoPassifProgressiveIncrement: 6
   echoJoueurProgressiveIncrement: 12
   materialToControl: {fileID: 0}
-  materialCutoffRestingValue: 0.5
-  materialCutoffScannerTargetValue: 0.3
+  materialCutoffRestingValue: 1.15
+  materialCutoffScannerTargetValue: 0.6
+  isTutorialActive: 1
+  tutorialInitialCutoffValue: 1.15
+  saveTutorialState: 0
 --- !u!1 &199534169 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 4936928495644207568, guid: c5aaeaa3858d4b248ba6b36799cb95bd, type: 3}
@@ -3000,6 +3096,9 @@ MonoBehaviour:
   materialToControl: {fileID: 0}
   materialCutoffRestingValue: 0.8
   materialCutoffScannerTargetValue: 0.4
+  isTutorialActive: 1
+  tutorialInitialCutoffValue: 0.5
+  saveTutorialState: 1
 --- !u!64 &199534172
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -3154,8 +3253,11 @@ MonoBehaviour:
   echoPassifProgressiveIncrement: 6
   echoJoueurProgressiveIncrement: 12
   materialToControl: {fileID: 0}
-  materialCutoffRestingValue: 0.5
-  materialCutoffScannerTargetValue: 0.3
+  materialCutoffRestingValue: 1.15
+  materialCutoffScannerTargetValue: 0.6
+  isTutorialActive: 1
+  tutorialInitialCutoffValue: 1.15
+  saveTutorialState: 0
 --- !u!1 &221818437 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: -8130466653190208652, guid: 07a18efcdb0cb044e87fda8b84be6a5e, type: 3}
@@ -3293,8 +3395,11 @@ MonoBehaviour:
   echoPassifProgressiveIncrement: 6
   echoJoueurProgressiveIncrement: 12
   materialToControl: {fileID: 0}
-  materialCutoffRestingValue: 0.8
-  materialCutoffScannerTargetValue: 0.4
+  materialCutoffRestingValue: 1.15
+  materialCutoffScannerTargetValue: 0.6
+  isTutorialActive: 1
+  tutorialInitialCutoffValue: 1.15
+  saveTutorialState: 0
 --- !u!64 &241623606
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -3344,8 +3449,11 @@ MonoBehaviour:
   echoPassifProgressiveIncrement: 6
   echoJoueurProgressiveIncrement: 12
   materialToControl: {fileID: 0}
-  materialCutoffRestingValue: 0.5
-  materialCutoffScannerTargetValue: 0.3
+  materialCutoffRestingValue: 1.15
+  materialCutoffScannerTargetValue: 0.6
+  isTutorialActive: 1
+  tutorialInitialCutoffValue: 1.15
+  saveTutorialState: 0
 --- !u!64 &244871903
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -3397,6 +3505,9 @@ MonoBehaviour:
   materialToControl: {fileID: 0}
   materialCutoffRestingValue: 0.8
   materialCutoffScannerTargetValue: 0.4
+  isTutorialActive: 1
+  tutorialInitialCutoffValue: 0.5
+  saveTutorialState: 1
 --- !u!64 &248585216
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -3500,8 +3611,11 @@ MonoBehaviour:
   echoPassifProgressiveIncrement: 6
   echoJoueurProgressiveIncrement: 12
   materialToControl: {fileID: 0}
-  materialCutoffRestingValue: 0.5
-  materialCutoffScannerTargetValue: 0.3
+  materialCutoffRestingValue: 1.15
+  materialCutoffScannerTargetValue: 0.6
+  isTutorialActive: 1
+  tutorialInitialCutoffValue: 1.15
+  saveTutorialState: 0
 --- !u!64 &255191859
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -3553,6 +3667,9 @@ MonoBehaviour:
   materialToControl: {fileID: 0}
   materialCutoffRestingValue: 0.8
   materialCutoffScannerTargetValue: 0.4
+  isTutorialActive: 1
+  tutorialInitialCutoffValue: 0.5
+  saveTutorialState: 1
 --- !u!64 &256416098
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -3741,6 +3858,9 @@ MonoBehaviour:
   materialToControl: {fileID: 0}
   materialCutoffRestingValue: 0.8
   materialCutoffScannerTargetValue: 0.4
+  isTutorialActive: 1
+  tutorialInitialCutoffValue: 0.5
+  saveTutorialState: 1
 --- !u!64 &269151862
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -3815,6 +3935,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: ObjetARamasser OriginPos (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 7013217525737275675, guid: ecefbf195f9d30b45aa54f07f3a6b4f8, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8089905341293052128, guid: ecefbf195f9d30b45aa54f07f3a6b4f8, type: 3}
       propertyPath: lerpSpeed
       value: 2
@@ -3861,10 +3985,13 @@ MonoBehaviour:
   returnDelay: 6
   scannerProgressiveIncrement: 10
   echoPassifProgressiveIncrement: 6
-  echoJoueurProgressiveIncrement: 12
+  echoJoueurProgressiveIncrement: 100
   materialToControl: {fileID: 0}
-  materialCutoffRestingValue: 0.8
+  materialCutoffRestingValue: 1.15
   materialCutoffScannerTargetValue: 0.4
+  isTutorialActive: 0
+  tutorialInitialCutoffValue: 0.5
+  saveTutorialState: 1
 --- !u!64 &271101906
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -3984,8 +4111,11 @@ MonoBehaviour:
   echoPassifProgressiveIncrement: 6
   echoJoueurProgressiveIncrement: 12
   materialToControl: {fileID: 0}
-  materialCutoffRestingValue: 0.5
-  materialCutoffScannerTargetValue: 0.3
+  materialCutoffRestingValue: 1.15
+  materialCutoffScannerTargetValue: 0.6
+  isTutorialActive: 1
+  tutorialInitialCutoffValue: 1.15
+  saveTutorialState: 0
 --- !u!64 &274863089
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -4120,6 +4250,9 @@ MonoBehaviour:
   materialToControl: {fileID: 0}
   materialCutoffRestingValue: 0.8
   materialCutoffScannerTargetValue: 0.4
+  isTutorialActive: 1
+  tutorialInitialCutoffValue: 0.5
+  saveTutorialState: 1
 --- !u!64 &284806713
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -4252,8 +4385,11 @@ MonoBehaviour:
   echoPassifProgressiveIncrement: 6
   echoJoueurProgressiveIncrement: 12
   materialToControl: {fileID: 0}
-  materialCutoffRestingValue: 0.8
-  materialCutoffScannerTargetValue: 0.4
+  materialCutoffRestingValue: 1.15
+  materialCutoffScannerTargetValue: 0.6
+  isTutorialActive: 1
+  tutorialInitialCutoffValue: 1.15
+  saveTutorialState: 0
 --- !u!64 &286582335
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -4389,10 +4525,13 @@ MonoBehaviour:
   returnDelay: 6
   scannerProgressiveIncrement: 10
   echoPassifProgressiveIncrement: 6
-  echoJoueurProgressiveIncrement: 12
+  echoJoueurProgressiveIncrement: 100
   materialToControl: {fileID: 0}
-  materialCutoffRestingValue: 0.8
+  materialCutoffRestingValue: 1.15
   materialCutoffScannerTargetValue: 0.4
+  isTutorialActive: 0
+  tutorialInitialCutoffValue: 0.5
+  saveTutorialState: 1
 --- !u!64 &315146908
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -4469,6 +4608,33 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: -1917227404356899894, guid: c0fbd759e339a1b4c92ad3a94b02cbdc, type: 3}
+--- !u!114 &322247963
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 322247956}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1a465b48285b2a543a7acd96d14c747f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  blendShapeIndex: 0
+  blendShapeValueTarget: 0
+  isProgressive: 0
+  restingValue: 0
+  lerpSpeed: 2
+  returnDelay: 6
+  scannerProgressiveIncrement: 10
+  echoPassifProgressiveIncrement: 6
+  echoJoueurProgressiveIncrement: 12
+  materialToControl: {fileID: 0}
+  materialCutoffRestingValue: 0.6
+  materialCutoffScannerTargetValue: 0.6
+  isTutorialActive: 1
+  tutorialInitialCutoffValue: 1.15
+  saveTutorialState: 0
 --- !u!1 &326868367
 GameObject:
   m_ObjectHideFlags: 0
@@ -4579,8 +4745,11 @@ MonoBehaviour:
   echoPassifProgressiveIncrement: 6
   echoJoueurProgressiveIncrement: 12
   materialToControl: {fileID: 0}
-  materialCutoffRestingValue: 0.5
-  materialCutoffScannerTargetValue: 0.3
+  materialCutoffRestingValue: 1.15
+  materialCutoffScannerTargetValue: 0.6
+  isTutorialActive: 1
+  tutorialInitialCutoffValue: 1.15
+  saveTutorialState: 0
 --- !u!64 &333367968
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -4667,10 +4836,13 @@ MonoBehaviour:
   returnDelay: 6
   scannerProgressiveIncrement: 10
   echoPassifProgressiveIncrement: 6
-  echoJoueurProgressiveIncrement: 12
+  echoJoueurProgressiveIncrement: 100
   materialToControl: {fileID: 0}
-  materialCutoffRestingValue: 0.8
+  materialCutoffRestingValue: 1.15
   materialCutoffScannerTargetValue: 0.4
+  isTutorialActive: 0
+  tutorialInitialCutoffValue: 0.5
+  saveTutorialState: 1
 --- !u!64 &340431971
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -4718,10 +4890,13 @@ MonoBehaviour:
   returnDelay: 6
   scannerProgressiveIncrement: 10
   echoPassifProgressiveIncrement: 6
-  echoJoueurProgressiveIncrement: 12
+  echoJoueurProgressiveIncrement: 100
   materialToControl: {fileID: 0}
-  materialCutoffRestingValue: 0.8
+  materialCutoffRestingValue: 1.15
   materialCutoffScannerTargetValue: 0.4
+  isTutorialActive: 0
+  tutorialInitialCutoffValue: 0.5
+  saveTutorialState: 1
 --- !u!64 &348878842
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -4773,6 +4948,9 @@ MonoBehaviour:
   materialToControl: {fileID: 0}
   materialCutoffRestingValue: 0.8
   materialCutoffScannerTargetValue: 0.4
+  isTutorialActive: 1
+  tutorialInitialCutoffValue: 0.5
+  saveTutorialState: 1
 --- !u!64 &349059396
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -4824,6 +5002,9 @@ MonoBehaviour:
   materialToControl: {fileID: 0}
   materialCutoffRestingValue: 0.8
   materialCutoffScannerTargetValue: 0.4
+  isTutorialActive: 1
+  tutorialInitialCutoffValue: 0.5
+  saveTutorialState: 1
 --- !u!64 &349068404
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -4875,6 +5056,9 @@ MonoBehaviour:
   materialToControl: {fileID: 0}
   materialCutoffRestingValue: 0.8
   materialCutoffScannerTargetValue: 0.4
+  isTutorialActive: 1
+  tutorialInitialCutoffValue: 0.5
+  saveTutorialState: 1
 --- !u!64 &356736235
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -4924,8 +5108,11 @@ MonoBehaviour:
   echoPassifProgressiveIncrement: 6
   echoJoueurProgressiveIncrement: 12
   materialToControl: {fileID: 0}
-  materialCutoffRestingValue: 0.5
-  materialCutoffScannerTargetValue: 0.3
+  materialCutoffRestingValue: 1.15
+  materialCutoffScannerTargetValue: 0.6
+  isTutorialActive: 1
+  tutorialInitialCutoffValue: 1.15
+  saveTutorialState: 0
 --- !u!64 &365879527
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -5151,8 +5338,11 @@ MonoBehaviour:
   echoPassifProgressiveIncrement: 6
   echoJoueurProgressiveIncrement: 12
   materialToControl: {fileID: 0}
-  materialCutoffRestingValue: 0.5
-  materialCutoffScannerTargetValue: 0.3
+  materialCutoffRestingValue: 1.15
+  materialCutoffScannerTargetValue: 0.6
+  isTutorialActive: 1
+  tutorialInitialCutoffValue: 1.15
+  saveTutorialState: 0
 --- !u!1 &381407516 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 6075100648640740198, guid: a318fea407594c8448e4da666c0b7d43, type: 3}
@@ -5267,6 +5457,9 @@ MonoBehaviour:
   materialToControl: {fileID: 0}
   materialCutoffRestingValue: 0.8
   materialCutoffScannerTargetValue: 0.4
+  isTutorialActive: 1
+  tutorialInitialCutoffValue: 0.5
+  saveTutorialState: 1
 --- !u!64 &388138338
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -5416,8 +5609,11 @@ MonoBehaviour:
   echoPassifProgressiveIncrement: 6
   echoJoueurProgressiveIncrement: 12
   materialToControl: {fileID: 0}
-  materialCutoffRestingValue: 0.5
-  materialCutoffScannerTargetValue: 0.3
+  materialCutoffRestingValue: 1.15
+  materialCutoffScannerTargetValue: 0.6
+  isTutorialActive: 1
+  tutorialInitialCutoffValue: 1.15
+  saveTutorialState: 0
 --- !u!64 &399005007
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -5489,8 +5685,11 @@ MonoBehaviour:
   echoPassifProgressiveIncrement: 6
   echoJoueurProgressiveIncrement: 12
   materialToControl: {fileID: 0}
-  materialCutoffRestingValue: 0.5
-  materialCutoffScannerTargetValue: 0.3
+  materialCutoffRestingValue: 1.15
+  materialCutoffScannerTargetValue: 0.6
+  isTutorialActive: 1
+  tutorialInitialCutoffValue: 1.15
+  saveTutorialState: 0
 --- !u!1 &400727500 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: -8247533916898437040, guid: c5aaeaa3858d4b248ba6b36799cb95bd, type: 3}
@@ -5520,6 +5719,9 @@ MonoBehaviour:
   materialToControl: {fileID: 0}
   materialCutoffRestingValue: 0.8
   materialCutoffScannerTargetValue: 0.4
+  isTutorialActive: 1
+  tutorialInitialCutoffValue: 0.5
+  saveTutorialState: 1
 --- !u!64 &400727503
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -5694,6 +5896,9 @@ MonoBehaviour:
   materialToControl: {fileID: 0}
   materialCutoffRestingValue: 0.8
   materialCutoffScannerTargetValue: 0.4
+  isTutorialActive: 1
+  tutorialInitialCutoffValue: 0.5
+  saveTutorialState: 1
 --- !u!64 &418962109
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -5743,8 +5948,11 @@ MonoBehaviour:
   echoPassifProgressiveIncrement: 6
   echoJoueurProgressiveIncrement: 12
   materialToControl: {fileID: 0}
-  materialCutoffRestingValue: 0.5
-  materialCutoffScannerTargetValue: 0.3
+  materialCutoffRestingValue: 1.15
+  materialCutoffScannerTargetValue: 0.6
+  isTutorialActive: 1
+  tutorialInitialCutoffValue: 1.15
+  saveTutorialState: 0
 --- !u!64 &420478640
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -6023,6 +6231,9 @@ MonoBehaviour:
   materialToControl: {fileID: 0}
   materialCutoffRestingValue: 0.8
   materialCutoffScannerTargetValue: 0.4
+  isTutorialActive: 1
+  tutorialInitialCutoffValue: 0.5
+  saveTutorialState: 1
 --- !u!64 &437783348
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -6074,6 +6285,9 @@ MonoBehaviour:
   materialToControl: {fileID: 0}
   materialCutoffRestingValue: 0.8
   materialCutoffScannerTargetValue: 0.4
+  isTutorialActive: 1
+  tutorialInitialCutoffValue: 0.5
+  saveTutorialState: 1
 --- !u!64 &439788242
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -6125,6 +6339,9 @@ MonoBehaviour:
   materialToControl: {fileID: 0}
   materialCutoffRestingValue: 0.8
   materialCutoffScannerTargetValue: 0.4
+  isTutorialActive: 1
+  tutorialInitialCutoffValue: 0.5
+  saveTutorialState: 1
 --- !u!64 &440938481
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -6269,6 +6486,9 @@ MonoBehaviour:
   materialToControl: {fileID: 0}
   materialCutoffRestingValue: 0.8
   materialCutoffScannerTargetValue: 0.4
+  isTutorialActive: 1
+  tutorialInitialCutoffValue: 0.5
+  saveTutorialState: 1
 --- !u!64 &442554890
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -6401,8 +6621,11 @@ MonoBehaviour:
   echoPassifProgressiveIncrement: 6
   echoJoueurProgressiveIncrement: 12
   materialToControl: {fileID: 0}
-  materialCutoffRestingValue: 0.5
-  materialCutoffScannerTargetValue: 0.3
+  materialCutoffRestingValue: 1.15
+  materialCutoffScannerTargetValue: 0.6
+  isTutorialActive: 1
+  tutorialInitialCutoffValue: 1.15
+  saveTutorialState: 0
 --- !u!64 &450268129
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -6454,6 +6677,9 @@ MonoBehaviour:
   materialToControl: {fileID: 0}
   materialCutoffRestingValue: 0.8
   materialCutoffScannerTargetValue: 0.4
+  isTutorialActive: 1
+  tutorialInitialCutoffValue: 0.5
+  saveTutorialState: 1
 --- !u!64 &454876867
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -6503,8 +6729,11 @@ MonoBehaviour:
   echoPassifProgressiveIncrement: 6
   echoJoueurProgressiveIncrement: 12
   materialToControl: {fileID: 0}
-  materialCutoffRestingValue: 0.5
-  materialCutoffScannerTargetValue: 0.3
+  materialCutoffRestingValue: 1.15
+  materialCutoffScannerTargetValue: 0.6
+  isTutorialActive: 1
+  tutorialInitialCutoffValue: 1.15
+  saveTutorialState: 0
 --- !u!64 &456706586
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -6613,8 +6842,11 @@ MonoBehaviour:
   echoPassifProgressiveIncrement: 6
   echoJoueurProgressiveIncrement: 12
   materialToControl: {fileID: 0}
-  materialCutoffRestingValue: 0.5
-  materialCutoffScannerTargetValue: 0.3
+  materialCutoffRestingValue: 1.15
+  materialCutoffScannerTargetValue: 0.6
+  isTutorialActive: 1
+  tutorialInitialCutoffValue: 1.15
+  saveTutorialState: 0
 --- !u!64 &462152077
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -6664,8 +6896,11 @@ MonoBehaviour:
   echoPassifProgressiveIncrement: 6
   echoJoueurProgressiveIncrement: 12
   materialToControl: {fileID: 0}
-  materialCutoffRestingValue: 0.5
-  materialCutoffScannerTargetValue: 0.3
+  materialCutoffRestingValue: 1.15
+  materialCutoffScannerTargetValue: 0.6
+  isTutorialActive: 1
+  tutorialInitialCutoffValue: 1.15
+  saveTutorialState: 0
 --- !u!64 &468484452
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -6715,8 +6950,11 @@ MonoBehaviour:
   echoPassifProgressiveIncrement: 6
   echoJoueurProgressiveIncrement: 12
   materialToControl: {fileID: 0}
-  materialCutoffRestingValue: 0.8
-  materialCutoffScannerTargetValue: 0.4
+  materialCutoffRestingValue: 1.15
+  materialCutoffScannerTargetValue: 0.6
+  isTutorialActive: 1
+  tutorialInitialCutoffValue: 1.15
+  saveTutorialState: 0
 --- !u!64 &469236923
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -6766,8 +7004,11 @@ MonoBehaviour:
   echoPassifProgressiveIncrement: 6
   echoJoueurProgressiveIncrement: 12
   materialToControl: {fileID: 0}
-  materialCutoffRestingValue: 0.8
-  materialCutoffScannerTargetValue: 0.4
+  materialCutoffRestingValue: 1.15
+  materialCutoffScannerTargetValue: 0.6
+  isTutorialActive: 1
+  tutorialInitialCutoffValue: 1.15
+  saveTutorialState: 0
 --- !u!64 &471940246
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -6815,10 +7056,13 @@ MonoBehaviour:
   returnDelay: 6
   scannerProgressiveIncrement: 10
   echoPassifProgressiveIncrement: 6
-  echoJoueurProgressiveIncrement: 12
+  echoJoueurProgressiveIncrement: 100
   materialToControl: {fileID: 0}
-  materialCutoffRestingValue: 0.8
+  materialCutoffRestingValue: 1.15
   materialCutoffScannerTargetValue: 0.4
+  isTutorialActive: 0
+  tutorialInitialCutoffValue: 0.5
+  saveTutorialState: 1
 --- !u!64 &482380166
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -6870,6 +7114,9 @@ MonoBehaviour:
   materialToControl: {fileID: 0}
   materialCutoffRestingValue: 0.8
   materialCutoffScannerTargetValue: 0.4
+  isTutorialActive: 1
+  tutorialInitialCutoffValue: 0.5
+  saveTutorialState: 1
 --- !u!64 &483875979
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -6919,8 +7166,11 @@ MonoBehaviour:
   echoPassifProgressiveIncrement: 6
   echoJoueurProgressiveIncrement: 12
   materialToControl: {fileID: 0}
-  materialCutoffRestingValue: 0.5
-  materialCutoffScannerTargetValue: 0.3
+  materialCutoffRestingValue: 1.15
+  materialCutoffScannerTargetValue: 0.6
+  isTutorialActive: 1
+  tutorialInitialCutoffValue: 1.15
+  saveTutorialState: 0
 --- !u!64 &496443646
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -6968,10 +7218,13 @@ MonoBehaviour:
   returnDelay: 6
   scannerProgressiveIncrement: 10
   echoPassifProgressiveIncrement: 6
-  echoJoueurProgressiveIncrement: 12
+  echoJoueurProgressiveIncrement: 100
   materialToControl: {fileID: 0}
-  materialCutoffRestingValue: 0.8
+  materialCutoffRestingValue: 1.15
   materialCutoffScannerTargetValue: 0.4
+  isTutorialActive: 0
+  tutorialInitialCutoffValue: 0.5
+  saveTutorialState: 1
 --- !u!64 &501758280
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -7102,10 +7355,13 @@ MonoBehaviour:
   returnDelay: 6
   scannerProgressiveIncrement: 10
   echoPassifProgressiveIncrement: 6
-  echoJoueurProgressiveIncrement: 12
+  echoJoueurProgressiveIncrement: 100
   materialToControl: {fileID: 0}
-  materialCutoffRestingValue: 0.8
+  materialCutoffRestingValue: 1.15
   materialCutoffScannerTargetValue: 0.4
+  isTutorialActive: 0
+  tutorialInitialCutoffValue: 0.5
+  saveTutorialState: 1
 --- !u!64 &507680277
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -7358,10 +7614,13 @@ MonoBehaviour:
   returnDelay: 6
   scannerProgressiveIncrement: 10
   echoPassifProgressiveIncrement: 6
-  echoJoueurProgressiveIncrement: 12
+  echoJoueurProgressiveIncrement: 100
   materialToControl: {fileID: 0}
-  materialCutoffRestingValue: 0.8
+  materialCutoffRestingValue: 1.15
   materialCutoffScannerTargetValue: 0.4
+  isTutorialActive: 0
+  tutorialInitialCutoffValue: 0.5
+  saveTutorialState: 1
 --- !u!64 &523777149
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -7440,6 +7699,9 @@ MonoBehaviour:
   materialToControl: {fileID: 0}
   materialCutoffRestingValue: 0.8
   materialCutoffScannerTargetValue: 0.4
+  isTutorialActive: 1
+  tutorialInitialCutoffValue: 0.5
+  saveTutorialState: 1
 --- !u!64 &528967931
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -7487,10 +7749,13 @@ MonoBehaviour:
   returnDelay: 6
   scannerProgressiveIncrement: 10
   echoPassifProgressiveIncrement: 6
-  echoJoueurProgressiveIncrement: 12
+  echoJoueurProgressiveIncrement: 100
   materialToControl: {fileID: 0}
-  materialCutoffRestingValue: 0.8
+  materialCutoffRestingValue: 1.15
   materialCutoffScannerTargetValue: 0.4
+  isTutorialActive: 0
+  tutorialInitialCutoffValue: 0.5
+  saveTutorialState: 1
 --- !u!64 &531103403
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -7716,6 +7981,9 @@ MonoBehaviour:
   materialToControl: {fileID: 0}
   materialCutoffRestingValue: 0.8
   materialCutoffScannerTargetValue: 0.4
+  isTutorialActive: 1
+  tutorialInitialCutoffValue: 0.5
+  saveTutorialState: 1
 --- !u!64 &545150211
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -7767,6 +8035,9 @@ MonoBehaviour:
   materialToControl: {fileID: 0}
   materialCutoffRestingValue: 0.8
   materialCutoffScannerTargetValue: 0.4
+  isTutorialActive: 1
+  tutorialInitialCutoffValue: 0.5
+  saveTutorialState: 1
 --- !u!64 &546878449
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -7816,8 +8087,11 @@ MonoBehaviour:
   echoPassifProgressiveIncrement: 6
   echoJoueurProgressiveIncrement: 12
   materialToControl: {fileID: 0}
-  materialCutoffRestingValue: 0.5
-  materialCutoffScannerTargetValue: 0.3
+  materialCutoffRestingValue: 1.15
+  materialCutoffScannerTargetValue: 0.6
+  isTutorialActive: 1
+  tutorialInitialCutoffValue: 1.15
+  saveTutorialState: 0
 --- !u!64 &554232932
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -8383,8 +8657,11 @@ MonoBehaviour:
   echoPassifProgressiveIncrement: 6
   echoJoueurProgressiveIncrement: 12
   materialToControl: {fileID: 0}
-  materialCutoffRestingValue: 0.5
-  materialCutoffScannerTargetValue: 0.3
+  materialCutoffRestingValue: 1.15
+  materialCutoffScannerTargetValue: 0.6
+  isTutorialActive: 1
+  tutorialInitialCutoffValue: 1.15
+  saveTutorialState: 0
 --- !u!64 &569251231
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -8537,10 +8814,13 @@ MonoBehaviour:
   returnDelay: 6
   scannerProgressiveIncrement: 10
   echoPassifProgressiveIncrement: 6
-  echoJoueurProgressiveIncrement: 12
+  echoJoueurProgressiveIncrement: 100
   materialToControl: {fileID: 0}
-  materialCutoffRestingValue: 0.8
+  materialCutoffRestingValue: 1.15
   materialCutoffScannerTargetValue: 0.4
+  isTutorialActive: 0
+  tutorialInitialCutoffValue: 0.5
+  saveTutorialState: 1
 --- !u!64 &580800145
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -8590,8 +8870,11 @@ MonoBehaviour:
   echoPassifProgressiveIncrement: 6
   echoJoueurProgressiveIncrement: 12
   materialToControl: {fileID: 0}
-  materialCutoffRestingValue: 0.5
-  materialCutoffScannerTargetValue: 0.3
+  materialCutoffRestingValue: 1.15
+  materialCutoffScannerTargetValue: 0.6
+  isTutorialActive: 1
+  tutorialInitialCutoffValue: 1.15
+  saveTutorialState: 0
 --- !u!64 &583403325
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -8668,6 +8951,33 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: 188575158511492055, guid: c0fbd759e339a1b4c92ad3a94b02cbdc, type: 3}
+--- !u!114 &595944070
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 595944063}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1a465b48285b2a543a7acd96d14c747f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  blendShapeIndex: 0
+  blendShapeValueTarget: 0
+  isProgressive: 0
+  restingValue: 0
+  lerpSpeed: 2
+  returnDelay: 6
+  scannerProgressiveIncrement: 10
+  echoPassifProgressiveIncrement: 6
+  echoJoueurProgressiveIncrement: 12
+  materialToControl: {fileID: 0}
+  materialCutoffRestingValue: 0.6
+  materialCutoffScannerTargetValue: 0.6
+  isTutorialActive: 1
+  tutorialInitialCutoffValue: 1.15
+  saveTutorialState: 0
 --- !u!1001 &607917197
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -11573,10 +11883,13 @@ MonoBehaviour:
   returnDelay: 6
   scannerProgressiveIncrement: 10
   echoPassifProgressiveIncrement: 6
-  echoJoueurProgressiveIncrement: 12
+  echoJoueurProgressiveIncrement: 100
   materialToControl: {fileID: 0}
-  materialCutoffRestingValue: 0.8
+  materialCutoffRestingValue: 1.15
   materialCutoffScannerTargetValue: 0.4
+  isTutorialActive: 0
+  tutorialInitialCutoffValue: 0.5
+  saveTutorialState: 1
 --- !u!64 &616398112
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -11628,6 +11941,9 @@ MonoBehaviour:
   materialToControl: {fileID: 0}
   materialCutoffRestingValue: 0.8
   materialCutoffScannerTargetValue: 0.4
+  isTutorialActive: 1
+  tutorialInitialCutoffValue: 0.5
+  saveTutorialState: 1
 --- !u!64 &616998113
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -11679,6 +11995,9 @@ MonoBehaviour:
   materialToControl: {fileID: 0}
   materialCutoffRestingValue: 0.8
   materialCutoffScannerTargetValue: 0.4
+  isTutorialActive: 1
+  tutorialInitialCutoffValue: 0.5
+  saveTutorialState: 1
 --- !u!64 &620148415
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -11969,10 +12288,13 @@ MonoBehaviour:
   returnDelay: 6
   scannerProgressiveIncrement: 10
   echoPassifProgressiveIncrement: 6
-  echoJoueurProgressiveIncrement: 12
+  echoJoueurProgressiveIncrement: 100
   materialToControl: {fileID: 0}
-  materialCutoffRestingValue: 0.8
+  materialCutoffRestingValue: 1.15
   materialCutoffScannerTargetValue: 0.4
+  isTutorialActive: 0
+  tutorialInitialCutoffValue: 0.5
+  saveTutorialState: 1
 --- !u!64 &643390991
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -12190,6 +12512,9 @@ MonoBehaviour:
   materialToControl: {fileID: 0}
   materialCutoffRestingValue: 0.8
   materialCutoffScannerTargetValue: 0.4
+  isTutorialActive: 1
+  tutorialInitialCutoffValue: 0.5
+  saveTutorialState: 1
 --- !u!64 &662361018
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -12266,8 +12591,11 @@ MonoBehaviour:
   echoPassifProgressiveIncrement: 6
   echoJoueurProgressiveIncrement: 12
   materialToControl: {fileID: 0}
-  materialCutoffRestingValue: 0.8
-  materialCutoffScannerTargetValue: 0.4
+  materialCutoffRestingValue: 1.15
+  materialCutoffScannerTargetValue: 0.6
+  isTutorialActive: 1
+  tutorialInitialCutoffValue: 1.15
+  saveTutorialState: 0
 --- !u!64 &677045876
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -12366,8 +12694,11 @@ MonoBehaviour:
   echoPassifProgressiveIncrement: 6
   echoJoueurProgressiveIncrement: 12
   materialToControl: {fileID: 0}
-  materialCutoffRestingValue: 0.5
-  materialCutoffScannerTargetValue: 0.3
+  materialCutoffRestingValue: 1.15
+  materialCutoffScannerTargetValue: 0.6
+  isTutorialActive: 1
+  tutorialInitialCutoffValue: 1.15
+  saveTutorialState: 0
 --- !u!1 &682500579
 GameObject:
   m_ObjectHideFlags: 0
@@ -12478,8 +12809,11 @@ MonoBehaviour:
   echoPassifProgressiveIncrement: 6
   echoJoueurProgressiveIncrement: 12
   materialToControl: {fileID: 0}
-  materialCutoffRestingValue: 0.5
-  materialCutoffScannerTargetValue: 0.3
+  materialCutoffRestingValue: 1.15
+  materialCutoffScannerTargetValue: 0.6
+  isTutorialActive: 1
+  tutorialInitialCutoffValue: 1.15
+  saveTutorialState: 0
 --- !u!64 &686970835
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -12527,10 +12861,13 @@ MonoBehaviour:
   returnDelay: 6
   scannerProgressiveIncrement: 10
   echoPassifProgressiveIncrement: 6
-  echoJoueurProgressiveIncrement: 12
+  echoJoueurProgressiveIncrement: 100
   materialToControl: {fileID: 0}
-  materialCutoffRestingValue: 0.8
+  materialCutoffRestingValue: 1.15
   materialCutoffScannerTargetValue: 0.4
+  isTutorialActive: 0
+  tutorialInitialCutoffValue: 0.5
+  saveTutorialState: 1
 --- !u!64 &687277089
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -12609,6 +12946,9 @@ MonoBehaviour:
   materialToControl: {fileID: 0}
   materialCutoffRestingValue: 0.8
   materialCutoffScannerTargetValue: 0.4
+  isTutorialActive: 1
+  tutorialInitialCutoffValue: 0.5
+  saveTutorialState: 1
 --- !u!64 &692582750
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -12690,6 +13030,33 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: -1707411408410219363, guid: c0fbd759e339a1b4c92ad3a94b02cbdc, type: 3}
+--- !u!114 &699967409
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 699967402}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1a465b48285b2a543a7acd96d14c747f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  blendShapeIndex: 0
+  blendShapeValueTarget: 0
+  isProgressive: 0
+  restingValue: 0
+  lerpSpeed: 2
+  returnDelay: 6
+  scannerProgressiveIncrement: 10
+  echoPassifProgressiveIncrement: 6
+  echoJoueurProgressiveIncrement: 12
+  materialToControl: {fileID: 0}
+  materialCutoffRestingValue: 0.6
+  materialCutoffScannerTargetValue: 0.6
+  isTutorialActive: 1
+  tutorialInitialCutoffValue: 1.15
+  saveTutorialState: 0
 --- !u!1 &700785668 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 7528302065475879929, guid: fefd1a3d9e9106e458835f8757759571, type: 3}
@@ -12717,6 +13084,33 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: -2126513454847145784, guid: c0fbd759e339a1b4c92ad3a94b02cbdc, type: 3}
+--- !u!114 &700785675
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 700785668}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1a465b48285b2a543a7acd96d14c747f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  blendShapeIndex: 0
+  blendShapeValueTarget: 0
+  isProgressive: 0
+  restingValue: 0
+  lerpSpeed: 2
+  returnDelay: 6
+  scannerProgressiveIncrement: 10
+  echoPassifProgressiveIncrement: 6
+  echoJoueurProgressiveIncrement: 12
+  materialToControl: {fileID: 0}
+  materialCutoffRestingValue: 0.6
+  materialCutoffScannerTargetValue: 0.6
+  isTutorialActive: 1
+  tutorialInitialCutoffValue: 1.15
+  saveTutorialState: 0
 --- !u!1 &705882691
 GameObject:
   m_ObjectHideFlags: 0
@@ -12876,8 +13270,11 @@ MonoBehaviour:
   echoPassifProgressiveIncrement: 6
   echoJoueurProgressiveIncrement: 12
   materialToControl: {fileID: 0}
-  materialCutoffRestingValue: 0.5
-  materialCutoffScannerTargetValue: 0.3
+  materialCutoffRestingValue: 1.15
+  materialCutoffScannerTargetValue: 0.6
+  isTutorialActive: 1
+  tutorialInitialCutoffValue: 1.15
+  saveTutorialState: 0
 --- !u!1001 &732784650
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -13763,6 +14160,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: ObjetARamasser OriginPos (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 7013217525737275675, guid: ecefbf195f9d30b45aa54f07f3a6b4f8, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8089905341293052128, guid: ecefbf195f9d30b45aa54f07f3a6b4f8, type: 3}
       propertyPath: lerpSpeed
       value: 2
@@ -13813,6 +14214,9 @@ MonoBehaviour:
   materialToControl: {fileID: 0}
   materialCutoffRestingValue: 0.8
   materialCutoffScannerTargetValue: 0.4
+  isTutorialActive: 1
+  tutorialInitialCutoffValue: 0.5
+  saveTutorialState: 1
 --- !u!64 &758784175
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -14030,6 +14434,9 @@ MonoBehaviour:
   materialToControl: {fileID: 0}
   materialCutoffRestingValue: 0.8
   materialCutoffScannerTargetValue: 0.4
+  isTutorialActive: 1
+  tutorialInitialCutoffValue: 0.5
+  saveTutorialState: 1
 --- !u!64 &772819173
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -14108,6 +14515,9 @@ MonoBehaviour:
   materialToControl: {fileID: 0}
   materialCutoffRestingValue: 0.8
   materialCutoffScannerTargetValue: 0.4
+  isTutorialActive: 1
+  tutorialInitialCutoffValue: 0.5
+  saveTutorialState: 1
 --- !u!64 &774979659
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -14184,8 +14594,11 @@ MonoBehaviour:
   echoPassifProgressiveIncrement: 6
   echoJoueurProgressiveIncrement: 12
   materialToControl: {fileID: 0}
-  materialCutoffRestingValue: 0.8
-  materialCutoffScannerTargetValue: 0.4
+  materialCutoffRestingValue: 1.15
+  materialCutoffScannerTargetValue: 0.6
+  isTutorialActive: 1
+  tutorialInitialCutoffValue: 1.15
+  saveTutorialState: 0
 --- !u!1 &778089450 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 6959468105512947256, guid: 07a18efcdb0cb044e87fda8b84be6a5e, type: 3}
@@ -14614,8 +15027,11 @@ MonoBehaviour:
   echoPassifProgressiveIncrement: 6
   echoJoueurProgressiveIncrement: 12
   materialToControl: {fileID: 0}
-  materialCutoffRestingValue: 0.5
-  materialCutoffScannerTargetValue: 0.3
+  materialCutoffRestingValue: 1.15
+  materialCutoffScannerTargetValue: 0.6
+  isTutorialActive: 1
+  tutorialInitialCutoffValue: 1.15
+  saveTutorialState: 0
 --- !u!64 &805226529
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -14690,10 +15106,13 @@ MonoBehaviour:
   returnDelay: 6
   scannerProgressiveIncrement: 10
   echoPassifProgressiveIncrement: 6
-  echoJoueurProgressiveIncrement: 12
+  echoJoueurProgressiveIncrement: 100
   materialToControl: {fileID: 0}
-  materialCutoffRestingValue: 0.8
+  materialCutoffRestingValue: 1.15
   materialCutoffScannerTargetValue: 0.4
+  isTutorialActive: 0
+  tutorialInitialCutoffValue: 0.5
+  saveTutorialState: 1
 --- !u!64 &811137532
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -14772,6 +15191,9 @@ MonoBehaviour:
   materialToControl: {fileID: 0}
   materialCutoffRestingValue: 0.8
   materialCutoffScannerTargetValue: 0.4
+  isTutorialActive: 1
+  tutorialInitialCutoffValue: 0.5
+  saveTutorialState: 1
 --- !u!64 &819584467
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -14931,10 +15353,13 @@ MonoBehaviour:
   returnDelay: 6
   scannerProgressiveIncrement: 10
   echoPassifProgressiveIncrement: 6
-  echoJoueurProgressiveIncrement: 12
+  echoJoueurProgressiveIncrement: 100
   materialToControl: {fileID: 0}
-  materialCutoffRestingValue: 0.8
+  materialCutoffRestingValue: 1.15
   materialCutoffScannerTargetValue: 0.4
+  isTutorialActive: 0
+  tutorialInitialCutoffValue: 0.5
+  saveTutorialState: 1
 --- !u!64 &839489752
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -15069,6 +15494,9 @@ MonoBehaviour:
   materialToControl: {fileID: 0}
   materialCutoffRestingValue: 0.8
   materialCutoffScannerTargetValue: 0.4
+  isTutorialActive: 1
+  tutorialInitialCutoffValue: 0.5
+  saveTutorialState: 1
 --- !u!64 &848974413
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -15116,10 +15544,13 @@ MonoBehaviour:
   returnDelay: 6
   scannerProgressiveIncrement: 10
   echoPassifProgressiveIncrement: 6
-  echoJoueurProgressiveIncrement: 12
+  echoJoueurProgressiveIncrement: 100
   materialToControl: {fileID: 0}
-  materialCutoffRestingValue: 0.8
+  materialCutoffRestingValue: 1.15
   materialCutoffScannerTargetValue: 0.4
+  isTutorialActive: 0
+  tutorialInitialCutoffValue: 0.5
+  saveTutorialState: 1
 --- !u!64 &851021708
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -15325,6 +15756,33 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: -6544013956166160513, guid: c332bf7821112cd4f8d3a62d0708ac64, type: 3}
+--- !u!114 &870930523
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 870930518}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1a465b48285b2a543a7acd96d14c747f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  blendShapeIndex: 0
+  blendShapeValueTarget: 0
+  isProgressive: 0
+  restingValue: 0
+  lerpSpeed: 2
+  returnDelay: 6
+  scannerProgressiveIncrement: 10
+  echoPassifProgressiveIncrement: 6
+  echoJoueurProgressiveIncrement: 12
+  materialToControl: {fileID: 0}
+  materialCutoffRestingValue: 0.6
+  materialCutoffScannerTargetValue: 0.6
+  isTutorialActive: 1
+  tutorialInitialCutoffValue: 1.15
+  saveTutorialState: 0
 --- !u!1 &874433576
 GameObject:
   m_ObjectHideFlags: 0
@@ -15457,8 +15915,11 @@ MonoBehaviour:
   echoPassifProgressiveIncrement: 6
   echoJoueurProgressiveIncrement: 12
   materialToControl: {fileID: 0}
-  materialCutoffRestingValue: 0.5
-  materialCutoffScannerTargetValue: 0.3
+  materialCutoffRestingValue: 1.15
+  materialCutoffScannerTargetValue: 0.6
+  isTutorialActive: 1
+  tutorialInitialCutoffValue: 1.15
+  saveTutorialState: 0
 --- !u!1 &879873443 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 5160339229229834525, guid: 91602627b9f1b024cbe8a52dfe570a48, type: 3}
@@ -15484,10 +15945,13 @@ MonoBehaviour:
   returnDelay: 6
   scannerProgressiveIncrement: 10
   echoPassifProgressiveIncrement: 6
-  echoJoueurProgressiveIncrement: 12
+  echoJoueurProgressiveIncrement: 100
   materialToControl: {fileID: 0}
-  materialCutoffRestingValue: 0.8
+  materialCutoffRestingValue: 1.15
   materialCutoffScannerTargetValue: 0.4
+  isTutorialActive: 0
+  tutorialInitialCutoffValue: 0.5
+  saveTutorialState: 1
 --- !u!64 &879873447
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -15591,8 +16055,11 @@ MonoBehaviour:
   echoPassifProgressiveIncrement: 6
   echoJoueurProgressiveIncrement: 12
   materialToControl: {fileID: 0}
-  materialCutoffRestingValue: 0.8
-  materialCutoffScannerTargetValue: 0.4
+  materialCutoffRestingValue: 1.15
+  materialCutoffScannerTargetValue: 0.6
+  isTutorialActive: 1
+  tutorialInitialCutoffValue: 1.15
+  saveTutorialState: 0
 --- !u!64 &890566720
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -15913,8 +16380,11 @@ MonoBehaviour:
   echoPassifProgressiveIncrement: 6
   echoJoueurProgressiveIncrement: 12
   materialToControl: {fileID: 0}
-  materialCutoffRestingValue: 0.5
-  materialCutoffScannerTargetValue: 0.3
+  materialCutoffRestingValue: 1.15
+  materialCutoffScannerTargetValue: 0.6
+  isTutorialActive: 1
+  tutorialInitialCutoffValue: 1.15
+  saveTutorialState: 0
 --- !u!1 &926235326
 GameObject:
   m_ObjectHideFlags: 0
@@ -16156,8 +16626,11 @@ MonoBehaviour:
   echoPassifProgressiveIncrement: 6
   echoJoueurProgressiveIncrement: 12
   materialToControl: {fileID: 0}
-  materialCutoffRestingValue: 0.8
-  materialCutoffScannerTargetValue: 0.4
+  materialCutoffRestingValue: 1.15
+  materialCutoffScannerTargetValue: 0.6
+  isTutorialActive: 1
+  tutorialInitialCutoffValue: 1.15
+  saveTutorialState: 0
 --- !u!64 &941063527
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -16209,6 +16682,9 @@ MonoBehaviour:
   materialToControl: {fileID: 0}
   materialCutoffRestingValue: 0.8
   materialCutoffScannerTargetValue: 0.4
+  isTutorialActive: 1
+  tutorialInitialCutoffValue: 0.5
+  saveTutorialState: 1
 --- !u!64 &949149241
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -16696,6 +17172,9 @@ MonoBehaviour:
   materialToControl: {fileID: 0}
   materialCutoffRestingValue: 0.8
   materialCutoffScannerTargetValue: 0.4
+  isTutorialActive: 1
+  tutorialInitialCutoffValue: 0.5
+  saveTutorialState: 1
 --- !u!64 &979062860
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -16853,10 +17332,13 @@ MonoBehaviour:
   returnDelay: 6
   scannerProgressiveIncrement: 10
   echoPassifProgressiveIncrement: 6
-  echoJoueurProgressiveIncrement: 12
+  echoJoueurProgressiveIncrement: 100
   materialToControl: {fileID: 0}
-  materialCutoffRestingValue: 0.8
+  materialCutoffRestingValue: 1.15
   materialCutoffScannerTargetValue: 0.4
+  isTutorialActive: 0
+  tutorialInitialCutoffValue: 0.5
+  saveTutorialState: 1
 --- !u!64 &989259223
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -16908,6 +17390,9 @@ MonoBehaviour:
   materialToControl: {fileID: 0}
   materialCutoffRestingValue: 0.8
   materialCutoffScannerTargetValue: 0.4
+  isTutorialActive: 1
+  tutorialInitialCutoffValue: 0.5
+  saveTutorialState: 1
 --- !u!64 &999315523
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -17175,8 +17660,11 @@ MonoBehaviour:
   echoPassifProgressiveIncrement: 6
   echoJoueurProgressiveIncrement: 12
   materialToControl: {fileID: 0}
-  materialCutoffRestingValue: 0.5
-  materialCutoffScannerTargetValue: 0.3
+  materialCutoffRestingValue: 1.15
+  materialCutoffScannerTargetValue: 0.6
+  isTutorialActive: 1
+  tutorialInitialCutoffValue: 1.15
+  saveTutorialState: 0
 --- !u!64 &1003788830
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -17228,6 +17716,9 @@ MonoBehaviour:
   materialToControl: {fileID: 0}
   materialCutoffRestingValue: 0.8
   materialCutoffScannerTargetValue: 0.4
+  isTutorialActive: 1
+  tutorialInitialCutoffValue: 0.5
+  saveTutorialState: 1
 --- !u!64 &1003918891
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -17279,6 +17770,9 @@ MonoBehaviour:
   materialToControl: {fileID: 0}
   materialCutoffRestingValue: 0.8
   materialCutoffScannerTargetValue: 0.4
+  isTutorialActive: 1
+  tutorialInitialCutoffValue: 0.5
+  saveTutorialState: 1
 --- !u!64 &1004094776
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -17438,8 +17932,11 @@ MonoBehaviour:
   echoPassifProgressiveIncrement: 6
   echoJoueurProgressiveIncrement: 12
   materialToControl: {fileID: 0}
-  materialCutoffRestingValue: 0.8
-  materialCutoffScannerTargetValue: 0.4
+  materialCutoffRestingValue: 1.15
+  materialCutoffScannerTargetValue: 0.6
+  isTutorialActive: 1
+  tutorialInitialCutoffValue: 1.15
+  saveTutorialState: 0
 --- !u!64 &1024104691
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -17725,8 +18222,11 @@ MonoBehaviour:
   echoPassifProgressiveIncrement: 6
   echoJoueurProgressiveIncrement: 12
   materialToControl: {fileID: 0}
-  materialCutoffRestingValue: 0.5
-  materialCutoffScannerTargetValue: 0.3
+  materialCutoffRestingValue: 1.15
+  materialCutoffScannerTargetValue: 0.6
+  isTutorialActive: 1
+  tutorialInitialCutoffValue: 1.15
+  saveTutorialState: 0
 --- !u!64 &1049604255
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -17778,6 +18278,9 @@ MonoBehaviour:
   materialToControl: {fileID: 0}
   materialCutoffRestingValue: 0.8
   materialCutoffScannerTargetValue: 0.4
+  isTutorialActive: 1
+  tutorialInitialCutoffValue: 0.5
+  saveTutorialState: 1
 --- !u!64 &1050895848
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -18007,8 +18510,11 @@ MonoBehaviour:
   echoPassifProgressiveIncrement: 6
   echoJoueurProgressiveIncrement: 12
   materialToControl: {fileID: 0}
-  materialCutoffRestingValue: 0.5
-  materialCutoffScannerTargetValue: 0.3
+  materialCutoffRestingValue: 1.15
+  materialCutoffScannerTargetValue: 0.6
+  isTutorialActive: 1
+  tutorialInitialCutoffValue: 1.15
+  saveTutorialState: 0
 --- !u!1 &1091309903 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: -7225640653336225981, guid: 575adffb66b0b884e922a62b1e944765, type: 3}
@@ -18058,8 +18564,11 @@ MonoBehaviour:
   echoPassifProgressiveIncrement: 6
   echoJoueurProgressiveIncrement: 12
   materialToControl: {fileID: 0}
-  materialCutoffRestingValue: 0.5
-  materialCutoffScannerTargetValue: 0.3
+  materialCutoffRestingValue: 1.15
+  materialCutoffScannerTargetValue: 0.6
+  isTutorialActive: 1
+  tutorialInitialCutoffValue: 1.15
+  saveTutorialState: 0
 --- !u!1 &1094310924 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: -6488315027102028930, guid: 07a18efcdb0cb044e87fda8b84be6a5e, type: 3}
@@ -18112,10 +18621,13 @@ MonoBehaviour:
   returnDelay: 6
   scannerProgressiveIncrement: 10
   echoPassifProgressiveIncrement: 6
-  echoJoueurProgressiveIncrement: 12
+  echoJoueurProgressiveIncrement: 100
   materialToControl: {fileID: 0}
-  materialCutoffRestingValue: 0.8
+  materialCutoffRestingValue: 1.15
   materialCutoffScannerTargetValue: 0.4
+  isTutorialActive: 0
+  tutorialInitialCutoffValue: 0.5
+  saveTutorialState: 1
 --- !u!64 &1095307211
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -18508,18 +19020,33 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 8540724865436563270, guid: fefd1a3d9e9106e458835f8757759571, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1999077594}
+    - targetCorrespondingSourceObject: {fileID: 8540724865436563270, guid: fefd1a3d9e9106e458835f8757759571, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1999077597}
     - targetCorrespondingSourceObject: {fileID: -201334015647930965, guid: fefd1a3d9e9106e458835f8757759571, type: 3}
       insertIndex: -1
       addedObject: {fileID: 322247960}
+    - targetCorrespondingSourceObject: {fileID: -201334015647930965, guid: fefd1a3d9e9106e458835f8757759571, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 322247963}
     - targetCorrespondingSourceObject: {fileID: 3402798809613896418, guid: fefd1a3d9e9106e458835f8757759571, type: 3}
       insertIndex: -1
       addedObject: {fileID: 699967406}
+    - targetCorrespondingSourceObject: {fileID: 3402798809613896418, guid: fefd1a3d9e9106e458835f8757759571, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 699967409}
     - targetCorrespondingSourceObject: {fileID: 7528302065475879929, guid: fefd1a3d9e9106e458835f8757759571, type: 3}
       insertIndex: -1
       addedObject: {fileID: 700785672}
+    - targetCorrespondingSourceObject: {fileID: 7528302065475879929, guid: fefd1a3d9e9106e458835f8757759571, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 700785675}
     - targetCorrespondingSourceObject: {fileID: -9078963223071419626, guid: fefd1a3d9e9106e458835f8757759571, type: 3}
       insertIndex: -1
       addedObject: {fileID: 595944067}
+    - targetCorrespondingSourceObject: {fileID: -9078963223071419626, guid: fefd1a3d9e9106e458835f8757759571, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 595944070}
   m_SourcePrefab: {fileID: 100100000, guid: fefd1a3d9e9106e458835f8757759571, type: 3}
 --- !u!1 &1122483308 stripped
 GameObject:
@@ -18627,10 +19154,13 @@ MonoBehaviour:
   returnDelay: 6
   scannerProgressiveIncrement: 10
   echoPassifProgressiveIncrement: 6
-  echoJoueurProgressiveIncrement: 12
+  echoJoueurProgressiveIncrement: 100
   materialToControl: {fileID: 0}
-  materialCutoffRestingValue: 0.8
+  materialCutoffRestingValue: 1.15
   materialCutoffScannerTargetValue: 0.4
+  isTutorialActive: 0
+  tutorialInitialCutoffValue: 0.5
+  saveTutorialState: 1
 --- !u!64 &1147510983
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -18680,6 +19210,33 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: -744118945129581185, guid: 372cacdb75f0187448dffc8cb89021db, type: 3}
+--- !u!114 &1148489086
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1148489079}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1a465b48285b2a543a7acd96d14c747f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  blendShapeIndex: 0
+  blendShapeValueTarget: 0
+  isProgressive: 0
+  restingValue: 0
+  lerpSpeed: 5
+  returnDelay: 3
+  scannerProgressiveIncrement: 10
+  echoPassifProgressiveIncrement: 6
+  echoJoueurProgressiveIncrement: 12
+  materialToControl: {fileID: 0}
+  materialCutoffRestingValue: 0.6
+  materialCutoffScannerTargetValue: 0.6
+  isTutorialActive: 1
+  tutorialInitialCutoffValue: 1.15
+  saveTutorialState: 0
 --- !u!1 &1148916199 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: -4362802685694538781, guid: c5aaeaa3858d4b248ba6b36799cb95bd, type: 3}
@@ -18709,6 +19266,9 @@ MonoBehaviour:
   materialToControl: {fileID: 0}
   materialCutoffRestingValue: 0.8
   materialCutoffScannerTargetValue: 0.4
+  isTutorialActive: 1
+  tutorialInitialCutoffValue: 0.5
+  saveTutorialState: 1
 --- !u!64 &1148916202
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -18783,10 +19343,13 @@ MonoBehaviour:
   returnDelay: 6
   scannerProgressiveIncrement: 10
   echoPassifProgressiveIncrement: 6
-  echoJoueurProgressiveIncrement: 12
+  echoJoueurProgressiveIncrement: 100
   materialToControl: {fileID: 0}
-  materialCutoffRestingValue: 0.8
+  materialCutoffRestingValue: 1.15
   materialCutoffScannerTargetValue: 0.4
+  isTutorialActive: 0
+  tutorialInitialCutoffValue: 0.5
+  saveTutorialState: 1
 --- !u!64 &1156686791
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -18838,6 +19401,9 @@ MonoBehaviour:
   materialToControl: {fileID: 0}
   materialCutoffRestingValue: 0.8
   materialCutoffScannerTargetValue: 0.4
+  isTutorialActive: 1
+  tutorialInitialCutoffValue: 0.5
+  saveTutorialState: 1
 --- !u!64 &1160106490
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -19087,6 +19653,9 @@ MonoBehaviour:
   materialToControl: {fileID: 0}
   materialCutoffRestingValue: 0.8
   materialCutoffScannerTargetValue: 0.4
+  isTutorialActive: 1
+  tutorialInitialCutoffValue: 0.5
+  saveTutorialState: 1
 --- !u!64 &1180410796
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -19136,8 +19705,11 @@ MonoBehaviour:
   echoPassifProgressiveIncrement: 6
   echoJoueurProgressiveIncrement: 12
   materialToControl: {fileID: 0}
-  materialCutoffRestingValue: 0.5
-  materialCutoffScannerTargetValue: 0.3
+  materialCutoffRestingValue: 1.15
+  materialCutoffScannerTargetValue: 0.6
+  isTutorialActive: 1
+  tutorialInitialCutoffValue: 1.15
+  saveTutorialState: 0
 --- !u!64 &1184015940
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -19226,6 +19798,9 @@ MonoBehaviour:
   materialToControl: {fileID: 0}
   materialCutoffRestingValue: 0.8
   materialCutoffScannerTargetValue: 0.4
+  isTutorialActive: 1
+  tutorialInitialCutoffValue: 0.5
+  saveTutorialState: 1
 --- !u!64 &1205018849
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -19275,8 +19850,11 @@ MonoBehaviour:
   echoPassifProgressiveIncrement: 6
   echoJoueurProgressiveIncrement: 12
   materialToControl: {fileID: 0}
-  materialCutoffRestingValue: 0.5
-  materialCutoffScannerTargetValue: 0.3
+  materialCutoffRestingValue: 1.15
+  materialCutoffScannerTargetValue: 0.6
+  isTutorialActive: 1
+  tutorialInitialCutoffValue: 1.15
+  saveTutorialState: 0
 --- !u!64 &1206098671
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -19328,6 +19906,9 @@ MonoBehaviour:
   materialToControl: {fileID: 0}
   materialCutoffRestingValue: 0.8
   materialCutoffScannerTargetValue: 0.4
+  isTutorialActive: 1
+  tutorialInitialCutoffValue: 0.5
+  saveTutorialState: 1
 --- !u!64 &1207232555
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -19401,6 +19982,9 @@ MonoBehaviour:
   materialToControl: {fileID: 0}
   materialCutoffRestingValue: 0.8
   materialCutoffScannerTargetValue: 0.4
+  isTutorialActive: 1
+  tutorialInitialCutoffValue: 0.5
+  saveTutorialState: 1
 --- !u!114 &1207958740
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -19423,8 +20007,11 @@ MonoBehaviour:
   echoPassifProgressiveIncrement: 6
   echoJoueurProgressiveIncrement: 12
   materialToControl: {fileID: 0}
-  materialCutoffRestingValue: 0.5
-  materialCutoffScannerTargetValue: 0.3
+  materialCutoffRestingValue: 1.15
+  materialCutoffScannerTargetValue: 0.6
+  isTutorialActive: 1
+  tutorialInitialCutoffValue: 1.15
+  saveTutorialState: 0
 --- !u!1 &1212695680 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: -3834504380874759169, guid: 91602627b9f1b024cbe8a52dfe570a48, type: 3}
@@ -19450,10 +20037,13 @@ MonoBehaviour:
   returnDelay: 6
   scannerProgressiveIncrement: 10
   echoPassifProgressiveIncrement: 6
-  echoJoueurProgressiveIncrement: 12
+  echoJoueurProgressiveIncrement: 100
   materialToControl: {fileID: 0}
-  materialCutoffRestingValue: 0.8
+  materialCutoffRestingValue: 1.15
   materialCutoffScannerTargetValue: 0.4
+  isTutorialActive: 0
+  tutorialInitialCutoffValue: 0.5
+  saveTutorialState: 1
 --- !u!64 &1212695684
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -19525,8 +20115,11 @@ MonoBehaviour:
   echoPassifProgressiveIncrement: 6
   echoJoueurProgressiveIncrement: 12
   materialToControl: {fileID: 0}
-  materialCutoffRestingValue: 0.5
-  materialCutoffScannerTargetValue: 0.3
+  materialCutoffRestingValue: 1.15
+  materialCutoffScannerTargetValue: 0.6
+  isTutorialActive: 1
+  tutorialInitialCutoffValue: 1.15
+  saveTutorialState: 0
 --- !u!1 &1217080277 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 8179714386974153858, guid: 70931aee6a6b04a43aca0f1966e29b25, type: 3}
@@ -19554,8 +20147,11 @@ MonoBehaviour:
   echoPassifProgressiveIncrement: 6
   echoJoueurProgressiveIncrement: 12
   materialToControl: {fileID: 0}
-  materialCutoffRestingValue: 0.8
-  materialCutoffScannerTargetValue: 0.4
+  materialCutoffRestingValue: 1.15
+  materialCutoffScannerTargetValue: 0.6
+  isTutorialActive: 1
+  tutorialInitialCutoffValue: 1.15
+  saveTutorialState: 0
 --- !u!64 &1217080281
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -19629,6 +20225,10 @@ PrefabInstance:
     - target: {fileID: 7013217525737275675, guid: ecefbf195f9d30b45aa54f07f3a6b4f8, type: 3}
       propertyPath: m_Name
       value: ObjetARamasser OriginPos (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7013217525737275675, guid: ecefbf195f9d30b45aa54f07f3a6b4f8, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8089905341293052128, guid: ecefbf195f9d30b45aa54f07f3a6b4f8, type: 3}
       propertyPath: lerpSpeed
@@ -19785,6 +20385,9 @@ MonoBehaviour:
   materialToControl: {fileID: 0}
   materialCutoffRestingValue: 0.8
   materialCutoffScannerTargetValue: 0.4
+  isTutorialActive: 1
+  tutorialInitialCutoffValue: 0.5
+  saveTutorialState: 1
 --- !u!114 &1221072528
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -19807,8 +20410,11 @@ MonoBehaviour:
   echoPassifProgressiveIncrement: 6
   echoJoueurProgressiveIncrement: 12
   materialToControl: {fileID: 0}
-  materialCutoffRestingValue: 0.5
-  materialCutoffScannerTargetValue: 0.3
+  materialCutoffRestingValue: 1.15
+  materialCutoffScannerTargetValue: 0.6
+  isTutorialActive: 1
+  tutorialInitialCutoffValue: 1.15
+  saveTutorialState: 0
 --- !u!4 &1221219130 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 91602627b9f1b024cbe8a52dfe570a48, type: 3}
@@ -19863,8 +20469,11 @@ MonoBehaviour:
   echoPassifProgressiveIncrement: 6
   echoJoueurProgressiveIncrement: 12
   materialToControl: {fileID: 0}
-  materialCutoffRestingValue: 0.5
-  materialCutoffScannerTargetValue: 0.3
+  materialCutoffRestingValue: 1.15
+  materialCutoffScannerTargetValue: 0.6
+  isTutorialActive: 1
+  tutorialInitialCutoffValue: 1.15
+  saveTutorialState: 0
 --- !u!1 &1251522720 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 6692149627825140578, guid: c5aaeaa3858d4b248ba6b36799cb95bd, type: 3}
@@ -19894,6 +20503,9 @@ MonoBehaviour:
   materialToControl: {fileID: 0}
   materialCutoffRestingValue: 0.8
   materialCutoffScannerTargetValue: 0.4
+  isTutorialActive: 1
+  tutorialInitialCutoffValue: 0.5
+  saveTutorialState: 1
 --- !u!64 &1251522723
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -19943,8 +20555,11 @@ MonoBehaviour:
   echoPassifProgressiveIncrement: 6
   echoJoueurProgressiveIncrement: 12
   materialToControl: {fileID: 0}
-  materialCutoffRestingValue: 0.5
-  materialCutoffScannerTargetValue: 0.3
+  materialCutoffRestingValue: 1.15
+  materialCutoffScannerTargetValue: 0.6
+  isTutorialActive: 1
+  tutorialInitialCutoffValue: 1.15
+  saveTutorialState: 0
 --- !u!64 &1252983252
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -20050,6 +20665,9 @@ MonoBehaviour:
   materialToControl: {fileID: 0}
   materialCutoffRestingValue: 0.8
   materialCutoffScannerTargetValue: 0.4
+  isTutorialActive: 1
+  tutorialInitialCutoffValue: 0.5
+  saveTutorialState: 1
 --- !u!64 &1276050687
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -20128,6 +20746,9 @@ MonoBehaviour:
   materialToControl: {fileID: 0}
   materialCutoffRestingValue: 0.8
   materialCutoffScannerTargetValue: 0.4
+  isTutorialActive: 1
+  tutorialInitialCutoffValue: 0.5
+  saveTutorialState: 1
 --- !u!64 &1281622423
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -20351,10 +20972,13 @@ MonoBehaviour:
   returnDelay: 6
   scannerProgressiveIncrement: 10
   echoPassifProgressiveIncrement: 6
-  echoJoueurProgressiveIncrement: 12
+  echoJoueurProgressiveIncrement: 100
   materialToControl: {fileID: 0}
-  materialCutoffRestingValue: 0.8
+  materialCutoffRestingValue: 1.15
   materialCutoffScannerTargetValue: 0.4
+  isTutorialActive: 0
+  tutorialInitialCutoffValue: 0.5
+  saveTutorialState: 1
 --- !u!64 &1301054833
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -20489,6 +21113,9 @@ MonoBehaviour:
   materialToControl: {fileID: 0}
   materialCutoffRestingValue: 0.8
   materialCutoffScannerTargetValue: 0.4
+  isTutorialActive: 1
+  tutorialInitialCutoffValue: 0.5
+  saveTutorialState: 1
 --- !u!64 &1305829951
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -20623,6 +21250,9 @@ MonoBehaviour:
   materialToControl: {fileID: 0}
   materialCutoffRestingValue: 0.8
   materialCutoffScannerTargetValue: 0.4
+  isTutorialActive: 1
+  tutorialInitialCutoffValue: 0.5
+  saveTutorialState: 1
 --- !u!64 &1314232076
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -20765,10 +21395,13 @@ MonoBehaviour:
   returnDelay: 6
   scannerProgressiveIncrement: 10
   echoPassifProgressiveIncrement: 6
-  echoJoueurProgressiveIncrement: 12
+  echoJoueurProgressiveIncrement: 100
   materialToControl: {fileID: 0}
-  materialCutoffRestingValue: 0.8
+  materialCutoffRestingValue: 1.15
   materialCutoffScannerTargetValue: 0.4
+  isTutorialActive: 0
+  tutorialInitialCutoffValue: 0.5
+  saveTutorialState: 1
 --- !u!64 &1323038815
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -20957,10 +21590,13 @@ MonoBehaviour:
   returnDelay: 6
   scannerProgressiveIncrement: 10
   echoPassifProgressiveIncrement: 6
-  echoJoueurProgressiveIncrement: 12
+  echoJoueurProgressiveIncrement: 100
   materialToControl: {fileID: 0}
-  materialCutoffRestingValue: 0.8
+  materialCutoffRestingValue: 1.15
   materialCutoffScannerTargetValue: 0.4
+  isTutorialActive: 0
+  tutorialInitialCutoffValue: 0.5
+  saveTutorialState: 1
 --- !u!64 &1346686430
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -21012,6 +21648,9 @@ MonoBehaviour:
   materialToControl: {fileID: 0}
   materialCutoffRestingValue: 0.8
   materialCutoffScannerTargetValue: 0.4
+  isTutorialActive: 1
+  tutorialInitialCutoffValue: 0.5
+  saveTutorialState: 1
 --- !u!64 &1348278272
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -21063,6 +21702,9 @@ MonoBehaviour:
   materialToControl: {fileID: 0}
   materialCutoffRestingValue: 0.8
   materialCutoffScannerTargetValue: 0.4
+  isTutorialActive: 1
+  tutorialInitialCutoffValue: 0.5
+  saveTutorialState: 1
 --- !u!64 &1349448683
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -21114,6 +21756,9 @@ MonoBehaviour:
   materialToControl: {fileID: 0}
   materialCutoffRestingValue: 0.8
   materialCutoffScannerTargetValue: 0.4
+  isTutorialActive: 1
+  tutorialInitialCutoffValue: 0.5
+  saveTutorialState: 1
 --- !u!64 &1351403086
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -21296,8 +21941,11 @@ MonoBehaviour:
   echoPassifProgressiveIncrement: 6
   echoJoueurProgressiveIncrement: 12
   materialToControl: {fileID: 0}
-  materialCutoffRestingValue: 0.5
-  materialCutoffScannerTargetValue: 0.3
+  materialCutoffRestingValue: 1.15
+  materialCutoffScannerTargetValue: 0.6
+  isTutorialActive: 1
+  tutorialInitialCutoffValue: 1.15
+  saveTutorialState: 0
 --- !u!64 &1356141633
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -21349,6 +21997,9 @@ MonoBehaviour:
   materialToControl: {fileID: 0}
   materialCutoffRestingValue: 0.8
   materialCutoffScannerTargetValue: 0.4
+  isTutorialActive: 1
+  tutorialInitialCutoffValue: 0.5
+  saveTutorialState: 1
 --- !u!64 &1356465387
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -21420,8 +22071,11 @@ MonoBehaviour:
   echoPassifProgressiveIncrement: 6
   echoJoueurProgressiveIncrement: 12
   materialToControl: {fileID: 0}
-  materialCutoffRestingValue: 0.5
-  materialCutoffScannerTargetValue: 0.3
+  materialCutoffRestingValue: 1.15
+  materialCutoffScannerTargetValue: 0.6
+  isTutorialActive: 1
+  tutorialInitialCutoffValue: 1.15
+  saveTutorialState: 0
 --- !u!1 &1369023493 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 4625760099979896526, guid: c5aaeaa3858d4b248ba6b36799cb95bd, type: 3}
@@ -21451,6 +22105,9 @@ MonoBehaviour:
   materialToControl: {fileID: 0}
   materialCutoffRestingValue: 0.8
   materialCutoffScannerTargetValue: 0.4
+  isTutorialActive: 1
+  tutorialInitialCutoffValue: 0.5
+  saveTutorialState: 1
 --- !u!64 &1369023496
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -21577,6 +22234,9 @@ MonoBehaviour:
   materialToControl: {fileID: 0}
   materialCutoffRestingValue: 0.8
   materialCutoffScannerTargetValue: 0.4
+  isTutorialActive: 1
+  tutorialInitialCutoffValue: 0.5
+  saveTutorialState: 1
 --- !u!64 &1372593572
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -21628,6 +22288,9 @@ MonoBehaviour:
   materialToControl: {fileID: 0}
   materialCutoffRestingValue: 0.8
   materialCutoffScannerTargetValue: 0.4
+  isTutorialActive: 1
+  tutorialInitialCutoffValue: 0.5
+  saveTutorialState: 1
 --- !u!64 &1376066804
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -21677,8 +22340,11 @@ MonoBehaviour:
   echoPassifProgressiveIncrement: 6
   echoJoueurProgressiveIncrement: 12
   materialToControl: {fileID: 0}
-  materialCutoffRestingValue: 0.5
-  materialCutoffScannerTargetValue: 0.3
+  materialCutoffRestingValue: 1.15
+  materialCutoffScannerTargetValue: 0.6
+  isTutorialActive: 1
+  tutorialInitialCutoffValue: 1.15
+  saveTutorialState: 0
 --- !u!64 &1382015365
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -21728,6 +22394,33 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: -5918259529129527338, guid: 372cacdb75f0187448dffc8cb89021db, type: 3}
+--- !u!114 &1385881054
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1385881047}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1a465b48285b2a543a7acd96d14c747f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  blendShapeIndex: 0
+  blendShapeValueTarget: 0
+  isProgressive: 0
+  restingValue: 0
+  lerpSpeed: 5
+  returnDelay: 3
+  scannerProgressiveIncrement: 10
+  echoPassifProgressiveIncrement: 6
+  echoJoueurProgressiveIncrement: 12
+  materialToControl: {fileID: 0}
+  materialCutoffRestingValue: 0.6
+  materialCutoffScannerTargetValue: 0.6
+  isTutorialActive: 1
+  tutorialInitialCutoffValue: 1.15
+  saveTutorialState: 0
 --- !u!1 &1390018281 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 330410417440086291, guid: 07a18efcdb0cb044e87fda8b84be6a5e, type: 3}
@@ -21807,10 +22500,13 @@ MonoBehaviour:
   returnDelay: 6
   scannerProgressiveIncrement: 10
   echoPassifProgressiveIncrement: 6
-  echoJoueurProgressiveIncrement: 12
+  echoJoueurProgressiveIncrement: 100
   materialToControl: {fileID: 0}
-  materialCutoffRestingValue: 0.8
+  materialCutoffRestingValue: 1.15
   materialCutoffScannerTargetValue: 0.4
+  isTutorialActive: 0
+  tutorialInitialCutoffValue: 0.5
+  saveTutorialState: 1
 --- !u!64 &1391900876
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -21885,10 +22581,13 @@ MonoBehaviour:
   returnDelay: 6
   scannerProgressiveIncrement: 10
   echoPassifProgressiveIncrement: 6
-  echoJoueurProgressiveIncrement: 12
+  echoJoueurProgressiveIncrement: 100
   materialToControl: {fileID: 0}
-  materialCutoffRestingValue: 0.8
+  materialCutoffRestingValue: 1.15
   materialCutoffScannerTargetValue: 0.4
+  isTutorialActive: 0
+  tutorialInitialCutoffValue: 0.5
+  saveTutorialState: 1
 --- !u!64 &1411551674
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -22222,10 +22921,13 @@ MonoBehaviour:
   returnDelay: 6
   scannerProgressiveIncrement: 10
   echoPassifProgressiveIncrement: 6
-  echoJoueurProgressiveIncrement: 12
+  echoJoueurProgressiveIncrement: 100
   materialToControl: {fileID: 0}
-  materialCutoffRestingValue: 0.8
+  materialCutoffRestingValue: 1.15
   materialCutoffScannerTargetValue: 0.4
+  isTutorialActive: 0
+  tutorialInitialCutoffValue: 0.5
+  saveTutorialState: 1
 --- !u!64 &1439029776
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -22360,8 +23062,11 @@ MonoBehaviour:
   echoPassifProgressiveIncrement: 6
   echoJoueurProgressiveIncrement: 12
   materialToControl: {fileID: 0}
-  materialCutoffRestingValue: 0.5
-  materialCutoffScannerTargetValue: 0.3
+  materialCutoffRestingValue: 1.15
+  materialCutoffScannerTargetValue: 0.6
+  isTutorialActive: 1
+  tutorialInitialCutoffValue: 1.15
+  saveTutorialState: 0
 --- !u!64 &1442287184
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -22409,10 +23114,13 @@ MonoBehaviour:
   returnDelay: 6
   scannerProgressiveIncrement: 10
   echoPassifProgressiveIncrement: 6
-  echoJoueurProgressiveIncrement: 12
+  echoJoueurProgressiveIncrement: 100
   materialToControl: {fileID: 0}
-  materialCutoffRestingValue: 0.8
+  materialCutoffRestingValue: 1.15
   materialCutoffScannerTargetValue: 0.4
+  isTutorialActive: 0
+  tutorialInitialCutoffValue: 0.5
+  saveTutorialState: 1
 --- !u!64 &1442414603
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -26103,10 +26811,13 @@ MonoBehaviour:
   returnDelay: 6
   scannerProgressiveIncrement: 10
   echoPassifProgressiveIncrement: 6
-  echoJoueurProgressiveIncrement: 12
+  echoJoueurProgressiveIncrement: 100
   materialToControl: {fileID: 0}
-  materialCutoffRestingValue: 0.8
+  materialCutoffRestingValue: 1.15
   materialCutoffScannerTargetValue: 0.4
+  isTutorialActive: 0
+  tutorialInitialCutoffValue: 0.5
+  saveTutorialState: 1
 --- !u!64 &1446077029
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -26156,6 +26867,33 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: 222363632185243165, guid: 372cacdb75f0187448dffc8cb89021db, type: 3}
+--- !u!114 &1451664305
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1451664298}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1a465b48285b2a543a7acd96d14c747f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  blendShapeIndex: 0
+  blendShapeValueTarget: 0
+  isProgressive: 0
+  restingValue: 0
+  lerpSpeed: 5
+  returnDelay: 3
+  scannerProgressiveIncrement: 10
+  echoPassifProgressiveIncrement: 6
+  echoJoueurProgressiveIncrement: 12
+  materialToControl: {fileID: 0}
+  materialCutoffRestingValue: 0.6
+  materialCutoffScannerTargetValue: 0.6
+  isTutorialActive: 1
+  tutorialInitialCutoffValue: 1.15
+  saveTutorialState: 0
 --- !u!1 &1463451909 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: -5065533694481631877, guid: 91602627b9f1b024cbe8a52dfe570a48, type: 3}
@@ -26181,10 +26919,13 @@ MonoBehaviour:
   returnDelay: 6
   scannerProgressiveIncrement: 10
   echoPassifProgressiveIncrement: 6
-  echoJoueurProgressiveIncrement: 12
+  echoJoueurProgressiveIncrement: 100
   materialToControl: {fileID: 0}
-  materialCutoffRestingValue: 0.8
+  materialCutoffRestingValue: 1.15
   materialCutoffScannerTargetValue: 0.4
+  isTutorialActive: 0
+  tutorialInitialCutoffValue: 0.5
+  saveTutorialState: 1
 --- !u!64 &1463451913
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -28687,15 +29428,27 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: -5741574952911461655, guid: 91602627b9f1b024cbe8a52dfe570a48, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1451664302}
+    - targetCorrespondingSourceObject: {fileID: -5741574952911461655, guid: 91602627b9f1b024cbe8a52dfe570a48, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1451664305}
     - targetCorrespondingSourceObject: {fileID: -1711893151697871358, guid: 91602627b9f1b024cbe8a52dfe570a48, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1549832422}
+    - targetCorrespondingSourceObject: {fileID: -1711893151697871358, guid: 91602627b9f1b024cbe8a52dfe570a48, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1549832425}
     - targetCorrespondingSourceObject: {fileID: 2712413826607331833, guid: 91602627b9f1b024cbe8a52dfe570a48, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1148489083}
+    - targetCorrespondingSourceObject: {fileID: 2712413826607331833, guid: 91602627b9f1b024cbe8a52dfe570a48, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1148489086}
     - targetCorrespondingSourceObject: {fileID: -582178776437635851, guid: 91602627b9f1b024cbe8a52dfe570a48, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1385881051}
+    - targetCorrespondingSourceObject: {fileID: -582178776437635851, guid: 91602627b9f1b024cbe8a52dfe570a48, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1385881054}
     - targetCorrespondingSourceObject: {fileID: -3834504380874759169, guid: 91602627b9f1b024cbe8a52dfe570a48, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1212695682}
@@ -28813,12 +29566,21 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 4532772780539657552, guid: 91602627b9f1b024cbe8a52dfe570a48, type: 3}
       insertIndex: -1
       addedObject: {fileID: 2116344978}
+    - targetCorrespondingSourceObject: {fileID: 4532772780539657552, guid: 91602627b9f1b024cbe8a52dfe570a48, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 2116344981}
     - targetCorrespondingSourceObject: {fileID: -7958680123844533479, guid: 91602627b9f1b024cbe8a52dfe570a48, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1945204578}
+    - targetCorrespondingSourceObject: {fileID: -7958680123844533479, guid: 91602627b9f1b024cbe8a52dfe570a48, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1945204581}
     - targetCorrespondingSourceObject: {fileID: 5745888386702444355, guid: 91602627b9f1b024cbe8a52dfe570a48, type: 3}
       insertIndex: -1
       addedObject: {fileID: 2039055460}
+    - targetCorrespondingSourceObject: {fileID: 5745888386702444355, guid: 91602627b9f1b024cbe8a52dfe570a48, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 2039055463}
     - targetCorrespondingSourceObject: {fileID: -8465600641516905520, guid: 91602627b9f1b024cbe8a52dfe570a48, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1874959821}
@@ -29080,8 +29842,11 @@ MonoBehaviour:
   echoPassifProgressiveIncrement: 6
   echoJoueurProgressiveIncrement: 12
   materialToControl: {fileID: 0}
-  materialCutoffRestingValue: 0.5
-  materialCutoffScannerTargetValue: 0.3
+  materialCutoffRestingValue: 1.15
+  materialCutoffScannerTargetValue: 0.6
+  isTutorialActive: 1
+  tutorialInitialCutoffValue: 1.15
+  saveTutorialState: 0
 --- !u!4 &1511028238 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 3658221473c477a4fb1dfbdf337998af, type: 3}
@@ -29199,6 +29964,9 @@ MonoBehaviour:
   materialToControl: {fileID: 0}
   materialCutoffRestingValue: 0.8
   materialCutoffScannerTargetValue: 0.4
+  isTutorialActive: 1
+  tutorialInitialCutoffValue: 0.5
+  saveTutorialState: 1
 --- !u!64 &1538273050
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -29250,6 +30018,9 @@ MonoBehaviour:
   materialToControl: {fileID: 0}
   materialCutoffRestingValue: 0.8
   materialCutoffScannerTargetValue: 0.4
+  isTutorialActive: 1
+  tutorialInitialCutoffValue: 0.5
+  saveTutorialState: 1
 --- !u!64 &1545781929
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -29299,6 +30070,33 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: 7571535727818306393, guid: 372cacdb75f0187448dffc8cb89021db, type: 3}
+--- !u!114 &1549832425
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1549832418}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1a465b48285b2a543a7acd96d14c747f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  blendShapeIndex: 0
+  blendShapeValueTarget: 0
+  isProgressive: 0
+  restingValue: 0
+  lerpSpeed: 5
+  returnDelay: 3
+  scannerProgressiveIncrement: 10
+  echoPassifProgressiveIncrement: 6
+  echoJoueurProgressiveIncrement: 12
+  materialToControl: {fileID: 0}
+  materialCutoffRestingValue: 0.6
+  materialCutoffScannerTargetValue: 0.6
+  isTutorialActive: 1
+  tutorialInitialCutoffValue: 1.15
+  saveTutorialState: 0
 --- !u!1 &1551271598
 GameObject:
   m_ObjectHideFlags: 0
@@ -29524,10 +30322,13 @@ MonoBehaviour:
   returnDelay: 6
   scannerProgressiveIncrement: 10
   echoPassifProgressiveIncrement: 6
-  echoJoueurProgressiveIncrement: 12
+  echoJoueurProgressiveIncrement: 100
   materialToControl: {fileID: 0}
-  materialCutoffRestingValue: 0.8
+  materialCutoffRestingValue: 1.15
   materialCutoffScannerTargetValue: 0.4
+  isTutorialActive: 0
+  tutorialInitialCutoffValue: 0.5
+  saveTutorialState: 1
 --- !u!64 &1560868890
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -29580,10 +30381,13 @@ MonoBehaviour:
   returnDelay: 6
   scannerProgressiveIncrement: 10
   echoPassifProgressiveIncrement: 6
-  echoJoueurProgressiveIncrement: 12
+  echoJoueurProgressiveIncrement: 100
   materialToControl: {fileID: 0}
-  materialCutoffRestingValue: 0.8
+  materialCutoffRestingValue: 1.15
   materialCutoffScannerTargetValue: 0.4
+  isTutorialActive: 0
+  tutorialInitialCutoffValue: 0.5
+  saveTutorialState: 1
 --- !u!64 &1570905238
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -29635,6 +30439,9 @@ MonoBehaviour:
   materialToControl: {fileID: 0}
   materialCutoffRestingValue: 0.8
   materialCutoffScannerTargetValue: 0.4
+  isTutorialActive: 1
+  tutorialInitialCutoffValue: 0.5
+  saveTutorialState: 1
 --- !u!64 &1585163933
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -29684,8 +30491,11 @@ MonoBehaviour:
   echoPassifProgressiveIncrement: 6
   echoJoueurProgressiveIncrement: 12
   materialToControl: {fileID: 0}
-  materialCutoffRestingValue: 0.5
-  materialCutoffScannerTargetValue: 0.3
+  materialCutoffRestingValue: 1.15
+  materialCutoffScannerTargetValue: 0.6
+  isTutorialActive: 1
+  tutorialInitialCutoffValue: 1.15
+  saveTutorialState: 0
 --- !u!64 &1586532004
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -29845,8 +30655,11 @@ MonoBehaviour:
   echoPassifProgressiveIncrement: 6
   echoJoueurProgressiveIncrement: 12
   materialToControl: {fileID: 0}
-  materialCutoffRestingValue: 0.5
-  materialCutoffScannerTargetValue: 0.3
+  materialCutoffRestingValue: 1.15
+  materialCutoffScannerTargetValue: 0.6
+  isTutorialActive: 1
+  tutorialInitialCutoffValue: 1.15
+  saveTutorialState: 0
 --- !u!64 &1603009634
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -29894,10 +30707,13 @@ MonoBehaviour:
   returnDelay: 6
   scannerProgressiveIncrement: 10
   echoPassifProgressiveIncrement: 6
-  echoJoueurProgressiveIncrement: 12
+  echoJoueurProgressiveIncrement: 100
   materialToControl: {fileID: 0}
-  materialCutoffRestingValue: 0.8
+  materialCutoffRestingValue: 1.15
   materialCutoffScannerTargetValue: 0.4
+  isTutorialActive: 0
+  tutorialInitialCutoffValue: 0.5
+  saveTutorialState: 1
 --- !u!64 &1603238244
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -29969,8 +30785,11 @@ MonoBehaviour:
   echoPassifProgressiveIncrement: 6
   echoJoueurProgressiveIncrement: 12
   materialToControl: {fileID: 0}
-  materialCutoffRestingValue: 0.5
-  materialCutoffScannerTargetValue: 0.3
+  materialCutoffRestingValue: 1.15
+  materialCutoffScannerTargetValue: 0.6
+  isTutorialActive: 1
+  tutorialInitialCutoffValue: 1.15
+  saveTutorialState: 0
 --- !u!1 &1607971092 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: -8275604200953139024, guid: 91602627b9f1b024cbe8a52dfe570a48, type: 3}
@@ -29996,10 +30815,13 @@ MonoBehaviour:
   returnDelay: 6
   scannerProgressiveIncrement: 10
   echoPassifProgressiveIncrement: 6
-  echoJoueurProgressiveIncrement: 12
+  echoJoueurProgressiveIncrement: 100
   materialToControl: {fileID: 0}
-  materialCutoffRestingValue: 0.8
+  materialCutoffRestingValue: 1.15
   materialCutoffScannerTargetValue: 0.4
+  isTutorialActive: 0
+  tutorialInitialCutoffValue: 0.5
+  saveTutorialState: 1
 --- !u!64 &1607971096
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -30192,6 +31014,9 @@ MonoBehaviour:
   materialToControl: {fileID: 0}
   materialCutoffRestingValue: 0.8
   materialCutoffScannerTargetValue: 0.4
+  isTutorialActive: 1
+  tutorialInitialCutoffValue: 0.5
+  saveTutorialState: 1
 --- !u!64 &1615877508
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -30295,8 +31120,11 @@ MonoBehaviour:
   echoPassifProgressiveIncrement: 6
   echoJoueurProgressiveIncrement: 12
   materialToControl: {fileID: 0}
-  materialCutoffRestingValue: 0.5
-  materialCutoffScannerTargetValue: 0.3
+  materialCutoffRestingValue: 1.15
+  materialCutoffScannerTargetValue: 0.6
+  isTutorialActive: 1
+  tutorialInitialCutoffValue: 1.15
+  saveTutorialState: 0
 --- !u!64 &1626021735
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -30400,8 +31228,11 @@ MonoBehaviour:
   echoPassifProgressiveIncrement: 6
   echoJoueurProgressiveIncrement: 12
   materialToControl: {fileID: 0}
-  materialCutoffRestingValue: 0.5
-  materialCutoffScannerTargetValue: 0.3
+  materialCutoffRestingValue: 1.15
+  materialCutoffScannerTargetValue: 0.6
+  isTutorialActive: 1
+  tutorialInitialCutoffValue: 1.15
+  saveTutorialState: 0
 --- !u!64 &1662536270
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -30453,6 +31284,9 @@ MonoBehaviour:
   materialToControl: {fileID: 0}
   materialCutoffRestingValue: 0.8
   materialCutoffScannerTargetValue: 0.4
+  isTutorialActive: 1
+  tutorialInitialCutoffValue: 0.5
+  saveTutorialState: 1
 --- !u!64 &1672537802
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -31335,6 +32169,9 @@ MonoBehaviour:
   materialToControl: {fileID: 0}
   materialCutoffRestingValue: 0.8
   materialCutoffScannerTargetValue: 0.4
+  isTutorialActive: 1
+  tutorialInitialCutoffValue: 0.5
+  saveTutorialState: 1
 --- !u!64 &1701831180
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -31453,6 +32290,10 @@ PrefabInstance:
       value: 0.18177485
       objectReference: {fileID: 0}
     - target: {fileID: 1238671379245572245, guid: 9cf5b9ddbcef7054d85f4226c2ed95d8, type: 3}
+      propertyPath: EcholocationSpherePrefab
+      value: 
+      objectReference: {fileID: 3520727272833897359, guid: 603eb2df2922f2944ba7bef628832dc0, type: 3}
+    - target: {fileID: 1238671379245572245, guid: 9cf5b9ddbcef7054d85f4226c2ed95d8, type: 3}
       propertyPath: spawnCurve.m_Curve.Array.size
       value: 2
       objectReference: {fileID: 0}
@@ -31484,6 +32325,10 @@ PrefabInstance:
       propertyPath: m_Layer
       value: 6
       objectReference: {fileID: 0}
+    - target: {fileID: 1422596832769917572, guid: 9cf5b9ddbcef7054d85f4226c2ed95d8, type: 3}
+      propertyPath: noisePrefab
+      value: 
+      objectReference: {fileID: 3323835722042439851, guid: 61aad783585313f4780e401599a68626, type: 3}
     - target: {fileID: 1422596832769917572, guid: 9cf5b9ddbcef7054d85f4226c2ed95d8, type: 3}
       propertyPath: sizeChangeSpeed
       value: 16
@@ -32277,10 +33122,13 @@ MonoBehaviour:
   returnDelay: 6
   scannerProgressiveIncrement: 10
   echoPassifProgressiveIncrement: 6
-  echoJoueurProgressiveIncrement: 12
+  echoJoueurProgressiveIncrement: 100
   materialToControl: {fileID: 0}
-  materialCutoffRestingValue: 0.8
+  materialCutoffRestingValue: 1.15
   materialCutoffScannerTargetValue: 0.4
+  isTutorialActive: 0
+  tutorialInitialCutoffValue: 0.5
+  saveTutorialState: 1
 --- !u!64 &1739471557
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -32330,8 +33178,11 @@ MonoBehaviour:
   echoPassifProgressiveIncrement: 6
   echoJoueurProgressiveIncrement: 12
   materialToControl: {fileID: 0}
-  materialCutoffRestingValue: 0.5
-  materialCutoffScannerTargetValue: 0.3
+  materialCutoffRestingValue: 1.15
+  materialCutoffScannerTargetValue: 0.6
+  isTutorialActive: 1
+  tutorialInitialCutoffValue: 1.15
+  saveTutorialState: 0
 --- !u!64 &1741791985
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -32411,10 +33262,13 @@ MonoBehaviour:
   returnDelay: 6
   scannerProgressiveIncrement: 10
   echoPassifProgressiveIncrement: 6
-  echoJoueurProgressiveIncrement: 12
+  echoJoueurProgressiveIncrement: 100
   materialToControl: {fileID: 0}
-  materialCutoffRestingValue: 0.8
+  materialCutoffRestingValue: 1.15
   materialCutoffScannerTargetValue: 0.4
+  isTutorialActive: 0
+  tutorialInitialCutoffValue: 0.5
+  saveTutorialState: 1
 --- !u!64 &1749507442
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -32466,6 +33320,9 @@ MonoBehaviour:
   materialToControl: {fileID: 0}
   materialCutoffRestingValue: 0.8
   materialCutoffScannerTargetValue: 0.4
+  isTutorialActive: 1
+  tutorialInitialCutoffValue: 0.5
+  saveTutorialState: 1
 --- !u!64 &1760779420
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -32517,6 +33374,9 @@ MonoBehaviour:
   materialToControl: {fileID: 0}
   materialCutoffRestingValue: 0.8
   materialCutoffScannerTargetValue: 0.4
+  isTutorialActive: 1
+  tutorialInitialCutoffValue: 0.5
+  saveTutorialState: 1
 --- !u!64 &1764819929
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -32671,8 +33531,11 @@ MonoBehaviour:
   echoPassifProgressiveIncrement: 6
   echoJoueurProgressiveIncrement: 12
   materialToControl: {fileID: 0}
-  materialCutoffRestingValue: 0.5
-  materialCutoffScannerTargetValue: 0.3
+  materialCutoffRestingValue: 1.15
+  materialCutoffScannerTargetValue: 0.6
+  isTutorialActive: 1
+  tutorialInitialCutoffValue: 1.15
+  saveTutorialState: 0
 --- !u!1001 &1768171026
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -32798,10 +33661,13 @@ MonoBehaviour:
   returnDelay: 6
   scannerProgressiveIncrement: 10
   echoPassifProgressiveIncrement: 6
-  echoJoueurProgressiveIncrement: 12
+  echoJoueurProgressiveIncrement: 100
   materialToControl: {fileID: 0}
-  materialCutoffRestingValue: 0.8
+  materialCutoffRestingValue: 1.15
   materialCutoffScannerTargetValue: 0.4
+  isTutorialActive: 0
+  tutorialInitialCutoffValue: 0.5
+  saveTutorialState: 1
 --- !u!64 &1774424645
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -32932,10 +33798,13 @@ MonoBehaviour:
   returnDelay: 6
   scannerProgressiveIncrement: 10
   echoPassifProgressiveIncrement: 6
-  echoJoueurProgressiveIncrement: 12
+  echoJoueurProgressiveIncrement: 100
   materialToControl: {fileID: 0}
-  materialCutoffRestingValue: 0.8
+  materialCutoffRestingValue: 1.15
   materialCutoffScannerTargetValue: 0.4
+  isTutorialActive: 0
+  tutorialInitialCutoffValue: 0.5
+  saveTutorialState: 1
 --- !u!64 &1781839716
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -32983,10 +33852,13 @@ MonoBehaviour:
   returnDelay: 6
   scannerProgressiveIncrement: 10
   echoPassifProgressiveIncrement: 6
-  echoJoueurProgressiveIncrement: 12
+  echoJoueurProgressiveIncrement: 100
   materialToControl: {fileID: 0}
-  materialCutoffRestingValue: 0.8
+  materialCutoffRestingValue: 1.15
   materialCutoffScannerTargetValue: 0.4
+  isTutorialActive: 0
+  tutorialInitialCutoffValue: 0.5
+  saveTutorialState: 1
 --- !u!64 &1781983739
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -33036,8 +33908,11 @@ MonoBehaviour:
   echoPassifProgressiveIncrement: 6
   echoJoueurProgressiveIncrement: 12
   materialToControl: {fileID: 0}
-  materialCutoffRestingValue: 0.5
-  materialCutoffScannerTargetValue: 0.3
+  materialCutoffRestingValue: 1.15
+  materialCutoffScannerTargetValue: 0.6
+  isTutorialActive: 1
+  tutorialInitialCutoffValue: 1.15
+  saveTutorialState: 0
 --- !u!64 &1789098637
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -33087,8 +33962,11 @@ MonoBehaviour:
   echoPassifProgressiveIncrement: 6
   echoJoueurProgressiveIncrement: 12
   materialToControl: {fileID: 0}
-  materialCutoffRestingValue: 0.5
-  materialCutoffScannerTargetValue: 0.3
+  materialCutoffRestingValue: 1.15
+  materialCutoffScannerTargetValue: 0.6
+  isTutorialActive: 1
+  tutorialInitialCutoffValue: 1.15
+  saveTutorialState: 0
 --- !u!64 &1795477872
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -33689,10 +34567,13 @@ MonoBehaviour:
   returnDelay: 6
   scannerProgressiveIncrement: 10
   echoPassifProgressiveIncrement: 6
-  echoJoueurProgressiveIncrement: 12
+  echoJoueurProgressiveIncrement: 100
   materialToControl: {fileID: 0}
-  materialCutoffRestingValue: 0.8
+  materialCutoffRestingValue: 1.15
   materialCutoffScannerTargetValue: 0.4
+  isTutorialActive: 0
+  tutorialInitialCutoffValue: 0.5
+  saveTutorialState: 1
 --- !u!64 &1847150053
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -34101,10 +34982,13 @@ MonoBehaviour:
   returnDelay: 6
   scannerProgressiveIncrement: 10
   echoPassifProgressiveIncrement: 6
-  echoJoueurProgressiveIncrement: 12
+  echoJoueurProgressiveIncrement: 100
   materialToControl: {fileID: 0}
-  materialCutoffRestingValue: 0.8
+  materialCutoffRestingValue: 1.15
   materialCutoffScannerTargetValue: 0.4
+  isTutorialActive: 0
+  tutorialInitialCutoffValue: 0.5
+  saveTutorialState: 1
 --- !u!64 &1874959823
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -34250,9 +35134,15 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 1027114745231444043, guid: 2e361386b4971114e841c24199ab0da3, type: 3}
       insertIndex: -1
       addedObject: {fileID: 870930520}
+    - targetCorrespondingSourceObject: {fileID: 1027114745231444043, guid: 2e361386b4971114e841c24199ab0da3, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 870930523}
     - targetCorrespondingSourceObject: {fileID: 5785651350648884865, guid: 2e361386b4971114e841c24199ab0da3, type: 3}
       insertIndex: -1
       addedObject: {fileID: 128961942}
+    - targetCorrespondingSourceObject: {fileID: 5785651350648884865, guid: 2e361386b4971114e841c24199ab0da3, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 128961945}
   m_SourcePrefab: {fileID: 100100000, guid: 2e361386b4971114e841c24199ab0da3, type: 3}
 --- !u!1 &1884523447 stripped
 GameObject:
@@ -34283,6 +35173,9 @@ MonoBehaviour:
   materialToControl: {fileID: 0}
   materialCutoffRestingValue: 0.8
   materialCutoffScannerTargetValue: 0.4
+  isTutorialActive: 1
+  tutorialInitialCutoffValue: 0.5
+  saveTutorialState: 1
 --- !u!64 &1884523450
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -34606,8 +35499,11 @@ MonoBehaviour:
   echoPassifProgressiveIncrement: 6
   echoJoueurProgressiveIncrement: 12
   materialToControl: {fileID: 0}
-  materialCutoffRestingValue: 0.5
-  materialCutoffScannerTargetValue: 0.3
+  materialCutoffRestingValue: 1.15
+  materialCutoffScannerTargetValue: 0.6
+  isTutorialActive: 1
+  tutorialInitialCutoffValue: 1.15
+  saveTutorialState: 0
 --- !u!64 &1903557120
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -34659,6 +35555,9 @@ MonoBehaviour:
   materialToControl: {fileID: 0}
   materialCutoffRestingValue: 0.8
   materialCutoffScannerTargetValue: 0.4
+  isTutorialActive: 1
+  tutorialInitialCutoffValue: 0.5
+  saveTutorialState: 1
 --- !u!64 &1912987303
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -34818,6 +35717,33 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: 6803833124053768136, guid: 372cacdb75f0187448dffc8cb89021db, type: 3}
+--- !u!114 &1945204581
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1945204574}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1a465b48285b2a543a7acd96d14c747f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  blendShapeIndex: 0
+  blendShapeValueTarget: 0
+  isProgressive: 0
+  restingValue: 0
+  lerpSpeed: 5
+  returnDelay: 3
+  scannerProgressiveIncrement: 10
+  echoPassifProgressiveIncrement: 6
+  echoJoueurProgressiveIncrement: 12
+  materialToControl: {fileID: 0}
+  materialCutoffRestingValue: 0.6
+  materialCutoffScannerTargetValue: 0.6
+  isTutorialActive: 1
+  tutorialInitialCutoffValue: 1.15
+  saveTutorialState: 0
 --- !u!1 &1957298830
 GameObject:
   m_ObjectHideFlags: 0
@@ -34957,6 +35883,9 @@ MonoBehaviour:
   materialToControl: {fileID: 0}
   materialCutoffRestingValue: 0.8
   materialCutoffScannerTargetValue: 0.4
+  isTutorialActive: 1
+  tutorialInitialCutoffValue: 0.5
+  saveTutorialState: 1
 --- !u!64 &1964677785
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -35193,10 +36122,13 @@ MonoBehaviour:
   returnDelay: 6
   scannerProgressiveIncrement: 10
   echoPassifProgressiveIncrement: 6
-  echoJoueurProgressiveIncrement: 12
+  echoJoueurProgressiveIncrement: 100
   materialToControl: {fileID: 0}
-  materialCutoffRestingValue: 0.8
+  materialCutoffRestingValue: 1.15
   materialCutoffScannerTargetValue: 0.4
+  isTutorialActive: 0
+  tutorialInitialCutoffValue: 0.5
+  saveTutorialState: 1
 --- !u!64 &1991437545
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -35246,6 +36178,33 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: 5520557067153324622, guid: c0fbd759e339a1b4c92ad3a94b02cbdc, type: 3}
+--- !u!114 &1999077597
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1999077590}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1a465b48285b2a543a7acd96d14c747f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  blendShapeIndex: 0
+  blendShapeValueTarget: 0
+  isProgressive: 0
+  restingValue: 0
+  lerpSpeed: 2
+  returnDelay: 6
+  scannerProgressiveIncrement: 10
+  echoPassifProgressiveIncrement: 6
+  echoJoueurProgressiveIncrement: 12
+  materialToControl: {fileID: 0}
+  materialCutoffRestingValue: 0.6
+  materialCutoffScannerTargetValue: 0.6
+  isTutorialActive: 1
+  tutorialInitialCutoffValue: 1.15
+  saveTutorialState: 0
 --- !u!1 &2001889635
 GameObject:
   m_ObjectHideFlags: 0
@@ -35710,8 +36669,11 @@ MonoBehaviour:
   echoPassifProgressiveIncrement: 6
   echoJoueurProgressiveIncrement: 12
   materialToControl: {fileID: 0}
-  materialCutoffRestingValue: 0.5
-  materialCutoffScannerTargetValue: 0.3
+  materialCutoffRestingValue: 1.15
+  materialCutoffScannerTargetValue: 0.6
+  isTutorialActive: 1
+  tutorialInitialCutoffValue: 1.15
+  saveTutorialState: 0
 --- !u!1 &2027918211
 GameObject:
   m_ObjectHideFlags: 0
@@ -35822,6 +36784,33 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: -483462366773092817, guid: 372cacdb75f0187448dffc8cb89021db, type: 3}
+--- !u!114 &2039055463
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2039055456}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1a465b48285b2a543a7acd96d14c747f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  blendShapeIndex: 0
+  blendShapeValueTarget: 0
+  isProgressive: 0
+  restingValue: 0
+  lerpSpeed: 5
+  returnDelay: 3
+  scannerProgressiveIncrement: 10
+  echoPassifProgressiveIncrement: 6
+  echoJoueurProgressiveIncrement: 12
+  materialToControl: {fileID: 0}
+  materialCutoffRestingValue: 0.6
+  materialCutoffScannerTargetValue: 0.6
+  isTutorialActive: 1
+  tutorialInitialCutoffValue: 1.15
+  saveTutorialState: 0
 --- !u!1 &2039930177
 GameObject:
   m_ObjectHideFlags: 0
@@ -35948,8 +36937,11 @@ MonoBehaviour:
   echoPassifProgressiveIncrement: 6
   echoJoueurProgressiveIncrement: 12
   materialToControl: {fileID: 0}
-  materialCutoffRestingValue: 0.5
-  materialCutoffScannerTargetValue: 0.3
+  materialCutoffRestingValue: 1.15
+  materialCutoffScannerTargetValue: 0.6
+  isTutorialActive: 1
+  tutorialInitialCutoffValue: 1.15
+  saveTutorialState: 0
 --- !u!1 &2054305227 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 3211877914011118332, guid: c5aaeaa3858d4b248ba6b36799cb95bd, type: 3}
@@ -35979,6 +36971,9 @@ MonoBehaviour:
   materialToControl: {fileID: 0}
   materialCutoffRestingValue: 0.8
   materialCutoffScannerTargetValue: 0.4
+  isTutorialActive: 1
+  tutorialInitialCutoffValue: 0.5
+  saveTutorialState: 1
 --- !u!64 &2054305230
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -36028,8 +37023,11 @@ MonoBehaviour:
   echoPassifProgressiveIncrement: 6
   echoJoueurProgressiveIncrement: 12
   materialToControl: {fileID: 0}
-  materialCutoffRestingValue: 0.5
-  materialCutoffScannerTargetValue: 0.3
+  materialCutoffRestingValue: 1.15
+  materialCutoffScannerTargetValue: 0.6
+  isTutorialActive: 1
+  tutorialInitialCutoffValue: 1.15
+  saveTutorialState: 0
 --- !u!64 &2060320919
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -36162,8 +37160,11 @@ MonoBehaviour:
   echoPassifProgressiveIncrement: 6
   echoJoueurProgressiveIncrement: 12
   materialToControl: {fileID: 0}
-  materialCutoffRestingValue: 0.5
-  materialCutoffScannerTargetValue: 0.3
+  materialCutoffRestingValue: 1.15
+  materialCutoffScannerTargetValue: 0.6
+  isTutorialActive: 1
+  tutorialInitialCutoffValue: 1.15
+  saveTutorialState: 0
 --- !u!64 &2077325964
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -36215,6 +37216,9 @@ MonoBehaviour:
   materialToControl: {fileID: 0}
   materialCutoffRestingValue: 0.8
   materialCutoffScannerTargetValue: 0.4
+  isTutorialActive: 1
+  tutorialInitialCutoffValue: 0.5
+  saveTutorialState: 1
 --- !u!64 &2082542701
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -36266,6 +37270,9 @@ MonoBehaviour:
   materialToControl: {fileID: 0}
   materialCutoffRestingValue: 0.8
   materialCutoffScannerTargetValue: 0.4
+  isTutorialActive: 1
+  tutorialInitialCutoffValue: 0.5
+  saveTutorialState: 1
 --- !u!64 &2082869839
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -36631,8 +37638,11 @@ MonoBehaviour:
   echoPassifProgressiveIncrement: 6
   echoJoueurProgressiveIncrement: 12
   materialToControl: {fileID: 0}
-  materialCutoffRestingValue: 0.5
-  materialCutoffScannerTargetValue: 0.3
+  materialCutoffRestingValue: 1.15
+  materialCutoffScannerTargetValue: 0.6
+  isTutorialActive: 1
+  tutorialInitialCutoffValue: 1.15
+  saveTutorialState: 0
 --- !u!64 &2091324583
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -36684,6 +37694,9 @@ MonoBehaviour:
   materialToControl: {fileID: 0}
   materialCutoffRestingValue: 0.8
   materialCutoffScannerTargetValue: 0.4
+  isTutorialActive: 1
+  tutorialInitialCutoffValue: 0.5
+  saveTutorialState: 1
 --- !u!64 &2100104126
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -36755,8 +37768,11 @@ MonoBehaviour:
   echoPassifProgressiveIncrement: 6
   echoJoueurProgressiveIncrement: 12
   materialToControl: {fileID: 0}
-  materialCutoffRestingValue: 0.5
-  materialCutoffScannerTargetValue: 0.3
+  materialCutoffRestingValue: 1.15
+  materialCutoffScannerTargetValue: 0.6
+  isTutorialActive: 1
+  tutorialInitialCutoffValue: 1.15
+  saveTutorialState: 0
 --- !u!4 &2110307884 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 854835756320132116, guid: 9cf5b9ddbcef7054d85f4226c2ed95d8, type: 3}
@@ -36791,6 +37807,9 @@ MonoBehaviour:
   materialToControl: {fileID: 0}
   materialCutoffRestingValue: 0.8
   materialCutoffScannerTargetValue: 0.4
+  isTutorialActive: 1
+  tutorialInitialCutoffValue: 0.5
+  saveTutorialState: 1
 --- !u!64 &2114100705
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -36842,6 +37861,9 @@ MonoBehaviour:
   materialToControl: {fileID: 0}
   materialCutoffRestingValue: 0.8
   materialCutoffScannerTargetValue: 0.4
+  isTutorialActive: 1
+  tutorialInitialCutoffValue: 0.5
+  saveTutorialState: 1
 --- !u!64 &2115387861
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -36918,6 +37940,33 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: -4966068628870873669, guid: 372cacdb75f0187448dffc8cb89021db, type: 3}
+--- !u!114 &2116344981
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2116344974}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1a465b48285b2a543a7acd96d14c747f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  blendShapeIndex: 0
+  blendShapeValueTarget: 0
+  isProgressive: 0
+  restingValue: 0
+  lerpSpeed: 5
+  returnDelay: 3
+  scannerProgressiveIncrement: 10
+  echoPassifProgressiveIncrement: 6
+  echoJoueurProgressiveIncrement: 12
+  materialToControl: {fileID: 0}
+  materialCutoffRestingValue: 0.6
+  materialCutoffScannerTargetValue: 0.6
+  isTutorialActive: 1
+  tutorialInitialCutoffValue: 1.15
+  saveTutorialState: 0
 --- !u!1 &2116573294
 GameObject:
   m_ObjectHideFlags: 0
@@ -37376,6 +38425,9 @@ MonoBehaviour:
   materialToControl: {fileID: 0}
   materialCutoffRestingValue: 0.8
   materialCutoffScannerTargetValue: 0.4
+  isTutorialActive: 1
+  tutorialInitialCutoffValue: 0.5
+  saveTutorialState: 1
 --- !u!64 &2143204961
 MeshCollider:
   m_ObjectHideFlags: 0
