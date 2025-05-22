@@ -29,6 +29,10 @@ public class PlayerMovement : MonoBehaviour
     public LayerMask hidingLayer;
     public float hidingCheckDistance = 2f;
 
+    [Header("Echo Passif")]
+    [Tooltip("Délai en secondes avant que l'echo passif se réactive après être sorti du mode sneak")]
+    public float echoPassifDelay = 2f;
+
     [Header("Impulse Setup")]
     [Tooltip("Assignez ici l'objet enfant")]
     public Transform impulseSourceTarget;
@@ -48,11 +52,24 @@ public class PlayerMovement : MonoBehaviour
     public bool isWalking = false;
     private float lastImpulseTime = -1f;
 
+    // Variables pour l'echo passif
+    private bool wasSneaking = false;
+    private float timeSinceStoppedSneaking = 0f;
+    private bool echoPassifActive = true;
+
     public bool IsSneaking
     {
         get
         {
             return Input.GetKey(sneakKey) && stamina != null && stamina.CanSprint();
+        }
+    }
+
+    public bool IsEchoPassifActive
+    {
+        get
+        {
+            return echoPassifActive;
         }
     }
 
@@ -96,6 +113,7 @@ public class PlayerMovement : MonoBehaviour
     void Update()
     {
         HandleHidingInput();
+        HandleEchoPassifDelay();
 
         if (!isHiding)
         {
@@ -105,6 +123,38 @@ public class PlayerMovement : MonoBehaviour
         {
             isWalking = false;
         }
+    }
+
+    void HandleEchoPassifDelay()
+    {
+        bool currentlySneaking = IsSneaking;
+
+        // Si on vient de sortir du mode sneak
+        if (wasSneaking && !currentlySneaking)
+        {
+            echoPassifActive = false;
+            timeSinceStoppedSneaking = 0f;
+        }
+
+        // Si on n'est pas en train de sneak et que l'echo passif n'est pas actif
+        if (!currentlySneaking && !echoPassifActive)
+        {
+            timeSinceStoppedSneaking += Time.deltaTime;
+
+            // Réactiver l'echo passif après le délai
+            if (timeSinceStoppedSneaking >= echoPassifDelay)
+            {
+                echoPassifActive = true;
+            }
+        }
+
+        // Si on entre en mode sneak, désactiver immédiatement l'echo passif
+        if (currentlySneaking)
+        {
+            echoPassifActive = false;
+        }
+
+        wasSneaking = currentlySneaking;
     }
 
     void HandleMovement()

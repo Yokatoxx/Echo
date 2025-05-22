@@ -2,7 +2,7 @@
 <objects serializationModel="Studio.02.02.00">
 	<object class="Event" id="{d51c48cf-81e9-4106-a0dc-24f2c9a41644}">
 		<property name="name">
-			<value>BrosseADents</value>
+			<value>Regle</value>
 		</property>
 		<property name="outputFormat">
 			<value>1</value>

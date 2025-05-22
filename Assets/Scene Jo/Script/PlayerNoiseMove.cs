@@ -30,8 +30,15 @@ public class PlayerNoiseMove : MonoBehaviour
         if (playerMovement == null || noisePrefab == null)
             return;
 
-        // Désactive le bruit si le joueur est en sneak
-        if (!playerMovement.isHiding && !playerMovement.IsSneaking && IsMoving())
+        // L'echo passif ne fonctionne que si :
+        // - Le joueur n'est pas caché
+        // - Le joueur n'est pas en sneak
+        // - L'echo passif est actif (pas dans le délai après sneak)
+        // - Le joueur bouge
+        if (!playerMovement.isHiding &&
+            !playerMovement.IsSneaking &&
+            playerMovement.IsEchoPassifActive &&
+            IsMoving())
         {
             stepTimer += Time.deltaTime;
             if (stepTimer >= stepInterval)
@@ -42,7 +49,8 @@ public class PlayerNoiseMove : MonoBehaviour
         }
         else
         {
-            stepTimer = stepInterval;
+            // Reset le timer si les conditions ne sont pas remplies
+            stepTimer = 0f;
         }
     }
 
