@@ -42,7 +42,7 @@ public class HUDManager : MonoBehaviour
 
     [Header("Detection Settings")]
     [SerializeField] private float valueChangeThreshold = 0.01f;
-    [SerializeField] private float initialDelay = 0.5f; // Délai avant d'activer les vérifications
+    [SerializeField] private float initialDelay = 0.5f;
 
     private float lastStaminaValue = -1f;
     private float lastEchoValue = -1f;
@@ -57,20 +57,20 @@ public class HUDManager : MonoBehaviour
     private bool isStaminaVisible = false;
     private bool isEchoVisible = false;
     private bool isObjectVisible = false;
-    private bool isCheckingEnabled = false; // Pour contrôler quand les vérifications commencent
+    private bool isCheckingEnabled = false;
 
     private void Awake()
     {
-        // S'assurer que tout est invisible dès le début
+        
         ForceHideAllImmediate();
     }
 
     private void Start()
     {
-        // Initialiser sans montrer les HUDs
+        
         InitializeHUD();
 
-        // Démarrer les vérifications après un délai
+        
         StartCoroutine(EnableCheckingAfterDelay());
     }
 
@@ -78,10 +78,10 @@ public class HUDManager : MonoBehaviour
     {
         yield return new WaitForSeconds(initialDelay);
 
-        // Maintenant on peut commencer à vérifier les changements
+       
         isCheckingEnabled = true;
 
-        // Mettre à jour les valeurs de référence pour éviter les "faux" changements
+        
         if (staminaSystem != null)
             lastStaminaValue = staminaSystem.currentStamina;
 
@@ -91,7 +91,7 @@ public class HUDManager : MonoBehaviour
 
     private void Update()
     {
-        // Ne rien faire si les vérifications ne sont pas activées
+        
         if (!isCheckingEnabled) return;
 
         CheckStaminaChanges();
@@ -102,7 +102,7 @@ public class HUDManager : MonoBehaviour
 
     private void InitializeHUD()
     {
-        // Rien à faire ici car ForceHideAllImmediate() a déjà tout caché
+        
         if (staminaSystem != null)
             lastStaminaValue = staminaSystem.currentStamina;
 
@@ -124,10 +124,10 @@ public class HUDManager : MonoBehaviour
 
         float currentStamina = staminaSystem.currentStamina;
 
-        // Ne montrer le HUD que si la valeur a VRAIMENT changé de manière significative
+        
         if (Mathf.Abs(currentStamina - lastStaminaValue) > valueChangeThreshold)
         {
-            // Uniquement si la stamina change du fait d'une action du joueur (pas au démarrage)
+            
             ShowStaminaHUD();
             lastStaminaValue = currentStamina;
         }
@@ -319,12 +319,10 @@ public class HUDManager : MonoBehaviour
     {
         if (leftHandImage != null)
         {
-            // Logique pour changer le sprite de la main gauche
         }
 
         if (rightHandImage != null)
         {
-            // Logique pour changer le sprite de la main droite
         }
     }
     #endregion
@@ -433,7 +431,7 @@ public class HUDManager : MonoBehaviour
         StartCoroutine(FadeHUD(objectInHandHUD, false, HUDType.Object));
     }
 
-    // Nouvelle méthode pour cacher tous les HUDs immédiatement sans animation
+
     public void ForceHideAllImmediate()
     {
         if (staminaFadeCoroutine != null) StopCoroutine(staminaFadeCoroutine);
