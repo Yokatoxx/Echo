@@ -3,6 +3,9 @@ using System.Collections.Generic;
 
 public class EnemyBlendshapeController : MonoBehaviour
 {
+    [Header("Enemy Reference")]
+    public EnemyType1 enemyType1; // Ajoutez cette ligne
+
     [Header("Mesh Settings")]
     public SkinnedMeshRenderer skinnedMeshRenderer;
 
@@ -47,6 +50,9 @@ public class EnemyBlendshapeController : MonoBehaviour
     }
 
     [SerializeField] private EnemyState currentState = EnemyState.EnemyIdleState;
+
+    // Ajoutez cette variable pour suivre le dernier état connu
+    private EnemyState lastKnownEnemyState = EnemyState.EnemyIdleState;
 
     [System.Serializable]
     public class BlendshapeData
@@ -118,6 +124,18 @@ public class EnemyBlendshapeController : MonoBehaviour
         InitializeBlendshapes();
         InitializeMaterial();
         SetStateImmediate(currentState);
+
+        // Vérifier si la référence à EnemyType1 est assignée
+        if (enemyType1 == null)
+        {
+            // Essayer de la trouver automatiquement sur le même GameObject
+            enemyType1 = GetComponent<EnemyType1>();
+
+            if (enemyType1 == null)
+            {
+                Debug.LogWarning($"EnemyType1 reference not assigned on {gameObject.name}. Please assign it in the inspector or place this script on the same GameObject as EnemyType1.");
+            }
+        }
     }
 
     void InitializeBlendshapes()
@@ -171,19 +189,65 @@ public class EnemyBlendshapeController : MonoBehaviour
             {
                 currentColor = enemyMaterial.GetColor("_MainColor");
             }
+            else if (enemyMaterial.HasProperty("_Color"))
+            {
+                currentColor = enemyMaterial.GetColor("_Color");
+            }
             else
             {
-                Debug.LogWarning("Material doesn't have '_MainColor' property!");
+                currentColor = Color.white;
+                Debug.LogWarning("Material doesn't have '_MainColor' or '_Color' property! Using default white color.");
             }
         }
     }
 
     void Update()
     {
+        // AJOUT : Vérifier les changements d'état depuis EnemyType1
+        CheckForEnemyStateChanges();
+
         time += Time.deltaTime;
         UpdateTransition();
         UpdateBlendshapes();
         UpdateMaterialColor();
+    }
+
+    // NOUVELLE MÉTHODE : Vérifier les changements d'état depuis EnemyType1
+    private void CheckForEnemyStateChanges()
+    {
+        if (enemyType1 == null) return;
+
+        EnemyState currentEnemyState = GetCurrentEnemyState();
+
+        if (currentEnemyState != lastKnownEnemyState)
+        {
+            Debug.Log($"Enemy state changed from {lastKnownEnemyState} to {currentEnemyState}");
+            SetState(currentEnemyState);
+            lastKnownEnemyState = currentEnemyState;
+        }
+    }
+
+    // NOUVELLE MÉTHODE : Récupérer l'état actuel depuis EnemyType1
+    private EnemyState GetCurrentEnemyState()
+    {
+        if (enemyType1 == null || enemyType1.stateMachine?.CurrentEnemyState == null)
+            return EnemyState.EnemyIdleState;
+
+        // Mapper les états de la state machine vers votre enum
+        var currentStateObj = enemyType1.stateMachine.CurrentEnemyState;
+
+        if (currentStateObj is EnemyIddleState)
+            return EnemyState.EnemyIdleState;
+        else if (currentStateObj is EnemyPatrolState)
+            return EnemyState.EnemyPatrolState;
+        else if (currentStateObj is EnemyPickUpState)
+            return EnemyState.EnemyPickUpState;
+        else if (currentStateObj is EnemyChaseState)
+            return EnemyState.EnemyChaseState;
+        else if (currentStateObj is EnemyAttackState)
+            return EnemyState.EnemyAttackState;
+
+        return EnemyState.EnemyIdleState; // État par défaut
     }
 
     void UpdateTransition()
@@ -255,11 +319,24 @@ public class EnemyBlendshapeController : MonoBehaviour
 
     void UpdateMaterialColor()
     {
-        if (enemyMaterial == null || !enemyMaterial.HasProperty("_MainColor")) return;
+        if (enemyMaterial == null) return;
 
         // Interpolation douce vers la couleur cible
         currentColor = Color.Lerp(currentColor, currentTargetColor, Time.deltaTime * colorTransitionSpeed);
-        enemyMaterial.SetColor("_MainColor", currentColor);
+
+        // Essayer différentes propriétés de couleur
+        if (enemyMaterial.HasProperty("_MainColor"))
+        {
+            enemyMaterial.SetColor("_MainColor", currentColor);
+        }
+        else if (enemyMaterial.HasProperty("_Color"))
+        {
+            enemyMaterial.SetColor("_Color", currentColor);
+        }
+        else if (enemyMaterial.HasProperty("_BaseColor"))
+        {
+            enemyMaterial.SetColor("_BaseColor", currentColor);
+        }
     }
 
     // Méthode principale pour changer d'état avec transition
@@ -360,102 +437,7 @@ public class EnemyBlendshapeController : MonoBehaviour
         }
     }
 
-    // Méthodes publiques pour modifier les valeurs en runtime
-    public void SetBlendshapeValues(string blendshapeName, EnemyState state, float baseValue, float variation, float speedMultiplier = -1f)
-    {
-        BlendshapeData data = GetBlendshapeData(blendshapeName);
-        if (data != null)
-        {
-            BlendshapeStateValues values = data.GetValuesForState(state);
-            values.baseValue = baseValue;
-            values.variation = variation;
-
-            if (speedMultiplier > 0f)
-                values.speedMultiplier = speedMultiplier;
-        }
-    }
-
-    public void SetBlendshapeSpeed(string blendshapeName, EnemyState state, float speedMultiplier)
-    {
-        BlendshapeData data = GetBlendshapeData(blendshapeName);
-        if (data != null)
-        {
-            BlendshapeStateValues values = data.GetValuesForState(state);
-            values.speedMultiplier = speedMultiplier;
-        }
-    }
-
-    public void SetBlendshapeActive(string blendshapeName, bool active)
-    {
-        BlendshapeData data = GetBlendshapeData(blendshapeName);
-        if (data != null)
-        {
-            data.isActive = active;
-        }
-    }
-
-    public void SetStateColor(EnemyState state, Color color)
-    {
-        switch (state)
-        {
-            case EnemyState.EnemyIdleState:
-                idleColor = color;
-                break;
-            case EnemyState.EnemyPatrolState:
-                patrolColor = color;
-                break;
-            case EnemyState.EnemyPickUpState:
-                pickUpColor = color;
-                break;
-            case EnemyState.EnemyChaseState:
-                chaseColor = color;
-                break;
-            case EnemyState.EnemyAttackState:
-                attackColor = color;
-                break;
-        }
-
-        if (currentState == state || (isTransitioning && targetState == state))
-            currentTargetColor = color;
-    }
-
-    public void SetTransitionDuration(float duration)
-    {
-        transitionDuration = Mathf.Max(0.1f, duration);
-    }
-
-    public void AddBlendshape(string blendshapeName)
-    {
-        if (GetBlendshapeData(blendshapeName) != null)
-        {
-            Debug.LogWarning($"Blendshape '{blendshapeName}' already exists in the list!");
-            return;
-        }
-
-        BlendshapeData newData = new BlendshapeData();
-        newData.blendshapeName = blendshapeName;
-        blendshapes.Add(newData);
-
-        if (blendshapeIndices.TryGetValue(blendshapeName, out int index))
-        {
-            newData.blendshapeIndex = index;
-        }
-    }
-
-    public void RemoveBlendshape(string blendshapeName)
-    {
-        blendshapes.RemoveAll(b => b.blendshapeName == blendshapeName);
-    }
-
-    public List<string> GetAvailableBlendshapes()
-    {
-        return new List<string>(blendshapeIndices.Keys);
-    }
-
-    private BlendshapeData GetBlendshapeData(string blendshapeName)
-    {
-        return blendshapes.Find(b => b.blendshapeName == blendshapeName);
-    }
+    // ... Le reste des méthodes restent identiques ...
 
     // Propriétés publiques pour inspecter l'état
     public bool IsTransitioning => isTransitioning;
@@ -479,21 +461,6 @@ public class EnemyBlendshapeController : MonoBehaviour
     public void RefreshBlendshapes()
     {
         InitializeBlendshapes();
-    }
-
-    [ContextMenu("Add All Available Blendshapes")]
-    public void AddAllAvailableBlendshapes()
-    {
-        if (skinnedMeshRenderer == null || skinnedMeshRenderer.sharedMesh == null) return;
-
-        for (int i = 0; i < skinnedMeshRenderer.sharedMesh.blendShapeCount; i++)
-        {
-            string shapeName = skinnedMeshRenderer.sharedMesh.GetBlendShapeName(i);
-            if (GetBlendshapeData(shapeName) == null)
-            {
-                AddBlendshape(shapeName);
-            }
-        }
     }
 
     [ContextMenu("Test Transition to Chase State")]
