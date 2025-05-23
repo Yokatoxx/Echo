@@ -24,49 +24,27 @@ public class EnemyAttackState : EnemyState
 
     public override void EnterState()
     {
-        base.EnterState();
+        Debug.Log("attack Player");
+
+
+        if (numberOfDeaths >= deathsBeforeReset)
+        {
+            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+        }
 
         if (numberOfDeaths < deathsBeforeReset)
         {
+            Debug.Log("no Game Over");
+
             player.transform.position = spawnPoint.transform.position;
+            Physics.SyncTransforms();
+
             numberOfDeaths = numberOfDeaths + 1;
-
-            Debug.Log("Player is dead " + numberOfDeaths);
-
             enemy.stateMachine.ChangeState(enemy.iddleState);
 
         }
-        else
-        {
-            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
-            Debug.Log("Game Over");
-        }
     }
-
-    public override void FrameUpdate()
-    {
-        base.FrameUpdate();
-
-        if (numberOfDeaths < enemy.NumberOfDeathsBeforeReset)
-        {
-            player.transform.position = spawnPoint.transform.position;
-            numberOfDeaths = numberOfDeaths + 1;
-
-
-            Debug.Log("Player is dead " + numberOfDeaths);
-
-            enemy.stateMachine.ChangeState(enemy.iddleState);
-
-        }
-        else
-        {
-            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
-            Debug.Log("Game Over");
-        }
-
-    }
-
-
+    
 
     public override void ExitState()
     {
