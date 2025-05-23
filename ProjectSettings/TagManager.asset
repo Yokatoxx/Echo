@@ -17,6 +17,10 @@ TagManager:
   - WoodSurface
   - TileSurface
   - CarpetSurface
+  - WorldSpaceCanvas
+  - Canvas
+  - TextThrow
+  - TextPickUp
   layers:
   - Default
   - TransparentFX
