@@ -1537,7 +1537,7 @@ MonoBehaviour:
   patrolSpeed: 1
   chaseSpeed: 3
   pickUpPos: {fileID: 490441333}
-  NumberOfDeathsBeforeReset: 0
+  NumberOfDeathsBeforeReset: 2
 --- !u!136 &91337022
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -31503,7 +31503,7 @@ MonoBehaviour:
   m_OverrideTileSize: 0
   m_TileSize: 256
   m_OverrideVoxelSize: 0
-  m_VoxelSize: 0.11666667
+  m_VoxelSize: 0.10666666
   m_MinRegionArea: 2
   m_NavMeshData: {fileID: 23800000, guid: b95537920d8720b419a8428618f11045, type: 2}
   m_BuildHeightMesh: 0
