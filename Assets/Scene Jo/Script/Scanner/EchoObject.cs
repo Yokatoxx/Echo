@@ -17,13 +17,91 @@ public class EchoObject : MonoBehaviour
     public float alphaMin = 0f;
     public float fadeTransitionSpeed = 1f;
 
+    [Header("Surface Detection")]
+    [SerializeField] private bool enableSurfaceDetection = false; // Variable bool pour activer la détection de surface
+    [SerializeField] private float woodSurfaceScaleModifier = 1.05f; // +5% pour WoodSurface
+    [SerializeField] private float tileSurfaceScaleModifier = 1.10f; // +10% pour TileSurface
+    [SerializeField] private float carpetSurfaceScaleModifier = 0.90f; // -10% pour CarpetSurface
+
     private void OnCollisionEnter(Collision collision)
     {
         foreach (ContactPoint contact in collision.contacts)
         {
             GameObject obj = Instantiate(collisionPrefab, contact.point, Quaternion.identity);
+
+            // Appliquer la modification d'échelle selon la surface si activée
+            if (enableSurfaceDetection)
+            {
+                ApplySurfaceScaleModification(obj, collision.collider.gameObject);
+            }
+
             StartCoroutine(GrowAndFade(obj, growthDuration));
         }
+    }
+
+    /// <summary>
+    /// Applique la modification d'échelle selon le type de surface détecté par les tags
+    /// </summary>
+    /// <param name="spawnedObject">L'objet instancié à modifier</param>
+    /// <param name="surfaceObject">L'objet de surface pour détecter le tag</param>
+    private void ApplySurfaceScaleModification(GameObject spawnedObject, GameObject surfaceObject)
+    {
+        float scaleModifier = 1.0f;
+        string surfaceType = "None";
+
+        // Détecter le type de surface basé sur les tags
+        if (surfaceObject.CompareTag("WoodSurface"))
+        {
+            scaleModifier = woodSurfaceScaleModifier;
+            surfaceType = "Wood";
+        }
+        else if (surfaceObject.CompareTag("TileSurface"))
+        {
+            scaleModifier = tileSurfaceScaleModifier;
+            surfaceType = "Tile";
+        }
+        else if (surfaceObject.CompareTag("CarpetSurface"))
+        {
+            scaleModifier = carpetSurfaceScaleModifier;
+            surfaceType = "Carpet";
+        }
+
+        // Appliquer la modification d'échelle si un tag de surface a été détecté
+        if (scaleModifier != 1.0f)
+        {
+            Vector3 originalScale = spawnedObject.transform.localScale;
+            Vector3 newScale = originalScale * scaleModifier;
+            spawnedObject.transform.localScale = newScale;
+
+            Debug.Log($"Surface détectée: {surfaceType}. Échelle du prefab modifiée de {originalScale} à {newScale} (facteur: {scaleModifier})");
+        }
+    }
+
+    /// <summary>
+    /// Retourne le type de surface d'un GameObject basé sur son tag
+    /// </summary>
+    /// <param name="surfaceObject">L'objet à analyser</param>
+    /// <returns>Le nom du type de surface ou "None" si aucun tag de surface n'est détecté</returns>
+    public string GetSurfaceType(GameObject surfaceObject)
+    {
+        if (surfaceObject.CompareTag("WoodSurface"))
+            return "Wood";
+        else if (surfaceObject.CompareTag("TileSurface"))
+            return "Tile";
+        else if (surfaceObject.CompareTag("CarpetSurface"))
+            return "Carpet";
+        else
+            return "None";
+    }
+
+    /// <summary>
+    /// Active ou désactive la détection de surface
+    /// </summary>
+    /// <param name="enable">True pour activer, false pour désactiver</param>
+    public void SetSurfaceDetectionEnabled(bool enable)
+    {
+        enableSurfaceDetection = enable;
+        Debug.Log($"Détection de surface {(enable ? "activée" : "désactivée")}");
     }
 
     IEnumerator GrowAndFade(GameObject obj, float duration)
@@ -40,7 +118,7 @@ public class EchoObject : MonoBehaviour
 
             if (renderer != null)
             {
-                
+
                 if (renderer.material.HasProperty("_IntersectionColorStart"))
                 {
                     Color currentColor = renderer.material.GetColor("_IntersectionColorStart");
@@ -75,5 +153,4 @@ public class EchoObject : MonoBehaviour
 
         Destroy(obj);
     }
-
 }
