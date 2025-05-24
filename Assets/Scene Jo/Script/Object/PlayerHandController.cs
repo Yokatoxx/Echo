@@ -4,7 +4,7 @@ using UnityEngine.UI;
 public class PlayerHandController : MonoBehaviour
 {
     [Header("Paramètres d'interaction")]
-    public float interactionDistance = 3f;
+    public float interactionDistance = 10f;
     public LayerMask interactableLayers;
     public KeyCode pickupKey = KeyCode.E;
 
@@ -18,7 +18,7 @@ public class PlayerHandController : MonoBehaviour
 
     [Header("Surbrillance des mains")]
     public Image rightHandHighlight;
-    public Image leftHandHighlight; 
+    public Image leftHandHighlight;
 
     private Camera mainCamera;
     public Collectable rightHeldObject;
@@ -104,6 +104,7 @@ public class PlayerHandController : MonoBehaviour
         if (Input.GetKeyDown(pickupKey))
         {
             TryPickupObject();
+            TryToggleScanner();
         }
 
         // Changer d'objet sélectionné avec la molette de la souris
@@ -113,6 +114,25 @@ public class PlayerHandController : MonoBehaviour
             TrySelectAvailableObject();
         }
 
+    }
+
+    private void TryToggleScanner()
+    {
+        Ray ray = mainCamera.ScreenPointToRay(new Vector3(Screen.width / 2, Screen.height / 2, 0));
+
+        // Utiliser RaycastAll pour obtenir tous les objets touchés par le raycast
+        RaycastHit[] hits = Physics.RaycastAll(ray, interactionDistance, interactableLayers);
+
+        // objets touchés pour trouver un SpawnScannerObject
+        foreach (RaycastHit hit in hits)
+        {
+            SpawnScannerObject scanner = hit.collider.GetComponent<SpawnScannerObject>();
+            if (scanner != null)
+            {
+                scanner.isOn = !scanner.isOn;
+                return;
+            }
+        }
     }
 
     public void TrySelectAvailableObject()
