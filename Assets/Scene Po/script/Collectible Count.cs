@@ -26,7 +26,7 @@ public class CollectibleCount : MonoBehaviour
         TriggerCollect.OnCollected -= OnCollectibleCollected;
     }
 
-    void OnCollectibleCollected()
+    public void OnCollectibleCollected()
     {
         count++;
         UpdateCount();

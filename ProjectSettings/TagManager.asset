@@ -21,6 +21,8 @@ TagManager:
   - Canvas
   - TextThrow
   - TextPickUp
+  - Deposit
+  - Enemy
   layers:
   - Default
   - TransparentFX

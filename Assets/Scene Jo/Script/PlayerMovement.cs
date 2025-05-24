@@ -15,6 +15,10 @@ public class PlayerMovement : MonoBehaviour
     [Header("Controls")]
     public KeyCode sneakKey = KeyCode.LeftControl;
 
+    [Header("Tutorial")]
+    [Tooltip("Désactive le mouvement du joueur pour le tutoriel")]
+    public bool tutorialMovementDisabled = false;
+
     [Header("Stamina")]
     public Stamina stamina;
     [Tooltip("Multiplicateur de consommation de stamina immobile en mode sneak")]
@@ -159,6 +163,13 @@ public class PlayerMovement : MonoBehaviour
 
     void HandleMovement()
     {
+        // Vérification du tutoriel - empêche tout mouvement si désactivé
+        if (tutorialMovementDisabled)
+        {
+            isWalking = false;
+            return;
+        }
+
         // On vérifie la touche sneak
         bool sneakKeyPressed = Input.GetKey(sneakKey);
         bool canSneak = stamina != null && stamina.CanSprint();
@@ -240,6 +251,10 @@ public class PlayerMovement : MonoBehaviour
     void HandleHidingInput()
     {
         if (cam == null) return;
+
+        // Empêcher l'action de se cacher pendant le tutoriel
+        if (tutorialMovementDisabled) return;
+
         if (Input.GetKeyDown(KeyCode.Q))
         {
             if (!characterController.isGrounded && !isHiding) return;
@@ -315,5 +330,17 @@ public class PlayerMovement : MonoBehaviour
                 }
             }
         }
+    }
+
+    // Méthodes publiques pour le tutoriel
+    public void EnableMovement()
+    {
+        tutorialMovementDisabled = false;
+    }
+
+    public void DisableMovement()
+    {
+        tutorialMovementDisabled = true;
+        isWalking = false;
     }
 }
