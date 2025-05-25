@@ -7,10 +7,10 @@ Material:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: materiau_point_cloudMonstre
+  m_Name: materiau objet 4
   m_Shader: {fileID: 4800000, guid: 353d81c471ad0874f9cb608d5b59cc8d, type: 3}
-  m_Parent: {fileID: 2100000, guid: 958796acb7a62084fa3a091ebe701bbe, type: 2}
-  m_ModifiedSerializedProperties: 6
+  m_Parent: {fileID: 2100000, guid: 97fd039bf7124e44bab76ecb85d9c083, type: 2}
+  m_ModifiedSerializedProperties: 18
   m_ValidKeywords: []
   m_InvalidKeywords: []
   m_LightmapFlags: 0
@@ -29,14 +29,11 @@ Material:
         m_Offset: {x: 0, y: 0}
     m_Ints: []
     m_Floats:
-    - _Cutoff: 2.4
+    - _Cutoff: 0.63
     - _Float0: 0.01
-    - _Noise_Scale: 129.01
+    - _Noise_Scale: 22.53
     - __dirty: 0
-    - _noisescale: -0.4
-    - _size: 1312.96
-    - _timescale: 1.73
+    - _size: 1.19
     m_Colors:
-    - _Color: {r: 0.91194963, g: 0, b: 0, a: 1}
-    - _MainColor: {r: 14.754424, g: 9.948545, b: 3.4798148, a: 1}
+    - _MainColor: {r: 2.1673555, g: 0.9473659, b: 1.7943653, a: 1}
   m_BuildTextureStacks: []
