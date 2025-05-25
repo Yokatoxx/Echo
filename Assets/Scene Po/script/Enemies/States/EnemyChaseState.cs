@@ -21,20 +21,6 @@ public class EnemyChaseState : EnemyState
         base.AnimationTriggerEvent(triggerType);
     }
 
-    public override void EnterState()
-    {
-        base.EnterState();
-
-
-    }
-
-    public override void ExitState()
-    {
-        base.ExitState();
-
-        enemy.SetAggroStatus(false);
-    }
-
     public override void FrameUpdate()
     {
         base.FrameUpdate();
@@ -66,11 +52,6 @@ public class EnemyChaseState : EnemyState
             exitTimer = 0f;
         }
 
-    }
-
-    public override void PhysicsUpdate()
-    {
-        base.PhysicsUpdate();
     }
 
 }

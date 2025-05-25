@@ -35,10 +35,6 @@ public class EnemyPatrolState : EnemyState
         enemy.MoveEnemy(enemy.patrolSpeed, targetPos);
     }
 
-    public override void ExitState()
-    {
-        base.ExitState();
-    }
 
     public override void FrameUpdate()
     {
@@ -79,11 +75,6 @@ public class EnemyPatrolState : EnemyState
             enemy.stateMachine.ChangeState(enemy.iddleState);
 
         }
-    }
-
-    public override void PhysicsUpdate()
-    {
-        base.PhysicsUpdate();
     }
 
 }

@@ -23,11 +23,6 @@ public class EnemyIddleState : EnemyState
         exitTimer = 0f;
     }
 
-    public override void ExitState()
-    {
-        base.ExitState();
-    }
-
     public override void FrameUpdate()
     {
         base.FrameUpdate();
@@ -60,8 +55,4 @@ public class EnemyIddleState : EnemyState
 
     }
 
-    public override void PhysicsUpdate()
-    {
-        base.PhysicsUpdate();
-    }
 }

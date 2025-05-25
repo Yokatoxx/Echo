@@ -46,10 +46,5 @@ public class EnemyHitByScanner : EnemyState
 
 
     }
-    public override void ExitState()
-    {
-        base.ExitState();
-
-    }
 
 }
