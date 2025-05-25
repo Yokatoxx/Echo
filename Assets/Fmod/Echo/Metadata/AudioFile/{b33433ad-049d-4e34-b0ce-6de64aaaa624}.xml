@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.02.00">
+	<object class="AudioFile" id="{b33433ad-049d-4e34-b0ce-6de64aaaa624}">
+		<property name="assetPath">
+			<value>Air, Burst, Aerosol Can, Bug Killer Spray 01 SND26665.wav</value>
+		</property>
+		<property name="frequencyInKHz">
+			<value>96</value>
+		</property>
+		<property name="channelCount">
+			<value>2</value>
+		</property>
+		<property name="length">
+			<value>2.7750520833333332</value>
+		</property>
+		<relationship name="masterAssetFolder">
+			<destination>{3887b6ae-b5c7-4e18-93af-40d4d939a416}</destination>
+		</relationship>
+	</object>
+</objects>
