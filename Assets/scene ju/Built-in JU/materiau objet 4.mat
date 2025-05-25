@@ -35,5 +35,5 @@ Material:
     - __dirty: 0
     - _size: 1.19
     m_Colors:
-    - _MainColor: {r: 2.1673555, g: 0.9473659, b: 1.7943653, a: 1}
+    - _MainColor: {r: 0.56177694, g: 2.4386227, b: 0.85599524, a: 1}
   m_BuildTextureStacks: []

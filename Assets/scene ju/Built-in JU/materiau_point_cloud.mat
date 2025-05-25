@@ -29,14 +29,14 @@ Material:
         m_Offset: {x: 0, y: 0}
     m_Ints: []
     m_Floats:
-    - _Cutoff: 0.87
-    - _Float0: 0.03
-    - _Noise_Scale: 10.27
+    - _Cutoff: 0.66
+    - _Float0: 0.01
+    - _Noise_Scale: 8
     - __dirty: 0
     - _noisescale: -0.4
-    - _size: 1.5
+    - _size: 1.92
     - _timescale: 1.73
     m_Colors:
     - _Color: {r: 0.91194963, g: 0, b: 0, a: 1}
-    - _MainColor: {r: 0.42564425, g: 1.6232202, b: 1.9616662, a: 0}
+    - _MainColor: {r: 0.72929513, g: 2.0375593, b: 2.3908863, a: 0}
   m_BuildTextureStacks: []
