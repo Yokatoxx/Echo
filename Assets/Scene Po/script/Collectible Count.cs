@@ -6,6 +6,7 @@ public class CollectibleCount : MonoBehaviour
 {
     TMPro.TMP_Text text;
     int count = 0;
+
     private void Awake()
     {
         text = GetComponent<TMPro.TMP_Text>();

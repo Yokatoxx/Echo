@@ -23,7 +23,7 @@ public class TutorialManager : MonoBehaviour
 
     [Header("Paramètres Texte Dépôt")]
     [Range(0.5f, 5f)]
-    public float depositTextHeightOffset = 1.5f;
+    public float depositTextHeightOffset = 0.5f;
     [Range(0.5f, 10f)]
     public float depositTextSize = 2f;
     [Range(0.1f, 3f)]
@@ -87,6 +87,9 @@ public class TutorialManager : MonoBehaviour
     [Tooltip("Fréquence de vérification des CollectibleCount (en secondes)")]
     [Range(0.1f, 2f)]
     public float collectibleCheckInterval = 0.5f;
+
+    private GameObject backpack;
+    private GameObject exit;
 
     [Header("⭐ TEXTES PERSONNALISABLES ⭐")]
     [Space(10)]
@@ -204,6 +207,9 @@ public class TutorialManager : MonoBehaviour
         if (mainCamera == null) mainCamera = playerCamera;
 
         originalTimeScale = Time.timeScale;
+
+        backpack = GameObject.FindGameObjectWithTag("Backpack");
+        exit = GameObject.FindGameObjectWithTag("Finish");
 
         // Créer les matériaux spéciaux
         CreateAlwaysOnTopMaterials();
@@ -1107,6 +1113,9 @@ public class TutorialManager : MonoBehaviour
                 depositText.SetActive(false);
             }
         }
+
+        exit.GetComponent<Exit>().isCollectComplete = true; 
+        Destroy(backpack);
 
         Debug.Log("Tutoriel dépôt terminé - Tous les textes de dépôt cachés");
     }

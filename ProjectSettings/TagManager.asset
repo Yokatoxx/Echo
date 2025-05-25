@@ -23,6 +23,7 @@ TagManager:
   - TextPickUp
   - Deposit
   - Enemy
+  - Backpack
   layers:
   - Default
   - TransparentFX
