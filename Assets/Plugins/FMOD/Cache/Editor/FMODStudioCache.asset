@@ -196,7 +196,7 @@ MonoBehaviour:
   Path: Assets/Fmod/Echo/Build/Desktop/PropsSound.bank
   Name: PropsSound
   StudioPath: bank:/PropsSound
-  lastModified: 638838825258873452
+  lastModified: 638838933695807127
   FileSizes:
   - Name: Desktop
     Value: 1027968
@@ -216,7 +216,7 @@ MonoBehaviour:
   Path: Assets/Fmod/Echo/Build/Desktop/Interagissable.bank
   Name: Interagissable
   StudioPath: bank:/Interagissable
-  lastModified: 638838820471821137
+  lastModified: 638838933695644117
   FileSizes:
   - Name: Desktop
     Value: 1998304
@@ -435,7 +435,7 @@ MonoBehaviour:
   Path: Assets/Fmod/Echo/Build/Desktop/Master.strings.bank
   Name: Master.strings
   StudioPath: bank:/Master.strings
-  lastModified: 638838822767413295
+  lastModified: 638838933695742706
   FileSizes:
   - Name: Desktop
     Value: 2352
@@ -790,7 +790,7 @@ MonoBehaviour:
   - {fileID: 9039161347843217424}
   StringsBanks:
   - {fileID: -3108050575595576678}
-  cacheTime: 638838825258873452
+  cacheTime: 638838933695807127
   cacheVersion: 131623
 --- !u!114 &293155230939331426
 MonoBehaviour:
@@ -1715,7 +1715,7 @@ MonoBehaviour:
   Path: Assets/Fmod/Echo/Build/Desktop/Master.bank
   Name: Master
   StudioPath: bank:/Master
-  lastModified: 638838822767380069
+  lastModified: 638838933695742706
   FileSizes:
   - Name: Desktop
     Value: 1680480
