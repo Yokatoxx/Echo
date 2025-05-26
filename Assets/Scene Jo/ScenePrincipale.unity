@@ -235,7 +235,7 @@ MonoBehaviour:
   echoPassifProgressiveIncrement: 6
   echoJoueurProgressiveIncrement: 100
   materialToControl: {fileID: 0}
-  materialCutoffRestingValue: 1.15
+  materialCutoffRestingValue: 1.1
   materialCutoffScannerTargetValue: 0.7
   isTutorialActive: 0
   tutorialInitialCutoffValue: 0.5
@@ -1141,7 +1141,7 @@ MonoBehaviour:
   echoPassifProgressiveIncrement: 6
   echoJoueurProgressiveIncrement: 100
   materialToControl: {fileID: 0}
-  materialCutoffRestingValue: 1.15
+  materialCutoffRestingValue: 1.1
   materialCutoffScannerTargetValue: 0.7
   isTutorialActive: 0
   tutorialInitialCutoffValue: 0.5
@@ -1249,7 +1249,7 @@ MonoBehaviour:
   echoPassifProgressiveIncrement: 6
   echoJoueurProgressiveIncrement: 100
   materialToControl: {fileID: 0}
-  materialCutoffRestingValue: 1.15
+  materialCutoffRestingValue: 1.1
   materialCutoffScannerTargetValue: 0.7
   isTutorialActive: 0
   tutorialInitialCutoffValue: 0.5
@@ -2671,7 +2671,7 @@ MonoBehaviour:
   echoPassifProgressiveIncrement: 6
   echoJoueurProgressiveIncrement: 100
   materialToControl: {fileID: 0}
-  materialCutoffRestingValue: 1.15
+  materialCutoffRestingValue: 1.1
   materialCutoffScannerTargetValue: 0.7
   isTutorialActive: 0
   tutorialInitialCutoffValue: 0.5
@@ -2725,7 +2725,7 @@ MonoBehaviour:
   echoPassifProgressiveIncrement: 6
   echoJoueurProgressiveIncrement: 100
   materialToControl: {fileID: 0}
-  materialCutoffRestingValue: 1.15
+  materialCutoffRestingValue: 1.1
   materialCutoffScannerTargetValue: 0.7
   isTutorialActive: 0
   tutorialInitialCutoffValue: 0.5
@@ -3091,7 +3091,7 @@ MonoBehaviour:
   echoPassifProgressiveIncrement: 6
   echoJoueurProgressiveIncrement: 100
   materialToControl: {fileID: 0}
-  materialCutoffRestingValue: 1.15
+  materialCutoffRestingValue: 1.1
   materialCutoffScannerTargetValue: 0.7
   isTutorialActive: 0
   tutorialInitialCutoffValue: 0.5
@@ -4271,7 +4271,7 @@ MonoBehaviour:
   echoPassifProgressiveIncrement: 6
   echoJoueurProgressiveIncrement: 12
   materialToControl: {fileID: 0}
-  materialCutoffRestingValue: 1.15
+  materialCutoffRestingValue: 1.44
   materialCutoffScannerTargetValue: 0.6
   isTutorialActive: 1
   tutorialInitialCutoffValue: 1.15
@@ -5058,7 +5058,7 @@ MonoBehaviour:
   echoPassifProgressiveIncrement: 6
   echoJoueurProgressiveIncrement: 100
   materialToControl: {fileID: 0}
-  materialCutoffRestingValue: 1.15
+  materialCutoffRestingValue: 1.1
   materialCutoffScannerTargetValue: 0.7
   isTutorialActive: 0
   tutorialInitialCutoffValue: 0.5
@@ -5517,7 +5517,7 @@ MonoBehaviour:
   echoPassifProgressiveIncrement: 6
   echoJoueurProgressiveIncrement: 12
   materialToControl: {fileID: 0}
-  materialCutoffRestingValue: 1.15
+  materialCutoffRestingValue: 1.44
   materialCutoffScannerTargetValue: 0.6
   isTutorialActive: 1
   tutorialInitialCutoffValue: 1.15
@@ -5687,7 +5687,7 @@ MonoBehaviour:
   echoPassifProgressiveIncrement: 6
   echoJoueurProgressiveIncrement: 100
   materialToControl: {fileID: 0}
-  materialCutoffRestingValue: 1.15
+  materialCutoffRestingValue: 1.1
   materialCutoffScannerTargetValue: 0.7
   isTutorialActive: 0
   tutorialInitialCutoffValue: 0.5
@@ -5994,7 +5994,7 @@ MonoBehaviour:
   echoPassifProgressiveIncrement: 6
   echoJoueurProgressiveIncrement: 100
   materialToControl: {fileID: 0}
-  materialCutoffRestingValue: 1.15
+  materialCutoffRestingValue: 1.1
   materialCutoffScannerTargetValue: 0.7
   isTutorialActive: 0
   tutorialInitialCutoffValue: 0.5
@@ -6048,7 +6048,7 @@ MonoBehaviour:
   echoPassifProgressiveIncrement: 6
   echoJoueurProgressiveIncrement: 100
   materialToControl: {fileID: 0}
-  materialCutoffRestingValue: 1.15
+  materialCutoffRestingValue: 1.1
   materialCutoffScannerTargetValue: 0.7
   isTutorialActive: 0
   tutorialInitialCutoffValue: 0.5
@@ -8247,7 +8247,7 @@ MonoBehaviour:
   echoPassifProgressiveIncrement: 6
   echoJoueurProgressiveIncrement: 12
   materialToControl: {fileID: 0}
-  materialCutoffRestingValue: 1.15
+  materialCutoffRestingValue: 1.44
   materialCutoffScannerTargetValue: 0.6
   isTutorialActive: 1
   tutorialInitialCutoffValue: 1.15
@@ -8301,7 +8301,7 @@ MonoBehaviour:
   echoPassifProgressiveIncrement: 6
   echoJoueurProgressiveIncrement: 100
   materialToControl: {fileID: 0}
-  materialCutoffRestingValue: 1.15
+  materialCutoffRestingValue: 1.1
   materialCutoffScannerTargetValue: 0.7
   isTutorialActive: 0
   tutorialInitialCutoffValue: 0.5
@@ -8569,7 +8569,7 @@ MonoBehaviour:
   echoPassifProgressiveIncrement: 6
   echoJoueurProgressiveIncrement: 100
   materialToControl: {fileID: 0}
-  materialCutoffRestingValue: 1.15
+  materialCutoffRestingValue: 1.1
   materialCutoffScannerTargetValue: 0.7
   isTutorialActive: 0
   tutorialInitialCutoffValue: 0.5
@@ -8706,7 +8706,7 @@ MonoBehaviour:
   echoPassifProgressiveIncrement: 6
   echoJoueurProgressiveIncrement: 100
   materialToControl: {fileID: 0}
-  materialCutoffRestingValue: 1.15
+  materialCutoffRestingValue: 1.1
   materialCutoffScannerTargetValue: 0.7
   isTutorialActive: 0
   tutorialInitialCutoffValue: 0.5
@@ -8880,7 +8880,7 @@ MonoBehaviour:
   echoPassifProgressiveIncrement: 6
   echoJoueurProgressiveIncrement: 100
   materialToControl: {fileID: 0}
-  materialCutoffRestingValue: 1.15
+  materialCutoffRestingValue: 1.1
   materialCutoffScannerTargetValue: 0.7
   isTutorialActive: 0
   tutorialInitialCutoffValue: 0.5
@@ -9105,7 +9105,7 @@ MonoBehaviour:
   echoPassifProgressiveIncrement: 6
   echoJoueurProgressiveIncrement: 100
   materialToControl: {fileID: 0}
-  materialCutoffRestingValue: 1.15
+  materialCutoffRestingValue: 1.1
   materialCutoffScannerTargetValue: 0.7
   isTutorialActive: 0
   tutorialInitialCutoffValue: 0.5
@@ -10162,7 +10162,7 @@ MonoBehaviour:
   echoPassifProgressiveIncrement: 6
   echoJoueurProgressiveIncrement: 100
   materialToControl: {fileID: 0}
-  materialCutoffRestingValue: 1.15
+  materialCutoffRestingValue: 1.1
   materialCutoffScannerTargetValue: 0.7
   isTutorialActive: 0
   tutorialInitialCutoffValue: 0.5
@@ -13239,7 +13239,7 @@ MonoBehaviour:
   echoPassifProgressiveIncrement: 6
   echoJoueurProgressiveIncrement: 100
   materialToControl: {fileID: 0}
-  materialCutoffRestingValue: 1.15
+  materialCutoffRestingValue: 1.1
   materialCutoffScannerTargetValue: 0.7
   isTutorialActive: 0
   tutorialInitialCutoffValue: 0.5
@@ -13620,7 +13620,7 @@ MonoBehaviour:
   echoPassifProgressiveIncrement: 6
   echoJoueurProgressiveIncrement: 100
   materialToControl: {fileID: 0}
-  materialCutoffRestingValue: 1.15
+  materialCutoffRestingValue: 1.1
   materialCutoffScannerTargetValue: 0.7
   isTutorialActive: 0
   tutorialInitialCutoffValue: 0.5
@@ -13921,7 +13921,7 @@ MonoBehaviour:
   echoPassifProgressiveIncrement: 6
   echoJoueurProgressiveIncrement: 12
   materialToControl: {fileID: 0}
-  materialCutoffRestingValue: 1.15
+  materialCutoffRestingValue: 1.44
   materialCutoffScannerTargetValue: 0.6
   isTutorialActive: 1
   tutorialInitialCutoffValue: 1.15
@@ -14387,7 +14387,7 @@ MonoBehaviour:
   echoPassifProgressiveIncrement: 6
   echoJoueurProgressiveIncrement: 100
   materialToControl: {fileID: 0}
-  materialCutoffRestingValue: 1.15
+  materialCutoffRestingValue: 1.1
   materialCutoffScannerTargetValue: 0.7
   isTutorialActive: 0
   tutorialInitialCutoffValue: 0.5
@@ -17241,7 +17241,7 @@ MonoBehaviour:
   echoPassifProgressiveIncrement: 6
   echoJoueurProgressiveIncrement: 100
   materialToControl: {fileID: 0}
-  materialCutoffRestingValue: 1.15
+  materialCutoffRestingValue: 1.1
   materialCutoffScannerTargetValue: 0.7
   isTutorialActive: 0
   tutorialInitialCutoffValue: 0.5
@@ -17403,7 +17403,7 @@ MonoBehaviour:
   echoPassifProgressiveIncrement: 6
   echoJoueurProgressiveIncrement: 100
   materialToControl: {fileID: 0}
-  materialCutoffRestingValue: 1.15
+  materialCutoffRestingValue: 1.1
   materialCutoffScannerTargetValue: 0.7
   isTutorialActive: 0
   tutorialInitialCutoffValue: 0.5
@@ -17594,7 +17594,7 @@ MonoBehaviour:
   echoPassifProgressiveIncrement: 6
   echoJoueurProgressiveIncrement: 100
   materialToControl: {fileID: 0}
-  materialCutoffRestingValue: 1.15
+  materialCutoffRestingValue: 1.1
   materialCutoffScannerTargetValue: 0.7
   isTutorialActive: 0
   tutorialInitialCutoffValue: 0.5
@@ -18059,7 +18059,7 @@ MonoBehaviour:
   echoPassifProgressiveIncrement: 6
   echoJoueurProgressiveIncrement: 100
   materialToControl: {fileID: 0}
-  materialCutoffRestingValue: 1.15
+  materialCutoffRestingValue: 1.1
   materialCutoffScannerTargetValue: 0.7
   isTutorialActive: 0
   tutorialInitialCutoffValue: 0.5
@@ -18950,7 +18950,7 @@ MonoBehaviour:
   echoPassifProgressiveIncrement: 6
   echoJoueurProgressiveIncrement: 12
   materialToControl: {fileID: 0}
-  materialCutoffRestingValue: 1.15
+  materialCutoffRestingValue: 1.44
   materialCutoffScannerTargetValue: 0.6
   isTutorialActive: 1
   tutorialInitialCutoffValue: 1.15
@@ -19951,7 +19951,7 @@ MonoBehaviour:
   echoPassifProgressiveIncrement: 6
   echoJoueurProgressiveIncrement: 100
   materialToControl: {fileID: 0}
-  materialCutoffRestingValue: 1.15
+  materialCutoffRestingValue: 1.1
   materialCutoffScannerTargetValue: 0.7
   isTutorialActive: 0
   tutorialInitialCutoffValue: 0.5
@@ -20549,7 +20549,7 @@ MonoBehaviour:
   echoPassifProgressiveIncrement: 6
   echoJoueurProgressiveIncrement: 12
   materialToControl: {fileID: 0}
-  materialCutoffRestingValue: 1.15
+  materialCutoffRestingValue: 1.44
   materialCutoffScannerTargetValue: 0.6
   isTutorialActive: 1
   tutorialInitialCutoffValue: 1.15
@@ -21276,7 +21276,7 @@ MonoBehaviour:
   echoPassifProgressiveIncrement: 6
   echoJoueurProgressiveIncrement: 100
   materialToControl: {fileID: 0}
-  materialCutoffRestingValue: 1.15
+  materialCutoffRestingValue: 1.1
   materialCutoffScannerTargetValue: 0.7
   isTutorialActive: 0
   tutorialInitialCutoffValue: 0.5
@@ -22139,7 +22139,7 @@ MonoBehaviour:
   echoPassifProgressiveIncrement: 6
   echoJoueurProgressiveIncrement: 100
   materialToControl: {fileID: 0}
-  materialCutoffRestingValue: 1.15
+  materialCutoffRestingValue: 1.1
   materialCutoffScannerTargetValue: 0.7
   isTutorialActive: 0
   tutorialInitialCutoffValue: 0.5
@@ -22328,7 +22328,7 @@ MonoBehaviour:
   echoPassifProgressiveIncrement: 6
   echoJoueurProgressiveIncrement: 100
   materialToControl: {fileID: 0}
-  materialCutoffRestingValue: 1.15
+  materialCutoffRestingValue: 1.1
   materialCutoffScannerTargetValue: 0.7
   isTutorialActive: 0
   tutorialInitialCutoffValue: 0.5
@@ -23113,7 +23113,7 @@ MonoBehaviour:
   echoPassifProgressiveIncrement: 6
   echoJoueurProgressiveIncrement: 100
   materialToControl: {fileID: 0}
-  materialCutoffRestingValue: 1.15
+  materialCutoffRestingValue: 1.1
   materialCutoffScannerTargetValue: 0.7
   isTutorialActive: 0
   tutorialInitialCutoffValue: 0.5
@@ -24596,7 +24596,7 @@ MonoBehaviour:
   echoPassifProgressiveIncrement: 6
   echoJoueurProgressiveIncrement: 100
   materialToControl: {fileID: 0}
-  materialCutoffRestingValue: 1.15
+  materialCutoffRestingValue: 1.1
   materialCutoffScannerTargetValue: 0.7
   isTutorialActive: 0
   tutorialInitialCutoffValue: 0.5
@@ -25207,7 +25207,7 @@ MonoBehaviour:
   echoPassifProgressiveIncrement: 6
   echoJoueurProgressiveIncrement: 100
   materialToControl: {fileID: 0}
-  materialCutoffRestingValue: 1.15
+  materialCutoffRestingValue: 1.1
   materialCutoffScannerTargetValue: 0.7
   isTutorialActive: 0
   tutorialInitialCutoffValue: 0.5
@@ -25402,7 +25402,7 @@ MonoBehaviour:
   echoPassifProgressiveIncrement: 6
   echoJoueurProgressiveIncrement: 100
   materialToControl: {fileID: 0}
-  materialCutoffRestingValue: 1.15
+  materialCutoffRestingValue: 1.1
   materialCutoffScannerTargetValue: 0.7
   isTutorialActive: 0
   tutorialInitialCutoffValue: 0.5
@@ -26366,7 +26366,7 @@ MonoBehaviour:
   echoPassifProgressiveIncrement: 6
   echoJoueurProgressiveIncrement: 100
   materialToControl: {fileID: 0}
-  materialCutoffRestingValue: 1.15
+  materialCutoffRestingValue: 1.1
   materialCutoffScannerTargetValue: 0.7
   isTutorialActive: 0
   tutorialInitialCutoffValue: 0.5
@@ -26464,7 +26464,7 @@ MonoBehaviour:
   echoPassifProgressiveIncrement: 6
   echoJoueurProgressiveIncrement: 100
   materialToControl: {fileID: 0}
-  materialCutoffRestingValue: 1.15
+  materialCutoffRestingValue: 1.1
   materialCutoffScannerTargetValue: 0.7
   isTutorialActive: 0
   tutorialInitialCutoffValue: 0.5
@@ -26788,7 +26788,7 @@ MonoBehaviour:
   echoPassifProgressiveIncrement: 6
   echoJoueurProgressiveIncrement: 100
   materialToControl: {fileID: 0}
-  materialCutoffRestingValue: 1.15
+  materialCutoffRestingValue: 1.1
   materialCutoffScannerTargetValue: 0.7
   isTutorialActive: 0
   tutorialInitialCutoffValue: 0.5
@@ -26981,7 +26981,7 @@ MonoBehaviour:
   echoPassifProgressiveIncrement: 6
   echoJoueurProgressiveIncrement: 100
   materialToControl: {fileID: 0}
-  materialCutoffRestingValue: 1.15
+  materialCutoffRestingValue: 1.1
   materialCutoffScannerTargetValue: 0.7
   isTutorialActive: 0
   tutorialInitialCutoffValue: 0.5
@@ -30780,7 +30780,7 @@ MonoBehaviour:
   echoPassifProgressiveIncrement: 6
   echoJoueurProgressiveIncrement: 100
   materialToControl: {fileID: 0}
-  materialCutoffRestingValue: 1.15
+  materialCutoffRestingValue: 1.1
   materialCutoffScannerTargetValue: 0.7
   isTutorialActive: 0
   tutorialInitialCutoffValue: 0.5
@@ -30888,7 +30888,7 @@ MonoBehaviour:
   echoPassifProgressiveIncrement: 6
   echoJoueurProgressiveIncrement: 100
   materialToControl: {fileID: 0}
-  materialCutoffRestingValue: 1.15
+  materialCutoffRestingValue: 1.1
   materialCutoffScannerTargetValue: 0.7
   isTutorialActive: 0
   tutorialInitialCutoffValue: 0.5
@@ -34510,7 +34510,7 @@ MonoBehaviour:
   echoPassifProgressiveIncrement: 6
   echoJoueurProgressiveIncrement: 100
   materialToControl: {fileID: 0}
-  materialCutoffRestingValue: 1.15
+  materialCutoffRestingValue: 1.1
   materialCutoffScannerTargetValue: 0.7
   isTutorialActive: 0
   tutorialInitialCutoffValue: 0.5
@@ -34564,7 +34564,7 @@ MonoBehaviour:
   echoPassifProgressiveIncrement: 6
   echoJoueurProgressiveIncrement: 100
   materialToControl: {fileID: 0}
-  materialCutoffRestingValue: 1.15
+  materialCutoffRestingValue: 1.1
   materialCutoffScannerTargetValue: 0.7
   isTutorialActive: 0
   tutorialInitialCutoffValue: 0.5
@@ -34890,7 +34890,7 @@ MonoBehaviour:
   echoPassifProgressiveIncrement: 6
   echoJoueurProgressiveIncrement: 100
   materialToControl: {fileID: 0}
-  materialCutoffRestingValue: 1.15
+  materialCutoffRestingValue: 1.1
   materialCutoffScannerTargetValue: 0.7
   isTutorialActive: 0
   tutorialInitialCutoffValue: 0.5
@@ -34998,7 +34998,7 @@ MonoBehaviour:
   echoPassifProgressiveIncrement: 6
   echoJoueurProgressiveIncrement: 100
   materialToControl: {fileID: 0}
-  materialCutoffRestingValue: 1.15
+  materialCutoffRestingValue: 1.1
   materialCutoffScannerTargetValue: 0.7
   isTutorialActive: 0
   tutorialInitialCutoffValue: 0.5
@@ -37810,7 +37810,7 @@ MonoBehaviour:
   echoPassifProgressiveIncrement: 6
   echoJoueurProgressiveIncrement: 100
   materialToControl: {fileID: 0}
-  materialCutoffRestingValue: 1.15
+  materialCutoffRestingValue: 1.1
   materialCutoffScannerTargetValue: 0.7
   isTutorialActive: 0
   tutorialInitialCutoffValue: 0.5
@@ -38067,7 +38067,7 @@ MonoBehaviour:
   echoPassifProgressiveIncrement: 6
   echoJoueurProgressiveIncrement: 100
   materialToControl: {fileID: 0}
-  materialCutoffRestingValue: 1.15
+  materialCutoffRestingValue: 1.1
   materialCutoffScannerTargetValue: 0.7
   isTutorialActive: 0
   tutorialInitialCutoffValue: 0.5
@@ -38470,7 +38470,7 @@ MonoBehaviour:
   echoPassifProgressiveIncrement: 6
   echoJoueurProgressiveIncrement: 100
   materialToControl: {fileID: 0}
-  materialCutoffRestingValue: 1.15
+  materialCutoffRestingValue: 1.1
   materialCutoffScannerTargetValue: 0.7
   isTutorialActive: 0
   tutorialInitialCutoffValue: 0.5
@@ -38696,7 +38696,7 @@ MonoBehaviour:
   echoPassifProgressiveIncrement: 6
   echoJoueurProgressiveIncrement: 100
   materialToControl: {fileID: 0}
-  materialCutoffRestingValue: 1.15
+  materialCutoffRestingValue: 1.1
   materialCutoffScannerTargetValue: 0.7
   isTutorialActive: 0
   tutorialInitialCutoffValue: 0.5
@@ -38750,7 +38750,7 @@ MonoBehaviour:
   echoPassifProgressiveIncrement: 6
   echoJoueurProgressiveIncrement: 100
   materialToControl: {fileID: 0}
-  materialCutoffRestingValue: 1.15
+  materialCutoffRestingValue: 1.1
   materialCutoffScannerTargetValue: 0.7
   isTutorialActive: 0
   tutorialInitialCutoffValue: 0.5
@@ -39826,7 +39826,7 @@ MonoBehaviour:
   echoPassifProgressiveIncrement: 6
   echoJoueurProgressiveIncrement: 100
   materialToControl: {fileID: 0}
-  materialCutoffRestingValue: 1.15
+  materialCutoffRestingValue: 1.1
   materialCutoffScannerTargetValue: 0.7
   isTutorialActive: 0
   tutorialInitialCutoffValue: 0.5
@@ -40156,7 +40156,7 @@ MonoBehaviour:
   echoPassifProgressiveIncrement: 6
   echoJoueurProgressiveIncrement: 100
   materialToControl: {fileID: 0}
-  materialCutoffRestingValue: 1.15
+  materialCutoffRestingValue: 1.1
   materialCutoffScannerTargetValue: 0.7
   isTutorialActive: 0
   tutorialInitialCutoffValue: 0.5
@@ -41706,7 +41706,7 @@ MonoBehaviour:
   echoPassifProgressiveIncrement: 6
   echoJoueurProgressiveIncrement: 100
   materialToControl: {fileID: 0}
-  materialCutoffRestingValue: 1.15
+  materialCutoffRestingValue: 1.1
   materialCutoffScannerTargetValue: 0.7
   isTutorialActive: 0
   tutorialInitialCutoffValue: 0.5

@@ -29,12 +29,12 @@ Material:
         m_Offset: {x: 0, y: 0}
     m_Ints: []
     m_Floats:
-    - _Cutoff: 0.66
+    - _Cutoff: 0.77
     - _Float0: 0.01
     - _Noise_Scale: 12.37
     - __dirty: 0
     - _noisescale: -0.4
-    - _size: 1.92
+    - _size: 1.54
     - _timescale: 1.73
     m_Colors:
     - _Color: {r: 0.91194963, g: 0, b: 0, a: 1}

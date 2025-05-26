@@ -30,10 +30,10 @@ Material:
     m_Ints: []
     m_Floats:
     - _Cutoff: 0.55
-    - _Float0: 0.3
+    - _Float0: 0.01
     - _Noise_Scale: 11.4
     - __dirty: 0
-    - _size: 0.79
+    - _size: 1.66
     m_Colors:
     - _MainColor: {r: 2.7954395, g: 2.3741877, b: 0.7647897, a: 1}
   m_BuildTextureStacks: []
