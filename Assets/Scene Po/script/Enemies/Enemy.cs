@@ -30,7 +30,6 @@ public class Enemy : MonoBehaviour, IEnemyMoveable, ItriggerCheckable
     public EnemyPickUpState pickUpState { get; set; }
     public EnemyHitByScanner hitByScannerState { get; set; }
 
-
     #endregion
 
     private void Awake()
@@ -62,7 +61,6 @@ public class Enemy : MonoBehaviour, IEnemyMoveable, ItriggerCheckable
     private void Update()
     {
         stateMachine.CurrentEnemyState.FrameUpdate();
-
     }
 
     private void FixedUpdate()
@@ -96,10 +94,15 @@ public class Enemy : MonoBehaviour, IEnemyMoveable, ItriggerCheckable
 
     #region Attack Variables
     public int NumberOfDeathsBeforeReset = 3;
+
+    [Header("Scene Management")]
+    public string gameOverSceneName = "GameOverScene";
+
+    public int gameOverSceneIndex = 0;
+
     #endregion
 
     #region Distance Checks
-
 
     public void SetAggroStatus(bool isAggroed)
     {
@@ -117,7 +120,6 @@ public class Enemy : MonoBehaviour, IEnemyMoveable, ItriggerCheckable
     }
 
     #endregion
-
 
     #region Animation Functions
     private void AnimationTriggerEvent(AnimationTriggerType triggerType)
@@ -138,5 +140,4 @@ public class Enemy : MonoBehaviour, IEnemyMoveable, ItriggerCheckable
         chasingPlayer,
         attackPlayer,
     }
-
 }

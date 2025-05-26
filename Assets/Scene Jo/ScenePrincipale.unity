@@ -1779,7 +1779,9 @@ MonoBehaviour:
   patrolSpeed: 1
   chaseSpeed: 3
   pickUpPos: {fileID: 490441333}
-  NumberOfDeathsBeforeReset: 2
+  NumberOfDeathsBeforeReset: 1
+  gameOverSceneName: GameOverScene
+  gameOverSceneIndex: 0
 --- !u!136 &91337022
 CapsuleCollider:
   m_ObjectHideFlags: 0
