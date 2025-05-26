@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using FMODUnity;
 
 public class SpawnScannerObject : MonoBehaviour
 {
@@ -21,11 +22,49 @@ public class SpawnScannerObject : MonoBehaviour
     public float alphaMin = 0f;
     public float fadeTransitionSpeed = 1f;
 
+    [Header("FMOD Audio Events")]
+    public EventReference onStartEvent;  // Event joué quand isOn devient true
+    public EventReference loopingEvent;  // Event en boucle tant que isOn est true
+    public EventReference onStopEvent;   // Event joué quand isOn devient false
+
     private float timer = 0f;
-    private Coroutine spawnCoroutine; // Référence à la coroutine de spawn
+    private Coroutine spawnCoroutine;
+    private bool wasOnLastFrame = false;
+    private FMOD.Studio.EventInstance loopingEventInstance;
+
+    private void Start()
+    {
+        // Initialiser l'état précédent
+        wasOnLastFrame = isOn;
+
+        // Si on commence avec isOn = true, jouer l'événement de démarrage
+        if (isOn)
+        {
+            PlayOnStartEvent();
+            StartLoopingEvent();
+        }
+    }
 
     private void Update()
     {
+        // Vérifier si l'état de isOn a changé
+        if (isOn != wasOnLastFrame)
+        {
+            if (isOn)
+            {
+                // isOn vient de passer à true
+                PlayOnStartEvent();
+                StartLoopingEvent();
+            }
+            else
+            {
+                // isOn vient de passer à false
+                PlayOnStopEvent();
+                StopLoopingEvent();
+            }
+            wasOnLastFrame = isOn;
+        }
+
         if (isOn)
         {
             timer -= Time.deltaTime;
@@ -42,6 +81,47 @@ public class SpawnScannerObject : MonoBehaviour
             StopCoroutine(spawnCoroutine);
             spawnCoroutine = null;
         }
+    }
+
+    private void PlayOnStartEvent()
+    {
+        if (!onStartEvent.IsNull)
+        {
+            RuntimeManager.PlayOneShot(onStartEvent, transform.position);
+        }
+    }
+
+    private void StartLoopingEvent()
+    {
+        if (!loopingEvent.IsNull)
+        {
+            loopingEventInstance = RuntimeManager.CreateInstance(loopingEvent);
+            loopingEventInstance.set3DAttributes(RuntimeUtils.To3DAttributes(transform));
+            loopingEventInstance.start();
+        }
+    }
+
+    private void PlayOnStopEvent()
+    {
+        if (!onStopEvent.IsNull)
+        {
+            RuntimeManager.PlayOneShot(onStopEvent, transform.position);
+        }
+    }
+
+    private void StopLoopingEvent()
+    {
+        if (loopingEventInstance.isValid())
+        {
+            loopingEventInstance.stop(FMOD.Studio.STOP_MODE.ALLOWFADEOUT);
+            loopingEventInstance.release();
+        }
+    }
+
+    private void OnDestroy()
+    {
+        // S'assurer que l'événement en boucle est arrêté quand l'objet est détruit
+        StopLoopingEvent();
     }
 
     IEnumerator SpawnTerrainScanner()

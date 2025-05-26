@@ -707,6 +707,7 @@ MonoBehaviour:
   MasterBanks:
   - Master
   Banks:
+  - Interagissable
   - PropsSound
   BanksToLoad: []
   LiveUpdatePort: 9264
