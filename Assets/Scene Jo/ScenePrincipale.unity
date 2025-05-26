@@ -1603,26 +1603,26 @@ MonoBehaviour:
   - blendshapeName: Peasant_girl.002
     isActive: 1
     idleValues:
-      baseValue: 73.9
-      variation: 15.1
+      baseValue: 30
+      variation: 10
       speedMultiplier: 1
     patrolValues:
-      baseValue: 79.4
-      variation: 15.8
-      speedMultiplier: 1.2
-    pickUpValues:
-      baseValue: 71
-      variation: 14.8
-      speedMultiplier: 0.8
-    chaseValues:
-      baseValue: 59.4
+      baseValue: 30
       variation: 10
+      speedMultiplier: 1
+    pickUpValues:
+      baseValue: 30
+      variation: 10
+      speedMultiplier: 1
+    chaseValues:
+      baseValue: 15
+      variation: 3
       speedMultiplier: 2
     attackValues:
-      baseValue: 18.3
-      variation: 4.9
-      speedMultiplier: 3
-    phaseOffset: 0
+      baseValue: 5
+      variation: 10
+      speedMultiplier: 4
+    phaseOffset: 1.02
     blendshapeIndex: 0
   transitionDuration: 0.5
   transitionCurve:
@@ -1651,11 +1651,11 @@ MonoBehaviour:
     m_RotationOrder: 4
   enemyMaterial: {fileID: 0}
   colorTransitionSpeed: 2
-  idleColor: {r: 1, g: 1, b: 1, a: 1}
-  patrolColor: {r: 1, g: 1, b: 1, a: 1}
-  pickUpColor: {r: 1, g: 1, b: 1, a: 1}
+  idleColor: {r: 0.6981132, g: 0.3148354, b: 0, a: 1}
+  patrolColor: {r: 0.7019608, g: 0.31764707, b: 0, a: 1}
+  pickUpColor: {r: 0.7019608, g: 0.31764707, b: 0, a: 1}
   chaseColor: {r: 1, g: 0, b: 0, a: 1}
-  attackColor: {r: 1, g: 0, b: 0, a: 1}
+  attackColor: {r: 0.41509432, g: 0, b: 0, a: 1}
   currentState: 0
 --- !u!137 &91337015 stripped
 SkinnedMeshRenderer:
@@ -4877,7 +4877,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 0.61109, y: 0.61109, z: 0.61109}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 296553153}
@@ -28467,7 +28467,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 1.1326, y: 1.1326, z: 1.1326}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 296553153}
@@ -37130,7 +37130,7 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 0.75, y: 0.52, z: 0.19}
+  m_Size: {x: 0.75, y: 0.52, z: 0.34}
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!54 &1611949916
 Rigidbody:
@@ -39176,6 +39176,14 @@ PrefabInstance:
       propertyPath: m_AllowDynamicResolution
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1238671379245572245, guid: 9cf5b9ddbcef7054d85f4226c2ed95d8, type: 3}
+      propertyPath: maxRadius
+      value: 20
+      objectReference: {fileID: 0}
+    - target: {fileID: 1238671379245572245, guid: 9cf5b9ddbcef7054d85f4226c2ed95d8, type: 3}
+      propertyPath: minRadius
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 1555222184250559598, guid: 9cf5b9ddbcef7054d85f4226c2ed95d8, type: 3}
       propertyPath: m_IsActive
       value: 0
@@ -39215,6 +39223,10 @@ PrefabInstance:
     - target: {fileID: 3470876666489540190, guid: 9cf5b9ddbcef7054d85f4226c2ed95d8, type: 3}
       propertyPath: musicVolume
       value: 0.522
+      objectReference: {fileID: 0}
+    - target: {fileID: 3470876666489540190, guid: 9cf5b9ddbcef7054d85f4226c2ed95d8, type: 3}
+      propertyPath: fadeInDuration
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 3470876666489540190, guid: 9cf5b9ddbcef7054d85f4226c2ed95d8, type: 3}
       propertyPath: BackgroundMusicEvent.Path
@@ -40481,7 +40493,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 8cdb3179a26c9b44c86af8527c93992c, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 7.752
+      value: 7.777
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 8cdb3179a26c9b44c86af8527c93992c, type: 3}
       propertyPath: m_LocalPosition.y

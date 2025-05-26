@@ -9,6 +9,7 @@ Shader "Optimized/point_cloud_shader_safe"
         _Cutoff("Mask Clip Value", Float) = 0.5
         _size("size", Float) = 1
         _Noise_Scale("Noise_Scale", Float) = 1
+        _EmissiveIntensity("Emissive Intensity", Range(0, 5)) = 1
         [HideInInspector] _texcoord("", 2D) = "white" {}
         [HideInInspector] __dirty("", Int) = 1
     }
@@ -35,6 +36,7 @@ Shader "Optimized/point_cloud_shader_safe"
         uniform float4 _A_tex_ST;
         uniform float _size;
         uniform float _Cutoff;
+        uniform float _EmissiveIntensity;
 
         // Garde le snoise original mais avec quelques optimisations mineures
         float3 mod3D289(float3 x) { return x - floor(x * (1.0/289.0)) * 289.0; }
@@ -110,7 +112,8 @@ Shader "Optimized/point_cloud_shader_safe"
             float4 appendResult24 = float4(ase_worldPos.x, ase_worldPos.y + mulTime20, ase_worldPos.z, 0.0);
             float simplePerlin3D22 = snoise(appendResult24.xyz * _Noise_Scale);
             
-            o.Emission = (_MainColor * simplePerlin3D22).rgb;
+            // Application de l'intensité émissive
+            o.Emission = (_MainColor * simplePerlin3D22 * _EmissiveIntensity).rgb;
             o.Alpha = 1;
             
             float2 uv_A_tex = i.uv_texcoord * _A_tex_ST.xy + _A_tex_ST.zw;

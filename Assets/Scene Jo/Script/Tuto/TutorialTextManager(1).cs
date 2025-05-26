@@ -100,7 +100,9 @@ public class TutorialTextManager : MonoBehaviour
         return textObj;
     }
 
-    public GameObject CreateWorldText(string id, string text, Color color, float fontSize, Vector3 position, float scale = 1f)
+    // Remplacez la méthode CreateWorldText par cette version améliorée :
+
+    public GameObject CreateWorldText(string id, string text, Color color, float fontSize, Vector3 position, float scale = 1f, bool alwaysVisible = true)
     {
         // Vérifier si le texte existe déjà
         if (textObjects.ContainsKey(id))
@@ -124,7 +126,28 @@ public class TutorialTextManager : MonoBehaviour
         textMesh.fontStyle = FontStyles.Bold;
         textMesh.alignment = TextAlignmentOptions.Center;
         textMesh.rectTransform.sizeDelta = new Vector2(4, 1.5f);
-        textMesh.sortingOrder = 950;
+
+        // ✅ Configuration pour être toujours visible
+        if (alwaysVisible)
+        {
+            textMesh.sortingOrder = 32767; // Maximum
+
+            // Appliquer le matériau spécial pour être toujours visible
+            MeshRenderer meshRenderer = textObj.GetComponent<MeshRenderer>();
+            if (meshRenderer != null && alwaysOnTopMaterial != null)
+            {
+                meshRenderer.material = alwaysOnTopMaterial;
+                meshRenderer.material.color = color;
+                meshRenderer.sortingOrder = 32767;
+            }
+
+            // Layer très haute pour être prioritaire
+            textObj.layer = 31;
+        }
+        else
+        {
+            textMesh.sortingOrder = 950;
+        }
 
         // Ajouter le Billboard seulement si le composant existe dans le projet
         var billboardType = System.Type.GetType("Billboard");

@@ -2,6 +2,7 @@ using FMODUnity;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using FMOD.Studio;
 
 public class AudioManager : MonoBehaviour
 {
@@ -50,15 +51,41 @@ public class AudioManager : MonoBehaviour
     [Range(0.1f, 1.0f)]
     [SerializeField] float echolocationCooldown = 0.2f;
 
+    [Header("--- FADE AUDIO SETTINGS ---")]
+    [Tooltip("Durée du fade-in au démarrage de la scène")]
+    [Range(0.5f, 10.0f)]
+    [SerializeField] float fadeInDuration = 2f;
+    [Tooltip("Durée du fade-out en sortie de scène")]
+    [Range(0.5f, 5.0f)]
+    [SerializeField] float fadeOutDuration = 1f;
+    [Tooltip("Courbe d'animation pour le fade")]
+    [SerializeField] AnimationCurve fadeCurve = AnimationCurve.EaseInOut(0, 0, 1, 1);
+    [Tooltip("Activer le fade-in automatique au démarrage")]
+    [SerializeField] bool fadeInOnStart = true;
+    [Tooltip("Activer le fade-out automatique en sortie")]
+    [SerializeField] bool fadeOutOnSceneExit = true;
+
     public static AudioManager Instance { get; private set; }
 
-    // Variables privées
+    // Variables privées existantes
     private float time;
     private float lastCollisionTime = 0f;
     private float lastEcholocationTime = 0f;
     private int currentSurfaceType = 0; // Par défaut, WoodSurface (0)
     private FMOD.Studio.EventInstance backgroundMusicInstance;
     private bool isMusicPlaying = false;
+
+    // Nouvelles variables pour le fade
+    private Bus masterBus;
+    private Bus musicBus;
+    private Bus sfxBus;
+    private Bus ambientBus;
+    private Coroutine currentFadeCoroutine;
+    private bool isAudioInitialized = false;
+    private float masterTargetVolume = 1f;
+    private float musicTargetVolume = 1f;
+    private float sfxTargetVolume = 1f;
+    private float ambientTargetVolume = 1f;
 
     // Enum pour les types de surface (correspond aux valeurs FMOD : 0, 1, 2)
     public enum SurfaceType
@@ -90,7 +117,16 @@ public class AudioManager : MonoBehaviour
 
     void Start()
     {
-        // Initialisation
+        // NOUVEAU : Initialiser les bus audio pour le fade
+        InitializeAudioBuses();
+
+        // NOUVEAU : Si le fade est activé, commencer par couper le son puis faire le fade-in
+        if (fadeInOnStart)
+        {
+            StartSceneFade();
+        }
+
+        // Initialisation existante
         if (playMusicOnStart && !BackgroundMusicEvent.IsNull)
         {
             PlayBackgroundMusic();
@@ -99,6 +135,11 @@ public class AudioManager : MonoBehaviour
 
     void OnDestroy()
     {
+        // NOUVEAU : Arrêter le fade si en cours
+        if (currentFadeCoroutine != null)
+            StopCoroutine(currentFadeCoroutine);
+
+        // Code existant
         // Arrêter et libérer la musique si elle existe
         StopBackgroundMusic();
 
@@ -107,6 +148,220 @@ public class AudioManager : MonoBehaviour
             Instance = null;
         }
     }
+
+    #region ===== NOUVELLES MÉTHODES FADE =====
+
+    /// <summary>
+    /// Initialise les bus FMOD pour le contrôle du fade
+    /// </summary>
+    private void InitializeAudioBuses()
+    {
+        try
+        {
+            // Récupérer les bus principaux FMOD
+            masterBus = RuntimeManager.GetBus("bus:/");
+            musicBus = RuntimeManager.GetBus("bus:/Music");
+            sfxBus = RuntimeManager.GetBus("bus:/SFX");
+            ambientBus = RuntimeManager.GetBus("bus:/Ambient");
+
+            // Stocker les volumes cibles actuels
+            masterBus.getVolume(out masterTargetVolume);
+
+            // Essayer de récupérer les volumes des autres bus
+            if (musicBus.isValid())
+                musicBus.getVolume(out musicTargetVolume);
+            if (sfxBus.isValid())
+                sfxBus.getVolume(out sfxTargetVolume);
+            if (ambientBus.isValid())
+                ambientBus.getVolume(out ambientTargetVolume);
+
+            isAudioInitialized = true;
+            Debug.Log("AudioManager: Bus FMOD initialisés avec succès pour le fade");
+        }
+        catch (System.Exception e)
+        {
+            Debug.LogWarning($"Erreur lors de l'initialisation des bus audio: {e.Message}");
+            // Fallback: utiliser seulement le bus master
+            masterBus = RuntimeManager.GetBus("bus:/");
+            masterBus.getVolume(out masterTargetVolume);
+            isAudioInitialized = true;
+        }
+    }
+
+    /// <summary>
+    /// Démarre le fade-in audio au début de la scène (coupe tout puis fait un fondu progressif)
+    /// </summary>
+    public void StartSceneFade()
+    {
+        if (!isAudioInitialized) return;
+
+        Debug.Log("AudioManager: Démarrage du fade-in de scène");
+
+        // Couper immédiatement tous les sons
+        SetAllVolumes(0f);
+
+        // Démarrer le fade-in
+        if (currentFadeCoroutine != null)
+            StopCoroutine(currentFadeCoroutine);
+
+        currentFadeCoroutine = StartCoroutine(FadeIn());
+    }
+
+    /// <summary>
+    /// Fade-out audio avant de quitter la scène
+    /// </summary>
+    public void EndSceneFade()
+    {
+        if (!isAudioInitialized) return;
+
+        Debug.Log("AudioManager: Démarrage du fade-out de scène");
+
+        if (currentFadeCoroutine != null)
+            StopCoroutine(currentFadeCoroutine);
+
+        currentFadeCoroutine = StartCoroutine(FadeOut());
+    }
+
+    /// <summary>
+    /// Coroutine de fade-in
+    /// </summary>
+    private IEnumerator FadeIn()
+    {
+        float elapsedTime = 0f;
+
+        while (elapsedTime < fadeInDuration)
+        {
+            elapsedTime += Time.deltaTime;
+            float progress = elapsedTime / fadeInDuration;
+            float curveValue = fadeCurve.Evaluate(progress);
+
+            // Appliquer le fade à tous les bus
+            SetAllVolumes(curveValue);
+
+            yield return null;
+        }
+
+        // S'assurer que les volumes finaux sont corrects
+        SetAllVolumes(1f);
+        currentFadeCoroutine = null;
+        Debug.Log("AudioManager: Fade-in terminé");
+    }
+
+    /// <summary>
+    /// Coroutine de fade-out
+    /// </summary>
+    private IEnumerator FadeOut()
+    {
+        float elapsedTime = 0f;
+
+        while (elapsedTime < fadeOutDuration)
+        {
+            elapsedTime += Time.deltaTime;
+            float progress = elapsedTime / fadeOutDuration;
+            float curveValue = fadeCurve.Evaluate(1f - progress);
+
+            // Appliquer le fade à tous les bus
+            SetAllVolumes(curveValue);
+
+            yield return null;
+        }
+
+        // Couper complètement
+        SetAllVolumes(0f);
+        currentFadeCoroutine = null;
+        Debug.Log("AudioManager: Fade-out terminé");
+    }
+
+    /// <summary>
+    /// Applique un volume normalisé à tous les bus
+    /// </summary>
+    private void SetAllVolumes(float normalizedVolume)
+    {
+        // Appliquer au bus master
+        masterBus.setVolume(masterTargetVolume * normalizedVolume);
+
+        // Appliquer aux autres bus s'ils existent
+        if (musicBus.isValid())
+            musicBus.setVolume(musicTargetVolume * normalizedVolume);
+        if (sfxBus.isValid())
+            sfxBus.setVolume(sfxTargetVolume * normalizedVolume);
+        if (ambientBus.isValid())
+            ambientBus.setVolume(ambientTargetVolume * normalizedVolume);
+    }
+
+    /// <summary>
+    /// Fade manuel vers un volume spécifique
+    /// </summary>
+    /// <param name="targetVolume">Volume cible (0-1)</param>
+    /// <param name="duration">Durée du fade (si -1, utilise fadeInDuration)</param>
+    public void FadeToVolume(float targetVolume, float duration = -1f)
+    {
+        if (duration < 0) duration = fadeInDuration;
+
+        if (currentFadeCoroutine != null)
+            StopCoroutine(currentFadeCoroutine);
+
+        currentFadeCoroutine = StartCoroutine(FadeToVolumeCoroutine(targetVolume, duration));
+    }
+
+    /// <summary>
+    /// Coroutine pour fade vers un volume spécifique
+    /// </summary>
+    private IEnumerator FadeToVolumeCoroutine(float targetVolume, float duration)
+    {
+        float startVolume;
+        masterBus.getVolume(out startVolume);
+        startVolume /= masterTargetVolume; // Normaliser
+
+        float elapsedTime = 0f;
+
+        while (elapsedTime < duration)
+        {
+            elapsedTime += Time.deltaTime;
+            float progress = elapsedTime / duration;
+            float currentVolume = Mathf.Lerp(startVolume, targetVolume, fadeCurve.Evaluate(progress));
+
+            SetAllVolumes(currentVolume);
+
+            yield return null;
+        }
+
+        SetAllVolumes(targetVolume);
+        currentFadeCoroutine = null;
+    }
+
+    /// <summary>
+    /// Arrêt immédiat de tous les sons
+    /// </summary>
+    public void StopAllAudio()
+    {
+        if (currentFadeCoroutine != null)
+            StopCoroutine(currentFadeCoroutine);
+
+        SetAllVolumes(0f);
+        Debug.Log("AudioManager: Tous les sons coupés immédiatement");
+    }
+
+    /// <summary>
+    /// Restauration immédiate de tous les sons
+    /// </summary>
+    public void RestoreAllAudio()
+    {
+        if (currentFadeCoroutine != null)
+            StopCoroutine(currentFadeCoroutine);
+
+        SetAllVolumes(1f);
+        Debug.Log("AudioManager: Tous les sons restaurés immédiatement");
+    }
+
+    // Getters/Setters pour le fade
+    public void SetFadeInDuration(float duration) => fadeInDuration = duration;
+    public void SetFadeOutDuration(float duration) => fadeOutDuration = duration;
+    public bool IsFading => currentFadeCoroutine != null;
+
+    #endregion
+
+    #region ===== TOUTES VOS MÉTHODES EXISTANTES (INCHANGÉES) =====
 
     public void PlayBackgroundMusic()
     {
@@ -344,4 +599,6 @@ public class AudioManager : MonoBehaviour
             Gizmos.DrawWireSphere(rayEnd, 0.1f);
         }
     }
+
+    #endregion
 }

@@ -323,12 +323,7 @@ public class PlayerMovement : MonoBehaviour
             }
             else
             */
-            {
-                if (audioManager != null && characterController.velocity.magnitude > 0.1f)
-                {
-                    audioManager.PlayDecorCollisionSound(hit.point);
-                }
-            }
+
         }
     }
 
