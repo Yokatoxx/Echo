@@ -1115,7 +1115,7 @@ public class TutorialManager : MonoBehaviour
         }
 
         exit.GetComponent<Exit>().isCollectComplete = true; 
-        Destroy(backpack);
+        
 
         Debug.Log("Tutoriel dépôt terminé - Tous les textes de dépôt cachés");
     }
