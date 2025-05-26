@@ -227,10 +227,7 @@ public class PointCloudRevert : MonoBehaviour
                 targetMaterialCutoffValue = Mathf.Clamp(targetMaterialCutoffValue,
                     materialCutoffScannerTargetValue, materialCutoffRestingValue);
 
-                Debug.Log($"Mode Décrémental [{tagName}]: Puissance -{decrementPower} | " +
-                         $"Blend {currentBlendValue:F1} -> {targetValue:F1} | " +
-                         $"Cutoff -> {targetMaterialCutoffValue:F2} | " +
-                         $"Progression: {blendProgress:F2}");
+                
             }
             // MODE NORMAL - Aller directement à la valeur cible
             else
