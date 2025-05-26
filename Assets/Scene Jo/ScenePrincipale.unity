@@ -487,16 +487,16 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   blendShapeIndex: 0
   blendShapeValueTarget: 0
-  restingValue: 100
+  restingValue: 10
   lerpSpeed: 2
   returnDelay: 6
-  isDecrementalMode: 0
+  isDecrementalMode: 1
   decrementalStartValue: 100
-  scannerDecrementPower: 10
+  scannerDecrementPower: 100
   echoPassifDecrementPower: 6
   echoJoueurDecrementPower: 15
   materialToControl: {fileID: 0}
-  materialCutoffRestingValue: 1.15
+  materialCutoffRestingValue: 1.44
   materialCutoffScannerTargetValue: 0.6
   isTutorialActive: 1
   tutorialInitialCutoffValue: 1.15
@@ -573,16 +573,16 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   blendShapeIndex: 0
   blendShapeValueTarget: 0
-  restingValue: 100
+  restingValue: 10
   lerpSpeed: 2
   returnDelay: 6
-  isDecrementalMode: 0
+  isDecrementalMode: 1
   decrementalStartValue: 100
-  scannerDecrementPower: 10
+  scannerDecrementPower: 100
   echoPassifDecrementPower: 6
   echoJoueurDecrementPower: 15
   materialToControl: {fileID: 0}
-  materialCutoffRestingValue: 1.15
+  materialCutoffRestingValue: 1.44
   materialCutoffScannerTargetValue: 0.6
   isTutorialActive: 1
   tutorialInitialCutoffValue: 1.15
@@ -650,16 +650,16 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   blendShapeIndex: 0
   blendShapeValueTarget: 0
-  restingValue: 100
+  restingValue: 10
   lerpSpeed: 2
   returnDelay: 6
-  isDecrementalMode: 0
+  isDecrementalMode: 1
   decrementalStartValue: 100
-  scannerDecrementPower: 10
+  scannerDecrementPower: 100
   echoPassifDecrementPower: 6
   echoJoueurDecrementPower: 15
   materialToControl: {fileID: 0}
-  materialCutoffRestingValue: 1.15
+  materialCutoffRestingValue: 1.44
   materialCutoffScannerTargetValue: 0.6
   isTutorialActive: 1
   tutorialInitialCutoffValue: 1.15
@@ -716,16 +716,16 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   blendShapeIndex: 0
   blendShapeValueTarget: 0
-  restingValue: 100
+  restingValue: 10
   lerpSpeed: 2
   returnDelay: 6
-  isDecrementalMode: 0
+  isDecrementalMode: 1
   decrementalStartValue: 100
-  scannerDecrementPower: 10
+  scannerDecrementPower: 100
   echoPassifDecrementPower: 6
   echoJoueurDecrementPower: 15
   materialToControl: {fileID: 0}
-  materialCutoffRestingValue: 1.15
+  materialCutoffRestingValue: 1.44
   materialCutoffScannerTargetValue: 0.6
   isTutorialActive: 1
   tutorialInitialCutoffValue: 1.15
@@ -771,16 +771,16 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   blendShapeIndex: 0
   blendShapeValueTarget: 0
-  restingValue: 100
+  restingValue: 10
   lerpSpeed: 2
   returnDelay: 6
-  isDecrementalMode: 0
+  isDecrementalMode: 1
   decrementalStartValue: 100
-  scannerDecrementPower: 10
+  scannerDecrementPower: 100
   echoPassifDecrementPower: 6
   echoJoueurDecrementPower: 15
   materialToControl: {fileID: 0}
-  materialCutoffRestingValue: 1.15
+  materialCutoffRestingValue: 1.44
   materialCutoffScannerTargetValue: 0.6
   isTutorialActive: 1
   tutorialInitialCutoffValue: 1.15
@@ -1196,16 +1196,16 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   blendShapeIndex: 0
   blendShapeValueTarget: 0
-  restingValue: 100
+  restingValue: 10
   lerpSpeed: 2
   returnDelay: 6
-  isDecrementalMode: 0
+  isDecrementalMode: 1
   decrementalStartValue: 100
-  scannerDecrementPower: 10
+  scannerDecrementPower: 100
   echoPassifDecrementPower: 6
   echoJoueurDecrementPower: 15
   materialToControl: {fileID: 0}
-  materialCutoffRestingValue: 1.15
+  materialCutoffRestingValue: 1.44
   materialCutoffScannerTargetValue: 0.6
   isTutorialActive: 1
   tutorialInitialCutoffValue: 1.15
@@ -1306,16 +1306,16 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   blendShapeIndex: 0
   blendShapeValueTarget: 0
-  restingValue: 100
+  restingValue: 10
   lerpSpeed: 2
   returnDelay: 6
-  isDecrementalMode: 0
+  isDecrementalMode: 1
   decrementalStartValue: 100
-  scannerDecrementPower: 10
+  scannerDecrementPower: 100
   echoPassifDecrementPower: 6
   echoJoueurDecrementPower: 15
   materialToControl: {fileID: 0}
-  materialCutoffRestingValue: 1.15
+  materialCutoffRestingValue: 1.44
   materialCutoffScannerTargetValue: 0.6
   isTutorialActive: 1
   tutorialInitialCutoffValue: 1.15
@@ -1803,16 +1803,16 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   blendShapeIndex: 0
   blendShapeValueTarget: 0
-  restingValue: 100
+  restingValue: 10
   lerpSpeed: 2
   returnDelay: 6
-  isDecrementalMode: 0
+  isDecrementalMode: 1
   decrementalStartValue: 100
-  scannerDecrementPower: 10
+  scannerDecrementPower: 100
   echoPassifDecrementPower: 6
   echoJoueurDecrementPower: 15
   materialToControl: {fileID: 0}
-  materialCutoffRestingValue: 1.15
+  materialCutoffRestingValue: 1.44
   materialCutoffScannerTargetValue: 0.6
   isTutorialActive: 1
   tutorialInitialCutoffValue: 1.15
@@ -2554,16 +2554,16 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   blendShapeIndex: 0
   blendShapeValueTarget: 0
-  restingValue: 0
+  restingValue: 10
   lerpSpeed: 2
   returnDelay: 6
-  isDecrementalMode: 0
+  isDecrementalMode: 1
   decrementalStartValue: 100
-  scannerDecrementPower: 10
+  scannerDecrementPower: 100
   echoPassifDecrementPower: 6
   echoJoueurDecrementPower: 15
   materialToControl: {fileID: 0}
-  materialCutoffRestingValue: 0.6
+  materialCutoffRestingValue: 1.44
   materialCutoffScannerTargetValue: 0.6
   isTutorialActive: 1
   tutorialInitialCutoffValue: 1.15
@@ -3759,16 +3759,16 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   blendShapeIndex: 0
   blendShapeValueTarget: 0
-  restingValue: 100
+  restingValue: 10
   lerpSpeed: 2
   returnDelay: 6
-  isDecrementalMode: 0
+  isDecrementalMode: 1
   decrementalStartValue: 100
-  scannerDecrementPower: 10
+  scannerDecrementPower: 100
   echoPassifDecrementPower: 6
   echoJoueurDecrementPower: 15
   materialToControl: {fileID: 0}
-  materialCutoffRestingValue: 1.15
+  materialCutoffRestingValue: 1.44
   materialCutoffScannerTargetValue: 0.6
   isTutorialActive: 1
   tutorialInitialCutoffValue: 1.15
@@ -3918,16 +3918,16 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   blendShapeIndex: 0
   blendShapeValueTarget: 0
-  restingValue: 100
+  restingValue: 10
   lerpSpeed: 2
   returnDelay: 6
-  isDecrementalMode: 0
+  isDecrementalMode: 1
   decrementalStartValue: 100
-  scannerDecrementPower: 10
+  scannerDecrementPower: 100
   echoPassifDecrementPower: 6
   echoJoueurDecrementPower: 15
   materialToControl: {fileID: 0}
-  materialCutoffRestingValue: 1.15
+  materialCutoffRestingValue: 1.44
   materialCutoffScannerTargetValue: 0.6
   isTutorialActive: 1
   tutorialInitialCutoffValue: 1.15
@@ -4111,16 +4111,16 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   blendShapeIndex: 0
   blendShapeValueTarget: 0
-  restingValue: 100
+  restingValue: 10
   lerpSpeed: 2
   returnDelay: 6
-  isDecrementalMode: 0
+  isDecrementalMode: 1
   decrementalStartValue: 100
-  scannerDecrementPower: 10
+  scannerDecrementPower: 100
   echoPassifDecrementPower: 6
   echoJoueurDecrementPower: 15
   materialToControl: {fileID: 0}
-  materialCutoffRestingValue: 1.15
+  materialCutoffRestingValue: 1.44
   materialCutoffScannerTargetValue: 0.6
   isTutorialActive: 1
   tutorialInitialCutoffValue: 1.15
@@ -4289,12 +4289,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   blendShapeIndex: 0
   blendShapeValueTarget: 0
-  restingValue: 100
+  restingValue: 10
   lerpSpeed: 2
   returnDelay: 6
-  isDecrementalMode: 0
+  isDecrementalMode: 1
   decrementalStartValue: 100
-  scannerDecrementPower: 10
+  scannerDecrementPower: 100
   echoPassifDecrementPower: 6
   echoJoueurDecrementPower: 15
   materialToControl: {fileID: 0}
@@ -4344,16 +4344,16 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   blendShapeIndex: 0
   blendShapeValueTarget: 0
-  restingValue: 100
+  restingValue: 10
   lerpSpeed: 2
   returnDelay: 6
-  isDecrementalMode: 0
+  isDecrementalMode: 1
   decrementalStartValue: 100
-  scannerDecrementPower: 10
+  scannerDecrementPower: 100
   echoPassifDecrementPower: 6
   echoJoueurDecrementPower: 15
   materialToControl: {fileID: 0}
-  materialCutoffRestingValue: 1.15
+  materialCutoffRestingValue: 1.44
   materialCutoffScannerTargetValue: 0.6
   isTutorialActive: 1
   tutorialInitialCutoffValue: 1.15
@@ -4508,16 +4508,16 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   blendShapeIndex: 0
   blendShapeValueTarget: 0
-  restingValue: 100
+  restingValue: 10
   lerpSpeed: 2
   returnDelay: 6
-  isDecrementalMode: 0
+  isDecrementalMode: 1
   decrementalStartValue: 100
-  scannerDecrementPower: 10
+  scannerDecrementPower: 100
   echoPassifDecrementPower: 6
   echoJoueurDecrementPower: 15
   materialToControl: {fileID: 0}
-  materialCutoffRestingValue: 1.15
+  materialCutoffRestingValue: 1.44
   materialCutoffScannerTargetValue: 0.6
   isTutorialActive: 1
   tutorialInitialCutoffValue: 1.15
@@ -5207,16 +5207,16 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   blendShapeIndex: 0
   blendShapeValueTarget: 0
-  restingValue: 100
+  restingValue: 10
   lerpSpeed: 2
   returnDelay: 6
-  isDecrementalMode: 0
+  isDecrementalMode: 1
   decrementalStartValue: 100
-  scannerDecrementPower: 10
+  scannerDecrementPower: 100
   echoPassifDecrementPower: 6
   echoJoueurDecrementPower: 15
   materialToControl: {fileID: 0}
-  materialCutoffRestingValue: 1.15
+  materialCutoffRestingValue: 1.44
   materialCutoffScannerTargetValue: 0.6
   isTutorialActive: 1
   tutorialInitialCutoffValue: 1.15
@@ -5544,12 +5544,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   blendShapeIndex: 0
   blendShapeValueTarget: 0
-  restingValue: 100
+  restingValue: 10
   lerpSpeed: 2
   returnDelay: 6
-  isDecrementalMode: 0
+  isDecrementalMode: 1
   decrementalStartValue: 100
-  scannerDecrementPower: 10
+  scannerDecrementPower: 100
   echoPassifDecrementPower: 6
   echoJoueurDecrementPower: 15
   materialToControl: {fileID: 0}
@@ -5819,16 +5819,16 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   blendShapeIndex: 0
   blendShapeValueTarget: 0
-  restingValue: 0
+  restingValue: 10
   lerpSpeed: 2
   returnDelay: 6
-  isDecrementalMode: 0
+  isDecrementalMode: 1
   decrementalStartValue: 100
-  scannerDecrementPower: 10
+  scannerDecrementPower: 100
   echoPassifDecrementPower: 6
   echoJoueurDecrementPower: 15
   materialToControl: {fileID: 0}
-  materialCutoffRestingValue: 0.6
+  materialCutoffRestingValue: 1.44
   materialCutoffScannerTargetValue: 0.6
   isTutorialActive: 1
   tutorialInitialCutoffValue: 1.15
@@ -5935,16 +5935,16 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   blendShapeIndex: 0
   blendShapeValueTarget: 0
-  restingValue: 100
+  restingValue: 10
   lerpSpeed: 2
   returnDelay: 6
-  isDecrementalMode: 0
+  isDecrementalMode: 1
   decrementalStartValue: 100
-  scannerDecrementPower: 10
+  scannerDecrementPower: 100
   echoPassifDecrementPower: 6
   echoJoueurDecrementPower: 15
   materialToControl: {fileID: 0}
-  materialCutoffRestingValue: 1.15
+  materialCutoffRestingValue: 1.44
   materialCutoffScannerTargetValue: 0.6
   isTutorialActive: 1
   tutorialInitialCutoffValue: 1.15
@@ -6300,16 +6300,16 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   blendShapeIndex: 0
   blendShapeValueTarget: 0
-  restingValue: 100
+  restingValue: 10
   lerpSpeed: 2
   returnDelay: 6
-  isDecrementalMode: 0
+  isDecrementalMode: 1
   decrementalStartValue: 100
-  scannerDecrementPower: 10
+  scannerDecrementPower: 100
   echoPassifDecrementPower: 6
   echoJoueurDecrementPower: 15
   materialToControl: {fileID: 0}
-  materialCutoffRestingValue: 1.15
+  materialCutoffRestingValue: 1.44
   materialCutoffScannerTargetValue: 0.6
   isTutorialActive: 1
   tutorialInitialCutoffValue: 1.15
@@ -6531,16 +6531,16 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   blendShapeIndex: 0
   blendShapeValueTarget: 0
-  restingValue: 100
+  restingValue: 10
   lerpSpeed: 2
   returnDelay: 6
-  isDecrementalMode: 0
+  isDecrementalMode: 1
   decrementalStartValue: 100
-  scannerDecrementPower: 10
+  scannerDecrementPower: 100
   echoPassifDecrementPower: 6
   echoJoueurDecrementPower: 15
   materialToControl: {fileID: 0}
-  materialCutoffRestingValue: 1.15
+  materialCutoffRestingValue: 1.44
   materialCutoffScannerTargetValue: 0.6
   isTutorialActive: 1
   tutorialInitialCutoffValue: 1.15
@@ -6804,16 +6804,16 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   blendShapeIndex: 0
   blendShapeValueTarget: 0
-  restingValue: 100
+  restingValue: 10
   lerpSpeed: 2
   returnDelay: 6
-  isDecrementalMode: 0
+  isDecrementalMode: 1
   decrementalStartValue: 100
-  scannerDecrementPower: 10
+  scannerDecrementPower: 100
   echoPassifDecrementPower: 6
   echoJoueurDecrementPower: 15
   materialToControl: {fileID: 0}
-  materialCutoffRestingValue: 1.15
+  materialCutoffRestingValue: 1.44
   materialCutoffScannerTargetValue: 0.6
   isTutorialActive: 1
   tutorialInitialCutoffValue: 1.15
@@ -6881,16 +6881,16 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   blendShapeIndex: 0
   blendShapeValueTarget: 0
-  restingValue: 100
+  restingValue: 10
   lerpSpeed: 2
   returnDelay: 6
-  isDecrementalMode: 0
+  isDecrementalMode: 1
   decrementalStartValue: 100
-  scannerDecrementPower: 10
+  scannerDecrementPower: 100
   echoPassifDecrementPower: 6
   echoJoueurDecrementPower: 15
   materialToControl: {fileID: 0}
-  materialCutoffRestingValue: 1.15
+  materialCutoffRestingValue: 1.44
   materialCutoffScannerTargetValue: 0.6
   isTutorialActive: 1
   tutorialInitialCutoffValue: 1.15
@@ -7311,16 +7311,16 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   blendShapeIndex: 0
   blendShapeValueTarget: 0
-  restingValue: 100
+  restingValue: 10
   lerpSpeed: 2
   returnDelay: 6
-  isDecrementalMode: 0
+  isDecrementalMode: 1
   decrementalStartValue: 100
-  scannerDecrementPower: 10
+  scannerDecrementPower: 100
   echoPassifDecrementPower: 6
   echoJoueurDecrementPower: 15
   materialToControl: {fileID: 0}
-  materialCutoffRestingValue: 1.15
+  materialCutoffRestingValue: 1.44
   materialCutoffScannerTargetValue: 0.6
   isTutorialActive: 1
   tutorialInitialCutoffValue: 1.15
@@ -7917,16 +7917,16 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   blendShapeIndex: 0
   blendShapeValueTarget: 0
-  restingValue: 100
+  restingValue: 10
   lerpSpeed: 2
   returnDelay: 6
-  isDecrementalMode: 0
+  isDecrementalMode: 1
   decrementalStartValue: 100
-  scannerDecrementPower: 10
+  scannerDecrementPower: 100
   echoPassifDecrementPower: 6
   echoJoueurDecrementPower: 15
   materialToControl: {fileID: 0}
-  materialCutoffRestingValue: 1.15
+  materialCutoffRestingValue: 1.44
   materialCutoffScannerTargetValue: 0.6
   isTutorialActive: 1
   tutorialInitialCutoffValue: 1.15
@@ -8027,16 +8027,16 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   blendShapeIndex: 0
   blendShapeValueTarget: 0
-  restingValue: 100
+  restingValue: 10
   lerpSpeed: 2
   returnDelay: 6
-  isDecrementalMode: 0
+  isDecrementalMode: 1
   decrementalStartValue: 100
-  scannerDecrementPower: 10
+  scannerDecrementPower: 100
   echoPassifDecrementPower: 6
   echoJoueurDecrementPower: 15
   materialToControl: {fileID: 0}
-  materialCutoffRestingValue: 1.15
+  materialCutoffRestingValue: 1.44
   materialCutoffScannerTargetValue: 0.6
   isTutorialActive: 1
   tutorialInitialCutoffValue: 1.15
@@ -8136,16 +8136,16 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   blendShapeIndex: 0
   blendShapeValueTarget: 0
-  restingValue: 100
+  restingValue: 10
   lerpSpeed: 2
   returnDelay: 6
-  isDecrementalMode: 0
+  isDecrementalMode: 1
   decrementalStartValue: 100
-  scannerDecrementPower: 10
+  scannerDecrementPower: 100
   echoPassifDecrementPower: 6
   echoJoueurDecrementPower: 15
   materialToControl: {fileID: 0}
-  materialCutoffRestingValue: 1.15
+  materialCutoffRestingValue: 1.44
   materialCutoffScannerTargetValue: 0.6
   isTutorialActive: 1
   tutorialInitialCutoffValue: 1.15
@@ -8191,16 +8191,16 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   blendShapeIndex: 0
   blendShapeValueTarget: 0
-  restingValue: 100
+  restingValue: 10
   lerpSpeed: 2
   returnDelay: 6
-  isDecrementalMode: 0
+  isDecrementalMode: 1
   decrementalStartValue: 100
-  scannerDecrementPower: 10
+  scannerDecrementPower: 100
   echoPassifDecrementPower: 6
   echoJoueurDecrementPower: 15
   materialToControl: {fileID: 0}
-  materialCutoffRestingValue: 1.15
+  materialCutoffRestingValue: 1.44
   materialCutoffScannerTargetValue: 0.6
   isTutorialActive: 1
   tutorialInitialCutoffValue: 1.15
@@ -8246,16 +8246,16 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   blendShapeIndex: 0
   blendShapeValueTarget: 0
-  restingValue: 100
+  restingValue: 10
   lerpSpeed: 2
   returnDelay: 6
-  isDecrementalMode: 0
+  isDecrementalMode: 1
   decrementalStartValue: 100
-  scannerDecrementPower: 10
+  scannerDecrementPower: 100
   echoPassifDecrementPower: 6
   echoJoueurDecrementPower: 15
   materialToControl: {fileID: 0}
-  materialCutoffRestingValue: 1.15
+  materialCutoffRestingValue: 1.44
   materialCutoffScannerTargetValue: 0.6
   isTutorialActive: 1
   tutorialInitialCutoffValue: 1.15
@@ -8301,12 +8301,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   blendShapeIndex: 0
   blendShapeValueTarget: 0
-  restingValue: 100
+  restingValue: 10
   lerpSpeed: 2
   returnDelay: 6
-  isDecrementalMode: 0
+  isDecrementalMode: 1
   decrementalStartValue: 100
-  scannerDecrementPower: 10
+  scannerDecrementPower: 100
   echoPassifDecrementPower: 6
   echoJoueurDecrementPower: 15
   materialToControl: {fileID: 0}
@@ -8471,16 +8471,16 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   blendShapeIndex: 0
   blendShapeValueTarget: 0
-  restingValue: 100
+  restingValue: 10
   lerpSpeed: 2
   returnDelay: 6
-  isDecrementalMode: 0
+  isDecrementalMode: 1
   decrementalStartValue: 100
-  scannerDecrementPower: 10
+  scannerDecrementPower: 100
   echoPassifDecrementPower: 6
   echoJoueurDecrementPower: 15
   materialToControl: {fileID: 0}
-  materialCutoffRestingValue: 1.15
+  materialCutoffRestingValue: 1.44
   materialCutoffScannerTargetValue: 0.6
   isTutorialActive: 1
   tutorialInitialCutoffValue: 1.15
@@ -9574,16 +9574,16 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   blendShapeIndex: 0
   blendShapeValueTarget: 0
-  restingValue: 100
+  restingValue: 10
   lerpSpeed: 2
   returnDelay: 6
-  isDecrementalMode: 0
+  isDecrementalMode: 1
   decrementalStartValue: 100
-  scannerDecrementPower: 10
+  scannerDecrementPower: 100
   echoPassifDecrementPower: 6
   echoJoueurDecrementPower: 15
   materialToControl: {fileID: 0}
-  materialCutoffRestingValue: 1.15
+  materialCutoffRestingValue: 1.44
   materialCutoffScannerTargetValue: 0.6
   isTutorialActive: 1
   tutorialInitialCutoffValue: 1.15
@@ -10064,16 +10064,16 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   blendShapeIndex: 0
   blendShapeValueTarget: 0
-  restingValue: 100
+  restingValue: 10
   lerpSpeed: 2
   returnDelay: 6
-  isDecrementalMode: 0
+  isDecrementalMode: 1
   decrementalStartValue: 100
-  scannerDecrementPower: 10
+  scannerDecrementPower: 100
   echoPassifDecrementPower: 6
   echoJoueurDecrementPower: 15
   materialToControl: {fileID: 0}
-  materialCutoffRestingValue: 1.15
+  materialCutoffRestingValue: 1.44
   materialCutoffScannerTargetValue: 0.6
   isTutorialActive: 1
   tutorialInitialCutoffValue: 1.15
@@ -10284,16 +10284,16 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   blendShapeIndex: 0
   blendShapeValueTarget: 0
-  restingValue: 100
+  restingValue: 10
   lerpSpeed: 2
   returnDelay: 6
-  isDecrementalMode: 0
+  isDecrementalMode: 1
   decrementalStartValue: 100
-  scannerDecrementPower: 10
+  scannerDecrementPower: 100
   echoPassifDecrementPower: 6
   echoJoueurDecrementPower: 15
   materialToControl: {fileID: 0}
-  materialCutoffRestingValue: 1.15
+  materialCutoffRestingValue: 1.44
   materialCutoffScannerTargetValue: 0.6
   isTutorialActive: 1
   tutorialInitialCutoffValue: 1.15
@@ -10388,16 +10388,16 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   blendShapeIndex: 0
   blendShapeValueTarget: 0
-  restingValue: 0
+  restingValue: 10
   lerpSpeed: 2
   returnDelay: 6
-  isDecrementalMode: 0
+  isDecrementalMode: 1
   decrementalStartValue: 100
-  scannerDecrementPower: 10
+  scannerDecrementPower: 100
   echoPassifDecrementPower: 6
   echoJoueurDecrementPower: 15
   materialToControl: {fileID: 0}
-  materialCutoffRestingValue: 0.6
+  materialCutoffRestingValue: 1.44
   materialCutoffScannerTargetValue: 0.6
   isTutorialActive: 1
   tutorialInitialCutoffValue: 1.15
@@ -13996,12 +13996,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   blendShapeIndex: 0
   blendShapeValueTarget: 0
-  restingValue: 100
+  restingValue: 10
   lerpSpeed: 2
   returnDelay: 6
-  isDecrementalMode: 0
+  isDecrementalMode: 1
   decrementalStartValue: 100
-  scannerDecrementPower: 10
+  scannerDecrementPower: 100
   echoPassifDecrementPower: 6
   echoJoueurDecrementPower: 15
   materialToControl: {fileID: 0}
@@ -14200,16 +14200,16 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   blendShapeIndex: 0
   blendShapeValueTarget: 0
-  restingValue: 100
+  restingValue: 10
   lerpSpeed: 2
   returnDelay: 6
-  isDecrementalMode: 0
+  isDecrementalMode: 1
   decrementalStartValue: 100
-  scannerDecrementPower: 10
+  scannerDecrementPower: 100
   echoPassifDecrementPower: 6
   echoJoueurDecrementPower: 15
   materialToControl: {fileID: 0}
-  materialCutoffRestingValue: 1.15
+  materialCutoffRestingValue: 1.44
   materialCutoffScannerTargetValue: 0.6
   isTutorialActive: 1
   tutorialInitialCutoffValue: 1.15
@@ -14410,16 +14410,16 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   blendShapeIndex: 0
   blendShapeValueTarget: 0
-  restingValue: 100
+  restingValue: 10
   lerpSpeed: 2
   returnDelay: 6
-  isDecrementalMode: 0
+  isDecrementalMode: 1
   decrementalStartValue: 100
-  scannerDecrementPower: 10
+  scannerDecrementPower: 100
   echoPassifDecrementPower: 6
   echoJoueurDecrementPower: 15
   materialToControl: {fileID: 0}
-  materialCutoffRestingValue: 1.15
+  materialCutoffRestingValue: 1.44
   materialCutoffScannerTargetValue: 0.6
   isTutorialActive: 1
   tutorialInitialCutoffValue: 1.15
@@ -14703,16 +14703,16 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   blendShapeIndex: 0
   blendShapeValueTarget: 0
-  restingValue: 0
+  restingValue: 10
   lerpSpeed: 2
   returnDelay: 6
-  isDecrementalMode: 0
+  isDecrementalMode: 1
   decrementalStartValue: 100
-  scannerDecrementPower: 10
+  scannerDecrementPower: 100
   echoPassifDecrementPower: 6
   echoJoueurDecrementPower: 15
   materialToControl: {fileID: 0}
-  materialCutoffRestingValue: 0.6
+  materialCutoffRestingValue: 1.44
   materialCutoffScannerTargetValue: 0.6
   isTutorialActive: 1
   tutorialInitialCutoffValue: 1.15
@@ -14758,16 +14758,16 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   blendShapeIndex: 0
   blendShapeValueTarget: 0
-  restingValue: 0
+  restingValue: 10
   lerpSpeed: 2
   returnDelay: 6
-  isDecrementalMode: 0
+  isDecrementalMode: 1
   decrementalStartValue: 100
-  scannerDecrementPower: 10
+  scannerDecrementPower: 100
   echoPassifDecrementPower: 6
   echoJoueurDecrementPower: 15
   materialToControl: {fileID: 0}
-  materialCutoffRestingValue: 0.6
+  materialCutoffRestingValue: 1.44
   materialCutoffScannerTargetValue: 0.6
   isTutorialActive: 1
   tutorialInitialCutoffValue: 1.15
@@ -14923,16 +14923,16 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   blendShapeIndex: 0
   blendShapeValueTarget: 0
-  restingValue: 100
+  restingValue: 10
   lerpSpeed: 2
   returnDelay: 6
-  isDecrementalMode: 0
+  isDecrementalMode: 1
   decrementalStartValue: 100
-  scannerDecrementPower: 10
+  scannerDecrementPower: 100
   echoPassifDecrementPower: 6
   echoJoueurDecrementPower: 15
   materialToControl: {fileID: 0}
-  materialCutoffRestingValue: 1.15
+  materialCutoffRestingValue: 1.44
   materialCutoffScannerTargetValue: 0.6
   isTutorialActive: 1
   tutorialInitialCutoffValue: 1.15
@@ -16462,9 +16462,9 @@ MonoBehaviour:
   restingValue: 100
   lerpSpeed: 2
   returnDelay: 6
-  isDecrementalMode: 0
+  isDecrementalMode: 1
   decrementalStartValue: 100
-  scannerDecrementPower: 10
+  scannerDecrementPower: 100
   echoPassifDecrementPower: 6
   echoJoueurDecrementPower: 15
   materialToControl: {fileID: 0}
@@ -17030,16 +17030,16 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   blendShapeIndex: 0
   blendShapeValueTarget: 0
-  restingValue: 100
+  restingValue: 10
   lerpSpeed: 2
   returnDelay: 6
-  isDecrementalMode: 0
+  isDecrementalMode: 1
   decrementalStartValue: 100
-  scannerDecrementPower: 10
+  scannerDecrementPower: 100
   echoPassifDecrementPower: 6
   echoJoueurDecrementPower: 15
   materialToControl: {fileID: 0}
-  materialCutoffRestingValue: 1.15
+  materialCutoffRestingValue: 1.44
   materialCutoffScannerTargetValue: 0.6
   isTutorialActive: 1
   tutorialInitialCutoffValue: 1.15
@@ -17984,16 +17984,16 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   blendShapeIndex: 0
   blendShapeValueTarget: 0
-  restingValue: 0
+  restingValue: 10
   lerpSpeed: 2
   returnDelay: 6
-  isDecrementalMode: 0
+  isDecrementalMode: 1
   decrementalStartValue: 100
-  scannerDecrementPower: 10
+  scannerDecrementPower: 100
   echoPassifDecrementPower: 6
   echoJoueurDecrementPower: 15
   materialToControl: {fileID: 0}
-  materialCutoffRestingValue: 0.6
+  materialCutoffRestingValue: 1.44
   materialCutoffScannerTargetValue: 0.6
   isTutorialActive: 1
   tutorialInitialCutoffValue: 1.15
@@ -18122,16 +18122,16 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   blendShapeIndex: 0
   blendShapeValueTarget: 0
-  restingValue: 100
+  restingValue: 10
   lerpSpeed: 2
   returnDelay: 6
-  isDecrementalMode: 0
+  isDecrementalMode: 1
   decrementalStartValue: 100
-  scannerDecrementPower: 10
+  scannerDecrementPower: 100
   echoPassifDecrementPower: 6
   echoJoueurDecrementPower: 15
   materialToControl: {fileID: 0}
-  materialCutoffRestingValue: 1.15
+  materialCutoffRestingValue: 1.44
   materialCutoffScannerTargetValue: 0.6
   isTutorialActive: 1
   tutorialInitialCutoffValue: 1.15
@@ -18264,16 +18264,16 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   blendShapeIndex: 0
   blendShapeValueTarget: 0
-  restingValue: 100
+  restingValue: 10
   lerpSpeed: 2
   returnDelay: 6
-  isDecrementalMode: 0
+  isDecrementalMode: 1
   decrementalStartValue: 100
-  scannerDecrementPower: 10
+  scannerDecrementPower: 100
   echoPassifDecrementPower: 6
   echoJoueurDecrementPower: 15
   materialToControl: {fileID: 0}
-  materialCutoffRestingValue: 1.15
+  materialCutoffRestingValue: 1.44
   materialCutoffScannerTargetValue: 0.6
   isTutorialActive: 1
   tutorialInitialCutoffValue: 1.15
@@ -18797,16 +18797,16 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   blendShapeIndex: 0
   blendShapeValueTarget: 0
-  restingValue: 100
+  restingValue: 10
   lerpSpeed: 2
   returnDelay: 6
-  isDecrementalMode: 0
+  isDecrementalMode: 1
   decrementalStartValue: 100
-  scannerDecrementPower: 10
+  scannerDecrementPower: 100
   echoPassifDecrementPower: 6
   echoJoueurDecrementPower: 15
   materialToControl: {fileID: 0}
-  materialCutoffRestingValue: 1.15
+  materialCutoffRestingValue: 1.44
   materialCutoffScannerTargetValue: 0.6
   isTutorialActive: 1
   tutorialInitialCutoffValue: 1.15
@@ -19050,12 +19050,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   blendShapeIndex: 0
   blendShapeValueTarget: 0
-  restingValue: 100
+  restingValue: 10
   lerpSpeed: 2
   returnDelay: 6
-  isDecrementalMode: 0
+  isDecrementalMode: 1
   decrementalStartValue: 100
-  scannerDecrementPower: 10
+  scannerDecrementPower: 100
   echoPassifDecrementPower: 6
   echoJoueurDecrementPower: 15
   materialToControl: {fileID: 0}
@@ -20382,16 +20382,16 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   blendShapeIndex: 0
   blendShapeValueTarget: 0
-  restingValue: 100
+  restingValue: 10
   lerpSpeed: 2
   returnDelay: 6
-  isDecrementalMode: 0
+  isDecrementalMode: 1
   decrementalStartValue: 100
-  scannerDecrementPower: 10
+  scannerDecrementPower: 100
   echoPassifDecrementPower: 6
   echoJoueurDecrementPower: 15
   materialToControl: {fileID: 0}
-  materialCutoffRestingValue: 1.15
+  materialCutoffRestingValue: 1.44
   materialCutoffScannerTargetValue: 0.6
   isTutorialActive: 1
   tutorialInitialCutoffValue: 1.15
@@ -20657,12 +20657,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   blendShapeIndex: 0
   blendShapeValueTarget: 0
-  restingValue: 100
+  restingValue: 10
   lerpSpeed: 2
   returnDelay: 6
-  isDecrementalMode: 0
+  isDecrementalMode: 1
   decrementalStartValue: 100
-  scannerDecrementPower: 10
+  scannerDecrementPower: 100
   echoPassifDecrementPower: 6
   echoJoueurDecrementPower: 15
   materialToControl: {fileID: 0}
@@ -20948,16 +20948,16 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   blendShapeIndex: 0
   blendShapeValueTarget: 0
-  restingValue: 100
+  restingValue: 10
   lerpSpeed: 2
   returnDelay: 6
-  isDecrementalMode: 0
+  isDecrementalMode: 1
   decrementalStartValue: 100
-  scannerDecrementPower: 10
+  scannerDecrementPower: 100
   echoPassifDecrementPower: 6
   echoJoueurDecrementPower: 15
   materialToControl: {fileID: 0}
-  materialCutoffRestingValue: 1.15
+  materialCutoffRestingValue: 1.44
   materialCutoffScannerTargetValue: 0.6
   isTutorialActive: 1
   tutorialInitialCutoffValue: 1.15
@@ -21274,16 +21274,16 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   blendShapeIndex: 0
   blendShapeValueTarget: 0
-  restingValue: 100
+  restingValue: 10
   lerpSpeed: 2
   returnDelay: 6
-  isDecrementalMode: 0
+  isDecrementalMode: 1
   decrementalStartValue: 100
-  scannerDecrementPower: 10
+  scannerDecrementPower: 100
   echoPassifDecrementPower: 6
   echoJoueurDecrementPower: 15
   materialToControl: {fileID: 0}
-  materialCutoffRestingValue: 1.15
+  materialCutoffRestingValue: 1.44
   materialCutoffScannerTargetValue: 0.6
   isTutorialActive: 1
   tutorialInitialCutoffValue: 1.15
@@ -21329,16 +21329,16 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   blendShapeIndex: 0
   blendShapeValueTarget: 0
-  restingValue: 100
+  restingValue: 10
   lerpSpeed: 2
   returnDelay: 6
-  isDecrementalMode: 0
+  isDecrementalMode: 1
   decrementalStartValue: 100
-  scannerDecrementPower: 10
+  scannerDecrementPower: 100
   echoPassifDecrementPower: 6
   echoJoueurDecrementPower: 15
   materialToControl: {fileID: 0}
-  materialCutoffRestingValue: 1.15
+  materialCutoffRestingValue: 1.44
   materialCutoffScannerTargetValue: 0.6
   isTutorialActive: 1
   tutorialInitialCutoffValue: 1.15
@@ -22932,16 +22932,16 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   blendShapeIndex: 0
   blendShapeValueTarget: 0
-  restingValue: 100
+  restingValue: 10
   lerpSpeed: 2
   returnDelay: 6
-  isDecrementalMode: 0
+  isDecrementalMode: 1
   decrementalStartValue: 100
-  scannerDecrementPower: 10
+  scannerDecrementPower: 100
   echoPassifDecrementPower: 6
   echoJoueurDecrementPower: 15
   materialToControl: {fileID: 0}
-  materialCutoffRestingValue: 1.15
+  materialCutoffRestingValue: 1.44
   materialCutoffScannerTargetValue: 0.6
   isTutorialActive: 1
   tutorialInitialCutoffValue: 1.15
@@ -23047,16 +23047,16 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   blendShapeIndex: 0
   blendShapeValueTarget: 0
-  restingValue: 100
+  restingValue: 10
   lerpSpeed: 2
   returnDelay: 6
-  isDecrementalMode: 0
+  isDecrementalMode: 1
   decrementalStartValue: 100
-  scannerDecrementPower: 10
+  scannerDecrementPower: 100
   echoPassifDecrementPower: 6
   echoJoueurDecrementPower: 15
   materialToControl: {fileID: 0}
-  materialCutoffRestingValue: 1.15
+  materialCutoffRestingValue: 1.44
   materialCutoffScannerTargetValue: 0.6
   isTutorialActive: 1
   tutorialInitialCutoffValue: 1.15
@@ -23207,16 +23207,16 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   blendShapeIndex: 0
   blendShapeValueTarget: 0
-  restingValue: 100
+  restingValue: 10
   lerpSpeed: 2
   returnDelay: 6
-  isDecrementalMode: 0
+  isDecrementalMode: 1
   decrementalStartValue: 100
-  scannerDecrementPower: 10
+  scannerDecrementPower: 100
   echoPassifDecrementPower: 6
   echoJoueurDecrementPower: 15
   materialToControl: {fileID: 0}
-  materialCutoffRestingValue: 1.15
+  materialCutoffRestingValue: 1.44
   materialCutoffScannerTargetValue: 0.6
   isTutorialActive: 1
   tutorialInitialCutoffValue: 1.15
@@ -23317,16 +23317,16 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   blendShapeIndex: 0
   blendShapeValueTarget: 0
-  restingValue: 100
+  restingValue: 10
   lerpSpeed: 2
   returnDelay: 6
-  isDecrementalMode: 0
+  isDecrementalMode: 1
   decrementalStartValue: 100
-  scannerDecrementPower: 10
+  scannerDecrementPower: 100
   echoPassifDecrementPower: 6
   echoJoueurDecrementPower: 15
   materialToControl: {fileID: 0}
-  materialCutoffRestingValue: 1.15
+  materialCutoffRestingValue: 1.44
   materialCutoffScannerTargetValue: 0.6
   isTutorialActive: 1
   tutorialInitialCutoffValue: 1.15
@@ -23421,16 +23421,16 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   blendShapeIndex: 0
   blendShapeValueTarget: 0
-  restingValue: 100
+  restingValue: 10
   lerpSpeed: 2
   returnDelay: 6
-  isDecrementalMode: 0
+  isDecrementalMode: 1
   decrementalStartValue: 100
-  scannerDecrementPower: 10
+  scannerDecrementPower: 100
   echoPassifDecrementPower: 6
   echoJoueurDecrementPower: 15
   materialToControl: {fileID: 0}
-  materialCutoffRestingValue: 1.15
+  materialCutoffRestingValue: 1.44
   materialCutoffScannerTargetValue: 0.6
   isTutorialActive: 1
   tutorialInitialCutoffValue: 1.15
@@ -23779,16 +23779,16 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   blendShapeIndex: 0
   blendShapeValueTarget: 0
-  restingValue: 100
+  restingValue: 10
   lerpSpeed: 2
   returnDelay: 6
-  isDecrementalMode: 0
+  isDecrementalMode: 1
   decrementalStartValue: 100
-  scannerDecrementPower: 10
+  scannerDecrementPower: 100
   echoPassifDecrementPower: 6
   echoJoueurDecrementPower: 15
   materialToControl: {fileID: 0}
-  materialCutoffRestingValue: 1.15
+  materialCutoffRestingValue: 1.44
   materialCutoffScannerTargetValue: 0.6
   isTutorialActive: 1
   tutorialInitialCutoffValue: 1.15
@@ -23900,16 +23900,16 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   blendShapeIndex: 0
   blendShapeValueTarget: 0
-  restingValue: 100
+  restingValue: 10
   lerpSpeed: 2
   returnDelay: 6
-  isDecrementalMode: 0
+  isDecrementalMode: 1
   decrementalStartValue: 100
-  scannerDecrementPower: 10
+  scannerDecrementPower: 100
   echoPassifDecrementPower: 6
   echoJoueurDecrementPower: 15
   materialToControl: {fileID: 0}
-  materialCutoffRestingValue: 1.15
+  materialCutoffRestingValue: 1.44
   materialCutoffScannerTargetValue: 0.6
   isTutorialActive: 1
   tutorialInitialCutoffValue: 1.15
@@ -23988,16 +23988,16 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   blendShapeIndex: 0
   blendShapeValueTarget: 0
-  restingValue: 100
+  restingValue: 10
   lerpSpeed: 2
   returnDelay: 6
-  isDecrementalMode: 0
+  isDecrementalMode: 1
   decrementalStartValue: 100
-  scannerDecrementPower: 10
+  scannerDecrementPower: 100
   echoPassifDecrementPower: 6
   echoJoueurDecrementPower: 15
   materialToControl: {fileID: 0}
-  materialCutoffRestingValue: 1.15
+  materialCutoffRestingValue: 1.44
   materialCutoffScannerTargetValue: 0.6
   isTutorialActive: 1
   tutorialInitialCutoffValue: 1.15
@@ -25896,16 +25896,16 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   blendShapeIndex: 0
   blendShapeValueTarget: 0
-  restingValue: 100
+  restingValue: 10
   lerpSpeed: 2
   returnDelay: 6
-  isDecrementalMode: 0
+  isDecrementalMode: 1
   decrementalStartValue: 100
-  scannerDecrementPower: 10
+  scannerDecrementPower: 100
   echoPassifDecrementPower: 6
   echoJoueurDecrementPower: 15
   materialToControl: {fileID: 0}
-  materialCutoffRestingValue: 1.15
+  materialCutoffRestingValue: 1.44
   materialCutoffScannerTargetValue: 0.6
   isTutorialActive: 1
   tutorialInitialCutoffValue: 1.15
@@ -26028,16 +26028,16 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   blendShapeIndex: 0
   blendShapeValueTarget: 0
-  restingValue: 100
+  restingValue: 10
   lerpSpeed: 2
   returnDelay: 6
-  isDecrementalMode: 0
+  isDecrementalMode: 1
   decrementalStartValue: 100
-  scannerDecrementPower: 10
+  scannerDecrementPower: 100
   echoPassifDecrementPower: 6
   echoJoueurDecrementPower: 15
   materialToControl: {fileID: 0}
-  materialCutoffRestingValue: 1.15
+  materialCutoffRestingValue: 1.44
   materialCutoffScannerTargetValue: 0.6
   isTutorialActive: 1
   tutorialInitialCutoffValue: 1.15
@@ -26355,16 +26355,16 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   blendShapeIndex: 0
   blendShapeValueTarget: 0
-  restingValue: 100
+  restingValue: 10
   lerpSpeed: 2
   returnDelay: 6
-  isDecrementalMode: 0
+  isDecrementalMode: 1
   decrementalStartValue: 100
-  scannerDecrementPower: 10
+  scannerDecrementPower: 100
   echoPassifDecrementPower: 6
   echoJoueurDecrementPower: 15
   materialToControl: {fileID: 0}
-  materialCutoffRestingValue: 1.15
+  materialCutoffRestingValue: 1.44
   materialCutoffScannerTargetValue: 0.6
   isTutorialActive: 1
   tutorialInitialCutoffValue: 1.15
@@ -27083,16 +27083,16 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   blendShapeIndex: 0
   blendShapeValueTarget: 0
-  restingValue: 100
+  restingValue: 10
   lerpSpeed: 2
   returnDelay: 6
-  isDecrementalMode: 0
+  isDecrementalMode: 1
   decrementalStartValue: 100
-  scannerDecrementPower: 10
+  scannerDecrementPower: 100
   echoPassifDecrementPower: 6
   echoJoueurDecrementPower: 15
   materialToControl: {fileID: 0}
-  materialCutoffRestingValue: 1.15
+  materialCutoffRestingValue: 1.44
   materialCutoffScannerTargetValue: 0.6
   isTutorialActive: 1
   tutorialInitialCutoffValue: 1.15
@@ -34100,16 +34100,16 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   blendShapeIndex: 0
   blendShapeValueTarget: 0
-  restingValue: 100
+  restingValue: 10
   lerpSpeed: 2
   returnDelay: 6
-  isDecrementalMode: 0
+  isDecrementalMode: 1
   decrementalStartValue: 100
-  scannerDecrementPower: 10
+  scannerDecrementPower: 100
   echoPassifDecrementPower: 6
   echoJoueurDecrementPower: 15
   materialToControl: {fileID: 0}
-  materialCutoffRestingValue: 1.15
+  materialCutoffRestingValue: 1.44
   materialCutoffScannerTargetValue: 0.6
   isTutorialActive: 1
   tutorialInitialCutoffValue: 1.15
@@ -34840,16 +34840,16 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   blendShapeIndex: 0
   blendShapeValueTarget: 0
-  restingValue: 100
+  restingValue: 10
   lerpSpeed: 2
   returnDelay: 6
-  isDecrementalMode: 0
+  isDecrementalMode: 1
   decrementalStartValue: 100
-  scannerDecrementPower: 10
+  scannerDecrementPower: 100
   echoPassifDecrementPower: 6
   echoJoueurDecrementPower: 15
   materialToControl: {fileID: 0}
-  materialCutoffRestingValue: 1.15
+  materialCutoffRestingValue: 1.44
   materialCutoffScannerTargetValue: 0.6
   isTutorialActive: 1
   tutorialInitialCutoffValue: 1.15
@@ -35005,16 +35005,16 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   blendShapeIndex: 0
   blendShapeValueTarget: 0
-  restingValue: 100
+  restingValue: 10
   lerpSpeed: 2
   returnDelay: 6
-  isDecrementalMode: 0
+  isDecrementalMode: 1
   decrementalStartValue: 100
-  scannerDecrementPower: 10
+  scannerDecrementPower: 100
   echoPassifDecrementPower: 6
   echoJoueurDecrementPower: 15
   materialToControl: {fileID: 0}
-  materialCutoffRestingValue: 1.15
+  materialCutoffRestingValue: 1.44
   materialCutoffScannerTargetValue: 0.6
   isTutorialActive: 1
   tutorialInitialCutoffValue: 1.15
@@ -35137,16 +35137,16 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   blendShapeIndex: 0
   blendShapeValueTarget: 0
-  restingValue: 100
+  restingValue: 10
   lerpSpeed: 2
   returnDelay: 6
-  isDecrementalMode: 0
+  isDecrementalMode: 1
   decrementalStartValue: 100
-  scannerDecrementPower: 10
+  scannerDecrementPower: 100
   echoPassifDecrementPower: 6
   echoJoueurDecrementPower: 15
   materialToControl: {fileID: 0}
-  materialCutoffRestingValue: 1.15
+  materialCutoffRestingValue: 1.44
   materialCutoffScannerTargetValue: 0.6
   isTutorialActive: 1
   tutorialInitialCutoffValue: 1.15
@@ -35682,16 +35682,16 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   blendShapeIndex: 0
   blendShapeValueTarget: 0
-  restingValue: 100
+  restingValue: 10
   lerpSpeed: 2
   returnDelay: 6
-  isDecrementalMode: 0
+  isDecrementalMode: 1
   decrementalStartValue: 100
-  scannerDecrementPower: 10
+  scannerDecrementPower: 100
   echoPassifDecrementPower: 6
   echoJoueurDecrementPower: 15
   materialToControl: {fileID: 0}
-  materialCutoffRestingValue: 1.15
+  materialCutoffRestingValue: 1.44
   materialCutoffScannerTargetValue: 0.6
   isTutorialActive: 1
   tutorialInitialCutoffValue: 1.15
@@ -35791,16 +35791,16 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   blendShapeIndex: 0
   blendShapeValueTarget: 0
-  restingValue: 100
+  restingValue: 10
   lerpSpeed: 2
   returnDelay: 6
-  isDecrementalMode: 0
+  isDecrementalMode: 1
   decrementalStartValue: 100
-  scannerDecrementPower: 10
+  scannerDecrementPower: 100
   echoPassifDecrementPower: 6
   echoJoueurDecrementPower: 15
   materialToControl: {fileID: 0}
-  materialCutoffRestingValue: 1.15
+  materialCutoffRestingValue: 1.44
   materialCutoffScannerTargetValue: 0.6
   isTutorialActive: 1
   tutorialInitialCutoffValue: 1.15
@@ -38045,16 +38045,16 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   blendShapeIndex: 0
   blendShapeValueTarget: 0
-  restingValue: 100
+  restingValue: 10
   lerpSpeed: 2
   returnDelay: 6
-  isDecrementalMode: 0
+  isDecrementalMode: 1
   decrementalStartValue: 100
-  scannerDecrementPower: 10
+  scannerDecrementPower: 100
   echoPassifDecrementPower: 6
   echoJoueurDecrementPower: 15
   materialToControl: {fileID: 0}
-  materialCutoffRestingValue: 1.15
+  materialCutoffRestingValue: 1.44
   materialCutoffScannerTargetValue: 0.6
   isTutorialActive: 1
   tutorialInitialCutoffValue: 1.15
@@ -38519,16 +38519,16 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   blendShapeIndex: 0
   blendShapeValueTarget: 0
-  restingValue: 100
+  restingValue: 10
   lerpSpeed: 2
   returnDelay: 6
-  isDecrementalMode: 0
+  isDecrementalMode: 1
   decrementalStartValue: 100
-  scannerDecrementPower: 10
+  scannerDecrementPower: 100
   echoPassifDecrementPower: 6
   echoJoueurDecrementPower: 15
   materialToControl: {fileID: 0}
-  materialCutoffRestingValue: 1.15
+  materialCutoffRestingValue: 1.44
   materialCutoffScannerTargetValue: 0.6
   isTutorialActive: 1
   tutorialInitialCutoffValue: 1.15
@@ -38993,16 +38993,16 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   blendShapeIndex: 0
   blendShapeValueTarget: 0
-  restingValue: 100
+  restingValue: 10
   lerpSpeed: 2
   returnDelay: 6
-  isDecrementalMode: 0
+  isDecrementalMode: 1
   decrementalStartValue: 100
-  scannerDecrementPower: 10
+  scannerDecrementPower: 100
   echoPassifDecrementPower: 6
   echoJoueurDecrementPower: 15
   materialToControl: {fileID: 0}
-  materialCutoffRestingValue: 1.15
+  materialCutoffRestingValue: 1.44
   materialCutoffScannerTargetValue: 0.6
   isTutorialActive: 1
   tutorialInitialCutoffValue: 1.15
@@ -39123,16 +39123,16 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   blendShapeIndex: 0
   blendShapeValueTarget: 0
-  restingValue: 100
+  restingValue: 10
   lerpSpeed: 2
   returnDelay: 6
-  isDecrementalMode: 0
+  isDecrementalMode: 1
   decrementalStartValue: 100
-  scannerDecrementPower: 10
+  scannerDecrementPower: 100
   echoPassifDecrementPower: 6
   echoJoueurDecrementPower: 15
   materialToControl: {fileID: 0}
-  materialCutoffRestingValue: 1.15
+  materialCutoffRestingValue: 1.44
   materialCutoffScannerTargetValue: 0.6
   isTutorialActive: 1
   tutorialInitialCutoffValue: 1.15
@@ -40902,16 +40902,16 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   blendShapeIndex: 0
   blendShapeValueTarget: 0
-  restingValue: 100
+  restingValue: 10
   lerpSpeed: 2
   returnDelay: 6
-  isDecrementalMode: 0
+  isDecrementalMode: 1
   decrementalStartValue: 100
-  scannerDecrementPower: 10
+  scannerDecrementPower: 100
   echoPassifDecrementPower: 6
   echoJoueurDecrementPower: 15
   materialToControl: {fileID: 0}
-  materialCutoffRestingValue: 1.15
+  materialCutoffRestingValue: 1.44
   materialCutoffScannerTargetValue: 0.6
   isTutorialActive: 1
   tutorialInitialCutoffValue: 1.15
@@ -42076,16 +42076,16 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   blendShapeIndex: 0
   blendShapeValueTarget: 0
-  restingValue: 0
+  restingValue: 10
   lerpSpeed: 2
   returnDelay: 6
-  isDecrementalMode: 0
+  isDecrementalMode: 1
   decrementalStartValue: 100
-  scannerDecrementPower: 10
+  scannerDecrementPower: 100
   echoPassifDecrementPower: 6
   echoJoueurDecrementPower: 15
   materialToControl: {fileID: 0}
-  materialCutoffRestingValue: 0.6
+  materialCutoffRestingValue: 1.44
   materialCutoffScannerTargetValue: 0.6
   isTutorialActive: 1
   tutorialInitialCutoffValue: 1.15
@@ -42546,16 +42546,16 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   blendShapeIndex: 0
   blendShapeValueTarget: 0
-  restingValue: 100
+  restingValue: 10
   lerpSpeed: 2
   returnDelay: 6
-  isDecrementalMode: 0
+  isDecrementalMode: 1
   decrementalStartValue: 100
-  scannerDecrementPower: 10
+  scannerDecrementPower: 100
   echoPassifDecrementPower: 6
   echoJoueurDecrementPower: 15
   materialToControl: {fileID: 0}
-  materialCutoffRestingValue: 1.15
+  materialCutoffRestingValue: 1.44
   materialCutoffScannerTargetValue: 0.6
   isTutorialActive: 1
   tutorialInitialCutoffValue: 1.15
@@ -42829,16 +42829,16 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   blendShapeIndex: 0
   blendShapeValueTarget: 0
-  restingValue: 100
+  restingValue: 10
   lerpSpeed: 2
   returnDelay: 6
-  isDecrementalMode: 0
+  isDecrementalMode: 1
   decrementalStartValue: 100
-  scannerDecrementPower: 10
+  scannerDecrementPower: 100
   echoPassifDecrementPower: 6
   echoJoueurDecrementPower: 15
   materialToControl: {fileID: 0}
-  materialCutoffRestingValue: 1.15
+  materialCutoffRestingValue: 1.44
   materialCutoffScannerTargetValue: 0.6
   isTutorialActive: 1
   tutorialInitialCutoffValue: 1.15
@@ -42917,16 +42917,16 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   blendShapeIndex: 0
   blendShapeValueTarget: 0
-  restingValue: 100
+  restingValue: 10
   lerpSpeed: 2
   returnDelay: 6
-  isDecrementalMode: 0
+  isDecrementalMode: 1
   decrementalStartValue: 100
-  scannerDecrementPower: 10
+  scannerDecrementPower: 100
   echoPassifDecrementPower: 6
   echoJoueurDecrementPower: 15
   materialToControl: {fileID: 0}
-  materialCutoffRestingValue: 1.15
+  materialCutoffRestingValue: 1.44
   materialCutoffScannerTargetValue: 0.6
   isTutorialActive: 1
   tutorialInitialCutoffValue: 1.15
@@ -43120,16 +43120,16 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   blendShapeIndex: 0
   blendShapeValueTarget: 0
-  restingValue: 100
+  restingValue: 10
   lerpSpeed: 2
   returnDelay: 6
-  isDecrementalMode: 0
+  isDecrementalMode: 1
   decrementalStartValue: 100
-  scannerDecrementPower: 10
+  scannerDecrementPower: 100
   echoPassifDecrementPower: 6
   echoJoueurDecrementPower: 15
   materialToControl: {fileID: 0}
-  materialCutoffRestingValue: 1.15
+  materialCutoffRestingValue: 1.44
   materialCutoffScannerTargetValue: 0.6
   isTutorialActive: 1
   tutorialInitialCutoffValue: 1.15
@@ -43601,16 +43601,16 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   blendShapeIndex: 0
   blendShapeValueTarget: 0
-  restingValue: 100
+  restingValue: 10
   lerpSpeed: 2
   returnDelay: 6
-  isDecrementalMode: 0
+  isDecrementalMode: 1
   decrementalStartValue: 100
-  scannerDecrementPower: 10
+  scannerDecrementPower: 100
   echoPassifDecrementPower: 6
   echoJoueurDecrementPower: 15
   materialToControl: {fileID: 0}
-  materialCutoffRestingValue: 1.15
+  materialCutoffRestingValue: 1.44
   materialCutoffScannerTargetValue: 0.6
   isTutorialActive: 1
   tutorialInitialCutoffValue: 1.15
@@ -43733,16 +43733,16 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   blendShapeIndex: 0
   blendShapeValueTarget: 0
-  restingValue: 100
+  restingValue: 10
   lerpSpeed: 2
   returnDelay: 6
-  isDecrementalMode: 0
+  isDecrementalMode: 1
   decrementalStartValue: 100
-  scannerDecrementPower: 10
+  scannerDecrementPower: 100
   echoPassifDecrementPower: 6
   echoJoueurDecrementPower: 15
   materialToControl: {fileID: 0}
-  materialCutoffRestingValue: 1.15
+  materialCutoffRestingValue: 1.44
   materialCutoffScannerTargetValue: 0.6
   isTutorialActive: 1
   tutorialInitialCutoffValue: 1.15
