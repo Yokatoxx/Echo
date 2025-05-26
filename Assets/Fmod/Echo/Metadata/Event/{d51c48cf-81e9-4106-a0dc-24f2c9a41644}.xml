@@ -5,7 +5,7 @@
 			<value>Regle</value>
 		</property>
 		<property name="outputFormat">
-			<value>1</value>
+			<value>2</value>
 		</property>
 		<relationship name="folder">
 			<destination>{501c3df7-0297-497d-bf3a-7abddc485f1b}</destination>
@@ -170,6 +170,7 @@
 	<object class="MixerBusEffectChain" id="{9bddede2-a990-4712-bdd4-9cdf01c7f881}">
 		<relationship name="effects">
 			<destination>{300ed223-accd-4304-9330-5e2faf222f49}</destination>
+			<destination>{dab90be7-2294-4e98-a777-30fa56515757}</destination>
 		</relationship>
 	</object>
 	<object class="MixerBusPanner" id="{07731daa-c842-4407-a6ff-fb941dcbca7b}" />
@@ -274,6 +275,7 @@
 		</relationship>
 	</object>
 	<object class="MixerBusFader" id="{300ed223-accd-4304-9330-5e2faf222f49}" />
+	<object class="SpatialiserEffect" id="{dab90be7-2294-4e98-a777-30fa56515757}" />
 	<object class="AutomationPoint" id="{3b80f6b2-c115-4171-b32e-d8517ca4bc27}">
 		<property name="position">
 			<value>0</value>

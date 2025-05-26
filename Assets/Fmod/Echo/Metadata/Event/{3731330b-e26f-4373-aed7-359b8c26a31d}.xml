@@ -5,7 +5,7 @@
 			<value>Bougeoir</value>
 		</property>
 		<property name="outputFormat">
-			<value>1</value>
+			<value>2</value>
 		</property>
 		<relationship name="folder">
 			<destination>{501c3df7-0297-497d-bf3a-7abddc485f1b}</destination>
@@ -170,6 +170,7 @@
 	<object class="MixerBusEffectChain" id="{4a44fd23-9893-40cf-8849-64ae6057740c}">
 		<relationship name="effects">
 			<destination>{a56e6571-cd3e-4702-9499-edfb3cf1ddbc}</destination>
+			<destination>{0eeda255-3e9c-4a47-bee9-3de7e0a95b9a}</destination>
 		</relationship>
 	</object>
 	<object class="MixerBusPanner" id="{a2f2245c-126f-4af6-95e5-c07544a31b73}" />
@@ -274,6 +275,7 @@
 		</relationship>
 	</object>
 	<object class="MixerBusFader" id="{a56e6571-cd3e-4702-9499-edfb3cf1ddbc}" />
+	<object class="SpatialiserEffect" id="{0eeda255-3e9c-4a47-bee9-3de7e0a95b9a}" />
 	<object class="AutomationPoint" id="{0d8d79ad-68dc-4dec-b882-c872c8ed089b}">
 		<property name="position">
 			<value>0</value>

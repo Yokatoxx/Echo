@@ -17120,6 +17120,8 @@ GameObject:
   m_Component:
   - component: {fileID: 780201047}
   - component: {fileID: 780201049}
+  - component: {fileID: 780201051}
+  - component: {fileID: 780201050}
   m_Layer: 0
   m_Name: TutoManager
   m_TagString: Untagged
@@ -17149,7 +17151,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 780201046}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: f2c39c781543a4142a43fd62c72f5386, type: 3}
   m_Name: 
@@ -17202,6 +17204,39 @@ MonoBehaviour:
   stealthTutorialCompleted: 0
   collectibleTutorialCompleted: 0
   depositTutorialCompleted: 0
+--- !u!114 &780201050
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 780201046}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 19a162ce79f566d43984016989df6dad, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  tutorialCanvas: {fileID: 0}
+  autoCreateCanvas: 1
+--- !u!114 &780201051
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 780201046}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7259b48fc011a1f4fb0a5d38b6bbc8a7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  playerMovement: {fileID: 2110307887}
+  echoScanner: {fileID: 2110307889}
+  handController: {fileID: 2110307891}
+  playerCamera: {fileID: 575867313}
+  tutorialData: {fileID: 11400000, guid: 0c80f25e3df53564ca2c5fcc69fb46a1, type: 2}
+  echoTutorialPanel: {fileID: 1274458393}
+  textManager: {fileID: 780201050}
 --- !u!1 &780523608
 GameObject:
   m_ObjectHideFlags: 0
@@ -26824,20 +26859,24 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -3887185075125053422, guid: 13ed438176b01804998e34e391e0120f, type: 3}
       propertyPath: m_AABB.m_Extent.x
-      value: 2.4157481
+      value: 0.74
       objectReference: {fileID: 0}
     - target: {fileID: -3887185075125053422, guid: 13ed438176b01804998e34e391e0120f, type: 3}
       propertyPath: m_AABB.m_Extent.y
-      value: 2.2088995
+      value: 0.32
       objectReference: {fileID: 0}
     - target: {fileID: -3887185075125053422, guid: 13ed438176b01804998e34e391e0120f, type: 3}
       propertyPath: m_AABB.m_Extent.z
-      value: 2.1343532
+      value: 0.66
       objectReference: {fileID: 0}
     - target: {fileID: -3887185075125053422, guid: 13ed438176b01804998e34e391e0120f, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: d71ea88f8f8b00b4ebfe72e635fde7db, type: 2}
+    - target: {fileID: -3887185075125053422, guid: 13ed438176b01804998e34e391e0120f, type: 3}
+      propertyPath: m_BlendShapeWeights.Array.data[0]
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 13ed438176b01804998e34e391e0120f, type: 3}
       propertyPath: m_Name
       value: Evier
@@ -37091,7 +37130,7 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 0.12, y: 0.26, z: 0.13}
+  m_Size: {x: 0.75, y: 0.52, z: 0.19}
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!54 &1611949916
 Rigidbody:
@@ -40442,11 +40481,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 8cdb3179a26c9b44c86af8527c93992c, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 7.849
+      value: 7.752
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 8cdb3179a26c9b44c86af8527c93992c, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 11.138
+      value: 11.194
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 8cdb3179a26c9b44c86af8527c93992c, type: 3}
       propertyPath: m_LocalPosition.z

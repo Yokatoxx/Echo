@@ -1,0 +1,56 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 47e3a1c1997eee84993c07bada78415a, type: 3}
+  m_Name: TutorialSettings
+  m_EditorClassIdentifier: 
+  echoTutorialText: "Rester appuyez sur ESPACE pour faire un \xE9cho et d\xE9couvrir
+    votre environement"
+  depositText: "\u2193 D\xE9posez ici \u2193"
+  collectibleText: Appuyez sur E
+  stealthTutorialText: "Maintenez SHIFT pour vous d\xE9placer en mode furtif"
+  scannerText: Appuyez sur E pour activer l'objet
+  echoTextColor: {r: 1, g: 1, b: 1, a: 1}
+  depositTextColor: {r: 1, g: 0.78035855, b: 0, a: 1}
+  collectibleTextColor: {r: 1, g: 0.78039217, b: 0, a: 1}
+  stealthTextColor: {r: 1, g: 0, b: 0, a: 1}
+  scannerTextColor: {r: 1, g: 0, b: 0.3089037, a: 1}
+  stealthBackgroundColor: {r: 0, g: 0, b: 0, a: 0.2784314}
+  depositTextHeightOffset: 1.2
+  depositTextSize: 2
+  depositTextScale: 1
+  depositTextDisplayDistance: 15
+  alwaysShowDepositTexts: 0
+  collectibleTextHeightOffset: 0.26
+  collectibleTextSize: 1.8
+  collectibleTextScale: 0.8
+  scannerTextHeightOffset: -0.43
+  scannerTextSize: 1.8
+  scannerTextScale: 0.8
+  echoTextSize: 3
+  echoTextScale: 1.2
+  echoTextDistance: 5
+  echoTextVerticalOffset: 0
+  stealthTriggerDistance: 6
+  stealthTextDistance: 3
+  stealthTextSize: 3
+  stealthTextScale: 1.2
+  stealthTextVerticalOffset: 0
+  showStealthBackground: 1
+  stealthBackgroundPadding: 10
+  stealthBackgroundCornerRadius: 20
+  stealthBackgroundShadow: 1
+  collectibleCheckInterval: 0.5
+  raycastDistance: 5
+  collectibleLayer:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  blendshapeRestingTolerance: 10

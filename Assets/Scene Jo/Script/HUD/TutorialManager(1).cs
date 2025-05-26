@@ -4,7 +4,7 @@ using System.Collections;
 using System.Collections.Generic;
 using TMPro;
 
-public class TutorialManager : MonoBehaviour
+public class TutorialManagerOld : MonoBehaviour
 {
     [Header("Références")]
     public PlayerMovement playerMovement;

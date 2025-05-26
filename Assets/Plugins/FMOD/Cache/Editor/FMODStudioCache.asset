@@ -72,7 +72,7 @@ MonoBehaviour:
   Banks:
   - {fileID: -5924152314170765233}
   IsStream: 0
-  Is3D: 0
+  Is3D: 1
   IsOneShot: 1
   Parameters:
   - {fileID: 5676880450591037036}
@@ -149,7 +149,7 @@ MonoBehaviour:
   Banks:
   - {fileID: -5924152314170765233}
   IsStream: 0
-  Is3D: 0
+  Is3D: 1
   IsOneShot: 1
   Parameters:
   - {fileID: 7574322287404184849}
@@ -196,10 +196,10 @@ MonoBehaviour:
   Path: Assets/Fmod/Echo/Build/Desktop/PropsSound.bank
   Name: PropsSound
   StudioPath: bank:/PropsSound
-  lastModified: 638838067706659072
+  lastModified: 638838825258873452
   FileSizes:
   - Name: Desktop
-    Value: 1024672
+    Value: 1027968
   Exists: 1
 --- !u!114 &-5775974479934499442
 MonoBehaviour:
@@ -216,10 +216,10 @@ MonoBehaviour:
   Path: Assets/Fmod/Echo/Build/Desktop/Interagissable.bank
   Name: Interagissable
   StudioPath: bank:/Interagissable
-  lastModified: 638838761461844960
+  lastModified: 638838820471821137
   FileSizes:
   - Name: Desktop
-    Value: 1995808
+    Value: 1998304
   Exists: 1
 --- !u!114 &-5207570207506519584
 MonoBehaviour:
@@ -435,7 +435,7 @@ MonoBehaviour:
   Path: Assets/Fmod/Echo/Build/Desktop/Master.strings.bank
   Name: Master.strings
   StudioPath: bank:/Master.strings
-  lastModified: 638838761458715781
+  lastModified: 638838822767413295
   FileSizes:
   - Name: Desktop
     Value: 2352
@@ -485,7 +485,7 @@ MonoBehaviour:
   Banks:
   - {fileID: -5924152314170765233}
   IsStream: 0
-  Is3D: 0
+  Is3D: 1
   IsOneShot: 1
   Parameters:
   - {fileID: 4693993588869835390}
@@ -514,7 +514,7 @@ MonoBehaviour:
   Banks:
   - {fileID: -5924152314170765233}
   IsStream: 0
-  Is3D: 0
+  Is3D: 1
   IsOneShot: 1
   Parameters:
   - {fileID: -4735007694734153068}
@@ -567,7 +567,7 @@ MonoBehaviour:
   Banks:
   - {fileID: -5775974479934499442}
   IsStream: 0
-  Is3D: 0
+  Is3D: 1
   IsOneShot: 1
   Parameters: []
   MinDistance: 1
@@ -594,7 +594,7 @@ MonoBehaviour:
   Banks:
   - {fileID: -5924152314170765233}
   IsStream: 0
-  Is3D: 0
+  Is3D: 1
   IsOneShot: 1
   Parameters:
   - {fileID: -4917960400615595104}
@@ -623,7 +623,7 @@ MonoBehaviour:
   Banks:
   - {fileID: -5775974479934499442}
   IsStream: 0
-  Is3D: 0
+  Is3D: 1
   IsOneShot: 1
   Parameters: []
   MinDistance: 1
@@ -674,7 +674,7 @@ MonoBehaviour:
   Banks:
   - {fileID: -5775974479934499442}
   IsStream: 1
-  Is3D: 0
+  Is3D: 1
   IsOneShot: 1
   Parameters: []
   MinDistance: 1
@@ -729,7 +729,7 @@ MonoBehaviour:
   Banks:
   - {fileID: -5924152314170765233}
   IsStream: 0
-  Is3D: 0
+  Is3D: 1
   IsOneShot: 1
   Parameters:
   - {fileID: 4630465350115451400}
@@ -790,7 +790,7 @@ MonoBehaviour:
   - {fileID: 9039161347843217424}
   StringsBanks:
   - {fileID: -3108050575595576678}
-  cacheTime: 638838761461844960
+  cacheTime: 638838825258873452
   cacheVersion: 131623
 --- !u!114 &293155230939331426
 MonoBehaviour:
@@ -813,7 +813,7 @@ MonoBehaviour:
   Banks:
   - {fileID: -5924152314170765233}
   IsStream: 0
-  Is3D: 0
+  Is3D: 1
   IsOneShot: 1
   Parameters:
   - {fileID: -2876006024354704613}
@@ -924,7 +924,7 @@ MonoBehaviour:
   Banks:
   - {fileID: -5924152314170765233}
   IsStream: 0
-  Is3D: 0
+  Is3D: 1
   IsOneShot: 1
   Parameters:
   - {fileID: 4444036282061980783}
@@ -953,8 +953,8 @@ MonoBehaviour:
   Banks:
   - {fileID: -5775974479934499442}
   IsStream: 1
-  Is3D: 0
-  IsOneShot: 1
+  Is3D: 1
+  IsOneShot: 0
   Parameters: []
   MinDistance: 1
   MaxDistance: 20
@@ -1076,7 +1076,7 @@ MonoBehaviour:
   Banks:
   - {fileID: -5775974479934499442}
   IsStream: 0
-  Is3D: 0
+  Is3D: 1
   IsOneShot: 1
   Parameters: []
   MinDistance: 1
@@ -1199,7 +1199,7 @@ MonoBehaviour:
   Banks:
   - {fileID: -5924152314170765233}
   IsStream: 1
-  Is3D: 0
+  Is3D: 1
   IsOneShot: 1
   Parameters:
   - {fileID: -2524634365186326131}
@@ -1228,7 +1228,7 @@ MonoBehaviour:
   Banks:
   - {fileID: -5924152314170765233}
   IsStream: 0
-  Is3D: 0
+  Is3D: 1
   IsOneShot: 1
   Parameters:
   - {fileID: 3457202649404573840}
@@ -1305,7 +1305,7 @@ MonoBehaviour:
   Banks:
   - {fileID: -5924152314170765233}
   IsStream: 0
-  Is3D: 0
+  Is3D: 1
   IsOneShot: 1
   Parameters:
   - {fileID: -5207570207506519584}
@@ -1361,7 +1361,7 @@ MonoBehaviour:
   Banks:
   - {fileID: -5924152314170765233}
   IsStream: 0
-  Is3D: 0
+  Is3D: 1
   IsOneShot: 1
   Parameters:
   - {fileID: 8627569608045009952}
@@ -1390,7 +1390,7 @@ MonoBehaviour:
   Banks:
   - {fileID: -5775974479934499442}
   IsStream: 0
-  Is3D: 0
+  Is3D: 1
   IsOneShot: 1
   Parameters: []
   MinDistance: 1
@@ -1489,7 +1489,7 @@ MonoBehaviour:
   Banks:
   - {fileID: -5775974479934499442}
   IsStream: 0
-  Is3D: 0
+  Is3D: 1
   IsOneShot: 1
   Parameters: []
   MinDistance: 1
@@ -1592,7 +1592,7 @@ MonoBehaviour:
   Banks:
   - {fileID: -5775974479934499442}
   IsStream: 0
-  Is3D: 0
+  Is3D: 1
   IsOneShot: 1
   Parameters: []
   MinDistance: 1
@@ -1694,7 +1694,7 @@ MonoBehaviour:
   Banks:
   - {fileID: -5775974479934499442}
   IsStream: 1
-  Is3D: 0
+  Is3D: 1
   IsOneShot: 1
   Parameters: []
   MinDistance: 1
@@ -1715,8 +1715,8 @@ MonoBehaviour:
   Path: Assets/Fmod/Echo/Build/Desktop/Master.bank
   Name: Master
   StudioPath: bank:/Master
-  lastModified: 638838761458687119
+  lastModified: 638838822767380069
   FileSizes:
   - Name: Desktop
-    Value: 1690944
+    Value: 1680480
   Exists: 1

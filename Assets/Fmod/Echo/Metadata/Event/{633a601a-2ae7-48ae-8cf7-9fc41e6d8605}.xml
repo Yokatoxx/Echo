@@ -5,7 +5,7 @@
 			<value>TvOff</value>
 		</property>
 		<property name="outputFormat">
-			<value>1</value>
+			<value>2</value>
 		</property>
 		<relationship name="folder">
 			<destination>{501c3df7-0297-497d-bf3a-7abddc485f1b}</destination>
@@ -96,6 +96,7 @@
 	<object class="MixerBusEffectChain" id="{dc2b0a3a-c4f7-48d9-8f50-430ebe5c1382}">
 		<relationship name="effects">
 			<destination>{03c4f927-39ee-47da-9d35-681fdc89466a}</destination>
+			<destination>{81ae18d3-f68a-4019-bbb8-0a5057717625}</destination>
 		</relationship>
 	</object>
 	<object class="MixerBusPanner" id="{9fd2e52f-8412-4a81-b64a-18ef511f1379}" />
@@ -106,4 +107,5 @@
 	</object>
 	<object class="MixerBusFader" id="{27ade242-a7da-43b7-a2dd-6df8fa4dafca}" />
 	<object class="MixerBusFader" id="{03c4f927-39ee-47da-9d35-681fdc89466a}" />
+	<object class="SpatialiserEffect" id="{81ae18d3-f68a-4019-bbb8-0a5057717625}" />
 </objects>

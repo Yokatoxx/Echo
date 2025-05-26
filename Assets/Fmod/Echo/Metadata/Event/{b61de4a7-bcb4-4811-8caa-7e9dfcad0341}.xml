@@ -5,7 +5,7 @@
 			<value>Rouleau</value>
 		</property>
 		<property name="outputFormat">
-			<value>1</value>
+			<value>2</value>
 		</property>
 		<relationship name="folder">
 			<destination>{501c3df7-0297-497d-bf3a-7abddc485f1b}</destination>
@@ -166,6 +166,7 @@
 	<object class="MixerBusEffectChain" id="{ea960349-b382-43f8-9e07-e55e3badd4e6}">
 		<relationship name="effects">
 			<destination>{cd4a8960-a53c-45fd-b150-cbbc7f648470}</destination>
+			<destination>{1e25d654-919e-4a72-895b-63878393a308}</destination>
 		</relationship>
 	</object>
 	<object class="MixerBusPanner" id="{5fbf29b0-5cd0-48ec-9e85-1a1069941b7f}" />
@@ -250,6 +251,7 @@
 		</relationship>
 	</object>
 	<object class="MixerBusFader" id="{cd4a8960-a53c-45fd-b150-cbbc7f648470}" />
+	<object class="SpatialiserEffect" id="{1e25d654-919e-4a72-895b-63878393a308}" />
 	<object class="AutomationPoint" id="{da8ce8ca-f27a-4971-9a12-05f2bde1afb5}">
 		<property name="position">
 			<value>0</value>

@@ -5,7 +5,7 @@
 			<value>RadioOnLoop</value>
 		</property>
 		<property name="outputFormat">
-			<value>1</value>
+			<value>2</value>
 		</property>
 		<relationship name="folder">
 			<destination>{501c3df7-0297-497d-bf3a-7abddc485f1b}</destination>
@@ -96,14 +96,26 @@
 	<object class="MixerBusEffectChain" id="{5f455384-c9e5-4f85-8907-6a47d64a56fd}">
 		<relationship name="effects">
 			<destination>{c3181921-abb0-47f0-8a56-ff66b77420b4}</destination>
+			<destination>{bf5c9ac2-35bf-4d4c-8db2-427055ad0d8c}</destination>
 		</relationship>
 	</object>
 	<object class="MixerBusPanner" id="{94362ba1-adb9-44d8-b7d2-f9bcd04bf4e4}" />
 	<object class="SingleSound" id="{f7f1b086-2222-42aa-be50-5ef8252d325a}">
+		<property name="looping">
+			<value>true</value>
+		</property>
 		<relationship name="audioFile">
 			<destination>{2837f602-1719-4fe4-a707-5bc3645f971e}</destination>
 		</relationship>
 	</object>
 	<object class="MixerBusFader" id="{7aa870de-6d69-4de6-8a0d-362fe64e578c}" />
 	<object class="MixerBusFader" id="{c3181921-abb0-47f0-8a56-ff66b77420b4}" />
+	<object class="SpatialiserEffect" id="{bf5c9ac2-35bf-4d4c-8db2-427055ad0d8c}">
+		<property name="maximumDistance">
+			<value>35</value>
+		</property>
+		<property name="overrideRange">
+			<value>true</value>
+		</property>
+	</object>
 </objects>

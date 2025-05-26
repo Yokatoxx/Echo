@@ -5,7 +5,7 @@
 			<value>Cahier</value>
 		</property>
 		<property name="outputFormat">
-			<value>1</value>
+			<value>2</value>
 		</property>
 		<relationship name="folder">
 			<destination>{501c3df7-0297-497d-bf3a-7abddc485f1b}</destination>
@@ -170,6 +170,7 @@
 	<object class="MixerBusEffectChain" id="{2ef93280-4004-4d7c-b1e5-d69d11756b43}">
 		<relationship name="effects">
 			<destination>{47f39ffa-87e7-44ea-8a75-cae3ea93ebba}</destination>
+			<destination>{27ab1c3a-2d8d-46b5-a9ae-31b63b3432ab}</destination>
 		</relationship>
 	</object>
 	<object class="MixerBusPanner" id="{2d8600ad-0abd-4be0-9f53-4df799f6511e}" />
@@ -274,6 +275,7 @@
 		</relationship>
 	</object>
 	<object class="MixerBusFader" id="{47f39ffa-87e7-44ea-8a75-cae3ea93ebba}" />
+	<object class="SpatialiserEffect" id="{27ab1c3a-2d8d-46b5-a9ae-31b63b3432ab}" />
 	<object class="AutomationPoint" id="{4d45fb51-9326-4d33-961f-1618cc05eec1}">
 		<property name="position">
 			<value>0</value>

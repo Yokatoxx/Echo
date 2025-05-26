@@ -5,7 +5,7 @@
 			<value>Stylo</value>
 		</property>
 		<property name="outputFormat">
-			<value>1</value>
+			<value>2</value>
 		</property>
 		<relationship name="folder">
 			<destination>{501c3df7-0297-497d-bf3a-7abddc485f1b}</destination>
@@ -170,6 +170,7 @@
 	<object class="MixerBusEffectChain" id="{ae11f7ec-9b20-41c2-a787-e4e4ea7f160a}">
 		<relationship name="effects">
 			<destination>{786b4a7e-9c30-42d6-b9b2-4aceb7d83443}</destination>
+			<destination>{704a7c74-7687-40c1-be92-6acad0a77baf}</destination>
 		</relationship>
 	</object>
 	<object class="MixerBusPanner" id="{86d6bc81-87be-4d5a-82a6-f0d72c68ad05}" />
@@ -274,6 +275,7 @@
 		</relationship>
 	</object>
 	<object class="MixerBusFader" id="{786b4a7e-9c30-42d6-b9b2-4aceb7d83443}" />
+	<object class="SpatialiserEffect" id="{704a7c74-7687-40c1-be92-6acad0a77baf}" />
 	<object class="AutomationPoint" id="{6dabe92d-1623-4de2-aa59-58f0e2c2f0d0}">
 		<property name="position">
 			<value>0</value>

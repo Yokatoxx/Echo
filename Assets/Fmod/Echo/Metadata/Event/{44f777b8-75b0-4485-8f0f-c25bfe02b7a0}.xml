@@ -5,7 +5,7 @@
 			<value>Poele</value>
 		</property>
 		<property name="outputFormat">
-			<value>1</value>
+			<value>2</value>
 		</property>
 		<relationship name="folder">
 			<destination>{501c3df7-0297-497d-bf3a-7abddc485f1b}</destination>
@@ -164,6 +164,7 @@
 	<object class="MixerBusEffectChain" id="{5a388cce-7aca-466c-81b7-756274799d39}">
 		<relationship name="effects">
 			<destination>{8d1015ad-b6ef-4f4b-a5d5-4be3af572ef6}</destination>
+			<destination>{60769d3d-b02d-4013-b39c-441566578478}</destination>
 		</relationship>
 	</object>
 	<object class="MixerBusPanner" id="{dbd20fae-2efb-41a7-a9eb-074c44ebe6ad}" />
@@ -238,6 +239,7 @@
 		</relationship>
 	</object>
 	<object class="MixerBusFader" id="{8d1015ad-b6ef-4f4b-a5d5-4be3af572ef6}" />
+	<object class="SpatialiserEffect" id="{60769d3d-b02d-4013-b39c-441566578478}" />
 	<object class="AutomationPoint" id="{0e26d3f1-17d1-4e50-a354-14732a301df4}">
 		<property name="position">
 			<value>0</value>

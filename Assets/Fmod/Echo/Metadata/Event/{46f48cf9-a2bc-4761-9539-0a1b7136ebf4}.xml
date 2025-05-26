@@ -5,7 +5,7 @@
 			<value>TvOn</value>
 		</property>
 		<property name="outputFormat">
-			<value>1</value>
+			<value>2</value>
 		</property>
 		<relationship name="folder">
 			<destination>{501c3df7-0297-497d-bf3a-7abddc485f1b}</destination>
@@ -96,6 +96,7 @@
 	<object class="MixerBusEffectChain" id="{c430c10c-980d-4056-a02b-1a8d49a36baf}">
 		<relationship name="effects">
 			<destination>{ba327bf8-f19d-406e-8963-6fabf9c018db}</destination>
+			<destination>{02e783fc-1ebb-44f0-b763-d4511428f8b8}</destination>
 		</relationship>
 	</object>
 	<object class="MixerBusPanner" id="{c575e2bd-6de9-4b81-9304-7a318fe88a91}" />
@@ -106,4 +107,5 @@
 	</object>
 	<object class="MixerBusFader" id="{250e0df2-8608-416f-b802-1302e9bb5d15}" />
 	<object class="MixerBusFader" id="{ba327bf8-f19d-406e-8963-6fabf9c018db}" />
+	<object class="SpatialiserEffect" id="{02e783fc-1ebb-44f0-b763-d4511428f8b8}" />
 </objects>

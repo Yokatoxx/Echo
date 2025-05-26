@@ -5,7 +5,7 @@
 			<value>EvierOff</value>
 		</property>
 		<property name="outputFormat">
-			<value>1</value>
+			<value>2</value>
 		</property>
 		<relationship name="folder">
 			<destination>{501c3df7-0297-497d-bf3a-7abddc485f1b}</destination>
@@ -96,6 +96,7 @@
 	<object class="MixerBusEffectChain" id="{db35926e-5edc-4483-a3fc-52e0596ab11c}">
 		<relationship name="effects">
 			<destination>{7a663797-3b23-4a7f-b36b-dfff95535d48}</destination>
+			<destination>{c96d3d80-8b66-4e0a-aadc-6c1fc51e3f2c}</destination>
 		</relationship>
 	</object>
 	<object class="MixerBusPanner" id="{654fc0d1-805c-4ba4-ade1-7a2e4defccc7}" />
@@ -106,4 +107,5 @@
 	</object>
 	<object class="MixerBusFader" id="{3fbf029f-4cd6-4aba-811f-884ffb32ad18}" />
 	<object class="MixerBusFader" id="{7a663797-3b23-4a7f-b36b-dfff95535d48}" />
+	<object class="SpatialiserEffect" id="{c96d3d80-8b66-4e0a-aadc-6c1fc51e3f2c}" />
 </objects>

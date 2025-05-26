@@ -5,7 +5,7 @@
 			<value>Pantoufle</value>
 		</property>
 		<property name="outputFormat">
-			<value>1</value>
+			<value>2</value>
 		</property>
 		<relationship name="folder">
 			<destination>{501c3df7-0297-497d-bf3a-7abddc485f1b}</destination>
@@ -168,6 +168,7 @@
 	<object class="MixerBusEffectChain" id="{9e322162-5757-443c-8189-262ac896ea18}">
 		<relationship name="effects">
 			<destination>{db50c49b-4ac9-45dc-ae8b-545019601a55}</destination>
+			<destination>{ed18764e-c4fd-42da-95b2-c92279857903}</destination>
 		</relationship>
 	</object>
 	<object class="MixerBusPanner" id="{3fbd3cc1-91f5-49b4-af1a-97e866f40524}" />
@@ -262,6 +263,7 @@
 		</relationship>
 	</object>
 	<object class="MixerBusFader" id="{db50c49b-4ac9-45dc-ae8b-545019601a55}" />
+	<object class="SpatialiserEffect" id="{ed18764e-c4fd-42da-95b2-c92279857903}" />
 	<object class="AutomationPoint" id="{30a9bafa-8450-44a5-9ad9-1cbfc3e22ec7}">
 		<property name="position">
 			<value>0</value>

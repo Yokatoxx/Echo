@@ -5,7 +5,7 @@
 			<value>Couteau</value>
 		</property>
 		<property name="outputFormat">
-			<value>1</value>
+			<value>2</value>
 		</property>
 		<relationship name="folder">
 			<destination>{501c3df7-0297-497d-bf3a-7abddc485f1b}</destination>
@@ -171,6 +171,7 @@
 	<object class="MixerBusEffectChain" id="{bc2da46c-7a11-4b78-bdff-d4384997c0b5}">
 		<relationship name="effects">
 			<destination>{592cc703-445b-4238-ae60-27a4ba9bd0d3}</destination>
+			<destination>{2010e4e4-ebd2-454a-90cf-5999c3d74441}</destination>
 		</relationship>
 	</object>
 	<object class="MixerBusPanner" id="{b51404f2-7bfc-46e9-b3eb-42d790c8ed0f}" />
@@ -280,6 +281,7 @@
 		</relationship>
 	</object>
 	<object class="MixerBusFader" id="{592cc703-445b-4238-ae60-27a4ba9bd0d3}" />
+	<object class="SpatialiserEffect" id="{2010e4e4-ebd2-454a-90cf-5999c3d74441}" />
 	<object class="AutomationPoint" id="{db11e18f-7507-48d8-a1ac-ae1e5b6b337e}">
 		<property name="position">
 			<value>0</value>

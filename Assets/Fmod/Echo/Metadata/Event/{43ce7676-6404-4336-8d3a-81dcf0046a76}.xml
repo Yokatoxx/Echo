@@ -5,7 +5,7 @@
 			<value>RadioOn</value>
 		</property>
 		<property name="outputFormat">
-			<value>1</value>
+			<value>2</value>
 		</property>
 		<relationship name="folder">
 			<destination>{501c3df7-0297-497d-bf3a-7abddc485f1b}</destination>
@@ -96,6 +96,7 @@
 	<object class="MixerBusEffectChain" id="{a2b7706e-f3bd-4b52-87bd-4d1c3b91ac1d}">
 		<relationship name="effects">
 			<destination>{b54c09f6-f505-462e-9f30-b828be8938ad}</destination>
+			<destination>{6124ae6f-a298-4b98-8252-76feeedacfb5}</destination>
 		</relationship>
 	</object>
 	<object class="MixerBusPanner" id="{de775283-6a1e-470a-8248-463f64c25be8}" />
@@ -106,4 +107,5 @@
 	</object>
 	<object class="MixerBusFader" id="{a12ab297-82b4-4adb-857d-362577c7ae29}" />
 	<object class="MixerBusFader" id="{b54c09f6-f505-462e-9f30-b828be8938ad}" />
+	<object class="SpatialiserEffect" id="{6124ae6f-a298-4b98-8252-76feeedacfb5}" />
 </objects>

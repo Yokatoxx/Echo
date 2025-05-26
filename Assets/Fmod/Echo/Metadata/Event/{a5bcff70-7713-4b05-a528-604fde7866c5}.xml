@@ -5,7 +5,7 @@
 			<value>Tasse</value>
 		</property>
 		<property name="outputFormat">
-			<value>1</value>
+			<value>2</value>
 		</property>
 		<relationship name="folder">
 			<destination>{501c3df7-0297-497d-bf3a-7abddc485f1b}</destination>
@@ -171,6 +171,7 @@
 	<object class="MixerBusEffectChain" id="{4a2859b6-e716-453e-ba79-c1d18cd2b6df}">
 		<relationship name="effects">
 			<destination>{5b3de37e-7291-4b28-9d41-2d0380397b42}</destination>
+			<destination>{d12d505e-28a7-4388-90fd-3335c6dc9519}</destination>
 		</relationship>
 	</object>
 	<object class="MixerBusPanner" id="{dfdbbd92-af24-432b-87f3-84d3646e16b3}" />
@@ -280,6 +281,7 @@
 		</relationship>
 	</object>
 	<object class="MixerBusFader" id="{5b3de37e-7291-4b28-9d41-2d0380397b42}" />
+	<object class="SpatialiserEffect" id="{d12d505e-28a7-4388-90fd-3335c6dc9519}" />
 	<object class="AutomationPoint" id="{91c3e793-e0b7-4c76-bcd1-4310d56d6798}">
 		<property name="position">
 			<value>0</value>

@@ -5,7 +5,7 @@
 			<value>EvierOnLoop</value>
 		</property>
 		<property name="outputFormat">
-			<value>1</value>
+			<value>2</value>
 		</property>
 		<relationship name="folder">
 			<destination>{501c3df7-0297-497d-bf3a-7abddc485f1b}</destination>
@@ -96,6 +96,7 @@
 	<object class="MixerBusEffectChain" id="{fdfe9196-9a31-47e2-ba8b-08a44948910e}">
 		<relationship name="effects">
 			<destination>{664e0ce2-2672-497c-b67a-9224069e1a07}</destination>
+			<destination>{61414aee-9d65-4436-9783-6671147dd38a}</destination>
 		</relationship>
 	</object>
 	<object class="MixerBusPanner" id="{12a5f30d-7877-477f-b437-8b3333966133}" />
@@ -109,4 +110,12 @@
 	</object>
 	<object class="MixerBusFader" id="{74eb0021-d4e0-405f-84c1-50149c8a1988}" />
 	<object class="MixerBusFader" id="{664e0ce2-2672-497c-b67a-9224069e1a07}" />
+	<object class="SpatialiserEffect" id="{61414aee-9d65-4436-9783-6671147dd38a}">
+		<property name="maximumDistance">
+			<value>35</value>
+		</property>
+		<property name="overrideRange">
+			<value>true</value>
+		</property>
+	</object>
 </objects>
