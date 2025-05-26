@@ -5,15 +5,18 @@ public class PointCloudRevert : MonoBehaviour
 {
     [SerializeField] private int blendShapeIndex = 0;
     [SerializeField] private float blendShapeValueTarget = 100f;
-    [SerializeField] private bool isProgressive = false;
     [SerializeField] private float restingValue = 0f;
     [SerializeField] private float lerpSpeed = 5f;
     [SerializeField] private float returnDelay = 3f;
 
-    [Header("Incréments progressifs par type")]
-    [SerializeField] private float scannerProgressiveIncrement = 10f;
-    [SerializeField] private float echoPassifProgressiveIncrement = 6f;
-    [SerializeField] private float echoJoueurProgressiveIncrement = 12f;
+    [Header("Mode Décrémental Progressif")]
+    [SerializeField] private bool isDecrementalMode = false; // Nouveau système pour remplacer isProgressive
+    [SerializeField] private float decrementalStartValue = 100f; // Valeur de départ maximale
+
+    [Header("Puissance de décrémentation par type")]
+    [SerializeField] private float scannerDecrementPower = 10f; // Puissance Scanner
+    [SerializeField] private float echoPassifDecrementPower = 6f; // Puissance EchoPassif (plus faible)
+    [SerializeField] private float echoJoueurDecrementPower = 15f; // Puissance EchoJoueur (plus forte)
 
     [Header("Material Cutoff Control")]
     [SerializeField] private Material materialToControl; // Assignez le matériau ici
@@ -75,8 +78,17 @@ public class PointCloudRevert : MonoBehaviour
 
     private void Start()
     {
-        currentBlendValue = restingValue;
-        targetValue = restingValue; // Initialize targetValue
+        // Initialiser la valeur en fonction du mode décrémental
+        if (isDecrementalMode)
+        {
+            currentBlendValue = decrementalStartValue;
+            targetValue = decrementalStartValue;
+        }
+        else
+        {
+            currentBlendValue = restingValue;
+            targetValue = restingValue;
+        }
 
         if (isIndexValid)
         {
@@ -114,7 +126,7 @@ public class PointCloudRevert : MonoBehaviour
             isTransitioning = false;
 
             // Handle Material Cutoff
-            if (materialToControl != null && currentMaterialCutoffValue != materialCutoffRestingValue) // Or a specific "picked up" cutoff value
+            if (materialToControl != null && currentMaterialCutoffValue != materialCutoffRestingValue)
             {
                 currentMaterialCutoffValue = materialCutoffRestingValue;
                 materialToControl.SetFloat(CutoffPropertyID, currentMaterialCutoffValue);
@@ -178,34 +190,55 @@ public class PointCloudRevert : MonoBehaviour
                 StopCoroutine(returnCoroutine);
             }
 
-            // Blendshape target
-            float effectiveIncrement = scannerProgressiveIncrement;
-            if (isEchoPassif) effectiveIncrement = echoPassifProgressiveIncrement;
-            else if (isEchoJoueur) effectiveIncrement = echoJoueurProgressiveIncrement;
+            // Déterminer la puissance de décrémentation selon le type d'objet
+            float decrementPower = 0f;
+            string tagName = "";
 
-            if (isProgressive)
+            if (isScanner)
             {
-                // Mode progressif pour le blendshape
-                targetValue = Mathf.Clamp(currentBlendValue + effectiveIncrement, 0f, 100f);
-
-                // Mode progressif pour le cutoff - réduire progressivement
-                // Plus le cutoff est bas, plus les particules sont visibles
-                float cutoffRange = materialCutoffRestingValue - materialCutoffScannerTargetValue;
-                float cutoffIncrement = cutoffRange * (effectiveIncrement / 100f);
-
-                // Assurer que la valeur de cutoff diminue (car plus elle est basse, plus l'effet est visible)
-                targetMaterialCutoffValue = Mathf.Max(
-                    materialCutoffScannerTargetValue,
-                    currentMaterialCutoffValue - cutoffIncrement
-                );
-
-                Debug.Log($"Progression: Blend {currentBlendValue} -> {targetValue}, Cutoff {currentMaterialCutoffValue} -> {targetMaterialCutoffValue}");
+                decrementPower = scannerDecrementPower;
+                tagName = "Scanner";
             }
+            else if (isEchoPassif)
+            {
+                decrementPower = echoPassifDecrementPower;
+                tagName = "EchoPassif";
+            }
+            else if (isEchoJoueur)
+            {
+                decrementPower = echoJoueurDecrementPower;
+                tagName = "EchoJoueur";
+            }
+
+            // MODE DÉCRÉMENTAL PROGRESSIF - Nouvelle logique améliorée
+            if (isDecrementalMode)
+            {
+                // Calculer la nouvelle valeur en décrémentant selon la puissance
+                float newBlendValue = Mathf.Max(0f, currentBlendValue - decrementPower);
+                targetValue = newBlendValue;
+
+                // Calculer le cutoff proportionnellement à la diminution du blend
+                // Plus le blend diminue, plus le cutoff devient visible (diminue)
+                float blendProgress = 1f - (targetValue / decrementalStartValue); // 0 = pas d'effet, 1 = effet maximal
+                float cutoffRange = materialCutoffRestingValue - materialCutoffScannerTargetValue;
+                targetMaterialCutoffValue = materialCutoffRestingValue - (cutoffRange * blendProgress);
+
+                // S'assurer que le cutoff reste dans les limites
+                targetMaterialCutoffValue = Mathf.Clamp(targetMaterialCutoffValue,
+                    materialCutoffScannerTargetValue, materialCutoffRestingValue);
+
+                Debug.Log($"Mode Décrémental [{tagName}]: Puissance -{decrementPower} | " +
+                         $"Blend {currentBlendValue:F1} -> {targetValue:F1} | " +
+                         $"Cutoff -> {targetMaterialCutoffValue:F2} | " +
+                         $"Progression: {blendProgress:F2}");
+            }
+            // MODE NORMAL - Aller directement à la valeur cible
             else
             {
-                // Mode non progressif - aller directement à la valeur cible
                 targetValue = Mathf.Min(blendShapeValueTarget, 100f);
                 targetMaterialCutoffValue = materialCutoffScannerTargetValue;
+
+                Debug.Log($"Mode Normal [{tagName}]: Blend -> {targetValue}, Cutoff -> {targetMaterialCutoffValue}");
             }
 
             isTransitioning = true;
@@ -240,8 +273,17 @@ public class PointCloudRevert : MonoBehaviour
         if (collectableComponent != null && collectableComponent.isPickedUp)
             yield break;
 
-        // Reset Blendshape
-        targetValue = restingValue;
+        // Reset Blendshape selon le mode
+        if (isDecrementalMode)
+        {
+            targetValue = decrementalStartValue; // Retour à la valeur de départ maximale
+            Debug.Log($"Retour à la valeur initiale: {decrementalStartValue}");
+        }
+        else
+        {
+            targetValue = restingValue; // Retour à la valeur de repos normale
+        }
+
         isTransitioning = true;
 
         // Reset Material Cutoff
