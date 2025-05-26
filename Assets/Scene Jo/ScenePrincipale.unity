@@ -142,13 +142,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   blendShapeIndex: 0
   blendShapeValueTarget: 0
-  isProgressive: 0
   restingValue: 100
   lerpSpeed: 2
   returnDelay: 6
-  scannerProgressiveIncrement: 10
-  echoPassifProgressiveIncrement: 6
-  echoJoueurProgressiveIncrement: 12
+  isDecrementalMode: 0
+  decrementalStartValue: 100
+  scannerDecrementPower: 10
+  echoPassifDecrementPower: 6
+  echoJoueurDecrementPower: 15
   materialToControl: {fileID: 0}
   materialCutoffRestingValue: 0.8
   materialCutoffScannerTargetValue: 0.4
@@ -227,13 +228,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   blendShapeIndex: 0
   blendShapeValueTarget: 0
-  isProgressive: 0
   restingValue: 100
   lerpSpeed: 2
   returnDelay: 6
-  scannerProgressiveIncrement: 10
-  echoPassifProgressiveIncrement: 6
-  echoJoueurProgressiveIncrement: 100
+  isDecrementalMode: 1
+  decrementalStartValue: 100
+  scannerDecrementPower: 100
+  echoPassifDecrementPower: 6
+  echoJoueurDecrementPower: 15
   materialToControl: {fileID: 0}
   materialCutoffRestingValue: 1.1
   materialCutoffScannerTargetValue: 0.7
@@ -485,13 +487,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   blendShapeIndex: 0
   blendShapeValueTarget: 0
-  isProgressive: 0
   restingValue: 100
   lerpSpeed: 2
   returnDelay: 6
-  scannerProgressiveIncrement: 10
-  echoPassifProgressiveIncrement: 6
-  echoJoueurProgressiveIncrement: 12
+  isDecrementalMode: 0
+  decrementalStartValue: 100
+  scannerDecrementPower: 10
+  echoPassifDecrementPower: 6
+  echoJoueurDecrementPower: 15
   materialToControl: {fileID: 0}
   materialCutoffRestingValue: 1.15
   materialCutoffScannerTargetValue: 0.6
@@ -570,13 +573,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   blendShapeIndex: 0
   blendShapeValueTarget: 0
-  isProgressive: 0
   restingValue: 100
   lerpSpeed: 2
   returnDelay: 6
-  scannerProgressiveIncrement: 10
-  echoPassifProgressiveIncrement: 6
-  echoJoueurProgressiveIncrement: 12
+  isDecrementalMode: 0
+  decrementalStartValue: 100
+  scannerDecrementPower: 10
+  echoPassifDecrementPower: 6
+  echoJoueurDecrementPower: 15
   materialToControl: {fileID: 0}
   materialCutoffRestingValue: 1.15
   materialCutoffScannerTargetValue: 0.6
@@ -646,13 +650,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   blendShapeIndex: 0
   blendShapeValueTarget: 0
-  isProgressive: 0
   restingValue: 100
   lerpSpeed: 2
   returnDelay: 6
-  scannerProgressiveIncrement: 10
-  echoPassifProgressiveIncrement: 6
-  echoJoueurProgressiveIncrement: 12
+  isDecrementalMode: 0
+  decrementalStartValue: 100
+  scannerDecrementPower: 10
+  echoPassifDecrementPower: 6
+  echoJoueurDecrementPower: 15
   materialToControl: {fileID: 0}
   materialCutoffRestingValue: 1.15
   materialCutoffScannerTargetValue: 0.6
@@ -711,13 +716,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   blendShapeIndex: 0
   blendShapeValueTarget: 0
-  isProgressive: 0
   restingValue: 100
   lerpSpeed: 2
   returnDelay: 6
-  scannerProgressiveIncrement: 10
-  echoPassifProgressiveIncrement: 6
-  echoJoueurProgressiveIncrement: 12
+  isDecrementalMode: 0
+  decrementalStartValue: 100
+  scannerDecrementPower: 10
+  echoPassifDecrementPower: 6
+  echoJoueurDecrementPower: 15
   materialToControl: {fileID: 0}
   materialCutoffRestingValue: 1.15
   materialCutoffScannerTargetValue: 0.6
@@ -765,13 +771,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   blendShapeIndex: 0
   blendShapeValueTarget: 0
-  isProgressive: 0
   restingValue: 100
   lerpSpeed: 2
   returnDelay: 6
-  scannerProgressiveIncrement: 10
-  echoPassifProgressiveIncrement: 6
-  echoJoueurProgressiveIncrement: 12
+  isDecrementalMode: 0
+  decrementalStartValue: 100
+  scannerDecrementPower: 10
+  echoPassifDecrementPower: 6
+  echoJoueurDecrementPower: 15
   materialToControl: {fileID: 0}
   materialCutoffRestingValue: 1.15
   materialCutoffScannerTargetValue: 0.6
@@ -996,13 +1003,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   blendShapeIndex: 0
   blendShapeValueTarget: 0
-  isProgressive: 0
   restingValue: 100
   lerpSpeed: 2
   returnDelay: 6
-  scannerProgressiveIncrement: 10
-  echoPassifProgressiveIncrement: 6
-  echoJoueurProgressiveIncrement: 12
+  isDecrementalMode: 0
+  decrementalStartValue: 100
+  scannerDecrementPower: 10
+  echoPassifDecrementPower: 6
+  echoJoueurDecrementPower: 15
   materialToControl: {fileID: 0}
   materialCutoffRestingValue: 0.8
   materialCutoffScannerTargetValue: 0.4
@@ -1133,13 +1141,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   blendShapeIndex: 0
   blendShapeValueTarget: 0
-  isProgressive: 0
   restingValue: 100
   lerpSpeed: 2
   returnDelay: 6
-  scannerProgressiveIncrement: 10
-  echoPassifProgressiveIncrement: 6
-  echoJoueurProgressiveIncrement: 100
+  isDecrementalMode: 1
+  decrementalStartValue: 100
+  scannerDecrementPower: 100
+  echoPassifDecrementPower: 6
+  echoJoueurDecrementPower: 15
   materialToControl: {fileID: 0}
   materialCutoffRestingValue: 1.1
   materialCutoffScannerTargetValue: 0.7
@@ -1187,13 +1196,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   blendShapeIndex: 0
   blendShapeValueTarget: 0
-  isProgressive: 0
   restingValue: 100
   lerpSpeed: 2
   returnDelay: 6
-  scannerProgressiveIncrement: 10
-  echoPassifProgressiveIncrement: 6
-  echoJoueurProgressiveIncrement: 12
+  isDecrementalMode: 0
+  decrementalStartValue: 100
+  scannerDecrementPower: 10
+  echoPassifDecrementPower: 6
+  echoJoueurDecrementPower: 15
   materialToControl: {fileID: 0}
   materialCutoffRestingValue: 1.15
   materialCutoffScannerTargetValue: 0.6
@@ -1241,13 +1251,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   blendShapeIndex: 0
   blendShapeValueTarget: 0
-  isProgressive: 0
   restingValue: 100
   lerpSpeed: 2
   returnDelay: 6
-  scannerProgressiveIncrement: 10
-  echoPassifProgressiveIncrement: 6
-  echoJoueurProgressiveIncrement: 100
+  isDecrementalMode: 1
+  decrementalStartValue: 100
+  scannerDecrementPower: 100
+  echoPassifDecrementPower: 6
+  echoJoueurDecrementPower: 15
   materialToControl: {fileID: 0}
   materialCutoffRestingValue: 1.1
   materialCutoffScannerTargetValue: 0.7
@@ -1295,13 +1306,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   blendShapeIndex: 0
   blendShapeValueTarget: 0
-  isProgressive: 0
   restingValue: 100
   lerpSpeed: 2
   returnDelay: 6
-  scannerProgressiveIncrement: 10
-  echoPassifProgressiveIncrement: 6
-  echoJoueurProgressiveIncrement: 12
+  isDecrementalMode: 0
+  decrementalStartValue: 100
+  scannerDecrementPower: 10
+  echoPassifDecrementPower: 6
+  echoJoueurDecrementPower: 15
   materialToControl: {fileID: 0}
   materialCutoffRestingValue: 1.15
   materialCutoffScannerTargetValue: 0.6
@@ -1791,13 +1803,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   blendShapeIndex: 0
   blendShapeValueTarget: 0
-  isProgressive: 0
   restingValue: 100
   lerpSpeed: 2
   returnDelay: 6
-  scannerProgressiveIncrement: 10
-  echoPassifProgressiveIncrement: 6
-  echoJoueurProgressiveIncrement: 12
+  isDecrementalMode: 0
+  decrementalStartValue: 100
+  scannerDecrementPower: 10
+  echoPassifDecrementPower: 6
+  echoJoueurDecrementPower: 15
   materialToControl: {fileID: 0}
   materialCutoffRestingValue: 1.15
   materialCutoffScannerTargetValue: 0.6
@@ -2305,13 +2318,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   blendShapeIndex: 0
   blendShapeValueTarget: 0
-  isProgressive: 0
   restingValue: 100
   lerpSpeed: 2
   returnDelay: 6
-  scannerProgressiveIncrement: 10
-  echoPassifProgressiveIncrement: 6
-  echoJoueurProgressiveIncrement: 12
+  isDecrementalMode: 0
+  decrementalStartValue: 100
+  scannerDecrementPower: 10
+  echoPassifDecrementPower: 6
+  echoJoueurDecrementPower: 15
   materialToControl: {fileID: 0}
   materialCutoffRestingValue: 0.8
   materialCutoffScannerTargetValue: 0.4
@@ -2540,13 +2554,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   blendShapeIndex: 0
   blendShapeValueTarget: 0
-  isProgressive: 0
   restingValue: 0
   lerpSpeed: 2
   returnDelay: 6
-  scannerProgressiveIncrement: 10
-  echoPassifProgressiveIncrement: 6
-  echoJoueurProgressiveIncrement: 12
+  isDecrementalMode: 0
+  decrementalStartValue: 100
+  scannerDecrementPower: 10
+  echoPassifDecrementPower: 6
+  echoJoueurDecrementPower: 15
   materialToControl: {fileID: 0}
   materialCutoffRestingValue: 0.6
   materialCutoffScannerTargetValue: 0.6
@@ -2663,13 +2678,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   blendShapeIndex: 0
   blendShapeValueTarget: 0
-  isProgressive: 0
   restingValue: 100
   lerpSpeed: 2
   returnDelay: 6
-  scannerProgressiveIncrement: 10
-  echoPassifProgressiveIncrement: 6
-  echoJoueurProgressiveIncrement: 100
+  isDecrementalMode: 1
+  decrementalStartValue: 100
+  scannerDecrementPower: 100
+  echoPassifDecrementPower: 6
+  echoJoueurDecrementPower: 15
   materialToControl: {fileID: 0}
   materialCutoffRestingValue: 1.1
   materialCutoffScannerTargetValue: 0.7
@@ -2717,13 +2733,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   blendShapeIndex: 0
   blendShapeValueTarget: 0
-  isProgressive: 0
   restingValue: 100
   lerpSpeed: 2
   returnDelay: 6
-  scannerProgressiveIncrement: 10
-  echoPassifProgressiveIncrement: 6
-  echoJoueurProgressiveIncrement: 100
+  isDecrementalMode: 1
+  decrementalStartValue: 100
+  scannerDecrementPower: 100
+  echoPassifDecrementPower: 6
+  echoJoueurDecrementPower: 15
   materialToControl: {fileID: 0}
   materialCutoffRestingValue: 1.1
   materialCutoffScannerTargetValue: 0.7
@@ -2854,13 +2871,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   blendShapeIndex: 0
   blendShapeValueTarget: 0
-  isProgressive: 0
   restingValue: 100
   lerpSpeed: 2
   returnDelay: 6
-  scannerProgressiveIncrement: 10
-  echoPassifProgressiveIncrement: 6
-  echoJoueurProgressiveIncrement: 12
+  isDecrementalMode: 0
+  decrementalStartValue: 100
+  scannerDecrementPower: 10
+  echoPassifDecrementPower: 6
+  echoJoueurDecrementPower: 15
   materialToControl: {fileID: 0}
   materialCutoffRestingValue: 0.8
   materialCutoffScannerTargetValue: 0.4
@@ -3029,13 +3047,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   blendShapeIndex: 0
   blendShapeValueTarget: 0
-  isProgressive: 0
   restingValue: 100
   lerpSpeed: 2
   returnDelay: 6
-  scannerProgressiveIncrement: 10
-  echoPassifProgressiveIncrement: 6
-  echoJoueurProgressiveIncrement: 12
+  isDecrementalMode: 0
+  decrementalStartValue: 100
+  scannerDecrementPower: 10
+  echoPassifDecrementPower: 6
+  echoJoueurDecrementPower: 15
   materialToControl: {fileID: 0}
   materialCutoffRestingValue: 0.8
   materialCutoffScannerTargetValue: 0.4
@@ -3083,13 +3102,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   blendShapeIndex: 0
   blendShapeValueTarget: 0
-  isProgressive: 0
   restingValue: 100
   lerpSpeed: 2
   returnDelay: 6
-  scannerProgressiveIncrement: 10
-  echoPassifProgressiveIncrement: 6
-  echoJoueurProgressiveIncrement: 100
+  isDecrementalMode: 1
+  decrementalStartValue: 100
+  scannerDecrementPower: 100
+  echoPassifDecrementPower: 6
+  echoJoueurDecrementPower: 15
   materialToControl: {fileID: 0}
   materialCutoffRestingValue: 1.1
   materialCutoffScannerTargetValue: 0.7
@@ -3399,13 +3419,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   blendShapeIndex: 0
   blendShapeValueTarget: 0
-  isProgressive: 0
   restingValue: 100
   lerpSpeed: 2
   returnDelay: 6
-  scannerProgressiveIncrement: 10
-  echoPassifProgressiveIncrement: 6
-  echoJoueurProgressiveIncrement: 12
+  isDecrementalMode: 0
+  decrementalStartValue: 100
+  scannerDecrementPower: 10
+  echoPassifDecrementPower: 6
+  echoJoueurDecrementPower: 15
   materialToControl: {fileID: 0}
   materialCutoffRestingValue: 0.8
   materialCutoffScannerTargetValue: 0.4
@@ -3738,13 +3759,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   blendShapeIndex: 0
   blendShapeValueTarget: 0
-  isProgressive: 0
   restingValue: 100
   lerpSpeed: 2
   returnDelay: 6
-  scannerProgressiveIncrement: 10
-  echoPassifProgressiveIncrement: 6
-  echoJoueurProgressiveIncrement: 12
+  isDecrementalMode: 0
+  decrementalStartValue: 100
+  scannerDecrementPower: 10
+  echoPassifDecrementPower: 6
+  echoJoueurDecrementPower: 15
   materialToControl: {fileID: 0}
   materialCutoffRestingValue: 1.15
   materialCutoffScannerTargetValue: 0.6
@@ -3792,13 +3814,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   blendShapeIndex: 0
   blendShapeValueTarget: 0
-  isProgressive: 0
   restingValue: 100
   lerpSpeed: 2
   returnDelay: 6
-  scannerProgressiveIncrement: 10
-  echoPassifProgressiveIncrement: 6
-  echoJoueurProgressiveIncrement: 12
+  isDecrementalMode: 0
+  decrementalStartValue: 100
+  scannerDecrementPower: 10
+  echoPassifDecrementPower: 6
+  echoJoueurDecrementPower: 15
   materialToControl: {fileID: 0}
   materialCutoffRestingValue: 0.8
   materialCutoffScannerTargetValue: 0.4
@@ -3895,13 +3918,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   blendShapeIndex: 0
   blendShapeValueTarget: 0
-  isProgressive: 0
   restingValue: 100
   lerpSpeed: 2
   returnDelay: 6
-  scannerProgressiveIncrement: 10
-  echoPassifProgressiveIncrement: 6
-  echoJoueurProgressiveIncrement: 12
+  isDecrementalMode: 0
+  decrementalStartValue: 100
+  scannerDecrementPower: 10
+  echoPassifDecrementPower: 6
+  echoJoueurDecrementPower: 15
   materialToControl: {fileID: 0}
   materialCutoffRestingValue: 1.15
   materialCutoffScannerTargetValue: 0.6
@@ -3927,13 +3951,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   blendShapeIndex: 0
   blendShapeValueTarget: 0
-  isProgressive: 0
   restingValue: 100
   lerpSpeed: 2
   returnDelay: 6
-  scannerProgressiveIncrement: 10
-  echoPassifProgressiveIncrement: 6
-  echoJoueurProgressiveIncrement: 12
+  isDecrementalMode: 0
+  decrementalStartValue: 100
+  scannerDecrementPower: 10
+  echoPassifDecrementPower: 6
+  echoJoueurDecrementPower: 15
   materialToControl: {fileID: 0}
   materialCutoffRestingValue: 0.8
   materialCutoffScannerTargetValue: 0.4
@@ -4086,13 +4111,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   blendShapeIndex: 0
   blendShapeValueTarget: 0
-  isProgressive: 0
   restingValue: 100
   lerpSpeed: 2
   returnDelay: 6
-  scannerProgressiveIncrement: 10
-  echoPassifProgressiveIncrement: 6
-  echoJoueurProgressiveIncrement: 12
+  isDecrementalMode: 0
+  decrementalStartValue: 100
+  scannerDecrementPower: 10
+  echoPassifDecrementPower: 6
+  echoJoueurDecrementPower: 15
   materialToControl: {fileID: 0}
   materialCutoffRestingValue: 1.15
   materialCutoffScannerTargetValue: 0.6
@@ -4263,13 +4289,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   blendShapeIndex: 0
   blendShapeValueTarget: 0
-  isProgressive: 0
   restingValue: 100
   lerpSpeed: 2
   returnDelay: 6
-  scannerProgressiveIncrement: 10
-  echoPassifProgressiveIncrement: 6
-  echoJoueurProgressiveIncrement: 12
+  isDecrementalMode: 0
+  decrementalStartValue: 100
+  scannerDecrementPower: 10
+  echoPassifDecrementPower: 6
+  echoJoueurDecrementPower: 15
   materialToControl: {fileID: 0}
   materialCutoffRestingValue: 1.44
   materialCutoffScannerTargetValue: 0.6
@@ -4317,13 +4344,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   blendShapeIndex: 0
   blendShapeValueTarget: 0
-  isProgressive: 0
   restingValue: 100
   lerpSpeed: 2
   returnDelay: 6
-  scannerProgressiveIncrement: 10
-  echoPassifProgressiveIncrement: 6
-  echoJoueurProgressiveIncrement: 12
+  isDecrementalMode: 0
+  decrementalStartValue: 100
+  scannerDecrementPower: 10
+  echoPassifDecrementPower: 6
+  echoJoueurDecrementPower: 15
   materialToControl: {fileID: 0}
   materialCutoffRestingValue: 1.15
   materialCutoffScannerTargetValue: 0.6
@@ -4371,13 +4399,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   blendShapeIndex: 0
   blendShapeValueTarget: 0
-  isProgressive: 0
   restingValue: 100
   lerpSpeed: 2
   returnDelay: 6
-  scannerProgressiveIncrement: 10
-  echoPassifProgressiveIncrement: 6
-  echoJoueurProgressiveIncrement: 12
+  isDecrementalMode: 0
+  decrementalStartValue: 100
+  scannerDecrementPower: 10
+  echoPassifDecrementPower: 6
+  echoJoueurDecrementPower: 15
   materialToControl: {fileID: 0}
   materialCutoffRestingValue: 0.8
   materialCutoffScannerTargetValue: 0.4
@@ -4479,13 +4508,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   blendShapeIndex: 0
   blendShapeValueTarget: 0
-  isProgressive: 0
   restingValue: 100
   lerpSpeed: 2
   returnDelay: 6
-  scannerProgressiveIncrement: 10
-  echoPassifProgressiveIncrement: 6
-  echoJoueurProgressiveIncrement: 12
+  isDecrementalMode: 0
+  decrementalStartValue: 100
+  scannerDecrementPower: 10
+  echoPassifDecrementPower: 6
+  echoJoueurDecrementPower: 15
   materialToControl: {fileID: 0}
   materialCutoffRestingValue: 1.15
   materialCutoffScannerTargetValue: 0.6
@@ -4533,13 +4563,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   blendShapeIndex: 0
   blendShapeValueTarget: 0
-  isProgressive: 0
   restingValue: 100
   lerpSpeed: 2
   returnDelay: 6
-  scannerProgressiveIncrement: 10
-  echoPassifProgressiveIncrement: 6
-  echoJoueurProgressiveIncrement: 12
+  isDecrementalMode: 0
+  decrementalStartValue: 100
+  scannerDecrementPower: 10
+  echoPassifDecrementPower: 6
+  echoJoueurDecrementPower: 15
   materialToControl: {fileID: 0}
   materialCutoffRestingValue: 0.8
   materialCutoffScannerTargetValue: 0.4
@@ -4919,13 +4950,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   blendShapeIndex: 0
   blendShapeValueTarget: 0
-  isProgressive: 0
   restingValue: 100
   lerpSpeed: 2
   returnDelay: 6
-  scannerProgressiveIncrement: 10
-  echoPassifProgressiveIncrement: 6
-  echoJoueurProgressiveIncrement: 12
+  isDecrementalMode: 0
+  decrementalStartValue: 100
+  scannerDecrementPower: 10
+  echoPassifDecrementPower: 6
+  echoJoueurDecrementPower: 15
   materialToControl: {fileID: 0}
   materialCutoffRestingValue: 0.8
   materialCutoffScannerTargetValue: 0.4
@@ -5050,13 +5082,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   blendShapeIndex: 0
   blendShapeValueTarget: 0
-  isProgressive: 0
   restingValue: 100
   lerpSpeed: 2
   returnDelay: 6
-  scannerProgressiveIncrement: 10
-  echoPassifProgressiveIncrement: 6
-  echoJoueurProgressiveIncrement: 100
+  isDecrementalMode: 1
+  decrementalStartValue: 100
+  scannerDecrementPower: 100
+  echoPassifDecrementPower: 6
+  echoJoueurDecrementPower: 15
   materialToControl: {fileID: 0}
   materialCutoffRestingValue: 1.1
   materialCutoffScannerTargetValue: 0.7
@@ -5174,13 +5207,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   blendShapeIndex: 0
   blendShapeValueTarget: 0
-  isProgressive: 0
   restingValue: 100
   lerpSpeed: 2
   returnDelay: 6
-  scannerProgressiveIncrement: 10
-  echoPassifProgressiveIncrement: 6
-  echoJoueurProgressiveIncrement: 12
+  isDecrementalMode: 0
+  decrementalStartValue: 100
+  scannerDecrementPower: 10
+  echoPassifDecrementPower: 6
+  echoJoueurDecrementPower: 15
   materialToControl: {fileID: 0}
   materialCutoffRestingValue: 1.15
   materialCutoffScannerTargetValue: 0.6
@@ -5372,13 +5406,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   blendShapeIndex: 0
   blendShapeValueTarget: 0
-  isProgressive: 0
   restingValue: 100
   lerpSpeed: 2
   returnDelay: 6
-  scannerProgressiveIncrement: 10
-  echoPassifProgressiveIncrement: 6
-  echoJoueurProgressiveIncrement: 12
+  isDecrementalMode: 0
+  decrementalStartValue: 100
+  scannerDecrementPower: 10
+  echoPassifDecrementPower: 6
+  echoJoueurDecrementPower: 15
   materialToControl: {fileID: 0}
   materialCutoffRestingValue: 0.8
   materialCutoffScannerTargetValue: 0.4
@@ -5509,13 +5544,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   blendShapeIndex: 0
   blendShapeValueTarget: 0
-  isProgressive: 0
   restingValue: 100
   lerpSpeed: 2
   returnDelay: 6
-  scannerProgressiveIncrement: 10
-  echoPassifProgressiveIncrement: 6
-  echoJoueurProgressiveIncrement: 12
+  isDecrementalMode: 0
+  decrementalStartValue: 100
+  scannerDecrementPower: 10
+  echoPassifDecrementPower: 6
+  echoJoueurDecrementPower: 15
   materialToControl: {fileID: 0}
   materialCutoffRestingValue: 1.44
   materialCutoffScannerTargetValue: 0.6
@@ -5679,13 +5715,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   blendShapeIndex: 0
   blendShapeValueTarget: 0
-  isProgressive: 0
   restingValue: 100
   lerpSpeed: 2
   returnDelay: 6
-  scannerProgressiveIncrement: 10
-  echoPassifProgressiveIncrement: 6
-  echoJoueurProgressiveIncrement: 100
+  isDecrementalMode: 1
+  decrementalStartValue: 100
+  scannerDecrementPower: 100
+  echoPassifDecrementPower: 6
+  echoJoueurDecrementPower: 15
   materialToControl: {fileID: 0}
   materialCutoffRestingValue: 1.1
   materialCutoffScannerTargetValue: 0.7
@@ -5782,13 +5819,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   blendShapeIndex: 0
   blendShapeValueTarget: 0
-  isProgressive: 0
   restingValue: 0
   lerpSpeed: 2
   returnDelay: 6
-  scannerProgressiveIncrement: 10
-  echoPassifProgressiveIncrement: 6
-  echoJoueurProgressiveIncrement: 12
+  isDecrementalMode: 0
+  decrementalStartValue: 100
+  scannerDecrementPower: 10
+  echoPassifDecrementPower: 6
+  echoJoueurDecrementPower: 15
   materialToControl: {fileID: 0}
   materialCutoffRestingValue: 0.6
   materialCutoffScannerTargetValue: 0.6
@@ -5897,13 +5935,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   blendShapeIndex: 0
   blendShapeValueTarget: 0
-  isProgressive: 0
   restingValue: 100
   lerpSpeed: 2
   returnDelay: 6
-  scannerProgressiveIncrement: 10
-  echoPassifProgressiveIncrement: 6
-  echoJoueurProgressiveIncrement: 12
+  isDecrementalMode: 0
+  decrementalStartValue: 100
+  scannerDecrementPower: 10
+  echoPassifDecrementPower: 6
+  echoJoueurDecrementPower: 15
   materialToControl: {fileID: 0}
   materialCutoffRestingValue: 1.15
   materialCutoffScannerTargetValue: 0.6
@@ -5986,13 +6025,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   blendShapeIndex: 0
   blendShapeValueTarget: 0
-  isProgressive: 0
   restingValue: 100
   lerpSpeed: 2
   returnDelay: 6
-  scannerProgressiveIncrement: 10
-  echoPassifProgressiveIncrement: 6
-  echoJoueurProgressiveIncrement: 100
+  isDecrementalMode: 1
+  decrementalStartValue: 100
+  scannerDecrementPower: 100
+  echoPassifDecrementPower: 6
+  echoJoueurDecrementPower: 15
   materialToControl: {fileID: 0}
   materialCutoffRestingValue: 1.1
   materialCutoffScannerTargetValue: 0.7
@@ -6040,13 +6080,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   blendShapeIndex: 0
   blendShapeValueTarget: 0
-  isProgressive: 0
   restingValue: 100
   lerpSpeed: 2
   returnDelay: 6
-  scannerProgressiveIncrement: 10
-  echoPassifProgressiveIncrement: 6
-  echoJoueurProgressiveIncrement: 100
+  isDecrementalMode: 1
+  decrementalStartValue: 100
+  scannerDecrementPower: 100
+  echoPassifDecrementPower: 6
+  echoJoueurDecrementPower: 15
   materialToControl: {fileID: 0}
   materialCutoffRestingValue: 1.1
   materialCutoffScannerTargetValue: 0.7
@@ -6094,13 +6135,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   blendShapeIndex: 0
   blendShapeValueTarget: 0
-  isProgressive: 0
   restingValue: 100
   lerpSpeed: 2
   returnDelay: 6
-  scannerProgressiveIncrement: 10
-  echoPassifProgressiveIncrement: 6
-  echoJoueurProgressiveIncrement: 12
+  isDecrementalMode: 0
+  decrementalStartValue: 100
+  scannerDecrementPower: 10
+  echoPassifDecrementPower: 6
+  echoJoueurDecrementPower: 15
   materialToControl: {fileID: 0}
   materialCutoffRestingValue: 0.8
   materialCutoffScannerTargetValue: 0.4
@@ -6148,13 +6190,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   blendShapeIndex: 0
   blendShapeValueTarget: 0
-  isProgressive: 0
   restingValue: 100
   lerpSpeed: 2
   returnDelay: 6
-  scannerProgressiveIncrement: 10
-  echoPassifProgressiveIncrement: 6
-  echoJoueurProgressiveIncrement: 12
+  isDecrementalMode: 0
+  decrementalStartValue: 100
+  scannerDecrementPower: 10
+  echoPassifDecrementPower: 6
+  echoJoueurDecrementPower: 15
   materialToControl: {fileID: 0}
   materialCutoffRestingValue: 0.8
   materialCutoffScannerTargetValue: 0.4
@@ -6202,13 +6245,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   blendShapeIndex: 0
   blendShapeValueTarget: 0
-  isProgressive: 0
   restingValue: 100
   lerpSpeed: 2
   returnDelay: 6
-  scannerProgressiveIncrement: 10
-  echoPassifProgressiveIncrement: 6
-  echoJoueurProgressiveIncrement: 12
+  isDecrementalMode: 0
+  decrementalStartValue: 100
+  scannerDecrementPower: 10
+  echoPassifDecrementPower: 6
+  echoJoueurDecrementPower: 15
   materialToControl: {fileID: 0}
   materialCutoffRestingValue: 0.8
   materialCutoffScannerTargetValue: 0.4
@@ -6256,13 +6300,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   blendShapeIndex: 0
   blendShapeValueTarget: 0
-  isProgressive: 0
   restingValue: 100
   lerpSpeed: 2
   returnDelay: 6
-  scannerProgressiveIncrement: 10
-  echoPassifProgressiveIncrement: 6
-  echoJoueurProgressiveIncrement: 12
+  isDecrementalMode: 0
+  decrementalStartValue: 100
+  scannerDecrementPower: 10
+  echoPassifDecrementPower: 6
+  echoJoueurDecrementPower: 15
   materialToControl: {fileID: 0}
   materialCutoffRestingValue: 1.15
   materialCutoffScannerTargetValue: 0.6
@@ -6486,13 +6531,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   blendShapeIndex: 0
   blendShapeValueTarget: 0
-  isProgressive: 0
   restingValue: 100
   lerpSpeed: 2
   returnDelay: 6
-  scannerProgressiveIncrement: 10
-  echoPassifProgressiveIncrement: 6
-  echoJoueurProgressiveIncrement: 12
+  isDecrementalMode: 0
+  decrementalStartValue: 100
+  scannerDecrementPower: 10
+  echoPassifDecrementPower: 6
+  echoJoueurDecrementPower: 15
   materialToControl: {fileID: 0}
   materialCutoffRestingValue: 1.15
   materialCutoffScannerTargetValue: 0.6
@@ -6603,13 +6649,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   blendShapeIndex: 0
   blendShapeValueTarget: 0
-  isProgressive: 0
   restingValue: 100
   lerpSpeed: 2
   returnDelay: 6
-  scannerProgressiveIncrement: 10
-  echoPassifProgressiveIncrement: 6
-  echoJoueurProgressiveIncrement: 12
+  isDecrementalMode: 0
+  decrementalStartValue: 100
+  scannerDecrementPower: 10
+  echoPassifDecrementPower: 6
+  echoJoueurDecrementPower: 15
   materialToControl: {fileID: 0}
   materialCutoffRestingValue: 0.8
   materialCutoffScannerTargetValue: 0.4
@@ -6757,13 +6804,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   blendShapeIndex: 0
   blendShapeValueTarget: 0
-  isProgressive: 0
   restingValue: 100
   lerpSpeed: 2
   returnDelay: 6
-  scannerProgressiveIncrement: 10
-  echoPassifProgressiveIncrement: 6
-  echoJoueurProgressiveIncrement: 12
+  isDecrementalMode: 0
+  decrementalStartValue: 100
+  scannerDecrementPower: 10
+  echoPassifDecrementPower: 6
+  echoJoueurDecrementPower: 15
   materialToControl: {fileID: 0}
   materialCutoffRestingValue: 1.15
   materialCutoffScannerTargetValue: 0.6
@@ -6833,13 +6881,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   blendShapeIndex: 0
   blendShapeValueTarget: 0
-  isProgressive: 0
   restingValue: 100
   lerpSpeed: 2
   returnDelay: 6
-  scannerProgressiveIncrement: 10
-  echoPassifProgressiveIncrement: 6
-  echoJoueurProgressiveIncrement: 12
+  isDecrementalMode: 0
+  decrementalStartValue: 100
+  scannerDecrementPower: 10
+  echoPassifDecrementPower: 6
+  echoJoueurDecrementPower: 15
   materialToControl: {fileID: 0}
   materialCutoffRestingValue: 1.15
   materialCutoffScannerTargetValue: 0.6
@@ -6865,13 +6914,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   blendShapeIndex: 0
   blendShapeValueTarget: 0
-  isProgressive: 0
   restingValue: 100
   lerpSpeed: 2
   returnDelay: 6
-  scannerProgressiveIncrement: 10
-  echoPassifProgressiveIncrement: 6
-  echoJoueurProgressiveIncrement: 12
+  isDecrementalMode: 0
+  decrementalStartValue: 100
+  scannerDecrementPower: 10
+  echoPassifDecrementPower: 6
+  echoJoueurDecrementPower: 15
   materialToControl: {fileID: 0}
   materialCutoffRestingValue: 0.8
   materialCutoffScannerTargetValue: 0.4
@@ -7206,13 +7256,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   blendShapeIndex: 0
   blendShapeValueTarget: 0
-  isProgressive: 0
   restingValue: 100
   lerpSpeed: 2
   returnDelay: 6
-  scannerProgressiveIncrement: 10
-  echoPassifProgressiveIncrement: 6
-  echoJoueurProgressiveIncrement: 12
+  isDecrementalMode: 0
+  decrementalStartValue: 100
+  scannerDecrementPower: 10
+  echoPassifDecrementPower: 6
+  echoJoueurDecrementPower: 15
   materialToControl: {fileID: 0}
   materialCutoffRestingValue: 0.8
   materialCutoffScannerTargetValue: 0.4
@@ -7260,13 +7311,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   blendShapeIndex: 0
   blendShapeValueTarget: 0
-  isProgressive: 0
   restingValue: 100
   lerpSpeed: 2
   returnDelay: 6
-  scannerProgressiveIncrement: 10
-  echoPassifProgressiveIncrement: 6
-  echoJoueurProgressiveIncrement: 12
+  isDecrementalMode: 0
+  decrementalStartValue: 100
+  scannerDecrementPower: 10
+  echoPassifDecrementPower: 6
+  echoJoueurDecrementPower: 15
   materialToControl: {fileID: 0}
   materialCutoffRestingValue: 1.15
   materialCutoffScannerTargetValue: 0.6
@@ -7469,13 +7521,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   blendShapeIndex: 0
   blendShapeValueTarget: 0
-  isProgressive: 0
   restingValue: 100
   lerpSpeed: 2
   returnDelay: 6
-  scannerProgressiveIncrement: 10
-  echoPassifProgressiveIncrement: 6
-  echoJoueurProgressiveIncrement: 12
+  isDecrementalMode: 0
+  decrementalStartValue: 100
+  scannerDecrementPower: 10
+  echoPassifDecrementPower: 6
+  echoJoueurDecrementPower: 15
   materialToControl: {fileID: 0}
   materialCutoffRestingValue: 0.8
   materialCutoffScannerTargetValue: 0.4
@@ -7523,13 +7576,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   blendShapeIndex: 0
   blendShapeValueTarget: 0
-  isProgressive: 0
   restingValue: 100
   lerpSpeed: 2
   returnDelay: 6
-  scannerProgressiveIncrement: 10
-  echoPassifProgressiveIncrement: 6
-  echoJoueurProgressiveIncrement: 12
+  isDecrementalMode: 0
+  decrementalStartValue: 100
+  scannerDecrementPower: 10
+  echoPassifDecrementPower: 6
+  echoJoueurDecrementPower: 15
   materialToControl: {fileID: 0}
   materialCutoffRestingValue: 0.8
   materialCutoffScannerTargetValue: 0.4
@@ -7577,13 +7631,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   blendShapeIndex: 0
   blendShapeValueTarget: 0
-  isProgressive: 0
   restingValue: 100
   lerpSpeed: 2
   returnDelay: 6
-  scannerProgressiveIncrement: 10
-  echoPassifProgressiveIncrement: 6
-  echoJoueurProgressiveIncrement: 12
+  isDecrementalMode: 0
+  decrementalStartValue: 100
+  scannerDecrementPower: 10
+  echoPassifDecrementPower: 6
+  echoJoueurDecrementPower: 15
   materialToControl: {fileID: 0}
   materialCutoffRestingValue: 0.8
   materialCutoffScannerTargetValue: 0.4
@@ -7724,13 +7779,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   blendShapeIndex: 0
   blendShapeValueTarget: 0
-  isProgressive: 0
   restingValue: 100
   lerpSpeed: 2
   returnDelay: 6
-  scannerProgressiveIncrement: 10
-  echoPassifProgressiveIncrement: 6
-  echoJoueurProgressiveIncrement: 12
+  isDecrementalMode: 0
+  decrementalStartValue: 100
+  scannerDecrementPower: 10
+  echoPassifDecrementPower: 6
+  echoJoueurDecrementPower: 15
   materialToControl: {fileID: 0}
   materialCutoffRestingValue: 0.8
   materialCutoffScannerTargetValue: 0.4
@@ -7861,13 +7917,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   blendShapeIndex: 0
   blendShapeValueTarget: 0
-  isProgressive: 0
   restingValue: 100
   lerpSpeed: 2
   returnDelay: 6
-  scannerProgressiveIncrement: 10
-  echoPassifProgressiveIncrement: 6
-  echoJoueurProgressiveIncrement: 12
+  isDecrementalMode: 0
+  decrementalStartValue: 100
+  scannerDecrementPower: 10
+  echoPassifDecrementPower: 6
+  echoJoueurDecrementPower: 15
   materialToControl: {fileID: 0}
   materialCutoffRestingValue: 1.15
   materialCutoffScannerTargetValue: 0.6
@@ -7915,13 +7972,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   blendShapeIndex: 0
   blendShapeValueTarget: 0
-  isProgressive: 0
   restingValue: 100
   lerpSpeed: 2
   returnDelay: 6
-  scannerProgressiveIncrement: 10
-  echoPassifProgressiveIncrement: 6
-  echoJoueurProgressiveIncrement: 12
+  isDecrementalMode: 0
+  decrementalStartValue: 100
+  scannerDecrementPower: 10
+  echoPassifDecrementPower: 6
+  echoJoueurDecrementPower: 15
   materialToControl: {fileID: 0}
   materialCutoffRestingValue: 0.8
   materialCutoffScannerTargetValue: 0.4
@@ -7969,13 +8027,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   blendShapeIndex: 0
   blendShapeValueTarget: 0
-  isProgressive: 0
   restingValue: 100
   lerpSpeed: 2
   returnDelay: 6
-  scannerProgressiveIncrement: 10
-  echoPassifProgressiveIncrement: 6
-  echoJoueurProgressiveIncrement: 12
+  isDecrementalMode: 0
+  decrementalStartValue: 100
+  scannerDecrementPower: 10
+  echoPassifDecrementPower: 6
+  echoJoueurDecrementPower: 15
   materialToControl: {fileID: 0}
   materialCutoffRestingValue: 1.15
   materialCutoffScannerTargetValue: 0.6
@@ -8077,13 +8136,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   blendShapeIndex: 0
   blendShapeValueTarget: 0
-  isProgressive: 0
   restingValue: 100
   lerpSpeed: 2
   returnDelay: 6
-  scannerProgressiveIncrement: 10
-  echoPassifProgressiveIncrement: 6
-  echoJoueurProgressiveIncrement: 12
+  isDecrementalMode: 0
+  decrementalStartValue: 100
+  scannerDecrementPower: 10
+  echoPassifDecrementPower: 6
+  echoJoueurDecrementPower: 15
   materialToControl: {fileID: 0}
   materialCutoffRestingValue: 1.15
   materialCutoffScannerTargetValue: 0.6
@@ -8131,13 +8191,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   blendShapeIndex: 0
   blendShapeValueTarget: 0
-  isProgressive: 0
   restingValue: 100
   lerpSpeed: 2
   returnDelay: 6
-  scannerProgressiveIncrement: 10
-  echoPassifProgressiveIncrement: 6
-  echoJoueurProgressiveIncrement: 12
+  isDecrementalMode: 0
+  decrementalStartValue: 100
+  scannerDecrementPower: 10
+  echoPassifDecrementPower: 6
+  echoJoueurDecrementPower: 15
   materialToControl: {fileID: 0}
   materialCutoffRestingValue: 1.15
   materialCutoffScannerTargetValue: 0.6
@@ -8185,13 +8246,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   blendShapeIndex: 0
   blendShapeValueTarget: 0
-  isProgressive: 0
   restingValue: 100
   lerpSpeed: 2
   returnDelay: 6
-  scannerProgressiveIncrement: 10
-  echoPassifProgressiveIncrement: 6
-  echoJoueurProgressiveIncrement: 12
+  isDecrementalMode: 0
+  decrementalStartValue: 100
+  scannerDecrementPower: 10
+  echoPassifDecrementPower: 6
+  echoJoueurDecrementPower: 15
   materialToControl: {fileID: 0}
   materialCutoffRestingValue: 1.15
   materialCutoffScannerTargetValue: 0.6
@@ -8239,13 +8301,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   blendShapeIndex: 0
   blendShapeValueTarget: 0
-  isProgressive: 0
   restingValue: 100
   lerpSpeed: 2
   returnDelay: 6
-  scannerProgressiveIncrement: 10
-  echoPassifProgressiveIncrement: 6
-  echoJoueurProgressiveIncrement: 12
+  isDecrementalMode: 0
+  decrementalStartValue: 100
+  scannerDecrementPower: 10
+  echoPassifDecrementPower: 6
+  echoJoueurDecrementPower: 15
   materialToControl: {fileID: 0}
   materialCutoffRestingValue: 1.44
   materialCutoffScannerTargetValue: 0.6
@@ -8293,13 +8356,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   blendShapeIndex: 0
   blendShapeValueTarget: 0
-  isProgressive: 0
   restingValue: 100
   lerpSpeed: 2
   returnDelay: 6
-  scannerProgressiveIncrement: 10
-  echoPassifProgressiveIncrement: 6
-  echoJoueurProgressiveIncrement: 100
+  isDecrementalMode: 1
+  decrementalStartValue: 100
+  scannerDecrementPower: 100
+  echoPassifDecrementPower: 6
+  echoJoueurDecrementPower: 15
   materialToControl: {fileID: 0}
   materialCutoffRestingValue: 1.1
   materialCutoffScannerTargetValue: 0.7
@@ -8347,13 +8411,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   blendShapeIndex: 0
   blendShapeValueTarget: 0
-  isProgressive: 0
   restingValue: 100
   lerpSpeed: 2
   returnDelay: 6
-  scannerProgressiveIncrement: 10
-  echoPassifProgressiveIncrement: 6
-  echoJoueurProgressiveIncrement: 12
+  isDecrementalMode: 0
+  decrementalStartValue: 100
+  scannerDecrementPower: 10
+  echoPassifDecrementPower: 6
+  echoJoueurDecrementPower: 15
   materialToControl: {fileID: 0}
   materialCutoffRestingValue: 0.8
   materialCutoffScannerTargetValue: 0.4
@@ -8406,13 +8471,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   blendShapeIndex: 0
   blendShapeValueTarget: 0
-  isProgressive: 0
   restingValue: 100
   lerpSpeed: 2
   returnDelay: 6
-  scannerProgressiveIncrement: 10
-  echoPassifProgressiveIncrement: 6
-  echoJoueurProgressiveIncrement: 12
+  isDecrementalMode: 0
+  decrementalStartValue: 100
+  scannerDecrementPower: 10
+  echoPassifDecrementPower: 6
+  echoJoueurDecrementPower: 15
   materialToControl: {fileID: 0}
   materialCutoffRestingValue: 1.15
   materialCutoffScannerTargetValue: 0.6
@@ -8561,13 +8627,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   blendShapeIndex: 0
   blendShapeValueTarget: 0
-  isProgressive: 0
   restingValue: 100
   lerpSpeed: 2
   returnDelay: 6
-  scannerProgressiveIncrement: 10
-  echoPassifProgressiveIncrement: 6
-  echoJoueurProgressiveIncrement: 100
+  isDecrementalMode: 1
+  decrementalStartValue: 100
+  scannerDecrementPower: 100
+  echoPassifDecrementPower: 6
+  echoJoueurDecrementPower: 15
   materialToControl: {fileID: 0}
   materialCutoffRestingValue: 1.1
   materialCutoffScannerTargetValue: 0.7
@@ -8698,13 +8765,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   blendShapeIndex: 0
   blendShapeValueTarget: 0
-  isProgressive: 0
   restingValue: 100
   lerpSpeed: 2
   returnDelay: 6
-  scannerProgressiveIncrement: 10
-  echoPassifProgressiveIncrement: 6
-  echoJoueurProgressiveIncrement: 100
+  isDecrementalMode: 1
+  decrementalStartValue: 100
+  scannerDecrementPower: 100
+  echoPassifDecrementPower: 6
+  echoJoueurDecrementPower: 15
   materialToControl: {fileID: 0}
   materialCutoffRestingValue: 1.1
   materialCutoffScannerTargetValue: 0.7
@@ -8872,13 +8940,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   blendShapeIndex: 0
   blendShapeValueTarget: 0
-  isProgressive: 0
   restingValue: 100
   lerpSpeed: 2
   returnDelay: 6
-  scannerProgressiveIncrement: 10
-  echoPassifProgressiveIncrement: 6
-  echoJoueurProgressiveIncrement: 100
+  isDecrementalMode: 1
+  decrementalStartValue: 100
+  scannerDecrementPower: 100
+  echoPassifDecrementPower: 6
+  echoJoueurDecrementPower: 15
   materialToControl: {fileID: 0}
   materialCutoffRestingValue: 1.1
   materialCutoffScannerTargetValue: 0.7
@@ -9043,13 +9112,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   blendShapeIndex: 0
   blendShapeValueTarget: 0
-  isProgressive: 0
   restingValue: 100
   lerpSpeed: 2
   returnDelay: 6
-  scannerProgressiveIncrement: 10
-  echoPassifProgressiveIncrement: 6
-  echoJoueurProgressiveIncrement: 12
+  isDecrementalMode: 0
+  decrementalStartValue: 100
+  scannerDecrementPower: 10
+  echoPassifDecrementPower: 6
+  echoJoueurDecrementPower: 15
   materialToControl: {fileID: 0}
   materialCutoffRestingValue: 0.8
   materialCutoffScannerTargetValue: 0.4
@@ -9097,13 +9167,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   blendShapeIndex: 0
   blendShapeValueTarget: 0
-  isProgressive: 0
   restingValue: 100
   lerpSpeed: 2
   returnDelay: 6
-  scannerProgressiveIncrement: 10
-  echoPassifProgressiveIncrement: 6
-  echoJoueurProgressiveIncrement: 100
+  isDecrementalMode: 1
+  decrementalStartValue: 100
+  scannerDecrementPower: 100
+  echoPassifDecrementPower: 6
+  echoJoueurDecrementPower: 15
   materialToControl: {fileID: 0}
   materialCutoffRestingValue: 1.1
   materialCutoffScannerTargetValue: 0.7
@@ -9393,13 +9464,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   blendShapeIndex: 0
   blendShapeValueTarget: 0
-  isProgressive: 0
   restingValue: 100
   lerpSpeed: 2
   returnDelay: 6
-  scannerProgressiveIncrement: 10
-  echoPassifProgressiveIncrement: 6
-  echoJoueurProgressiveIncrement: 12
+  isDecrementalMode: 0
+  decrementalStartValue: 100
+  scannerDecrementPower: 10
+  echoPassifDecrementPower: 6
+  echoJoueurDecrementPower: 15
   materialToControl: {fileID: 0}
   materialCutoffRestingValue: 0.8
   materialCutoffScannerTargetValue: 0.4
@@ -9447,13 +9519,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   blendShapeIndex: 0
   blendShapeValueTarget: 0
-  isProgressive: 0
   restingValue: 100
   lerpSpeed: 2
   returnDelay: 6
-  scannerProgressiveIncrement: 10
-  echoPassifProgressiveIncrement: 6
-  echoJoueurProgressiveIncrement: 12
+  isDecrementalMode: 0
+  decrementalStartValue: 100
+  scannerDecrementPower: 10
+  echoPassifDecrementPower: 6
+  echoJoueurDecrementPower: 15
   materialToControl: {fileID: 0}
   materialCutoffRestingValue: 0.8
   materialCutoffScannerTargetValue: 0.4
@@ -9501,13 +9574,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   blendShapeIndex: 0
   blendShapeValueTarget: 0
-  isProgressive: 0
   restingValue: 100
   lerpSpeed: 2
   returnDelay: 6
-  scannerProgressiveIncrement: 10
-  echoPassifProgressiveIncrement: 6
-  echoJoueurProgressiveIncrement: 12
+  isDecrementalMode: 0
+  decrementalStartValue: 100
+  scannerDecrementPower: 10
+  echoPassifDecrementPower: 6
+  echoJoueurDecrementPower: 15
   materialToControl: {fileID: 0}
   materialCutoffRestingValue: 1.15
   materialCutoffScannerTargetValue: 0.6
@@ -9990,13 +10064,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   blendShapeIndex: 0
   blendShapeValueTarget: 0
-  isProgressive: 0
   restingValue: 100
   lerpSpeed: 2
   returnDelay: 6
-  scannerProgressiveIncrement: 10
-  echoPassifProgressiveIncrement: 6
-  echoJoueurProgressiveIncrement: 12
+  isDecrementalMode: 0
+  decrementalStartValue: 100
+  scannerDecrementPower: 10
+  echoPassifDecrementPower: 6
+  echoJoueurDecrementPower: 15
   materialToControl: {fileID: 0}
   materialCutoffRestingValue: 1.15
   materialCutoffScannerTargetValue: 0.6
@@ -10154,13 +10229,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   blendShapeIndex: 0
   blendShapeValueTarget: 0
-  isProgressive: 0
   restingValue: 100
   lerpSpeed: 2
   returnDelay: 6
-  scannerProgressiveIncrement: 10
-  echoPassifProgressiveIncrement: 6
-  echoJoueurProgressiveIncrement: 100
+  isDecrementalMode: 1
+  decrementalStartValue: 100
+  scannerDecrementPower: 100
+  echoPassifDecrementPower: 6
+  echoJoueurDecrementPower: 15
   materialToControl: {fileID: 0}
   materialCutoffRestingValue: 1.1
   materialCutoffScannerTargetValue: 0.7
@@ -10208,13 +10284,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   blendShapeIndex: 0
   blendShapeValueTarget: 0
-  isProgressive: 0
   restingValue: 100
   lerpSpeed: 2
   returnDelay: 6
-  scannerProgressiveIncrement: 10
-  echoPassifProgressiveIncrement: 6
-  echoJoueurProgressiveIncrement: 12
+  isDecrementalMode: 0
+  decrementalStartValue: 100
+  scannerDecrementPower: 10
+  echoPassifDecrementPower: 6
+  echoJoueurDecrementPower: 15
   materialToControl: {fileID: 0}
   materialCutoffRestingValue: 1.15
   materialCutoffScannerTargetValue: 0.6
@@ -10311,13 +10388,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   blendShapeIndex: 0
   blendShapeValueTarget: 0
-  isProgressive: 0
   restingValue: 0
   lerpSpeed: 2
   returnDelay: 6
-  scannerProgressiveIncrement: 10
-  echoPassifProgressiveIncrement: 6
-  echoJoueurProgressiveIncrement: 12
+  isDecrementalMode: 0
+  decrementalStartValue: 100
+  scannerDecrementPower: 10
+  echoPassifDecrementPower: 6
+  echoJoueurDecrementPower: 15
   materialToControl: {fileID: 0}
   materialCutoffRestingValue: 0.6
   materialCutoffScannerTargetValue: 0.6
@@ -13231,13 +13309,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   blendShapeIndex: 0
   blendShapeValueTarget: 0
-  isProgressive: 0
   restingValue: 100
   lerpSpeed: 2
   returnDelay: 6
-  scannerProgressiveIncrement: 10
-  echoPassifProgressiveIncrement: 6
-  echoJoueurProgressiveIncrement: 100
+  isDecrementalMode: 1
+  decrementalStartValue: 100
+  scannerDecrementPower: 100
+  echoPassifDecrementPower: 6
+  echoJoueurDecrementPower: 15
   materialToControl: {fileID: 0}
   materialCutoffRestingValue: 1.1
   materialCutoffScannerTargetValue: 0.7
@@ -13285,13 +13364,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   blendShapeIndex: 0
   blendShapeValueTarget: 0
-  isProgressive: 0
   restingValue: 100
   lerpSpeed: 2
   returnDelay: 6
-  scannerProgressiveIncrement: 10
-  echoPassifProgressiveIncrement: 6
-  echoJoueurProgressiveIncrement: 12
+  isDecrementalMode: 0
+  decrementalStartValue: 100
+  scannerDecrementPower: 10
+  echoPassifDecrementPower: 6
+  echoJoueurDecrementPower: 15
   materialToControl: {fileID: 0}
   materialCutoffRestingValue: 0.8
   materialCutoffScannerTargetValue: 0.4
@@ -13339,13 +13419,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   blendShapeIndex: 0
   blendShapeValueTarget: 0
-  isProgressive: 0
   restingValue: 100
   lerpSpeed: 2
   returnDelay: 6
-  scannerProgressiveIncrement: 10
-  echoPassifProgressiveIncrement: 6
-  echoJoueurProgressiveIncrement: 12
+  isDecrementalMode: 0
+  decrementalStartValue: 100
+  scannerDecrementPower: 10
+  echoPassifDecrementPower: 6
+  echoJoueurDecrementPower: 15
   materialToControl: {fileID: 0}
   materialCutoffRestingValue: 0.8
   materialCutoffScannerTargetValue: 0.4
@@ -13612,13 +13693,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   blendShapeIndex: 0
   blendShapeValueTarget: 0
-  isProgressive: 0
   restingValue: 100
   lerpSpeed: 2
   returnDelay: 6
-  scannerProgressiveIncrement: 10
-  echoPassifProgressiveIncrement: 6
-  echoJoueurProgressiveIncrement: 100
+  isDecrementalMode: 1
+  decrementalStartValue: 100
+  scannerDecrementPower: 100
+  echoPassifDecrementPower: 6
+  echoJoueurDecrementPower: 15
   materialToControl: {fileID: 0}
   materialCutoffRestingValue: 1.1
   materialCutoffScannerTargetValue: 0.7
@@ -13832,13 +13914,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   blendShapeIndex: 0
   blendShapeValueTarget: 0
-  isProgressive: 0
   restingValue: 100
   lerpSpeed: 2
   returnDelay: 6
-  scannerProgressiveIncrement: 10
-  echoPassifProgressiveIncrement: 6
-  echoJoueurProgressiveIncrement: 12
+  isDecrementalMode: 0
+  decrementalStartValue: 100
+  scannerDecrementPower: 10
+  echoPassifDecrementPower: 6
+  echoJoueurDecrementPower: 15
   materialToControl: {fileID: 0}
   materialCutoffRestingValue: 0.8
   materialCutoffScannerTargetValue: 0.4
@@ -13913,13 +13996,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   blendShapeIndex: 0
   blendShapeValueTarget: 0
-  isProgressive: 0
   restingValue: 100
   lerpSpeed: 2
   returnDelay: 6
-  scannerProgressiveIncrement: 10
-  echoPassifProgressiveIncrement: 6
-  echoJoueurProgressiveIncrement: 12
+  isDecrementalMode: 0
+  decrementalStartValue: 100
+  scannerDecrementPower: 10
+  echoPassifDecrementPower: 6
+  echoJoueurDecrementPower: 15
   materialToControl: {fileID: 0}
   materialCutoffRestingValue: 1.44
   materialCutoffScannerTargetValue: 0.6
@@ -14116,13 +14200,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   blendShapeIndex: 0
   blendShapeValueTarget: 0
-  isProgressive: 0
   restingValue: 100
   lerpSpeed: 2
   returnDelay: 6
-  scannerProgressiveIncrement: 10
-  echoPassifProgressiveIncrement: 6
-  echoJoueurProgressiveIncrement: 12
+  isDecrementalMode: 0
+  decrementalStartValue: 100
+  scannerDecrementPower: 10
+  echoPassifDecrementPower: 6
+  echoJoueurDecrementPower: 15
   materialToControl: {fileID: 0}
   materialCutoffRestingValue: 1.15
   materialCutoffScannerTargetValue: 0.6
@@ -14325,13 +14410,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   blendShapeIndex: 0
   blendShapeValueTarget: 0
-  isProgressive: 0
   restingValue: 100
   lerpSpeed: 2
   returnDelay: 6
-  scannerProgressiveIncrement: 10
-  echoPassifProgressiveIncrement: 6
-  echoJoueurProgressiveIncrement: 12
+  isDecrementalMode: 0
+  decrementalStartValue: 100
+  scannerDecrementPower: 10
+  echoPassifDecrementPower: 6
+  echoJoueurDecrementPower: 15
   materialToControl: {fileID: 0}
   materialCutoffRestingValue: 1.15
   materialCutoffScannerTargetValue: 0.6
@@ -14379,13 +14465,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   blendShapeIndex: 0
   blendShapeValueTarget: 0
-  isProgressive: 0
   restingValue: 100
   lerpSpeed: 2
   returnDelay: 6
-  scannerProgressiveIncrement: 10
-  echoPassifProgressiveIncrement: 6
-  echoJoueurProgressiveIncrement: 100
+  isDecrementalMode: 1
+  decrementalStartValue: 100
+  scannerDecrementPower: 100
+  echoPassifDecrementPower: 6
+  echoJoueurDecrementPower: 15
   materialToControl: {fileID: 0}
   materialCutoffRestingValue: 1.1
   materialCutoffScannerTargetValue: 0.7
@@ -14507,13 +14594,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   blendShapeIndex: 0
   blendShapeValueTarget: 0
-  isProgressive: 0
   restingValue: 100
   lerpSpeed: 2
   returnDelay: 6
-  scannerProgressiveIncrement: 10
-  echoPassifProgressiveIncrement: 6
-  echoJoueurProgressiveIncrement: 12
+  isDecrementalMode: 0
+  decrementalStartValue: 100
+  scannerDecrementPower: 10
+  echoPassifDecrementPower: 6
+  echoJoueurDecrementPower: 15
   materialToControl: {fileID: 0}
   materialCutoffRestingValue: 0.8
   materialCutoffScannerTargetValue: 0.4
@@ -14615,13 +14703,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   blendShapeIndex: 0
   blendShapeValueTarget: 0
-  isProgressive: 0
   restingValue: 0
   lerpSpeed: 2
   returnDelay: 6
-  scannerProgressiveIncrement: 10
-  echoPassifProgressiveIncrement: 6
-  echoJoueurProgressiveIncrement: 12
+  isDecrementalMode: 0
+  decrementalStartValue: 100
+  scannerDecrementPower: 10
+  echoPassifDecrementPower: 6
+  echoJoueurDecrementPower: 15
   materialToControl: {fileID: 0}
   materialCutoffRestingValue: 0.6
   materialCutoffScannerTargetValue: 0.6
@@ -14669,13 +14758,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   blendShapeIndex: 0
   blendShapeValueTarget: 0
-  isProgressive: 0
   restingValue: 0
   lerpSpeed: 2
   returnDelay: 6
-  scannerProgressiveIncrement: 10
-  echoPassifProgressiveIncrement: 6
-  echoJoueurProgressiveIncrement: 12
+  isDecrementalMode: 0
+  decrementalStartValue: 100
+  scannerDecrementPower: 10
+  echoPassifDecrementPower: 6
+  echoJoueurDecrementPower: 15
   materialToControl: {fileID: 0}
   materialCutoffRestingValue: 0.6
   materialCutoffScannerTargetValue: 0.6
@@ -14833,13 +14923,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   blendShapeIndex: 0
   blendShapeValueTarget: 0
-  isProgressive: 0
   restingValue: 100
   lerpSpeed: 2
   returnDelay: 6
-  scannerProgressiveIncrement: 10
-  echoPassifProgressiveIncrement: 6
-  echoJoueurProgressiveIncrement: 12
+  isDecrementalMode: 0
+  decrementalStartValue: 100
+  scannerDecrementPower: 10
+  echoPassifDecrementPower: 6
+  echoJoueurDecrementPower: 15
   materialToControl: {fileID: 0}
   materialCutoffRestingValue: 1.15
   materialCutoffScannerTargetValue: 0.6
@@ -15877,13 +15968,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   blendShapeIndex: 0
   blendShapeValueTarget: 0
-  isProgressive: 0
   restingValue: 100
   lerpSpeed: 2
   returnDelay: 6
-  scannerProgressiveIncrement: 10
-  echoPassifProgressiveIncrement: 6
-  echoJoueurProgressiveIncrement: 12
+  isDecrementalMode: 0
+  decrementalStartValue: 100
+  scannerDecrementPower: 10
+  echoPassifDecrementPower: 6
+  echoJoueurDecrementPower: 15
   materialToControl: {fileID: 0}
   materialCutoffRestingValue: 0.8
   materialCutoffScannerTargetValue: 0.4
@@ -16186,13 +16278,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   blendShapeIndex: 0
   blendShapeValueTarget: 0
-  isProgressive: 0
   restingValue: 100
   lerpSpeed: 2
   returnDelay: 6
-  scannerProgressiveIncrement: 10
-  echoPassifProgressiveIncrement: 6
-  echoJoueurProgressiveIncrement: 12
+  isDecrementalMode: 0
+  decrementalStartValue: 100
+  scannerDecrementPower: 10
+  echoPassifDecrementPower: 6
+  echoJoueurDecrementPower: 15
   materialToControl: {fileID: 0}
   materialCutoffRestingValue: 0.8
   materialCutoffScannerTargetValue: 0.4
@@ -16267,13 +16360,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   blendShapeIndex: 0
   blendShapeValueTarget: 0
-  isProgressive: 0
   restingValue: 100
   lerpSpeed: 2
   returnDelay: 6
-  scannerProgressiveIncrement: 10
-  echoPassifProgressiveIncrement: 6
-  echoJoueurProgressiveIncrement: 12
+  isDecrementalMode: 0
+  decrementalStartValue: 100
+  scannerDecrementPower: 10
+  echoPassifDecrementPower: 6
+  echoJoueurDecrementPower: 15
   materialToControl: {fileID: 0}
   materialCutoffRestingValue: 0.8
   materialCutoffScannerTargetValue: 0.4
@@ -16365,13 +16459,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   blendShapeIndex: 0
   blendShapeValueTarget: 0
-  isProgressive: 0
   restingValue: 100
   lerpSpeed: 2
   returnDelay: 6
-  scannerProgressiveIncrement: 10
-  echoPassifProgressiveIncrement: 6
-  echoJoueurProgressiveIncrement: 12
+  isDecrementalMode: 0
+  decrementalStartValue: 100
+  scannerDecrementPower: 10
+  echoPassifDecrementPower: 6
+  echoJoueurDecrementPower: 15
   materialToControl: {fileID: 0}
   materialCutoffRestingValue: 1.15
   materialCutoffScannerTargetValue: 0.6
@@ -16935,13 +17030,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   blendShapeIndex: 0
   blendShapeValueTarget: 0
-  isProgressive: 0
   restingValue: 100
   lerpSpeed: 2
   returnDelay: 6
-  scannerProgressiveIncrement: 10
-  echoPassifProgressiveIncrement: 6
-  echoJoueurProgressiveIncrement: 12
+  isDecrementalMode: 0
+  decrementalStartValue: 100
+  scannerDecrementPower: 10
+  echoPassifDecrementPower: 6
+  echoJoueurDecrementPower: 15
   materialToControl: {fileID: 0}
   materialCutoffRestingValue: 1.15
   materialCutoffScannerTargetValue: 0.6
@@ -17019,13 +17115,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   blendShapeIndex: 0
   blendShapeValueTarget: 0
-  isProgressive: 0
   restingValue: 100
   lerpSpeed: 2
   returnDelay: 6
-  scannerProgressiveIncrement: 10
-  echoPassifProgressiveIncrement: 6
-  echoJoueurProgressiveIncrement: 12
+  isDecrementalMode: 0
+  decrementalStartValue: 100
+  scannerDecrementPower: 10
+  echoPassifDecrementPower: 6
+  echoJoueurDecrementPower: 15
   materialToControl: {fileID: 0}
   materialCutoffRestingValue: 0.5
   materialCutoffScannerTargetValue: 0.3
@@ -17233,13 +17330,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   blendShapeIndex: 0
   blendShapeValueTarget: 0
-  isProgressive: 0
   restingValue: 100
   lerpSpeed: 2
   returnDelay: 6
-  scannerProgressiveIncrement: 10
-  echoPassifProgressiveIncrement: 6
-  echoJoueurProgressiveIncrement: 100
+  isDecrementalMode: 1
+  decrementalStartValue: 100
+  scannerDecrementPower: 100
+  echoPassifDecrementPower: 6
+  echoJoueurDecrementPower: 15
   materialToControl: {fileID: 0}
   materialCutoffRestingValue: 1.1
   materialCutoffScannerTargetValue: 0.7
@@ -17314,13 +17412,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   blendShapeIndex: 0
   blendShapeValueTarget: 0
-  isProgressive: 0
   restingValue: 100
   lerpSpeed: 2
   returnDelay: 6
-  scannerProgressiveIncrement: 10
-  echoPassifProgressiveIncrement: 6
-  echoJoueurProgressiveIncrement: 12
+  isDecrementalMode: 0
+  decrementalStartValue: 100
+  scannerDecrementPower: 10
+  echoPassifDecrementPower: 6
+  echoJoueurDecrementPower: 15
   materialToControl: {fileID: 0}
   materialCutoffRestingValue: 0.8
   materialCutoffScannerTargetValue: 0.4
@@ -17395,13 +17494,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   blendShapeIndex: 0
   blendShapeValueTarget: 0
-  isProgressive: 0
   restingValue: 100
   lerpSpeed: 2
   returnDelay: 6
-  scannerProgressiveIncrement: 10
-  echoPassifProgressiveIncrement: 6
-  echoJoueurProgressiveIncrement: 100
+  isDecrementalMode: 1
+  decrementalStartValue: 100
+  scannerDecrementPower: 100
+  echoPassifDecrementPower: 6
+  echoJoueurDecrementPower: 15
   materialToControl: {fileID: 0}
   materialCutoffRestingValue: 1.1
   materialCutoffScannerTargetValue: 0.7
@@ -17532,13 +17632,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   blendShapeIndex: 0
   blendShapeValueTarget: 0
-  isProgressive: 0
   restingValue: 100
   lerpSpeed: 2
   returnDelay: 6
-  scannerProgressiveIncrement: 10
-  echoPassifProgressiveIncrement: 6
-  echoJoueurProgressiveIncrement: 12
+  isDecrementalMode: 0
+  decrementalStartValue: 100
+  scannerDecrementPower: 10
+  echoPassifDecrementPower: 6
+  echoJoueurDecrementPower: 15
   materialToControl: {fileID: 0}
   materialCutoffRestingValue: 0.8
   materialCutoffScannerTargetValue: 0.4
@@ -17586,13 +17687,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   blendShapeIndex: 0
   blendShapeValueTarget: 0
-  isProgressive: 0
   restingValue: 100
   lerpSpeed: 2
   returnDelay: 6
-  scannerProgressiveIncrement: 10
-  echoPassifProgressiveIncrement: 6
-  echoJoueurProgressiveIncrement: 100
+  isDecrementalMode: 1
+  decrementalStartValue: 100
+  scannerDecrementPower: 100
+  echoPassifDecrementPower: 6
+  echoJoueurDecrementPower: 15
   materialToControl: {fileID: 0}
   materialCutoffRestingValue: 1.1
   materialCutoffScannerTargetValue: 0.7
@@ -17882,13 +17984,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   blendShapeIndex: 0
   blendShapeValueTarget: 0
-  isProgressive: 0
   restingValue: 0
   lerpSpeed: 2
   returnDelay: 6
-  scannerProgressiveIncrement: 10
-  echoPassifProgressiveIncrement: 6
-  echoJoueurProgressiveIncrement: 12
+  isDecrementalMode: 0
+  decrementalStartValue: 100
+  scannerDecrementPower: 10
+  echoPassifDecrementPower: 6
+  echoJoueurDecrementPower: 15
   materialToControl: {fileID: 0}
   materialCutoffRestingValue: 0.6
   materialCutoffScannerTargetValue: 0.6
@@ -18019,13 +18122,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   blendShapeIndex: 0
   blendShapeValueTarget: 0
-  isProgressive: 0
   restingValue: 100
   lerpSpeed: 2
   returnDelay: 6
-  scannerProgressiveIncrement: 10
-  echoPassifProgressiveIncrement: 6
-  echoJoueurProgressiveIncrement: 12
+  isDecrementalMode: 0
+  decrementalStartValue: 100
+  scannerDecrementPower: 10
+  echoPassifDecrementPower: 6
+  echoJoueurDecrementPower: 15
   materialToControl: {fileID: 0}
   materialCutoffRestingValue: 1.15
   materialCutoffScannerTargetValue: 0.6
@@ -18051,13 +18155,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   blendShapeIndex: 0
   blendShapeValueTarget: 0
-  isProgressive: 0
   restingValue: 100
   lerpSpeed: 2
   returnDelay: 6
-  scannerProgressiveIncrement: 10
-  echoPassifProgressiveIncrement: 6
-  echoJoueurProgressiveIncrement: 100
+  isDecrementalMode: 1
+  decrementalStartValue: 100
+  scannerDecrementPower: 100
+  echoPassifDecrementPower: 6
+  echoJoueurDecrementPower: 15
   materialToControl: {fileID: 0}
   materialCutoffRestingValue: 1.1
   materialCutoffScannerTargetValue: 0.7
@@ -18159,13 +18264,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   blendShapeIndex: 0
   blendShapeValueTarget: 0
-  isProgressive: 0
   restingValue: 100
   lerpSpeed: 2
   returnDelay: 6
-  scannerProgressiveIncrement: 10
-  echoPassifProgressiveIncrement: 6
-  echoJoueurProgressiveIncrement: 12
+  isDecrementalMode: 0
+  decrementalStartValue: 100
+  scannerDecrementPower: 10
+  echoPassifDecrementPower: 6
+  echoJoueurDecrementPower: 15
   materialToControl: {fileID: 0}
   materialCutoffRestingValue: 1.15
   materialCutoffScannerTargetValue: 0.6
@@ -18481,13 +18587,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   blendShapeIndex: 0
   blendShapeValueTarget: 0
-  isProgressive: 0
   restingValue: 100
   lerpSpeed: 2
   returnDelay: 6
-  scannerProgressiveIncrement: 10
-  echoPassifProgressiveIncrement: 6
-  echoJoueurProgressiveIncrement: 12
+  isDecrementalMode: 0
+  decrementalStartValue: 100
+  scannerDecrementPower: 10
+  echoPassifDecrementPower: 6
+  echoJoueurDecrementPower: 15
   materialToControl: {fileID: 0}
   materialCutoffRestingValue: 0.5
   materialCutoffScannerTargetValue: 0.3
@@ -18690,13 +18797,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   blendShapeIndex: 0
   blendShapeValueTarget: 0
-  isProgressive: 0
   restingValue: 100
   lerpSpeed: 2
   returnDelay: 6
-  scannerProgressiveIncrement: 10
-  echoPassifProgressiveIncrement: 6
-  echoJoueurProgressiveIncrement: 12
+  isDecrementalMode: 0
+  decrementalStartValue: 100
+  scannerDecrementPower: 10
+  echoPassifDecrementPower: 6
+  echoJoueurDecrementPower: 15
   materialToControl: {fileID: 0}
   materialCutoffRestingValue: 1.15
   materialCutoffScannerTargetValue: 0.6
@@ -18942,13 +19050,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   blendShapeIndex: 0
   blendShapeValueTarget: 0
-  isProgressive: 0
   restingValue: 100
   lerpSpeed: 2
   returnDelay: 6
-  scannerProgressiveIncrement: 10
-  echoPassifProgressiveIncrement: 6
-  echoJoueurProgressiveIncrement: 12
+  isDecrementalMode: 0
+  decrementalStartValue: 100
+  scannerDecrementPower: 10
+  echoPassifDecrementPower: 6
+  echoJoueurDecrementPower: 15
   materialToControl: {fileID: 0}
   materialCutoffRestingValue: 1.44
   materialCutoffScannerTargetValue: 0.6
@@ -19030,13 +19139,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   blendShapeIndex: 0
   blendShapeValueTarget: 0
-  isProgressive: 0
   restingValue: 100
   lerpSpeed: 2
   returnDelay: 6
-  scannerProgressiveIncrement: 10
-  echoPassifProgressiveIncrement: 6
-  echoJoueurProgressiveIncrement: 12
+  isDecrementalMode: 0
+  decrementalStartValue: 100
+  scannerDecrementPower: 10
+  echoPassifDecrementPower: 6
+  echoJoueurDecrementPower: 15
   materialToControl: {fileID: 0}
   materialCutoffRestingValue: 0.8
   materialCutoffScannerTargetValue: 0.4
@@ -19685,13 +19795,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   blendShapeIndex: 0
   blendShapeValueTarget: 0
-  isProgressive: 0
   restingValue: 100
   lerpSpeed: 2
   returnDelay: 6
-  scannerProgressiveIncrement: 10
-  echoPassifProgressiveIncrement: 6
-  echoJoueurProgressiveIncrement: 12
+  isDecrementalMode: 0
+  decrementalStartValue: 100
+  scannerDecrementPower: 10
+  echoPassifDecrementPower: 6
+  echoJoueurDecrementPower: 15
   materialToControl: {fileID: 0}
   materialCutoffRestingValue: 0.8
   materialCutoffScannerTargetValue: 0.4
@@ -19943,13 +20054,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   blendShapeIndex: 0
   blendShapeValueTarget: 0
-  isProgressive: 0
   restingValue: 100
   lerpSpeed: 2
   returnDelay: 6
-  scannerProgressiveIncrement: 10
-  echoPassifProgressiveIncrement: 6
-  echoJoueurProgressiveIncrement: 100
+  isDecrementalMode: 1
+  decrementalStartValue: 100
+  scannerDecrementPower: 100
+  echoPassifDecrementPower: 6
+  echoJoueurDecrementPower: 15
   materialToControl: {fileID: 0}
   materialCutoffRestingValue: 1.1
   materialCutoffScannerTargetValue: 0.7
@@ -19997,13 +20109,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   blendShapeIndex: 0
   blendShapeValueTarget: 0
-  isProgressive: 0
   restingValue: 100
   lerpSpeed: 2
   returnDelay: 6
-  scannerProgressiveIncrement: 10
-  echoPassifProgressiveIncrement: 6
-  echoJoueurProgressiveIncrement: 12
+  isDecrementalMode: 0
+  decrementalStartValue: 100
+  scannerDecrementPower: 10
+  echoPassifDecrementPower: 6
+  echoJoueurDecrementPower: 15
   materialToControl: {fileID: 0}
   materialCutoffRestingValue: 0.8
   materialCutoffScannerTargetValue: 0.4
@@ -20269,13 +20382,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   blendShapeIndex: 0
   blendShapeValueTarget: 0
-  isProgressive: 0
   restingValue: 100
   lerpSpeed: 2
   returnDelay: 6
-  scannerProgressiveIncrement: 10
-  echoPassifProgressiveIncrement: 6
-  echoJoueurProgressiveIncrement: 12
+  isDecrementalMode: 0
+  decrementalStartValue: 100
+  scannerDecrementPower: 10
+  echoPassifDecrementPower: 6
+  echoJoueurDecrementPower: 15
   materialToControl: {fileID: 0}
   materialCutoffRestingValue: 1.15
   materialCutoffScannerTargetValue: 0.6
@@ -20323,13 +20437,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   blendShapeIndex: 0
   blendShapeValueTarget: 0
-  isProgressive: 0
   restingValue: 100
   lerpSpeed: 2
   returnDelay: 6
-  scannerProgressiveIncrement: 10
-  echoPassifProgressiveIncrement: 6
-  echoJoueurProgressiveIncrement: 12
+  isDecrementalMode: 0
+  decrementalStartValue: 100
+  scannerDecrementPower: 10
+  echoPassifDecrementPower: 6
+  echoJoueurDecrementPower: 15
   materialToControl: {fileID: 0}
   materialCutoffRestingValue: 0.8
   materialCutoffScannerTargetValue: 0.4
@@ -20377,13 +20492,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   blendShapeIndex: 0
   blendShapeValueTarget: 0
-  isProgressive: 0
   restingValue: 100
   lerpSpeed: 2
   returnDelay: 6
-  scannerProgressiveIncrement: 10
-  echoPassifProgressiveIncrement: 6
-  echoJoueurProgressiveIncrement: 12
+  isDecrementalMode: 0
+  decrementalStartValue: 100
+  scannerDecrementPower: 10
+  echoPassifDecrementPower: 6
+  echoJoueurDecrementPower: 15
   materialToControl: {fileID: 0}
   materialCutoffRestingValue: 0.8
   materialCutoffScannerTargetValue: 0.4
@@ -20541,13 +20657,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   blendShapeIndex: 0
   blendShapeValueTarget: 0
-  isProgressive: 0
   restingValue: 100
   lerpSpeed: 2
   returnDelay: 6
-  scannerProgressiveIncrement: 10
-  echoPassifProgressiveIncrement: 6
-  echoJoueurProgressiveIncrement: 12
+  isDecrementalMode: 0
+  decrementalStartValue: 100
+  scannerDecrementPower: 10
+  echoPassifDecrementPower: 6
+  echoJoueurDecrementPower: 15
   materialToControl: {fileID: 0}
   materialCutoffRestingValue: 1.44
   materialCutoffScannerTargetValue: 0.6
@@ -20831,13 +20948,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   blendShapeIndex: 0
   blendShapeValueTarget: 0
-  isProgressive: 0
   restingValue: 100
   lerpSpeed: 2
   returnDelay: 6
-  scannerProgressiveIncrement: 10
-  echoPassifProgressiveIncrement: 6
-  echoJoueurProgressiveIncrement: 12
+  isDecrementalMode: 0
+  decrementalStartValue: 100
+  scannerDecrementPower: 10
+  echoPassifDecrementPower: 6
+  echoJoueurDecrementPower: 15
   materialToControl: {fileID: 0}
   materialCutoffRestingValue: 1.15
   materialCutoffScannerTargetValue: 0.6
@@ -20885,13 +21003,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   blendShapeIndex: 0
   blendShapeValueTarget: 0
-  isProgressive: 0
   restingValue: 100
   lerpSpeed: 2
   returnDelay: 6
-  scannerProgressiveIncrement: 10
-  echoPassifProgressiveIncrement: 6
-  echoJoueurProgressiveIncrement: 12
+  isDecrementalMode: 0
+  decrementalStartValue: 100
+  scannerDecrementPower: 10
+  echoPassifDecrementPower: 6
+  echoJoueurDecrementPower: 15
   materialToControl: {fileID: 0}
   materialCutoffRestingValue: 0.8
   materialCutoffScannerTargetValue: 0.4
@@ -21155,13 +21274,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   blendShapeIndex: 0
   blendShapeValueTarget: 0
-  isProgressive: 0
   restingValue: 100
   lerpSpeed: 2
   returnDelay: 6
-  scannerProgressiveIncrement: 10
-  echoPassifProgressiveIncrement: 6
-  echoJoueurProgressiveIncrement: 12
+  isDecrementalMode: 0
+  decrementalStartValue: 100
+  scannerDecrementPower: 10
+  echoPassifDecrementPower: 6
+  echoJoueurDecrementPower: 15
   materialToControl: {fileID: 0}
   materialCutoffRestingValue: 1.15
   materialCutoffScannerTargetValue: 0.6
@@ -21209,13 +21329,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   blendShapeIndex: 0
   blendShapeValueTarget: 0
-  isProgressive: 0
   restingValue: 100
   lerpSpeed: 2
   returnDelay: 6
-  scannerProgressiveIncrement: 10
-  echoPassifProgressiveIncrement: 6
-  echoJoueurProgressiveIncrement: 12
+  isDecrementalMode: 0
+  decrementalStartValue: 100
+  scannerDecrementPower: 10
+  echoPassifDecrementPower: 6
+  echoJoueurDecrementPower: 15
   materialToControl: {fileID: 0}
   materialCutoffRestingValue: 1.15
   materialCutoffScannerTargetValue: 0.6
@@ -21268,13 +21389,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   blendShapeIndex: 0
   blendShapeValueTarget: 0
-  isProgressive: 0
   restingValue: 100
   lerpSpeed: 2
   returnDelay: 6
-  scannerProgressiveIncrement: 10
-  echoPassifProgressiveIncrement: 6
-  echoJoueurProgressiveIncrement: 100
+  isDecrementalMode: 1
+  decrementalStartValue: 100
+  scannerDecrementPower: 100
+  echoPassifDecrementPower: 6
+  echoJoueurDecrementPower: 15
   materialToControl: {fileID: 0}
   materialCutoffRestingValue: 1.1
   materialCutoffScannerTargetValue: 0.7
@@ -21654,13 +21776,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   blendShapeIndex: 0
   blendShapeValueTarget: 0
-  isProgressive: 0
   restingValue: 100
   lerpSpeed: 2
   returnDelay: 6
-  scannerProgressiveIncrement: 10
-  echoPassifProgressiveIncrement: 6
-  echoJoueurProgressiveIncrement: 12
+  isDecrementalMode: 0
+  decrementalStartValue: 100
+  scannerDecrementPower: 10
+  echoPassifDecrementPower: 6
+  echoJoueurDecrementPower: 15
   materialToControl: {fileID: 0}
   materialCutoffRestingValue: 0.5
   materialCutoffScannerTargetValue: 0.3
@@ -22131,13 +22254,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   blendShapeIndex: 0
   blendShapeValueTarget: 0
-  isProgressive: 0
   restingValue: 100
   lerpSpeed: 2
   returnDelay: 6
-  scannerProgressiveIncrement: 10
-  echoPassifProgressiveIncrement: 6
-  echoJoueurProgressiveIncrement: 100
+  isDecrementalMode: 1
+  decrementalStartValue: 100
+  scannerDecrementPower: 100
+  echoPassifDecrementPower: 6
+  echoJoueurDecrementPower: 15
   materialToControl: {fileID: 0}
   materialCutoffRestingValue: 1.1
   materialCutoffScannerTargetValue: 0.7
@@ -22207,13 +22331,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   blendShapeIndex: 0
   blendShapeValueTarget: 0
-  isProgressive: 0
   restingValue: 0
   lerpSpeed: 5
   returnDelay: 3
-  scannerProgressiveIncrement: 10
-  echoPassifProgressiveIncrement: 6
-  echoJoueurProgressiveIncrement: 12
+  isDecrementalMode: 0
+  decrementalStartValue: 100
+  scannerDecrementPower: 10
+  echoPassifDecrementPower: 6
+  echoJoueurDecrementPower: 15
   materialToControl: {fileID: 0}
   materialCutoffRestingValue: 0.6
   materialCutoffScannerTargetValue: 0.6
@@ -22239,13 +22364,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   blendShapeIndex: 0
   blendShapeValueTarget: 0
-  isProgressive: 0
   restingValue: 100
   lerpSpeed: 2
   returnDelay: 6
-  scannerProgressiveIncrement: 10
-  echoPassifProgressiveIncrement: 6
-  echoJoueurProgressiveIncrement: 12
+  isDecrementalMode: 0
+  decrementalStartValue: 100
+  scannerDecrementPower: 10
+  echoPassifDecrementPower: 6
+  echoJoueurDecrementPower: 15
   materialToControl: {fileID: 0}
   materialCutoffRestingValue: 0.8
   materialCutoffScannerTargetValue: 0.4
@@ -22320,13 +22446,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   blendShapeIndex: 0
   blendShapeValueTarget: 0
-  isProgressive: 0
   restingValue: 100
   lerpSpeed: 2
   returnDelay: 6
-  scannerProgressiveIncrement: 10
-  echoPassifProgressiveIncrement: 6
-  echoJoueurProgressiveIncrement: 100
+  isDecrementalMode: 1
+  decrementalStartValue: 100
+  scannerDecrementPower: 100
+  echoPassifDecrementPower: 6
+  echoJoueurDecrementPower: 15
   materialToControl: {fileID: 0}
   materialCutoffRestingValue: 1.1
   materialCutoffScannerTargetValue: 0.7
@@ -22374,13 +22501,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   blendShapeIndex: 0
   blendShapeValueTarget: 0
-  isProgressive: 0
   restingValue: 100
   lerpSpeed: 2
   returnDelay: 6
-  scannerProgressiveIncrement: 10
-  echoPassifProgressiveIncrement: 6
-  echoJoueurProgressiveIncrement: 12
+  isDecrementalMode: 0
+  decrementalStartValue: 100
+  scannerDecrementPower: 10
+  echoPassifDecrementPower: 6
+  echoJoueurDecrementPower: 15
   materialToControl: {fileID: 0}
   materialCutoffRestingValue: 0.8
   materialCutoffScannerTargetValue: 0.4
@@ -22749,13 +22877,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   blendShapeIndex: 0
   blendShapeValueTarget: 0
-  isProgressive: 0
   restingValue: 100
   lerpSpeed: 2
   returnDelay: 6
-  scannerProgressiveIncrement: 10
-  echoPassifProgressiveIncrement: 6
-  echoJoueurProgressiveIncrement: 12
+  isDecrementalMode: 0
+  decrementalStartValue: 100
+  scannerDecrementPower: 10
+  echoPassifDecrementPower: 6
+  echoJoueurDecrementPower: 15
   materialToControl: {fileID: 0}
   materialCutoffRestingValue: 0.8
   materialCutoffScannerTargetValue: 0.4
@@ -22803,13 +22932,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   blendShapeIndex: 0
   blendShapeValueTarget: 0
-  isProgressive: 0
   restingValue: 100
   lerpSpeed: 2
   returnDelay: 6
-  scannerProgressiveIncrement: 10
-  echoPassifProgressiveIncrement: 6
-  echoJoueurProgressiveIncrement: 12
+  isDecrementalMode: 0
+  decrementalStartValue: 100
+  scannerDecrementPower: 10
+  echoPassifDecrementPower: 6
+  echoJoueurDecrementPower: 15
   materialToControl: {fileID: 0}
   materialCutoffRestingValue: 1.15
   materialCutoffScannerTargetValue: 0.6
@@ -22862,13 +22992,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   blendShapeIndex: 0
   blendShapeValueTarget: 0
-  isProgressive: 0
   restingValue: 100
   lerpSpeed: 2
   returnDelay: 6
-  scannerProgressiveIncrement: 10
-  echoPassifProgressiveIncrement: 6
-  echoJoueurProgressiveIncrement: 12
+  isDecrementalMode: 0
+  decrementalStartValue: 100
+  scannerDecrementPower: 10
+  echoPassifDecrementPower: 6
+  echoJoueurDecrementPower: 15
   materialToControl: {fileID: 0}
   materialCutoffRestingValue: 0.8
   materialCutoffScannerTargetValue: 0.4
@@ -22916,13 +23047,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   blendShapeIndex: 0
   blendShapeValueTarget: 0
-  isProgressive: 0
   restingValue: 100
   lerpSpeed: 2
   returnDelay: 6
-  scannerProgressiveIncrement: 10
-  echoPassifProgressiveIncrement: 6
-  echoJoueurProgressiveIncrement: 12
+  isDecrementalMode: 0
+  decrementalStartValue: 100
+  scannerDecrementPower: 10
+  echoPassifDecrementPower: 6
+  echoJoueurDecrementPower: 15
   materialToControl: {fileID: 0}
   materialCutoffRestingValue: 1.15
   materialCutoffScannerTargetValue: 0.6
@@ -22970,13 +23102,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   blendShapeIndex: 0
   blendShapeValueTarget: 0
-  isProgressive: 0
   restingValue: 100
   lerpSpeed: 2
   returnDelay: 6
-  scannerProgressiveIncrement: 10
-  echoPassifProgressiveIncrement: 6
-  echoJoueurProgressiveIncrement: 12
+  isDecrementalMode: 0
+  decrementalStartValue: 100
+  scannerDecrementPower: 10
+  echoPassifDecrementPower: 6
+  echoJoueurDecrementPower: 15
   materialToControl: {fileID: 0}
   materialCutoffRestingValue: 0.8
   materialCutoffScannerTargetValue: 0.4
@@ -23046,13 +23179,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   blendShapeIndex: 0
   blendShapeValueTarget: 100
-  isProgressive: 0
   restingValue: 0
   lerpSpeed: 5
   returnDelay: 3
-  scannerProgressiveIncrement: 10
-  echoPassifProgressiveIncrement: 6
-  echoJoueurProgressiveIncrement: 12
+  isDecrementalMode: 0
+  decrementalStartValue: 100
+  scannerDecrementPower: 10
+  echoPassifDecrementPower: 6
+  echoJoueurDecrementPower: 15
   materialToControl: {fileID: 0}
   materialCutoffRestingValue: 0.8
   materialCutoffScannerTargetValue: 0.4
@@ -23073,13 +23207,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   blendShapeIndex: 0
   blendShapeValueTarget: 0
-  isProgressive: 0
   restingValue: 100
   lerpSpeed: 2
   returnDelay: 6
-  scannerProgressiveIncrement: 10
-  echoPassifProgressiveIncrement: 6
-  echoJoueurProgressiveIncrement: 12
+  isDecrementalMode: 0
+  decrementalStartValue: 100
+  scannerDecrementPower: 10
+  echoPassifDecrementPower: 6
+  echoJoueurDecrementPower: 15
   materialToControl: {fileID: 0}
   materialCutoffRestingValue: 1.15
   materialCutoffScannerTargetValue: 0.6
@@ -23105,13 +23240,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   blendShapeIndex: 0
   blendShapeValueTarget: 0
-  isProgressive: 0
   restingValue: 100
   lerpSpeed: 2
   returnDelay: 6
-  scannerProgressiveIncrement: 10
-  echoPassifProgressiveIncrement: 6
-  echoJoueurProgressiveIncrement: 100
+  isDecrementalMode: 1
+  decrementalStartValue: 100
+  scannerDecrementPower: 100
+  echoPassifDecrementPower: 6
+  echoJoueurDecrementPower: 15
   materialToControl: {fileID: 0}
   materialCutoffRestingValue: 1.1
   materialCutoffScannerTargetValue: 0.7
@@ -23181,13 +23317,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   blendShapeIndex: 0
   blendShapeValueTarget: 0
-  isProgressive: 0
   restingValue: 100
   lerpSpeed: 2
   returnDelay: 6
-  scannerProgressiveIncrement: 10
-  echoPassifProgressiveIncrement: 6
-  echoJoueurProgressiveIncrement: 12
+  isDecrementalMode: 0
+  decrementalStartValue: 100
+  scannerDecrementPower: 10
+  echoPassifDecrementPower: 6
+  echoJoueurDecrementPower: 15
   materialToControl: {fileID: 0}
   materialCutoffRestingValue: 1.15
   materialCutoffScannerTargetValue: 0.6
@@ -23284,13 +23421,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   blendShapeIndex: 0
   blendShapeValueTarget: 0
-  isProgressive: 0
   restingValue: 100
   lerpSpeed: 2
   returnDelay: 6
-  scannerProgressiveIncrement: 10
-  echoPassifProgressiveIncrement: 6
-  echoJoueurProgressiveIncrement: 12
+  isDecrementalMode: 0
+  decrementalStartValue: 100
+  scannerDecrementPower: 10
+  echoPassifDecrementPower: 6
+  echoJoueurDecrementPower: 15
   materialToControl: {fileID: 0}
   materialCutoffRestingValue: 1.15
   materialCutoffScannerTargetValue: 0.6
@@ -23613,13 +23751,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   blendShapeIndex: 0
   blendShapeValueTarget: 100
-  isProgressive: 0
   restingValue: 0
   lerpSpeed: 5
   returnDelay: 3
-  scannerProgressiveIncrement: 10
-  echoPassifProgressiveIncrement: 6
-  echoJoueurProgressiveIncrement: 12
+  isDecrementalMode: 0
+  decrementalStartValue: 100
+  scannerDecrementPower: 10
+  echoPassifDecrementPower: 6
+  echoJoueurDecrementPower: 15
   materialToControl: {fileID: 0}
   materialCutoffRestingValue: 0.8
   materialCutoffScannerTargetValue: 0.4
@@ -23640,13 +23779,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   blendShapeIndex: 0
   blendShapeValueTarget: 0
-  isProgressive: 0
   restingValue: 100
   lerpSpeed: 2
   returnDelay: 6
-  scannerProgressiveIncrement: 10
-  echoPassifProgressiveIncrement: 6
-  echoJoueurProgressiveIncrement: 12
+  isDecrementalMode: 0
+  decrementalStartValue: 100
+  scannerDecrementPower: 10
+  echoPassifDecrementPower: 6
+  echoJoueurDecrementPower: 15
   materialToControl: {fileID: 0}
   materialCutoffRestingValue: 1.15
   materialCutoffScannerTargetValue: 0.6
@@ -23760,13 +23900,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   blendShapeIndex: 0
   blendShapeValueTarget: 0
-  isProgressive: 0
   restingValue: 100
   lerpSpeed: 2
   returnDelay: 6
-  scannerProgressiveIncrement: 10
-  echoPassifProgressiveIncrement: 6
-  echoJoueurProgressiveIncrement: 12
+  isDecrementalMode: 0
+  decrementalStartValue: 100
+  scannerDecrementPower: 10
+  echoPassifDecrementPower: 6
+  echoJoueurDecrementPower: 15
   materialToControl: {fileID: 0}
   materialCutoffRestingValue: 1.15
   materialCutoffScannerTargetValue: 0.6
@@ -23792,13 +23933,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   blendShapeIndex: 0
   blendShapeValueTarget: 0
-  isProgressive: 0
   restingValue: 100
   lerpSpeed: 2
   returnDelay: 6
-  scannerProgressiveIncrement: 10
-  echoPassifProgressiveIncrement: 6
-  echoJoueurProgressiveIncrement: 12
+  isDecrementalMode: 0
+  decrementalStartValue: 100
+  scannerDecrementPower: 10
+  echoPassifDecrementPower: 6
+  echoJoueurDecrementPower: 15
   materialToControl: {fileID: 0}
   materialCutoffRestingValue: 0.8
   materialCutoffScannerTargetValue: 0.4
@@ -23846,13 +23988,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   blendShapeIndex: 0
   blendShapeValueTarget: 0
-  isProgressive: 0
   restingValue: 100
   lerpSpeed: 2
   returnDelay: 6
-  scannerProgressiveIncrement: 10
-  echoPassifProgressiveIncrement: 6
-  echoJoueurProgressiveIncrement: 12
+  isDecrementalMode: 0
+  decrementalStartValue: 100
+  scannerDecrementPower: 10
+  echoPassifDecrementPower: 6
+  echoJoueurDecrementPower: 15
   materialToControl: {fileID: 0}
   materialCutoffRestingValue: 1.15
   materialCutoffScannerTargetValue: 0.6
@@ -24160,13 +24303,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   blendShapeIndex: 0
   blendShapeValueTarget: 0
-  isProgressive: 0
   restingValue: 100
   lerpSpeed: 2
   returnDelay: 6
-  scannerProgressiveIncrement: 10
-  echoPassifProgressiveIncrement: 6
-  echoJoueurProgressiveIncrement: 12
+  isDecrementalMode: 0
+  decrementalStartValue: 100
+  scannerDecrementPower: 10
+  echoPassifDecrementPower: 6
+  echoJoueurDecrementPower: 15
   materialToControl: {fileID: 0}
   materialCutoffRestingValue: 0.8
   materialCutoffScannerTargetValue: 0.4
@@ -24252,13 +24396,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   blendShapeIndex: 0
   blendShapeValueTarget: 0
-  isProgressive: 0
   restingValue: 100
   lerpSpeed: 2
   returnDelay: 6
-  scannerProgressiveIncrement: 10
-  echoPassifProgressiveIncrement: 6
-  echoJoueurProgressiveIncrement: 12
+  isDecrementalMode: 0
+  decrementalStartValue: 100
+  scannerDecrementPower: 10
+  echoPassifDecrementPower: 6
+  echoJoueurDecrementPower: 15
   materialToControl: {fileID: 0}
   materialCutoffRestingValue: 0.8
   materialCutoffScannerTargetValue: 0.4
@@ -24588,13 +24733,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   blendShapeIndex: 0
   blendShapeValueTarget: 0
-  isProgressive: 0
   restingValue: 100
   lerpSpeed: 2
   returnDelay: 6
-  scannerProgressiveIncrement: 10
-  echoPassifProgressiveIncrement: 6
-  echoJoueurProgressiveIncrement: 100
+  isDecrementalMode: 1
+  decrementalStartValue: 100
+  scannerDecrementPower: 100
+  echoPassifDecrementPower: 6
+  echoJoueurDecrementPower: 15
   materialToControl: {fileID: 0}
   materialCutoffRestingValue: 1.1
   materialCutoffScannerTargetValue: 0.7
@@ -24819,13 +24965,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   blendShapeIndex: 0
   blendShapeValueTarget: 0
-  isProgressive: 0
   restingValue: 100
   lerpSpeed: 2
   returnDelay: 6
-  scannerProgressiveIncrement: 10
-  echoPassifProgressiveIncrement: 6
-  echoJoueurProgressiveIncrement: 12
+  isDecrementalMode: 0
+  decrementalStartValue: 100
+  scannerDecrementPower: 10
+  echoPassifDecrementPower: 6
+  echoJoueurDecrementPower: 15
   materialToControl: {fileID: 0}
   materialCutoffRestingValue: 0.8
   materialCutoffScannerTargetValue: 0.4
@@ -25050,13 +25197,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   blendShapeIndex: 0
   blendShapeValueTarget: 0
-  isProgressive: 0
   restingValue: 100
   lerpSpeed: 2
   returnDelay: 6
-  scannerProgressiveIncrement: 10
-  echoPassifProgressiveIncrement: 6
-  echoJoueurProgressiveIncrement: 12
+  isDecrementalMode: 0
+  decrementalStartValue: 100
+  scannerDecrementPower: 10
+  echoPassifDecrementPower: 6
+  echoJoueurDecrementPower: 15
   materialToControl: {fileID: 0}
   materialCutoffRestingValue: 0.8
   materialCutoffScannerTargetValue: 0.4
@@ -25199,13 +25347,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   blendShapeIndex: 0
   blendShapeValueTarget: 0
-  isProgressive: 0
   restingValue: 100
   lerpSpeed: 2
   returnDelay: 6
-  scannerProgressiveIncrement: 10
-  echoPassifProgressiveIncrement: 6
-  echoJoueurProgressiveIncrement: 100
+  isDecrementalMode: 1
+  decrementalStartValue: 100
+  scannerDecrementPower: 100
+  echoPassifDecrementPower: 6
+  echoJoueurDecrementPower: 15
   materialToControl: {fileID: 0}
   materialCutoffRestingValue: 1.1
   materialCutoffScannerTargetValue: 0.7
@@ -25394,13 +25543,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   blendShapeIndex: 0
   blendShapeValueTarget: 0
-  isProgressive: 0
   restingValue: 100
   lerpSpeed: 2
   returnDelay: 6
-  scannerProgressiveIncrement: 10
-  echoPassifProgressiveIncrement: 6
-  echoJoueurProgressiveIncrement: 100
+  isDecrementalMode: 1
+  decrementalStartValue: 100
+  scannerDecrementPower: 100
+  echoPassifDecrementPower: 6
+  echoJoueurDecrementPower: 15
   materialToControl: {fileID: 0}
   materialCutoffRestingValue: 1.1
   materialCutoffScannerTargetValue: 0.7
@@ -25448,13 +25598,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   blendShapeIndex: 0
   blendShapeValueTarget: 0
-  isProgressive: 0
   restingValue: 100
   lerpSpeed: 2
   returnDelay: 6
-  scannerProgressiveIncrement: 10
-  echoPassifProgressiveIncrement: 6
-  echoJoueurProgressiveIncrement: 12
+  isDecrementalMode: 0
+  decrementalStartValue: 100
+  scannerDecrementPower: 10
+  echoPassifDecrementPower: 6
+  echoJoueurDecrementPower: 15
   materialToControl: {fileID: 0}
   materialCutoffRestingValue: 0.8
   materialCutoffScannerTargetValue: 0.4
@@ -25502,13 +25653,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   blendShapeIndex: 0
   blendShapeValueTarget: 0
-  isProgressive: 0
   restingValue: 100
   lerpSpeed: 2
   returnDelay: 6
-  scannerProgressiveIncrement: 10
-  echoPassifProgressiveIncrement: 6
-  echoJoueurProgressiveIncrement: 12
+  isDecrementalMode: 0
+  decrementalStartValue: 100
+  scannerDecrementPower: 10
+  echoPassifDecrementPower: 6
+  echoJoueurDecrementPower: 15
   materialToControl: {fileID: 0}
   materialCutoffRestingValue: 0.8
   materialCutoffScannerTargetValue: 0.4
@@ -25556,13 +25708,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   blendShapeIndex: 0
   blendShapeValueTarget: 0
-  isProgressive: 0
   restingValue: 100
   lerpSpeed: 2
   returnDelay: 6
-  scannerProgressiveIncrement: 10
-  echoPassifProgressiveIncrement: 6
-  echoJoueurProgressiveIncrement: 12
+  isDecrementalMode: 0
+  decrementalStartValue: 100
+  scannerDecrementPower: 10
+  echoPassifDecrementPower: 6
+  echoJoueurDecrementPower: 15
   materialToControl: {fileID: 0}
   materialCutoffRestingValue: 0.8
   materialCutoffScannerTargetValue: 0.4
@@ -25743,13 +25896,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   blendShapeIndex: 0
   blendShapeValueTarget: 0
-  isProgressive: 0
   restingValue: 100
   lerpSpeed: 2
   returnDelay: 6
-  scannerProgressiveIncrement: 10
-  echoPassifProgressiveIncrement: 6
-  echoJoueurProgressiveIncrement: 12
+  isDecrementalMode: 0
+  decrementalStartValue: 100
+  scannerDecrementPower: 10
+  echoPassifDecrementPower: 6
+  echoJoueurDecrementPower: 15
   materialToControl: {fileID: 0}
   materialCutoffRestingValue: 1.15
   materialCutoffScannerTargetValue: 0.6
@@ -25797,13 +25951,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   blendShapeIndex: 0
   blendShapeValueTarget: 0
-  isProgressive: 0
   restingValue: 100
   lerpSpeed: 2
   returnDelay: 6
-  scannerProgressiveIncrement: 10
-  echoPassifProgressiveIncrement: 6
-  echoJoueurProgressiveIncrement: 12
+  isDecrementalMode: 0
+  decrementalStartValue: 100
+  scannerDecrementPower: 10
+  echoPassifDecrementPower: 6
+  echoJoueurDecrementPower: 15
   materialToControl: {fileID: 0}
   materialCutoffRestingValue: 0.8
   materialCutoffScannerTargetValue: 0.4
@@ -25873,13 +26028,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   blendShapeIndex: 0
   blendShapeValueTarget: 0
-  isProgressive: 0
   restingValue: 100
   lerpSpeed: 2
   returnDelay: 6
-  scannerProgressiveIncrement: 10
-  echoPassifProgressiveIncrement: 6
-  echoJoueurProgressiveIncrement: 12
+  isDecrementalMode: 0
+  decrementalStartValue: 100
+  scannerDecrementPower: 10
+  echoPassifDecrementPower: 6
+  echoJoueurDecrementPower: 15
   materialToControl: {fileID: 0}
   materialCutoffRestingValue: 1.15
   materialCutoffScannerTargetValue: 0.6
@@ -25905,13 +26061,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   blendShapeIndex: 0
   blendShapeValueTarget: 0
-  isProgressive: 0
   restingValue: 100
   lerpSpeed: 2
   returnDelay: 6
-  scannerProgressiveIncrement: 10
-  echoPassifProgressiveIncrement: 6
-  echoJoueurProgressiveIncrement: 12
+  isDecrementalMode: 0
+  decrementalStartValue: 100
+  scannerDecrementPower: 10
+  echoPassifDecrementPower: 6
+  echoJoueurDecrementPower: 15
   materialToControl: {fileID: 0}
   materialCutoffRestingValue: 0.8
   materialCutoffScannerTargetValue: 0.4
@@ -25959,13 +26116,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   blendShapeIndex: 0
   blendShapeValueTarget: 0
-  isProgressive: 0
   restingValue: 100
   lerpSpeed: 2
   returnDelay: 6
-  scannerProgressiveIncrement: 10
-  echoPassifProgressiveIncrement: 6
-  echoJoueurProgressiveIncrement: 12
+  isDecrementalMode: 0
+  decrementalStartValue: 100
+  scannerDecrementPower: 10
+  echoPassifDecrementPower: 6
+  echoJoueurDecrementPower: 15
   materialToControl: {fileID: 0}
   materialCutoffRestingValue: 0.8
   materialCutoffScannerTargetValue: 0.4
@@ -26013,13 +26171,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   blendShapeIndex: 0
   blendShapeValueTarget: 0
-  isProgressive: 0
   restingValue: 100
   lerpSpeed: 2
   returnDelay: 6
-  scannerProgressiveIncrement: 10
-  echoPassifProgressiveIncrement: 6
-  echoJoueurProgressiveIncrement: 12
+  isDecrementalMode: 0
+  decrementalStartValue: 100
+  scannerDecrementPower: 10
+  echoPassifDecrementPower: 6
+  echoJoueurDecrementPower: 15
   materialToControl: {fileID: 0}
   materialCutoffRestingValue: 0.8
   materialCutoffScannerTargetValue: 0.4
@@ -26196,13 +26355,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   blendShapeIndex: 0
   blendShapeValueTarget: 0
-  isProgressive: 0
   restingValue: 100
   lerpSpeed: 2
   returnDelay: 6
-  scannerProgressiveIncrement: 10
-  echoPassifProgressiveIncrement: 6
-  echoJoueurProgressiveIncrement: 12
+  isDecrementalMode: 0
+  decrementalStartValue: 100
+  scannerDecrementPower: 10
+  echoPassifDecrementPower: 6
+  echoJoueurDecrementPower: 15
   materialToControl: {fileID: 0}
   materialCutoffRestingValue: 1.15
   materialCutoffScannerTargetValue: 0.6
@@ -26272,13 +26432,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   blendShapeIndex: 0
   blendShapeValueTarget: 0
-  isProgressive: 0
   restingValue: 0
   lerpSpeed: 5
   returnDelay: 3
-  scannerProgressiveIncrement: 10
-  echoPassifProgressiveIncrement: 6
-  echoJoueurProgressiveIncrement: 12
+  isDecrementalMode: 0
+  decrementalStartValue: 100
+  scannerDecrementPower: 10
+  echoPassifDecrementPower: 6
+  echoJoueurDecrementPower: 15
   materialToControl: {fileID: 0}
   materialCutoffRestingValue: 0.6
   materialCutoffScannerTargetValue: 0.6
@@ -26358,13 +26519,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   blendShapeIndex: 0
   blendShapeValueTarget: 0
-  isProgressive: 0
   restingValue: 100
   lerpSpeed: 2
   returnDelay: 6
-  scannerProgressiveIncrement: 10
-  echoPassifProgressiveIncrement: 6
-  echoJoueurProgressiveIncrement: 100
+  isDecrementalMode: 1
+  decrementalStartValue: 100
+  scannerDecrementPower: 100
+  echoPassifDecrementPower: 6
+  echoJoueurDecrementPower: 15
   materialToControl: {fileID: 0}
   materialCutoffRestingValue: 1.1
   materialCutoffScannerTargetValue: 0.7
@@ -26456,13 +26618,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   blendShapeIndex: 0
   blendShapeValueTarget: 0
-  isProgressive: 0
   restingValue: 100
   lerpSpeed: 2
   returnDelay: 6
-  scannerProgressiveIncrement: 10
-  echoPassifProgressiveIncrement: 6
-  echoJoueurProgressiveIncrement: 100
+  isDecrementalMode: 1
+  decrementalStartValue: 100
+  scannerDecrementPower: 100
+  echoPassifDecrementPower: 6
+  echoJoueurDecrementPower: 15
   materialToControl: {fileID: 0}
   materialCutoffRestingValue: 1.1
   materialCutoffScannerTargetValue: 0.7
@@ -26780,13 +26943,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   blendShapeIndex: 0
   blendShapeValueTarget: 0
-  isProgressive: 0
   restingValue: 100
   lerpSpeed: 2
   returnDelay: 6
-  scannerProgressiveIncrement: 10
-  echoPassifProgressiveIncrement: 6
-  echoJoueurProgressiveIncrement: 100
+  isDecrementalMode: 1
+  decrementalStartValue: 100
+  scannerDecrementPower: 100
+  echoPassifDecrementPower: 6
+  echoJoueurDecrementPower: 15
   materialToControl: {fileID: 0}
   materialCutoffRestingValue: 1.1
   materialCutoffScannerTargetValue: 0.7
@@ -26919,13 +27083,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   blendShapeIndex: 0
   blendShapeValueTarget: 0
-  isProgressive: 0
   restingValue: 100
   lerpSpeed: 2
   returnDelay: 6
-  scannerProgressiveIncrement: 10
-  echoPassifProgressiveIncrement: 6
-  echoJoueurProgressiveIncrement: 12
+  isDecrementalMode: 0
+  decrementalStartValue: 100
+  scannerDecrementPower: 10
+  echoPassifDecrementPower: 6
+  echoJoueurDecrementPower: 15
   materialToControl: {fileID: 0}
   materialCutoffRestingValue: 1.15
   materialCutoffScannerTargetValue: 0.6
@@ -26973,13 +27138,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   blendShapeIndex: 0
   blendShapeValueTarget: 0
-  isProgressive: 0
   restingValue: 100
   lerpSpeed: 2
   returnDelay: 6
-  scannerProgressiveIncrement: 10
-  echoPassifProgressiveIncrement: 6
-  echoJoueurProgressiveIncrement: 100
+  isDecrementalMode: 1
+  decrementalStartValue: 100
+  scannerDecrementPower: 100
+  echoPassifDecrementPower: 6
+  echoJoueurDecrementPower: 15
   materialToControl: {fileID: 0}
   materialCutoffRestingValue: 1.1
   materialCutoffScannerTargetValue: 0.7
@@ -30772,13 +30938,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   blendShapeIndex: 0
   blendShapeValueTarget: 0
-  isProgressive: 0
   restingValue: 100
   lerpSpeed: 2
   returnDelay: 6
-  scannerProgressiveIncrement: 10
-  echoPassifProgressiveIncrement: 6
-  echoJoueurProgressiveIncrement: 100
+  isDecrementalMode: 1
+  decrementalStartValue: 100
+  scannerDecrementPower: 100
+  echoPassifDecrementPower: 6
+  echoJoueurDecrementPower: 15
   materialToControl: {fileID: 0}
   materialCutoffRestingValue: 1.1
   materialCutoffScannerTargetValue: 0.7
@@ -30848,13 +31015,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   blendShapeIndex: 0
   blendShapeValueTarget: 0
-  isProgressive: 0
   restingValue: 0
   lerpSpeed: 5
   returnDelay: 3
-  scannerProgressiveIncrement: 10
-  echoPassifProgressiveIncrement: 6
-  echoJoueurProgressiveIncrement: 12
+  isDecrementalMode: 0
+  decrementalStartValue: 100
+  scannerDecrementPower: 10
+  echoPassifDecrementPower: 6
+  echoJoueurDecrementPower: 15
   materialToControl: {fileID: 0}
   materialCutoffRestingValue: 0.6
   materialCutoffScannerTargetValue: 0.6
@@ -30880,13 +31048,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   blendShapeIndex: 0
   blendShapeValueTarget: 0
-  isProgressive: 0
   restingValue: 100
   lerpSpeed: 2
   returnDelay: 6
-  scannerProgressiveIncrement: 10
-  echoPassifProgressiveIncrement: 6
-  echoJoueurProgressiveIncrement: 100
+  isDecrementalMode: 1
+  decrementalStartValue: 100
+  scannerDecrementPower: 100
+  echoPassifDecrementPower: 6
+  echoJoueurDecrementPower: 15
   materialToControl: {fileID: 0}
   materialCutoffRestingValue: 1.1
   materialCutoffScannerTargetValue: 0.7
@@ -33931,13 +34100,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   blendShapeIndex: 0
   blendShapeValueTarget: 0
-  isProgressive: 0
   restingValue: 100
   lerpSpeed: 2
   returnDelay: 6
-  scannerProgressiveIncrement: 10
-  echoPassifProgressiveIncrement: 6
-  echoJoueurProgressiveIncrement: 12
+  isDecrementalMode: 0
+  decrementalStartValue: 100
+  scannerDecrementPower: 10
+  echoPassifDecrementPower: 6
+  echoJoueurDecrementPower: 15
   materialToControl: {fileID: 0}
   materialCutoffRestingValue: 1.15
   materialCutoffScannerTargetValue: 0.6
@@ -34140,13 +34310,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   blendShapeIndex: 0
   blendShapeValueTarget: 0
-  isProgressive: 0
   restingValue: 100
   lerpSpeed: 2
   returnDelay: 6
-  scannerProgressiveIncrement: 10
-  echoPassifProgressiveIncrement: 6
-  echoJoueurProgressiveIncrement: 12
+  isDecrementalMode: 0
+  decrementalStartValue: 100
+  scannerDecrementPower: 10
+  echoPassifDecrementPower: 6
+  echoJoueurDecrementPower: 15
   materialToControl: {fileID: 0}
   materialCutoffRestingValue: 0.8
   materialCutoffScannerTargetValue: 0.4
@@ -34194,13 +34365,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   blendShapeIndex: 0
   blendShapeValueTarget: 0
-  isProgressive: 0
   restingValue: 100
   lerpSpeed: 2
   returnDelay: 6
-  scannerProgressiveIncrement: 10
-  echoPassifProgressiveIncrement: 6
-  echoJoueurProgressiveIncrement: 12
+  isDecrementalMode: 0
+  decrementalStartValue: 100
+  scannerDecrementPower: 10
+  echoPassifDecrementPower: 6
+  echoJoueurDecrementPower: 15
   materialToControl: {fileID: 0}
   materialCutoffRestingValue: 0.8
   materialCutoffScannerTargetValue: 0.4
@@ -34270,13 +34442,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   blendShapeIndex: 0
   blendShapeValueTarget: 0
-  isProgressive: 0
   restingValue: 0
   lerpSpeed: 5
   returnDelay: 3
-  scannerProgressiveIncrement: 10
-  echoPassifProgressiveIncrement: 6
-  echoJoueurProgressiveIncrement: 12
+  isDecrementalMode: 0
+  decrementalStartValue: 100
+  scannerDecrementPower: 10
+  echoPassifDecrementPower: 6
+  echoJoueurDecrementPower: 15
   materialToControl: {fileID: 0}
   materialCutoffRestingValue: 0.6
   materialCutoffScannerTargetValue: 0.6
@@ -34502,13 +34675,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   blendShapeIndex: 0
   blendShapeValueTarget: 0
-  isProgressive: 0
   restingValue: 100
   lerpSpeed: 2
   returnDelay: 6
-  scannerProgressiveIncrement: 10
-  echoPassifProgressiveIncrement: 6
-  echoJoueurProgressiveIncrement: 100
+  isDecrementalMode: 1
+  decrementalStartValue: 100
+  scannerDecrementPower: 100
+  echoPassifDecrementPower: 6
+  echoJoueurDecrementPower: 15
   materialToControl: {fileID: 0}
   materialCutoffRestingValue: 1.1
   materialCutoffScannerTargetValue: 0.7
@@ -34556,13 +34730,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   blendShapeIndex: 0
   blendShapeValueTarget: 0
-  isProgressive: 0
   restingValue: 100
   lerpSpeed: 2
   returnDelay: 6
-  scannerProgressiveIncrement: 10
-  echoPassifProgressiveIncrement: 6
-  echoJoueurProgressiveIncrement: 100
+  isDecrementalMode: 1
+  decrementalStartValue: 100
+  scannerDecrementPower: 100
+  echoPassifDecrementPower: 6
+  echoJoueurDecrementPower: 15
   materialToControl: {fileID: 0}
   materialCutoffRestingValue: 1.1
   materialCutoffScannerTargetValue: 0.7
@@ -34610,13 +34785,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   blendShapeIndex: 0
   blendShapeValueTarget: 0
-  isProgressive: 0
   restingValue: 100
   lerpSpeed: 2
   returnDelay: 6
-  scannerProgressiveIncrement: 10
-  echoPassifProgressiveIncrement: 6
-  echoJoueurProgressiveIncrement: 12
+  isDecrementalMode: 0
+  decrementalStartValue: 100
+  scannerDecrementPower: 10
+  echoPassifDecrementPower: 6
+  echoJoueurDecrementPower: 15
   materialToControl: {fileID: 0}
   materialCutoffRestingValue: 0.8
   materialCutoffScannerTargetValue: 0.4
@@ -34664,13 +34840,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   blendShapeIndex: 0
   blendShapeValueTarget: 0
-  isProgressive: 0
   restingValue: 100
   lerpSpeed: 2
   returnDelay: 6
-  scannerProgressiveIncrement: 10
-  echoPassifProgressiveIncrement: 6
-  echoJoueurProgressiveIncrement: 12
+  isDecrementalMode: 0
+  decrementalStartValue: 100
+  scannerDecrementPower: 10
+  echoPassifDecrementPower: 6
+  echoJoueurDecrementPower: 15
   materialToControl: {fileID: 0}
   materialCutoffRestingValue: 1.15
   materialCutoffScannerTargetValue: 0.6
@@ -34828,13 +35005,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   blendShapeIndex: 0
   blendShapeValueTarget: 0
-  isProgressive: 0
   restingValue: 100
   lerpSpeed: 2
   returnDelay: 6
-  scannerProgressiveIncrement: 10
-  echoPassifProgressiveIncrement: 6
-  echoJoueurProgressiveIncrement: 12
+  isDecrementalMode: 0
+  decrementalStartValue: 100
+  scannerDecrementPower: 10
+  echoPassifDecrementPower: 6
+  echoJoueurDecrementPower: 15
   materialToControl: {fileID: 0}
   materialCutoffRestingValue: 1.15
   materialCutoffScannerTargetValue: 0.6
@@ -34882,13 +35060,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   blendShapeIndex: 0
   blendShapeValueTarget: 0
-  isProgressive: 0
   restingValue: 100
   lerpSpeed: 2
   returnDelay: 6
-  scannerProgressiveIncrement: 10
-  echoPassifProgressiveIncrement: 6
-  echoJoueurProgressiveIncrement: 100
+  isDecrementalMode: 1
+  decrementalStartValue: 100
+  scannerDecrementPower: 100
+  echoPassifDecrementPower: 6
+  echoJoueurDecrementPower: 15
   materialToControl: {fileID: 0}
   materialCutoffRestingValue: 1.1
   materialCutoffScannerTargetValue: 0.7
@@ -34958,13 +35137,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   blendShapeIndex: 0
   blendShapeValueTarget: 0
-  isProgressive: 0
   restingValue: 100
   lerpSpeed: 2
   returnDelay: 6
-  scannerProgressiveIncrement: 10
-  echoPassifProgressiveIncrement: 6
-  echoJoueurProgressiveIncrement: 12
+  isDecrementalMode: 0
+  decrementalStartValue: 100
+  scannerDecrementPower: 10
+  echoPassifDecrementPower: 6
+  echoJoueurDecrementPower: 15
   materialToControl: {fileID: 0}
   materialCutoffRestingValue: 1.15
   materialCutoffScannerTargetValue: 0.6
@@ -34990,13 +35170,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   blendShapeIndex: 0
   blendShapeValueTarget: 0
-  isProgressive: 0
   restingValue: 100
   lerpSpeed: 2
   returnDelay: 6
-  scannerProgressiveIncrement: 10
-  echoPassifProgressiveIncrement: 6
-  echoJoueurProgressiveIncrement: 100
+  isDecrementalMode: 1
+  decrementalStartValue: 100
+  scannerDecrementPower: 100
+  echoPassifDecrementPower: 6
+  echoJoueurDecrementPower: 15
   materialToControl: {fileID: 0}
   materialCutoffRestingValue: 1.1
   materialCutoffScannerTargetValue: 0.7
@@ -35063,13 +35244,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   blendShapeIndex: 0
   blendShapeValueTarget: 0
-  isProgressive: 0
   restingValue: 100
   lerpSpeed: 2
   returnDelay: 6
-  scannerProgressiveIncrement: 10
-  echoPassifProgressiveIncrement: 6
-  echoJoueurProgressiveIncrement: 12
+  isDecrementalMode: 0
+  decrementalStartValue: 100
+  scannerDecrementPower: 10
+  echoPassifDecrementPower: 6
+  echoJoueurDecrementPower: 15
   materialToControl: {fileID: 0}
   materialCutoffRestingValue: 0.5
   materialCutoffScannerTargetValue: 0.3
@@ -35391,13 +35573,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   blendShapeIndex: 0
   blendShapeValueTarget: 0
-  isProgressive: 0
   restingValue: 100
   lerpSpeed: 2
   returnDelay: 6
-  scannerProgressiveIncrement: 10
-  echoPassifProgressiveIncrement: 6
-  echoJoueurProgressiveIncrement: 12
+  isDecrementalMode: 0
+  decrementalStartValue: 100
+  scannerDecrementPower: 10
+  echoPassifDecrementPower: 6
+  echoJoueurDecrementPower: 15
   materialToControl: {fileID: 0}
   materialCutoffRestingValue: 0.8
   materialCutoffScannerTargetValue: 0.4
@@ -35499,13 +35682,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   blendShapeIndex: 0
   blendShapeValueTarget: 0
-  isProgressive: 0
   restingValue: 100
   lerpSpeed: 2
   returnDelay: 6
-  scannerProgressiveIncrement: 10
-  echoPassifProgressiveIncrement: 6
-  echoJoueurProgressiveIncrement: 12
+  isDecrementalMode: 0
+  decrementalStartValue: 100
+  scannerDecrementPower: 10
+  echoPassifDecrementPower: 6
+  echoJoueurDecrementPower: 15
   materialToControl: {fileID: 0}
   materialCutoffRestingValue: 1.15
   materialCutoffScannerTargetValue: 0.6
@@ -35607,13 +35791,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   blendShapeIndex: 0
   blendShapeValueTarget: 0
-  isProgressive: 0
   restingValue: 100
   lerpSpeed: 2
   returnDelay: 6
-  scannerProgressiveIncrement: 10
-  echoPassifProgressiveIncrement: 6
-  echoJoueurProgressiveIncrement: 12
+  isDecrementalMode: 0
+  decrementalStartValue: 100
+  scannerDecrementPower: 10
+  echoPassifDecrementPower: 6
+  echoJoueurDecrementPower: 15
   materialToControl: {fileID: 0}
   materialCutoffRestingValue: 1.15
   materialCutoffScannerTargetValue: 0.6
@@ -35755,13 +35940,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   blendShapeIndex: 0
   blendShapeValueTarget: 0
-  isProgressive: 0
   restingValue: 100
   lerpSpeed: 2
   returnDelay: 6
-  scannerProgressiveIncrement: 10
-  echoPassifProgressiveIncrement: 6
-  echoJoueurProgressiveIncrement: 12
+  isDecrementalMode: 0
+  decrementalStartValue: 100
+  scannerDecrementPower: 10
+  echoPassifDecrementPower: 6
+  echoJoueurDecrementPower: 15
   materialToControl: {fileID: 0}
   materialCutoffRestingValue: 0.8
   materialCutoffScannerTargetValue: 0.4
@@ -36746,13 +36932,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   blendShapeIndex: 0
   blendShapeValueTarget: 0
-  isProgressive: 0
   restingValue: 100
   lerpSpeed: 2
   returnDelay: 6
-  scannerProgressiveIncrement: 10
-  echoPassifProgressiveIncrement: 6
-  echoJoueurProgressiveIncrement: 12
+  isDecrementalMode: 0
+  decrementalStartValue: 100
+  scannerDecrementPower: 10
+  echoPassifDecrementPower: 6
+  echoJoueurDecrementPower: 15
   materialToControl: {fileID: 0}
   materialCutoffRestingValue: 0.8
   materialCutoffScannerTargetValue: 0.4
@@ -37401,13 +37588,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   blendShapeIndex: 0
   blendShapeValueTarget: 0
-  isProgressive: 0
   restingValue: 100
   lerpSpeed: 2
   returnDelay: 6
-  scannerProgressiveIncrement: 10
-  echoPassifProgressiveIncrement: 6
-  echoJoueurProgressiveIncrement: 12
+  isDecrementalMode: 0
+  decrementalStartValue: 100
+  scannerDecrementPower: 10
+  echoPassifDecrementPower: 6
+  echoJoueurDecrementPower: 15
   materialToControl: {fileID: 0}
   materialCutoffRestingValue: 0.5
   materialCutoffScannerTargetValue: 0.3
@@ -37802,13 +37990,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   blendShapeIndex: 0
   blendShapeValueTarget: 0
-  isProgressive: 0
   restingValue: 100
   lerpSpeed: 2
   returnDelay: 6
-  scannerProgressiveIncrement: 10
-  echoPassifProgressiveIncrement: 6
-  echoJoueurProgressiveIncrement: 100
+  isDecrementalMode: 1
+  decrementalStartValue: 100
+  scannerDecrementPower: 100
+  echoPassifDecrementPower: 6
+  echoJoueurDecrementPower: 15
   materialToControl: {fileID: 0}
   materialCutoffRestingValue: 1.1
   materialCutoffScannerTargetValue: 0.7
@@ -37856,13 +38045,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   blendShapeIndex: 0
   blendShapeValueTarget: 0
-  isProgressive: 0
   restingValue: 100
   lerpSpeed: 2
   returnDelay: 6
-  scannerProgressiveIncrement: 10
-  echoPassifProgressiveIncrement: 6
-  echoJoueurProgressiveIncrement: 12
+  isDecrementalMode: 0
+  decrementalStartValue: 100
+  scannerDecrementPower: 10
+  echoPassifDecrementPower: 6
+  echoJoueurDecrementPower: 15
   materialToControl: {fileID: 0}
   materialCutoffRestingValue: 1.15
   materialCutoffScannerTargetValue: 0.6
@@ -38059,13 +38249,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   blendShapeIndex: 0
   blendShapeValueTarget: 0
-  isProgressive: 0
   restingValue: 100
   lerpSpeed: 2
   returnDelay: 6
-  scannerProgressiveIncrement: 10
-  echoPassifProgressiveIncrement: 6
-  echoJoueurProgressiveIncrement: 100
+  isDecrementalMode: 1
+  decrementalStartValue: 100
+  scannerDecrementPower: 100
+  echoPassifDecrementPower: 6
+  echoJoueurDecrementPower: 15
   materialToControl: {fileID: 0}
   materialCutoffRestingValue: 1.1
   materialCutoffScannerTargetValue: 0.7
@@ -38113,13 +38304,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   blendShapeIndex: 0
   blendShapeValueTarget: 0
-  isProgressive: 0
   restingValue: 100
   lerpSpeed: 2
   returnDelay: 6
-  scannerProgressiveIncrement: 10
-  echoPassifProgressiveIncrement: 6
-  echoJoueurProgressiveIncrement: 12
+  isDecrementalMode: 0
+  decrementalStartValue: 100
+  scannerDecrementPower: 10
+  echoPassifDecrementPower: 6
+  echoJoueurDecrementPower: 15
   materialToControl: {fileID: 0}
   materialCutoffRestingValue: 0.8
   materialCutoffScannerTargetValue: 0.4
@@ -38167,13 +38359,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   blendShapeIndex: 0
   blendShapeValueTarget: 0
-  isProgressive: 0
   restingValue: 100
   lerpSpeed: 2
   returnDelay: 6
-  scannerProgressiveIncrement: 10
-  echoPassifProgressiveIncrement: 6
-  echoJoueurProgressiveIncrement: 12
+  isDecrementalMode: 0
+  decrementalStartValue: 100
+  scannerDecrementPower: 10
+  echoPassifDecrementPower: 6
+  echoJoueurDecrementPower: 15
   materialToControl: {fileID: 0}
   materialCutoffRestingValue: 0.8
   materialCutoffScannerTargetValue: 0.4
@@ -38326,13 +38519,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   blendShapeIndex: 0
   blendShapeValueTarget: 0
-  isProgressive: 0
   restingValue: 100
   lerpSpeed: 2
   returnDelay: 6
-  scannerProgressiveIncrement: 10
-  echoPassifProgressiveIncrement: 6
-  echoJoueurProgressiveIncrement: 12
+  isDecrementalMode: 0
+  decrementalStartValue: 100
+  scannerDecrementPower: 10
+  echoPassifDecrementPower: 6
+  echoJoueurDecrementPower: 15
   materialToControl: {fileID: 0}
   materialCutoffRestingValue: 1.15
   materialCutoffScannerTargetValue: 0.6
@@ -38462,13 +38656,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   blendShapeIndex: 0
   blendShapeValueTarget: 0
-  isProgressive: 0
   restingValue: 100
   lerpSpeed: 2
   returnDelay: 6
-  scannerProgressiveIncrement: 10
-  echoPassifProgressiveIncrement: 6
-  echoJoueurProgressiveIncrement: 100
+  isDecrementalMode: 1
+  decrementalStartValue: 100
+  scannerDecrementPower: 100
+  echoPassifDecrementPower: 6
+  echoJoueurDecrementPower: 15
   materialToControl: {fileID: 0}
   materialCutoffRestingValue: 1.1
   materialCutoffScannerTargetValue: 0.7
@@ -38688,13 +38883,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   blendShapeIndex: 0
   blendShapeValueTarget: 0
-  isProgressive: 0
   restingValue: 100
   lerpSpeed: 2
   returnDelay: 6
-  scannerProgressiveIncrement: 10
-  echoPassifProgressiveIncrement: 6
-  echoJoueurProgressiveIncrement: 100
+  isDecrementalMode: 1
+  decrementalStartValue: 100
+  scannerDecrementPower: 100
+  echoPassifDecrementPower: 6
+  echoJoueurDecrementPower: 15
   materialToControl: {fileID: 0}
   materialCutoffRestingValue: 1.1
   materialCutoffScannerTargetValue: 0.7
@@ -38742,13 +38938,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   blendShapeIndex: 0
   blendShapeValueTarget: 0
-  isProgressive: 0
   restingValue: 100
   lerpSpeed: 2
   returnDelay: 6
-  scannerProgressiveIncrement: 10
-  echoPassifProgressiveIncrement: 6
-  echoJoueurProgressiveIncrement: 100
+  isDecrementalMode: 1
+  decrementalStartValue: 100
+  scannerDecrementPower: 100
+  echoPassifDecrementPower: 6
+  echoJoueurDecrementPower: 15
   materialToControl: {fileID: 0}
   materialCutoffRestingValue: 1.1
   materialCutoffScannerTargetValue: 0.7
@@ -38796,13 +38993,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   blendShapeIndex: 0
   blendShapeValueTarget: 0
-  isProgressive: 0
   restingValue: 100
   lerpSpeed: 2
   returnDelay: 6
-  scannerProgressiveIncrement: 10
-  echoPassifProgressiveIncrement: 6
-  echoJoueurProgressiveIncrement: 12
+  isDecrementalMode: 0
+  decrementalStartValue: 100
+  scannerDecrementPower: 10
+  echoPassifDecrementPower: 6
+  echoJoueurDecrementPower: 15
   materialToControl: {fileID: 0}
   materialCutoffRestingValue: 1.15
   materialCutoffScannerTargetValue: 0.6
@@ -38925,13 +39123,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   blendShapeIndex: 0
   blendShapeValueTarget: 0
-  isProgressive: 0
   restingValue: 100
   lerpSpeed: 2
   returnDelay: 6
-  scannerProgressiveIncrement: 10
-  echoPassifProgressiveIncrement: 6
-  echoJoueurProgressiveIncrement: 12
+  isDecrementalMode: 0
+  decrementalStartValue: 100
+  scannerDecrementPower: 10
+  echoPassifDecrementPower: 6
+  echoJoueurDecrementPower: 15
   materialToControl: {fileID: 0}
   materialCutoffRestingValue: 1.15
   materialCutoffScannerTargetValue: 0.6
@@ -39818,13 +40017,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   blendShapeIndex: 0
   blendShapeValueTarget: 0
-  isProgressive: 0
   restingValue: 100
   lerpSpeed: 2
   returnDelay: 6
-  scannerProgressiveIncrement: 10
-  echoPassifProgressiveIncrement: 6
-  echoJoueurProgressiveIncrement: 100
+  isDecrementalMode: 1
+  decrementalStartValue: 100
+  scannerDecrementPower: 100
+  echoPassifDecrementPower: 6
+  echoJoueurDecrementPower: 15
   materialToControl: {fileID: 0}
   materialCutoffRestingValue: 1.1
   materialCutoffScannerTargetValue: 0.7
@@ -40148,13 +40348,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   blendShapeIndex: 0
   blendShapeValueTarget: 0
-  isProgressive: 0
   restingValue: 100
   lerpSpeed: 2
   returnDelay: 6
-  scannerProgressiveIncrement: 10
-  echoPassifProgressiveIncrement: 6
-  echoJoueurProgressiveIncrement: 100
+  isDecrementalMode: 1
+  decrementalStartValue: 100
+  scannerDecrementPower: 100
+  echoPassifDecrementPower: 6
+  echoJoueurDecrementPower: 15
   materialToControl: {fileID: 0}
   materialCutoffRestingValue: 1.1
   materialCutoffScannerTargetValue: 0.7
@@ -40335,13 +40536,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   blendShapeIndex: 0
   blendShapeValueTarget: 0
-  isProgressive: 0
   restingValue: 100
   lerpSpeed: 2
   returnDelay: 6
-  scannerProgressiveIncrement: 10
-  echoPassifProgressiveIncrement: 6
-  echoJoueurProgressiveIncrement: 12
+  isDecrementalMode: 0
+  decrementalStartValue: 100
+  scannerDecrementPower: 10
+  echoPassifDecrementPower: 6
+  echoJoueurDecrementPower: 15
   materialToControl: {fileID: 0}
   materialCutoffRestingValue: 0.8
   materialCutoffScannerTargetValue: 0.4
@@ -40700,13 +40902,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   blendShapeIndex: 0
   blendShapeValueTarget: 0
-  isProgressive: 0
   restingValue: 100
   lerpSpeed: 2
   returnDelay: 6
-  scannerProgressiveIncrement: 10
-  echoPassifProgressiveIncrement: 6
-  echoJoueurProgressiveIncrement: 12
+  isDecrementalMode: 0
+  decrementalStartValue: 100
+  scannerDecrementPower: 10
+  echoPassifDecrementPower: 6
+  echoJoueurDecrementPower: 15
   materialToControl: {fileID: 0}
   materialCutoffRestingValue: 1.15
   materialCutoffScannerTargetValue: 0.6
@@ -40754,13 +40957,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   blendShapeIndex: 0
   blendShapeValueTarget: 0
-  isProgressive: 0
   restingValue: 100
   lerpSpeed: 2
   returnDelay: 6
-  scannerProgressiveIncrement: 10
-  echoPassifProgressiveIncrement: 6
-  echoJoueurProgressiveIncrement: 12
+  isDecrementalMode: 0
+  decrementalStartValue: 100
+  scannerDecrementPower: 10
+  echoPassifDecrementPower: 6
+  echoJoueurDecrementPower: 15
   materialToControl: {fileID: 0}
   materialCutoffRestingValue: 0.8
   materialCutoffScannerTargetValue: 0.4
@@ -41102,13 +41306,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   blendShapeIndex: 0
   blendShapeValueTarget: 0
-  isProgressive: 0
   restingValue: 0
   lerpSpeed: 5
   returnDelay: 3
-  scannerProgressiveIncrement: 10
-  echoPassifProgressiveIncrement: 6
-  echoJoueurProgressiveIncrement: 12
+  isDecrementalMode: 0
+  decrementalStartValue: 100
+  scannerDecrementPower: 10
+  echoPassifDecrementPower: 6
+  echoJoueurDecrementPower: 15
   materialToControl: {fileID: 0}
   materialCutoffRestingValue: 0.6
   materialCutoffScannerTargetValue: 0.6
@@ -41249,13 +41454,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   blendShapeIndex: 0
   blendShapeValueTarget: 0
-  isProgressive: 0
   restingValue: 100
   lerpSpeed: 2
   returnDelay: 6
-  scannerProgressiveIncrement: 10
-  echoPassifProgressiveIncrement: 6
-  echoJoueurProgressiveIncrement: 12
+  isDecrementalMode: 0
+  decrementalStartValue: 100
+  scannerDecrementPower: 10
+  echoPassifDecrementPower: 6
+  echoJoueurDecrementPower: 15
   materialToControl: {fileID: 0}
   materialCutoffRestingValue: 0.8
   materialCutoffScannerTargetValue: 0.4
@@ -41322,13 +41528,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   blendShapeIndex: 0
   blendShapeValueTarget: 0
-  isProgressive: 0
   restingValue: 100
   lerpSpeed: 2
   returnDelay: 6
-  scannerProgressiveIncrement: 10
-  echoPassifProgressiveIncrement: 6
-  echoJoueurProgressiveIncrement: 12
+  isDecrementalMode: 0
+  decrementalStartValue: 100
+  scannerDecrementPower: 10
+  echoPassifDecrementPower: 6
+  echoJoueurDecrementPower: 15
   materialToControl: {fileID: 0}
   materialCutoffRestingValue: 0.5
   materialCutoffScannerTargetValue: 0.3
@@ -41698,13 +41905,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   blendShapeIndex: 0
   blendShapeValueTarget: 0
-  isProgressive: 0
   restingValue: 100
   lerpSpeed: 2
   returnDelay: 6
-  scannerProgressiveIncrement: 10
-  echoPassifProgressiveIncrement: 6
-  echoJoueurProgressiveIncrement: 100
+  isDecrementalMode: 1
+  decrementalStartValue: 100
+  scannerDecrementPower: 100
+  echoPassifDecrementPower: 6
+  echoJoueurDecrementPower: 15
   materialToControl: {fileID: 0}
   materialCutoffRestingValue: 1.1
   materialCutoffScannerTargetValue: 0.7
@@ -41868,13 +42076,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   blendShapeIndex: 0
   blendShapeValueTarget: 0
-  isProgressive: 0
   restingValue: 0
   lerpSpeed: 2
   returnDelay: 6
-  scannerProgressiveIncrement: 10
-  echoPassifProgressiveIncrement: 6
-  echoJoueurProgressiveIncrement: 12
+  isDecrementalMode: 0
+  decrementalStartValue: 100
+  scannerDecrementPower: 10
+  echoPassifDecrementPower: 6
+  echoJoueurDecrementPower: 15
   materialToControl: {fileID: 0}
   materialCutoffRestingValue: 0.6
   materialCutoffScannerTargetValue: 0.6
@@ -42337,13 +42546,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   blendShapeIndex: 0
   blendShapeValueTarget: 0
-  isProgressive: 0
   restingValue: 100
   lerpSpeed: 2
   returnDelay: 6
-  scannerProgressiveIncrement: 10
-  echoPassifProgressiveIncrement: 6
-  echoJoueurProgressiveIncrement: 12
+  isDecrementalMode: 0
+  decrementalStartValue: 100
+  scannerDecrementPower: 10
+  echoPassifDecrementPower: 6
+  echoJoueurDecrementPower: 15
   materialToControl: {fileID: 0}
   materialCutoffRestingValue: 1.15
   materialCutoffScannerTargetValue: 0.6
@@ -42564,13 +42774,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   blendShapeIndex: 0
   blendShapeValueTarget: 0
-  isProgressive: 0
   restingValue: 0
   lerpSpeed: 5
   returnDelay: 3
-  scannerProgressiveIncrement: 10
-  echoPassifProgressiveIncrement: 6
-  echoJoueurProgressiveIncrement: 12
+  isDecrementalMode: 0
+  decrementalStartValue: 100
+  scannerDecrementPower: 10
+  echoPassifDecrementPower: 6
+  echoJoueurDecrementPower: 15
   materialToControl: {fileID: 0}
   materialCutoffRestingValue: 0.6
   materialCutoffScannerTargetValue: 0.6
@@ -42618,13 +42829,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   blendShapeIndex: 0
   blendShapeValueTarget: 0
-  isProgressive: 0
   restingValue: 100
   lerpSpeed: 2
   returnDelay: 6
-  scannerProgressiveIncrement: 10
-  echoPassifProgressiveIncrement: 6
-  echoJoueurProgressiveIncrement: 12
+  isDecrementalMode: 0
+  decrementalStartValue: 100
+  scannerDecrementPower: 10
+  echoPassifDecrementPower: 6
+  echoJoueurDecrementPower: 15
   materialToControl: {fileID: 0}
   materialCutoffRestingValue: 1.15
   materialCutoffScannerTargetValue: 0.6
@@ -42650,13 +42862,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   blendShapeIndex: 0
   blendShapeValueTarget: 0
-  isProgressive: 0
   restingValue: 100
   lerpSpeed: 2
   returnDelay: 6
-  scannerProgressiveIncrement: 10
-  echoPassifProgressiveIncrement: 6
-  echoJoueurProgressiveIncrement: 12
+  isDecrementalMode: 0
+  decrementalStartValue: 100
+  scannerDecrementPower: 10
+  echoPassifDecrementPower: 6
+  echoJoueurDecrementPower: 15
   materialToControl: {fileID: 0}
   materialCutoffRestingValue: 0.8
   materialCutoffScannerTargetValue: 0.4
@@ -42704,13 +42917,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   blendShapeIndex: 0
   blendShapeValueTarget: 0
-  isProgressive: 0
   restingValue: 100
   lerpSpeed: 2
   returnDelay: 6
-  scannerProgressiveIncrement: 10
-  echoPassifProgressiveIncrement: 6
-  echoJoueurProgressiveIncrement: 12
+  isDecrementalMode: 0
+  decrementalStartValue: 100
+  scannerDecrementPower: 10
+  echoPassifDecrementPower: 6
+  echoJoueurDecrementPower: 15
   materialToControl: {fileID: 0}
   materialCutoffRestingValue: 1.15
   materialCutoffScannerTargetValue: 0.6
@@ -42906,13 +43120,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   blendShapeIndex: 0
   blendShapeValueTarget: 0
-  isProgressive: 0
   restingValue: 100
   lerpSpeed: 2
   returnDelay: 6
-  scannerProgressiveIncrement: 10
-  echoPassifProgressiveIncrement: 6
-  echoJoueurProgressiveIncrement: 12
+  isDecrementalMode: 0
+  decrementalStartValue: 100
+  scannerDecrementPower: 10
+  echoPassifDecrementPower: 6
+  echoJoueurDecrementPower: 15
   materialToControl: {fileID: 0}
   materialCutoffRestingValue: 1.15
   materialCutoffScannerTargetValue: 0.6
@@ -42960,13 +43175,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   blendShapeIndex: 0
   blendShapeValueTarget: 0
-  isProgressive: 0
   restingValue: 100
   lerpSpeed: 2
   returnDelay: 6
-  scannerProgressiveIncrement: 10
-  echoPassifProgressiveIncrement: 6
-  echoJoueurProgressiveIncrement: 12
+  isDecrementalMode: 0
+  decrementalStartValue: 100
+  scannerDecrementPower: 10
+  echoPassifDecrementPower: 6
+  echoJoueurDecrementPower: 15
   materialToControl: {fileID: 0}
   materialCutoffRestingValue: 0.8
   materialCutoffScannerTargetValue: 0.4
@@ -43014,13 +43230,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   blendShapeIndex: 0
   blendShapeValueTarget: 0
-  isProgressive: 0
   restingValue: 100
   lerpSpeed: 2
   returnDelay: 6
-  scannerProgressiveIncrement: 10
-  echoPassifProgressiveIncrement: 6
-  echoJoueurProgressiveIncrement: 12
+  isDecrementalMode: 0
+  decrementalStartValue: 100
+  scannerDecrementPower: 10
+  echoPassifDecrementPower: 6
+  echoJoueurDecrementPower: 15
   materialToControl: {fileID: 0}
   materialCutoffRestingValue: 0.8
   materialCutoffScannerTargetValue: 0.4
@@ -43384,13 +43601,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   blendShapeIndex: 0
   blendShapeValueTarget: 0
-  isProgressive: 0
   restingValue: 100
   lerpSpeed: 2
   returnDelay: 6
-  scannerProgressiveIncrement: 10
-  echoPassifProgressiveIncrement: 6
-  echoJoueurProgressiveIncrement: 12
+  isDecrementalMode: 0
+  decrementalStartValue: 100
+  scannerDecrementPower: 10
+  echoPassifDecrementPower: 6
+  echoJoueurDecrementPower: 15
   materialToControl: {fileID: 0}
   materialCutoffRestingValue: 1.15
   materialCutoffScannerTargetValue: 0.6
@@ -43438,13 +43656,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   blendShapeIndex: 0
   blendShapeValueTarget: 0
-  isProgressive: 0
   restingValue: 100
   lerpSpeed: 2
   returnDelay: 6
-  scannerProgressiveIncrement: 10
-  echoPassifProgressiveIncrement: 6
-  echoJoueurProgressiveIncrement: 12
+  isDecrementalMode: 0
+  decrementalStartValue: 100
+  scannerDecrementPower: 10
+  echoPassifDecrementPower: 6
+  echoJoueurDecrementPower: 15
   materialToControl: {fileID: 0}
   materialCutoffRestingValue: 0.8
   materialCutoffScannerTargetValue: 0.4
@@ -43514,13 +43733,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   blendShapeIndex: 0
   blendShapeValueTarget: 0
-  isProgressive: 0
   restingValue: 100
   lerpSpeed: 2
   returnDelay: 6
-  scannerProgressiveIncrement: 10
-  echoPassifProgressiveIncrement: 6
-  echoJoueurProgressiveIncrement: 12
+  isDecrementalMode: 0
+  decrementalStartValue: 100
+  scannerDecrementPower: 10
+  echoPassifDecrementPower: 6
+  echoJoueurDecrementPower: 15
   materialToControl: {fileID: 0}
   materialCutoffRestingValue: 1.15
   materialCutoffScannerTargetValue: 0.6
@@ -43584,13 +43804,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   blendShapeIndex: 0
   blendShapeValueTarget: 0
-  isProgressive: 0
   restingValue: 100
   lerpSpeed: 2
   returnDelay: 6
-  scannerProgressiveIncrement: 10
-  echoPassifProgressiveIncrement: 6
-  echoJoueurProgressiveIncrement: 12
+  isDecrementalMode: 0
+  decrementalStartValue: 100
+  scannerDecrementPower: 10
+  echoPassifDecrementPower: 6
+  echoJoueurDecrementPower: 15
   materialToControl: {fileID: 0}
   materialCutoffRestingValue: 0.8
   materialCutoffScannerTargetValue: 0.4
@@ -43638,13 +43859,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   blendShapeIndex: 0
   blendShapeValueTarget: 0
-  isProgressive: 0
   restingValue: 100
   lerpSpeed: 2
   returnDelay: 6
-  scannerProgressiveIncrement: 10
-  echoPassifProgressiveIncrement: 6
-  echoJoueurProgressiveIncrement: 12
+  isDecrementalMode: 0
+  decrementalStartValue: 100
+  scannerDecrementPower: 10
+  echoPassifDecrementPower: 6
+  echoJoueurDecrementPower: 15
   materialToControl: {fileID: 0}
   materialCutoffRestingValue: 0.8
   materialCutoffScannerTargetValue: 0.4
@@ -43741,13 +43963,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   blendShapeIndex: 0
   blendShapeValueTarget: 0
-  isProgressive: 0
   restingValue: 0
   lerpSpeed: 5
   returnDelay: 3
-  scannerProgressiveIncrement: 10
-  echoPassifProgressiveIncrement: 6
-  echoJoueurProgressiveIncrement: 12
+  isDecrementalMode: 0
+  decrementalStartValue: 100
+  scannerDecrementPower: 10
+  echoPassifDecrementPower: 6
+  echoJoueurDecrementPower: 15
   materialToControl: {fileID: 0}
   materialCutoffRestingValue: 0.6
   materialCutoffScannerTargetValue: 0.6
@@ -44119,13 +44342,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   blendShapeIndex: 0
   blendShapeValueTarget: 0
-  isProgressive: 0
   restingValue: 100
   lerpSpeed: 2
   returnDelay: 6
-  scannerProgressiveIncrement: 10
-  echoPassifProgressiveIncrement: 6
-  echoJoueurProgressiveIncrement: 12
+  isDecrementalMode: 0
+  decrementalStartValue: 100
+  scannerDecrementPower: 10
+  echoPassifDecrementPower: 6
+  echoJoueurDecrementPower: 15
   materialToControl: {fileID: 0}
   materialCutoffRestingValue: 0.8
   materialCutoffScannerTargetValue: 0.4
