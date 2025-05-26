@@ -7,6 +7,11 @@ public class EchoObject : MonoBehaviour
     [SerializeField]
     private GameObject collisionPrefab;
 
+    [Header("Echo Control")]
+    [SerializeField] private bool enableEchoAtStart = false; // Activer l'écho au démarrage
+    [SerializeField] private float echoActivationDelay = 5f; // Délai avant activation automatique (en secondes)
+    private bool isEchoActive = false; // État actuel de l'écho
+
     [Header("Growth Settings")]
     public float growthDuration = 10f;
     public float minimumSize = 1f;
@@ -23,8 +28,37 @@ public class EchoObject : MonoBehaviour
     [SerializeField] private float tileSurfaceScaleModifier = 1.10f; // +10% pour TileSurface
     [SerializeField] private float carpetSurfaceScaleModifier = 0.90f; // -10% pour CarpetSurface
 
+    private void Start()
+    {
+        // Définir l'état initial de l'écho
+        isEchoActive = enableEchoAtStart;
+
+        // Si l'écho n'est pas activé au départ et qu'un délai est défini, démarrer le timer
+        if (!enableEchoAtStart && echoActivationDelay > 0)
+        {
+            StartCoroutine(ActivateEchoAfterDelay());
+        }
+
+        Debug.Log($"EchoObject initialisé - Écho {(isEchoActive ? "activé" : "désactivé")} au démarrage");
+    }
+
+    private IEnumerator ActivateEchoAfterDelay()
+    {
+        Debug.Log($"Écho sera activé dans {echoActivationDelay} secondes");
+        yield return new WaitForSeconds(echoActivationDelay);
+
+        isEchoActive = true;
+        Debug.Log("Écho automatiquement activé après le délai");
+    }
+
     private void OnCollisionEnter(Collision collision)
     {
+        // Vérifier si l'écho est activé avant de traiter les collisions
+        if (!isEchoActive)
+        {
+            return;
+        }
+
         foreach (ContactPoint contact in collision.contacts)
         {
             GameObject obj = Instantiate(collisionPrefab, contact.point, Quaternion.identity);
@@ -37,6 +71,25 @@ public class EchoObject : MonoBehaviour
 
             StartCoroutine(GrowAndFade(obj, growthDuration));
         }
+    }
+
+    /// <summary>
+    /// Active ou désactive l'écho manuellement
+    /// </summary>
+    /// <param name="enable">True pour activer, false pour désactiver</param>
+    public void SetEchoEnabled(bool enable)
+    {
+        isEchoActive = enable;
+        Debug.Log($"Écho {(enable ? "activé" : "désactivé")} manuellement");
+    }
+
+    /// <summary>
+    /// Retourne l'état actuel de l'écho
+    /// </summary>
+    /// <returns>True si l'écho est actif, false sinon</returns>
+    public bool IsEchoActive()
+    {
+        return isEchoActive;
     }
 
     /// <summary>
