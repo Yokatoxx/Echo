@@ -15,15 +15,17 @@ public class StealthTutorial : BaseTutorial
         // Trouver tous les ennemis
         GameObject[] enemies = GameObject.FindGameObjectsWithTag("Enemy");
         enemyObjects.AddRange(enemies);
-        
+
         originalTimeScale = Time.timeScale;
 
-        // Créer le texte stealth
+        // Créer le texte stealth avec l'offset vertical
+        Vector2 stealthOffset = new Vector2(0, tutorialData.stealthTextVerticalOffset * 50f); // Multiplier par 50 pour convertir en pixels UI
         stealthText = textManager.CreateScreenCenterText(
             "stealth",
             tutorialData.stealthTutorialText,
             tutorialData.stealthTextColor,
-            tutorialData.stealthTextSize
+            tutorialData.stealthTextSize,
+            stealthOffset
         );
 
         // Créer le fond si activé
@@ -41,8 +43,6 @@ public class StealthTutorial : BaseTutorial
                 tutorialData.stealthBackgroundCornerRadius
             );
         }
-
-        Debug.Log($"StealthTutorial: Trouvé {enemyObjects.Count} ennemis");
     }
 
     protected override void OnStartTutorial()

@@ -40,10 +40,10 @@ MonoBehaviour:
   echoTextDistance: 5
   echoTextVerticalOffset: 0
   stealthTriggerDistance: 6
-  stealthTextDistance: 3
-  stealthTextSize: 3
+  stealthTextDistance: 4.96
+  stealthTextSize: 4.14
   stealthTextScale: 1.2
-  stealthTextVerticalOffset: 0
+  stealthTextVerticalOffset: 2
   showStealthBackground: 1
   stealthBackgroundPadding: 10
   stealthBackgroundCornerRadius: 20

@@ -138,13 +138,22 @@ public class TutorialTextManager : MonoBehaviour
         }
     }
 
+    // Méthode originale conservée pour la compatibilité
     public GameObject CreateScreenCenterText(string id, string text, Color color, float fontSize)
+    {
+        return CreateScreenCenterText(id, text, color, fontSize, Vector2.zero);
+    }
+
+    // Nouvelle méthode surchargée avec offset
+    public GameObject CreateScreenCenterText(string id, string text, Color color, float fontSize, Vector2 offset)
     {
         try
         {
             if (textObjects.ContainsKey(id))
             {
                 UpdateTextContent(id, text);
+                // Mettre à jour la position si l'offset a changé
+                UpdateTextOffset(id, offset);
                 return textObjects[id];
             }
 
@@ -166,7 +175,7 @@ public class TutorialTextManager : MonoBehaviour
                 RectTransform rectTransform = textObj.GetComponent<RectTransform>();
                 rectTransform.anchorMin = new Vector2(0.5f, 0.5f);
                 rectTransform.anchorMax = new Vector2(0.5f, 0.5f);
-                rectTransform.anchoredPosition = Vector2.zero;
+                rectTransform.anchoredPosition = offset; // Utiliser l'offset au lieu de Vector2.zero
                 rectTransform.sizeDelta = new Vector2(800, 200);
             }
             else
@@ -278,6 +287,11 @@ public class TutorialTextManager : MonoBehaviour
 
     public GameObject CreateBackgroundPanel(string id, Vector2 size, Color color, float cornerRadius = 20f)
     {
+        return CreateBackgroundPanel(id, size, color, cornerRadius, Vector2.zero);
+    }
+
+    public GameObject CreateBackgroundPanel(string id, Vector2 size, Color color, float cornerRadius, Vector2 offset)
+    {
         try
         {
             if (tutorialCanvas == null) return null;
@@ -285,6 +299,8 @@ public class TutorialTextManager : MonoBehaviour
             string panelId = $"{id}_Background";
             if (textObjects.ContainsKey(panelId))
             {
+                // Mettre à jour la position si l'offset a changé
+                UpdateTextOffset(panelId, offset);
                 return textObjects[panelId];
             }
 
@@ -312,7 +328,7 @@ public class TutorialTextManager : MonoBehaviour
             RectTransform bgRectTransform = panel.GetComponent<RectTransform>();
             bgRectTransform.anchorMin = new Vector2(0.5f, 0.5f);
             bgRectTransform.anchorMax = new Vector2(0.5f, 0.5f);
-            bgRectTransform.anchoredPosition = Vector2.zero;
+            bgRectTransform.anchoredPosition = offset; // Utiliser l'offset au lieu de Vector2.zero
             bgRectTransform.sizeDelta = size;
 
             panel.SetActive(false);
@@ -413,6 +429,19 @@ public class TutorialTextManager : MonoBehaviour
         if (textObjects.ContainsKey(id) && textObjects[id] != null)
         {
             textObjects[id].transform.position = position;
+        }
+    }
+
+    // Nouvelle méthode pour mettre à jour l'offset des éléments UI
+    public void UpdateTextOffset(string id, Vector2 offset)
+    {
+        if (textObjects.ContainsKey(id) && textObjects[id] != null)
+        {
+            RectTransform rectTransform = textObjects[id].GetComponent<RectTransform>();
+            if (rectTransform != null)
+            {
+                rectTransform.anchoredPosition = offset;
+            }
         }
     }
 
