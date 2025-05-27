@@ -1604,20 +1604,20 @@ MonoBehaviour:
     isActive: 1
     idleValues:
       baseValue: 30
-      variation: 10
-      speedMultiplier: 1
+      variation: 20
+      speedMultiplier: 2
     patrolValues:
       baseValue: 30
-      variation: 10
-      speedMultiplier: 1
+      variation: 20
+      speedMultiplier: 2
     pickUpValues:
       baseValue: 30
-      variation: 10
-      speedMultiplier: 1
+      variation: 20
+      speedMultiplier: 1.94
     chaseValues:
       baseValue: 15
-      variation: 3
-      speedMultiplier: 2
+      variation: 10
+      speedMultiplier: 3.99
     attackValues:
       baseValue: 5
       variation: 10
@@ -1759,6 +1759,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6caeb2186aef09243a68cd5de747fa77, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  collectSoundEvent: event:/SFX/Collectible/Pickup
   collectibles: []
 --- !u!114 &91337020
 MonoBehaviour:
@@ -1827,6 +1828,65 @@ NavMeshAgent:
   m_BaseOffset: 0
   m_WalkableMask: 4294967295
   m_ObstacleAvoidanceType: 4
+--- !u!114 &91337024
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 91337013}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f020a83629dcf504a91e858d343c600c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  stateSounds:
+    patrolEvent:
+      Guid:
+        Data1: -1172906987
+        Data2: 1115543990
+        Data3: -426753394
+        Data4: -430110763
+      Path: event:/MamaPatrol
+    attackEvent:
+      Guid:
+        Data1: -1493176566
+        Data2: 1191335620
+        Data3: -1976658793
+        Data4: 1985397974
+      Path: event:/MamaAttack
+    hitByScannerEvent:
+      Guid:
+        Data1: 1623838138
+        Data2: 1261869565
+        Data3: -807539584
+        Data4: 497941024
+      Path: event:/MamaHitByScanner
+    footstepEvent:
+      Guid:
+        Data1: 15472315
+        Data2: 1289659072
+        Data3: -626667339
+        Data4: -1399241349
+      Path: event:/MamaPas
+    patrolVolume: 0.7
+    attackVolume: 1
+    hitByScannerVolume: 0.9
+    footstepVolume: 0.8
+  enableSounds: 1
+  fadeSpeed: 2
+  patrolFootstepRate: 0.8
+  chaseFootstepRate: 0.24
+  minimumSpeedForFootsteps: 0.5
+  groundCheckDistance: 1.5
+  raycastOffset: 0.1
+  groundLayerMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  surfaceTypeParam: SurfaceType
+  showDebugRaycast: 1
+  intensityParameter: Intensity
+  stateParameter: EnemyState
 --- !u!1 &92581733 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: -8759936008126709814, guid: e1eda139ba510c24887b4685cfcd10db, type: 3}
@@ -7829,6 +7889,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: b018e9070d2f2fc408918493e6c1af98, type: 3}
       insertIndex: -1
       addedObject: {fileID: 91337023}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: b018e9070d2f2fc408918493e6c1af98, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 91337024}
   m_SourcePrefab: {fileID: 100100000, guid: b018e9070d2f2fc408918493e6c1af98, type: 3}
 --- !u!1 &418962106 stripped
 GameObject:
@@ -41643,6 +41706,30 @@ PrefabInstance:
     - target: {fileID: 1171743857117902261, guid: 8bb389be5ca43884eacbb504dbc8e170, type: 3}
       propertyPath: m_Center.x
       value: -0.17
+      objectReference: {fileID: 0}
+    - target: {fileID: 1343149365429074724, guid: 8bb389be5ca43884eacbb504dbc8e170, type: 3}
+      propertyPath: collectSound.Path
+      value: event:/Zipper
+      objectReference: {fileID: 0}
+    - target: {fileID: 1343149365429074724, guid: 8bb389be5ca43884eacbb504dbc8e170, type: 3}
+      propertyPath: collectSoundEvent
+      value: event:/Zipper
+      objectReference: {fileID: 0}
+    - target: {fileID: 1343149365429074724, guid: 8bb389be5ca43884eacbb504dbc8e170, type: 3}
+      propertyPath: collectSound.Guid.Data1
+      value: -1424294720
+      objectReference: {fileID: 0}
+    - target: {fileID: 1343149365429074724, guid: 8bb389be5ca43884eacbb504dbc8e170, type: 3}
+      propertyPath: collectSound.Guid.Data2
+      value: 1081982566
+      objectReference: {fileID: 0}
+    - target: {fileID: 1343149365429074724, guid: 8bb389be5ca43884eacbb504dbc8e170, type: 3}
+      propertyPath: collectSound.Guid.Data3
+      value: 1436684942
+      objectReference: {fileID: 0}
+    - target: {fileID: 1343149365429074724, guid: 8bb389be5ca43884eacbb504dbc8e170, type: 3}
+      propertyPath: collectSound.Guid.Data4
+      value: -263777860
       objectReference: {fileID: 0}
     - target: {fileID: 1343149365429074724, guid: 8bb389be5ca43884eacbb504dbc8e170, type: 3}
       propertyPath: collectibles.Array.size

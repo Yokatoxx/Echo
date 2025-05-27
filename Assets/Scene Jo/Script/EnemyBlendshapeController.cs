@@ -437,9 +437,6 @@ public class EnemyBlendshapeController : MonoBehaviour
         }
     }
 
-    // ... Le reste des méthodes restent identiques ...
-
-    // Propriétés publiques pour inspecter l'état
     public bool IsTransitioning => isTransitioning;
     public float TransitionProgress => transitionProgress;
     public EnemyState CurrentState => currentState;
