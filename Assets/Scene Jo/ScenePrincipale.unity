@@ -192,6 +192,20 @@ MonoBehaviour:
   isTutorialActive: 0
   tutorialInitialCutoffValue: 0.5
   saveTutorialState: 1
+  fmodEventToTarget:
+    Guid:
+      Data1: -1086434843
+      Data2: 1255254014
+      Data3: 28572335
+      Data4: 1540235985
+    Path: event:/ParticuleFormation
+  fmodEventToResting:
+    Guid:
+      Data1: 47805584
+      Data2: 1075409246
+      Data3: 1241597108
+      Data4: -1714992784
+    Path: event:/ParticuleDestruction
 --- !u!64 &6112406
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -469,6 +483,20 @@ MonoBehaviour:
   isTutorialActive: 1
   tutorialInitialCutoffValue: 1.15
   saveTutorialState: 0
+  fmodEventToTarget:
+    Guid:
+      Data1: 0
+      Data2: 0
+      Data3: 0
+      Data4: 0
+    Path: 
+  fmodEventToResting:
+    Guid:
+      Data1: 0
+      Data2: 0
+      Data3: 0
+      Data4: 0
+    Path: 
 --- !u!64 &24274602
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -555,6 +583,20 @@ MonoBehaviour:
   isTutorialActive: 1
   tutorialInitialCutoffValue: 1.15
   saveTutorialState: 0
+  fmodEventToTarget:
+    Guid:
+      Data1: 0
+      Data2: 0
+      Data3: 0
+      Data4: 0
+    Path: 
+  fmodEventToResting:
+    Guid:
+      Data1: 0
+      Data2: 0
+      Data3: 0
+      Data4: 0
+    Path: 
 --- !u!64 &28114224
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -632,6 +674,20 @@ MonoBehaviour:
   isTutorialActive: 1
   tutorialInitialCutoffValue: 1.15
   saveTutorialState: 0
+  fmodEventToTarget:
+    Guid:
+      Data1: 0
+      Data2: 0
+      Data3: 0
+      Data4: 0
+    Path: 
+  fmodEventToResting:
+    Guid:
+      Data1: 0
+      Data2: 0
+      Data3: 0
+      Data4: 0
+    Path: 
 --- !u!1 &41143934
 GameObject:
   m_ObjectHideFlags: 0
@@ -698,6 +754,20 @@ MonoBehaviour:
   isTutorialActive: 1
   tutorialInitialCutoffValue: 1.15
   saveTutorialState: 0
+  fmodEventToTarget:
+    Guid:
+      Data1: 0
+      Data2: 0
+      Data3: 0
+      Data4: 0
+    Path: 
+  fmodEventToResting:
+    Guid:
+      Data1: 0
+      Data2: 0
+      Data3: 0
+      Data4: 0
+    Path: 
 --- !u!64 &42195726
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -753,6 +823,20 @@ MonoBehaviour:
   isTutorialActive: 1
   tutorialInitialCutoffValue: 1.15
   saveTutorialState: 0
+  fmodEventToTarget:
+    Guid:
+      Data1: 0
+      Data2: 0
+      Data3: 0
+      Data4: 0
+    Path: 
+  fmodEventToResting:
+    Guid:
+      Data1: 0
+      Data2: 0
+      Data3: 0
+      Data4: 0
+    Path: 
 --- !u!64 &44657148
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -1086,6 +1170,20 @@ MonoBehaviour:
   isTutorialActive: 0
   tutorialInitialCutoffValue: 0.5
   saveTutorialState: 1
+  fmodEventToTarget:
+    Guid:
+      Data1: -1086434843
+      Data2: 1255254014
+      Data3: 28572335
+      Data4: 1540235985
+    Path: event:/ParticuleFormation
+  fmodEventToResting:
+    Guid:
+      Data1: 47805584
+      Data2: 1075409246
+      Data3: 1241597108
+      Data4: -1714992784
+    Path: event:/ParticuleDestruction
 --- !u!64 &63971907
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -1141,6 +1239,20 @@ MonoBehaviour:
   isTutorialActive: 1
   tutorialInitialCutoffValue: 1.15
   saveTutorialState: 0
+  fmodEventToTarget:
+    Guid:
+      Data1: 0
+      Data2: 0
+      Data3: 0
+      Data4: 0
+    Path: 
+  fmodEventToResting:
+    Guid:
+      Data1: 0
+      Data2: 0
+      Data3: 0
+      Data4: 0
+    Path: 
 --- !u!64 &66886152
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -1196,6 +1308,20 @@ MonoBehaviour:
   isTutorialActive: 0
   tutorialInitialCutoffValue: 0.5
   saveTutorialState: 1
+  fmodEventToTarget:
+    Guid:
+      Data1: -1086434843
+      Data2: 1255254014
+      Data3: 28572335
+      Data4: 1540235985
+    Path: event:/ParticuleFormation
+  fmodEventToResting:
+    Guid:
+      Data1: 47805584
+      Data2: 1075409246
+      Data3: 1241597108
+      Data4: -1714992784
+    Path: event:/ParticuleDestruction
 --- !u!64 &80734696
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -1251,6 +1377,20 @@ MonoBehaviour:
   isTutorialActive: 1
   tutorialInitialCutoffValue: 1.15
   saveTutorialState: 0
+  fmodEventToTarget:
+    Guid:
+      Data1: 0
+      Data2: 0
+      Data3: 0
+      Data4: 0
+    Path: 
+  fmodEventToResting:
+    Guid:
+      Data1: 0
+      Data2: 0
+      Data3: 0
+      Data4: 0
+    Path: 
 --- !u!64 &83349426
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -1767,6 +1907,7 @@ MonoBehaviour:
     footstepVolume: 0.497
   enableSounds: 1
   fadeSpeed: 2
+  hitByScannerCooldown: 2.04
   patrolFootstepRate: 0.8
   chaseFootstepRate: 0.24
   minimumSpeedForFootsteps: 0.5
@@ -1812,6 +1953,20 @@ MonoBehaviour:
   isTutorialActive: 1
   tutorialInitialCutoffValue: 1.15
   saveTutorialState: 0
+  fmodEventToTarget:
+    Guid:
+      Data1: 0
+      Data2: 0
+      Data3: 0
+      Data4: 0
+    Path: 
+  fmodEventToResting:
+    Guid:
+      Data1: 0
+      Data2: 0
+      Data3: 0
+      Data4: 0
+    Path: 
 --- !u!64 &92581737
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -2302,6 +2457,20 @@ MonoBehaviour:
   isTutorialActive: 1
   tutorialInitialCutoffValue: 1.15
   saveTutorialState: 0
+  fmodEventToTarget:
+    Guid:
+      Data1: 0
+      Data2: 0
+      Data3: 0
+      Data4: 0
+    Path: 
+  fmodEventToResting:
+    Guid:
+      Data1: 0
+      Data2: 0
+      Data3: 0
+      Data4: 0
+    Path: 
 --- !u!114 &133179744 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 5733453380523372688, guid: 9cf5b9ddbcef7054d85f4226c2ed95d8, type: 3}
@@ -2346,6 +2515,20 @@ MonoBehaviour:
   isTutorialActive: 0
   tutorialInitialCutoffValue: 0.5
   saveTutorialState: 1
+  fmodEventToTarget:
+    Guid:
+      Data1: -1086434843
+      Data2: 1255254014
+      Data3: 28572335
+      Data4: 1540235985
+    Path: event:/ParticuleFormation
+  fmodEventToResting:
+    Guid:
+      Data1: 47805584
+      Data2: 1075409246
+      Data3: 1241597108
+      Data4: -1714992784
+    Path: event:/ParticuleDestruction
 --- !u!64 &143259768
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -2401,6 +2584,20 @@ MonoBehaviour:
   isTutorialActive: 0
   tutorialInitialCutoffValue: 0.5
   saveTutorialState: 1
+  fmodEventToTarget:
+    Guid:
+      Data1: -1086434843
+      Data2: 1255254014
+      Data3: 28572335
+      Data4: 1540235985
+    Path: event:/ParticuleFormation
+  fmodEventToResting:
+    Guid:
+      Data1: 47805584
+      Data2: 1075409246
+      Data3: 1241597108
+      Data4: -1714992784
+    Path: event:/ParticuleDestruction
 --- !u!64 &148683764
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -2718,6 +2915,20 @@ MonoBehaviour:
   isTutorialActive: 0
   tutorialInitialCutoffValue: 0.5
   saveTutorialState: 1
+  fmodEventToTarget:
+    Guid:
+      Data1: -1086434843
+      Data2: 1255254014
+      Data3: 28572335
+      Data4: 1540235985
+    Path: event:/ParticuleFormation
+  fmodEventToResting:
+    Guid:
+      Data1: 47805584
+      Data2: 1075409246
+      Data3: 1241597108
+      Data4: -1714992784
+    Path: event:/ParticuleDestruction
 --- !u!64 &164531436
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -3341,6 +3552,20 @@ MonoBehaviour:
   isTutorialActive: 1
   tutorialInitialCutoffValue: 1.15
   saveTutorialState: 0
+  fmodEventToTarget:
+    Guid:
+      Data1: 0
+      Data2: 0
+      Data3: 0
+      Data4: 0
+    Path: 
+  fmodEventToResting:
+    Guid:
+      Data1: 0
+      Data2: 0
+      Data3: 0
+      Data4: 0
+    Path: 
 --- !u!64 &189864679
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -3418,6 +3643,20 @@ MonoBehaviour:
   isTutorialActive: 1
   tutorialInitialCutoffValue: 1.15
   saveTutorialState: 0
+  fmodEventToTarget:
+    Guid:
+      Data1: 0
+      Data2: 0
+      Data3: 0
+      Data4: 0
+    Path: 
+  fmodEventToResting:
+    Guid:
+      Data1: 0
+      Data2: 0
+      Data3: 0
+      Data4: 0
+    Path: 
 --- !u!1 &202076158
 GameObject:
   m_ObjectHideFlags: 0
@@ -3556,6 +3795,20 @@ MonoBehaviour:
   isTutorialActive: 1
   tutorialInitialCutoffValue: 1.15
   saveTutorialState: 0
+  fmodEventToTarget:
+    Guid:
+      Data1: 0
+      Data2: 0
+      Data3: 0
+      Data4: 0
+    Path: 
+  fmodEventToResting:
+    Guid:
+      Data1: 0
+      Data2: 0
+      Data3: 0
+      Data4: 0
+    Path: 
 --- !u!1 &217098373
 GameObject:
   m_ObjectHideFlags: 0
@@ -3811,6 +4064,20 @@ MonoBehaviour:
   isTutorialActive: 1
   tutorialInitialCutoffValue: 1.15
   saveTutorialState: 0
+  fmodEventToTarget:
+    Guid:
+      Data1: 0
+      Data2: 0
+      Data3: 0
+      Data4: 0
+    Path: 
+  fmodEventToResting:
+    Guid:
+      Data1: 0
+      Data2: 0
+      Data3: 0
+      Data4: 0
+    Path: 
 --- !u!64 &241623606
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -3866,6 +4133,20 @@ MonoBehaviour:
   isTutorialActive: 1
   tutorialInitialCutoffValue: 1.15
   saveTutorialState: 0
+  fmodEventToTarget:
+    Guid:
+      Data1: 0
+      Data2: 0
+      Data3: 0
+      Data4: 0
+    Path: 
+  fmodEventToResting:
+    Guid:
+      Data1: 0
+      Data2: 0
+      Data3: 0
+      Data4: 0
+    Path: 
 --- !u!64 &244871903
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -3975,6 +4256,20 @@ MonoBehaviour:
   isTutorialActive: 1
   tutorialInitialCutoffValue: 1.15
   saveTutorialState: 0
+  fmodEventToTarget:
+    Guid:
+      Data1: 0
+      Data2: 0
+      Data3: 0
+      Data4: 0
+    Path: 
+  fmodEventToResting:
+    Guid:
+      Data1: 0
+      Data2: 0
+      Data3: 0
+      Data4: 0
+    Path: 
 --- !u!64 &255191859
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -4308,6 +4603,20 @@ MonoBehaviour:
   isTutorialActive: 0
   tutorialInitialCutoffValue: 0.5
   saveTutorialState: 1
+  fmodEventToTarget:
+    Guid:
+      Data1: -1086434843
+      Data2: 1255254014
+      Data3: 28572335
+      Data4: 1540235985
+    Path: event:/ParticuleFormation
+  fmodEventToResting:
+    Guid:
+      Data1: 47805584
+      Data2: 1075409246
+      Data3: 1241597108
+      Data4: -1714992784
+    Path: event:/ParticuleDestruction
 --- !u!64 &271101906
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -4363,6 +4672,20 @@ MonoBehaviour:
   isTutorialActive: 1
   tutorialInitialCutoffValue: 1.15
   saveTutorialState: 0
+  fmodEventToTarget:
+    Guid:
+      Data1: 0
+      Data2: 0
+      Data3: 0
+      Data4: 0
+    Path: 
+  fmodEventToResting:
+    Guid:
+      Data1: 0
+      Data2: 0
+      Data3: 0
+      Data4: 0
+    Path: 
 --- !u!64 &274863089
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -4589,6 +4912,20 @@ MonoBehaviour:
   isTutorialActive: 1
   tutorialInitialCutoffValue: 1.15
   saveTutorialState: 0
+  fmodEventToTarget:
+    Guid:
+      Data1: 0
+      Data2: 0
+      Data3: 0
+      Data4: 0
+    Path: 
+  fmodEventToResting:
+    Guid:
+      Data1: 0
+      Data2: 0
+      Data3: 0
+      Data4: 0
+    Path: 
 --- !u!64 &286582335
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -4727,6 +5064,95 @@ Transform:
   - {fileID: 268294563}
   m_Father: {fileID: 91337016}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1001 &312988980
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 1000011987023596, guid: 3e8cdb2d9a3264041936d8a30d8be2af, type: 3}
+      propertyPath: m_Name
+      value: ScreenshotCompanion
+      objectReference: {fileID: 0}
+    - target: {fileID: 4000012850680594, guid: 3e8cdb2d9a3264041936d8a30d8be2af, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -143.44035
+      objectReference: {fileID: 0}
+    - target: {fileID: 4000012850680594, guid: 3e8cdb2d9a3264041936d8a30d8be2af, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -176.97903
+      objectReference: {fileID: 0}
+    - target: {fileID: 4000012850680594, guid: 3e8cdb2d9a3264041936d8a30d8be2af, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 21.93536
+      objectReference: {fileID: 0}
+    - target: {fileID: 4000012850680594, guid: 3e8cdb2d9a3264041936d8a30d8be2af, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4000012850680594, guid: 3e8cdb2d9a3264041936d8a30d8be2af, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4000012850680594, guid: 3e8cdb2d9a3264041936d8a30d8be2af, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4000012850680594, guid: 3e8cdb2d9a3264041936d8a30d8be2af, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4000012850680594, guid: 3e8cdb2d9a3264041936d8a30d8be2af, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4000012850680594, guid: 3e8cdb2d9a3264041936d8a30d8be2af, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4000012850680594, guid: 3e8cdb2d9a3264041936d8a30d8be2af, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 114000010742529126, guid: 3e8cdb2d9a3264041936d8a30d8be2af, type: 3}
+      propertyPath: lastCam
+      value: 
+      objectReference: {fileID: 575867313}
+    - target: {fileID: 114000010742529126, guid: 3e8cdb2d9a3264041936d8a30d8be2af, type: 3}
+      propertyPath: list.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114000010742529126, guid: 3e8cdb2d9a3264041936d8a30d8be2af, type: 3}
+      propertyPath: settings.fileType
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 114000010742529126, guid: 3e8cdb2d9a3264041936d8a30d8be2af, type: 3}
+      propertyPath: list.Array.data[0].cam
+      value: 
+      objectReference: {fileID: 449630559}
+    - target: {fileID: 114000010742529126, guid: 3e8cdb2d9a3264041936d8a30d8be2af, type: 3}
+      propertyPath: settings.captureMethod
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114000010742529126, guid: 3e8cdb2d9a3264041936d8a30d8be2af, type: 3}
+      propertyPath: settings.renderSizeMultiplier
+      value: 2.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 114000010742529126, guid: 3e8cdb2d9a3264041936d8a30d8be2af, type: 3}
+      propertyPath: list.Array.data[0].deleteQuestion
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 114000010742529126, guid: 3e8cdb2d9a3264041936d8a30d8be2af, type: 3}
+      propertyPath: list.Array.data[1].deleteQuestion
+      value: 1
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 3e8cdb2d9a3264041936d8a30d8be2af, type: 3}
 --- !u!1 &315146904 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 3900395361708840908, guid: 91602627b9f1b024cbe8a52dfe570a48, type: 3}
@@ -4760,6 +5186,20 @@ MonoBehaviour:
   isTutorialActive: 0
   tutorialInitialCutoffValue: 0.5
   saveTutorialState: 1
+  fmodEventToTarget:
+    Guid:
+      Data1: -1086434843
+      Data2: 1255254014
+      Data3: 28572335
+      Data4: 1540235985
+    Path: event:/ParticuleFormation
+  fmodEventToResting:
+    Guid:
+      Data1: 47805584
+      Data2: 1075409246
+      Data3: 1241597108
+      Data4: -1714992784
+    Path: event:/ParticuleDestruction
 --- !u!64 &315146908
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -4922,6 +5362,20 @@ MonoBehaviour:
   isTutorialActive: 1
   tutorialInitialCutoffValue: 1.15
   saveTutorialState: 0
+  fmodEventToTarget:
+    Guid:
+      Data1: 0
+      Data2: 0
+      Data3: 0
+      Data4: 0
+    Path: 
+  fmodEventToResting:
+    Guid:
+      Data1: 0
+      Data2: 0
+      Data3: 0
+      Data4: 0
+    Path: 
 --- !u!1 &326868367
 GameObject:
   m_ObjectHideFlags: 0
@@ -5183,6 +5637,20 @@ MonoBehaviour:
   isTutorialActive: 0
   tutorialInitialCutoffValue: 1.15
   saveTutorialState: 0
+  fmodEventToTarget:
+    Guid:
+      Data1: 0
+      Data2: 0
+      Data3: 0
+      Data4: 0
+    Path: 
+  fmodEventToResting:
+    Guid:
+      Data1: 0
+      Data2: 0
+      Data3: 0
+      Data4: 0
+    Path: 
 --- !u!1 &333367964 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: -7374219674283527612, guid: 56ce10c00275c5d45a502c5ccca5bd4e, type: 3}
@@ -5216,6 +5684,20 @@ MonoBehaviour:
   isTutorialActive: 1
   tutorialInitialCutoffValue: 1.15
   saveTutorialState: 0
+  fmodEventToTarget:
+    Guid:
+      Data1: 0
+      Data2: 0
+      Data3: 0
+      Data4: 0
+    Path: 
+  fmodEventToResting:
+    Guid:
+      Data1: 0
+      Data2: 0
+      Data3: 0
+      Data4: 0
+    Path: 
 --- !u!64 &333367968
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -5306,6 +5788,20 @@ MonoBehaviour:
   isTutorialActive: 0
   tutorialInitialCutoffValue: 0.5
   saveTutorialState: 1
+  fmodEventToTarget:
+    Guid:
+      Data1: -1086434843
+      Data2: 1255254014
+      Data3: 28572335
+      Data4: 1540235985
+    Path: event:/ParticuleFormation
+  fmodEventToResting:
+    Guid:
+      Data1: 47805584
+      Data2: 1075409246
+      Data3: 1241597108
+      Data4: -1714992784
+    Path: event:/ParticuleDestruction
 --- !u!64 &340431971
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -5361,6 +5857,20 @@ MonoBehaviour:
   isTutorialActive: 0
   tutorialInitialCutoffValue: 0.5
   saveTutorialState: 1
+  fmodEventToTarget:
+    Guid:
+      Data1: -1086434843
+      Data2: 1255254014
+      Data3: 28572335
+      Data4: 1540235985
+    Path: event:/ParticuleFormation
+  fmodEventToResting:
+    Guid:
+      Data1: 47805584
+      Data2: 1075409246
+      Data3: 1241597108
+      Data4: -1714992784
+    Path: event:/ParticuleDestruction
 --- !u!64 &348878842
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -5416,6 +5926,20 @@ MonoBehaviour:
   isTutorialActive: 1
   tutorialInitialCutoffValue: 1.15
   saveTutorialState: 0
+  fmodEventToTarget:
+    Guid:
+      Data1: 0
+      Data2: 0
+      Data3: 0
+      Data4: 0
+    Path: 
+  fmodEventToResting:
+    Guid:
+      Data1: 0
+      Data2: 0
+      Data3: 0
+      Data4: 0
+    Path: 
 --- !u!64 &365879527
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -5647,6 +6171,20 @@ MonoBehaviour:
   isTutorialActive: 1
   tutorialInitialCutoffValue: 1.15
   saveTutorialState: 0
+  fmodEventToTarget:
+    Guid:
+      Data1: 0
+      Data2: 0
+      Data3: 0
+      Data4: 0
+    Path: 
+  fmodEventToResting:
+    Guid:
+      Data1: 0
+      Data2: 0
+      Data3: 0
+      Data4: 0
+    Path: 
 --- !u!1 &377421629 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 9b507d9af3e3e6e4abb8175074017213, type: 3}
@@ -5864,6 +6402,20 @@ MonoBehaviour:
   isTutorialActive: 1
   tutorialInitialCutoffValue: 1.15
   saveTutorialState: 0
+  fmodEventToTarget:
+    Guid:
+      Data1: 0
+      Data2: 0
+      Data3: 0
+      Data4: 0
+    Path: 
+  fmodEventToResting:
+    Guid:
+      Data1: 0
+      Data2: 0
+      Data3: 0
+      Data4: 0
+    Path: 
 --- !u!64 &399005007
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -5941,6 +6493,20 @@ MonoBehaviour:
   isTutorialActive: 1
   tutorialInitialCutoffValue: 1.15
   saveTutorialState: 0
+  fmodEventToTarget:
+    Guid:
+      Data1: 0
+      Data2: 0
+      Data3: 0
+      Data4: 0
+    Path: 
+  fmodEventToResting:
+    Guid:
+      Data1: 0
+      Data2: 0
+      Data3: 0
+      Data4: 0
+    Path: 
 --- !u!65 &399946851
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -6255,6 +6821,20 @@ MonoBehaviour:
   isTutorialActive: 1
   tutorialInitialCutoffValue: 1.15
   saveTutorialState: 0
+  fmodEventToTarget:
+    Guid:
+      Data1: 0
+      Data2: 0
+      Data3: 0
+      Data4: 0
+    Path: 
+  fmodEventToResting:
+    Guid:
+      Data1: 0
+      Data2: 0
+      Data3: 0
+      Data4: 0
+    Path: 
 --- !u!64 &420478640
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -6493,6 +7073,11 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 443749552}
   m_Mesh: {fileID: -5300305916461450808, guid: 27d43957016937c4d9109bd835bd4c36, type: 3}
+--- !u!1 &449630559 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 105023545968733272, guid: 9cf5b9ddbcef7054d85f4226c2ed95d8, type: 3}
+  m_PrefabInstance: {fileID: 1704329924}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &450268125 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 506636376818560446, guid: 52ffa0017d1ee634f86dba8a255bc26d, type: 3}
@@ -6526,6 +7111,20 @@ MonoBehaviour:
   isTutorialActive: 1
   tutorialInitialCutoffValue: 1.15
   saveTutorialState: 0
+  fmodEventToTarget:
+    Guid:
+      Data1: 0
+      Data2: 0
+      Data3: 0
+      Data4: 0
+    Path: 
+  fmodEventToResting:
+    Guid:
+      Data1: 0
+      Data2: 0
+      Data3: 0
+      Data4: 0
+    Path: 
 --- !u!64 &450268129
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -6586,6 +7185,20 @@ MonoBehaviour:
   isTutorialActive: 1
   tutorialInitialCutoffValue: 1.15
   saveTutorialState: 0
+  fmodEventToTarget:
+    Guid:
+      Data1: 0
+      Data2: 0
+      Data3: 0
+      Data4: 0
+    Path: 
+  fmodEventToResting:
+    Guid:
+      Data1: 0
+      Data2: 0
+      Data3: 0
+      Data4: 0
+    Path: 
 --- !u!64 &456706586
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -6668,6 +7281,20 @@ MonoBehaviour:
   isTutorialActive: 1
   tutorialInitialCutoffValue: 1.15
   saveTutorialState: 0
+  fmodEventToTarget:
+    Guid:
+      Data1: 0
+      Data2: 0
+      Data3: 0
+      Data4: 0
+    Path: 
+  fmodEventToResting:
+    Guid:
+      Data1: 0
+      Data2: 0
+      Data3: 0
+      Data4: 0
+    Path: 
 --- !u!64 &462152077
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -6723,6 +7350,20 @@ MonoBehaviour:
   isTutorialActive: 1
   tutorialInitialCutoffValue: 1.15
   saveTutorialState: 0
+  fmodEventToTarget:
+    Guid:
+      Data1: 0
+      Data2: 0
+      Data3: 0
+      Data4: 0
+    Path: 
+  fmodEventToResting:
+    Guid:
+      Data1: 0
+      Data2: 0
+      Data3: 0
+      Data4: 0
+    Path: 
 --- !u!64 &468484452
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -6778,6 +7419,20 @@ MonoBehaviour:
   isTutorialActive: 1
   tutorialInitialCutoffValue: 1.15
   saveTutorialState: 0
+  fmodEventToTarget:
+    Guid:
+      Data1: 0
+      Data2: 0
+      Data3: 0
+      Data4: 0
+    Path: 
+  fmodEventToResting:
+    Guid:
+      Data1: 0
+      Data2: 0
+      Data3: 0
+      Data4: 0
+    Path: 
 --- !u!64 &469236923
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -6833,6 +7488,20 @@ MonoBehaviour:
   isTutorialActive: 1
   tutorialInitialCutoffValue: 1.15
   saveTutorialState: 0
+  fmodEventToTarget:
+    Guid:
+      Data1: 0
+      Data2: 0
+      Data3: 0
+      Data4: 0
+    Path: 
+  fmodEventToResting:
+    Guid:
+      Data1: 0
+      Data2: 0
+      Data3: 0
+      Data4: 0
+    Path: 
 --- !u!64 &471940246
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -6888,6 +7557,20 @@ MonoBehaviour:
   isTutorialActive: 0
   tutorialInitialCutoffValue: 0.5
   saveTutorialState: 1
+  fmodEventToTarget:
+    Guid:
+      Data1: -1086434843
+      Data2: 1255254014
+      Data3: 28572335
+      Data4: 1540235985
+    Path: event:/ParticuleFormation
+  fmodEventToResting:
+    Guid:
+      Data1: 47805584
+      Data2: 1075409246
+      Data3: 1241597108
+      Data4: -1714992784
+    Path: event:/ParticuleDestruction
 --- !u!64 &482380166
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -6943,6 +7626,20 @@ MonoBehaviour:
   isTutorialActive: 1
   tutorialInitialCutoffValue: 1.15
   saveTutorialState: 0
+  fmodEventToTarget:
+    Guid:
+      Data1: 0
+      Data2: 0
+      Data3: 0
+      Data4: 0
+    Path: 
+  fmodEventToResting:
+    Guid:
+      Data1: 0
+      Data2: 0
+      Data3: 0
+      Data4: 0
+    Path: 
 --- !u!64 &496443646
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -7104,6 +7801,20 @@ MonoBehaviour:
   isTutorialActive: 0
   tutorialInitialCutoffValue: 0.5
   saveTutorialState: 1
+  fmodEventToTarget:
+    Guid:
+      Data1: -1086434843
+      Data2: 1255254014
+      Data3: 28572335
+      Data4: 1540235985
+    Path: event:/ParticuleFormation
+  fmodEventToResting:
+    Guid:
+      Data1: 47805584
+      Data2: 1075409246
+      Data3: 1241597108
+      Data4: -1714992784
+    Path: event:/ParticuleDestruction
 --- !u!64 &501758280
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -7242,6 +7953,20 @@ MonoBehaviour:
   isTutorialActive: 0
   tutorialInitialCutoffValue: 0.5
   saveTutorialState: 1
+  fmodEventToTarget:
+    Guid:
+      Data1: -1086434843
+      Data2: 1255254014
+      Data3: 28572335
+      Data4: 1540235985
+    Path: event:/ParticuleFormation
+  fmodEventToResting:
+    Guid:
+      Data1: 47805584
+      Data2: 1075409246
+      Data3: 1241597108
+      Data4: -1714992784
+    Path: event:/ParticuleDestruction
 --- !u!64 &507680277
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -7297,6 +8022,20 @@ MonoBehaviour:
   isTutorialActive: 0
   tutorialInitialCutoffValue: 0.5
   saveTutorialState: 1
+  fmodEventToTarget:
+    Guid:
+      Data1: -1086434843
+      Data2: 1255254014
+      Data3: 28572335
+      Data4: 1540235985
+    Path: event:/ParticuleFormation
+  fmodEventToResting:
+    Guid:
+      Data1: 47805584
+      Data2: 1075409246
+      Data3: 1241597108
+      Data4: -1714992784
+    Path: event:/ParticuleDestruction
 --- !u!64 &523777149
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -7491,6 +8230,20 @@ MonoBehaviour:
   isTutorialActive: 0
   tutorialInitialCutoffValue: 0.5
   saveTutorialState: 1
+  fmodEventToTarget:
+    Guid:
+      Data1: -1086434843
+      Data2: 1255254014
+      Data3: 28572335
+      Data4: 1540235985
+    Path: event:/ParticuleFormation
+  fmodEventToResting:
+    Guid:
+      Data1: 47805584
+      Data2: 1075409246
+      Data3: 1241597108
+      Data4: -1714992784
+    Path: event:/ParticuleDestruction
 --- !u!64 &531103403
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -7773,6 +8526,20 @@ MonoBehaviour:
   isTutorialActive: 1
   tutorialInitialCutoffValue: 1.15
   saveTutorialState: 0
+  fmodEventToTarget:
+    Guid:
+      Data1: 0
+      Data2: 0
+      Data3: 0
+      Data4: 0
+    Path: 
+  fmodEventToResting:
+    Guid:
+      Data1: 0
+      Data2: 0
+      Data3: 0
+      Data4: 0
+    Path: 
 --- !u!64 &554232932
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -8379,6 +9146,20 @@ MonoBehaviour:
   isTutorialActive: 1
   tutorialInitialCutoffValue: 1.15
   saveTutorialState: 0
+  fmodEventToTarget:
+    Guid:
+      Data1: 0
+      Data2: 0
+      Data3: 0
+      Data4: 0
+    Path: 
+  fmodEventToResting:
+    Guid:
+      Data1: 0
+      Data2: 0
+      Data3: 0
+      Data4: 0
+    Path: 
 --- !u!64 &569251231
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -8439,6 +9220,20 @@ MonoBehaviour:
   isTutorialActive: 0
   tutorialInitialCutoffValue: 0.5
   saveTutorialState: 1
+  fmodEventToTarget:
+    Guid:
+      Data1: -1086434843
+      Data2: 1255254014
+      Data3: 28572335
+      Data4: 1540235985
+    Path: event:/ParticuleFormation
+  fmodEventToResting:
+    Guid:
+      Data1: 47805584
+      Data2: 1075409246
+      Data3: 1241597108
+      Data4: -1714992784
+    Path: event:/ParticuleDestruction
 --- !u!64 &580800145
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -8494,6 +9289,20 @@ MonoBehaviour:
   isTutorialActive: 1
   tutorialInitialCutoffValue: 1.15
   saveTutorialState: 0
+  fmodEventToTarget:
+    Guid:
+      Data1: 0
+      Data2: 0
+      Data3: 0
+      Data4: 0
+    Path: 
+  fmodEventToResting:
+    Guid:
+      Data1: 0
+      Data2: 0
+      Data3: 0
+      Data4: 0
+    Path: 
 --- !u!64 &583403325
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -8598,6 +9407,20 @@ MonoBehaviour:
   isTutorialActive: 1
   tutorialInitialCutoffValue: 1.15
   saveTutorialState: 0
+  fmodEventToTarget:
+    Guid:
+      Data1: 0
+      Data2: 0
+      Data3: 0
+      Data4: 0
+    Path: 
+  fmodEventToResting:
+    Guid:
+      Data1: 0
+      Data2: 0
+      Data3: 0
+      Data4: 0
+    Path: 
 --- !u!1001 &611890623
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -9531,6 +10354,20 @@ MonoBehaviour:
   isTutorialActive: 0
   tutorialInitialCutoffValue: 0.5
   saveTutorialState: 1
+  fmodEventToTarget:
+    Guid:
+      Data1: -1086434843
+      Data2: 1255254014
+      Data3: 28572335
+      Data4: 1540235985
+    Path: event:/ParticuleFormation
+  fmodEventToResting:
+    Guid:
+      Data1: 47805584
+      Data2: 1075409246
+      Data3: 1241597108
+      Data4: -1714992784
+    Path: event:/ParticuleDestruction
 --- !u!64 &616398112
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -9700,6 +10537,20 @@ MonoBehaviour:
   isTutorialActive: 0
   tutorialInitialCutoffValue: 0.5
   saveTutorialState: 1
+  fmodEventToTarget:
+    Guid:
+      Data1: -1086434843
+      Data2: 1255254014
+      Data3: 28572335
+      Data4: 1540235985
+    Path: event:/ParticuleFormation
+  fmodEventToResting:
+    Guid:
+      Data1: 47805584
+      Data2: 1075409246
+      Data3: 1241597108
+      Data4: -1714992784
+    Path: event:/ParticuleDestruction
 --- !u!64 &643390991
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -9900,6 +10751,20 @@ MonoBehaviour:
   isTutorialActive: 0
   tutorialInitialCutoffValue: 1.15
   saveTutorialState: 0
+  fmodEventToTarget:
+    Guid:
+      Data1: 0
+      Data2: 0
+      Data3: 0
+      Data4: 0
+    Path: 
+  fmodEventToResting:
+    Guid:
+      Data1: 0
+      Data2: 0
+      Data3: 0
+      Data4: 0
+    Path: 
 --- !u!1 &656481953
 GameObject:
   m_ObjectHideFlags: 0
@@ -10126,6 +10991,20 @@ MonoBehaviour:
   isTutorialActive: 1
   tutorialInitialCutoffValue: 1.15
   saveTutorialState: 0
+  fmodEventToTarget:
+    Guid:
+      Data1: 0
+      Data2: 0
+      Data3: 0
+      Data4: 0
+    Path: 
+  fmodEventToResting:
+    Guid:
+      Data1: 0
+      Data2: 0
+      Data3: 0
+      Data4: 0
+    Path: 
 --- !u!64 &677045876
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -10203,6 +11082,20 @@ MonoBehaviour:
   isTutorialActive: 1
   tutorialInitialCutoffValue: 1.15
   saveTutorialState: 0
+  fmodEventToTarget:
+    Guid:
+      Data1: 0
+      Data2: 0
+      Data3: 0
+      Data4: 0
+    Path: 
+  fmodEventToResting:
+    Guid:
+      Data1: 0
+      Data2: 0
+      Data3: 0
+      Data4: 0
+    Path: 
 --- !u!1 &682500579
 GameObject:
   m_ObjectHideFlags: 0
@@ -10431,6 +11324,20 @@ MonoBehaviour:
   isTutorialActive: 1
   tutorialInitialCutoffValue: 1.15
   saveTutorialState: 0
+  fmodEventToTarget:
+    Guid:
+      Data1: 0
+      Data2: 0
+      Data3: 0
+      Data4: 0
+    Path: 
+  fmodEventToResting:
+    Guid:
+      Data1: 0
+      Data2: 0
+      Data3: 0
+      Data4: 0
+    Path: 
 --- !u!64 &686970835
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -10486,6 +11393,20 @@ MonoBehaviour:
   isTutorialActive: 0
   tutorialInitialCutoffValue: 0.5
   saveTutorialState: 1
+  fmodEventToTarget:
+    Guid:
+      Data1: -1086434843
+      Data2: 1255254014
+      Data3: 28572335
+      Data4: 1540235985
+    Path: event:/ParticuleFormation
+  fmodEventToResting:
+    Guid:
+      Data1: 47805584
+      Data2: 1075409246
+      Data3: 1241597108
+      Data4: -1714992784
+    Path: event:/ParticuleDestruction
 --- !u!64 &687277089
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -10634,6 +11555,20 @@ MonoBehaviour:
   isTutorialActive: 0
   tutorialInitialCutoffValue: 1.15
   saveTutorialState: 0
+  fmodEventToTarget:
+    Guid:
+      Data1: 0
+      Data2: 0
+      Data3: 0
+      Data4: 0
+    Path: 
+  fmodEventToResting:
+    Guid:
+      Data1: 0
+      Data2: 0
+      Data3: 0
+      Data4: 0
+    Path: 
 --- !u!114 &692118970
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -10791,6 +11726,20 @@ MonoBehaviour:
   isTutorialActive: 1
   tutorialInitialCutoffValue: 1.15
   saveTutorialState: 0
+  fmodEventToTarget:
+    Guid:
+      Data1: 0
+      Data2: 0
+      Data3: 0
+      Data4: 0
+    Path: 
+  fmodEventToResting:
+    Guid:
+      Data1: 0
+      Data2: 0
+      Data3: 0
+      Data4: 0
+    Path: 
 --- !u!1 &700785668 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 7528302065475879929, guid: fefd1a3d9e9106e458835f8757759571, type: 3}
@@ -10846,6 +11795,20 @@ MonoBehaviour:
   isTutorialActive: 1
   tutorialInitialCutoffValue: 1.15
   saveTutorialState: 0
+  fmodEventToTarget:
+    Guid:
+      Data1: 0
+      Data2: 0
+      Data3: 0
+      Data4: 0
+    Path: 
+  fmodEventToResting:
+    Guid:
+      Data1: 0
+      Data2: 0
+      Data3: 0
+      Data4: 0
+    Path: 
 --- !u!1 &705882691
 GameObject:
   m_ObjectHideFlags: 0
@@ -10984,6 +11947,20 @@ MonoBehaviour:
   isTutorialActive: 1
   tutorialInitialCutoffValue: 1.15
   saveTutorialState: 0
+  fmodEventToTarget:
+    Guid:
+      Data1: 0
+      Data2: 0
+      Data3: 0
+      Data4: 0
+    Path: 
+  fmodEventToResting:
+    Guid:
+      Data1: 0
+      Data2: 0
+      Data3: 0
+      Data4: 0
+    Path: 
 --- !u!1001 &735532603
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -11487,6 +12464,20 @@ MonoBehaviour:
   isTutorialActive: 1
   tutorialInitialCutoffValue: 1.15
   saveTutorialState: 0
+  fmodEventToTarget:
+    Guid:
+      Data1: 0
+      Data2: 0
+      Data3: 0
+      Data4: 0
+    Path: 
+  fmodEventToResting:
+    Guid:
+      Data1: 0
+      Data2: 0
+      Data3: 0
+      Data4: 0
+    Path: 
 --- !u!114 &776624430
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -12329,6 +13320,20 @@ MonoBehaviour:
   isTutorialActive: 0
   tutorialInitialCutoffValue: 1.15
   saveTutorialState: 0
+  fmodEventToTarget:
+    Guid:
+      Data1: 0
+      Data2: 0
+      Data3: 0
+      Data4: 0
+    Path: 
+  fmodEventToResting:
+    Guid:
+      Data1: 0
+      Data2: 0
+      Data3: 0
+      Data4: 0
+    Path: 
 --- !u!1 &805226525 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: -3968873999840854130, guid: 52ffa0017d1ee634f86dba8a255bc26d, type: 3}
@@ -12362,6 +13367,20 @@ MonoBehaviour:
   isTutorialActive: 1
   tutorialInitialCutoffValue: 1.15
   saveTutorialState: 0
+  fmodEventToTarget:
+    Guid:
+      Data1: 0
+      Data2: 0
+      Data3: 0
+      Data4: 0
+    Path: 
+  fmodEventToResting:
+    Guid:
+      Data1: 0
+      Data2: 0
+      Data3: 0
+      Data4: 0
+    Path: 
 --- !u!64 &805226529
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -12447,6 +13466,20 @@ MonoBehaviour:
   isTutorialActive: 1
   tutorialInitialCutoffValue: 0.5
   saveTutorialState: 0
+  fmodEventToTarget:
+    Guid:
+      Data1: 0
+      Data2: 0
+      Data3: 0
+      Data4: 0
+    Path: 
+  fmodEventToResting:
+    Guid:
+      Data1: 0
+      Data2: 0
+      Data3: 0
+      Data4: 0
+    Path: 
 --- !u!114 &807121584
 MonoBehaviour:
   m_ObjectHideFlags: 2
@@ -12637,6 +13670,20 @@ MonoBehaviour:
   isTutorialActive: 0
   tutorialInitialCutoffValue: 0.5
   saveTutorialState: 1
+  fmodEventToTarget:
+    Guid:
+      Data1: -1086434843
+      Data2: 1255254014
+      Data3: 28572335
+      Data4: 1540235985
+    Path: event:/ParticuleFormation
+  fmodEventToResting:
+    Guid:
+      Data1: 47805584
+      Data2: 1075409246
+      Data3: 1241597108
+      Data4: -1714992784
+    Path: event:/ParticuleDestruction
 --- !u!64 &811137532
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -12719,6 +13766,20 @@ MonoBehaviour:
   isTutorialActive: 0
   tutorialInitialCutoffValue: 0.5
   saveTutorialState: 1
+  fmodEventToTarget:
+    Guid:
+      Data1: -1086434843
+      Data2: 1255254014
+      Data3: 28572335
+      Data4: 1540235985
+    Path: event:/ParticuleFormation
+  fmodEventToResting:
+    Guid:
+      Data1: 47805584
+      Data2: 1075409246
+      Data3: 1241597108
+      Data4: -1714992784
+    Path: event:/ParticuleDestruction
 --- !u!64 &839489752
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -12857,6 +13918,20 @@ MonoBehaviour:
   isTutorialActive: 0
   tutorialInitialCutoffValue: 0.5
   saveTutorialState: 1
+  fmodEventToTarget:
+    Guid:
+      Data1: -1086434843
+      Data2: 1255254014
+      Data3: 28572335
+      Data4: 1540235985
+    Path: event:/ParticuleFormation
+  fmodEventToResting:
+    Guid:
+      Data1: 47805584
+      Data2: 1075409246
+      Data3: 1241597108
+      Data4: -1714992784
+    Path: event:/ParticuleDestruction
 --- !u!64 &851021708
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -13127,6 +14202,20 @@ MonoBehaviour:
   isTutorialActive: 1
   tutorialInitialCutoffValue: 1.15
   saveTutorialState: 0
+  fmodEventToTarget:
+    Guid:
+      Data1: 0
+      Data2: 0
+      Data3: 0
+      Data4: 0
+    Path: 
+  fmodEventToResting:
+    Guid:
+      Data1: 0
+      Data2: 0
+      Data3: 0
+      Data4: 0
+    Path: 
 --- !u!1 &874433576
 GameObject:
   m_ObjectHideFlags: 0
@@ -13265,6 +14354,20 @@ MonoBehaviour:
   isTutorialActive: 1
   tutorialInitialCutoffValue: 1.15
   saveTutorialState: 0
+  fmodEventToTarget:
+    Guid:
+      Data1: 0
+      Data2: 0
+      Data3: 0
+      Data4: 0
+    Path: 
+  fmodEventToResting:
+    Guid:
+      Data1: 0
+      Data2: 0
+      Data3: 0
+      Data4: 0
+    Path: 
 --- !u!1 &879873443 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 5160339229229834525, guid: 91602627b9f1b024cbe8a52dfe570a48, type: 3}
@@ -13298,6 +14401,20 @@ MonoBehaviour:
   isTutorialActive: 0
   tutorialInitialCutoffValue: 0.5
   saveTutorialState: 1
+  fmodEventToTarget:
+    Guid:
+      Data1: -1086434843
+      Data2: 1255254014
+      Data3: 28572335
+      Data4: 1540235985
+    Path: event:/ParticuleFormation
+  fmodEventToResting:
+    Guid:
+      Data1: 47805584
+      Data2: 1075409246
+      Data3: 1241597108
+      Data4: -1714992784
+    Path: event:/ParticuleDestruction
 --- !u!64 &879873447
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -13407,6 +14524,20 @@ MonoBehaviour:
   isTutorialActive: 1
   tutorialInitialCutoffValue: 1.15
   saveTutorialState: 0
+  fmodEventToTarget:
+    Guid:
+      Data1: 0
+      Data2: 0
+      Data3: 0
+      Data4: 0
+    Path: 
+  fmodEventToResting:
+    Guid:
+      Data1: 0
+      Data2: 0
+      Data3: 0
+      Data4: 0
+    Path: 
 --- !u!64 &890566720
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -13730,6 +14861,20 @@ MonoBehaviour:
   isTutorialActive: 1
   tutorialInitialCutoffValue: 0.5
   saveTutorialState: 0
+  fmodEventToTarget:
+    Guid:
+      Data1: 0
+      Data2: 0
+      Data3: 0
+      Data4: 0
+    Path: 
+  fmodEventToResting:
+    Guid:
+      Data1: 0
+      Data2: 0
+      Data3: 0
+      Data4: 0
+    Path: 
 --- !u!114 &906761508
 MonoBehaviour:
   m_ObjectHideFlags: 2
@@ -13942,6 +15087,20 @@ MonoBehaviour:
   isTutorialActive: 1
   tutorialInitialCutoffValue: 1.15
   saveTutorialState: 0
+  fmodEventToTarget:
+    Guid:
+      Data1: 0
+      Data2: 0
+      Data3: 0
+      Data4: 0
+    Path: 
+  fmodEventToResting:
+    Guid:
+      Data1: 0
+      Data2: 0
+      Data3: 0
+      Data4: 0
+    Path: 
 --- !u!1 &926235326
 GameObject:
   m_ObjectHideFlags: 0
@@ -14195,6 +15354,20 @@ MonoBehaviour:
   isTutorialActive: 1
   tutorialInitialCutoffValue: 1.15
   saveTutorialState: 0
+  fmodEventToTarget:
+    Guid:
+      Data1: 0
+      Data2: 0
+      Data3: 0
+      Data4: 0
+    Path: 
+  fmodEventToResting:
+    Guid:
+      Data1: 0
+      Data2: 0
+      Data3: 0
+      Data4: 0
+    Path: 
 --- !u!64 &941063527
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -15024,6 +16197,20 @@ MonoBehaviour:
   isTutorialActive: 0
   tutorialInitialCutoffValue: 1.15
   saveTutorialState: 0
+  fmodEventToTarget:
+    Guid:
+      Data1: 0
+      Data2: 0
+      Data3: 0
+      Data4: 0
+    Path: 
+  fmodEventToResting:
+    Guid:
+      Data1: 0
+      Data2: 0
+      Data3: 0
+      Data4: 0
+    Path: 
 --- !u!114 &979945783
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -15242,6 +16429,20 @@ MonoBehaviour:
   isTutorialActive: 0
   tutorialInitialCutoffValue: 0.5
   saveTutorialState: 1
+  fmodEventToTarget:
+    Guid:
+      Data1: -1086434843
+      Data2: 1255254014
+      Data3: 28572335
+      Data4: 1540235985
+    Path: event:/ParticuleFormation
+  fmodEventToResting:
+    Guid:
+      Data1: 47805584
+      Data2: 1075409246
+      Data3: 1241597108
+      Data4: -1714992784
+    Path: event:/ParticuleDestruction
 --- !u!64 &989259223
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -15520,6 +16721,20 @@ MonoBehaviour:
   isTutorialActive: 1
   tutorialInitialCutoffValue: 1.15
   saveTutorialState: 0
+  fmodEventToTarget:
+    Guid:
+      Data1: 0
+      Data2: 0
+      Data3: 0
+      Data4: 0
+    Path: 
+  fmodEventToResting:
+    Guid:
+      Data1: 0
+      Data2: 0
+      Data3: 0
+      Data4: 0
+    Path: 
 --- !u!64 &1003788830
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -15663,6 +16878,20 @@ MonoBehaviour:
   isTutorialActive: 1
   tutorialInitialCutoffValue: 1.15
   saveTutorialState: 0
+  fmodEventToTarget:
+    Guid:
+      Data1: 0
+      Data2: 0
+      Data3: 0
+      Data4: 0
+    Path: 
+  fmodEventToResting:
+    Guid:
+      Data1: 0
+      Data2: 0
+      Data3: 0
+      Data4: 0
+    Path: 
 --- !u!64 &1024104691
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -15932,6 +17161,20 @@ MonoBehaviour:
   isTutorialActive: 1
   tutorialInitialCutoffValue: 1.15
   saveTutorialState: 0
+  fmodEventToTarget:
+    Guid:
+      Data1: 0
+      Data2: 0
+      Data3: 0
+      Data4: 0
+    Path: 
+  fmodEventToResting:
+    Guid:
+      Data1: 0
+      Data2: 0
+      Data3: 0
+      Data4: 0
+    Path: 
 --- !u!64 &1049604255
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -16306,6 +17549,20 @@ MonoBehaviour:
   isTutorialActive: 1
   tutorialInitialCutoffValue: 1.15
   saveTutorialState: 0
+  fmodEventToTarget:
+    Guid:
+      Data1: 0
+      Data2: 0
+      Data3: 0
+      Data4: 0
+    Path: 
+  fmodEventToResting:
+    Guid:
+      Data1: 0
+      Data2: 0
+      Data3: 0
+      Data4: 0
+    Path: 
 --- !u!1 &1091309903 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: -7225640653336225981, guid: 575adffb66b0b884e922a62b1e944765, type: 3}
@@ -16361,6 +17618,20 @@ MonoBehaviour:
   isTutorialActive: 1
   tutorialInitialCutoffValue: 1.15
   saveTutorialState: 0
+  fmodEventToTarget:
+    Guid:
+      Data1: 0
+      Data2: 0
+      Data3: 0
+      Data4: 0
+    Path: 
+  fmodEventToResting:
+    Guid:
+      Data1: 0
+      Data2: 0
+      Data3: 0
+      Data4: 0
+    Path: 
 --- !u!1 &1095307207 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: -8130466653190208652, guid: 91602627b9f1b024cbe8a52dfe570a48, type: 3}
@@ -16394,6 +17665,20 @@ MonoBehaviour:
   isTutorialActive: 0
   tutorialInitialCutoffValue: 0.5
   saveTutorialState: 1
+  fmodEventToTarget:
+    Guid:
+      Data1: -1086434843
+      Data2: 1255254014
+      Data3: 28572335
+      Data4: 1540235985
+    Path: event:/ParticuleFormation
+  fmodEventToResting:
+    Guid:
+      Data1: 47805584
+      Data2: 1075409246
+      Data3: 1241597108
+      Data4: -1714992784
+    Path: event:/ParticuleDestruction
 --- !u!64 &1095307211
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -16783,6 +18068,20 @@ MonoBehaviour:
   isTutorialActive: 0
   tutorialInitialCutoffValue: 0.5
   saveTutorialState: 1
+  fmodEventToTarget:
+    Guid:
+      Data1: -1086434843
+      Data2: 1255254014
+      Data3: 28572335
+      Data4: 1540235985
+    Path: event:/ParticuleFormation
+  fmodEventToResting:
+    Guid:
+      Data1: 47805584
+      Data2: 1075409246
+      Data3: 1241597108
+      Data4: -1714992784
+    Path: event:/ParticuleDestruction
 --- !u!64 &1147510983
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -16860,6 +18159,20 @@ MonoBehaviour:
   isTutorialActive: 1
   tutorialInitialCutoffValue: 1.15
   saveTutorialState: 0
+  fmodEventToTarget:
+    Guid:
+      Data1: 0
+      Data2: 0
+      Data3: 0
+      Data4: 0
+    Path: 
+  fmodEventToResting:
+    Guid:
+      Data1: 0
+      Data2: 0
+      Data3: 0
+      Data4: 0
+    Path: 
 --- !u!1 &1156686787 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: -4300815656593226319, guid: 91602627b9f1b024cbe8a52dfe570a48, type: 3}
@@ -16893,6 +18206,20 @@ MonoBehaviour:
   isTutorialActive: 0
   tutorialInitialCutoffValue: 0.5
   saveTutorialState: 1
+  fmodEventToTarget:
+    Guid:
+      Data1: -1086434843
+      Data2: 1255254014
+      Data3: 28572335
+      Data4: 1540235985
+    Path: event:/ParticuleFormation
+  fmodEventToResting:
+    Guid:
+      Data1: 47805584
+      Data2: 1075409246
+      Data3: 1241597108
+      Data4: -1714992784
+    Path: event:/ParticuleDestruction
 --- !u!64 &1156686791
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -17320,6 +18647,20 @@ MonoBehaviour:
   isTutorialActive: 1
   tutorialInitialCutoffValue: 1.15
   saveTutorialState: 0
+  fmodEventToTarget:
+    Guid:
+      Data1: 0
+      Data2: 0
+      Data3: 0
+      Data4: 0
+    Path: 
+  fmodEventToResting:
+    Guid:
+      Data1: 0
+      Data2: 0
+      Data3: 0
+      Data4: 0
+    Path: 
 --- !u!64 &1184015940
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -17423,6 +18764,20 @@ MonoBehaviour:
   isTutorialActive: 0
   tutorialInitialCutoffValue: 1.15
   saveTutorialState: 0
+  fmodEventToTarget:
+    Guid:
+      Data1: 0
+      Data2: 0
+      Data3: 0
+      Data4: 0
+    Path: 
+  fmodEventToResting:
+    Guid:
+      Data1: 0
+      Data2: 0
+      Data3: 0
+      Data4: 0
+    Path: 
 --- !u!114 &1188289682
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -17553,6 +18908,20 @@ MonoBehaviour:
   isTutorialActive: 1
   tutorialInitialCutoffValue: 1.15
   saveTutorialState: 0
+  fmodEventToTarget:
+    Guid:
+      Data1: 0
+      Data2: 0
+      Data3: 0
+      Data4: 0
+    Path: 
+  fmodEventToResting:
+    Guid:
+      Data1: 0
+      Data2: 0
+      Data3: 0
+      Data4: 0
+    Path: 
 --- !u!64 &1206098671
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -17630,6 +18999,20 @@ MonoBehaviour:
   isTutorialActive: 1
   tutorialInitialCutoffValue: 0.5
   saveTutorialState: 1
+  fmodEventToTarget:
+    Guid:
+      Data1: 0
+      Data2: 0
+      Data3: 0
+      Data4: 0
+    Path: 
+  fmodEventToResting:
+    Guid:
+      Data1: 0
+      Data2: 0
+      Data3: 0
+      Data4: 0
+    Path: 
 --- !u!114 &1207958740
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -17658,6 +19041,20 @@ MonoBehaviour:
   isTutorialActive: 1
   tutorialInitialCutoffValue: 1.15
   saveTutorialState: 0
+  fmodEventToTarget:
+    Guid:
+      Data1: 0
+      Data2: 0
+      Data3: 0
+      Data4: 0
+    Path: 
+  fmodEventToResting:
+    Guid:
+      Data1: 0
+      Data2: 0
+      Data3: 0
+      Data4: 0
+    Path: 
 --- !u!1 &1212695680 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: -3834504380874759169, guid: 91602627b9f1b024cbe8a52dfe570a48, type: 3}
@@ -17691,6 +19088,20 @@ MonoBehaviour:
   isTutorialActive: 0
   tutorialInitialCutoffValue: 0.5
   saveTutorialState: 1
+  fmodEventToTarget:
+    Guid:
+      Data1: -1086434843
+      Data2: 1255254014
+      Data3: 28572335
+      Data4: 1540235985
+    Path: event:/ParticuleFormation
+  fmodEventToResting:
+    Guid:
+      Data1: 47805584
+      Data2: 1075409246
+      Data3: 1241597108
+      Data4: -1714992784
+    Path: event:/ParticuleDestruction
 --- !u!64 &1212695684
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -17768,6 +19179,20 @@ MonoBehaviour:
   isTutorialActive: 1
   tutorialInitialCutoffValue: 1.15
   saveTutorialState: 0
+  fmodEventToTarget:
+    Guid:
+      Data1: 0
+      Data2: 0
+      Data3: 0
+      Data4: 0
+    Path: 
+  fmodEventToResting:
+    Guid:
+      Data1: 0
+      Data2: 0
+      Data3: 0
+      Data4: 0
+    Path: 
 --- !u!1 &1216900743
 GameObject:
   m_ObjectHideFlags: 0
@@ -17872,6 +19297,20 @@ MonoBehaviour:
   isTutorialActive: 1
   tutorialInitialCutoffValue: 1.15
   saveTutorialState: 0
+  fmodEventToTarget:
+    Guid:
+      Data1: 0
+      Data2: 0
+      Data3: 0
+      Data4: 0
+    Path: 
+  fmodEventToResting:
+    Guid:
+      Data1: 0
+      Data2: 0
+      Data3: 0
+      Data4: 0
+    Path: 
 --- !u!64 &1217080281
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -18113,6 +19552,20 @@ MonoBehaviour:
   isTutorialActive: 1
   tutorialInitialCutoffValue: 0.5
   saveTutorialState: 1
+  fmodEventToTarget:
+    Guid:
+      Data1: 0
+      Data2: 0
+      Data3: 0
+      Data4: 0
+    Path: 
+  fmodEventToResting:
+    Guid:
+      Data1: 0
+      Data2: 0
+      Data3: 0
+      Data4: 0
+    Path: 
 --- !u!114 &1221072528
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -18141,6 +19594,20 @@ MonoBehaviour:
   isTutorialActive: 1
   tutorialInitialCutoffValue: 1.15
   saveTutorialState: 0
+  fmodEventToTarget:
+    Guid:
+      Data1: 0
+      Data2: 0
+      Data3: 0
+      Data4: 0
+    Path: 
+  fmodEventToResting:
+    Guid:
+      Data1: 0
+      Data2: 0
+      Data3: 0
+      Data4: 0
+    Path: 
 --- !u!4 &1221219130 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 91602627b9f1b024cbe8a52dfe570a48, type: 3}
@@ -18262,6 +19729,20 @@ MonoBehaviour:
   isTutorialActive: 1
   tutorialInitialCutoffValue: 1.15
   saveTutorialState: 0
+  fmodEventToTarget:
+    Guid:
+      Data1: 0
+      Data2: 0
+      Data3: 0
+      Data4: 0
+    Path: 
+  fmodEventToResting:
+    Guid:
+      Data1: 0
+      Data2: 0
+      Data3: 0
+      Data4: 0
+    Path: 
 --- !u!1 &1252983248 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 5835988888176223544, guid: 6477915e424e156429c4cec7068e515d, type: 3}
@@ -18295,6 +19776,20 @@ MonoBehaviour:
   isTutorialActive: 1
   tutorialInitialCutoffValue: 1.15
   saveTutorialState: 0
+  fmodEventToTarget:
+    Guid:
+      Data1: 0
+      Data2: 0
+      Data3: 0
+      Data4: 0
+    Path: 
+  fmodEventToResting:
+    Guid:
+      Data1: 0
+      Data2: 0
+      Data3: 0
+      Data4: 0
+    Path: 
 --- !u!64 &1252983252
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -18963,6 +20458,20 @@ MonoBehaviour:
   isTutorialActive: 0
   tutorialInitialCutoffValue: 1.15
   saveTutorialState: 0
+  fmodEventToTarget:
+    Guid:
+      Data1: 0
+      Data2: 0
+      Data3: 0
+      Data4: 0
+    Path: 
+  fmodEventToResting:
+    Guid:
+      Data1: 0
+      Data2: 0
+      Data3: 0
+      Data4: 0
+    Path: 
 --- !u!1 &1300370028
 GameObject:
   m_ObjectHideFlags: 0
@@ -19090,6 +20599,20 @@ MonoBehaviour:
   isTutorialActive: 0
   tutorialInitialCutoffValue: 0.5
   saveTutorialState: 1
+  fmodEventToTarget:
+    Guid:
+      Data1: -1086434843
+      Data2: 1255254014
+      Data3: 28572335
+      Data4: 1540235985
+    Path: event:/ParticuleFormation
+  fmodEventToResting:
+    Guid:
+      Data1: 47805584
+      Data2: 1075409246
+      Data3: 1241597108
+      Data4: -1714992784
+    Path: event:/ParticuleDestruction
 --- !u!64 &1301054833
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -19449,6 +20972,20 @@ MonoBehaviour:
   isTutorialActive: 0
   tutorialInitialCutoffValue: 1.15
   saveTutorialState: 0
+  fmodEventToTarget:
+    Guid:
+      Data1: 0
+      Data2: 0
+      Data3: 0
+      Data4: 0
+    Path: 
+  fmodEventToResting:
+    Guid:
+      Data1: 0
+      Data2: 0
+      Data3: 0
+      Data4: 0
+    Path: 
 --- !u!114 &1305128511
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -19820,6 +21357,20 @@ MonoBehaviour:
   isTutorialActive: 0
   tutorialInitialCutoffValue: 0.5
   saveTutorialState: 1
+  fmodEventToTarget:
+    Guid:
+      Data1: -1086434843
+      Data2: 1255254014
+      Data3: 28572335
+      Data4: 1540235985
+    Path: event:/ParticuleFormation
+  fmodEventToResting:
+    Guid:
+      Data1: 47805584
+      Data2: 1075409246
+      Data3: 1241597108
+      Data4: -1714992784
+    Path: event:/ParticuleDestruction
 --- !u!64 &1323038815
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -20016,6 +21567,20 @@ MonoBehaviour:
   isTutorialActive: 0
   tutorialInitialCutoffValue: 0.5
   saveTutorialState: 1
+  fmodEventToTarget:
+    Guid:
+      Data1: -1086434843
+      Data2: 1255254014
+      Data3: 28572335
+      Data4: 1540235985
+    Path: event:/ParticuleFormation
+  fmodEventToResting:
+    Guid:
+      Data1: 47805584
+      Data2: 1075409246
+      Data3: 1241597108
+      Data4: -1714992784
+    Path: event:/ParticuleDestruction
 --- !u!64 &1346686430
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -20204,6 +21769,20 @@ MonoBehaviour:
   isTutorialActive: 1
   tutorialInitialCutoffValue: 1.15
   saveTutorialState: 0
+  fmodEventToTarget:
+    Guid:
+      Data1: 0
+      Data2: 0
+      Data3: 0
+      Data4: 0
+    Path: 
+  fmodEventToResting:
+    Guid:
+      Data1: 0
+      Data2: 0
+      Data3: 0
+      Data4: 0
+    Path: 
 --- !u!64 &1356141633
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -20281,6 +21860,20 @@ MonoBehaviour:
   isTutorialActive: 1
   tutorialInitialCutoffValue: 1.15
   saveTutorialState: 0
+  fmodEventToTarget:
+    Guid:
+      Data1: 0
+      Data2: 0
+      Data3: 0
+      Data4: 0
+    Path: 
+  fmodEventToResting:
+    Guid:
+      Data1: 0
+      Data2: 0
+      Data3: 0
+      Data4: 0
+    Path: 
 --- !u!1001 &1381605840
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -20447,6 +22040,20 @@ MonoBehaviour:
   isTutorialActive: 1
   tutorialInitialCutoffValue: 1.15
   saveTutorialState: 0
+  fmodEventToTarget:
+    Guid:
+      Data1: 0
+      Data2: 0
+      Data3: 0
+      Data4: 0
+    Path: 
+  fmodEventToResting:
+    Guid:
+      Data1: 0
+      Data2: 0
+      Data3: 0
+      Data4: 0
+    Path: 
 --- !u!64 &1382015365
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -20529,6 +22136,20 @@ MonoBehaviour:
   isTutorialActive: 1
   tutorialInitialCutoffValue: 1.15
   saveTutorialState: 0
+  fmodEventToTarget:
+    Guid:
+      Data1: 0
+      Data2: 0
+      Data3: 0
+      Data4: 0
+    Path: 
+  fmodEventToResting:
+    Guid:
+      Data1: 0
+      Data2: 0
+      Data3: 0
+      Data4: 0
+    Path: 
 --- !u!1 &1391900872 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: -8159741860747326216, guid: 91602627b9f1b024cbe8a52dfe570a48, type: 3}
@@ -20562,6 +22183,20 @@ MonoBehaviour:
   isTutorialActive: 0
   tutorialInitialCutoffValue: 0.5
   saveTutorialState: 1
+  fmodEventToTarget:
+    Guid:
+      Data1: -1086434843
+      Data2: 1255254014
+      Data3: 28572335
+      Data4: 1540235985
+    Path: event:/ParticuleFormation
+  fmodEventToResting:
+    Guid:
+      Data1: 47805584
+      Data2: 1075409246
+      Data3: 1241597108
+      Data4: -1714992784
+    Path: event:/ParticuleDestruction
 --- !u!64 &1391900876
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -20634,6 +22269,20 @@ MonoBehaviour:
   isTutorialActive: 0
   tutorialInitialCutoffValue: 0.5
   saveTutorialState: 1
+  fmodEventToTarget:
+    Guid:
+      Data1: -1086434843
+      Data2: 1255254014
+      Data3: 28572335
+      Data4: 1540235985
+    Path: event:/ParticuleFormation
+  fmodEventToResting:
+    Guid:
+      Data1: 47805584
+      Data2: 1075409246
+      Data3: 1241597108
+      Data4: -1714992784
+    Path: event:/ParticuleDestruction
 --- !u!64 &1411551674
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -21017,6 +22666,20 @@ MonoBehaviour:
   isTutorialActive: 0
   tutorialInitialCutoffValue: 0.5
   saveTutorialState: 1
+  fmodEventToTarget:
+    Guid:
+      Data1: -1086434843
+      Data2: 1255254014
+      Data3: 28572335
+      Data4: 1540235985
+    Path: event:/ParticuleFormation
+  fmodEventToResting:
+    Guid:
+      Data1: 47805584
+      Data2: 1075409246
+      Data3: 1241597108
+      Data4: -1714992784
+    Path: event:/ParticuleDestruction
 --- !u!64 &1439029776
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -21072,6 +22735,20 @@ MonoBehaviour:
   isTutorialActive: 1
   tutorialInitialCutoffValue: 1.15
   saveTutorialState: 0
+  fmodEventToTarget:
+    Guid:
+      Data1: 0
+      Data2: 0
+      Data3: 0
+      Data4: 0
+    Path: 
+  fmodEventToResting:
+    Guid:
+      Data1: 0
+      Data2: 0
+      Data3: 0
+      Data4: 0
+    Path: 
 --- !u!64 &1442287184
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -21127,6 +22804,20 @@ MonoBehaviour:
   isTutorialActive: 0
   tutorialInitialCutoffValue: 0.5
   saveTutorialState: 1
+  fmodEventToTarget:
+    Guid:
+      Data1: -1086434843
+      Data2: 1255254014
+      Data3: 28572335
+      Data4: 1540235985
+    Path: event:/ParticuleFormation
+  fmodEventToResting:
+    Guid:
+      Data1: 47805584
+      Data2: 1075409246
+      Data3: 1241597108
+      Data4: -1714992784
+    Path: event:/ParticuleDestruction
 --- !u!64 &1442414603
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -21284,6 +22975,20 @@ MonoBehaviour:
   isTutorialActive: 0
   tutorialInitialCutoffValue: 0.5
   saveTutorialState: 1
+  fmodEventToTarget:
+    Guid:
+      Data1: -1086434843
+      Data2: 1255254014
+      Data3: 28572335
+      Data4: 1540235985
+    Path: event:/ParticuleFormation
+  fmodEventToResting:
+    Guid:
+      Data1: 47805584
+      Data2: 1075409246
+      Data3: 1241597108
+      Data4: -1714992784
+    Path: event:/ParticuleDestruction
 --- !u!64 &1446077029
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -21361,6 +23066,20 @@ MonoBehaviour:
   isTutorialActive: 1
   tutorialInitialCutoffValue: 1.15
   saveTutorialState: 0
+  fmodEventToTarget:
+    Guid:
+      Data1: 0
+      Data2: 0
+      Data3: 0
+      Data4: 0
+    Path: 
+  fmodEventToResting:
+    Guid:
+      Data1: 0
+      Data2: 0
+      Data3: 0
+      Data4: 0
+    Path: 
 --- !u!1 &1463451909 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: -5065533694481631877, guid: 91602627b9f1b024cbe8a52dfe570a48, type: 3}
@@ -21394,6 +23113,20 @@ MonoBehaviour:
   isTutorialActive: 0
   tutorialInitialCutoffValue: 0.5
   saveTutorialState: 1
+  fmodEventToTarget:
+    Guid:
+      Data1: -1086434843
+      Data2: 1255254014
+      Data3: 28572335
+      Data4: 1540235985
+    Path: event:/ParticuleFormation
+  fmodEventToResting:
+    Guid:
+      Data1: 47805584
+      Data2: 1075409246
+      Data3: 1241597108
+      Data4: -1714992784
+    Path: event:/ParticuleDestruction
 --- !u!64 &1463451913
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -24381,6 +26114,20 @@ MonoBehaviour:
   isTutorialActive: 0
   tutorialInitialCutoffValue: 1.15
   saveTutorialState: 0
+  fmodEventToTarget:
+    Guid:
+      Data1: 0
+      Data2: 0
+      Data3: 0
+      Data4: 0
+    Path: 
+  fmodEventToResting:
+    Guid:
+      Data1: 0
+      Data2: 0
+      Data3: 0
+      Data4: 0
+    Path: 
 --- !u!114 &1503376045
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -24591,6 +26338,20 @@ MonoBehaviour:
   isTutorialActive: 1
   tutorialInitialCutoffValue: 1.15
   saveTutorialState: 0
+  fmodEventToTarget:
+    Guid:
+      Data1: 0
+      Data2: 0
+      Data3: 0
+      Data4: 0
+    Path: 
+  fmodEventToResting:
+    Guid:
+      Data1: 0
+      Data2: 0
+      Data3: 0
+      Data4: 0
+    Path: 
 --- !u!1001 &1522704835
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -24841,6 +26602,20 @@ MonoBehaviour:
   isTutorialActive: 1
   tutorialInitialCutoffValue: 1.15
   saveTutorialState: 0
+  fmodEventToTarget:
+    Guid:
+      Data1: 0
+      Data2: 0
+      Data3: 0
+      Data4: 0
+    Path: 
+  fmodEventToResting:
+    Guid:
+      Data1: 0
+      Data2: 0
+      Data3: 0
+      Data4: 0
+    Path: 
 --- !u!1 &1551271598
 GameObject:
   m_ObjectHideFlags: 0
@@ -25020,6 +26795,20 @@ MonoBehaviour:
   isTutorialActive: 0
   tutorialInitialCutoffValue: 0.5
   saveTutorialState: 1
+  fmodEventToTarget:
+    Guid:
+      Data1: -1086434843
+      Data2: 1255254014
+      Data3: 28572335
+      Data4: 1540235985
+    Path: event:/ParticuleFormation
+  fmodEventToResting:
+    Guid:
+      Data1: 47805584
+      Data2: 1075409246
+      Data3: 1241597108
+      Data4: -1714992784
+    Path: event:/ParticuleDestruction
 --- !u!64 &1560868890
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -25075,6 +26864,20 @@ MonoBehaviour:
   isTutorialActive: 0
   tutorialInitialCutoffValue: 0.5
   saveTutorialState: 1
+  fmodEventToTarget:
+    Guid:
+      Data1: -1086434843
+      Data2: 1255254014
+      Data3: 28572335
+      Data4: 1540235985
+    Path: event:/ParticuleFormation
+  fmodEventToResting:
+    Guid:
+      Data1: 47805584
+      Data2: 1075409246
+      Data3: 1241597108
+      Data4: -1714992784
+    Path: event:/ParticuleDestruction
 --- !u!64 &1570905238
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -25130,6 +26933,20 @@ MonoBehaviour:
   isTutorialActive: 1
   tutorialInitialCutoffValue: 1.15
   saveTutorialState: 0
+  fmodEventToTarget:
+    Guid:
+      Data1: 0
+      Data2: 0
+      Data3: 0
+      Data4: 0
+    Path: 
+  fmodEventToResting:
+    Guid:
+      Data1: 0
+      Data2: 0
+      Data3: 0
+      Data4: 0
+    Path: 
 --- !u!64 &1586532004
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -25268,6 +27085,20 @@ MonoBehaviour:
   isTutorialActive: 1
   tutorialInitialCutoffValue: 1.15
   saveTutorialState: 0
+  fmodEventToTarget:
+    Guid:
+      Data1: 0
+      Data2: 0
+      Data3: 0
+      Data4: 0
+    Path: 
+  fmodEventToResting:
+    Guid:
+      Data1: 0
+      Data2: 0
+      Data3: 0
+      Data4: 0
+    Path: 
 --- !u!64 &1603009634
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -25323,6 +27154,20 @@ MonoBehaviour:
   isTutorialActive: 0
   tutorialInitialCutoffValue: 0.5
   saveTutorialState: 1
+  fmodEventToTarget:
+    Guid:
+      Data1: -1086434843
+      Data2: 1255254014
+      Data3: 28572335
+      Data4: 1540235985
+    Path: event:/ParticuleFormation
+  fmodEventToResting:
+    Guid:
+      Data1: 47805584
+      Data2: 1075409246
+      Data3: 1241597108
+      Data4: -1714992784
+    Path: event:/ParticuleDestruction
 --- !u!64 &1603238244
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -25400,6 +27245,20 @@ MonoBehaviour:
   isTutorialActive: 1
   tutorialInitialCutoffValue: 1.15
   saveTutorialState: 0
+  fmodEventToTarget:
+    Guid:
+      Data1: 0
+      Data2: 0
+      Data3: 0
+      Data4: 0
+    Path: 
+  fmodEventToResting:
+    Guid:
+      Data1: 0
+      Data2: 0
+      Data3: 0
+      Data4: 0
+    Path: 
 --- !u!1 &1607971092 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: -8275604200953139024, guid: 91602627b9f1b024cbe8a52dfe570a48, type: 3}
@@ -25433,6 +27292,20 @@ MonoBehaviour:
   isTutorialActive: 0
   tutorialInitialCutoffValue: 0.5
   saveTutorialState: 1
+  fmodEventToTarget:
+    Guid:
+      Data1: -1086434843
+      Data2: 1255254014
+      Data3: 28572335
+      Data4: 1540235985
+    Path: event:/ParticuleFormation
+  fmodEventToResting:
+    Guid:
+      Data1: 47805584
+      Data2: 1075409246
+      Data3: 1241597108
+      Data4: -1714992784
+    Path: event:/ParticuleDestruction
 --- !u!64 &1607971096
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -25507,6 +27380,20 @@ MonoBehaviour:
   isTutorialActive: 1
   tutorialInitialCutoffValue: 0.5
   saveTutorialState: 0
+  fmodEventToTarget:
+    Guid:
+      Data1: 0
+      Data2: 0
+      Data3: 0
+      Data4: 0
+    Path: 
+  fmodEventToResting:
+    Guid:
+      Data1: 0
+      Data2: 0
+      Data3: 0
+      Data4: 0
+    Path: 
 --- !u!114 &1611949911
 MonoBehaviour:
   m_ObjectHideFlags: 2
@@ -25811,6 +27698,20 @@ MonoBehaviour:
   isTutorialActive: 1
   tutorialInitialCutoffValue: 1.15
   saveTutorialState: 0
+  fmodEventToTarget:
+    Guid:
+      Data1: 0
+      Data2: 0
+      Data3: 0
+      Data4: 0
+    Path: 
+  fmodEventToResting:
+    Guid:
+      Data1: 0
+      Data2: 0
+      Data3: 0
+      Data4: 0
+    Path: 
 --- !u!64 &1626021735
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -25866,6 +27767,20 @@ MonoBehaviour:
   isTutorialActive: 1
   tutorialInitialCutoffValue: 1.15
   saveTutorialState: 0
+  fmodEventToTarget:
+    Guid:
+      Data1: 0
+      Data2: 0
+      Data3: 0
+      Data4: 0
+    Path: 
+  fmodEventToResting:
+    Guid:
+      Data1: 0
+      Data2: 0
+      Data3: 0
+      Data4: 0
+    Path: 
 --- !u!64 &1662536270
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -26076,6 +27991,20 @@ MonoBehaviour:
   isTutorialActive: 0
   tutorialInitialCutoffValue: 1.15
   saveTutorialState: 0
+  fmodEventToTarget:
+    Guid:
+      Data1: 0
+      Data2: 0
+      Data3: 0
+      Data4: 0
+    Path: 
+  fmodEventToResting:
+    Guid:
+      Data1: 0
+      Data2: 0
+      Data3: 0
+      Data4: 0
+    Path: 
 --- !u!114 &1670547883
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -26361,6 +28290,20 @@ MonoBehaviour:
   isTutorialActive: 0
   tutorialInitialCutoffValue: 1.15
   saveTutorialState: 0
+  fmodEventToTarget:
+    Guid:
+      Data1: 0
+      Data2: 0
+      Data3: 0
+      Data4: 0
+    Path: 
+  fmodEventToResting:
+    Guid:
+      Data1: 0
+      Data2: 0
+      Data3: 0
+      Data4: 0
+    Path: 
 --- !u!114 &1673197561
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -28045,6 +29988,20 @@ MonoBehaviour:
   isTutorialActive: 1
   tutorialInitialCutoffValue: 0.5
   saveTutorialState: 0
+  fmodEventToTarget:
+    Guid:
+      Data1: 0
+      Data2: 0
+      Data3: 0
+      Data4: 0
+    Path: 
+  fmodEventToResting:
+    Guid:
+      Data1: 0
+      Data2: 0
+      Data3: 0
+      Data4: 0
+    Path: 
 --- !u!1001 &1717577489
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -28233,6 +30190,20 @@ MonoBehaviour:
   isTutorialActive: 0
   tutorialInitialCutoffValue: 1.15
   saveTutorialState: 0
+  fmodEventToTarget:
+    Guid:
+      Data1: 0
+      Data2: 0
+      Data3: 0
+      Data4: 0
+    Path: 
+  fmodEventToResting:
+    Guid:
+      Data1: 0
+      Data2: 0
+      Data3: 0
+      Data4: 0
+    Path: 
 --- !u!114 &1717577495
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -28382,6 +30353,20 @@ MonoBehaviour:
   isTutorialActive: 1
   tutorialInitialCutoffValue: 0.5
   saveTutorialState: 0
+  fmodEventToTarget:
+    Guid:
+      Data1: 0
+      Data2: 0
+      Data3: 0
+      Data4: 0
+    Path: 
+  fmodEventToResting:
+    Guid:
+      Data1: 0
+      Data2: 0
+      Data3: 0
+      Data4: 0
+    Path: 
 --- !u!114 &1720639778
 MonoBehaviour:
   m_ObjectHideFlags: 2
@@ -28786,6 +30771,20 @@ MonoBehaviour:
   isTutorialActive: 0
   tutorialInitialCutoffValue: 0.5
   saveTutorialState: 1
+  fmodEventToTarget:
+    Guid:
+      Data1: -1086434843
+      Data2: 1255254014
+      Data3: 28572335
+      Data4: 1540235985
+    Path: event:/ParticuleFormation
+  fmodEventToResting:
+    Guid:
+      Data1: 47805584
+      Data2: 1075409246
+      Data3: 1241597108
+      Data4: -1714992784
+    Path: event:/ParticuleDestruction
 --- !u!64 &1739471557
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -28841,6 +30840,20 @@ MonoBehaviour:
   isTutorialActive: 1
   tutorialInitialCutoffValue: 1.15
   saveTutorialState: 0
+  fmodEventToTarget:
+    Guid:
+      Data1: 0
+      Data2: 0
+      Data3: 0
+      Data4: 0
+    Path: 
+  fmodEventToResting:
+    Guid:
+      Data1: 0
+      Data2: 0
+      Data3: 0
+      Data4: 0
+    Path: 
 --- !u!64 &1741791985
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -29052,6 +31065,20 @@ MonoBehaviour:
   isTutorialActive: 1
   tutorialInitialCutoffValue: 1.15
   saveTutorialState: 0
+  fmodEventToTarget:
+    Guid:
+      Data1: 0
+      Data2: 0
+      Data3: 0
+      Data4: 0
+    Path: 
+  fmodEventToResting:
+    Guid:
+      Data1: 0
+      Data2: 0
+      Data3: 0
+      Data4: 0
+    Path: 
 --- !u!1 &1749507438 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 942127834678833633, guid: 91602627b9f1b024cbe8a52dfe570a48, type: 3}
@@ -29085,6 +31112,20 @@ MonoBehaviour:
   isTutorialActive: 0
   tutorialInitialCutoffValue: 0.5
   saveTutorialState: 1
+  fmodEventToTarget:
+    Guid:
+      Data1: -1086434843
+      Data2: 1255254014
+      Data3: 28572335
+      Data4: 1540235985
+    Path: event:/ParticuleFormation
+  fmodEventToResting:
+    Guid:
+      Data1: 47805584
+      Data2: 1075409246
+      Data3: 1241597108
+      Data4: -1714992784
+    Path: event:/ParticuleDestruction
 --- !u!64 &1749507442
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -29245,6 +31286,20 @@ MonoBehaviour:
   isTutorialActive: 1
   tutorialInitialCutoffValue: 1.15
   saveTutorialState: 0
+  fmodEventToTarget:
+    Guid:
+      Data1: 0
+      Data2: 0
+      Data3: 0
+      Data4: 0
+    Path: 
+  fmodEventToResting:
+    Guid:
+      Data1: 0
+      Data2: 0
+      Data3: 0
+      Data4: 0
+    Path: 
 --- !u!1001 &1768171026
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -29555,6 +31610,20 @@ MonoBehaviour:
   isTutorialActive: 0
   tutorialInitialCutoffValue: 0.5
   saveTutorialState: 1
+  fmodEventToTarget:
+    Guid:
+      Data1: -1086434843
+      Data2: 1255254014
+      Data3: 28572335
+      Data4: 1540235985
+    Path: event:/ParticuleFormation
+  fmodEventToResting:
+    Guid:
+      Data1: 47805584
+      Data2: 1075409246
+      Data3: 1241597108
+      Data4: -1714992784
+    Path: event:/ParticuleDestruction
 --- !u!64 &1774424645
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -29800,6 +31869,20 @@ MonoBehaviour:
   isTutorialActive: 0
   tutorialInitialCutoffValue: 0.5
   saveTutorialState: 1
+  fmodEventToTarget:
+    Guid:
+      Data1: -1086434843
+      Data2: 1255254014
+      Data3: 28572335
+      Data4: 1540235985
+    Path: event:/ParticuleFormation
+  fmodEventToResting:
+    Guid:
+      Data1: 47805584
+      Data2: 1075409246
+      Data3: 1241597108
+      Data4: -1714992784
+    Path: event:/ParticuleDestruction
 --- !u!64 &1781839716
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -29855,6 +31938,20 @@ MonoBehaviour:
   isTutorialActive: 0
   tutorialInitialCutoffValue: 0.5
   saveTutorialState: 1
+  fmodEventToTarget:
+    Guid:
+      Data1: -1086434843
+      Data2: 1255254014
+      Data3: 28572335
+      Data4: 1540235985
+    Path: event:/ParticuleFormation
+  fmodEventToResting:
+    Guid:
+      Data1: 47805584
+      Data2: 1075409246
+      Data3: 1241597108
+      Data4: -1714992784
+    Path: event:/ParticuleDestruction
 --- !u!64 &1781983739
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -29910,6 +32007,20 @@ MonoBehaviour:
   isTutorialActive: 1
   tutorialInitialCutoffValue: 1.15
   saveTutorialState: 0
+  fmodEventToTarget:
+    Guid:
+      Data1: 0
+      Data2: 0
+      Data3: 0
+      Data4: 0
+    Path: 
+  fmodEventToResting:
+    Guid:
+      Data1: 0
+      Data2: 0
+      Data3: 0
+      Data4: 0
+    Path: 
 --- !u!64 &1789098637
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -30040,6 +32151,20 @@ MonoBehaviour:
   isTutorialActive: 1
   tutorialInitialCutoffValue: 1.15
   saveTutorialState: 0
+  fmodEventToTarget:
+    Guid:
+      Data1: 0
+      Data2: 0
+      Data3: 0
+      Data4: 0
+    Path: 
+  fmodEventToResting:
+    Guid:
+      Data1: 0
+      Data2: 0
+      Data3: 0
+      Data4: 0
+    Path: 
 --- !u!64 &1795477872
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -30442,6 +32567,20 @@ MonoBehaviour:
   isTutorialActive: 0
   tutorialInitialCutoffValue: 1.15
   saveTutorialState: 0
+  fmodEventToTarget:
+    Guid:
+      Data1: 0
+      Data2: 0
+      Data3: 0
+      Data4: 0
+    Path: 
+  fmodEventToResting:
+    Guid:
+      Data1: 0
+      Data2: 0
+      Data3: 0
+      Data4: 0
+    Path: 
 --- !u!1 &1811337580
 GameObject:
   m_ObjectHideFlags: 0
@@ -31092,6 +33231,20 @@ MonoBehaviour:
   isTutorialActive: 0
   tutorialInitialCutoffValue: 0.5
   saveTutorialState: 1
+  fmodEventToTarget:
+    Guid:
+      Data1: -1086434843
+      Data2: 1255254014
+      Data3: 28572335
+      Data4: 1540235985
+    Path: event:/ParticuleFormation
+  fmodEventToResting:
+    Guid:
+      Data1: 47805584
+      Data2: 1075409246
+      Data3: 1241597108
+      Data4: -1714992784
+    Path: event:/ParticuleDestruction
 --- !u!64 &1847150053
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -31278,6 +33431,20 @@ MonoBehaviour:
   isTutorialActive: 0
   tutorialInitialCutoffValue: 1.15
   saveTutorialState: 0
+  fmodEventToTarget:
+    Guid:
+      Data1: 0
+      Data2: 0
+      Data3: 0
+      Data4: 0
+    Path: 
+  fmodEventToResting:
+    Guid:
+      Data1: 0
+      Data2: 0
+      Data3: 0
+      Data4: 0
+    Path: 
 --- !u!114 &1854950569
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -31574,6 +33741,20 @@ MonoBehaviour:
   isTutorialActive: 0
   tutorialInitialCutoffValue: 0.5
   saveTutorialState: 1
+  fmodEventToTarget:
+    Guid:
+      Data1: -1086434843
+      Data2: 1255254014
+      Data3: 28572335
+      Data4: 1540235985
+    Path: event:/ParticuleFormation
+  fmodEventToResting:
+    Guid:
+      Data1: 47805584
+      Data2: 1075409246
+      Data3: 1241597108
+      Data4: -1714992784
+    Path: event:/ParticuleDestruction
 --- !u!64 &1874959823
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -32046,6 +34227,20 @@ MonoBehaviour:
   isTutorialActive: 1
   tutorialInitialCutoffValue: 1.15
   saveTutorialState: 0
+  fmodEventToTarget:
+    Guid:
+      Data1: 0
+      Data2: 0
+      Data3: 0
+      Data4: 0
+    Path: 
+  fmodEventToResting:
+    Guid:
+      Data1: 0
+      Data2: 0
+      Data3: 0
+      Data4: 0
+    Path: 
 --- !u!64 &1903557120
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -32504,6 +34699,20 @@ MonoBehaviour:
   isTutorialActive: 0
   tutorialInitialCutoffValue: 1.15
   saveTutorialState: 0
+  fmodEventToTarget:
+    Guid:
+      Data1: 0
+      Data2: 0
+      Data3: 0
+      Data4: 0
+    Path: 
+  fmodEventToResting:
+    Guid:
+      Data1: 0
+      Data2: 0
+      Data3: 0
+      Data4: 0
+    Path: 
 --- !u!1 &1937896515 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: -2034225674957248523, guid: 6c773bd77c7dbac47bbcda32cb2a2baa, type: 3}
@@ -32586,6 +34795,20 @@ MonoBehaviour:
   isTutorialActive: 1
   tutorialInitialCutoffValue: 1.15
   saveTutorialState: 0
+  fmodEventToTarget:
+    Guid:
+      Data1: 0
+      Data2: 0
+      Data3: 0
+      Data4: 0
+    Path: 
+  fmodEventToResting:
+    Guid:
+      Data1: 0
+      Data2: 0
+      Data3: 0
+      Data4: 0
+    Path: 
 --- !u!4 &1953390156 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: a08c45cedf1c36f48af9f187b17e1c3a, type: 3}
@@ -32667,6 +34890,20 @@ MonoBehaviour:
   isTutorialActive: 0
   tutorialInitialCutoffValue: 1.15
   saveTutorialState: 0
+  fmodEventToTarget:
+    Guid:
+      Data1: 0
+      Data2: 0
+      Data3: 0
+      Data4: 0
+    Path: 
+  fmodEventToResting:
+    Guid:
+      Data1: 0
+      Data2: 0
+      Data3: 0
+      Data4: 0
+    Path: 
 --- !u!114 &1953390161
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -32899,6 +35136,20 @@ MonoBehaviour:
   isTutorialActive: 1
   tutorialInitialCutoffValue: 0.5
   saveTutorialState: 0
+  fmodEventToTarget:
+    Guid:
+      Data1: 0
+      Data2: 0
+      Data3: 0
+      Data4: 0
+    Path: 
+  fmodEventToResting:
+    Guid:
+      Data1: 0
+      Data2: 0
+      Data3: 0
+      Data4: 0
+    Path: 
 --- !u!114 &1969345051
 MonoBehaviour:
   m_ObjectHideFlags: 2
@@ -33251,6 +35502,20 @@ MonoBehaviour:
   isTutorialActive: 0
   tutorialInitialCutoffValue: 0.5
   saveTutorialState: 1
+  fmodEventToTarget:
+    Guid:
+      Data1: -1086434843
+      Data2: 1255254014
+      Data3: 28572335
+      Data4: 1540235985
+    Path: event:/ParticuleFormation
+  fmodEventToResting:
+    Guid:
+      Data1: 47805584
+      Data2: 1075409246
+      Data3: 1241597108
+      Data4: -1714992784
+    Path: event:/ParticuleDestruction
 --- !u!64 &1991437545
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -33422,6 +35687,20 @@ MonoBehaviour:
   isTutorialActive: 1
   tutorialInitialCutoffValue: 1.15
   saveTutorialState: 0
+  fmodEventToTarget:
+    Guid:
+      Data1: 0
+      Data2: 0
+      Data3: 0
+      Data4: 0
+    Path: 
+  fmodEventToResting:
+    Guid:
+      Data1: 0
+      Data2: 0
+      Data3: 0
+      Data4: 0
+    Path: 
 --- !u!1 &2001889635
 GameObject:
   m_ObjectHideFlags: 0
@@ -33818,6 +36097,20 @@ MonoBehaviour:
   isTutorialActive: 0
   tutorialInitialCutoffValue: 1.15
   saveTutorialState: 0
+  fmodEventToTarget:
+    Guid:
+      Data1: 0
+      Data2: 0
+      Data3: 0
+      Data4: 0
+    Path: 
+  fmodEventToResting:
+    Guid:
+      Data1: 0
+      Data2: 0
+      Data3: 0
+      Data4: 0
+    Path: 
 --- !u!114 &2005904757
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -34070,6 +36363,20 @@ MonoBehaviour:
   isTutorialActive: 1
   tutorialInitialCutoffValue: 1.15
   saveTutorialState: 0
+  fmodEventToTarget:
+    Guid:
+      Data1: 0
+      Data2: 0
+      Data3: 0
+      Data4: 0
+    Path: 
+  fmodEventToResting:
+    Guid:
+      Data1: 0
+      Data2: 0
+      Data3: 0
+      Data4: 0
+    Path: 
 --- !u!1 &2018555289
 GameObject:
   m_ObjectHideFlags: 0
@@ -34389,6 +36696,20 @@ MonoBehaviour:
   isTutorialActive: 0
   tutorialInitialCutoffValue: 1.15
   saveTutorialState: 0
+  fmodEventToTarget:
+    Guid:
+      Data1: 0
+      Data2: 0
+      Data3: 0
+      Data4: 0
+    Path: 
+  fmodEventToResting:
+    Guid:
+      Data1: 0
+      Data2: 0
+      Data3: 0
+      Data4: 0
+    Path: 
 --- !u!114 &2027453648
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -34624,6 +36945,20 @@ MonoBehaviour:
   isTutorialActive: 1
   tutorialInitialCutoffValue: 1.15
   saveTutorialState: 0
+  fmodEventToTarget:
+    Guid:
+      Data1: 0
+      Data2: 0
+      Data3: 0
+      Data4: 0
+    Path: 
+  fmodEventToResting:
+    Guid:
+      Data1: 0
+      Data2: 0
+      Data3: 0
+      Data4: 0
+    Path: 
 --- !u!1 &2042903426 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: -5182456881943995520, guid: 7d65ebd446b3ec6468b08f53aca2bb75, type: 3}
@@ -34679,6 +37014,20 @@ MonoBehaviour:
   isTutorialActive: 1
   tutorialInitialCutoffValue: 1.15
   saveTutorialState: 0
+  fmodEventToTarget:
+    Guid:
+      Data1: 0
+      Data2: 0
+      Data3: 0
+      Data4: 0
+    Path: 
+  fmodEventToResting:
+    Guid:
+      Data1: 0
+      Data2: 0
+      Data3: 0
+      Data4: 0
+    Path: 
 --- !u!1 &2059278932 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 72ba16e451d63084ba8ccd0a09616394, type: 3}
@@ -34826,6 +37175,20 @@ MonoBehaviour:
   isTutorialActive: 0
   tutorialInitialCutoffValue: 1.15
   saveTutorialState: 0
+  fmodEventToTarget:
+    Guid:
+      Data1: 0
+      Data2: 0
+      Data3: 0
+      Data4: 0
+    Path: 
+  fmodEventToResting:
+    Guid:
+      Data1: 0
+      Data2: 0
+      Data3: 0
+      Data4: 0
+    Path: 
 --- !u!114 &2059278939
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -34890,6 +37253,20 @@ MonoBehaviour:
   isTutorialActive: 1
   tutorialInitialCutoffValue: 1.15
   saveTutorialState: 0
+  fmodEventToTarget:
+    Guid:
+      Data1: 0
+      Data2: 0
+      Data3: 0
+      Data4: 0
+    Path: 
+  fmodEventToResting:
+    Guid:
+      Data1: 0
+      Data2: 0
+      Data3: 0
+      Data4: 0
+    Path: 
 --- !u!64 &2060320919
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -35028,6 +37405,20 @@ MonoBehaviour:
   isTutorialActive: 1
   tutorialInitialCutoffValue: 1.15
   saveTutorialState: 0
+  fmodEventToTarget:
+    Guid:
+      Data1: 0
+      Data2: 0
+      Data3: 0
+      Data4: 0
+    Path: 
+  fmodEventToResting:
+    Guid:
+      Data1: 0
+      Data2: 0
+      Data3: 0
+      Data4: 0
+    Path: 
 --- !u!64 &2077325964
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -35517,6 +37908,20 @@ MonoBehaviour:
   isTutorialActive: 1
   tutorialInitialCutoffValue: 1.15
   saveTutorialState: 0
+  fmodEventToTarget:
+    Guid:
+      Data1: 0
+      Data2: 0
+      Data3: 0
+      Data4: 0
+    Path: 
+  fmodEventToResting:
+    Guid:
+      Data1: 0
+      Data2: 0
+      Data3: 0
+      Data4: 0
+    Path: 
 --- !u!64 &2091324583
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -35594,6 +37999,20 @@ MonoBehaviour:
   isTutorialActive: 1
   tutorialInitialCutoffValue: 1.15
   saveTutorialState: 0
+  fmodEventToTarget:
+    Guid:
+      Data1: 0
+      Data2: 0
+      Data3: 0
+      Data4: 0
+    Path: 
+  fmodEventToResting:
+    Guid:
+      Data1: 0
+      Data2: 0
+      Data3: 0
+      Data4: 0
+    Path: 
 --- !u!4 &2110307884 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 854835756320132116, guid: 9cf5b9ddbcef7054d85f4226c2ed95d8, type: 3}
@@ -35687,6 +38106,20 @@ MonoBehaviour:
   isTutorialActive: 1
   tutorialInitialCutoffValue: 1.15
   saveTutorialState: 0
+  fmodEventToTarget:
+    Guid:
+      Data1: 0
+      Data2: 0
+      Data3: 0
+      Data4: 0
+    Path: 
+  fmodEventToResting:
+    Guid:
+      Data1: 0
+      Data2: 0
+      Data3: 0
+      Data4: 0
+    Path: 
 --- !u!1001 &2126375730
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -35972,6 +38405,20 @@ MonoBehaviour:
   isTutorialActive: 0
   tutorialInitialCutoffValue: 1.15
   saveTutorialState: 0
+  fmodEventToTarget:
+    Guid:
+      Data1: 0
+      Data2: 0
+      Data3: 0
+      Data4: 0
+    Path: 
+  fmodEventToResting:
+    Guid:
+      Data1: 0
+      Data2: 0
+      Data3: 0
+      Data4: 0
+    Path: 
 --- !u!1 &2128598203 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 2807007754685179816, guid: 6c773bd77c7dbac47bbcda32cb2a2baa, type: 3}
@@ -36348,6 +38795,20 @@ MonoBehaviour:
   isTutorialActive: 0
   tutorialInitialCutoffValue: 1.15
   saveTutorialState: 0
+  fmodEventToTarget:
+    Guid:
+      Data1: 0
+      Data2: 0
+      Data3: 0
+      Data4: 0
+    Path: 
+  fmodEventToResting:
+    Guid:
+      Data1: 0
+      Data2: 0
+      Data3: 0
+      Data4: 0
+    Path: 
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
@@ -36401,4 +38862,5 @@ SceneRoots:
   - {fileID: 790074853}
   - {fileID: 336762241}
   - {fileID: 1991704149}
+  - {fileID: 312988980}
   - {fileID: 1773001618}

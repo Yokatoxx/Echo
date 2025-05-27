@@ -320,6 +320,33 @@ MonoBehaviour:
   IsGlobal: 0
   Labels: []
   Exists: 1
+--- !u!114 &-4642701390892599963
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/ParticuleFormation
+  m_EditorClassIdentifier: 
+  Path: event:/ParticuleFormation
+  Guid:
+    Data1: -1086434843
+    Data2: 1255254014
+    Data3: 28572335
+    Data4: 1540235985
+  Banks:
+  - {fileID: 9039161347843217424}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 0
 --- !u!114 &-4395188199558351524
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -431,10 +458,10 @@ MonoBehaviour:
   Path: Assets/Fmod/Echo/Build/Desktop/Master.strings.bank
   Name: Master.strings
   StudioPath: bank:/Master.strings
-  lastModified: 638839881533550507
+  lastModified: 638839922227871985
   FileSizes:
   - Name: Desktop
-    Value: 2656
+    Value: 2750
   Exists: 1
 --- !u!114 &-2876006024354704613
 MonoBehaviour:
@@ -815,12 +842,14 @@ MonoBehaviour:
   - {fileID: 8399545444559501637}
   - {fileID: -6455482932541805071}
   - {fileID: -6146708724804351200}
+  - {fileID: 6065831024575075251}
+  - {fileID: -4642701390892599963}
   EditorParameters: []
   MasterBanks:
   - {fileID: 9039161347843217424}
   StringsBanks:
   - {fileID: -3108050575595576678}
-  cacheTime: 638839881533550507
+  cacheTime: 638839922227871985
   cacheVersion: 131623
 --- !u!114 &293155230939331426
 MonoBehaviour:
@@ -1505,6 +1534,33 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 0
+--- !u!114 &6065831024575075251
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/ParticuleDestruction
+  m_EditorClassIdentifier: 
+  Path: event:/ParticuleDestruction
+  Guid:
+    Data1: 47805584
+    Data2: 1075409246
+    Data3: 1241597108
+    Data4: -1714992784
+  Banks:
+  - {fileID: 9039161347843217424}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 0
 --- !u!114 &6182205589226972518
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1936,8 +1992,8 @@ MonoBehaviour:
   Path: Assets/Fmod/Echo/Build/Desktop/Master.bank
   Name: Master
   StudioPath: bank:/Master
-  lastModified: 638839881533511610
+  lastModified: 638839922227846237
   FileSizes:
   - Name: Desktop
-    Value: 2189568
+    Value: 2268000
   Exists: 1

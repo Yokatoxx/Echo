@@ -36,6 +36,11 @@ public class EnemySoundManager : MonoBehaviour
     public bool enableSounds = true;
     public float fadeSpeed = 2f;
 
+    [Header("HitByScanner Cooldown")]
+    [Tooltip("Temps minimum entre deux sons HitByScanner (en secondes)")]
+    [Range(0.1f, 5.0f)]
+    public float hitByScannerCooldown = 1.0f;
+
     [Header("Footsteps Configuration")]
     [Tooltip("Vitesse des pas en patrouille")]
     [Range(0.1f, 2.0f)]
@@ -81,6 +86,10 @@ public class EnemySoundManager : MonoBehaviour
     private float footstepTimer = 0f;
     private int currentSurfaceType = 0; // Par défaut, WoodSurface (0)
     private Vector3 lastPosition;
+
+    // HitByScanner cooldown management
+    private float lastHitByScannerTime = -999f;
+    private bool hasPlayedHitByScannerForCurrentState = false;
 
     // Enum pour les types de surface
     public enum SurfaceType
@@ -135,6 +144,13 @@ public class EnemySoundManager : MonoBehaviour
         {
             previousState = currentState;
             currentState = newState;
+
+            // Reset le flag quand on change d'état
+            if (currentState != "HitByScanner")
+            {
+                hasPlayedHitByScannerForCurrentState = false;
+            }
+
             OnStateChanged(currentState, previousState);
         }
     }
@@ -178,7 +194,8 @@ public class EnemySoundManager : MonoBehaviour
                 break;
 
             case "HitByScanner":
-                PlayHitByScannerSound();
+                // Utiliser la nouvelle méthode avec cooldown
+                TryPlayHitByScannerSound();
                 break;
 
             default:
@@ -229,6 +246,34 @@ public class EnemySoundManager : MonoBehaviour
         attackInstance.release(); // Libère automatiquement après lecture
 
         Debug.Log("EnemySoundManager: Playing attack sound");
+    }
+
+    private void TryPlayHitByScannerSound()
+    {
+        // Vérifier si on peut jouer le son (cooldown + flag d'état)
+        bool canPlay = CanPlayHitByScannerSound();
+
+        if (canPlay)
+        {
+            PlayHitByScannerSound();
+            lastHitByScannerTime = Time.time;
+            hasPlayedHitByScannerForCurrentState = true;
+        }
+        else
+        {
+            Debug.Log($"EnemySoundManager: HitByScanner sound blocked (cooldown: {Time.time - lastHitByScannerTime:F2}s, hasPlayed: {hasPlayedHitByScannerForCurrentState})");
+        }
+    }
+
+    private bool CanPlayHitByScannerSound()
+    {
+        // Vérifier le cooldown temporel
+        bool cooldownPassed = (Time.time - lastHitByScannerTime) >= hitByScannerCooldown;
+
+        // Vérifier si on n'a pas déjà joué le son pour cet état
+        bool notPlayedYet = !hasPlayedHitByScannerForCurrentState;
+
+        return cooldownPassed && notPlayedYet;
     }
 
     private void PlayHitByScannerSound()
@@ -507,6 +552,13 @@ public class EnemySoundManager : MonoBehaviour
     public float GetCurrentSpeed()
     {
         return navAgent != null ? navAgent.velocity.magnitude : 0f;
+    }
+
+    // Méthode publique pour forcer le reset du cooldown si nécessaire
+    public void ResetHitByScannerCooldown()
+    {
+        hasPlayedHitByScannerForCurrentState = false;
+        lastHitByScannerTime = -999f;
     }
 
     #endregion

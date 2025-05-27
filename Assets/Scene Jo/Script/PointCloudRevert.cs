@@ -1,5 +1,6 @@
 using System.Collections;
 using UnityEngine;
+using FMODUnity; // Ajout pour FMOD
 
 public class PointCloudRevert : MonoBehaviour
 {
@@ -28,6 +29,10 @@ public class PointCloudRevert : MonoBehaviour
     [SerializeField] private float tutorialInitialCutoffValue = 0.5f; // Valeur initiale pour le tutoriel
     [SerializeField] private bool saveTutorialState = true; // Sauvegarder l'état du tutoriel entre les scènes
 
+    [Header("FMOD Events")]
+    [SerializeField] private EventReference fmodEventToTarget; // Événement joué quand le blendshape va vers la target value
+    [SerializeField] private EventReference fmodEventToResting; // Événement joué quand le blendshape va vers la resting value
+
     private SkinnedMeshRenderer skinnedMeshRenderer;
     private bool isTransitioning = false; // For blendshape
     private float currentBlendValue;
@@ -42,6 +47,10 @@ public class PointCloudRevert : MonoBehaviour
     private bool isMaterialCutoffTransitioning = false;
     private static readonly int CutoffPropertyID = Shader.PropertyToID("_Cutoff");
     private static readonly string TutorialCompletedKey = "PointCloudTutorialCompleted";
+
+    // Variables pour traquer les événements FMOD déjà joués
+    private bool hasPlayedTargetEvent = false;
+    private bool hasPlayedRestingEvent = false;
 
     private void Awake()
     {
@@ -227,7 +236,8 @@ public class PointCloudRevert : MonoBehaviour
                 targetMaterialCutoffValue = Mathf.Clamp(targetMaterialCutoffValue,
                     materialCutoffScannerTargetValue, materialCutoffRestingValue);
 
-                
+                // Jouer l'événement FMOD pour aller vers la target value (décrémentation)
+                PlayFMODEventToTarget();
             }
             // MODE NORMAL - Aller directement à la valeur cible
             else
@@ -236,6 +246,9 @@ public class PointCloudRevert : MonoBehaviour
                 targetMaterialCutoffValue = materialCutoffScannerTargetValue;
 
                 Debug.Log($"Mode Normal [{tagName}]: Blend -> {targetValue}, Cutoff -> {targetMaterialCutoffValue}");
+
+                // Jouer l'événement FMOD pour aller vers la target value
+                PlayFMODEventToTarget();
             }
 
             isTransitioning = true;
@@ -281,6 +294,9 @@ public class PointCloudRevert : MonoBehaviour
             targetValue = restingValue; // Retour à la valeur de repos normale
         }
 
+        // Jouer l'événement FMOD pour aller vers la resting value
+        PlayFMODEventToResting();
+
         isTransitioning = true;
 
         // Reset Material Cutoff
@@ -289,6 +305,34 @@ public class PointCloudRevert : MonoBehaviour
             // Utiliser la valeur appropriée selon l'état du tutoriel
             targetMaterialCutoffValue = isTutorialActive ? tutorialInitialCutoffValue : materialCutoffRestingValue;
             isMaterialCutoffTransitioning = true;
+        }
+    }
+
+    /// <summary>
+    /// Joue l'événement FMOD quand le blendshape va vers la target value
+    /// </summary>
+    private void PlayFMODEventToTarget()
+    {
+        if (!fmodEventToTarget.IsNull && !hasPlayedTargetEvent)
+        {
+            RuntimeManager.PlayOneShot(fmodEventToTarget, transform.position);
+            hasPlayedTargetEvent = true;
+            hasPlayedRestingEvent = false; // Reset l'autre état
+            Debug.Log("FMOD Event joué : Transition vers Target Value");
+        }
+    }
+
+    /// <summary>
+    /// Joue l'événement FMOD quand le blendshape va vers la resting value
+    /// </summary>
+    private void PlayFMODEventToResting()
+    {
+        if (!fmodEventToResting.IsNull && !hasPlayedRestingEvent)
+        {
+            RuntimeManager.PlayOneShot(fmodEventToResting, transform.position);
+            hasPlayedRestingEvent = true;
+            hasPlayedTargetEvent = false; // Reset l'autre état
+            Debug.Log("FMOD Event joué : Transition vers Resting Value");
         }
     }
 }
