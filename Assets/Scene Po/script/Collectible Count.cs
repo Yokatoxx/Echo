@@ -33,7 +33,7 @@ public class CollectibleCount : MonoBehaviour
 
     void UpdateDisplay()
     {
-        string displayText = "Liste pour partir : \n";
+        string displayText = "";
 
         foreach (string collectibleName in TriggerCollect.allCollectibleNames)
         {

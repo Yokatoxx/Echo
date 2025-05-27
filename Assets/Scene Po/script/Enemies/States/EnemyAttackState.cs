@@ -197,12 +197,12 @@ public class EnemyAttackState : EnemyState
         // Mettre à jour le texte
         if (remainingLives == 1)
         {
-            deathCounterText.text = $"ATTENTION !\nDernière vie restante !";
+            deathCounterText.text = $"ATTENTION !\nDernière chance restante !";
             deathCounterText.color = Color.red;
         }
         else
         {
-            deathCounterText.text = $"Vies restantes : {remainingLives}";
+            deathCounterText.text = $"Vous vous êtes fait attraper, chance restantes : {remainingLives}";
             deathCounterText.color = Color.white;
         }
 
