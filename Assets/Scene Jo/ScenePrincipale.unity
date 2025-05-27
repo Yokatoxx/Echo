@@ -39922,6 +39922,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SceneBase
       objectReference: {fileID: 0}
+    - target: {fileID: 9003944052717425231, guid: 9cf5b9ddbcef7054d85f4226c2ed95d8, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 9010508152594925295, guid: 9cf5b9ddbcef7054d85f4226c2ed95d8, type: 3}
       propertyPath: m_LocalPosition.x
       value: -1.07
@@ -46941,6 +46945,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a54cb236d3a1c7a4ba805676406b448b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  fadeDuration: 1
+  fadePanel: {fileID: 0}
 --- !u!1001 &2027453642
 PrefabInstance:
   m_ObjectHideFlags: 0
