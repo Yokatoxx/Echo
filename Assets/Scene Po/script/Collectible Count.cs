@@ -5,7 +5,6 @@ using UnityEngine;
 public class CollectibleCount : MonoBehaviour
 {
     TMPro.TMP_Text text;
-    int count = 0;
 
     private void Awake()
     {
@@ -14,7 +13,7 @@ public class CollectibleCount : MonoBehaviour
 
     private void Start()
     {
-        UpdateCount();
+        UpdateDisplay();
     }
 
     void OnEnable()
@@ -27,16 +26,29 @@ public class CollectibleCount : MonoBehaviour
         TriggerCollect.OnCollected -= OnCollectibleCollected;
     }
 
-    public void OnCollectibleCollected()
+    public void OnCollectibleCollected(string collectibleName)
     {
-        count++;
-        UpdateCount();
+        UpdateDisplay();
     }
 
-    void UpdateCount()
+    void UpdateDisplay()
     {
-        text.text = $"{count} / {TriggerCollect.totalCollectibles}";
-    }
+        string displayText = "Liste pour partir : \n";
 
+        foreach (string collectibleName in TriggerCollect.allCollectibleNames)
+        {
+            if (TriggerCollect.collectedNames.Contains(collectibleName))
+            {
+                // Texte barré pour les objets collectés
+                displayText += $"<s>{collectibleName}</s>\n";
+            }
+            else
+            {
+                // Texte normal pour les objets non collectés
+                displayText += $"{collectibleName}\n";
+            }
+        }
+
+        text.text = displayText;
+    }
 }
-

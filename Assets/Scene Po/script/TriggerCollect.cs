@@ -5,8 +5,9 @@ using UnityEngine;
 
 public class TriggerCollect : MonoBehaviour
 {
-    public static event Action OnCollected;
-    public static int totalCollectibles;
+    public static event Action<string> OnCollected; // Maintenant on passe le nom de l'objet
+    public static List<string> allCollectibleNames = new List<string>();
+    public static List<string> collectedNames = new List<string>();
 
     public GameObject[] collectibles;
 
@@ -18,7 +19,11 @@ public class TriggerCollect : MonoBehaviour
 
         if (!hasInitializedCount)
         {
-            totalCollectibles = collectibles.Length;
+            allCollectibleNames.Clear();
+            foreach (GameObject collectible in collectibles)
+            {
+                allCollectibleNames.Add(collectible.name);
+            }
             hasInitializedCount = true;
         }
     }
@@ -27,7 +32,14 @@ public class TriggerCollect : MonoBehaviour
     {
         if (other.gameObject.tag == "Collectible")
         {
-            OnCollected?.Invoke();
+            string collectibleName = other.gameObject.name;
+
+            if (!collectedNames.Contains(collectibleName))
+            {
+                collectedNames.Add(collectibleName);
+            }
+
+            OnCollected?.Invoke(collectibleName);
             Destroy(other.gameObject);
         }
     }
