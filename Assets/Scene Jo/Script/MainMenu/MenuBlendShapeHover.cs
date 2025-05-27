@@ -1,11 +1,11 @@
+using System.Collections;
 using UnityEngine;
 using UnityEngine.SceneManagement;
-using UnityEngine.EventSystems; // Gardé au cas où
-using System.Collections;
-using UnityEngine.UI; // Pour Image
+using UnityEngine.UI;
 #if UNITY_EDITOR
-using UnityEditor; // Pour accéder aux fonctions d'éditeur
+using UnityEditor;
 #endif
+using FMODUnity; // Ajout de l'import FMOD
 
 [RequireComponent(typeof(Collider))]
 public class InteractiveMenuItem : MonoBehaviour
@@ -31,6 +31,13 @@ public class InteractiveMenuItem : MonoBehaviour
     public float normalWeight = 0.0f;
     [Tooltip("La vitesse de transition entre les poids.")]
     public float transitionSpeed = 10.0f;
+
+    [Header("FMOD Audio")]
+    [Tooltip("Événement FMOD à jouer lors du clic sur le bouton.")]
+    public EventReference clickSoundEvent; // Changé de [EventRef] string à EventReference
+    [Tooltip("Volume de l'événement audio (0-1).")]
+    [Range(0f, 1f)]
+    public float audioVolume = 1.0f;
 
     [Header("Fade Screen")]
     [Tooltip("Image UI pour le fondu en noir (doit être plein écran et noire).")]
@@ -115,8 +122,54 @@ public class InteractiveMenuItem : MonoBehaviour
     {
         if (!this.enabled || _isActivated) return;
 
+        // Jouer l'événement FMOD
+        PlayClickSound();
+
         _targetWeight = clickWeight;
         _isActivated = true;
+    }
+
+    /// <summary>
+    /// Joue l'événement FMOD assigné au clic
+    /// </summary>
+    private void PlayClickSound()
+    {
+        if (!clickSoundEvent.IsNull) // Changé de !string.IsNullOrEmpty à !clickSoundEvent.IsNull
+        {
+            try
+            {
+                // Créer et jouer l'événement FMOD
+                FMOD.Studio.EventInstance soundInstance = RuntimeManager.CreateInstance(clickSoundEvent); // Plus besoin de passer une string
+
+                // Définir le volume si spécifié
+                if (audioVolume != 1.0f)
+                {
+                    soundInstance.setVolume(audioVolume);
+                }
+
+                // Définir la position 3D si l'objet a une position
+                if (transform != null)
+                {
+                    soundInstance.set3DAttributes(RuntimeUtils.To3DAttributes(gameObject));
+                }
+
+                // Démarrer l'événement
+                soundInstance.start();
+
+                // Libérer l'instance après lecture (optionnel - permet un nettoyage automatique)
+                soundInstance.release();
+
+                Debug.Log($"[InteractiveMenuItem] Événement FMOD '{clickSoundEvent}' joué sur {gameObject.name}");
+            }
+            catch (System.Exception e)
+            {
+                Debug.LogError($"[InteractiveMenuItem] Erreur lors de la lecture de l'événement FMOD '{clickSoundEvent}' : {e.Message}", this);
+            }
+        }
+        else
+        {
+            Debug.LogWarning($"[InteractiveMenuItem] Aucun événement FMOD assigné pour {gameObject.name}");
+        }
     }
 
     IEnumerator ExecuteActionWithFade()

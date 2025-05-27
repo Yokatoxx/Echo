@@ -467,6 +467,14 @@ MonoBehaviour:
   clickWeight: 100
   normalWeight: 0
   transitionSpeed: 0.5
+  clickSoundEvent:
+    Guid:
+      Data1: 458154578
+      Data2: 1247470952
+      Data3: -534802774
+      Data4: 1432907632
+    Path: event:/ParticuleUi
+  audioVolume: 1
   fadeScreenImage: {fileID: 586773936}
   fadeDuration: 2
   delayBeforeFade: 0
@@ -722,6 +730,14 @@ MonoBehaviour:
   clickWeight: 100
   normalWeight: 0
   transitionSpeed: 0.5
+  clickSoundEvent:
+    Guid:
+      Data1: 0
+      Data2: 0
+      Data3: 0
+      Data4: 0
+    Path: 
+  audioVolume: 1
   fadeScreenImage: {fileID: 586773936}
   fadeDuration: 2
   delayBeforeFade: 0
@@ -893,6 +909,14 @@ MonoBehaviour:
   clickWeight: 100
   normalWeight: 0
   transitionSpeed: 0.5
+  clickSoundEvent:
+    Guid:
+      Data1: 458154578
+      Data2: 1247470952
+      Data3: -534802774
+      Data4: 1432907632
+    Path: event:/ParticuleUi
+  audioVolume: 1
   fadeScreenImage: {fileID: 586773936}
   fadeDuration: 2
   delayBeforeFade: 0
@@ -1308,6 +1332,14 @@ MonoBehaviour:
   clickWeight: 100
   normalWeight: 100
   transitionSpeed: 10
+  clickSoundEvent:
+    Guid:
+      Data1: 0
+      Data2: 0
+      Data3: 0
+      Data4: 0
+    Path: 
+  audioVolume: 1
   fadeScreenImage: {fileID: 0}
   fadeDuration: 1
   delayBeforeFade: 0.2
