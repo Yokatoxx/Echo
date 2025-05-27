@@ -209,7 +209,7 @@ public class DepositTutorial : BaseTutorial
         GameObject exit = GameObject.FindGameObjectWithTag("Finish");
         if (exit != null)
         {
-            Exit exitComponent = exit.GetComponent<Exit>();
+            WinManager exitComponent = exit.GetComponent<WinManager>();
             if (exitComponent != null)
             {
                 exitComponent.isCollectComplete = true;

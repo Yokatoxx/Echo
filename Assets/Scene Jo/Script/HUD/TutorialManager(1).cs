@@ -1114,7 +1114,7 @@ public class TutorialManagerOld : MonoBehaviour
             }
         }
 
-        exit.GetComponent<Exit>().isCollectComplete = true; 
+        exit.GetComponent<WinManager>().isCollectComplete = true; 
         
 
         Debug.Log("Tutoriel dépôt terminé - Tous les textes de dépôt cachés");
