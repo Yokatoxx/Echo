@@ -3,12 +3,16 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
+using FMODUnity; // Ajout du namespace FMOD
 
 public class Exit : MonoBehaviour
 {
     [Header("Fade Settings")]
     public float fadeDuration = 1.0f;
     public GameObject fadePanel; // Panel UI blanc pour le fondu
+
+    [Header("FMOD Audio")]
+    public EventReference fadeStartEvent; // Événement FMOD à jouer au début du fade
 
     private Image fadeImage;
     private bool isTransitioning = false;
@@ -43,6 +47,12 @@ public class Exit : MonoBehaviour
     private IEnumerator FadeAndChangeScene()
     {
         isTransitioning = true;
+
+        // Jouer l'événement FMOD au début du fade
+        if (!fadeStartEvent.IsNull)
+        {
+            RuntimeManager.PlayOneShot(fadeStartEvent);
+        }
 
         // Fondu vers le blanc
         yield return StartCoroutine(FadeToWhite());

@@ -26,12 +26,43 @@ public class EnemyAttackState : EnemyState
     private int gameOverSceneIndex;
     private bool useSceneName;
 
+    // NOUVEAU: Référence au PlayerHandController pour gérer les objets en main
+    private PlayerHandController playerHandController;
+
+    // NOUVEAU: Dictionnaire pour stocker les positions d'origine des objets collectibles
+    private static Dictionary<GameObject, ObjectOriginalState> originalStates = new Dictionary<GameObject, ObjectOriginalState>();
+
+    // NOUVEAU: Structure pour stocker l'état d'origine d'un objet
+    [System.Serializable]
+    private class ObjectOriginalState
+    {
+        public Vector3 position;
+        public Quaternion rotation;
+        public Transform parent;
+
+        public ObjectOriginalState(Vector3 pos, Quaternion rot, Transform par)
+        {
+            position = pos;
+            rotation = rot;
+            parent = par;
+        }
+    }
+
     public EnemyAttackState(Enemy enemy, EnemyStateMachine stateMachine) : base(enemy, stateMachine)
     {
         spawnPoint = GameObject.FindGameObjectWithTag("SpawnPoint");
         player = GameObject.FindGameObjectWithTag("Player");
         numberOfDeaths = 0;
         deathsBeforeReset = enemy.NumberOfDeathsBeforeReset;
+
+        // NOUVEAU: Récupérer le PlayerHandController
+        if (player != null)
+        {
+            playerHandController = player.GetComponent<PlayerHandController>();
+        }
+
+        // NOUVEAU: Enregistrer les positions d'origine de tous les objets collectibles
+        RegisterAllCollectibles();
 
         // Récupérer les paramètres de scène depuis l'Enemy
         gameOverSceneName = enemy.gameOverSceneName;
@@ -41,6 +72,35 @@ public class EnemyAttackState : EnemyState
         CreateFadeUI();
         // Créer l'UI pour le compteur de morts
         CreateDeathCounterUI();
+    }
+
+    // NOUVEAU: Méthode pour enregistrer les positions d'origine de tous les objets collectibles
+    private void RegisterAllCollectibles()
+    {
+        // Ne faire l'enregistrement qu'une seule fois
+        if (originalStates.Count > 0) return;
+
+        // Trouver tous les objets avec le tag "Collectible"
+        GameObject[] collectibles = GameObject.FindGameObjectsWithTag("Collectible");
+
+        foreach (GameObject collectible in collectibles)
+        {
+            // Vérifier si l'objet a un composant Collectable
+            Collectable collectableComponent = collectible.GetComponent<Collectable>();
+            if (collectableComponent != null)
+            {
+                // Stocker la position, rotation et parent d'origine
+                originalStates[collectible] = new ObjectOriginalState(
+                    collectible.transform.position,
+                    collectible.transform.rotation,
+                    collectible.transform.parent
+                );
+
+                Debug.Log($"Position d'origine enregistrée pour {collectible.name}: {collectible.transform.position}");
+            }
+        }
+
+        Debug.Log($"Total de {originalStates.Count} objets collectibles enregistrés");
     }
 
     private void CreateFadeUI()
@@ -123,6 +183,86 @@ public class EnemyAttackState : EnemyState
         }
     }
 
+    // NOUVEAU: Méthode pour gérer les objets tenus par le joueur
+    private void HandleHeldObjects()
+    {
+        if (playerHandController == null) return;
+
+        // Gérer l'objet dans la main droite
+        if (playerHandController.rightHeldObject != null)
+        {
+            ReturnObjectToOriginalPlace(playerHandController.rightHeldObject.gameObject);
+            playerHandController.rightHeldObject = null;
+        }
+
+        // Gérer l'objet dans la main gauche
+        if (playerHandController.leftHeldObject != null)
+        {
+            ReturnObjectToOriginalPlace(playerHandController.leftHeldObject.gameObject);
+            playerHandController.leftHeldObject = null;
+        }
+
+        // Mettre à jour la sélection d'objet après avoir vidé les mains
+        if (playerHandController != null)
+        {
+            playerHandController.TrySelectAvailableObject();
+        }
+    }
+
+    // NOUVEAU: Méthode pour remettre un objet à sa place d'origine
+    private void ReturnObjectToOriginalPlace(GameObject collectibleObject)
+    {
+        if (collectibleObject == null) return;
+
+        // Récupérer le composant Collectable
+        Collectable collectible = collectibleObject.GetComponent<Collectable>();
+        if (collectible != null)
+        {
+            // Faire lâcher l'objet par le joueur
+            collectible.Drop();
+        }
+
+        // Vérifier si on a la position d'origine stockée
+        if (originalStates.ContainsKey(collectibleObject))
+        {
+            ObjectOriginalState originalState = originalStates[collectibleObject];
+
+            // Remettre l'objet à sa position d'origine
+            collectibleObject.transform.position = originalState.position;
+            collectibleObject.transform.rotation = originalState.rotation;
+            collectibleObject.transform.SetParent(originalState.parent);
+
+            Debug.Log($"Objet {collectibleObject.name} remis à sa place d'origine: {originalState.position}");
+        }
+        else
+        {
+            // Si pas de position d'origine stockée, déposer près du spawn point
+            if (spawnPoint != null)
+            {
+                Vector3 dropPosition = spawnPoint.transform.position + Vector3.up * 0.5f + Random.insideUnitSphere * 2f;
+                collectibleObject.transform.position = dropPosition;
+                Debug.LogWarning($"Position d'origine non trouvée pour {collectibleObject.name}, déposé près du spawn point");
+            }
+        }
+
+        // S'assurer que la physique de l'objet est correctement réinitialisée
+        Rigidbody rb = collectibleObject.GetComponent<Rigidbody>();
+        if (rb != null)
+        {
+            rb.velocity = Vector3.zero;
+            rb.angularVelocity = Vector3.zero;
+            rb.isKinematic = false;
+            rb.useGravity = true;
+        }
+
+        // Réactiver le collider si nécessaire
+        Collider objectCollider = collectibleObject.GetComponent<Collider>();
+        if (objectCollider != null)
+        {
+            objectCollider.enabled = true;
+        }
+    }
+
     private IEnumerator HandlePlayerDeath()
     {
         isFading = true;
@@ -136,6 +276,9 @@ public class EnemyAttackState : EnemyState
         // Attendre un petit moment dans le noir
         yield return new WaitForSeconds(0.5f);
 
+        // NOUVEAU: Gérer les objets tenus avant la téléportation
+        HandleHeldObjects();
+
         // Incrémenter le nombre de morts
         numberOfDeaths++;
 
@@ -144,7 +287,7 @@ public class EnemyAttackState : EnemyState
         {
             Debug.Log("Game Over - Changing to game over scene");
 
-            // NOUVEAU: Débloquer le curseur avant de changer de scène
+            // Débloquer le curseur avant de changer de scène
             Cursor.lockState = CursorLockMode.None;
             Cursor.visible = true;
 
@@ -311,5 +454,11 @@ public class EnemyAttackState : EnemyState
         {
             Object.Destroy(fadeCanvas.gameObject);
         }
+    }
+
+    // NOUVEAU: Méthode statique pour nettoyer les données si nécessaire (optionnel)
+    public static void ClearOriginalStates()
+    {
+        originalStates.Clear();
     }
 }

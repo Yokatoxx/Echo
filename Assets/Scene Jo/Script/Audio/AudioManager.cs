@@ -2,13 +2,15 @@ using FMODUnity;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using FMOD.Studio;
 
 public class AudioManager : MonoBehaviour
 {
     [Header("Références de base")]
-    [SerializeField] GameObject player;
-    [SerializeField] PlayerMovement controller;
+    // Variables privées qui seront trouvées automatiquement
+    private GameObject player;
+    private PlayerMovement controller;
 
     [Header("Événements audio")]
     [Tooltip("Son des pas du joueur")]
@@ -65,6 +67,14 @@ public class AudioManager : MonoBehaviour
     [Tooltip("Activer le fade-out automatique en sortie")]
     [SerializeField] bool fadeOutOnSceneExit = true;
 
+    [Header("--- GESTION DES SCÈNES ---")]
+    [Tooltip("Délai avant de rechercher le player dans une nouvelle scène (en secondes)")]
+    [Range(0.1f, 3.0f)]
+    [SerializeField] float playerSearchDelay = 0.5f;
+    [Tooltip("Nombre maximum de tentatives de recherche du player")]
+    [Range(1, 10)]
+    [SerializeField] int maxSearchAttempts = 5;
+
     public static AudioManager Instance { get; private set; }
 
     // Variables privées existantes
@@ -87,6 +97,10 @@ public class AudioManager : MonoBehaviour
     private float sfxTargetVolume = 1f;
     private float ambientTargetVolume = 1f;
 
+    // Nouvelles variables pour la gestion des scènes
+    private string currentSceneName;
+    private Coroutine playerSearchCoroutine;
+
     // Enum pour les types de surface (correspond aux valeurs FMOD : 0, 1, 2)
     public enum SurfaceType
     {
@@ -108,6 +122,9 @@ public class AudioManager : MonoBehaviour
             }
 
             DontDestroyOnLoad(gameObject);
+
+            // NOUVEAU : S'abonner aux événements de changement de scène
+            SceneManager.sceneLoaded += OnSceneLoaded;
         }
         else
         {
@@ -117,6 +134,12 @@ public class AudioManager : MonoBehaviour
 
     void Start()
     {
+        // Stocker le nom de la scène actuelle
+        currentSceneName = SceneManager.GetActiveScene().name;
+
+        // NOUVEAU : Trouver automatiquement le player avec le tag "Player"
+        FindPlayerReferences();
+
         // NOUVEAU : Initialiser les bus audio pour le fade
         InitializeAudioBuses();
 
@@ -133,8 +156,140 @@ public class AudioManager : MonoBehaviour
         }
     }
 
+    /// <summary>
+    /// Appelé automatiquement quand une nouvelle scène est chargée
+    /// </summary>
+    /// <param name="scene">La scène qui vient d'être chargée</param>
+    /// <param name="mode">Le mode de chargement</param>
+    private void OnSceneLoaded(Scene scene, LoadSceneMode mode)
+    {
+        string newSceneName = scene.name;
+        Debug.Log($"AudioManager: Nouvelle scène chargée - {newSceneName}");
+
+        // Mettre à jour le nom de la scène courante
+        currentSceneName = newSceneName;
+
+        // Arrêter la recherche précédente si elle était en cours
+        if (playerSearchCoroutine != null)
+        {
+            StopCoroutine(playerSearchCoroutine);
+        }
+
+        // Commencer la recherche du player dans la nouvelle scène avec un délai
+        playerSearchCoroutine = StartCoroutine(SearchPlayerWithRetry());
+
+        // Si le fade-in est activé, le relancer pour la nouvelle scène
+        if (fadeInOnStart)
+        {
+            StartSceneFade();
+        }
+    }
+
+    /// <summary>
+    /// Coroutine qui essaie de trouver le player plusieurs fois avec des délais
+    /// </summary>
+    private IEnumerator SearchPlayerWithRetry()
+    {
+        int attempts = 0;
+
+        while (attempts < maxSearchAttempts)
+        {
+            // Attendre un délai avant de chercher
+            yield return new WaitForSeconds(playerSearchDelay);
+
+            attempts++;
+            Debug.Log($"AudioManager: Tentative {attempts}/{maxSearchAttempts} de recherche du player dans la scène {currentSceneName}");
+
+            // Essayer de trouver le player
+            FindPlayerReferences();
+
+            // Si on a trouvé le player, arrêter la recherche
+            if (player != null && controller != null)
+            {
+                Debug.Log($"AudioManager: Player trouvé avec succès après {attempts} tentative(s)");
+                playerSearchCoroutine = null;
+                yield break;
+            }
+
+            // Si c'est la dernière tentative et qu'on n'a toujours rien trouvé
+            if (attempts >= maxSearchAttempts)
+            {
+                Debug.LogWarning($"AudioManager: Impossible de trouver le player après {maxSearchAttempts} tentatives dans la scène {currentSceneName}");
+            }
+        }
+
+        playerSearchCoroutine = null;
+    }
+
+    /// <summary>
+    /// Trouve automatiquement les références au player et au controller
+    /// </summary>
+    private void FindPlayerReferences()
+    {
+        // Chercher le GameObject avec le tag "Player"
+        GameObject foundPlayer = GameObject.FindGameObjectWithTag("Player");
+
+        if (foundPlayer != null)
+        {
+            player = foundPlayer;
+            Debug.Log($"AudioManager: Player trouvé automatiquement - {player.name} dans la scène {currentSceneName}");
+
+            // Essayer de récupérer le component PlayerMovement sur le même GameObject
+            controller = player.GetComponent<PlayerMovement>();
+
+            if (controller != null)
+            {
+                Debug.Log($"AudioManager: PlayerMovement trouvé sur {player.name}");
+            }
+            else
+            {
+                Debug.LogWarning($"AudioManager: PlayerMovement non trouvé sur {player.name}. Recherche sur les enfants...");
+
+                // Si pas trouvé sur le GameObject principal, chercher dans les enfants
+                controller = player.GetComponentInChildren<PlayerMovement>();
+
+                if (controller != null)
+                {
+                    Debug.Log($"AudioManager: PlayerMovement trouvé sur l'enfant {controller.gameObject.name}");
+                }
+                else
+                {
+                    Debug.LogError($"AudioManager: PlayerMovement non trouvé ! Vérifiez que le script PlayerMovement est bien attaché au player ou à un de ses enfants dans la scène {currentSceneName}.");
+                }
+            }
+        }
+        else
+        {
+            Debug.LogWarning($"AudioManager: Aucun GameObject avec le tag 'Player' trouvé dans la scène {currentSceneName} ! Assurez-vous que votre player a le bon tag.");
+        }
+    }
+
+    /// <summary>
+    /// Méthode publique pour réassigner manuellement les références si nécessaire
+    /// </summary>
+    public void RefreshPlayerReferences()
+    {
+        Debug.Log("AudioManager: Recherche manuelle du player demandée");
+        FindPlayerReferences();
+    }
+
+    /// <summary>
+    /// Vérifie si le player est toujours valide (pas détruit)
+    /// </summary>
+    private bool IsPlayerValid()
+    {
+        return player != null && controller != null;
+    }
+
     void OnDestroy()
     {
+        // NOUVEAU : Se désabonner des événements de scène
+        SceneManager.sceneLoaded -= OnSceneLoaded;
+
+        // NOUVEAU : Arrêter la recherche du player si en cours
+        if (playerSearchCoroutine != null)
+            StopCoroutine(playerSearchCoroutine);
+
         // NOUVEAU : Arrêter le fade si en cours
         if (currentFadeCoroutine != null)
             StopCoroutine(currentFadeCoroutine);
@@ -361,7 +516,7 @@ public class AudioManager : MonoBehaviour
 
     #endregion
 
-    #region ===== TOUTES VOS MÉTHODES EXISTANTES (INCHANGÉES) =====
+    #region ===== TOUTES VOS MÉTHODES EXISTANTES (MODIFIÉES POUR LA SÉCURITÉ) =====
 
     public void PlayBackgroundMusic()
     {
@@ -430,32 +585,35 @@ public class AudioManager : MonoBehaviour
 
     public void PLayFootstep()
     {
-        if (player != null)
+        // NOUVEAU : Vérifier si le player est toujours valide
+        if (!IsPlayerValid())
         {
-            // Détecter le type de surface avant de jouer le son
-            DetectSurfaceType();
-
-            // Créer une instance de l'événement pour pouvoir modifier le paramètre
-            var footstepInstance = RuntimeManager.CreateInstance(FootstepEvent);
-
-            // Attacher l'instance au joueur
-            RuntimeManager.AttachInstanceToGameObject(footstepInstance, player);
-
-            // Définir le paramètre SurfaceType (valeurs 0, 1, 2 pour FMOD)
-            footstepInstance.setParameterByName(surfaceTypeParam, currentSurfaceType);
-
-            // Debug pour vérifier la valeur envoyée
-            if (showDebugRaycast)
-            {
-                Debug.Log($"FMOD Parameter '{surfaceTypeParam}' set to: {currentSurfaceType}");
-            }
-
-            // Jouer le son
-            footstepInstance.start();
-
-            // Libérer l'instance après lecture
-            footstepInstance.release();
+            return;
         }
+
+        // Détecter le type de surface avant de jouer le son
+        DetectSurfaceType();
+
+        // Créer une instance de l'événement pour pouvoir modifier le paramètre
+        var footstepInstance = RuntimeManager.CreateInstance(FootstepEvent);
+
+        // Attacher l'instance au joueur
+        RuntimeManager.AttachInstanceToGameObject(footstepInstance, player);
+
+        // Définir le paramètre SurfaceType (valeurs 0, 1, 2 pour FMOD)
+        footstepInstance.setParameterByName(surfaceTypeParam, currentSurfaceType);
+
+        // Debug pour vérifier la valeur envoyée
+        if (showDebugRaycast)
+        {
+            Debug.Log($"FMOD Parameter '{surfaceTypeParam}' set to: {currentSurfaceType}");
+        }
+
+        // Jouer le son
+        footstepInstance.start();
+
+        // Libérer l'instance après lecture
+        footstepInstance.release();
     }
 
     /// <summary>
@@ -463,7 +621,7 @@ public class AudioManager : MonoBehaviour
     /// </summary>
     private void DetectSurfaceType()
     {
-        if (player == null) return;
+        if (!IsPlayerValid()) return;
 
         // Point de départ du raycast (légèrement au-dessus du joueur)
         Vector3 rayStart = player.transform.position + Vector3.up * raycastOffset;
@@ -560,7 +718,8 @@ public class AudioManager : MonoBehaviour
     {
         time += Time.deltaTime;
 
-        if (controller == null || !controller.isWalking)
+        // NOUVEAU : Vérifier si le controller est valide avant de l'utiliser
+        if (!IsPlayerValid() || !controller.isWalking)
             return;
 
         float currentRate = walkRate;
@@ -574,8 +733,8 @@ public class AudioManager : MonoBehaviour
 
     void HandleEcholocation()
     {
-        // On remplace GetKeyDown par GetKeyUp pour correspondre à la logique de ChargeableEchoScanner
-        if (Input.GetKeyUp(KeyCode.Space) && player != null)
+        // NOUVEAU : Vérifier si le player est valide avant de l'utiliser
+        if (Input.GetKeyUp(KeyCode.Space) && IsPlayerValid())
         {
             PlayEcholocationSound(player.transform.position);
         }
@@ -589,7 +748,7 @@ public class AudioManager : MonoBehaviour
     // Méthode pour dessiner les gizmos dans l'éditeur
     void OnDrawGizmosSelected()
     {
-        if (player != null && showDebugRaycast)
+        if (IsPlayerValid() && showDebugRaycast)
         {
             Vector3 rayStart = player.transform.position + Vector3.up * raycastOffset;
             Vector3 rayEnd = rayStart + Vector3.down * groundCheckDistance;

@@ -50,35 +50,72 @@ public class TutorialManager : MonoBehaviour
 
     #region Initialization
 
+    // Remplacez la méthode InitializeSystem par cette version :
+
     private void InitializeSystem()
     {
-        // Validation des références
-        if (!ValidateReferences())
+        try
         {
-            Debug.LogError("TutorialManager: References validation failed!");
-            return;
+            // Validation des références
+            if (!ValidateReferences())
+            {
+                Debug.LogError("TutorialManager: References validation failed!");
+                return;
+            }
+
+            // Initialiser la caméra
+            mainCamera = Camera.main;
+            if (mainCamera == null) mainCamera = playerCamera;
+
+            // Initialiser le gestionnaire de texte
+            if (textManager == null)
+            {
+                textManager = gameObject.AddComponent<TutorialTextManager>();
+            }
+
+            textManager.Initialize(tutorialData);
+
+            // Créer et initialiser tous les modules de tutoriels
+            CreateTutorialModules();
+            InitializeTutorialModules();
+
+            // Démarrer avec le tutoriel d'écho
+            StartEchoTutorial();
+
+            systemInitialized = true;
+            Debug.Log("Tutorial System initialized successfully!");
         }
-
-        // Initialiser la caméra
-        mainCamera = Camera.main;
-        if (mainCamera == null) mainCamera = playerCamera;
-
-        // Initialiser le gestionnaire de texte
-        if (textManager == null)
+        catch (System.Exception e)
         {
-            textManager = gameObject.AddComponent<TutorialTextManager>();
+            Debug.LogError($"Failed to initialize tutorial system: {e.Message}");
+            Debug.LogException(e);
+
+            // Essayer un mode de secours
+            try
+            {
+                Debug.Log("Attempting fallback initialization...");
+                InitializeFallbackMode();
+            }
+            catch (System.Exception fallbackException)
+            {
+                Debug.LogError($"Fallback initialization also failed: {fallbackException.Message}");
+            }
         }
-        textManager.Initialize(tutorialData);
+    }
 
-        // Créer et initialiser tous les modules de tutoriels
-        CreateTutorialModules();
-        InitializeTutorialModules();
+    private void InitializeFallbackMode()
+    {
+        // Mode de secours sans matériaux spéciaux
+        Debug.LogWarning("Tutorial system running in fallback mode - some features may be limited");
 
-        // Démarrer avec le tutoriel d'écho
-        StartEchoTutorial();
+        // Créer seulement les modules essentiels
+        if (echoTutorial == null)
+        {
+            echoTutorial = gameObject.AddComponent<EchoTutorial>();
+            echoTutorial.Initialize(this, null, tutorialData, mainCamera);
+        }
 
         systemInitialized = true;
-        Debug.Log("Tutorial System initialized successfully!");
     }
 
     private bool ValidateReferences()
