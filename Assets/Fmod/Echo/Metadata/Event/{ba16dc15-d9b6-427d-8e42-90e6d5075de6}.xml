@@ -5,7 +5,7 @@
 			<value>MamaPatrol</value>
 		</property>
 		<property name="outputFormat">
-			<value>1</value>
+			<value>2</value>
 		</property>
 		<relationship name="folder">
 			<destination>{501c3df7-0297-497d-bf3a-7abddc485f1b}</destination>
@@ -96,6 +96,7 @@
 	<object class="MixerBusEffectChain" id="{10a7c2e6-03af-4d7a-bb10-9283d0573c7b}">
 		<relationship name="effects">
 			<destination>{67f37e8f-6d57-4eae-a21d-916f4a221758}</destination>
+			<destination>{9a7e79d5-4fb4-45d8-8550-ea7a9ac94728}</destination>
 		</relationship>
 	</object>
 	<object class="MixerBusPanner" id="{069e9fd9-4b7c-47a9-8275-c82c3bba8f5f}" />
@@ -109,4 +110,5 @@
 	</object>
 	<object class="MixerBusFader" id="{aef0b5b7-1c2f-491f-a7dd-210d70226fbb}" />
 	<object class="MixerBusFader" id="{67f37e8f-6d57-4eae-a21d-916f4a221758}" />
+	<object class="SpatialiserEffect" id="{9a7e79d5-4fb4-45d8-8550-ea7a9ac94728}" />
 </objects>

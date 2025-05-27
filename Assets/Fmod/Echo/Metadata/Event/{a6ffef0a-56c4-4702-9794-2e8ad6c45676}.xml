@@ -5,7 +5,7 @@
 			<value>MamaAttack</value>
 		</property>
 		<property name="outputFormat">
-			<value>1</value>
+			<value>2</value>
 		</property>
 		<relationship name="folder">
 			<destination>{501c3df7-0297-497d-bf3a-7abddc485f1b}</destination>
@@ -96,6 +96,7 @@
 	<object class="MixerBusEffectChain" id="{7e23ac19-1367-4a9e-82b6-281671fd2373}">
 		<relationship name="effects">
 			<destination>{d7aa19cd-46df-40d4-bda1-0e15cf192b23}</destination>
+			<destination>{011c7ee9-79f2-4201-9df8-d73c89ff147e}</destination>
 		</relationship>
 	</object>
 	<object class="MixerBusPanner" id="{5ab0d55a-77d3-48bb-81bf-20882e45700d}" />
@@ -106,4 +107,5 @@
 	</object>
 	<object class="MixerBusFader" id="{6e89b995-dc50-472e-a80e-9ae1df04a19f}" />
 	<object class="MixerBusFader" id="{d7aa19cd-46df-40d4-bda1-0e15cf192b23}" />
+	<object class="SpatialiserEffect" id="{011c7ee9-79f2-4201-9df8-d73c89ff147e}" />
 </objects>

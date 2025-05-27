@@ -40347,19 +40347,19 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   blendShapeIndex: 0
   blendShapeValueTarget: 0
-  restingValue: 10
+  restingValue: 100
   lerpSpeed: 2
   returnDelay: 6
   isDecrementalMode: 1
   decrementalStartValue: 100
-  scannerDecrementPower: 10
+  scannerDecrementPower: 100
   echoPassifDecrementPower: 6
   echoJoueurDecrementPower: 15
   materialToControl: {fileID: 0}
-  materialCutoffRestingValue: 1.47
-  materialCutoffScannerTargetValue: 0.6
-  isTutorialActive: 0
-  tutorialInitialCutoffValue: 1.15
+  materialCutoffRestingValue: 0.5
+  materialCutoffScannerTargetValue: 0.3
+  isTutorialActive: 1
+  tutorialInitialCutoffValue: 0.5
   saveTutorialState: 0
 --- !u!1001 &1717577489
 PrefabInstance:
