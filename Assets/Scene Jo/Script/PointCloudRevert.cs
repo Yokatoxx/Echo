@@ -33,6 +33,10 @@ public class PointCloudRevert : MonoBehaviour
     [SerializeField] private EventReference fmodEventToTarget; // Événement joué quand le blendshape va vers la target value
     [SerializeField] private EventReference fmodEventToResting; // Événement joué quand le blendshape va vers la resting value
 
+    [Header("FMOD Tolerance Settings")]
+    [SerializeField] private float targetSoundTolerance = 20f; // Tolérance pour jouer le son target (ex: 80 au lieu de 100)
+    [SerializeField] private float restingSoundTolerance = 20f; // Tolérance pour jouer le son resting (ex: 20 au lieu de 0)
+
     private SkinnedMeshRenderer skinnedMeshRenderer;
     private bool isTransitioning = false; // For blendshape
     private float currentBlendValue;
@@ -51,6 +55,10 @@ public class PointCloudRevert : MonoBehaviour
     // Variables pour traquer les événements FMOD déjà joués
     private bool hasPlayedTargetEvent = false;
     private bool hasPlayedRestingEvent = false;
+
+    // Variables pour la tolérance des sons
+    private float lastBlendValue; // Pour tracker la direction du changement
+    private bool isMovingToTarget = false; // True si on va vers target, false si on va vers resting
 
     private void Awake()
     {
@@ -98,6 +106,8 @@ public class PointCloudRevert : MonoBehaviour
             currentBlendValue = restingValue;
             targetValue = restingValue;
         }
+
+        lastBlendValue = currentBlendValue; // Initialiser la valeur de tracking
 
         if (isIndexValid)
         {
@@ -153,8 +163,12 @@ public class PointCloudRevert : MonoBehaviour
         // Blendshape transition
         if (isTransitioning && isIndexValid)
         {
+            float previousBlendValue = currentBlendValue;
             currentBlendValue = Mathf.Lerp(currentBlendValue, targetValue, Time.deltaTime * lerpSpeed);
             skinnedMeshRenderer.SetBlendShapeWeight(blendShapeIndex, currentBlendValue);
+
+            // Vérifier si on doit jouer les sons basés sur la tolérance
+            CheckSoundTolerance(previousBlendValue, currentBlendValue);
 
             if (Mathf.Abs(currentBlendValue - targetValue) < 0.01f)
             {
@@ -173,6 +187,68 @@ public class PointCloudRevert : MonoBehaviour
             {
                 currentMaterialCutoffValue = targetMaterialCutoffValue;
                 isMaterialCutoffTransitioning = false; // Stop cutoff transition if target reached
+            }
+        }
+
+        // Mettre à jour la valeur de tracking
+        lastBlendValue = currentBlendValue;
+    }
+
+    /// <summary>
+    /// Vérifie si on doit jouer les sons basés sur la tolérance
+    /// </summary>
+    private void CheckSoundTolerance(float previousValue, float currentValue)
+    {
+        // Si on va vers la target value (décrémentation en mode décrémental, ou augmentation en mode normal)
+        if (isMovingToTarget && !hasPlayedTargetEvent)
+        {
+            float toleranceThreshold;
+
+            if (isDecrementalMode)
+            {
+                // En mode décrémental, on va de decrementalStartValue vers 0
+                toleranceThreshold = decrementalStartValue - targetSoundTolerance;
+                // Jouer le son quand on descend en dessous du seuil de tolérance
+                if (previousValue > toleranceThreshold && currentValue <= toleranceThreshold)
+                {
+                    PlayFMODEventToTarget();
+                }
+            }
+            else
+            {
+                // En mode normal, on va de restingValue vers blendShapeValueTarget
+                toleranceThreshold = restingValue + targetSoundTolerance;
+                // Jouer le son quand on dépasse le seuil de tolérance
+                if (previousValue < toleranceThreshold && currentValue >= toleranceThreshold)
+                {
+                    PlayFMODEventToTarget();
+                }
+            }
+        }
+        // Si on va vers la resting value
+        else if (!isMovingToTarget && !hasPlayedRestingEvent)
+        {
+            float toleranceThreshold;
+
+            if (isDecrementalMode)
+            {
+                // En mode décrémental, on retourne vers decrementalStartValue
+                toleranceThreshold = decrementalStartValue - restingSoundTolerance;
+                // Jouer le son quand on dépasse le seuil en remontant
+                if (previousValue < toleranceThreshold && currentValue >= toleranceThreshold)
+                {
+                    PlayFMODEventToResting();
+                }
+            }
+            else
+            {
+                // En mode normal, on retourne vers restingValue
+                toleranceThreshold = restingValue + restingSoundTolerance;
+                // Jouer le son quand on descend en dessous du seuil
+                if (previousValue > toleranceThreshold && currentValue <= toleranceThreshold)
+                {
+                    PlayFMODEventToResting();
+                }
             }
         }
     }
@@ -219,6 +295,10 @@ public class PointCloudRevert : MonoBehaviour
                 tagName = "EchoJoueur";
             }
 
+            // Indiquer qu'on va vers la target
+            isMovingToTarget = true;
+            hasPlayedTargetEvent = false; // Reset pour permettre un nouveau son
+
             // MODE DÉCRÉMENTAL PROGRESSIF - Nouvelle logique améliorée
             if (isDecrementalMode)
             {
@@ -235,9 +315,6 @@ public class PointCloudRevert : MonoBehaviour
                 // S'assurer que le cutoff reste dans les limites
                 targetMaterialCutoffValue = Mathf.Clamp(targetMaterialCutoffValue,
                     materialCutoffScannerTargetValue, materialCutoffRestingValue);
-
-                // Jouer l'événement FMOD pour aller vers la target value (décrémentation)
-                PlayFMODEventToTarget();
             }
             // MODE NORMAL - Aller directement à la valeur cible
             else
@@ -246,9 +323,6 @@ public class PointCloudRevert : MonoBehaviour
                 targetMaterialCutoffValue = materialCutoffScannerTargetValue;
 
                 Debug.Log($"Mode Normal [{tagName}]: Blend -> {targetValue}, Cutoff -> {targetMaterialCutoffValue}");
-
-                // Jouer l'événement FMOD pour aller vers la target value
-                PlayFMODEventToTarget();
             }
 
             isTransitioning = true;
@@ -283,6 +357,10 @@ public class PointCloudRevert : MonoBehaviour
         if (collectableComponent != null && collectableComponent.isPickedUp)
             yield break;
 
+        // Indiquer qu'on va vers la resting value
+        isMovingToTarget = false;
+        hasPlayedRestingEvent = false; // Reset pour permettre un nouveau son
+
         // Reset Blendshape selon le mode
         if (isDecrementalMode)
         {
@@ -293,9 +371,6 @@ public class PointCloudRevert : MonoBehaviour
         {
             targetValue = restingValue; // Retour à la valeur de repos normale
         }
-
-        // Jouer l'événement FMOD pour aller vers la resting value
-        PlayFMODEventToResting();
 
         isTransitioning = true;
 
@@ -317,8 +392,7 @@ public class PointCloudRevert : MonoBehaviour
         {
             RuntimeManager.PlayOneShot(fmodEventToTarget, transform.position);
             hasPlayedTargetEvent = true;
-            hasPlayedRestingEvent = false; // Reset l'autre état
-            Debug.Log("FMOD Event joué : Transition vers Target Value");
+            Debug.Log($"FMOD Event joué : Transition vers Target Value (tolerance atteinte à {currentBlendValue:F1})");
         }
     }
 
@@ -331,8 +405,7 @@ public class PointCloudRevert : MonoBehaviour
         {
             RuntimeManager.PlayOneShot(fmodEventToResting, transform.position);
             hasPlayedRestingEvent = true;
-            hasPlayedTargetEvent = false; // Reset l'autre état
-            Debug.Log("FMOD Event joué : Transition vers Resting Value");
+            Debug.Log($"FMOD Event joué : Transition vers Resting Value (tolerance atteinte à {currentBlendValue:F1})");
         }
     }
 }

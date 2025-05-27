@@ -184,7 +184,7 @@ MonoBehaviour:
   isDecrementalMode: 1
   decrementalStartValue: 100
   scannerDecrementPower: 100
-  echoPassifDecrementPower: 6
+  echoPassifDecrementPower: 1
   echoJoueurDecrementPower: 15
   materialToControl: {fileID: 0}
   materialCutoffRestingValue: 1.1
@@ -206,6 +206,8 @@ MonoBehaviour:
       Data3: 1241597108
       Data4: -1714992784
     Path: event:/ParticuleDestruction
+  targetSoundTolerance: 15
+  restingSoundTolerance: 0
 --- !u!64 &6112406
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -497,6 +499,8 @@ MonoBehaviour:
       Data3: 0
       Data4: 0
     Path: 
+  targetSoundTolerance: 20
+  restingSoundTolerance: 20
 --- !u!64 &24274602
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -597,6 +601,8 @@ MonoBehaviour:
       Data3: 0
       Data4: 0
     Path: 
+  targetSoundTolerance: 20
+  restingSoundTolerance: 20
 --- !u!64 &28114224
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -688,6 +694,8 @@ MonoBehaviour:
       Data3: 0
       Data4: 0
     Path: 
+  targetSoundTolerance: 20
+  restingSoundTolerance: 20
 --- !u!1 &41143934
 GameObject:
   m_ObjectHideFlags: 0
@@ -768,6 +776,8 @@ MonoBehaviour:
       Data3: 0
       Data4: 0
     Path: 
+  targetSoundTolerance: 20
+  restingSoundTolerance: 20
 --- !u!64 &42195726
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -837,6 +847,8 @@ MonoBehaviour:
       Data3: 0
       Data4: 0
     Path: 
+  targetSoundTolerance: 20
+  restingSoundTolerance: 20
 --- !u!64 &44657148
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -1162,7 +1174,7 @@ MonoBehaviour:
   isDecrementalMode: 1
   decrementalStartValue: 100
   scannerDecrementPower: 100
-  echoPassifDecrementPower: 6
+  echoPassifDecrementPower: 1
   echoJoueurDecrementPower: 15
   materialToControl: {fileID: 0}
   materialCutoffRestingValue: 1.1
@@ -1184,6 +1196,8 @@ MonoBehaviour:
       Data3: 1241597108
       Data4: -1714992784
     Path: event:/ParticuleDestruction
+  targetSoundTolerance: 15
+  restingSoundTolerance: 0
 --- !u!64 &63971907
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -1253,6 +1267,8 @@ MonoBehaviour:
       Data3: 0
       Data4: 0
     Path: 
+  targetSoundTolerance: 20
+  restingSoundTolerance: 20
 --- !u!64 &66886152
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -1300,7 +1316,7 @@ MonoBehaviour:
   isDecrementalMode: 1
   decrementalStartValue: 100
   scannerDecrementPower: 100
-  echoPassifDecrementPower: 6
+  echoPassifDecrementPower: 1
   echoJoueurDecrementPower: 15
   materialToControl: {fileID: 0}
   materialCutoffRestingValue: 1.1
@@ -1322,6 +1338,8 @@ MonoBehaviour:
       Data3: 1241597108
       Data4: -1714992784
     Path: event:/ParticuleDestruction
+  targetSoundTolerance: 15
+  restingSoundTolerance: 0
 --- !u!64 &80734696
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -1391,6 +1409,8 @@ MonoBehaviour:
       Data3: 0
       Data4: 0
     Path: 
+  targetSoundTolerance: 20
+  restingSoundTolerance: 20
 --- !u!64 &83349426
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -1967,6 +1987,8 @@ MonoBehaviour:
       Data3: 0
       Data4: 0
     Path: 
+  targetSoundTolerance: 20
+  restingSoundTolerance: 20
 --- !u!64 &92581737
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -2471,6 +2493,8 @@ MonoBehaviour:
       Data3: 0
       Data4: 0
     Path: 
+  targetSoundTolerance: 20
+  restingSoundTolerance: 20
 --- !u!114 &133179744 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 5733453380523372688, guid: 9cf5b9ddbcef7054d85f4226c2ed95d8, type: 3}
@@ -2507,7 +2531,7 @@ MonoBehaviour:
   isDecrementalMode: 1
   decrementalStartValue: 100
   scannerDecrementPower: 100
-  echoPassifDecrementPower: 6
+  echoPassifDecrementPower: 1
   echoJoueurDecrementPower: 15
   materialToControl: {fileID: 0}
   materialCutoffRestingValue: 1.1
@@ -2529,6 +2553,8 @@ MonoBehaviour:
       Data3: 1241597108
       Data4: -1714992784
     Path: event:/ParticuleDestruction
+  targetSoundTolerance: 15
+  restingSoundTolerance: 0
 --- !u!64 &143259768
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -2576,7 +2602,7 @@ MonoBehaviour:
   isDecrementalMode: 1
   decrementalStartValue: 100
   scannerDecrementPower: 100
-  echoPassifDecrementPower: 6
+  echoPassifDecrementPower: 1
   echoJoueurDecrementPower: 15
   materialToControl: {fileID: 0}
   materialCutoffRestingValue: 1.1
@@ -2598,6 +2624,8 @@ MonoBehaviour:
       Data3: 1241597108
       Data4: -1714992784
     Path: event:/ParticuleDestruction
+  targetSoundTolerance: 15
+  restingSoundTolerance: 0
 --- !u!64 &148683764
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -2907,7 +2935,7 @@ MonoBehaviour:
   isDecrementalMode: 1
   decrementalStartValue: 100
   scannerDecrementPower: 100
-  echoPassifDecrementPower: 6
+  echoPassifDecrementPower: 1
   echoJoueurDecrementPower: 15
   materialToControl: {fileID: 0}
   materialCutoffRestingValue: 1.1
@@ -2929,6 +2957,8 @@ MonoBehaviour:
       Data3: 1241597108
       Data4: -1714992784
     Path: event:/ParticuleDestruction
+  targetSoundTolerance: 15
+  restingSoundTolerance: 0
 --- !u!64 &164531436
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -3566,6 +3596,8 @@ MonoBehaviour:
       Data3: 0
       Data4: 0
     Path: 
+  targetSoundTolerance: 20
+  restingSoundTolerance: 20
 --- !u!64 &189864679
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -3657,6 +3689,8 @@ MonoBehaviour:
       Data3: 0
       Data4: 0
     Path: 
+  targetSoundTolerance: 20
+  restingSoundTolerance: 20
 --- !u!1 &202076158
 GameObject:
   m_ObjectHideFlags: 0
@@ -3809,6 +3843,8 @@ MonoBehaviour:
       Data3: 0
       Data4: 0
     Path: 
+  targetSoundTolerance: 20
+  restingSoundTolerance: 20
 --- !u!1 &217098373
 GameObject:
   m_ObjectHideFlags: 0
@@ -4078,6 +4114,8 @@ MonoBehaviour:
       Data3: 0
       Data4: 0
     Path: 
+  targetSoundTolerance: 20
+  restingSoundTolerance: 20
 --- !u!64 &241623606
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -4147,6 +4185,8 @@ MonoBehaviour:
       Data3: 0
       Data4: 0
     Path: 
+  targetSoundTolerance: 20
+  restingSoundTolerance: 20
 --- !u!64 &244871903
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -4270,6 +4310,8 @@ MonoBehaviour:
       Data3: 0
       Data4: 0
     Path: 
+  targetSoundTolerance: 20
+  restingSoundTolerance: 20
 --- !u!64 &255191859
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -4595,7 +4637,7 @@ MonoBehaviour:
   isDecrementalMode: 1
   decrementalStartValue: 100
   scannerDecrementPower: 100
-  echoPassifDecrementPower: 6
+  echoPassifDecrementPower: 1
   echoJoueurDecrementPower: 15
   materialToControl: {fileID: 0}
   materialCutoffRestingValue: 1.1
@@ -4617,6 +4659,8 @@ MonoBehaviour:
       Data3: 1241597108
       Data4: -1714992784
     Path: event:/ParticuleDestruction
+  targetSoundTolerance: 15
+  restingSoundTolerance: 0
 --- !u!64 &271101906
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -4686,6 +4730,8 @@ MonoBehaviour:
       Data3: 0
       Data4: 0
     Path: 
+  targetSoundTolerance: 20
+  restingSoundTolerance: 20
 --- !u!64 &274863089
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -4926,6 +4972,8 @@ MonoBehaviour:
       Data3: 0
       Data4: 0
     Path: 
+  targetSoundTolerance: 20
+  restingSoundTolerance: 20
 --- !u!64 &286582335
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -5178,7 +5226,7 @@ MonoBehaviour:
   isDecrementalMode: 1
   decrementalStartValue: 100
   scannerDecrementPower: 100
-  echoPassifDecrementPower: 6
+  echoPassifDecrementPower: 1
   echoJoueurDecrementPower: 15
   materialToControl: {fileID: 0}
   materialCutoffRestingValue: 1.1
@@ -5200,6 +5248,8 @@ MonoBehaviour:
       Data3: 1241597108
       Data4: -1714992784
     Path: event:/ParticuleDestruction
+  targetSoundTolerance: 15
+  restingSoundTolerance: 0
 --- !u!64 &315146908
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -5376,6 +5426,8 @@ MonoBehaviour:
       Data3: 0
       Data4: 0
     Path: 
+  targetSoundTolerance: 20
+  restingSoundTolerance: 20
 --- !u!1 &326868367
 GameObject:
   m_ObjectHideFlags: 0
@@ -5651,6 +5703,8 @@ MonoBehaviour:
       Data3: 0
       Data4: 0
     Path: 
+  targetSoundTolerance: 20
+  restingSoundTolerance: 20
 --- !u!1 &333367964 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: -7374219674283527612, guid: 56ce10c00275c5d45a502c5ccca5bd4e, type: 3}
@@ -5698,6 +5752,8 @@ MonoBehaviour:
       Data3: 0
       Data4: 0
     Path: 
+  targetSoundTolerance: 20
+  restingSoundTolerance: 20
 --- !u!64 &333367968
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -5780,7 +5836,7 @@ MonoBehaviour:
   isDecrementalMode: 1
   decrementalStartValue: 100
   scannerDecrementPower: 100
-  echoPassifDecrementPower: 6
+  echoPassifDecrementPower: 1
   echoJoueurDecrementPower: 15
   materialToControl: {fileID: 0}
   materialCutoffRestingValue: 1.1
@@ -5802,6 +5858,8 @@ MonoBehaviour:
       Data3: 1241597108
       Data4: -1714992784
     Path: event:/ParticuleDestruction
+  targetSoundTolerance: 15
+  restingSoundTolerance: 0
 --- !u!64 &340431971
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -5849,7 +5907,7 @@ MonoBehaviour:
   isDecrementalMode: 1
   decrementalStartValue: 100
   scannerDecrementPower: 100
-  echoPassifDecrementPower: 6
+  echoPassifDecrementPower: 1
   echoJoueurDecrementPower: 15
   materialToControl: {fileID: 0}
   materialCutoffRestingValue: 1.1
@@ -5871,6 +5929,8 @@ MonoBehaviour:
       Data3: 1241597108
       Data4: -1714992784
     Path: event:/ParticuleDestruction
+  targetSoundTolerance: 15
+  restingSoundTolerance: 0
 --- !u!64 &348878842
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -5940,6 +6000,8 @@ MonoBehaviour:
       Data3: 0
       Data4: 0
     Path: 
+  targetSoundTolerance: 20
+  restingSoundTolerance: 20
 --- !u!64 &365879527
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -6185,6 +6247,8 @@ MonoBehaviour:
       Data3: 0
       Data4: 0
     Path: 
+  targetSoundTolerance: 20
+  restingSoundTolerance: 20
 --- !u!1 &377421629 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 9b507d9af3e3e6e4abb8175074017213, type: 3}
@@ -6416,6 +6480,8 @@ MonoBehaviour:
       Data3: 0
       Data4: 0
     Path: 
+  targetSoundTolerance: 20
+  restingSoundTolerance: 20
 --- !u!64 &399005007
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -6507,6 +6573,8 @@ MonoBehaviour:
       Data3: 0
       Data4: 0
     Path: 
+  targetSoundTolerance: 20
+  restingSoundTolerance: 20
 --- !u!65 &399946851
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -6835,6 +6903,8 @@ MonoBehaviour:
       Data3: 0
       Data4: 0
     Path: 
+  targetSoundTolerance: 20
+  restingSoundTolerance: 20
 --- !u!64 &420478640
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -7125,6 +7195,8 @@ MonoBehaviour:
       Data3: 0
       Data4: 0
     Path: 
+  targetSoundTolerance: 20
+  restingSoundTolerance: 20
 --- !u!64 &450268129
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -7199,6 +7271,8 @@ MonoBehaviour:
       Data3: 0
       Data4: 0
     Path: 
+  targetSoundTolerance: 20
+  restingSoundTolerance: 20
 --- !u!64 &456706586
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -7295,6 +7369,8 @@ MonoBehaviour:
       Data3: 0
       Data4: 0
     Path: 
+  targetSoundTolerance: 20
+  restingSoundTolerance: 20
 --- !u!64 &462152077
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -7364,6 +7440,8 @@ MonoBehaviour:
       Data3: 0
       Data4: 0
     Path: 
+  targetSoundTolerance: 20
+  restingSoundTolerance: 20
 --- !u!64 &468484452
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -7433,6 +7511,8 @@ MonoBehaviour:
       Data3: 0
       Data4: 0
     Path: 
+  targetSoundTolerance: 20
+  restingSoundTolerance: 20
 --- !u!64 &469236923
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -7502,6 +7582,8 @@ MonoBehaviour:
       Data3: 0
       Data4: 0
     Path: 
+  targetSoundTolerance: 20
+  restingSoundTolerance: 20
 --- !u!64 &471940246
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -7549,7 +7631,7 @@ MonoBehaviour:
   isDecrementalMode: 1
   decrementalStartValue: 100
   scannerDecrementPower: 100
-  echoPassifDecrementPower: 6
+  echoPassifDecrementPower: 1
   echoJoueurDecrementPower: 15
   materialToControl: {fileID: 0}
   materialCutoffRestingValue: 1.1
@@ -7571,6 +7653,8 @@ MonoBehaviour:
       Data3: 1241597108
       Data4: -1714992784
     Path: event:/ParticuleDestruction
+  targetSoundTolerance: 15
+  restingSoundTolerance: 0
 --- !u!64 &482380166
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -7640,6 +7724,8 @@ MonoBehaviour:
       Data3: 0
       Data4: 0
     Path: 
+  targetSoundTolerance: 20
+  restingSoundTolerance: 20
 --- !u!64 &496443646
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -7793,7 +7879,7 @@ MonoBehaviour:
   isDecrementalMode: 1
   decrementalStartValue: 100
   scannerDecrementPower: 100
-  echoPassifDecrementPower: 6
+  echoPassifDecrementPower: 1
   echoJoueurDecrementPower: 15
   materialToControl: {fileID: 0}
   materialCutoffRestingValue: 1.1
@@ -7815,6 +7901,8 @@ MonoBehaviour:
       Data3: 1241597108
       Data4: -1714992784
     Path: event:/ParticuleDestruction
+  targetSoundTolerance: 15
+  restingSoundTolerance: 0
 --- !u!64 &501758280
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -7945,7 +8033,7 @@ MonoBehaviour:
   isDecrementalMode: 1
   decrementalStartValue: 100
   scannerDecrementPower: 100
-  echoPassifDecrementPower: 6
+  echoPassifDecrementPower: 1
   echoJoueurDecrementPower: 15
   materialToControl: {fileID: 0}
   materialCutoffRestingValue: 1.1
@@ -7967,6 +8055,8 @@ MonoBehaviour:
       Data3: 1241597108
       Data4: -1714992784
     Path: event:/ParticuleDestruction
+  targetSoundTolerance: 15
+  restingSoundTolerance: 0
 --- !u!64 &507680277
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -8014,7 +8104,7 @@ MonoBehaviour:
   isDecrementalMode: 1
   decrementalStartValue: 100
   scannerDecrementPower: 100
-  echoPassifDecrementPower: 6
+  echoPassifDecrementPower: 1
   echoJoueurDecrementPower: 15
   materialToControl: {fileID: 0}
   materialCutoffRestingValue: 1.1
@@ -8036,6 +8126,8 @@ MonoBehaviour:
       Data3: 1241597108
       Data4: -1714992784
     Path: event:/ParticuleDestruction
+  targetSoundTolerance: 15
+  restingSoundTolerance: 0
 --- !u!64 &523777149
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -8222,7 +8314,7 @@ MonoBehaviour:
   isDecrementalMode: 1
   decrementalStartValue: 100
   scannerDecrementPower: 100
-  echoPassifDecrementPower: 6
+  echoPassifDecrementPower: 1
   echoJoueurDecrementPower: 15
   materialToControl: {fileID: 0}
   materialCutoffRestingValue: 1.1
@@ -8244,6 +8336,8 @@ MonoBehaviour:
       Data3: 1241597108
       Data4: -1714992784
     Path: event:/ParticuleDestruction
+  targetSoundTolerance: 15
+  restingSoundTolerance: 0
 --- !u!64 &531103403
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -8540,6 +8634,8 @@ MonoBehaviour:
       Data3: 0
       Data4: 0
     Path: 
+  targetSoundTolerance: 20
+  restingSoundTolerance: 20
 --- !u!64 &554232932
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -9160,6 +9256,8 @@ MonoBehaviour:
       Data3: 0
       Data4: 0
     Path: 
+  targetSoundTolerance: 20
+  restingSoundTolerance: 20
 --- !u!64 &569251231
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -9212,7 +9310,7 @@ MonoBehaviour:
   isDecrementalMode: 1
   decrementalStartValue: 100
   scannerDecrementPower: 100
-  echoPassifDecrementPower: 6
+  echoPassifDecrementPower: 1
   echoJoueurDecrementPower: 15
   materialToControl: {fileID: 0}
   materialCutoffRestingValue: 1.1
@@ -9234,6 +9332,8 @@ MonoBehaviour:
       Data3: 1241597108
       Data4: -1714992784
     Path: event:/ParticuleDestruction
+  targetSoundTolerance: 15
+  restingSoundTolerance: 0
 --- !u!64 &580800145
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -9303,6 +9403,8 @@ MonoBehaviour:
       Data3: 0
       Data4: 0
     Path: 
+  targetSoundTolerance: 20
+  restingSoundTolerance: 20
 --- !u!64 &583403325
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -9421,6 +9523,8 @@ MonoBehaviour:
       Data3: 0
       Data4: 0
     Path: 
+  targetSoundTolerance: 20
+  restingSoundTolerance: 20
 --- !u!1001 &611890623
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -10346,7 +10450,7 @@ MonoBehaviour:
   isDecrementalMode: 1
   decrementalStartValue: 100
   scannerDecrementPower: 100
-  echoPassifDecrementPower: 6
+  echoPassifDecrementPower: 1
   echoJoueurDecrementPower: 15
   materialToControl: {fileID: 0}
   materialCutoffRestingValue: 1.1
@@ -10368,6 +10472,8 @@ MonoBehaviour:
       Data3: 1241597108
       Data4: -1714992784
     Path: event:/ParticuleDestruction
+  targetSoundTolerance: 15
+  restingSoundTolerance: 0
 --- !u!64 &616398112
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -10529,7 +10635,7 @@ MonoBehaviour:
   isDecrementalMode: 1
   decrementalStartValue: 100
   scannerDecrementPower: 100
-  echoPassifDecrementPower: 6
+  echoPassifDecrementPower: 1
   echoJoueurDecrementPower: 15
   materialToControl: {fileID: 0}
   materialCutoffRestingValue: 1.1
@@ -10551,6 +10657,8 @@ MonoBehaviour:
       Data3: 1241597108
       Data4: -1714992784
     Path: event:/ParticuleDestruction
+  targetSoundTolerance: 15
+  restingSoundTolerance: 0
 --- !u!64 &643390991
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -10765,6 +10873,8 @@ MonoBehaviour:
       Data3: 0
       Data4: 0
     Path: 
+  targetSoundTolerance: 20
+  restingSoundTolerance: 20
 --- !u!1 &656481953
 GameObject:
   m_ObjectHideFlags: 0
@@ -11005,6 +11115,8 @@ MonoBehaviour:
       Data3: 0
       Data4: 0
     Path: 
+  targetSoundTolerance: 20
+  restingSoundTolerance: 20
 --- !u!64 &677045876
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -11096,6 +11208,8 @@ MonoBehaviour:
       Data3: 0
       Data4: 0
     Path: 
+  targetSoundTolerance: 20
+  restingSoundTolerance: 20
 --- !u!1 &682500579
 GameObject:
   m_ObjectHideFlags: 0
@@ -11338,6 +11452,8 @@ MonoBehaviour:
       Data3: 0
       Data4: 0
     Path: 
+  targetSoundTolerance: 20
+  restingSoundTolerance: 20
 --- !u!64 &686970835
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -11385,7 +11501,7 @@ MonoBehaviour:
   isDecrementalMode: 1
   decrementalStartValue: 100
   scannerDecrementPower: 100
-  echoPassifDecrementPower: 6
+  echoPassifDecrementPower: 1
   echoJoueurDecrementPower: 15
   materialToControl: {fileID: 0}
   materialCutoffRestingValue: 1.1
@@ -11407,6 +11523,8 @@ MonoBehaviour:
       Data3: 1241597108
       Data4: -1714992784
     Path: event:/ParticuleDestruction
+  targetSoundTolerance: 15
+  restingSoundTolerance: 0
 --- !u!64 &687277089
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -11569,6 +11687,8 @@ MonoBehaviour:
       Data3: 0
       Data4: 0
     Path: 
+  targetSoundTolerance: 20
+  restingSoundTolerance: 20
 --- !u!114 &692118970
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -11740,6 +11860,8 @@ MonoBehaviour:
       Data3: 0
       Data4: 0
     Path: 
+  targetSoundTolerance: 20
+  restingSoundTolerance: 20
 --- !u!1 &700785668 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 7528302065475879929, guid: fefd1a3d9e9106e458835f8757759571, type: 3}
@@ -11809,6 +11931,8 @@ MonoBehaviour:
       Data3: 0
       Data4: 0
     Path: 
+  targetSoundTolerance: 20
+  restingSoundTolerance: 20
 --- !u!1 &705882691
 GameObject:
   m_ObjectHideFlags: 0
@@ -11961,6 +12085,8 @@ MonoBehaviour:
       Data3: 0
       Data4: 0
     Path: 
+  targetSoundTolerance: 20
+  restingSoundTolerance: 20
 --- !u!1001 &735532603
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -12478,6 +12604,8 @@ MonoBehaviour:
       Data3: 0
       Data4: 0
     Path: 
+  targetSoundTolerance: 20
+  restingSoundTolerance: 20
 --- !u!114 &776624430
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -13334,6 +13462,8 @@ MonoBehaviour:
       Data3: 0
       Data4: 0
     Path: 
+  targetSoundTolerance: 20
+  restingSoundTolerance: 20
 --- !u!1 &805226525 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: -3968873999840854130, guid: 52ffa0017d1ee634f86dba8a255bc26d, type: 3}
@@ -13381,6 +13511,8 @@ MonoBehaviour:
       Data3: 0
       Data4: 0
     Path: 
+  targetSoundTolerance: 20
+  restingSoundTolerance: 20
 --- !u!64 &805226529
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -13480,6 +13612,8 @@ MonoBehaviour:
       Data3: 0
       Data4: 0
     Path: 
+  targetSoundTolerance: 20
+  restingSoundTolerance: 20
 --- !u!114 &807121584
 MonoBehaviour:
   m_ObjectHideFlags: 2
@@ -13662,7 +13796,7 @@ MonoBehaviour:
   isDecrementalMode: 1
   decrementalStartValue: 100
   scannerDecrementPower: 100
-  echoPassifDecrementPower: 6
+  echoPassifDecrementPower: 1
   echoJoueurDecrementPower: 15
   materialToControl: {fileID: 0}
   materialCutoffRestingValue: 1.1
@@ -13684,6 +13818,8 @@ MonoBehaviour:
       Data3: 1241597108
       Data4: -1714992784
     Path: event:/ParticuleDestruction
+  targetSoundTolerance: 15
+  restingSoundTolerance: 0
 --- !u!64 &811137532
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -13758,7 +13894,7 @@ MonoBehaviour:
   isDecrementalMode: 1
   decrementalStartValue: 100
   scannerDecrementPower: 100
-  echoPassifDecrementPower: 6
+  echoPassifDecrementPower: 1
   echoJoueurDecrementPower: 15
   materialToControl: {fileID: 0}
   materialCutoffRestingValue: 1.1
@@ -13780,6 +13916,8 @@ MonoBehaviour:
       Data3: 1241597108
       Data4: -1714992784
     Path: event:/ParticuleDestruction
+  targetSoundTolerance: 15
+  restingSoundTolerance: 0
 --- !u!64 &839489752
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -13910,7 +14048,7 @@ MonoBehaviour:
   isDecrementalMode: 1
   decrementalStartValue: 100
   scannerDecrementPower: 100
-  echoPassifDecrementPower: 6
+  echoPassifDecrementPower: 1
   echoJoueurDecrementPower: 15
   materialToControl: {fileID: 0}
   materialCutoffRestingValue: 1.1
@@ -13932,6 +14070,8 @@ MonoBehaviour:
       Data3: 1241597108
       Data4: -1714992784
     Path: event:/ParticuleDestruction
+  targetSoundTolerance: 15
+  restingSoundTolerance: 0
 --- !u!64 &851021708
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -14216,6 +14356,8 @@ MonoBehaviour:
       Data3: 0
       Data4: 0
     Path: 
+  targetSoundTolerance: 20
+  restingSoundTolerance: 20
 --- !u!1 &874433576
 GameObject:
   m_ObjectHideFlags: 0
@@ -14368,6 +14510,8 @@ MonoBehaviour:
       Data3: 0
       Data4: 0
     Path: 
+  targetSoundTolerance: 20
+  restingSoundTolerance: 20
 --- !u!1 &879873443 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 5160339229229834525, guid: 91602627b9f1b024cbe8a52dfe570a48, type: 3}
@@ -14393,7 +14537,7 @@ MonoBehaviour:
   isDecrementalMode: 1
   decrementalStartValue: 100
   scannerDecrementPower: 100
-  echoPassifDecrementPower: 6
+  echoPassifDecrementPower: 1
   echoJoueurDecrementPower: 15
   materialToControl: {fileID: 0}
   materialCutoffRestingValue: 1.1
@@ -14415,6 +14559,8 @@ MonoBehaviour:
       Data3: 1241597108
       Data4: -1714992784
     Path: event:/ParticuleDestruction
+  targetSoundTolerance: 15
+  restingSoundTolerance: 0
 --- !u!64 &879873447
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -14538,6 +14684,8 @@ MonoBehaviour:
       Data3: 0
       Data4: 0
     Path: 
+  targetSoundTolerance: 20
+  restingSoundTolerance: 20
 --- !u!64 &890566720
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -14875,6 +15023,8 @@ MonoBehaviour:
       Data3: 0
       Data4: 0
     Path: 
+  targetSoundTolerance: 20
+  restingSoundTolerance: 20
 --- !u!114 &906761508
 MonoBehaviour:
   m_ObjectHideFlags: 2
@@ -15101,6 +15251,8 @@ MonoBehaviour:
       Data3: 0
       Data4: 0
     Path: 
+  targetSoundTolerance: 20
+  restingSoundTolerance: 20
 --- !u!1 &926235326
 GameObject:
   m_ObjectHideFlags: 0
@@ -15368,6 +15520,8 @@ MonoBehaviour:
       Data3: 0
       Data4: 0
     Path: 
+  targetSoundTolerance: 20
+  restingSoundTolerance: 20
 --- !u!64 &941063527
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -15439,7 +15593,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &952226696
 Transform:
   m_ObjectHideFlags: 0
@@ -15456,6 +15610,7 @@ Transform:
   - {fileID: 1670547878}
   - {fileID: 979945778}
   - {fileID: 1717577490}
+  - {fileID: 1836081087}
   - {fileID: 1070895270}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -16211,6 +16366,8 @@ MonoBehaviour:
       Data3: 0
       Data4: 0
     Path: 
+  targetSoundTolerance: 20
+  restingSoundTolerance: 20
 --- !u!114 &979945783
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -16421,7 +16578,7 @@ MonoBehaviour:
   isDecrementalMode: 1
   decrementalStartValue: 100
   scannerDecrementPower: 100
-  echoPassifDecrementPower: 6
+  echoPassifDecrementPower: 1
   echoJoueurDecrementPower: 15
   materialToControl: {fileID: 0}
   materialCutoffRestingValue: 1.1
@@ -16443,6 +16600,8 @@ MonoBehaviour:
       Data3: 1241597108
       Data4: -1714992784
     Path: event:/ParticuleDestruction
+  targetSoundTolerance: 15
+  restingSoundTolerance: 0
 --- !u!64 &989259223
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -16735,6 +16894,8 @@ MonoBehaviour:
       Data3: 0
       Data4: 0
     Path: 
+  targetSoundTolerance: 20
+  restingSoundTolerance: 20
 --- !u!64 &1003788830
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -16892,6 +17053,8 @@ MonoBehaviour:
       Data3: 0
       Data4: 0
     Path: 
+  targetSoundTolerance: 20
+  restingSoundTolerance: 20
 --- !u!64 &1024104691
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -17175,6 +17338,8 @@ MonoBehaviour:
       Data3: 0
       Data4: 0
     Path: 
+  targetSoundTolerance: 20
+  restingSoundTolerance: 20
 --- !u!64 &1049604255
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -17563,6 +17728,8 @@ MonoBehaviour:
       Data3: 0
       Data4: 0
     Path: 
+  targetSoundTolerance: 20
+  restingSoundTolerance: 20
 --- !u!1 &1091309903 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: -7225640653336225981, guid: 575adffb66b0b884e922a62b1e944765, type: 3}
@@ -17632,6 +17799,8 @@ MonoBehaviour:
       Data3: 0
       Data4: 0
     Path: 
+  targetSoundTolerance: 20
+  restingSoundTolerance: 20
 --- !u!1 &1095307207 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: -8130466653190208652, guid: 91602627b9f1b024cbe8a52dfe570a48, type: 3}
@@ -17657,7 +17826,7 @@ MonoBehaviour:
   isDecrementalMode: 1
   decrementalStartValue: 100
   scannerDecrementPower: 100
-  echoPassifDecrementPower: 6
+  echoPassifDecrementPower: 1
   echoJoueurDecrementPower: 15
   materialToControl: {fileID: 0}
   materialCutoffRestingValue: 1.1
@@ -17679,6 +17848,8 @@ MonoBehaviour:
       Data3: 1241597108
       Data4: -1714992784
     Path: event:/ParticuleDestruction
+  targetSoundTolerance: 15
+  restingSoundTolerance: 0
 --- !u!64 &1095307211
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -18060,7 +18231,7 @@ MonoBehaviour:
   isDecrementalMode: 1
   decrementalStartValue: 100
   scannerDecrementPower: 100
-  echoPassifDecrementPower: 6
+  echoPassifDecrementPower: 1
   echoJoueurDecrementPower: 15
   materialToControl: {fileID: 0}
   materialCutoffRestingValue: 1.1
@@ -18082,6 +18253,8 @@ MonoBehaviour:
       Data3: 1241597108
       Data4: -1714992784
     Path: event:/ParticuleDestruction
+  targetSoundTolerance: 15
+  restingSoundTolerance: 0
 --- !u!64 &1147510983
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -18173,6 +18346,8 @@ MonoBehaviour:
       Data3: 0
       Data4: 0
     Path: 
+  targetSoundTolerance: 20
+  restingSoundTolerance: 20
 --- !u!1 &1156686787 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: -4300815656593226319, guid: 91602627b9f1b024cbe8a52dfe570a48, type: 3}
@@ -18198,7 +18373,7 @@ MonoBehaviour:
   isDecrementalMode: 1
   decrementalStartValue: 100
   scannerDecrementPower: 100
-  echoPassifDecrementPower: 6
+  echoPassifDecrementPower: 1
   echoJoueurDecrementPower: 15
   materialToControl: {fileID: 0}
   materialCutoffRestingValue: 1.1
@@ -18220,6 +18395,8 @@ MonoBehaviour:
       Data3: 1241597108
       Data4: -1714992784
     Path: event:/ParticuleDestruction
+  targetSoundTolerance: 15
+  restingSoundTolerance: 0
 --- !u!64 &1156686791
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -18661,6 +18838,8 @@ MonoBehaviour:
       Data3: 0
       Data4: 0
     Path: 
+  targetSoundTolerance: 20
+  restingSoundTolerance: 20
 --- !u!64 &1184015940
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -18778,6 +18957,8 @@ MonoBehaviour:
       Data3: 0
       Data4: 0
     Path: 
+  targetSoundTolerance: 20
+  restingSoundTolerance: 20
 --- !u!114 &1188289682
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -18922,6 +19103,8 @@ MonoBehaviour:
       Data3: 0
       Data4: 0
     Path: 
+  targetSoundTolerance: 20
+  restingSoundTolerance: 20
 --- !u!64 &1206098671
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -19013,6 +19196,8 @@ MonoBehaviour:
       Data3: 0
       Data4: 0
     Path: 
+  targetSoundTolerance: 20
+  restingSoundTolerance: 20
 --- !u!114 &1207958740
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -19055,6 +19240,8 @@ MonoBehaviour:
       Data3: 0
       Data4: 0
     Path: 
+  targetSoundTolerance: 20
+  restingSoundTolerance: 20
 --- !u!1 &1212695680 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: -3834504380874759169, guid: 91602627b9f1b024cbe8a52dfe570a48, type: 3}
@@ -19080,7 +19267,7 @@ MonoBehaviour:
   isDecrementalMode: 1
   decrementalStartValue: 100
   scannerDecrementPower: 100
-  echoPassifDecrementPower: 6
+  echoPassifDecrementPower: 1
   echoJoueurDecrementPower: 15
   materialToControl: {fileID: 0}
   materialCutoffRestingValue: 1.1
@@ -19102,6 +19289,8 @@ MonoBehaviour:
       Data3: 1241597108
       Data4: -1714992784
     Path: event:/ParticuleDestruction
+  targetSoundTolerance: 15
+  restingSoundTolerance: 0
 --- !u!64 &1212695684
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -19193,6 +19382,8 @@ MonoBehaviour:
       Data3: 0
       Data4: 0
     Path: 
+  targetSoundTolerance: 20
+  restingSoundTolerance: 20
 --- !u!1 &1216900743
 GameObject:
   m_ObjectHideFlags: 0
@@ -19311,6 +19502,8 @@ MonoBehaviour:
       Data3: 0
       Data4: 0
     Path: 
+  targetSoundTolerance: 20
+  restingSoundTolerance: 20
 --- !u!64 &1217080281
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -19566,6 +19759,8 @@ MonoBehaviour:
       Data3: 0
       Data4: 0
     Path: 
+  targetSoundTolerance: 20
+  restingSoundTolerance: 20
 --- !u!114 &1221072528
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -19608,6 +19803,8 @@ MonoBehaviour:
       Data3: 0
       Data4: 0
     Path: 
+  targetSoundTolerance: 20
+  restingSoundTolerance: 20
 --- !u!4 &1221219130 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 91602627b9f1b024cbe8a52dfe570a48, type: 3}
@@ -19743,6 +19940,8 @@ MonoBehaviour:
       Data3: 0
       Data4: 0
     Path: 
+  targetSoundTolerance: 20
+  restingSoundTolerance: 20
 --- !u!1 &1252983248 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 5835988888176223544, guid: 6477915e424e156429c4cec7068e515d, type: 3}
@@ -19790,6 +19989,8 @@ MonoBehaviour:
       Data3: 0
       Data4: 0
     Path: 
+  targetSoundTolerance: 20
+  restingSoundTolerance: 20
 --- !u!64 &1252983252
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -20472,6 +20673,8 @@ MonoBehaviour:
       Data3: 0
       Data4: 0
     Path: 
+  targetSoundTolerance: 20
+  restingSoundTolerance: 20
 --- !u!1 &1300370028
 GameObject:
   m_ObjectHideFlags: 0
@@ -20591,7 +20794,7 @@ MonoBehaviour:
   isDecrementalMode: 1
   decrementalStartValue: 100
   scannerDecrementPower: 100
-  echoPassifDecrementPower: 6
+  echoPassifDecrementPower: 1
   echoJoueurDecrementPower: 15
   materialToControl: {fileID: 0}
   materialCutoffRestingValue: 1.1
@@ -20613,6 +20816,8 @@ MonoBehaviour:
       Data3: 1241597108
       Data4: -1714992784
     Path: event:/ParticuleDestruction
+  targetSoundTolerance: 15
+  restingSoundTolerance: 0
 --- !u!64 &1301054833
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -20986,6 +21191,8 @@ MonoBehaviour:
       Data3: 0
       Data4: 0
     Path: 
+  targetSoundTolerance: 20
+  restingSoundTolerance: 20
 --- !u!114 &1305128511
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -21349,7 +21556,7 @@ MonoBehaviour:
   isDecrementalMode: 1
   decrementalStartValue: 100
   scannerDecrementPower: 100
-  echoPassifDecrementPower: 6
+  echoPassifDecrementPower: 1
   echoJoueurDecrementPower: 15
   materialToControl: {fileID: 0}
   materialCutoffRestingValue: 1.1
@@ -21371,6 +21578,8 @@ MonoBehaviour:
       Data3: 1241597108
       Data4: -1714992784
     Path: event:/ParticuleDestruction
+  targetSoundTolerance: 15
+  restingSoundTolerance: 0
 --- !u!64 &1323038815
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -21559,7 +21768,7 @@ MonoBehaviour:
   isDecrementalMode: 1
   decrementalStartValue: 100
   scannerDecrementPower: 100
-  echoPassifDecrementPower: 6
+  echoPassifDecrementPower: 1
   echoJoueurDecrementPower: 15
   materialToControl: {fileID: 0}
   materialCutoffRestingValue: 1.1
@@ -21581,6 +21790,8 @@ MonoBehaviour:
       Data3: 1241597108
       Data4: -1714992784
     Path: event:/ParticuleDestruction
+  targetSoundTolerance: 15
+  restingSoundTolerance: 0
 --- !u!64 &1346686430
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -21783,6 +21994,8 @@ MonoBehaviour:
       Data3: 0
       Data4: 0
     Path: 
+  targetSoundTolerance: 20
+  restingSoundTolerance: 20
 --- !u!64 &1356141633
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -21874,6 +22087,8 @@ MonoBehaviour:
       Data3: 0
       Data4: 0
     Path: 
+  targetSoundTolerance: 20
+  restingSoundTolerance: 20
 --- !u!1001 &1381605840
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -22054,6 +22269,8 @@ MonoBehaviour:
       Data3: 0
       Data4: 0
     Path: 
+  targetSoundTolerance: 20
+  restingSoundTolerance: 20
 --- !u!64 &1382015365
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -22150,6 +22367,8 @@ MonoBehaviour:
       Data3: 0
       Data4: 0
     Path: 
+  targetSoundTolerance: 20
+  restingSoundTolerance: 20
 --- !u!1 &1391900872 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: -8159741860747326216, guid: 91602627b9f1b024cbe8a52dfe570a48, type: 3}
@@ -22175,7 +22394,7 @@ MonoBehaviour:
   isDecrementalMode: 1
   decrementalStartValue: 100
   scannerDecrementPower: 100
-  echoPassifDecrementPower: 6
+  echoPassifDecrementPower: 1
   echoJoueurDecrementPower: 15
   materialToControl: {fileID: 0}
   materialCutoffRestingValue: 1.1
@@ -22197,6 +22416,8 @@ MonoBehaviour:
       Data3: 1241597108
       Data4: -1714992784
     Path: event:/ParticuleDestruction
+  targetSoundTolerance: 15
+  restingSoundTolerance: 0
 --- !u!64 &1391900876
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -22261,7 +22482,7 @@ MonoBehaviour:
   isDecrementalMode: 1
   decrementalStartValue: 100
   scannerDecrementPower: 100
-  echoPassifDecrementPower: 6
+  echoPassifDecrementPower: 1
   echoJoueurDecrementPower: 15
   materialToControl: {fileID: 0}
   materialCutoffRestingValue: 1.1
@@ -22283,6 +22504,8 @@ MonoBehaviour:
       Data3: 1241597108
       Data4: -1714992784
     Path: event:/ParticuleDestruction
+  targetSoundTolerance: 15
+  restingSoundTolerance: 0
 --- !u!64 &1411551674
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -22658,7 +22881,7 @@ MonoBehaviour:
   isDecrementalMode: 1
   decrementalStartValue: 100
   scannerDecrementPower: 100
-  echoPassifDecrementPower: 6
+  echoPassifDecrementPower: 1
   echoJoueurDecrementPower: 15
   materialToControl: {fileID: 0}
   materialCutoffRestingValue: 1.1
@@ -22680,6 +22903,8 @@ MonoBehaviour:
       Data3: 1241597108
       Data4: -1714992784
     Path: event:/ParticuleDestruction
+  targetSoundTolerance: 15
+  restingSoundTolerance: 0
 --- !u!64 &1439029776
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -22749,6 +22974,8 @@ MonoBehaviour:
       Data3: 0
       Data4: 0
     Path: 
+  targetSoundTolerance: 20
+  restingSoundTolerance: 20
 --- !u!64 &1442287184
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -22796,7 +23023,7 @@ MonoBehaviour:
   isDecrementalMode: 1
   decrementalStartValue: 100
   scannerDecrementPower: 100
-  echoPassifDecrementPower: 6
+  echoPassifDecrementPower: 1
   echoJoueurDecrementPower: 15
   materialToControl: {fileID: 0}
   materialCutoffRestingValue: 1.1
@@ -22818,6 +23045,8 @@ MonoBehaviour:
       Data3: 1241597108
       Data4: -1714992784
     Path: event:/ParticuleDestruction
+  targetSoundTolerance: 15
+  restingSoundTolerance: 0
 --- !u!64 &1442414603
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -22967,7 +23196,7 @@ MonoBehaviour:
   isDecrementalMode: 1
   decrementalStartValue: 100
   scannerDecrementPower: 100
-  echoPassifDecrementPower: 6
+  echoPassifDecrementPower: 1
   echoJoueurDecrementPower: 15
   materialToControl: {fileID: 0}
   materialCutoffRestingValue: 1.1
@@ -22989,6 +23218,8 @@ MonoBehaviour:
       Data3: 1241597108
       Data4: -1714992784
     Path: event:/ParticuleDestruction
+  targetSoundTolerance: 15
+  restingSoundTolerance: 0
 --- !u!64 &1446077029
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -23080,6 +23311,8 @@ MonoBehaviour:
       Data3: 0
       Data4: 0
     Path: 
+  targetSoundTolerance: 20
+  restingSoundTolerance: 20
 --- !u!1 &1463451909 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: -5065533694481631877, guid: 91602627b9f1b024cbe8a52dfe570a48, type: 3}
@@ -23105,7 +23338,7 @@ MonoBehaviour:
   isDecrementalMode: 1
   decrementalStartValue: 100
   scannerDecrementPower: 100
-  echoPassifDecrementPower: 6
+  echoPassifDecrementPower: 1
   echoJoueurDecrementPower: 15
   materialToControl: {fileID: 0}
   materialCutoffRestingValue: 1.1
@@ -23127,6 +23360,8 @@ MonoBehaviour:
       Data3: 1241597108
       Data4: -1714992784
     Path: event:/ParticuleDestruction
+  targetSoundTolerance: 15
+  restingSoundTolerance: 0
 --- !u!64 &1463451913
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -26128,6 +26363,8 @@ MonoBehaviour:
       Data3: 0
       Data4: 0
     Path: 
+  targetSoundTolerance: 20
+  restingSoundTolerance: 20
 --- !u!114 &1503376045
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -26352,6 +26589,8 @@ MonoBehaviour:
       Data3: 0
       Data4: 0
     Path: 
+  targetSoundTolerance: 20
+  restingSoundTolerance: 20
 --- !u!1001 &1522704835
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -26616,6 +26855,8 @@ MonoBehaviour:
       Data3: 0
       Data4: 0
     Path: 
+  targetSoundTolerance: 20
+  restingSoundTolerance: 20
 --- !u!1 &1551271598
 GameObject:
   m_ObjectHideFlags: 0
@@ -26787,7 +27028,7 @@ MonoBehaviour:
   isDecrementalMode: 1
   decrementalStartValue: 100
   scannerDecrementPower: 100
-  echoPassifDecrementPower: 6
+  echoPassifDecrementPower: 1
   echoJoueurDecrementPower: 15
   materialToControl: {fileID: 0}
   materialCutoffRestingValue: 1.1
@@ -26809,6 +27050,8 @@ MonoBehaviour:
       Data3: 1241597108
       Data4: -1714992784
     Path: event:/ParticuleDestruction
+  targetSoundTolerance: 15
+  restingSoundTolerance: 0
 --- !u!64 &1560868890
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -26856,7 +27099,7 @@ MonoBehaviour:
   isDecrementalMode: 1
   decrementalStartValue: 100
   scannerDecrementPower: 100
-  echoPassifDecrementPower: 6
+  echoPassifDecrementPower: 1
   echoJoueurDecrementPower: 15
   materialToControl: {fileID: 0}
   materialCutoffRestingValue: 1.1
@@ -26878,6 +27121,8 @@ MonoBehaviour:
       Data3: 1241597108
       Data4: -1714992784
     Path: event:/ParticuleDestruction
+  targetSoundTolerance: 15
+  restingSoundTolerance: 0
 --- !u!64 &1570905238
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -26947,6 +27192,8 @@ MonoBehaviour:
       Data3: 0
       Data4: 0
     Path: 
+  targetSoundTolerance: 20
+  restingSoundTolerance: 20
 --- !u!64 &1586532004
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -27099,6 +27346,8 @@ MonoBehaviour:
       Data3: 0
       Data4: 0
     Path: 
+  targetSoundTolerance: 20
+  restingSoundTolerance: 20
 --- !u!64 &1603009634
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -27146,7 +27395,7 @@ MonoBehaviour:
   isDecrementalMode: 1
   decrementalStartValue: 100
   scannerDecrementPower: 100
-  echoPassifDecrementPower: 6
+  echoPassifDecrementPower: 1
   echoJoueurDecrementPower: 15
   materialToControl: {fileID: 0}
   materialCutoffRestingValue: 1.1
@@ -27168,6 +27417,8 @@ MonoBehaviour:
       Data3: 1241597108
       Data4: -1714992784
     Path: event:/ParticuleDestruction
+  targetSoundTolerance: 15
+  restingSoundTolerance: 0
 --- !u!64 &1603238244
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -27259,6 +27510,8 @@ MonoBehaviour:
       Data3: 0
       Data4: 0
     Path: 
+  targetSoundTolerance: 20
+  restingSoundTolerance: 20
 --- !u!1 &1607971092 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: -8275604200953139024, guid: 91602627b9f1b024cbe8a52dfe570a48, type: 3}
@@ -27284,7 +27537,7 @@ MonoBehaviour:
   isDecrementalMode: 1
   decrementalStartValue: 100
   scannerDecrementPower: 100
-  echoPassifDecrementPower: 6
+  echoPassifDecrementPower: 1
   echoJoueurDecrementPower: 15
   materialToControl: {fileID: 0}
   materialCutoffRestingValue: 1.1
@@ -27306,6 +27559,8 @@ MonoBehaviour:
       Data3: 1241597108
       Data4: -1714992784
     Path: event:/ParticuleDestruction
+  targetSoundTolerance: 15
+  restingSoundTolerance: 0
 --- !u!64 &1607971096
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -27394,6 +27649,8 @@ MonoBehaviour:
       Data3: 0
       Data4: 0
     Path: 
+  targetSoundTolerance: 20
+  restingSoundTolerance: 20
 --- !u!114 &1611949911
 MonoBehaviour:
   m_ObjectHideFlags: 2
@@ -27712,6 +27969,8 @@ MonoBehaviour:
       Data3: 0
       Data4: 0
     Path: 
+  targetSoundTolerance: 20
+  restingSoundTolerance: 20
 --- !u!64 &1626021735
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -27781,6 +28040,8 @@ MonoBehaviour:
       Data3: 0
       Data4: 0
     Path: 
+  targetSoundTolerance: 20
+  restingSoundTolerance: 20
 --- !u!64 &1662536270
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -28005,6 +28266,8 @@ MonoBehaviour:
       Data3: 0
       Data4: 0
     Path: 
+  targetSoundTolerance: 20
+  restingSoundTolerance: 20
 --- !u!114 &1670547883
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -28304,6 +28567,8 @@ MonoBehaviour:
       Data3: 0
       Data4: 0
     Path: 
+  targetSoundTolerance: 20
+  restingSoundTolerance: 20
 --- !u!114 &1673197561
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -30002,6 +30267,8 @@ MonoBehaviour:
       Data3: 0
       Data4: 0
     Path: 
+  targetSoundTolerance: 20
+  restingSoundTolerance: 20
 --- !u!1001 &1717577489
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -30204,6 +30471,8 @@ MonoBehaviour:
       Data3: 0
       Data4: 0
     Path: 
+  targetSoundTolerance: 20
+  restingSoundTolerance: 20
 --- !u!114 &1717577495
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -30367,6 +30636,8 @@ MonoBehaviour:
       Data3: 0
       Data4: 0
     Path: 
+  targetSoundTolerance: 20
+  restingSoundTolerance: 20
 --- !u!114 &1720639778
 MonoBehaviour:
   m_ObjectHideFlags: 2
@@ -30763,7 +31034,7 @@ MonoBehaviour:
   isDecrementalMode: 1
   decrementalStartValue: 100
   scannerDecrementPower: 100
-  echoPassifDecrementPower: 6
+  echoPassifDecrementPower: 1
   echoJoueurDecrementPower: 15
   materialToControl: {fileID: 0}
   materialCutoffRestingValue: 1.1
@@ -30785,6 +31056,8 @@ MonoBehaviour:
       Data3: 1241597108
       Data4: -1714992784
     Path: event:/ParticuleDestruction
+  targetSoundTolerance: 15
+  restingSoundTolerance: 0
 --- !u!64 &1739471557
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -30854,6 +31127,8 @@ MonoBehaviour:
       Data3: 0
       Data4: 0
     Path: 
+  targetSoundTolerance: 20
+  restingSoundTolerance: 20
 --- !u!64 &1741791985
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -31079,6 +31354,8 @@ MonoBehaviour:
       Data3: 0
       Data4: 0
     Path: 
+  targetSoundTolerance: 20
+  restingSoundTolerance: 20
 --- !u!1 &1749507438 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 942127834678833633, guid: 91602627b9f1b024cbe8a52dfe570a48, type: 3}
@@ -31104,7 +31381,7 @@ MonoBehaviour:
   isDecrementalMode: 1
   decrementalStartValue: 100
   scannerDecrementPower: 100
-  echoPassifDecrementPower: 6
+  echoPassifDecrementPower: 1
   echoJoueurDecrementPower: 15
   materialToControl: {fileID: 0}
   materialCutoffRestingValue: 1.1
@@ -31126,6 +31403,8 @@ MonoBehaviour:
       Data3: 1241597108
       Data4: -1714992784
     Path: event:/ParticuleDestruction
+  targetSoundTolerance: 15
+  restingSoundTolerance: 0
 --- !u!64 &1749507442
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -31300,6 +31579,8 @@ MonoBehaviour:
       Data3: 0
       Data4: 0
     Path: 
+  targetSoundTolerance: 20
+  restingSoundTolerance: 20
 --- !u!1001 &1768171026
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -31602,7 +31883,7 @@ MonoBehaviour:
   isDecrementalMode: 1
   decrementalStartValue: 100
   scannerDecrementPower: 100
-  echoPassifDecrementPower: 6
+  echoPassifDecrementPower: 1
   echoJoueurDecrementPower: 15
   materialToControl: {fileID: 0}
   materialCutoffRestingValue: 1.1
@@ -31624,6 +31905,8 @@ MonoBehaviour:
       Data3: 1241597108
       Data4: -1714992784
     Path: event:/ParticuleDestruction
+  targetSoundTolerance: 15
+  restingSoundTolerance: 0
 --- !u!64 &1774424645
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -31861,7 +32144,7 @@ MonoBehaviour:
   isDecrementalMode: 1
   decrementalStartValue: 100
   scannerDecrementPower: 100
-  echoPassifDecrementPower: 6
+  echoPassifDecrementPower: 1
   echoJoueurDecrementPower: 15
   materialToControl: {fileID: 0}
   materialCutoffRestingValue: 1.1
@@ -31883,6 +32166,8 @@ MonoBehaviour:
       Data3: 1241597108
       Data4: -1714992784
     Path: event:/ParticuleDestruction
+  targetSoundTolerance: 15
+  restingSoundTolerance: 0
 --- !u!64 &1781839716
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -31930,7 +32215,7 @@ MonoBehaviour:
   isDecrementalMode: 1
   decrementalStartValue: 100
   scannerDecrementPower: 100
-  echoPassifDecrementPower: 6
+  echoPassifDecrementPower: 1
   echoJoueurDecrementPower: 15
   materialToControl: {fileID: 0}
   materialCutoffRestingValue: 1.1
@@ -31952,6 +32237,8 @@ MonoBehaviour:
       Data3: 1241597108
       Data4: -1714992784
     Path: event:/ParticuleDestruction
+  targetSoundTolerance: 15
+  restingSoundTolerance: 0
 --- !u!64 &1781983739
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -32021,6 +32308,8 @@ MonoBehaviour:
       Data3: 0
       Data4: 0
     Path: 
+  targetSoundTolerance: 20
+  restingSoundTolerance: 20
 --- !u!64 &1789098637
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -32165,6 +32454,8 @@ MonoBehaviour:
       Data3: 0
       Data4: 0
     Path: 
+  targetSoundTolerance: 20
+  restingSoundTolerance: 20
 --- !u!64 &1795477872
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -32581,6 +32872,8 @@ MonoBehaviour:
       Data3: 0
       Data4: 0
     Path: 
+  targetSoundTolerance: 20
+  restingSoundTolerance: 20
 --- !u!1 &1811337580
 GameObject:
   m_ObjectHideFlags: 0
@@ -33091,6 +33384,312 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: -565276413980861707, guid: a318fea407594c8448e4da666c0b7d43, type: 3}
+--- !u!1001 &1836081086
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 952226696}
+    m_Modifications:
+    - target: {fileID: -8679921383154817045, guid: 934a448b0f26f3c4caac4006a1d3d65a, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -8.922
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 934a448b0f26f3c4caac4006a1d3d65a, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 1.775
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 934a448b0f26f3c4caac4006a1d3d65a, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 1.137
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 934a448b0f26f3c4caac4006a1d3d65a, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.7071067
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 934a448b0f26f3c4caac4006a1d3d65a, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 934a448b0f26f3c4caac4006a1d3d65a, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 934a448b0f26f3c4caac4006a1d3d65a, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 934a448b0f26f3c4caac4006a1d3d65a, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 934a448b0f26f3c4caac4006a1d3d65a, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 934a448b0f26f3c4caac4006a1d3d65a, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -3887185075125053422, guid: 934a448b0f26f3c4caac4006a1d3d65a, type: 3}
+      propertyPath: m_DirtyAABB
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -3887185075125053422, guid: 934a448b0f26f3c4caac4006a1d3d65a, type: 3}
+      propertyPath: m_AABB.m_Center.x
+      value: -0.006192021
+      objectReference: {fileID: 0}
+    - target: {fileID: -3887185075125053422, guid: 934a448b0f26f3c4caac4006a1d3d65a, type: 3}
+      propertyPath: m_AABB.m_Center.y
+      value: -0.0037336498
+      objectReference: {fileID: 0}
+    - target: {fileID: -3887185075125053422, guid: 934a448b0f26f3c4caac4006a1d3d65a, type: 3}
+      propertyPath: m_AABB.m_Center.z
+      value: 0.168168
+      objectReference: {fileID: 0}
+    - target: {fileID: -3887185075125053422, guid: 934a448b0f26f3c4caac4006a1d3d65a, type: 3}
+      propertyPath: m_AABB.m_Extent.x
+      value: 0.21773854
+      objectReference: {fileID: 0}
+    - target: {fileID: -3887185075125053422, guid: 934a448b0f26f3c4caac4006a1d3d65a, type: 3}
+      propertyPath: m_AABB.m_Extent.y
+      value: 0.21750917
+      objectReference: {fileID: 0}
+    - target: {fileID: -3887185075125053422, guid: 934a448b0f26f3c4caac4006a1d3d65a, type: 3}
+      propertyPath: m_AABB.m_Extent.z
+      value: 0.26944155
+      objectReference: {fileID: 0}
+    - target: {fileID: -3887185075125053422, guid: 934a448b0f26f3c4caac4006a1d3d65a, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 5f42ded864ab2de488229820abd90c45, type: 2}
+    - target: {fileID: 919132149155446097, guid: 934a448b0f26f3c4caac4006a1d3d65a, type: 3}
+      propertyPath: m_Name
+      value: Vase (2)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 934a448b0f26f3c4caac4006a1d3d65a, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1836081094}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 934a448b0f26f3c4caac4006a1d3d65a, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1836081093}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 934a448b0f26f3c4caac4006a1d3d65a, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1836081092}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 934a448b0f26f3c4caac4006a1d3d65a, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1836081091}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 934a448b0f26f3c4caac4006a1d3d65a, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1836081090}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 934a448b0f26f3c4caac4006a1d3d65a, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1836081089}
+  m_SourcePrefab: {fileID: 100100000, guid: 934a448b0f26f3c4caac4006a1d3d65a, type: 3}
+--- !u!4 &1836081087 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 934a448b0f26f3c4caac4006a1d3d65a, type: 3}
+  m_PrefabInstance: {fileID: 1836081086}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &1836081088 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 934a448b0f26f3c4caac4006a1d3d65a, type: 3}
+  m_PrefabInstance: {fileID: 1836081086}
+  m_PrefabAsset: {fileID: 0}
+--- !u!65 &1836081089
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1836081088}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 0.43547708, y: 0.43501827, z: 0.53888303}
+  m_Center: {x: -0.006192021, y: -0.003733627, z: 0.16816804}
+--- !u!54 &1836081090
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1836081088}
+  serializedVersion: 4
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_CenterOfMass: {x: 0, y: 0, z: 0}
+  m_InertiaTensor: {x: 1, y: 1, z: 1}
+  m_InertiaRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ImplicitCom: 1
+  m_ImplicitTensor: 1
+  m_UseGravity: 1
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
+--- !u!114 &1836081091
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1836081088}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1a465b48285b2a543a7acd96d14c747f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  blendShapeIndex: 0
+  blendShapeValueTarget: 0
+  restingValue: 10
+  lerpSpeed: 2
+  returnDelay: 6
+  isDecrementalMode: 1
+  decrementalStartValue: 100
+  scannerDecrementPower: 10
+  echoPassifDecrementPower: 6
+  echoJoueurDecrementPower: 15
+  materialToControl: {fileID: 0}
+  materialCutoffRestingValue: 1.47
+  materialCutoffScannerTargetValue: 0.6
+  isTutorialActive: 0
+  tutorialInitialCutoffValue: 1.15
+  saveTutorialState: 0
+  fmodEventToTarget:
+    Guid:
+      Data1: 0
+      Data2: 0
+      Data3: 0
+      Data4: 0
+    Path: 
+  fmodEventToResting:
+    Guid:
+      Data1: 0
+      Data2: 0
+      Data3: 0
+      Data4: 0
+    Path: 
+  targetSoundTolerance: 20
+  restingSoundTolerance: 20
+--- !u!114 &1836081092
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1836081088}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  EventReference:
+    Guid:
+      Data1: -1514340496
+      Data2: 1258649363
+      Data3: 1331701925
+      Data4: -983140130
+    Path: event:/Tasse
+  Event: 
+  EventPlayTrigger: 7
+  EventStopTrigger: 0
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  NonRigidbodyVelocity: 0
+  Params: []
+  OverrideAttenuation: 0
+  OverrideMinDistance: 1
+  OverrideMaxDistance: 20
+--- !u!114 &1836081093
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1836081088}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a0165b1d08c02854aaebe60054b475c2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  canBePickedUp: 1
+  positionInHand: {x: 0, y: 0, z: 0.5}
+  rotationInHand: {x: 0, y: 0, z: 0}
+  isPickedUp: 0
+--- !u!114 &1836081094
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1836081088}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eeea41683545dd049a279b8a4149d19d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  collisionPrefab: {fileID: 3520727272833897359, guid: a9a422a722d486f4783847c65cb1389c, type: 3}
+  enableEchoAtStart: 0
+  echoActivationDelay: 5
+  growthDuration: 10
+  minimumSize: 1
+  maximumSize: 5.3
+  growthCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    - serializedVersion: 3
+      time: 1
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  growthSpeed: 10
+  alphaMax: 0.1
+  alphaMin: 0
+  fadeTransitionSpeed: 5
+  enableSurfaceDetection: 1
+  woodSurfaceScaleModifier: 1
+  tileSurfaceScaleModifier: 2
+  carpetSurfaceScaleModifier: 0.5
 --- !u!1001 &1839034482
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -33223,7 +33822,7 @@ MonoBehaviour:
   isDecrementalMode: 1
   decrementalStartValue: 100
   scannerDecrementPower: 100
-  echoPassifDecrementPower: 6
+  echoPassifDecrementPower: 1
   echoJoueurDecrementPower: 15
   materialToControl: {fileID: 0}
   materialCutoffRestingValue: 1.1
@@ -33245,6 +33844,8 @@ MonoBehaviour:
       Data3: 1241597108
       Data4: -1714992784
     Path: event:/ParticuleDestruction
+  targetSoundTolerance: 15
+  restingSoundTolerance: 0
 --- !u!64 &1847150053
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -33445,6 +34046,8 @@ MonoBehaviour:
       Data3: 0
       Data4: 0
     Path: 
+  targetSoundTolerance: 20
+  restingSoundTolerance: 20
 --- !u!114 &1854950569
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -33733,7 +34336,7 @@ MonoBehaviour:
   isDecrementalMode: 1
   decrementalStartValue: 100
   scannerDecrementPower: 100
-  echoPassifDecrementPower: 6
+  echoPassifDecrementPower: 1
   echoJoueurDecrementPower: 15
   materialToControl: {fileID: 0}
   materialCutoffRestingValue: 1.1
@@ -33755,6 +34358,8 @@ MonoBehaviour:
       Data3: 1241597108
       Data4: -1714992784
     Path: event:/ParticuleDestruction
+  targetSoundTolerance: 15
+  restingSoundTolerance: 0
 --- !u!64 &1874959823
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -34241,6 +34846,8 @@ MonoBehaviour:
       Data3: 0
       Data4: 0
     Path: 
+  targetSoundTolerance: 20
+  restingSoundTolerance: 20
 --- !u!64 &1903557120
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -34713,6 +35320,8 @@ MonoBehaviour:
       Data3: 0
       Data4: 0
     Path: 
+  targetSoundTolerance: 20
+  restingSoundTolerance: 20
 --- !u!1 &1937896515 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: -2034225674957248523, guid: 6c773bd77c7dbac47bbcda32cb2a2baa, type: 3}
@@ -34809,6 +35418,8 @@ MonoBehaviour:
       Data3: 0
       Data4: 0
     Path: 
+  targetSoundTolerance: 20
+  restingSoundTolerance: 20
 --- !u!4 &1953390156 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: a08c45cedf1c36f48af9f187b17e1c3a, type: 3}
@@ -34904,6 +35515,8 @@ MonoBehaviour:
       Data3: 0
       Data4: 0
     Path: 
+  targetSoundTolerance: 20
+  restingSoundTolerance: 20
 --- !u!114 &1953390161
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -35150,6 +35763,8 @@ MonoBehaviour:
       Data3: 0
       Data4: 0
     Path: 
+  targetSoundTolerance: 20
+  restingSoundTolerance: 20
 --- !u!114 &1969345051
 MonoBehaviour:
   m_ObjectHideFlags: 2
@@ -35494,7 +36109,7 @@ MonoBehaviour:
   isDecrementalMode: 1
   decrementalStartValue: 100
   scannerDecrementPower: 100
-  echoPassifDecrementPower: 6
+  echoPassifDecrementPower: 1
   echoJoueurDecrementPower: 15
   materialToControl: {fileID: 0}
   materialCutoffRestingValue: 1.1
@@ -35516,6 +36131,8 @@ MonoBehaviour:
       Data3: 1241597108
       Data4: -1714992784
     Path: event:/ParticuleDestruction
+  targetSoundTolerance: 15
+  restingSoundTolerance: 0
 --- !u!64 &1991437545
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -35701,6 +36318,8 @@ MonoBehaviour:
       Data3: 0
       Data4: 0
     Path: 
+  targetSoundTolerance: 20
+  restingSoundTolerance: 20
 --- !u!1 &2001889635
 GameObject:
   m_ObjectHideFlags: 0
@@ -36111,6 +36730,8 @@ MonoBehaviour:
       Data3: 0
       Data4: 0
     Path: 
+  targetSoundTolerance: 20
+  restingSoundTolerance: 20
 --- !u!114 &2005904757
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -36377,6 +36998,8 @@ MonoBehaviour:
       Data3: 0
       Data4: 0
     Path: 
+  targetSoundTolerance: 20
+  restingSoundTolerance: 20
 --- !u!1 &2018555289
 GameObject:
   m_ObjectHideFlags: 0
@@ -36710,6 +37333,8 @@ MonoBehaviour:
       Data3: 0
       Data4: 0
     Path: 
+  targetSoundTolerance: 20
+  restingSoundTolerance: 20
 --- !u!114 &2027453648
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -36959,6 +37584,8 @@ MonoBehaviour:
       Data3: 0
       Data4: 0
     Path: 
+  targetSoundTolerance: 20
+  restingSoundTolerance: 20
 --- !u!1 &2042903426 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: -5182456881943995520, guid: 7d65ebd446b3ec6468b08f53aca2bb75, type: 3}
@@ -37028,6 +37655,8 @@ MonoBehaviour:
       Data3: 0
       Data4: 0
     Path: 
+  targetSoundTolerance: 20
+  restingSoundTolerance: 20
 --- !u!1 &2059278932 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 72ba16e451d63084ba8ccd0a09616394, type: 3}
@@ -37189,6 +37818,8 @@ MonoBehaviour:
       Data3: 0
       Data4: 0
     Path: 
+  targetSoundTolerance: 20
+  restingSoundTolerance: 20
 --- !u!114 &2059278939
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -37267,6 +37898,8 @@ MonoBehaviour:
       Data3: 0
       Data4: 0
     Path: 
+  targetSoundTolerance: 20
+  restingSoundTolerance: 20
 --- !u!64 &2060320919
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -37419,6 +38052,8 @@ MonoBehaviour:
       Data3: 0
       Data4: 0
     Path: 
+  targetSoundTolerance: 20
+  restingSoundTolerance: 20
 --- !u!64 &2077325964
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -37922,6 +38557,8 @@ MonoBehaviour:
       Data3: 0
       Data4: 0
     Path: 
+  targetSoundTolerance: 20
+  restingSoundTolerance: 20
 --- !u!64 &2091324583
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -38013,6 +38650,8 @@ MonoBehaviour:
       Data3: 0
       Data4: 0
     Path: 
+  targetSoundTolerance: 20
+  restingSoundTolerance: 20
 --- !u!4 &2110307884 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 854835756320132116, guid: 9cf5b9ddbcef7054d85f4226c2ed95d8, type: 3}
@@ -38120,6 +38759,8 @@ MonoBehaviour:
       Data3: 0
       Data4: 0
     Path: 
+  targetSoundTolerance: 20
+  restingSoundTolerance: 20
 --- !u!1001 &2126375730
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -38419,6 +39060,8 @@ MonoBehaviour:
       Data3: 0
       Data4: 0
     Path: 
+  targetSoundTolerance: 20
+  restingSoundTolerance: 20
 --- !u!1 &2128598203 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 2807007754685179816, guid: 6c773bd77c7dbac47bbcda32cb2a2baa, type: 3}
@@ -38809,6 +39452,8 @@ MonoBehaviour:
       Data3: 0
       Data4: 0
     Path: 
+  targetSoundTolerance: 20
+  restingSoundTolerance: 20
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
