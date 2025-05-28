@@ -1,3 +1,4 @@
+using FMODUnity;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -27,6 +28,8 @@ public class PlayerHandController : MonoBehaviour
     [HideInInspector]
     public int selectedHandIndex = 0; // 0 = main droite, 1 = main gauche
     private RaycastHit hitInfo;
+
+    [SerializeField] private EventReference fmodEventNo;
 
     void Start()
     {
@@ -180,7 +183,12 @@ public class PlayerHandController : MonoBehaviour
                     selectedHandIndex = 1;
                     Debug.Log("Objet ramassé dans la main GAUCHE: " + collectable.name);
                 }
-                // Si les deux mains sont occupées, ne rien faire
+                else
+                {
+                    // Les deux mains sont occupées, jouer le son de refus
+                    RuntimeManager.PlayOneShot(fmodEventNo);
+                    Debug.Log("Impossible de ramasser l'objet : les deux mains sont occupées");
+                }
 
                 UpdateSelectedHandHighlights();
             }

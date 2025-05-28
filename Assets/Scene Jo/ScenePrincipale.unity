@@ -194,17 +194,17 @@ MonoBehaviour:
   saveTutorialState: 1
   fmodEventToTarget:
     Guid:
-      Data1: -1086434843
-      Data2: 1255254014
-      Data3: 28572335
-      Data4: 1540235985
+      Data1: -319443095
+      Data2: 1300516728
+      Data3: -676120924
+      Data4: 458525789
     Path: event:/ParticuleFormation
   fmodEventToResting:
     Guid:
-      Data1: 47805584
-      Data2: 1075409246
-      Data3: 1241597108
-      Data4: -1714992784
+      Data1: 1682224176
+      Data2: 1299064888
+      Data3: -132463743
+      Data4: 432373734
     Path: event:/ParticuleDestruction
   targetSoundTolerance: 15
   restingSoundTolerance: 0
@@ -1184,17 +1184,17 @@ MonoBehaviour:
   saveTutorialState: 1
   fmodEventToTarget:
     Guid:
-      Data1: -1086434843
-      Data2: 1255254014
-      Data3: 28572335
-      Data4: 1540235985
+      Data1: -319443095
+      Data2: 1300516728
+      Data3: -676120924
+      Data4: 458525789
     Path: event:/ParticuleFormation
   fmodEventToResting:
     Guid:
-      Data1: 47805584
-      Data2: 1075409246
-      Data3: 1241597108
-      Data4: -1714992784
+      Data1: 1682224176
+      Data2: 1299064888
+      Data3: -132463743
+      Data4: 432373734
     Path: event:/ParticuleDestruction
   targetSoundTolerance: 15
   restingSoundTolerance: 0
@@ -1326,17 +1326,17 @@ MonoBehaviour:
   saveTutorialState: 1
   fmodEventToTarget:
     Guid:
-      Data1: -1086434843
-      Data2: 1255254014
-      Data3: 28572335
-      Data4: 1540235985
+      Data1: -319443095
+      Data2: 1300516728
+      Data3: -676120924
+      Data4: 458525789
     Path: event:/ParticuleFormation
   fmodEventToResting:
     Guid:
-      Data1: 47805584
-      Data2: 1075409246
-      Data3: 1241597108
-      Data4: -1714992784
+      Data1: 1682224176
+      Data2: 1299064888
+      Data3: -132463743
+      Data4: 432373734
     Path: event:/ParticuleDestruction
   targetSoundTolerance: 15
   restingSoundTolerance: 0
@@ -2541,17 +2541,17 @@ MonoBehaviour:
   saveTutorialState: 1
   fmodEventToTarget:
     Guid:
-      Data1: -1086434843
-      Data2: 1255254014
-      Data3: 28572335
-      Data4: 1540235985
+      Data1: -319443095
+      Data2: 1300516728
+      Data3: -676120924
+      Data4: 458525789
     Path: event:/ParticuleFormation
   fmodEventToResting:
     Guid:
-      Data1: 47805584
-      Data2: 1075409246
-      Data3: 1241597108
-      Data4: -1714992784
+      Data1: 1682224176
+      Data2: 1299064888
+      Data3: -132463743
+      Data4: 432373734
     Path: event:/ParticuleDestruction
   targetSoundTolerance: 15
   restingSoundTolerance: 0
@@ -2612,17 +2612,17 @@ MonoBehaviour:
   saveTutorialState: 1
   fmodEventToTarget:
     Guid:
-      Data1: -1086434843
-      Data2: 1255254014
-      Data3: 28572335
-      Data4: 1540235985
+      Data1: -319443095
+      Data2: 1300516728
+      Data3: -676120924
+      Data4: 458525789
     Path: event:/ParticuleFormation
   fmodEventToResting:
     Guid:
-      Data1: 47805584
-      Data2: 1075409246
-      Data3: 1241597108
-      Data4: -1714992784
+      Data1: 1682224176
+      Data2: 1299064888
+      Data3: -132463743
+      Data4: 432373734
     Path: event:/ParticuleDestruction
   targetSoundTolerance: 15
   restingSoundTolerance: 0
@@ -2945,17 +2945,17 @@ MonoBehaviour:
   saveTutorialState: 1
   fmodEventToTarget:
     Guid:
-      Data1: -1086434843
-      Data2: 1255254014
-      Data3: 28572335
-      Data4: 1540235985
+      Data1: -319443095
+      Data2: 1300516728
+      Data3: -676120924
+      Data4: 458525789
     Path: event:/ParticuleFormation
   fmodEventToResting:
     Guid:
-      Data1: 47805584
-      Data2: 1075409246
-      Data3: 1241597108
-      Data4: -1714992784
+      Data1: 1682224176
+      Data2: 1299064888
+      Data3: -132463743
+      Data4: 432373734
     Path: event:/ParticuleDestruction
   targetSoundTolerance: 15
   restingSoundTolerance: 0
@@ -4647,17 +4647,17 @@ MonoBehaviour:
   saveTutorialState: 1
   fmodEventToTarget:
     Guid:
-      Data1: -1086434843
-      Data2: 1255254014
-      Data3: 28572335
-      Data4: 1540235985
+      Data1: -319443095
+      Data2: 1300516728
+      Data3: -676120924
+      Data4: 458525789
     Path: event:/ParticuleFormation
   fmodEventToResting:
     Guid:
-      Data1: 47805584
-      Data2: 1075409246
-      Data3: 1241597108
-      Data4: -1714992784
+      Data1: 1682224176
+      Data2: 1299064888
+      Data3: -132463743
+      Data4: 432373734
     Path: event:/ParticuleDestruction
   targetSoundTolerance: 15
   restingSoundTolerance: 0
@@ -5236,17 +5236,17 @@ MonoBehaviour:
   saveTutorialState: 1
   fmodEventToTarget:
     Guid:
-      Data1: -1086434843
-      Data2: 1255254014
-      Data3: 28572335
-      Data4: 1540235985
+      Data1: -319443095
+      Data2: 1300516728
+      Data3: -676120924
+      Data4: 458525789
     Path: event:/ParticuleFormation
   fmodEventToResting:
     Guid:
-      Data1: 47805584
-      Data2: 1075409246
-      Data3: 1241597108
-      Data4: -1714992784
+      Data1: 1682224176
+      Data2: 1299064888
+      Data3: -132463743
+      Data4: 432373734
     Path: event:/ParticuleDestruction
   targetSoundTolerance: 15
   restingSoundTolerance: 0
@@ -5846,17 +5846,17 @@ MonoBehaviour:
   saveTutorialState: 1
   fmodEventToTarget:
     Guid:
-      Data1: -1086434843
-      Data2: 1255254014
-      Data3: 28572335
-      Data4: 1540235985
+      Data1: -319443095
+      Data2: 1300516728
+      Data3: -676120924
+      Data4: 458525789
     Path: event:/ParticuleFormation
   fmodEventToResting:
     Guid:
-      Data1: 47805584
-      Data2: 1075409246
-      Data3: 1241597108
-      Data4: -1714992784
+      Data1: 1682224176
+      Data2: 1299064888
+      Data3: -132463743
+      Data4: 432373734
     Path: event:/ParticuleDestruction
   targetSoundTolerance: 15
   restingSoundTolerance: 0
@@ -5917,17 +5917,17 @@ MonoBehaviour:
   saveTutorialState: 1
   fmodEventToTarget:
     Guid:
-      Data1: -1086434843
-      Data2: 1255254014
-      Data3: 28572335
-      Data4: 1540235985
+      Data1: -319443095
+      Data2: 1300516728
+      Data3: -676120924
+      Data4: 458525789
     Path: event:/ParticuleFormation
   fmodEventToResting:
     Guid:
-      Data1: 47805584
-      Data2: 1075409246
-      Data3: 1241597108
-      Data4: -1714992784
+      Data1: 1682224176
+      Data2: 1299064888
+      Data3: -132463743
+      Data4: 432373734
     Path: event:/ParticuleDestruction
   targetSoundTolerance: 15
   restingSoundTolerance: 0
@@ -7641,17 +7641,17 @@ MonoBehaviour:
   saveTutorialState: 1
   fmodEventToTarget:
     Guid:
-      Data1: -1086434843
-      Data2: 1255254014
-      Data3: 28572335
-      Data4: 1540235985
+      Data1: -319443095
+      Data2: 1300516728
+      Data3: -676120924
+      Data4: 458525789
     Path: event:/ParticuleFormation
   fmodEventToResting:
     Guid:
-      Data1: 47805584
-      Data2: 1075409246
-      Data3: 1241597108
-      Data4: -1714992784
+      Data1: 1682224176
+      Data2: 1299064888
+      Data3: -132463743
+      Data4: 432373734
     Path: event:/ParticuleDestruction
   targetSoundTolerance: 15
   restingSoundTolerance: 0
@@ -7889,17 +7889,17 @@ MonoBehaviour:
   saveTutorialState: 1
   fmodEventToTarget:
     Guid:
-      Data1: -1086434843
-      Data2: 1255254014
-      Data3: 28572335
-      Data4: 1540235985
+      Data1: -319443095
+      Data2: 1300516728
+      Data3: -676120924
+      Data4: 458525789
     Path: event:/ParticuleFormation
   fmodEventToResting:
     Guid:
-      Data1: 47805584
-      Data2: 1075409246
-      Data3: 1241597108
-      Data4: -1714992784
+      Data1: 1682224176
+      Data2: 1299064888
+      Data3: -132463743
+      Data4: 432373734
     Path: event:/ParticuleDestruction
   targetSoundTolerance: 15
   restingSoundTolerance: 0
@@ -8043,17 +8043,17 @@ MonoBehaviour:
   saveTutorialState: 1
   fmodEventToTarget:
     Guid:
-      Data1: -1086434843
-      Data2: 1255254014
-      Data3: 28572335
-      Data4: 1540235985
+      Data1: -319443095
+      Data2: 1300516728
+      Data3: -676120924
+      Data4: 458525789
     Path: event:/ParticuleFormation
   fmodEventToResting:
     Guid:
-      Data1: 47805584
-      Data2: 1075409246
-      Data3: 1241597108
-      Data4: -1714992784
+      Data1: 1682224176
+      Data2: 1299064888
+      Data3: -132463743
+      Data4: 432373734
     Path: event:/ParticuleDestruction
   targetSoundTolerance: 15
   restingSoundTolerance: 0
@@ -8114,17 +8114,17 @@ MonoBehaviour:
   saveTutorialState: 1
   fmodEventToTarget:
     Guid:
-      Data1: -1086434843
-      Data2: 1255254014
-      Data3: 28572335
-      Data4: 1540235985
+      Data1: -319443095
+      Data2: 1300516728
+      Data3: -676120924
+      Data4: 458525789
     Path: event:/ParticuleFormation
   fmodEventToResting:
     Guid:
-      Data1: 47805584
-      Data2: 1075409246
-      Data3: 1241597108
-      Data4: -1714992784
+      Data1: 1682224176
+      Data2: 1299064888
+      Data3: -132463743
+      Data4: 432373734
     Path: event:/ParticuleDestruction
   targetSoundTolerance: 15
   restingSoundTolerance: 0
@@ -8324,17 +8324,17 @@ MonoBehaviour:
   saveTutorialState: 1
   fmodEventToTarget:
     Guid:
-      Data1: -1086434843
-      Data2: 1255254014
-      Data3: 28572335
-      Data4: 1540235985
+      Data1: -319443095
+      Data2: 1300516728
+      Data3: -676120924
+      Data4: 458525789
     Path: event:/ParticuleFormation
   fmodEventToResting:
     Guid:
-      Data1: 47805584
-      Data2: 1075409246
-      Data3: 1241597108
-      Data4: -1714992784
+      Data1: 1682224176
+      Data2: 1299064888
+      Data3: -132463743
+      Data4: 432373734
     Path: event:/ParticuleDestruction
   targetSoundTolerance: 15
   restingSoundTolerance: 0
@@ -9025,15 +9025,15 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: -8679921383154817045, guid: 1bbeac462c1ca3544843a444c3377ba3, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 1.4099998
+      value: 2.551
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 1bbeac462c1ca3544843a444c3377ba3, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 10.98
+      value: 10.874
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 1bbeac462c1ca3544843a444c3377ba3, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 9.362
+      value: 25.163
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 1bbeac462c1ca3544843a444c3377ba3, type: 3}
       propertyPath: m_LocalRotation.w
@@ -9320,17 +9320,17 @@ MonoBehaviour:
   saveTutorialState: 1
   fmodEventToTarget:
     Guid:
-      Data1: -1086434843
-      Data2: 1255254014
-      Data3: 28572335
-      Data4: 1540235985
+      Data1: -319443095
+      Data2: 1300516728
+      Data3: -676120924
+      Data4: 458525789
     Path: event:/ParticuleFormation
   fmodEventToResting:
     Guid:
-      Data1: 47805584
-      Data2: 1075409246
-      Data3: 1241597108
-      Data4: -1714992784
+      Data1: 1682224176
+      Data2: 1299064888
+      Data3: -132463743
+      Data4: 432373734
     Path: event:/ParticuleDestruction
   targetSoundTolerance: 15
   restingSoundTolerance: 0
@@ -10460,17 +10460,17 @@ MonoBehaviour:
   saveTutorialState: 1
   fmodEventToTarget:
     Guid:
-      Data1: -1086434843
-      Data2: 1255254014
-      Data3: 28572335
-      Data4: 1540235985
+      Data1: -319443095
+      Data2: 1300516728
+      Data3: -676120924
+      Data4: 458525789
     Path: event:/ParticuleFormation
   fmodEventToResting:
     Guid:
-      Data1: 47805584
-      Data2: 1075409246
-      Data3: 1241597108
-      Data4: -1714992784
+      Data1: 1682224176
+      Data2: 1299064888
+      Data3: -132463743
+      Data4: 432373734
     Path: event:/ParticuleDestruction
   targetSoundTolerance: 15
   restingSoundTolerance: 0
@@ -10645,17 +10645,17 @@ MonoBehaviour:
   saveTutorialState: 1
   fmodEventToTarget:
     Guid:
-      Data1: -1086434843
-      Data2: 1255254014
-      Data3: 28572335
-      Data4: 1540235985
+      Data1: -319443095
+      Data2: 1300516728
+      Data3: -676120924
+      Data4: 458525789
     Path: event:/ParticuleFormation
   fmodEventToResting:
     Guid:
-      Data1: 47805584
-      Data2: 1075409246
-      Data3: 1241597108
-      Data4: -1714992784
+      Data1: 1682224176
+      Data2: 1299064888
+      Data3: -132463743
+      Data4: 432373734
     Path: event:/ParticuleDestruction
   targetSoundTolerance: 15
   restingSoundTolerance: 0
@@ -11511,17 +11511,17 @@ MonoBehaviour:
   saveTutorialState: 1
   fmodEventToTarget:
     Guid:
-      Data1: -1086434843
-      Data2: 1255254014
-      Data3: 28572335
-      Data4: 1540235985
+      Data1: -319443095
+      Data2: 1300516728
+      Data3: -676120924
+      Data4: 458525789
     Path: event:/ParticuleFormation
   fmodEventToResting:
     Guid:
-      Data1: 47805584
-      Data2: 1075409246
-      Data3: 1241597108
-      Data4: -1714992784
+      Data1: 1682224176
+      Data2: 1299064888
+      Data3: -132463743
+      Data4: 432373734
     Path: event:/ParticuleDestruction
   targetSoundTolerance: 15
   restingSoundTolerance: 0
@@ -13742,8 +13742,8 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 0.35, y: 0.32, z: 0.47}
-  m_Center: {x: 0, y: 0, z: 0}
+  m_Size: {x: 1.74, y: 0.7, z: 1}
+  m_Center: {x: 0, y: 0, z: 0.41}
 --- !u!54 &807121589
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -13806,17 +13806,17 @@ MonoBehaviour:
   saveTutorialState: 1
   fmodEventToTarget:
     Guid:
-      Data1: -1086434843
-      Data2: 1255254014
-      Data3: 28572335
-      Data4: 1540235985
+      Data1: -319443095
+      Data2: 1300516728
+      Data3: -676120924
+      Data4: 458525789
     Path: event:/ParticuleFormation
   fmodEventToResting:
     Guid:
-      Data1: 47805584
-      Data2: 1075409246
-      Data3: 1241597108
-      Data4: -1714992784
+      Data1: 1682224176
+      Data2: 1299064888
+      Data3: -132463743
+      Data4: 432373734
     Path: event:/ParticuleDestruction
   targetSoundTolerance: 15
   restingSoundTolerance: 0
@@ -13904,17 +13904,17 @@ MonoBehaviour:
   saveTutorialState: 1
   fmodEventToTarget:
     Guid:
-      Data1: -1086434843
-      Data2: 1255254014
-      Data3: 28572335
-      Data4: 1540235985
+      Data1: -319443095
+      Data2: 1300516728
+      Data3: -676120924
+      Data4: 458525789
     Path: event:/ParticuleFormation
   fmodEventToResting:
     Guid:
-      Data1: 47805584
-      Data2: 1075409246
-      Data3: 1241597108
-      Data4: -1714992784
+      Data1: 1682224176
+      Data2: 1299064888
+      Data3: -132463743
+      Data4: 432373734
     Path: event:/ParticuleDestruction
   targetSoundTolerance: 15
   restingSoundTolerance: 0
@@ -14058,17 +14058,17 @@ MonoBehaviour:
   saveTutorialState: 1
   fmodEventToTarget:
     Guid:
-      Data1: -1086434843
-      Data2: 1255254014
-      Data3: 28572335
-      Data4: 1540235985
+      Data1: -319443095
+      Data2: 1300516728
+      Data3: -676120924
+      Data4: 458525789
     Path: event:/ParticuleFormation
   fmodEventToResting:
     Guid:
-      Data1: 47805584
-      Data2: 1075409246
-      Data3: 1241597108
-      Data4: -1714992784
+      Data1: 1682224176
+      Data2: 1299064888
+      Data3: -132463743
+      Data4: 432373734
     Path: event:/ParticuleDestruction
   targetSoundTolerance: 15
   restingSoundTolerance: 0
@@ -14547,17 +14547,17 @@ MonoBehaviour:
   saveTutorialState: 1
   fmodEventToTarget:
     Guid:
-      Data1: -1086434843
-      Data2: 1255254014
-      Data3: 28572335
-      Data4: 1540235985
+      Data1: -319443095
+      Data2: 1300516728
+      Data3: -676120924
+      Data4: 458525789
     Path: event:/ParticuleFormation
   fmodEventToResting:
     Guid:
-      Data1: 47805584
-      Data2: 1075409246
-      Data3: 1241597108
-      Data4: -1714992784
+      Data1: 1682224176
+      Data2: 1299064888
+      Data3: -132463743
+      Data4: 432373734
     Path: event:/ParticuleDestruction
   targetSoundTolerance: 15
   restingSoundTolerance: 0
@@ -15153,7 +15153,7 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 0.19, y: 0.20196953, z: 0.19}
+  m_Size: {x: 0.38, y: 0.20196953, z: 0.19}
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!54 &906761513
 Rigidbody:
@@ -16588,17 +16588,17 @@ MonoBehaviour:
   saveTutorialState: 1
   fmodEventToTarget:
     Guid:
-      Data1: -1086434843
-      Data2: 1255254014
-      Data3: 28572335
-      Data4: 1540235985
+      Data1: -319443095
+      Data2: 1300516728
+      Data3: -676120924
+      Data4: 458525789
     Path: event:/ParticuleFormation
   fmodEventToResting:
     Guid:
-      Data1: 47805584
-      Data2: 1075409246
-      Data3: 1241597108
-      Data4: -1714992784
+      Data1: 1682224176
+      Data2: 1299064888
+      Data3: -132463743
+      Data4: 432373734
     Path: event:/ParticuleDestruction
   targetSoundTolerance: 15
   restingSoundTolerance: 0
@@ -17836,17 +17836,17 @@ MonoBehaviour:
   saveTutorialState: 1
   fmodEventToTarget:
     Guid:
-      Data1: -1086434843
-      Data2: 1255254014
-      Data3: 28572335
-      Data4: 1540235985
+      Data1: -319443095
+      Data2: 1300516728
+      Data3: -676120924
+      Data4: 458525789
     Path: event:/ParticuleFormation
   fmodEventToResting:
     Guid:
-      Data1: 47805584
-      Data2: 1075409246
-      Data3: 1241597108
-      Data4: -1714992784
+      Data1: 1682224176
+      Data2: 1299064888
+      Data3: -132463743
+      Data4: 432373734
     Path: event:/ParticuleDestruction
   targetSoundTolerance: 15
   restingSoundTolerance: 0
@@ -18241,17 +18241,17 @@ MonoBehaviour:
   saveTutorialState: 1
   fmodEventToTarget:
     Guid:
-      Data1: -1086434843
-      Data2: 1255254014
-      Data3: 28572335
-      Data4: 1540235985
+      Data1: -319443095
+      Data2: 1300516728
+      Data3: -676120924
+      Data4: 458525789
     Path: event:/ParticuleFormation
   fmodEventToResting:
     Guid:
-      Data1: 47805584
-      Data2: 1075409246
-      Data3: 1241597108
-      Data4: -1714992784
+      Data1: 1682224176
+      Data2: 1299064888
+      Data3: -132463743
+      Data4: 432373734
     Path: event:/ParticuleDestruction
   targetSoundTolerance: 15
   restingSoundTolerance: 0
@@ -18383,17 +18383,17 @@ MonoBehaviour:
   saveTutorialState: 1
   fmodEventToTarget:
     Guid:
-      Data1: -1086434843
-      Data2: 1255254014
-      Data3: 28572335
-      Data4: 1540235985
+      Data1: -319443095
+      Data2: 1300516728
+      Data3: -676120924
+      Data4: 458525789
     Path: event:/ParticuleFormation
   fmodEventToResting:
     Guid:
-      Data1: 47805584
-      Data2: 1075409246
-      Data3: 1241597108
-      Data4: -1714992784
+      Data1: 1682224176
+      Data2: 1299064888
+      Data3: -132463743
+      Data4: 432373734
     Path: event:/ParticuleDestruction
   targetSoundTolerance: 15
   restingSoundTolerance: 0
@@ -19277,17 +19277,17 @@ MonoBehaviour:
   saveTutorialState: 1
   fmodEventToTarget:
     Guid:
-      Data1: -1086434843
-      Data2: 1255254014
-      Data3: 28572335
-      Data4: 1540235985
+      Data1: -319443095
+      Data2: 1300516728
+      Data3: -676120924
+      Data4: 458525789
     Path: event:/ParticuleFormation
   fmodEventToResting:
     Guid:
-      Data1: 47805584
-      Data2: 1075409246
-      Data3: 1241597108
-      Data4: -1714992784
+      Data1: 1682224176
+      Data2: 1299064888
+      Data3: -132463743
+      Data4: 432373734
     Path: event:/ParticuleDestruction
   targetSoundTolerance: 15
   restingSoundTolerance: 0
@@ -20804,17 +20804,17 @@ MonoBehaviour:
   saveTutorialState: 1
   fmodEventToTarget:
     Guid:
-      Data1: -1086434843
-      Data2: 1255254014
-      Data3: 28572335
-      Data4: 1540235985
+      Data1: -319443095
+      Data2: 1300516728
+      Data3: -676120924
+      Data4: 458525789
     Path: event:/ParticuleFormation
   fmodEventToResting:
     Guid:
-      Data1: 47805584
-      Data2: 1075409246
-      Data3: 1241597108
-      Data4: -1714992784
+      Data1: 1682224176
+      Data2: 1299064888
+      Data3: -132463743
+      Data4: 432373734
     Path: event:/ParticuleDestruction
   targetSoundTolerance: 15
   restingSoundTolerance: 0
@@ -21566,17 +21566,17 @@ MonoBehaviour:
   saveTutorialState: 1
   fmodEventToTarget:
     Guid:
-      Data1: -1086434843
-      Data2: 1255254014
-      Data3: 28572335
-      Data4: 1540235985
+      Data1: -319443095
+      Data2: 1300516728
+      Data3: -676120924
+      Data4: 458525789
     Path: event:/ParticuleFormation
   fmodEventToResting:
     Guid:
-      Data1: 47805584
-      Data2: 1075409246
-      Data3: 1241597108
-      Data4: -1714992784
+      Data1: 1682224176
+      Data2: 1299064888
+      Data3: -132463743
+      Data4: 432373734
     Path: event:/ParticuleDestruction
   targetSoundTolerance: 15
   restingSoundTolerance: 0
@@ -21778,17 +21778,17 @@ MonoBehaviour:
   saveTutorialState: 1
   fmodEventToTarget:
     Guid:
-      Data1: -1086434843
-      Data2: 1255254014
-      Data3: 28572335
-      Data4: 1540235985
+      Data1: -319443095
+      Data2: 1300516728
+      Data3: -676120924
+      Data4: 458525789
     Path: event:/ParticuleFormation
   fmodEventToResting:
     Guid:
-      Data1: 47805584
-      Data2: 1075409246
-      Data3: 1241597108
-      Data4: -1714992784
+      Data1: 1682224176
+      Data2: 1299064888
+      Data3: -132463743
+      Data4: 432373734
     Path: event:/ParticuleDestruction
   targetSoundTolerance: 15
   restingSoundTolerance: 0
@@ -22111,7 +22111,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 7539c983f53d21649a07cbec9f3952be, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 2.503
+      value: 1.467
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 7539c983f53d21649a07cbec9f3952be, type: 3}
       propertyPath: m_LocalPosition.y
@@ -22119,23 +22119,23 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 7539c983f53d21649a07cbec9f3952be, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 25.096
+      value: 9.25
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 7539c983f53d21649a07cbec9f3952be, type: 3}
       propertyPath: m_LocalRotation.w
-      value: 0.82244337
+      value: 0.5688477
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 7539c983f53d21649a07cbec9f3952be, type: 3}
       propertyPath: m_LocalRotation.x
-      value: -0.000000031046387
+      value: -0.00000002147341
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 7539c983f53d21649a07cbec9f3952be, type: 3}
       propertyPath: m_LocalRotation.y
-      value: -0.568847
+      value: 0.82244295
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 7539c983f53d21649a07cbec9f3952be, type: 3}
       propertyPath: m_LocalRotation.z
-      value: -0.00000002147338
+      value: 0.000000031046365
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 7539c983f53d21649a07cbec9f3952be, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -22143,7 +22143,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 7539c983f53d21649a07cbec9f3952be, type: 3}
       propertyPath: m_LocalEulerAnglesHint.y
-      value: -69.34
+      value: 110.66
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 7539c983f53d21649a07cbec9f3952be, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
@@ -22404,17 +22404,17 @@ MonoBehaviour:
   saveTutorialState: 1
   fmodEventToTarget:
     Guid:
-      Data1: -1086434843
-      Data2: 1255254014
-      Data3: 28572335
-      Data4: 1540235985
+      Data1: -319443095
+      Data2: 1300516728
+      Data3: -676120924
+      Data4: 458525789
     Path: event:/ParticuleFormation
   fmodEventToResting:
     Guid:
-      Data1: 47805584
-      Data2: 1075409246
-      Data3: 1241597108
-      Data4: -1714992784
+      Data1: 1682224176
+      Data2: 1299064888
+      Data3: -132463743
+      Data4: 432373734
     Path: event:/ParticuleDestruction
   targetSoundTolerance: 15
   restingSoundTolerance: 0
@@ -22492,17 +22492,17 @@ MonoBehaviour:
   saveTutorialState: 1
   fmodEventToTarget:
     Guid:
-      Data1: -1086434843
-      Data2: 1255254014
-      Data3: 28572335
-      Data4: 1540235985
+      Data1: -319443095
+      Data2: 1300516728
+      Data3: -676120924
+      Data4: 458525789
     Path: event:/ParticuleFormation
   fmodEventToResting:
     Guid:
-      Data1: 47805584
-      Data2: 1075409246
-      Data3: 1241597108
-      Data4: -1714992784
+      Data1: 1682224176
+      Data2: 1299064888
+      Data3: -132463743
+      Data4: 432373734
     Path: event:/ParticuleDestruction
   targetSoundTolerance: 15
   restingSoundTolerance: 0
@@ -22891,17 +22891,17 @@ MonoBehaviour:
   saveTutorialState: 1
   fmodEventToTarget:
     Guid:
-      Data1: -1086434843
-      Data2: 1255254014
-      Data3: 28572335
-      Data4: 1540235985
+      Data1: -319443095
+      Data2: 1300516728
+      Data3: -676120924
+      Data4: 458525789
     Path: event:/ParticuleFormation
   fmodEventToResting:
     Guid:
-      Data1: 47805584
-      Data2: 1075409246
-      Data3: 1241597108
-      Data4: -1714992784
+      Data1: 1682224176
+      Data2: 1299064888
+      Data3: -132463743
+      Data4: 432373734
     Path: event:/ParticuleDestruction
   targetSoundTolerance: 15
   restingSoundTolerance: 0
@@ -23033,17 +23033,17 @@ MonoBehaviour:
   saveTutorialState: 1
   fmodEventToTarget:
     Guid:
-      Data1: -1086434843
-      Data2: 1255254014
-      Data3: 28572335
-      Data4: 1540235985
+      Data1: -319443095
+      Data2: 1300516728
+      Data3: -676120924
+      Data4: 458525789
     Path: event:/ParticuleFormation
   fmodEventToResting:
     Guid:
-      Data1: 47805584
-      Data2: 1075409246
-      Data3: 1241597108
-      Data4: -1714992784
+      Data1: 1682224176
+      Data2: 1299064888
+      Data3: -132463743
+      Data4: 432373734
     Path: event:/ParticuleDestruction
   targetSoundTolerance: 15
   restingSoundTolerance: 0
@@ -23206,17 +23206,17 @@ MonoBehaviour:
   saveTutorialState: 1
   fmodEventToTarget:
     Guid:
-      Data1: -1086434843
-      Data2: 1255254014
-      Data3: 28572335
-      Data4: 1540235985
+      Data1: -319443095
+      Data2: 1300516728
+      Data3: -676120924
+      Data4: 458525789
     Path: event:/ParticuleFormation
   fmodEventToResting:
     Guid:
-      Data1: 47805584
-      Data2: 1075409246
-      Data3: 1241597108
-      Data4: -1714992784
+      Data1: 1682224176
+      Data2: 1299064888
+      Data3: -132463743
+      Data4: 432373734
     Path: event:/ParticuleDestruction
   targetSoundTolerance: 15
   restingSoundTolerance: 0
@@ -23348,17 +23348,17 @@ MonoBehaviour:
   saveTutorialState: 1
   fmodEventToTarget:
     Guid:
-      Data1: -1086434843
-      Data2: 1255254014
-      Data3: 28572335
-      Data4: 1540235985
+      Data1: -319443095
+      Data2: 1300516728
+      Data3: -676120924
+      Data4: 458525789
     Path: event:/ParticuleFormation
   fmodEventToResting:
     Guid:
-      Data1: 47805584
-      Data2: 1075409246
-      Data3: 1241597108
-      Data4: -1714992784
+      Data1: 1682224176
+      Data2: 1299064888
+      Data3: -132463743
+      Data4: 432373734
     Path: event:/ParticuleDestruction
   targetSoundTolerance: 15
   restingSoundTolerance: 0
@@ -27038,17 +27038,17 @@ MonoBehaviour:
   saveTutorialState: 1
   fmodEventToTarget:
     Guid:
-      Data1: -1086434843
-      Data2: 1255254014
-      Data3: 28572335
-      Data4: 1540235985
+      Data1: -319443095
+      Data2: 1300516728
+      Data3: -676120924
+      Data4: 458525789
     Path: event:/ParticuleFormation
   fmodEventToResting:
     Guid:
-      Data1: 47805584
-      Data2: 1075409246
-      Data3: 1241597108
-      Data4: -1714992784
+      Data1: 1682224176
+      Data2: 1299064888
+      Data3: -132463743
+      Data4: 432373734
     Path: event:/ParticuleDestruction
   targetSoundTolerance: 15
   restingSoundTolerance: 0
@@ -27109,17 +27109,17 @@ MonoBehaviour:
   saveTutorialState: 1
   fmodEventToTarget:
     Guid:
-      Data1: -1086434843
-      Data2: 1255254014
-      Data3: 28572335
-      Data4: 1540235985
+      Data1: -319443095
+      Data2: 1300516728
+      Data3: -676120924
+      Data4: 458525789
     Path: event:/ParticuleFormation
   fmodEventToResting:
     Guid:
-      Data1: 47805584
-      Data2: 1075409246
-      Data3: 1241597108
-      Data4: -1714992784
+      Data1: 1682224176
+      Data2: 1299064888
+      Data3: -132463743
+      Data4: 432373734
     Path: event:/ParticuleDestruction
   targetSoundTolerance: 15
   restingSoundTolerance: 0
@@ -27405,17 +27405,17 @@ MonoBehaviour:
   saveTutorialState: 1
   fmodEventToTarget:
     Guid:
-      Data1: -1086434843
-      Data2: 1255254014
-      Data3: 28572335
-      Data4: 1540235985
+      Data1: -319443095
+      Data2: 1300516728
+      Data3: -676120924
+      Data4: 458525789
     Path: event:/ParticuleFormation
   fmodEventToResting:
     Guid:
-      Data1: 47805584
-      Data2: 1075409246
-      Data3: 1241597108
-      Data4: -1714992784
+      Data1: 1682224176
+      Data2: 1299064888
+      Data3: -132463743
+      Data4: 432373734
     Path: event:/ParticuleDestruction
   targetSoundTolerance: 15
   restingSoundTolerance: 0
@@ -27547,17 +27547,17 @@ MonoBehaviour:
   saveTutorialState: 1
   fmodEventToTarget:
     Guid:
-      Data1: -1086434843
-      Data2: 1255254014
-      Data3: 28572335
-      Data4: 1540235985
+      Data1: -319443095
+      Data2: 1300516728
+      Data3: -676120924
+      Data4: 458525789
     Path: event:/ParticuleFormation
   fmodEventToResting:
     Guid:
-      Data1: 47805584
-      Data2: 1075409246
-      Data3: 1241597108
-      Data4: -1714992784
+      Data1: 1682224176
+      Data2: 1299064888
+      Data3: -132463743
+      Data4: 432373734
     Path: event:/ParticuleDestruction
   targetSoundTolerance: 15
   restingSoundTolerance: 0
@@ -27678,11 +27678,11 @@ MonoBehaviour:
   CollisionTag: 
   EventReference:
     Guid:
-      Data1: -719566641
-      Data2: 1090945513
-      Data3: -232465248
-      Data4: 1142334665
-    Path: event:/Regle
+      Data1: 131916359
+      Data2: 1269967877
+      Data3: 716396942
+      Data4: -200948188
+    Path: event:/Brosse
   Event: 
   EventPlayTrigger: 7
   EventStopTrigger: 0
@@ -29587,6 +29587,10 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2147903839162851062, guid: 9cf5b9ddbcef7054d85f4226c2ed95d8, type: 3}
+      propertyPath: fmodEventNo.Path
+      value: event:/EventNo
+      objectReference: {fileID: 0}
+    - target: {fileID: 2147903839162851062, guid: 9cf5b9ddbcef7054d85f4226c2ed95d8, type: 3}
       propertyPath: leftHandHighlight
       value: 
       objectReference: {fileID: 797604453}
@@ -29602,6 +29606,22 @@ PrefabInstance:
       propertyPath: rightHandItemImage
       value: 
       objectReference: {fileID: 691621212}
+    - target: {fileID: 2147903839162851062, guid: 9cf5b9ddbcef7054d85f4226c2ed95d8, type: 3}
+      propertyPath: fmodEventNo.Guid.Data1
+      value: -1307296885
+      objectReference: {fileID: 0}
+    - target: {fileID: 2147903839162851062, guid: 9cf5b9ddbcef7054d85f4226c2ed95d8, type: 3}
+      propertyPath: fmodEventNo.Guid.Data2
+      value: 1213080298
+      objectReference: {fileID: 0}
+    - target: {fileID: 2147903839162851062, guid: 9cf5b9ddbcef7054d85f4226c2ed95d8, type: 3}
+      propertyPath: fmodEventNo.Guid.Data3
+      value: 1473141891
+      objectReference: {fileID: 0}
+    - target: {fileID: 2147903839162851062, guid: 9cf5b9ddbcef7054d85f4226c2ed95d8, type: 3}
+      propertyPath: fmodEventNo.Guid.Data4
+      value: -60855354
+      objectReference: {fileID: 0}
     - target: {fileID: 2466806999987025961, guid: 9cf5b9ddbcef7054d85f4226c2ed95d8, type: 3}
       propertyPath: m_IsActive
       value: 0
@@ -31044,17 +31064,17 @@ MonoBehaviour:
   saveTutorialState: 1
   fmodEventToTarget:
     Guid:
-      Data1: -1086434843
-      Data2: 1255254014
-      Data3: 28572335
-      Data4: 1540235985
+      Data1: -319443095
+      Data2: 1300516728
+      Data3: -676120924
+      Data4: 458525789
     Path: event:/ParticuleFormation
   fmodEventToResting:
     Guid:
-      Data1: 47805584
-      Data2: 1075409246
-      Data3: 1241597108
-      Data4: -1714992784
+      Data1: 1682224176
+      Data2: 1299064888
+      Data3: -132463743
+      Data4: 432373734
     Path: event:/ParticuleDestruction
   targetSoundTolerance: 15
   restingSoundTolerance: 0
@@ -31391,17 +31411,17 @@ MonoBehaviour:
   saveTutorialState: 1
   fmodEventToTarget:
     Guid:
-      Data1: -1086434843
-      Data2: 1255254014
-      Data3: 28572335
-      Data4: 1540235985
+      Data1: -319443095
+      Data2: 1300516728
+      Data3: -676120924
+      Data4: 458525789
     Path: event:/ParticuleFormation
   fmodEventToResting:
     Guid:
-      Data1: 47805584
-      Data2: 1075409246
-      Data3: 1241597108
-      Data4: -1714992784
+      Data1: 1682224176
+      Data2: 1299064888
+      Data3: -132463743
+      Data4: 432373734
     Path: event:/ParticuleDestruction
   targetSoundTolerance: 15
   restingSoundTolerance: 0
@@ -31893,17 +31913,17 @@ MonoBehaviour:
   saveTutorialState: 1
   fmodEventToTarget:
     Guid:
-      Data1: -1086434843
-      Data2: 1255254014
-      Data3: 28572335
-      Data4: 1540235985
+      Data1: -319443095
+      Data2: 1300516728
+      Data3: -676120924
+      Data4: 458525789
     Path: event:/ParticuleFormation
   fmodEventToResting:
     Guid:
-      Data1: 47805584
-      Data2: 1075409246
-      Data3: 1241597108
-      Data4: -1714992784
+      Data1: 1682224176
+      Data2: 1299064888
+      Data3: -132463743
+      Data4: 432373734
     Path: event:/ParticuleDestruction
   targetSoundTolerance: 15
   restingSoundTolerance: 0
@@ -32154,17 +32174,17 @@ MonoBehaviour:
   saveTutorialState: 1
   fmodEventToTarget:
     Guid:
-      Data1: -1086434843
-      Data2: 1255254014
-      Data3: 28572335
-      Data4: 1540235985
+      Data1: -319443095
+      Data2: 1300516728
+      Data3: -676120924
+      Data4: 458525789
     Path: event:/ParticuleFormation
   fmodEventToResting:
     Guid:
-      Data1: 47805584
-      Data2: 1075409246
-      Data3: 1241597108
-      Data4: -1714992784
+      Data1: 1682224176
+      Data2: 1299064888
+      Data3: -132463743
+      Data4: 432373734
     Path: event:/ParticuleDestruction
   targetSoundTolerance: 15
   restingSoundTolerance: 0
@@ -32225,17 +32245,17 @@ MonoBehaviour:
   saveTutorialState: 1
   fmodEventToTarget:
     Guid:
-      Data1: -1086434843
-      Data2: 1255254014
-      Data3: 28572335
-      Data4: 1540235985
+      Data1: -319443095
+      Data2: 1300516728
+      Data3: -676120924
+      Data4: 458525789
     Path: event:/ParticuleFormation
   fmodEventToResting:
     Guid:
-      Data1: 47805584
-      Data2: 1075409246
-      Data3: 1241597108
-      Data4: -1714992784
+      Data1: 1682224176
+      Data2: 1299064888
+      Data3: -132463743
+      Data4: 432373734
     Path: event:/ParticuleDestruction
   targetSoundTolerance: 15
   restingSoundTolerance: 0
@@ -33832,17 +33852,17 @@ MonoBehaviour:
   saveTutorialState: 1
   fmodEventToTarget:
     Guid:
-      Data1: -1086434843
-      Data2: 1255254014
-      Data3: 28572335
-      Data4: 1540235985
+      Data1: -319443095
+      Data2: 1300516728
+      Data3: -676120924
+      Data4: 458525789
     Path: event:/ParticuleFormation
   fmodEventToResting:
     Guid:
-      Data1: 47805584
-      Data2: 1075409246
-      Data3: 1241597108
-      Data4: -1714992784
+      Data1: 1682224176
+      Data2: 1299064888
+      Data3: -132463743
+      Data4: 432373734
     Path: event:/ParticuleDestruction
   targetSoundTolerance: 15
   restingSoundTolerance: 0
@@ -34346,17 +34366,17 @@ MonoBehaviour:
   saveTutorialState: 1
   fmodEventToTarget:
     Guid:
-      Data1: -1086434843
-      Data2: 1255254014
-      Data3: 28572335
-      Data4: 1540235985
+      Data1: -319443095
+      Data2: 1300516728
+      Data3: -676120924
+      Data4: 458525789
     Path: event:/ParticuleFormation
   fmodEventToResting:
     Guid:
-      Data1: 47805584
-      Data2: 1075409246
-      Data3: 1241597108
-      Data4: -1714992784
+      Data1: 1682224176
+      Data2: 1299064888
+      Data3: -132463743
+      Data4: 432373734
     Path: event:/ParticuleDestruction
   targetSoundTolerance: 15
   restingSoundTolerance: 0
@@ -36119,17 +36139,17 @@ MonoBehaviour:
   saveTutorialState: 1
   fmodEventToTarget:
     Guid:
-      Data1: -1086434843
-      Data2: 1255254014
-      Data3: 28572335
-      Data4: 1540235985
+      Data1: -319443095
+      Data2: 1300516728
+      Data3: -676120924
+      Data4: 458525789
     Path: event:/ParticuleFormation
   fmodEventToResting:
     Guid:
-      Data1: 47805584
-      Data2: 1075409246
-      Data3: 1241597108
-      Data4: -1714992784
+      Data1: 1682224176
+      Data2: 1299064888
+      Data3: -132463743
+      Data4: 432373734
     Path: event:/ParticuleDestruction
   targetSoundTolerance: 15
   restingSoundTolerance: 0
