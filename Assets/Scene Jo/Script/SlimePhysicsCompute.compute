@@ -1,0 +1,305 @@
+#pragma kernel Integrate
+#pragma kernel BuildSpatialHash
+#pragma kernel FindNeighbors
+#pragma kernel CalculateDensity
+#pragma kernel SolveConstraints
+#pragma kernel UpdateVelocities
+#pragma kernel ApplyViscosity
+#pragma kernel HandleCollisions
+
+struct Particle
+{
+    float3 position;
+    float3 prevPosition;
+    float3 velocity;
+    float invMass;
+    float density;
+    float lambda;
+    int neighborCount;
+    int neighborStartIndex;
+};
+
+struct NeighborData
+{
+    int index;
+};
+
+// Buffers
+RWStructuredBuffer<Particle> _Particles;
+RWStructuredBuffer<int> _SpatialHash;
+RWStructuredBuffer<int> _CellOffsets;
+RWStructuredBuffer<NeighborData> _Neighbors;
+
+// Parameters
+int _ParticleCount;
+float _DeltaTime;
+float3 _Gravity;
+float _ParticleRadius;
+float _RestDensity;
+float _CohesionStrength;
+float _SurfaceTension;
+float _Viscosity;
+float _Damping;
+float _Friction;
+float _GridCellSize;
+int3 _GridSize;
+
+// Hash function for spatial grid
+int3 GetCell(float3 position)
+{
+    return int3(floor(position / _GridCellSize));
+}
+
+int GetCellHash(int3 cell)
+{
+    // Simple hash function
+    const int p1 = 73856093;
+    const int p2 = 19349663;
+    const int p3 = 83492791;
+    int hash = (cell.x * p1) ^ (cell.y * p2) ^ (cell.z * p3);
+    return abs(hash) % (_ParticleCount * 27); // 27 = 3^3 neighboring cells
+}
+
+// Kernel functions
+float Poly6Kernel(float r, float h)
+{
+    if (r >= h) return 0.0;
+    float scale = 315.0 / (64.0 * 3.14159 * pow(h, 9));
+    float x = h * h - r * r;
+    return scale * x * x * x;
+}
+
+float3 GradientSpiky(float3 r, float h)
+{
+    float rLen = length(r);
+    if (rLen >= h || rLen < 0.0001) return float3(0, 0, 0);
+    
+    float scale = -45.0 / (3.14159 * pow(h, 6));
+    float x = h - rLen;
+    return scale * x * x * normalize(r);
+}
+
+[numthreads(64, 1, 1)]
+void Integrate(uint3 id : SV_DispatchThreadID)
+{
+    if (id.x >= (uint)_ParticleCount) return;
+    
+    Particle p = _Particles[id.x];
+    
+    // Semi-implicit Euler
+    p.velocity += _Gravity * _DeltaTime;
+    p.prevPosition = p.position;
+    p.position += p.velocity * _DeltaTime;
+    
+    _Particles[id.x] = p;
+}
+
+[numthreads(64, 1, 1)]
+void BuildSpatialHash(uint3 id : SV_DispatchThreadID)
+{
+    if (id.x >= (uint)_ParticleCount) return;
+    
+    Particle p = _Particles[id.x];
+    int3 cell = GetCell(p.position);
+    int hash = GetCellHash(cell);
+    
+    _SpatialHash[id.x] = hash;
+}
+
+[numthreads(64, 1, 1)]
+void FindNeighbors(uint3 id : SV_DispatchThreadID)
+{
+    if (id.x >= (uint)_ParticleCount) return;
+    
+    Particle p = _Particles[id.x];
+    float searchRadius = _ParticleRadius * 2.0;
+    int3 cell = GetCell(p.position);
+    
+    int neighborCount = 0;
+    
+    // Check neighboring cells
+    for (int x = -1; x <= 1; x++)
+    {
+        for (int y = -1; y <= 1; y++)
+        {
+            for (int z = -1; z <= 1; z++)
+            {
+                int3 neighborCell = cell + int3(x, y, z);
+                int hash = GetCellHash(neighborCell);
+                
+                // Search particles in this cell
+                for (int i = 0; i < _ParticleCount; i++)
+                {
+                    if (_SpatialHash[i] == hash && i != id.x)
+                    {
+                        float dist = distance(p.position, _Particles[i].position);
+                        if (dist < searchRadius && neighborCount < 50) // Max 50 neighbors
+                        {
+                            _Neighbors[id.x * 50 + neighborCount].index = i;
+                            neighborCount++;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    
+    p.neighborCount = neighborCount;
+    _Particles[id.x] = p;
+}
+
+[numthreads(64, 1, 1)]
+void CalculateDensity(uint3 id : SV_DispatchThreadID)
+{
+    if (id.x >= (uint)_ParticleCount) return;
+    
+    Particle p = _Particles[id.x];
+    float h = _ParticleRadius * 2.0;
+    float density = 0.0;
+    
+    for (int i = 0; i < p.neighborCount; i++)
+    {
+        int neighborIdx = _Neighbors[id.x * 50 + i].index;
+        float3 diff = p.position - _Particles[neighborIdx].position;
+        float dist = length(diff);
+        if (dist < h)
+        {
+            density += Poly6Kernel(dist, h);
+        }
+    }
+    
+    p.density = density;
+    
+    // Calculate lambda
+    float densityConstraint = (density / _RestDensity) - 1.0;
+    float sumGradSquared = 0.0;
+    
+    for (int j = 0; j < p.neighborCount; j++)
+    {
+        int neighborIdx = _Neighbors[id.x * 50 + j].index;
+        float3 grad = GradientSpiky(p.position - _Particles[neighborIdx].position, h);
+        sumGradSquared += dot(grad, grad);
+    }
+    
+    float epsilon = 1e-6;
+    p.lambda = -densityConstraint / (sumGradSquared + epsilon);
+    
+    _Particles[id.x] = p;
+}
+
+[numthreads(64, 1, 1)]
+void SolveConstraints(uint3 id : SV_DispatchThreadID)
+{
+    if (id.x >= (uint)_ParticleCount) return;
+    
+    Particle p = _Particles[id.x];
+    float h = _ParticleRadius * 2.0;
+    float3 deltaP = float3(0, 0, 0);
+    
+    // Density constraint
+    for (int i = 0; i < p.neighborCount; i++)
+    {
+        int neighborIdx = _Neighbors[id.x * 50 + i].index;
+        Particle neighbor = _Particles[neighborIdx];
+        float3 gradW = GradientSpiky(p.position - neighbor.position, h);
+        deltaP += (p.lambda + neighbor.lambda) * gradW;
+    }
+    deltaP /= _RestDensity;
+    
+    // Cohesion force
+    float3 cohesion = float3(0, 0, 0);
+    for (int j = 0; j < p.neighborCount; j++)
+    {
+        int neighborIdx = _Neighbors[id.x * 50 + j].index;
+        float3 diff = _Particles[neighborIdx].position - p.position;
+        float dist = length(diff);
+        
+        if (dist > 0.0001 && dist < h)
+        {
+            cohesion += normalize(diff) * Poly6Kernel(dist, h);
+        }
+    }
+    deltaP += cohesion * _CohesionStrength * _DeltaTime * _DeltaTime;
+    
+    // Surface tension
+    if (p.neighborCount >= 3)
+    {
+        float3 center = float3(0, 0, 0);
+        for (int k = 0; k < p.neighborCount; k++)
+        {
+            int neighborIdx = _Neighbors[id.x * 50 + k].index;
+            center += _Particles[neighborIdx].position;
+        }
+        center /= (float)p.neighborCount;
+        deltaP += (center - p.position) * 0.5 * _SurfaceTension * _DeltaTime * _DeltaTime;
+    }
+    
+    p.position += deltaP;
+    _Particles[id.x] = p;
+}
+
+[numthreads(64, 1, 1)]
+void UpdateVelocities(uint3 id : SV_DispatchThreadID)
+{
+    if (id.x >= (uint)_ParticleCount) return;
+    
+    Particle p = _Particles[id.x];
+    p.velocity = (p.position - p.prevPosition) / _DeltaTime;
+    p.velocity *= _Damping;
+    _Particles[id.x] = p;
+}
+
+[numthreads(64, 1, 1)]
+void ApplyViscosity(uint3 id : SV_DispatchThreadID)
+{
+    if (id.x >= (uint)_ParticleCount) return;
+    
+    Particle p = _Particles[id.x];
+    
+    if (p.neighborCount > 0)
+    {
+        float3 avgVelocity = float3(0, 0, 0);
+        for (int i = 0; i < p.neighborCount; i++)
+        {
+            int neighborIdx = _Neighbors[id.x * 50 + i].index;
+            avgVelocity += _Particles[neighborIdx].velocity;
+        }
+        avgVelocity /= (float)p.neighborCount;
+        
+        p.velocity = lerp(p.velocity, avgVelocity, _Viscosity);
+    }
+    
+    _Particles[id.x] = p;
+}
+
+[numthreads(64, 1, 1)]
+void HandleCollisions(uint3 id : SV_DispatchThreadID)
+{
+    if (id.x >= (uint)_ParticleCount) return;
+    
+    Particle p = _Particles[id.x];
+    
+    // Simple ground plane collision
+    if (p.position.y < -5.0)
+    {
+        p.position.y = -5.0;
+        p.velocity.y = max(0.0, p.velocity.y);
+        p.velocity.x *= (1.0 - _Friction);
+        p.velocity.z *= (1.0 - _Friction);
+    }
+    
+    // Boundary box
+    float boundarySize = 10.0;
+    if (abs(p.position.x) > boundarySize)
+    {
+        p.position.x = sign(p.position.x) * boundarySize;
+        p.velocity.x *= -0.5;
+    }
+    if (abs(p.position.z) > boundarySize)
+    {
+        p.position.z = sign(p.position.z) * boundarySize;
+        p.velocity.z *= -0.5;
+    }
+    
+    _Particles[id.x] = p;
+}

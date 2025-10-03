@@ -2,8 +2,8 @@ using UnityEngine;
 
 /// <summary>
 /// Renders slime particles as instanced spheres (debug mode) or metaballs
+/// Works with both SlimeParticleManager (CPU) and SlimeParticleManagerGPU
 /// </summary>
-[RequireComponent(typeof(SlimeParticleManager))]
 public class SlimeRenderer : MonoBehaviour
 {
     [Header("Rendering Mode")]
@@ -24,9 +24,11 @@ public class SlimeRenderer : MonoBehaviour
     public Color slimeColor = new Color(0.2f, 0.8f, 0.3f, 0.8f);
     
     private SlimeParticleManager particleManager;
+    private SlimeParticleManagerGPU particleManagerGPU;
     private Matrix4x4[] matrices;
     private ComputeBuffer positionBuffer;
     private MaterialPropertyBlock propertyBlock;
+    private bool useGPU = false;
     
     public enum RenderMode
     {
@@ -37,6 +39,16 @@ public class SlimeRenderer : MonoBehaviour
     void Start()
     {
         particleManager = GetComponent<SlimeParticleManager>();
+        particleManagerGPU = GetComponent<SlimeParticleManagerGPU>();
+        
+        if (particleManager == null && particleManagerGPU == null)
+        {
+            Debug.LogError("SlimeRenderer requires either SlimeParticleManager or SlimeParticleManagerGPU component!");
+            enabled = false;
+            return;
+        }
+        
+        useGPU = (particleManagerGPU != null);
         propertyBlock = new MaterialPropertyBlock();
         
         // Create default sphere mesh if not assigned
@@ -59,7 +71,7 @@ public class SlimeRenderer : MonoBehaviour
     
     void Update()
     {
-        if (particleManager == null) return;
+        if (particleManager == null && particleManagerGPU == null) return;
         
         switch (renderMode)
         {
@@ -74,7 +86,7 @@ public class SlimeRenderer : MonoBehaviour
     
     void RenderInstancedSpheres()
     {
-        var positions = particleManager.GetParticlePositions();
+        var positions = useGPU ? particleManagerGPU.GetParticlePositions() : particleManager.GetParticlePositions();
         int count = positions.Count;
         
         if (count == 0) return;
@@ -86,7 +98,7 @@ public class SlimeRenderer : MonoBehaviour
         }
         
         // Update matrices
-        float radius = particleManager.particleRadius * sphereScale;
+        float radius = (useGPU ? particleManagerGPU.particleRadius : particleManager.particleRadius) * sphereScale;
         for (int i = 0; i < count; i++)
         {
             matrices[i] = Matrix4x4.TRS(
@@ -114,7 +126,7 @@ public class SlimeRenderer : MonoBehaviour
     {
         // Metaball rendering would require a custom shader with raymarching or marching cubes
         // For now, fall back to instanced spheres with transparency
-        var positions = particleManager.GetParticlePositions();
+        var positions = useGPU ? particleManagerGPU.GetParticlePositions() : particleManager.GetParticlePositions();
         int count = positions.Count;
         
         if (count == 0) return;
@@ -124,7 +136,7 @@ public class SlimeRenderer : MonoBehaviour
             matrices = new Matrix4x4[count];
         }
         
-        float radius = particleManager.particleRadius * metaballInfluenceRadius;
+        float radius = (useGPU ? particleManagerGPU.particleRadius : particleManager.particleRadius) * metaballInfluenceRadius;
         for (int i = 0; i < count; i++)
         {
             matrices[i] = Matrix4x4.TRS(

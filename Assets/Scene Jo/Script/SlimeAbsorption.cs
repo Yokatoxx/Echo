@@ -3,8 +3,8 @@ using System.Collections.Generic;
 
 /// <summary>
 /// Handles object absorption by slime - objects that get close enough are absorbed
+/// Works with both SlimeParticleManager (CPU) and SlimeParticleManagerGPU
 /// </summary>
-[RequireComponent(typeof(SlimeParticleManager))]
 public class SlimeAbsorption : MonoBehaviour
 {
     [Header("Absorption Settings")]
@@ -21,12 +21,24 @@ public class SlimeAbsorption : MonoBehaviour
     public AudioClip absorptionSound;
     
     private SlimeParticleManager particleManager;
+    private SlimeParticleManagerGPU particleManagerGPU;
     private AudioSource audioSource;
     private HashSet<GameObject> absorbingObjects = new HashSet<GameObject>();
+    private bool useGPU = false;
     
     void Start()
     {
         particleManager = GetComponent<SlimeParticleManager>();
+        particleManagerGPU = GetComponent<SlimeParticleManagerGPU>();
+        
+        if (particleManager == null && particleManagerGPU == null)
+        {
+            Debug.LogError("SlimeAbsorption requires either SlimeParticleManager or SlimeParticleManagerGPU component!");
+            enabled = false;
+            return;
+        }
+        
+        useGPU = (particleManagerGPU != null);
         
         // Setup audio source
         audioSource = gameObject.AddComponent<AudioSource>();
@@ -42,7 +54,7 @@ public class SlimeAbsorption : MonoBehaviour
     
     void CheckForAbsorbableObjects()
     {
-        var positions = particleManager.GetParticlePositions();
+        var positions = useGPU ? particleManagerGPU.GetParticlePositions() : particleManager.GetParticlePositions();
         
         // Check from center of mass
         if (positions.Count == 0) return;
@@ -113,7 +125,7 @@ public class SlimeAbsorption : MonoBehaviour
             }
             
             // Pull object towards slime center
-            var positions = particleManager.GetParticlePositions();
+            var positions = useGPU ? particleManagerGPU.GetParticlePositions() : particleManager.GetParticlePositions();
             if (positions.Count == 0) continue;
             
             Vector3 centerOfMass = Vector3.zero;
@@ -138,7 +150,8 @@ public class SlimeAbsorption : MonoBehaviour
             }
             
             // Check if close enough to fully absorb
-            if (distance < particleManager.particleRadius * 2.0f)
+            float particleRadius = useGPU ? particleManagerGPU.particleRadius : particleManager.particleRadius;
+            if (distance < particleRadius * 2.0f)
             {
                 AbsorbObject(obj);
                 toRemove.Add(obj);
@@ -156,8 +169,10 @@ public class SlimeAbsorption : MonoBehaviour
     {
         Debug.Log($"Absorbed {obj.name}");
         
-        // Optional: spawn new particles (would need to modify SlimeParticleManager to support this)
-        if (spawnNewParticles && particleManager.GetParticleCount() < particleManager.maxParticles)
+        // Optional: spawn new particles (would need to modify particle managers to support this)
+        int maxParticles = useGPU ? particleManagerGPU.maxParticles : particleManager.maxParticles;
+        int currentCount = useGPU ? particleManagerGPU.GetParticleCount() : particleManager.GetParticleCount();
+        if (spawnNewParticles && currentCount < maxParticles)
         {
             // This would require adding a method to SlimeParticleManager to add particles dynamically
             // For now, just destroy the object
@@ -169,9 +184,9 @@ public class SlimeAbsorption : MonoBehaviour
     
     void OnDrawGizmosSelected()
     {
-        if (particleManager == null) return;
+        if (particleManager == null && particleManagerGPU == null) return;
         
-        var positions = particleManager.GetParticlePositions();
+        var positions = useGPU ? particleManagerGPU.GetParticlePositions() : particleManager.GetParticlePositions();
         if (positions.Count == 0) return;
         
         // Draw absorption radius around slime center
