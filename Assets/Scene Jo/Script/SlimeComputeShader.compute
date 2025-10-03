@@ -1,0 +1,44 @@
+#pragma kernel CalculateMetaballField
+
+struct Particle
+{
+    float3 position;
+};
+
+StructuredBuffer<Particle> _Particles;
+RWTexture3D<float> _MetaballField;
+
+int _ParticleCount;
+float _InfluenceRadius;
+float _GridSize;
+float3 _GridOrigin;
+
+float MetaballFunction(float distance, float radius)
+{
+    if (distance >= radius) return 0.0;
+    
+    // Gaussian-like falloff
+    float r2 = radius * radius;
+    float d2 = distance * distance;
+    return r2 / (d2 + 0.01);
+}
+
+[numthreads(8,8,8)]
+void CalculateMetaballField (uint3 id : SV_DispatchThreadID)
+{
+    // Calculate world position of this voxel
+    float3 voxelPos = _GridOrigin + float3(id) * _GridSize;
+    
+    // Accumulate contributions from all particles
+    float fieldValue = 0.0;
+    
+    for (int i = 0; i < _ParticleCount; i++)
+    {
+        float3 particlePos = _Particles[i].position;
+        float distance = length(voxelPos - particlePos);
+        fieldValue += MetaballFunction(distance, _InfluenceRadius);
+    }
+    
+    // Write to 3D texture
+    _MetaballField[id] = fieldValue;
+}
